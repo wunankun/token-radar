@@ -8,6 +8,7 @@
 import { join } from 'node:path';
 import { writeFileSync } from 'node:fs';
 import { loadAll, writeJson, DIST, ensureDir, loadHealth } from './lib/io.mjs';
+import { loadObservedStations, loadVerdicts } from './lib/observed-stations.mjs';
 import { KINDS, FLAGS, buildOfficialIndex, normalizeEntry, rechargeBonus, KIND_LABEL } from './lib/normalize.mjs';
 import { renderSite } from './lib/render.mjs';
 
@@ -44,17 +45,24 @@ for (const modelId of Object.keys(models)) {
   if (!officialIndex.has(modelId)) warn(`models.json: ${modelId} 没有官方基准价，只能展示绝对价、无法算倍率`);
 }
 
+/* ---------- 抓来的站（data/sources.json + data/observed/） ---------- */
+// 只把「输出/输入比与官方同形」的行放进来，按次计费/表达式计费的不上榜单
+const knownIds = new Set(providers.map((p) => p.id));
+const scanned = loadObservedStations({ models, knownIds });
+const verdicts = loadVerdicts(scanned.map((s) => s.id));
+
 /* ---------- providers ---------- */
 const seen = new Set();
 const stations = [];
 const skipped = [];
 
-for (const p of providers) {
+for (const p of [...providers, ...scanned]) {
   if (!/^[a-z0-9][a-z0-9-]*$/.test(p.id || '')) err(`站点 id 不合法（小写字母/数字/连字符）: ${p.id}`);
   if (seen.has(p.id)) err(`站点 id 重复: ${p.id}`);
   seen.add(p.id);
 
   if (!p.name) err(`${p.id}: 缺少 name`);
+  const verdict = verdicts.get(p.id) || null;
   if (!KINDS.includes(p.kind)) err(`${p.id}: kind 必须是 ${KINDS.join(' / ')}`);
   for (const f of p.risk_flags || []) if (!FLAGS.includes(f)) err(`${p.id}: 未知 risk_flag "${f}"`);
 
@@ -63,7 +71,7 @@ for (const p of providers) {
     if (p.affiliate.disclosure !== true) err(`${p.id}: 有推广链接就必须显式写 "disclosure": true（硬性规则）`);
     if (!p.affiliate.code) warn(`${p.id}: affiliate.code 为空，建议填邀请码方便核对`);
   }
-  if (!p.demo && !p.pricing_url && p.kind !== 'official') warn(`${p.id}: 缺少 pricing_url，无法回溯价格来源`);
+  if (!p.demo && !p.pricing_url && p.kind !== 'official' && !p.observed_only) warn(`${p.id}: 缺少 pricing_url，无法回溯价格来源`);
 
   // status：paused / dead 的站点留在库里但不上榜，方便停更时只改一个字段
   if (p.status && p.status !== 'active') {
@@ -116,6 +124,8 @@ for (const p of providers) {
     }
     const manual = declared[modelId];
     const auto = obs?.models?.[modelId];
+    // 逐行判定不过的模型不上榜单（输出/输入比与官方不同形 = 不是按 token 定价）
+    if (!manual && verdict && !verdict.ok.has(modelId)) continue;
     // 站点级 multiplier 是默认值：模型条目里只写 {"value": 0.5} 或 {} 就够了，
     // 改价的日常操作因此从「改 N 个模型的同一个数」变成「改站点里的一个数」。
     const inherit = (spec) => {
@@ -147,7 +157,13 @@ for (const p of providers) {
       else warn(`${res.error}（自动抓取数据，已跳过）`);
       continue;
     }
-    if (!manual) res.row.note = res.row.note || '价格来自站点公开 /api/pricing，未经人工核验';
+    if (!manual) {
+      const mult = verdict?.mult?.get(modelId);
+      res.row.note =
+        `抓自 ${p.observed_at || '站点公开'} 的 /api/pricing，未经人工核验；` +
+        (mult != null ? `站上倍率 ×${mult}（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币` : '按「1 元 = 1 美元额度」面值折算');
+      res.row.observed_at = p.observed_at || null;
+    }
     stations.push(res.row);
   }
 }
@@ -212,6 +228,8 @@ const meta = {
     official_rows: officialRows.length,
     demo_rows: stations.filter((s) => s.station.demo).length,
     with_affiliate: stations.filter((s) => s.station.affiliate_url).length,
+    auto_rows: stations.filter((s) => s.price_source === 'auto').length,
+    auto_stations: new Set(stations.filter((s) => s.price_source === 'auto').map((s) => s.station.id)).size,
   },
   best: best
     ? { station: best.station.name, model: best.model.label, ratio: best.ratio.blend, discount: best.discount, effective: best.effective }

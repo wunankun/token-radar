@@ -176,6 +176,22 @@ node scripts/fetch-pricing.mjs --write    # 落盘
 - **模型名各站不同。** `claude-3-5-sonnet-20241022`、`claude-sonnet-4-5` 这类写法靠 `data/models.json` 里的 `aliases` 匹配；匹配不上会列在 `unmatched` 里，照着补别名即可。
 - **按次计费的模型**（图片、视频）`quota_type = 1`，没有 token 单价，直接跳过，不会算成 0 混进排名。
 
+### 自动抓到的站怎么进榜单
+
+`data/sources.json` 里抓到过、但还没人工录价的站，会由 `scripts/lib/observed-stations.mjs` 变成榜单行，但过两道闸：
+
+1. **逐行判定**：只有 `derivation.models[].verdict === "ok"` 的行才上，也就是「站上的输出/输入比 == 官方的输出/输入比」。
+   - 66 站 345 行里，177 行过关（51%），覆盖 54 站；
+   - 145 行是按次/套餐/表达式计费（`gpt-6.2-sol` 报 37.5 但输出=输入，官方是 5 倍），23 行是旧代数命名 → 全部剔除，不参与排名。
+2. **不覆盖人工数据**：`data/providers/<id>.json` 里录过的站，自动数据自动让位。
+
+这些行的 `kind` 是 `relay`（页面上显示「中转·未分类」），`price_source` 是 `auto`（显示「自动抓取」），`risk_flags` 带 `unverified`。
+悬停「自动抓取」能看到它的倍率与折算依据，例如：
+
+> 抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×0.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币
+
+演示数据（`demo: true`）现在默认隐藏，勾选筛选条上的「显示演示数据」才看得到。
+
 ---
 
 ## 加一个站点（带你的推广链接）

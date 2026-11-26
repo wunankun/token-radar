@@ -89,7 +89,7 @@ ${css}
       <option value="output">按输出价排序</option>
       <option value="cache_read">按缓存价排序</option>
     </select>
-    <label class="toggle"><input type="checkbox" id="f-demo" checked>显示演示数据</label>
+    <label class="toggle"><input type="checkbox" id="f-demo">显示演示数据</label>
     <label class="toggle"><input type="checkbox" id="f-aff">只看带推广链接</label>
     <span class="count" id="count"></span>
   </div>

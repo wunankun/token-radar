@@ -7,7 +7,7 @@
   var meta = DATA.meta || {};
   var W = meta.blend || { input: 0.7, output: 0.3 };
 
-  var state = { q: '', model: '', kind: '', sort: 'discount', showDemo: true, onlyAff: false };
+  var state = { q: '', model: '', kind: '', sort: 'discount', showDemo: false, onlyAff: false };
 
   // 模型目录：meta.models 已按热度降序；缺字段时回落到表格里出现过的模型
   var MODELS = {};
@@ -78,8 +78,11 @@
     var c = meta.counts || {};
     var best = meta.best || meta.best_demo;
     var bestDemoOnly = !meta.best && !!meta.best_demo;
-    var auto = rows.filter(function (r) { return r.price_source === 'auto'; }).length;
-    var aff = rows.filter(function (r) { return r.station.affiliate_url; }).length;
+    var autoRows = rows.filter(function (r) { return r.price_source === 'auto'; });
+    var autoStations = {};
+    autoRows.forEach(function (r) { autoStations[r.station.id] = 1; });
+    var autoSt = Object.keys(autoStations).length;
+    var aff = rows.filter(function (r) { return r.station.affiliate_url && !r.station.demo; }).length;
 
     var cards = [
       {
@@ -99,7 +102,9 @@
       },
       {
         k: '推广链接', v: String(aff), small: '行',
-        s: auto ? ('其中 ' + auto + ' 行为自动抓取，待人工核验') : '全部为人工核验价格'
+        s: autoSt
+          ? ('另有 ' + autoSt + ' 个站自动抓取，' + autoRows.length + ' 行待核验')
+          : '全部为人工核验价格'
       }
     ];
 
@@ -357,9 +362,9 @@
       var b = $('#demo-banner');
       b.hidden = false;
       var d = meta.best_demo;
-      b.innerHTML = '⚠️ 当前含 <b>' + demoCount + '</b> 条演示数据（<code>demo: true</code>），用于展示折算与排序效果，并非真实站点。' +
+      b.innerHTML = '⚠️ 库里还有 <b>' + demoCount + '</b> 条演示数据（<code>demo: true</code>），是假站点，已默认隐藏。' +
         (d ? '演示数据里最优惠为 <b>' + discText(d.discount) + '</b>（' + esc(d.station) + ' · ' + esc(d.model) + '）。' : '') +
-        '把 <code>data/providers/</code> 里的示例文件换成真实站点后自动消失。';
+        '勾选上面的「显示演示数据」可以看到它们，换成真实站点后这几条自动消失。';
     }
     render();
     syncStickTop();
