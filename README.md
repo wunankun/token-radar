@@ -149,7 +149,7 @@ node scripts/fetch-pricing.mjs --write    # 落盘
 
 ## 加一个站点（带你的推广链接）
 
-一个站点一个文件，`data/providers/<id>.json`：
+一个站点一个文件，`data/providers/<id>.json`。**倍率写在站点级，模型只列它卖哪几个**——这样改价只需要改一个数：
 
 ```json
 {
@@ -159,6 +159,8 @@ node scripts/fetch-pricing.mjs --write    # 落盘
   "homepage": "https://my-site.com",
   "pricing_url": "https://my-site.com/pricing",
   "first_seen": "2026-11-26",
+  "price_updated_at": "2026-11-26",
+  "multiplier": { "base": "cny_official", "value": 0.62 },
   "affiliate": {
     "url": "https://my-site.com/register?aff=YOUR_CODE",
     "code": "YOUR_CODE",
@@ -169,19 +171,30 @@ node scripts/fetch-pricing.mjs --write    # 落盘
   "billing": { "ratio": 1.0, "measured_at": "2026-11-20" },
   "risk_flags": [],
   "models": {
-    "claude-sonnet-5-5": { "mode": "multiplier", "base": "cny_official", "value": 0.62 },
-    "deepseek-v4-pro":   { "mode": "absolute", "input": 4.5, "output": 13.5 }
+    "claude-sonnet-5-5": {},
+    "gpt-6.2-sol": {},
+    "deepseek-v4-pro": { "value": 0.5 },
+    "gpt-6.2-astra": { "mode": "absolute", "input": 8.8, "output": 44 }
   }
 }
 ```
 
-也可以用脚手架生成：
+`models` 里每条的含义：
+
+| 写法 | 含义 |
+| --- | --- |
+| `{}` | 完全继承站点级 `multiplier` |
+| `{ "value": 0.5 }` | 只覆盖倍率，`base` 仍然继承 |
+| `{ "mode": "absolute", "input": 8.8, "output": 44 }` | 直接写人民币/百万 token，不继承 |
+
+用脚手架更快，`--model` 可以重复传：
 
 ```bash
 node scripts/add-station.mjs --id my-station --name "某站" --kind official-relay \
   --homepage https://my-site.com --pricing https://my-site.com/pricing \
   --aff "https://my-site.com/register?aff=YOUR_CODE" \
-  --model claude-sonnet-5-5 --mult 0.62 --base cny_official
+  --mult 0.62 --base cny_official \
+  --model claude-sonnet-5-5 --model gpt-6.2-sol --model deepseek-v4-pro
 ```
 
 `kind` 取值：`official`（官方直购）· `official-relay`（官转）· `reverse`（逆向/号池）· `mixed`（混合）· `aggregator`（聚合商）。
@@ -189,6 +202,48 @@ node scripts/add-station.mjs --id my-station --name "某站" --kind official-rel
 `risk_flags` 可选：`unverified` `reverse` `cheap-trap` `billing-inflation` `model-substitution` `no-entity` `operator-self` `ran-away` `no-refund` `prepaid-only` `limited-models`。
 
 完整 schema 见 [`schema/provider.schema.json`](schema/provider.schema.json)。
+
+### 停更一个站点：改一个字段
+
+跑路了、暂停营业、或者你暂时不想推它，都不需要删文件（删了历史价格和推广链接就没了）：
+
+```json
+{ "status": "paused" }
+```
+
+`status` 三档：`active`（默认，上榜）· `paused`（暂停，不上榜但要观察）· `dead`（已关站，留着存档）。构建会跳过非 `active` 的站点，并在日志里列出来。
+
+---
+
+## 日常维护
+
+这个项目的维护成本刻意压在三件事上：**改一个数、加一个文件、每周跑一次审计**。
+
+| 什么时候 | 做什么 | 花多久 |
+| --- | --- | --- |
+| 某站调价 | 改它 `multiplier.value`（如果是单个模型调价，才改模型条目） | 10 秒 |
+| 有新站要推 | `npm run add -- ...` 生成文件，填推广链接 | 1 分钟 |
+| 某站关站 | 把 `status` 改成 `dead` | 5 秒 |
+| 每周一次 | `npm run audit`，按清单挑着处理 | 5 分钟 |
+| 每月一次 | 对一遍厂商计费页，更新 `data/official.json` 的 `as_of` | 10 分钟 |
+
+`npm run audit` 会扫出这些情况（红=必须处理，黄=建议，灰=看看就好）：
+
+- 官方基准价多久没复核（超过 45 天提醒，超过 90 天报警——它是全站折扣的分母）；
+- 哪些站点没写 `price_updated_at`、或价格超过 45 天没核对；
+- 抓取失败的站（HTTP 非 200，通常意味着关站或换接口了）；
+- 探活可用率低于 90%、或连续 3 天没有成功请求的站；
+- 没有推广链接的站（等于白送流量）、推广链接没填邀请码的站；
+- 重复收录的域名、非法的 homepage URL；
+- 还没替换掉的演示数据、已标记 `paused`/`dead` 的站。
+
+加 `--md` 会输出 Markdown 清单，可以直接贴进 GitHub Issue 当待办：
+
+```bash
+npm run audit:md
+```
+
+还有一条兜底规则：**数据陈旧不会让站点挂掉，但会让结论变错**。所以 `build` 只做结构校验，时效性判断全部交给 `audit`——它只提醒，不擅自改数据。
 
 ---
 
@@ -268,6 +323,7 @@ token-radar/
 ├── schema/provider.schema.json
 ├── scripts/
 │   ├── build.mjs            # 校验 + 折算 + 出静态站
+│   ├── audit.mjs            # 维护审计：列出该人工看一眼的东西
 │   ├── fetch-pricing.mjs    # 抓取 CLI：加站/发现接口/抓取/比价
 │   ├── demo-crawl.mjs       # 抓取链路自检（起假站点，跑两轮看涨跌）
 │   ├── probe.mjs            # 探活 + 指纹 + 计费系数

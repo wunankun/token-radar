@@ -24,11 +24,15 @@
     "method": "固定 ASCII prompt 实测 usage/completion_tokens 与本地估算比对"
   },
   "risk_flags": [],
+  "multiplier": {
+    "base": "cny_official",
+    "value": 0.62
+  },
   "models": {
-    "claude-sonnet-5-5": { "mode": "multiplier", "base": "cny_official", "value": 0.62 },
-    "claude-opus-5-5": { "mode": "multiplier", "base": "cny_official", "value": 0.62 },
-    "gpt-6.2-sol": { "mode": "multiplier", "base": "cny_official", "value": 0.62 },
-    "deepseek-v4-pro": { "mode": "multiplier", "base": "cny_official", "value": 0.62 },
-    "deepseek-flash": { "mode": "multiplier", "base": "cny_official", "value": 0.62 }
+    "claude-sonnet-5-5": {},
+    "claude-opus-5-5": {},
+    "gpt-6.2-sol": {},
+    "deepseek-v4-pro": {},
+    "deepseek-flash": {}
   }
 }

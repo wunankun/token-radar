@@ -8,7 +8,9 @@
  *     --pricing https://my-site.com/pricing \
  *     --endpoint https://my-site.com/api/pricing
  *
- *   ... --model claude-sonnet-5-5 --mult 0.62 --base cny_official   # 倍率模式
+ *   ... --mult 0.62 --base cny_official --model claude-sonnet-5-5 --model gpt-6.2-sol
+ *        ↑ 最常见的用法：站点所有模型一个倍率，只列它卖哪些模型（--model 可重复）
+ *
  *   ... --model claude-sonnet-5-5 --in 8.8 --out 44                 # 绝对价模式（元/百万）
  */
 import { existsSync } from 'node:fs';
@@ -32,7 +34,7 @@ const endpoint = opt('--endpoint');
 const aff = opt('--aff');
 const code = opt('--code');
 const commission = opt('--commission', '');
-const modelId = opt('--model');
+const modelIds = argv.reduce((acc, a, i) => (a === '--model' && argv[i + 1] ? acc.concat(argv[i + 1]) : acc), []);
 const mult = opt('--mult');
 const base = opt('--base', 'cny_official');
 const inPrice = opt('--in');
@@ -59,13 +61,15 @@ if (existsSync(file)) {
 }
 
 const models = readJson(join(DATA, 'models.json'), {});
+const today = new Date().toISOString().slice(0, 10);
 const provider = {
   id,
   name,
   kind,
   homepage: homepage || undefined,
   pricing_url: pricing || undefined,
-  first_seen: new Date().toISOString().slice(0, 10),
+  first_seen: today,
+  price_updated_at: today,
   affiliate: aff
     ? { url: aff, code: code || 'YOUR_CODE', commission: commission || null, disclosure: true }
     : null,
@@ -78,21 +82,28 @@ const provider = {
 if (endpoint) provider.observed_endpoint = endpoint;
 if (flag('--demo')) provider.demo = true;
 
-if (modelId) {
+for (const modelId of modelIds) {
   if (!models[modelId]) {
     console.error(`模型 ${modelId} 未在 data/models.json 登记，可用：${Object.keys(models).join(', ')}`);
     process.exit(1);
   }
-  if (mult) {
-    provider.models[modelId] = { mode: 'multiplier', base, value: Number(mult) };
-  } else if (inPrice && outPrice) {
-    provider.models[modelId] = {
-      mode: 'absolute',
-      input: Number(inPrice),
-      output: Number(outPrice),
-      ...(cachePrice ? { cache_read: Number(cachePrice) } : {}),
-    };
+}
+
+if (modelIds.length && mult) {
+  // 站点级倍率：模型条目留空 {} 表示继承，将来改价只改 multiplier 里的一个数
+  provider.multiplier = { base, value: Number(mult) };
+  for (const modelId of modelIds) provider.models[modelId] = {};
+} else if (modelIds.length && inPrice && outPrice) {
+  if (modelIds.length > 1) {
+    console.error('绝对价模式一次只能建一个模型（每个模型的 input/output 不同）');
+    process.exit(1);
   }
+  provider.models[modelIds[0]] = {
+    mode: 'absolute',
+    input: Number(inPrice),
+    output: Number(outPrice),
+    ...(cachePrice ? { cache_read: Number(cachePrice) } : {}),
+  };
 }
 
 writeJson(file, provider);
@@ -100,9 +111,9 @@ writeJson(file, provider);
 console.log(`✅ 已创建 data/providers/${id}.json（${KIND_LABEL[kind]}）`);
 console.log(`
 接下来：
-  1. 补全 models：每个模型写 mode=multiplier（倍率，注意 base）+ value，或 mode=absolute + input/output（元/百万）
+  1. 再补模型：--model 可以重复传，放在站点级 multiplier 下会自动继承同一个倍率
   2. 有充值赠送就写 recharge: { "pay": 100, "get": 120 }
   3. 有推广链接必须保留 "disclosure": true —— build 会硬校验
-  4. 跑 node scripts/build.mjs 看折算结果对不对
-  5. 有站点 key 的话加 probe.base_url，并在 GitHub Secrets 的 PROBE_KEYS 里加一项 "${id}": "sk-..." 
+  4. 跑 node scripts/build.mjs 看折算结果对不对，再跑 node scripts/audit.mjs 看有没有漏项
+  5. 有站点 key 的话加 probe.base_url，并在 GitHub Secrets 的 PROBE_KEYS 里加一项 "${id}": "sk-..."
 `);

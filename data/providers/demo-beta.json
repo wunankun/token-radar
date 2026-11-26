@@ -13,18 +13,37 @@
     "disclosure": true,
     "note": "演示用假链接。"
   },
-  "recharge": { "pay": 50, "get": 50, "note": "无赠送" },
+  "recharge": {
+    "pay": 50,
+    "get": 50,
+    "note": "无赠送"
+  },
   "billing": {
     "ratio": 1.35,
     "measured_at": "2026-11-22",
     "method": "固定 prompt 实测 usage 为本地估算的 1.35 倍，按折算系数计入",
     "note": "典型的「标价便宜、计费虚高」：把倍率乘回去才看得到真实成本。"
   },
-  "risk_flags": ["reverse", "cheap-trap", "model-substitution", "unverified"],
+  "risk_flags": [
+    "reverse",
+    "cheap-trap",
+    "model-substitution",
+    "unverified"
+  ],
+  "multiplier": {
+    "base": "usd_official",
+    "value": 0.55
+  },
   "models": {
-    "claude-sonnet-5-5": { "mode": "multiplier", "base": "usd_official", "value": 0.55, "note": "逆向/号池渠道，倍率按官方美元价 0.55 倍、以人民币结算" },
-    "claude-opus-5-5": { "mode": "multiplier", "base": "usd_official", "value": 0.55 },
-    "gpt-6.2-sol": { "mode": "multiplier", "base": "usd_official", "value": 0.5 },
-    "gpt-6.2-astra": { "mode": "multiplier", "base": "usd_official", "value": 0.5 }
+    "claude-sonnet-5-5": {
+      "note": "逆向/号池渠道，倍率按官方美元价 0.55 倍、以人民币结算"
+    },
+    "claude-opus-5-5": {},
+    "gpt-6.2-sol": {
+      "value": 0.5
+    },
+    "gpt-6.2-astra": {
+      "value": 0.5
+    }
   }
 }

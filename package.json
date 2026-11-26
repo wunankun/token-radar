@@ -4,14 +4,19 @@
   "private": true,
   "description": "AI 中转站 × 官方直购 价格排行：把倍率、充值赠送、计费虚高折算成真实到手价",
   "type": "module",
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "node scripts/build.mjs",
     "build:strict": "node scripts/build.mjs --strict",
     "fetch": "node scripts/fetch-pricing.mjs",
     "demo": "node scripts/demo-crawl.mjs",
     "test": "node --test tests/",
-    "check": "node --test tests/ && node scripts/build.mjs --strict"
+    "check": "node --test tests/ && node scripts/build.mjs --strict",
+    "add": "node scripts/add-station.mjs",
+    "audit": "node scripts/audit.mjs",
+    "audit:md": "node scripts/audit.mjs --md"
   },
   "license": "MIT"
 }

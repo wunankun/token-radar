@@ -53,6 +53,9 @@ jobs:
       - name: 构建
         run: node scripts/build.mjs --strict
 
+      - name: 维护审计（只提醒，不阻塞）
+        run: node scripts/audit.mjs
+
       - name: 提交数据与站点
         if: github.event_name == 'workflow_dispatch'
         run: |

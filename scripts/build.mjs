@@ -47,6 +47,7 @@ for (const modelId of Object.keys(models)) {
 /* ---------- providers ---------- */
 const seen = new Set();
 const stations = [];
+const skipped = [];
 
 for (const p of providers) {
   if (!/^[a-z0-9][a-z0-9-]*$/.test(p.id || '')) err(`站点 id 不合法（小写字母/数字/连字符）: ${p.id}`);
@@ -63,6 +64,13 @@ for (const p of providers) {
     if (!p.affiliate.code) warn(`${p.id}: affiliate.code 为空，建议填邀请码方便核对`);
   }
   if (!p.demo && !p.pricing_url && p.kind !== 'official') warn(`${p.id}: 缺少 pricing_url，无法回溯价格来源`);
+
+  // status：paused / dead 的站点留在库里但不上榜，方便停更时只改一个字段
+  if (p.status && p.status !== 'active') {
+    if (!['paused', 'dead'].includes(p.status)) err(`${p.id}: status 只能是 active / paused / dead`);
+    else skipped.push(`${p.id}（${p.status}）`);
+    if (p.status === 'paused' || p.status === 'dead') continue;
+  }
 
   if (p.kind === 'official') {
     const off = (official.providers || []).find((o) => o.id === p.official_source);
@@ -108,8 +116,16 @@ for (const p of providers) {
     }
     const manual = declared[modelId];
     const auto = obs?.models?.[modelId];
+    // 站点级 multiplier 是默认值：模型条目里只写 {"value": 0.5} 或 {} 就够了，
+    // 改价的日常操作因此从「改 N 个模型的同一个数」变成「改站点里的一个数」。
+    const inherit = (spec) => {
+      if (!spec || typeof spec !== 'object') return spec;
+      const isAbsolute = spec.mode === 'absolute' || spec.input != null;
+      if (isAbsolute) return spec;
+      return p.multiplier ? { mode: 'multiplier', ...p.multiplier, ...spec } : spec;
+    };
     const stationModel = manual
-      ? manual
+      ? inherit(manual)
       : auto
         ? { mode: 'absolute', input: auto.input, output: auto.output, cache_read: auto.cache_read }
         : null;
@@ -225,6 +241,7 @@ console.log(
       : '暂无真实站，回落人工 popularity'
   }`,
 );
+if (skipped.length) console.log(`  已停更（不上榜）：${skipped.join('、')}`);
 console.log(`  官方基准 ${meta.counts.official_rows} 行，演示 ${meta.counts.demo_rows} 行，带推广链接 ${meta.counts.with_affiliate} 行`);
 if (best) console.log(`  当前最优惠：${best.station.name} · ${best.model.label} · 便宜 ${(best.discount * 100).toFixed(1)}%`);
 
