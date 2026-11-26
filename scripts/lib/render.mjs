@@ -72,6 +72,8 @@ ${css}
 
   <section class="kpis" id="kpis"></section>
 
+  <p class="empty-relay" id="empty-relay" hidden></p>
+
   <div class="controls">
     <input id="f-q" type="search" placeholder="搜索站点 / 模型…" autocomplete="off">
     <div class="picker" id="f-model-wrap">

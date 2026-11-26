@@ -1,5 +1,5 @@
 {
-  "_help": "自动扫描得到的可用站点清单。group_ratio 是计价分组倍率，默认按 1.0（即站内基准倍率）记录，人工确认后改成实际销售分组。",
+  "_help": "自动扫到的站点先落在这里，approved: false 不入榜；人工确认一家后跑 `node scripts/approve.mjs <域名或id>` 或手改成 true，构建时才会出现在页面上。",
   "as_of": "2026-11-26",
   "sources": [
     {
@@ -11,7 +11,8 @@
       "group_ratio": 1,
       "models_observed": 1186,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "ai-songsongcard-shop",
@@ -22,7 +23,8 @@
       "group_ratio": 1,
       "models_observed": 671,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "api-routeeasy-ai",
@@ -33,7 +35,8 @@
       "group_ratio": 1,
       "models_observed": 540,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "newapi-prorisehub-com",
@@ -44,7 +47,8 @@
       "group_ratio": 1,
       "models_observed": 442,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "deepkey-top",
@@ -55,7 +59,8 @@
       "group_ratio": 1,
       "models_observed": 384,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "ai-beehears-com",
@@ -66,7 +71,8 @@
       "group_ratio": 1,
       "models_observed": 351,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "token-pudport-com",
@@ -80,7 +86,8 @@
       "origin": "scan",
       "status": "broken",
       "disabled_at": "2026-11-26",
-      "note": "官网流程跑不通，用户实测"
+      "note": "官网流程跑不通，用户实测",
+      "approved": false
     },
     {
       "id": "api-openlux-ai",
@@ -91,7 +98,8 @@
       "group_ratio": 1,
       "models_observed": 319,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "api-deepflowapi-com",
@@ -102,7 +110,8 @@
       "group_ratio": 1,
       "models_observed": 319,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "qinzhiai-com",
@@ -113,7 +122,8 @@
       "group_ratio": 1,
       "models_observed": 235,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "aiapi-market",
@@ -124,7 +134,8 @@
       "group_ratio": 1,
       "models_observed": 235,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "api-yinziapi-top",
@@ -136,7 +147,8 @@
       "models_observed": 208,
       "first_seen": "2026-11-26",
       "origin": "scan",
-      "note": "2026-11-27 排除：报价约为官方 1%，无法核验，暂不上榜"
+      "note": "2026-11-27 排除：报价约为官方 1%，无法核验，暂不上榜",
+      "approved": false
     },
     {
       "id": "yanai-it-com",
@@ -147,7 +159,8 @@
       "group_ratio": 1,
       "models_observed": 200,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "apipaths-com",
@@ -158,7 +171,8 @@
       "group_ratio": 1,
       "models_observed": 191,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "chat-openapi-wang",
@@ -169,7 +183,8 @@
       "group_ratio": 1,
       "models_observed": 190,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "code28-ccwu-cc",
@@ -180,7 +195,8 @@
       "group_ratio": 1,
       "models_observed": 189,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "api-6345ywz-cn",
@@ -191,7 +207,8 @@
       "group_ratio": 1,
       "models_observed": 182,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "bearlab-space",
@@ -202,7 +219,8 @@
       "group_ratio": 1,
       "models_observed": 163,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "api-mcapple-top",
@@ -213,7 +231,8 @@
       "group_ratio": 1,
       "models_observed": 162,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "api-ethancode-xyz",
@@ -224,7 +243,8 @@
       "group_ratio": 1,
       "models_observed": 157,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "newapi-ailyyzdk-xyz",
@@ -235,7 +255,8 @@
       "group_ratio": 1,
       "models_observed": 152,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "api-nionio2026-xyz",
@@ -246,7 +267,8 @@
       "group_ratio": 1,
       "models_observed": 150,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "api-yuaiapi-com",
@@ -257,7 +279,8 @@
       "group_ratio": 1,
       "models_observed": 142,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "api-1024token-xyz",
@@ -268,7 +291,8 @@
       "group_ratio": 1,
       "models_observed": 138,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "newapi-dragon3api-com",
@@ -279,7 +303,8 @@
       "group_ratio": 1,
       "models_observed": 138,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "new-vethra-top",
@@ -290,7 +315,8 @@
       "group_ratio": 1,
       "models_observed": 133,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "meinianda-top",
@@ -301,7 +327,8 @@
       "group_ratio": 1,
       "models_observed": 126,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "b-kr777-top",
@@ -312,7 +339,8 @@
       "group_ratio": 1,
       "models_observed": 126,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "nova-vcrauo-com",
@@ -323,7 +351,8 @@
       "group_ratio": 1,
       "models_observed": 123,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "shendun-vip",
@@ -334,7 +363,8 @@
       "group_ratio": 1,
       "models_observed": 122,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "greatwalllink-top",
@@ -345,7 +375,8 @@
       "group_ratio": 1,
       "models_observed": 120,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "linksapi-cn",
@@ -356,7 +387,8 @@
       "group_ratio": 1,
       "models_observed": 116,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "claudeaihub-cloud",
@@ -367,7 +399,8 @@
       "group_ratio": 1,
       "models_observed": 111,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "tian-shu-org",
@@ -378,7 +411,8 @@
       "group_ratio": 1,
       "models_observed": 108,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "api1-qlhazycoder-top",
@@ -389,7 +423,8 @@
       "group_ratio": 1,
       "models_observed": 108,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "xckjj-com",
@@ -400,7 +435,8 @@
       "group_ratio": 1,
       "models_observed": 108,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "aitreez-com",
@@ -411,7 +447,8 @@
       "group_ratio": 1,
       "models_observed": 101,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "maiai-ai",
@@ -422,7 +459,8 @@
       "group_ratio": 1,
       "models_observed": 101,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "ai-realseek-wiki",
@@ -433,7 +471,8 @@
       "group_ratio": 1,
       "models_observed": 98,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "qiuqiutoken-net",
@@ -444,7 +483,8 @@
       "group_ratio": 1,
       "models_observed": 94,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "zlkpro-tech",
@@ -455,7 +495,8 @@
       "group_ratio": 1,
       "models_observed": 94,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "api-llmgw-xyz",
@@ -466,7 +507,8 @@
       "group_ratio": 1,
       "models_observed": 91,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "duckcoding-ai",
@@ -477,7 +519,8 @@
       "group_ratio": 1,
       "models_observed": 81,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "nikoapi-xyz",
@@ -488,7 +531,8 @@
       "group_ratio": 1,
       "models_observed": 81,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "console-youpai-de",
@@ -499,7 +543,8 @@
       "group_ratio": 1,
       "models_observed": 78,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "kapibala-asia",
@@ -510,7 +555,8 @@
       "group_ratio": 1,
       "models_observed": 75,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "newcy-10dianai-com",
@@ -521,7 +567,8 @@
       "group_ratio": 1,
       "models_observed": 75,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "panel-model-port-xyz",
@@ -532,7 +579,8 @@
       "group_ratio": 1,
       "models_observed": 71,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "apibasis-com",
@@ -543,7 +591,8 @@
       "group_ratio": 1,
       "models_observed": 71,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "tokenflux-cloud",
@@ -554,7 +603,8 @@
       "group_ratio": 1,
       "models_observed": 70,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "new-lingyicai-xyz",
@@ -565,7 +615,8 @@
       "group_ratio": 1,
       "models_observed": 68,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "tokenking-cc-cd",
@@ -576,7 +627,8 @@
       "group_ratio": 1,
       "models_observed": 66,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "eo-aigcpro-org",
@@ -587,7 +639,8 @@
       "group_ratio": 1,
       "models_observed": 65,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "api-strong-api-top",
@@ -598,7 +651,8 @@
       "group_ratio": 1,
       "models_observed": 61,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "longent-tech",
@@ -609,7 +663,8 @@
       "group_ratio": 1,
       "models_observed": 58,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "pipio-dev",
@@ -620,7 +675,8 @@
       "group_ratio": 1,
       "models_observed": 58,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "apinebula-ai",
@@ -631,7 +687,8 @@
       "group_ratio": 1,
       "models_observed": 56,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "api-top-com",
@@ -642,7 +699,8 @@
       "group_ratio": 1,
       "models_observed": 50,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "aiplaceer-com",
@@ -653,7 +711,8 @@
       "group_ratio": 1,
       "models_observed": 50,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "36niu-com",
@@ -664,7 +723,8 @@
       "group_ratio": 1,
       "models_observed": 46,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "memeapi-top",
@@ -675,7 +735,8 @@
       "group_ratio": 1,
       "models_observed": 46,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "pdhlzy-com",
@@ -686,7 +747,8 @@
       "group_ratio": 1,
       "models_observed": 39,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "vm2-pro",
@@ -697,7 +759,8 @@
       "group_ratio": 1,
       "models_observed": 39,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "cctq-ai",
@@ -708,7 +771,8 @@
       "group_ratio": 1,
       "models_observed": 32,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "corecode-live",
@@ -719,7 +783,8 @@
       "group_ratio": 1,
       "models_observed": 28,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "open-asea-love",
@@ -730,7 +795,8 @@
       "group_ratio": 1,
       "models_observed": 28,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "aceoai-com",
@@ -741,7 +807,8 @@
       "group_ratio": 1,
       "models_observed": 18,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "api-mindeck-cloud",
@@ -752,7 +819,8 @@
       "group_ratio": 1,
       "models_observed": 15,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     },
     {
       "id": "tonkic-opik-net",
@@ -763,7 +831,8 @@
       "group_ratio": 1,
       "models_observed": 9,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "approved": false
     }
   ]
 }

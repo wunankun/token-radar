@@ -77,12 +77,18 @@ export function labelOf(id) {
 }
 
 /* ---------- 读数据 ---------- */
+// 目录也只统计人工确认过的站（与榜单口径一致）
+const approvedIds = new Set(
+  (readJson(join(DATA, 'sources.json'), { sources: [] }).sources || [])
+    .filter((x) => x && x.enabled !== false && x.approved === true)
+    .map((x) => x.id),
+);
 const blobs = {};
 for (const f of ['catalog'].map((d) => join(DATA, d))) {
   if (!existsSync(f)) continue;
   for (const file of readdirSync(f).filter((x) => x.endsWith('.json'))) {
     const j = readJson(join(f, file), null);
-    if (j?.models) blobs[j.station_id] = j;
+    if (j?.models && approvedIds.has(j.station_id)) blobs[j.station_id] = j;
   }
 }
 

@@ -602,6 +602,16 @@
       render();
     });
 
+    var relayCount = rows.filter(function (r) { return r.station.kind !== 'official' && !r.station.demo; }).length;
+    var bar = document.getElementById('empty-relay');
+    if (bar) {
+      if (relayCount === 0) {
+        bar.hidden = false;
+        bar.innerHTML = '还没有上架任何中转站。自动扫到的 69 家先躺在 <code>data/sources.json</code> 里等人工确认（<code>approved: true</code> / <code>node scripts/approve.mjs &lt;域名&gt;</code>），确认一家才會出现在这张表里。下面只有官方直购价，用来当锚。';
+      } else {
+        bar.hidden = true;
+      }
+    }
     var demoCount = rows.filter(function (r) { return r.station.demo; }).length;
     if (demoCount) {
       var b = $('#demo-banner');

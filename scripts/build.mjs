@@ -318,7 +318,7 @@ const meta = {
   heat: { source: heatFromData ? 'coverage' : 'manual', stations: heatStations.size, max_coverage: maxCoverage },
   catalog: (() => {
     const auto = readJson(join(DATA, 'models-auto.json'), null);
-    if (!auto) return null;
+    if (!auto || !auto.count || !auto.stations) return null;
     return { count: auto.count, stations: auto.stations, threshold: auto.threshold, baseline: auto.baseline };
   })(),
   disabled_sources: (readJson(join(DATA, 'sources.json'), { sources: [] }).sources || [])

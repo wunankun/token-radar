@@ -306,3 +306,6 @@ td.calc {
 .chip-fx { background: #fdf0e3; color: #9a5b12; border: 1px solid #f2d9bb; }
 
 .cat-tip { font-size: 12px; color: var(--muted); line-height: 1.65; margin: 8px 0 0; }
+
+.empty-relay { margin: 14px 0 0; padding: 12px 14px; border: 1px dashed #ddd9d0; border-radius: 10px; font-size: 13px; color: var(--muted); line-height: 1.7; background: #fdfcfa; }
+.empty-relay code { background: #f2f1ec; padding: 1px 5px; border-radius: 4px; font-size: 12px; }

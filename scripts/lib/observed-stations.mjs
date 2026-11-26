@@ -25,6 +25,9 @@ export function loadObservedStations({ models, knownIds }) {
 
   for (const src of sources) {
     if (!src || src.enabled === false) continue;
+    // 自动扫到的站默认不上架：只有人工确认过（approved: true）的才进榜单，
+    // 避免把「0.03× 特价池」这类报价不明的东西摆到用户面前。
+    if (src.approved !== true) continue;
     if (knownIds.has(src.id)) continue;
 
     const snap = readJson(join(DATA, 'observed', `${src.id}.json`), null);
