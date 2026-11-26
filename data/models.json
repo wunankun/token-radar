@@ -476,5 +476,21 @@
     "aliases": [
       "glm-4-7"
     ]
+  },
+  "hunyuan-4-flash": {
+    "label": "混元 4 Flash",
+    "vendor": "Tencent",
+    "popularity": 62,
+    "context": 262144,
+    "official": {
+      "provider": "tencent",
+      "model": "hy4-flash"
+    },
+    "aliases": [
+      "hy4-flash",
+      "hunyuan-hy4-flash",
+      "tencent/hy4-flash",
+      "hunyuan-4-flash"
+    ]
   }
 }

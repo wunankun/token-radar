@@ -298,6 +298,23 @@
           "openrouter_id": "z-ai/glm-4.7"
         }
       }
+    },
+    {
+      "id": "tencent",
+      "name": "腾讯混元 官方",
+      "homepage": "https://cloud.tencent.com/product/hunyuan",
+      "pricing_url": "https://cloud.tencent.com/document/product/1729/97731",
+      "currency": "USD",
+      "verified_at": "2026-11-27",
+      "models": {
+        "hunyuan-4-flash": {
+          "input": 0.035,
+          "output": 0.1405,
+          "note": "OpenRouter 挂牌价（tencent/hy4-flash）。",
+          "source": "openrouter",
+          "openrouter_id": "tencent/hy4-flash"
+        }
+      }
     }
   ]
 }

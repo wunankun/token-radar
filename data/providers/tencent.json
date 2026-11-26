@@ -1,0 +1,9 @@
+{
+  "id": "tencent",
+  "name": "腾讯混元 官方",
+  "kind": "official",
+  "official_source": "tencent",
+  "homepage": "https://cloud.tencent.com/product/hunyuan",
+  "affiliate": null,
+  "note": "官方直购，价格锚。"
+}

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T17:39:17.022Z",
+    "generated_at": "2026-11-26T18:03:19.182Z",
     "fx": {
       "usd_cny": 6.6711,
       "as_of": "2026-11-25",
@@ -11,10 +11,10 @@
       "output": 0.3
     },
     "counts": {
-      "rows": 46,
-      "stations": 9,
-      "models": 35,
-      "official_rows": 35,
+      "rows": 47,
+      "stations": 10,
+      "models": 36,
+      "official_rows": 36,
       "demo_rows": 11,
       "with_affiliate": 11,
       "auto_rows": 0,
@@ -44,6 +44,18 @@
           "tokens": 73662858443589
         },
         "order": 1
+      },
+      {
+        "id": "hunyuan-4-flash",
+        "label": "混元 4 Flash",
+        "vendor": "Tencent",
+        "popularity": 62,
+        "coverage": 0,
+        "usage": {
+          "rank": 2,
+          "tokens": 32065593093800
+        },
+        "order": 35
       },
       {
         "id": "glm-5-3-flash",
@@ -380,7 +392,7 @@
       "source": "openrouter",
       "as_of": "2026-11-25",
       "view": "week",
-      "matched": 9,
+      "matched": 10,
       "stations": 0
     },
     "catalog": null,
@@ -1550,6 +1562,88 @@
       "health": null,
       "note": null,
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
+    {
+      "station": {
+        "id": "tencent",
+        "name": "腾讯混元 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://cloud.tencent.com/product/hunyuan",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "hunyuan-4-flash",
+        "label": "混元 4 Flash",
+        "vendor": "Tencent",
+        "context": 262144
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.2335,
+        "output": 0.9373,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 0.2335,
+        "output": 0.9373,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 0.2335,
+        "output": 0.9373,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.035,
+        "output": 0.1405,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 0.4446,
+      "usd": {
+        "effective": {
+          "input": 0.035,
+          "output": 0.1405,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.035,
+          "output": 0.1405,
+          "cache_read": null
+        },
+        "blend": 0.0667,
+        "discount": 0
+      },
+      "calc": "OpenRouter $0.035/M × 汇率 6.6711 = ¥0.2335/M",
+      "calc_full": "OpenRouter $0.035/M × 汇率 6.6711 = ¥0.2335/M",
+      "calc_basis": "OpenRouter $0.035/M × 汇率 6.6711 = ¥0.2335/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
     },
     {
       "station": {
