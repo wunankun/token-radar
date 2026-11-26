@@ -1,0 +1,5 @@
+{
+  "_help": "手动维护的待抓取站点清单。加站点：node scripts/fetch-pricing.mjs --add https://站点域名（会自动发现 /api/pricing 并写回这里）。也可以直接手写 {id,name,homepage,pricing_url,enabled}。enabled:false 的站会被跳过。",
+  "as_of": "2026-11-26",
+  "sources": []
+}

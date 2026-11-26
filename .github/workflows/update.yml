@@ -1,9 +1,12 @@
 name: update
 
+# 定时抓取暂未开启（先手动跑，确认站点清单稳定后再打开）。
+# 打开方式：取消下面两行的注释。
+#  on:
+#    schedule:
+#      - cron: '17 */6 * * *'
+
 on:
-  schedule:
-    # 每 6 小时一次（UTC）。GitHub 的 cron 可能延迟几分钟到几十分钟，属正常。
-    - cron: '17 */6 * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -38,17 +41,20 @@ jobs:
         with:
           node-version: 20
 
+      # 抓取与探活只在手动触发时跑：它们会改 data/，push 触发时不该动数据
       - name: 抓取公开价格（new-api /api/pricing）
+        if: github.event_name == 'workflow_dispatch'
         run: node scripts/fetch-pricing.mjs --write || echo "::warning::部分站点抓取失败，不阻塞构建"
 
       - name: 探活 + 指纹抽检
-        if: env.PROBE_KEYS != ''
+        if: github.event_name == 'workflow_dispatch' && env.PROBE_KEYS != ''
         run: node scripts/probe.mjs || echo "::warning::探活失败，不阻塞构建"
 
       - name: 构建
         run: node scripts/build.mjs --strict
 
       - name: 提交数据与站点
+        if: github.event_name == 'workflow_dispatch'
         run: |
           git config user.name  "token-radar-bot"
           git config user.email "token-radar-bot@users.noreply.github.com"
@@ -56,7 +62,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "没有变化"
           else
-            git commit -m "chore(data): 自动更新 $(date -u +%Y-%m-%dT%H:%MZ)"
+            git commit -m "chore(data): 手动抓取更新 $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
           fi
 

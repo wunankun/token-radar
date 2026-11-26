@@ -14,8 +14,11 @@ jobs:
         with:
           node-version: 20
 
+      - name: 抓取链路单测（假站点，不联网）
+        run: node --test tests/
+
       - name: 离线校验 /api/pricing 解析
-        run: node scripts/fetch-pricing.mjs --fixture tests/fixtures/newapi-pricing.json
+        run: node scripts/fetch-pricing.mjs --fixture tests/fixtures/newapi-pricing.json --only demo-gamma
 
       - name: 构建（warning 也算失败）
         run: node scripts/build.mjs --strict

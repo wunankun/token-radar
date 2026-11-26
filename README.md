@@ -43,6 +43,9 @@
 git clone <your-repo> && cd token-radar
 node scripts/build.mjs          # 生成 dist/index.html + dist/prices.json
 open dist/index.html            # 直接看
+
+node --test tests/              # 抓取链路单测（本地假站点，不联网）
+node scripts/demo-crawl.mjs     # 看抓取+比价整条链路跑一遍
 ```
 
 构建时会做硬校验（不通过直接失败）：
@@ -60,8 +63,10 @@ open dist/index.html            # 直接看
 | --- | --- | --- |
 | 官方价 | 人工读厂商计费页，记录 `verified_at` 与来源链接（`data/official.json`） | 官方计费页 |
 | 中转站价（人工） | 编辑 `data/providers/<id>.json` | 人工核验 |
-| 中转站价（自动） | Actions 定时拉 new-api / one-api 的公开 `GET /api/pricing` | 自动抓取（未核验） |
-| 可用率 | 有 key 的站点定时探活，只统计最近 7 天 | 7 日可用 |
+| 中转站价（自动） | `fetch-pricing.mjs` 拉 new-api / one-api 的公开 `GET /api/pricing` | 自动抓取（未核验） |
+| 可用率 | 有 key 的站点探活，只统计最近 7 天 | 7 日可用 |
+
+自动抓取当前**手动触发**（`node scripts/fetch-pricing.mjs --write`），定时任务还没开，原因见下面「抓取」一节。
 
 自动抓取只写 `data/observed/`，**人工确认后才进 `data/providers/`**。因为 `/api/pricing` 返回的是「站内面值」，只有确认了这站是「1 元 = 1 美元」还是按汇率收人民币，才能正确换算成人民币价。
 
@@ -70,6 +75,56 @@ open dist/index.html            # 直接看
 - DeepSeek 有峰谷价（谷时 5 折）
 - Anthropic 有 5 分钟 / 1 小时缓存写入价、100K 以上长上下文加价
 - OpenAI 有 Batch / 长上下文档
+
+---
+
+## 抓取
+
+中转站大多跑 new-api / one-api，它们暴露一个公开接口 `GET /api/pricing`，返回每个模型的 `model_ratio`。按 one-api 的计费口径（1 USD = 500,000 quota），**USD / 百万 token = model_ratio × 2 × group_ratio**，拿到的正好是站点自己的「倍率价」。
+
+```bash
+# 1. 加站：自动发现定价接口、抓一次、写回 data/sources.json
+node scripts/fetch-pricing.mjs --add https://某个中转站.com
+
+# 2. 手动维护后的日常抓取
+node scripts/fetch-pricing.mjs            # 试跑，只打印
+node scripts/fetch-pricing.mjs --write    # 落盘
+```
+
+产物：
+
+| 文件 | 内容 |
+| --- | --- |
+| `data/sources.json` | 待抓站点清单（`enabled: false` 可临时停抓） |
+| `data/observed/<id>.json` | 最新一次快照：模型价、`group_ratio`、HTTP 状态、耗时、未匹配的模型名 |
+| `data/price-history/<id>.jsonl` | 每次抓取追加一行，用来算涨跌和历史曲线 |
+| `data/observed/index.json` | 全部站点最近一次抓取的总览 |
+
+常用参数：
+
+```bash
+--only <id>            只抓一个站点
+--concurrency 4        并发数（默认 4，别对同一家站压太高）
+--timeout 15000        单次请求超时（毫秒）
+--retries 2            失败重试次数（只对超时/429/5xx 重试，403 直接放弃）
+--fixture <file>       用本地 JSON 跑，不联网
+--list                 看看清单里有哪些站
+```
+
+会打印出涨跌，方便你一眼看出「哪家悄悄涨价了」：
+
+```
+✓ my-station   HTTP 200   312ms  模型 5/6
+   ↑ 涨价 gpt-6.2-sol.input 0.9 → 1.08 (+20%)
+   新增模型：gpt-6.2-astra
+```
+
+**几个现实情况，先说清楚：**
+
+- **不少站抓不到。** 实测中很常见的是 Cloudflare 人机验证（403）、接口被关（404）、或者压根不是 new-api。脚本会把这些原因翻译成人话打印出来，但结论一样：**只能人工录入**。
+- **抓到的只是「面值」。** 站点是「1 元 = 1 美元」还是按汇率收人民币，接口不告诉你。所以自动抓取只写 `data/observed/`，人工确认后手抄进 `data/providers/`（或直接改这份 json 里的 `assumption`）。
+- **模型名各站不同。** `claude-3-5-sonnet-20241022`、`claude-sonnet-4-5` 这类写法靠 `data/models.json` 里的 `aliases` 匹配；匹配不上会列在 `unmatched` 里，照着补别名即可。
+- **按次计费的模型**（图片、视频）`quota_type = 1`，没有 token 单价，直接跳过，不会算成 0 混进排名。
 
 ---
 
@@ -120,14 +175,23 @@ node scripts/add-station.mjs --id my-station --name "某站" --kind official-rel
 
 ## 自动化
 
-`.github/workflows/update.yml`：每 6 小时（以及每次 `data/**` 变更）
+自动化全在 `.github/workflows/update.yml` 和 `check.yml` 两个文件里。
 
-1. `fetch-pricing.mjs --write` 拉公开价格 → `data/observed/`
-2. `probe.mjs` 探活 + 5 道指纹题 + 实测计费系数 → `data/health/`
-3. `build.mjs --strict` 构建
-4. 提交 `data/` 与 `dist/`，部署到 GitHub Pages
+**现在是手动档：没有开定时任务。** 定时抓取一行注释就能打开——等 `data/sources.json` 里的站点稳定、你也确认了哪些站抓得到之后再说，避免每天几十条 failed 的 commit 把仓库刷脏。
 
-开启方式：仓库 **Settings → Pages → Source: GitHub Actions**。
+- **手动触发**（Actions 页面点 Run workflow）：抓取 → 探活 → 构建 → 提交 `data/` 与 `dist/` → 部署 Pages
+- **push 触发**（改了 `data/**` 或 `scripts/**`）：只构建 + 部署，不动数据
+
+打开定时：
+
+```yaml
+# .github/workflows/update.yml 顶部
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+```
+
+开启 Pages：仓库 **Settings → Pages → Source: GitHub Actions**。
 
 探活密钥（可选，没有就跳过）：**Settings → Secrets → New repository secret**
 
@@ -178,16 +242,21 @@ token-radar/
 │   ├── models.json          # 规范模型 id + 别名（用于匹配各站不同的模型命名）
 │   ├── official.json        # 官方价（USD/百万），含 verified_at 与来源链接
 │   ├── providers/*.json     # 一站一文件：价格、充值、计费系数、推广链接、风险标签
+│   ├── sources.json         # 待抓站点清单
 │   ├── observed/*.json      # 自动抓取的候选价（/api/pricing）
+│   ├── price-history/*.jsonl# 每次抓取一行，用于算涨跌
 │   └── health/*.json        # 探活记录（日粒度）
 ├── schema/provider.schema.json
 ├── scripts/
 │   ├── build.mjs            # 校验 + 折算 + 出静态站
-│   ├── fetch-pricing.mjs    # new-api/one-api 公开价格抓取
+│   ├── fetch-pricing.mjs    # 抓取 CLI：加站/发现接口/抓取/比价
+│   ├── demo-crawl.mjs       # 抓取链路自检（起假站点，跑两轮看涨跌）
 │   ├── probe.mjs            # 探活 + 指纹 + 计费系数
 │   ├── add-station.mjs      # 脚手架
-│   └── lib/                 # normalize / render / client / css
-├── tests/fixtures/          # 离线解析测试
+│   └── lib/                 # normalize / render / client / css / crawl（网络+解析+对比）
+├── tests/
+│   ├── crawl.test.mjs       # 抓取链路单测（含本地假站点）
+│   └── fixtures/            # 离线解析用的样例响应
 └── dist/                    # 产物（已提交，可直接用 Pages 托管）
 ```
 
@@ -196,7 +265,7 @@ token-radar/
 ## 路线图
 
 - [ ] 官方价自动同步（各厂页面结构差异大，先保持人工 + `verified_at`）
-- [ ] 历史价格曲线（`data/snapshots/` 日快照 + 折线图）
+- [ ] 历史价格曲线（`data/price-history/*.jsonl` 已经在记了，还差前端折线图）
 - [ ] 模型级「降智」实测（固定题集跑分，横向对比，成本较高）
 - [ ] 按使用场景出榜（Agent / 翻译 / 长文摘要的输入输出配比不同）
 - [ ] RSS / JSON API 给其他工具引用
