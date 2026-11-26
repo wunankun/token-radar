@@ -131,11 +131,12 @@
       "name": "api.yinziapi.top",
       "homepage": "https://api.yinziapi.top",
       "pricing_url": "https://api.yinziapi.top/api/pricing",
-      "enabled": true,
+      "enabled": false,
       "group_ratio": 1,
       "models_observed": 208,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "note": "手动排除（2026-11-27）：站主反馈该站报价不可信/不上榜"
     },
     {
       "id": "yanai-it-com",
