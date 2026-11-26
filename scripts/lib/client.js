@@ -7,7 +7,7 @@
   var meta = DATA.meta || {};
   var W = meta.blend || { input: 0.7, output: 0.3 };
 
-  var state = { q: '', model: '', kind: '', sort: 'discount', showDemo: false, onlyAff: false, currency: 'usd', page: 1, perPage: 50 };
+  var state = { q: '', model: '', kind: '', sort: 'discount', showDemo: false, onlyAff: false, currency: 'cny', page: 1, perPage: 50 };
 
   // 当前计价口径：美元 = 站上标的美元牌价（倍率 1.0 → 0%）；人民币 = 你实际掏的钱（1 元 = 1 美元额度）
   var CUR = {
@@ -83,11 +83,12 @@
   }
 
   /* 一格两组数：左边现价，右边划掉的官方价 */
-  function pairCell(now, off, tip) {
+  function pairCell(now, off, tip, isOfficial) {
     if (now === null || now === undefined) return '<span class="muted">—</span>';
     var html = '<span class="unit" title="' + (tip || '') + '">' + money(now) + '</span>';
-    // 和官方价一样就只显示一个数（官方行、以及已经被官方原价卖的站）
-    if (off !== null && off !== undefined && money(now) !== money(off)) {
+    // 官方行只有一个数（它自己就是基准）；中转行一律把官方价划掉放在右边，
+    // 即使两者相同也显示，否则美元口径下满屏 1.0 倍率的站会看不出比价对象。
+    if (!isOfficial && off !== null && off !== undefined) {
       html += '<span class="offp" title="官方同口径">' + money(off) + '</span>';
     }
     return html;
@@ -202,6 +203,7 @@
   function renderRow(r) {
     var v = view(r);
     var d = v.disc;
+    var isOff = r.station.kind === 'official';
     var calcTip = r.station.kind === 'official'
       ? '官方基准价'
       : '站上标价 ' + money(state.currency === 'usd' ? r.nominal.input : r.nominal.input) + ' × 计费 ' + (r.billing_ratio || 1).toFixed(2) + ' ÷ 赠送 ' + (r.bonus || 1).toFixed(2) + ' = 到手价';
@@ -212,11 +214,12 @@
     return '<tr class="' + (r.station.demo ? 'is-demo' : '') + '">' +
       '<td>' + stationCell(r) + '</td>' +
       '<td><div class="model"><div class="m">' + esc(r.model.label) + '</div><div class="v">' + esc(r.model.vendor) + '</div></div></td>' +
-      '<td class="num">' + pairCell(v.input, v.off && v.off.input, calcTip) + '</td>' +
-      '<td class="num">' + pairCell(v.output, v.off && v.off.output, calcTip) + '</td>' +
-      '<td class="num hide-md">' + pairCell(v.cache_read, v.off && v.off.cache_read, calcTip) + '</td>' +
+      '<td class="num">' + pairCell(v.input, v.off && v.off.input, calcTip, isOff) + '</td>' +
+      '<td class="num">' + pairCell(v.output, v.off && v.off.output, calcTip, isOff) + '</td>' +
+      '<td class="num hide-md">' + pairCell(v.cache_read, v.off && v.off.cache_read, calcTip, isOff) + '</td>' +
       '<td class="num"><span class="disc ' + discCls(d) + '" title="' + dTip + '">' +
         (r.station.kind === 'official' ? '官方' : discText(d)) + '</span></td>' +
+      '<td class="calc hide-lg" title="' + esc(r.calc || '') + '">' + esc(r.calc_v || r.calc || '') + '</td>' +
       '<td class="hide-md">' + sourceCell(r) + '</td>' +
       '</tr>';
   }
@@ -233,10 +236,11 @@
 
     $('#tbody').innerHTML = slice.length
       ? slice.map(renderRow).join('')
-      : '<tr><td colspan="7" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
+      : '<tr><td colspan="8" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
     $('#count').textContent = list.length + ' / ' + rows.length + ' 行';
     renderPager(list.length, pages, start, slice.length);
     renderUnits();
+    renderSeg();
     renderCurNote();
     renderKpis();
   }
@@ -275,6 +279,12 @@
       html += '<button data-pg="' + Math.min(pages, state.page + 1) + '"' + (state.page === pages ? ' disabled' : '') + '>下一页</button>';
     }
     el.innerHTML = html;
+  }
+
+  function renderSeg() {
+    Array.prototype.forEach.call(document.querySelectorAll('#f-cur button'), function (x) {
+      x.classList.toggle('on', x.dataset.cur === state.currency);
+    });
   }
 
   function renderCurNote() {

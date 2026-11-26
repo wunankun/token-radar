@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T14:35:14.323Z",
+    "generated_at": "2026-11-26T14:47:55.454Z",
     "fx": {
       "usd_cny": 6.6609,
       "as_of": "2026-11-26",
@@ -182,6 +182,9 @@
         "blend": 0.285,
         "discount": 0.5
       },
+      "calc": "倍率 ×0.5 × 官方 $0.3 = ¥0.15/M",
+      "calc_basis": "倍率 ×0.5 × 官方 $0.3 = ¥0.15/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×0.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -260,6 +263,9 @@
         "blend": 2.97,
         "discount": 0.325
       },
+      "calc": "官方 $2 × 0.5 = ¥1/M（1 元买 1 美元额度） · × 计费 1.35",
+      "calc_basis": "官方 $2 × 0.5 = ¥1/M（1 元买 1 美元额度）",
+      "calc_adjust": "× 计费 1.35",
       "health": {
         "days": 14,
         "uptime_7d": 0.7142857142857143,
@@ -345,6 +351,9 @@
         "blend": 11.88,
         "discount": 0.325
       },
+      "calc": "官方 $8 × 0.5 = ¥4/M（1 元买 1 美元额度） · × 计费 1.35",
+      "calc_basis": "官方 $8 × 0.5 = ¥4/M（1 元买 1 美元额度）",
+      "calc_adjust": "× 计费 1.35",
       "health": {
         "days": 14,
         "uptime_7d": 0.7142857142857143,
@@ -430,6 +439,9 @@
         "blend": 3.267,
         "discount": 0.2575
       },
+      "calc": "官方 $2 × 0.55 = ¥1.1/M（1 元买 1 美元额度） · × 计费 1.35",
+      "calc_basis": "官方 $2 × 0.55 = ¥1.1/M（1 元买 1 美元额度）",
+      "calc_adjust": "× 计费 1.35",
       "health": {
         "days": 14,
         "uptime_7d": 0.7142857142857143,
@@ -515,6 +527,9 @@
         "blend": 6.534,
         "discount": 0.2575
       },
+      "calc": "官方 $4 × 0.55 = ¥2.2/M（1 元买 1 美元额度） · × 计费 1.35",
+      "calc_basis": "官方 $4 × 0.55 = ¥2.2/M（1 元买 1 美元额度）",
+      "calc_adjust": "× 计费 1.35",
       "health": {
         "days": 14,
         "uptime_7d": 0.7142857142857143,
@@ -597,6 +612,9 @@
         "blend": 0.57,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $0.3 = ¥0.3/M",
+      "calc_basis": "倍率 ×1 × 官方 $0.3 = ¥0.3/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -672,6 +690,9 @@
         "blend": 0.57,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $0.3 = ¥0.3/M",
+      "calc_basis": "倍率 ×1 × 官方 $0.3 = ¥0.3/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -747,6 +768,9 @@
         "blend": 2.112,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $1.32 = ¥1.32/M",
+      "calc_basis": "倍率 ×1 × 官方 $1.32 = ¥1.32/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -822,6 +846,9 @@
         "blend": 2.112,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $1.32 = ¥1.32/M",
+      "calc_basis": "倍率 ×1 × 官方 $1.32 = ¥1.32/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -897,6 +924,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -972,6 +1002,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1047,6 +1080,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1122,6 +1158,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1197,6 +1236,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1272,6 +1314,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -1347,6 +1392,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1422,6 +1470,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -1497,6 +1548,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -1572,6 +1626,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1647,6 +1704,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1722,6 +1782,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1797,6 +1860,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -1872,6 +1938,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -1947,6 +2016,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2022,6 +2094,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -2097,6 +2172,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -2172,6 +2250,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2247,6 +2328,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2322,6 +2406,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -2397,6 +2484,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2472,6 +2562,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -2547,6 +2640,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -2622,6 +2718,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2697,6 +2796,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -2772,6 +2874,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2847,6 +2952,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -2922,6 +3030,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2997,6 +3108,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3072,6 +3186,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3147,6 +3264,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3222,6 +3342,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -3297,6 +3420,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3372,6 +3498,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3447,6 +3576,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3522,6 +3654,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -3597,6 +3732,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -3672,6 +3810,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3747,6 +3888,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3822,6 +3966,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -3897,6 +4044,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3972,6 +4122,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -4047,6 +4200,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4122,6 +4278,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4197,6 +4356,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4272,6 +4434,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -4347,6 +4512,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4422,6 +4590,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4497,6 +4668,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -4572,6 +4746,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -4647,6 +4824,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4722,6 +4902,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -4797,6 +4980,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4872,6 +5058,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4947,6 +5136,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5022,6 +5214,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5097,6 +5292,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5172,6 +5370,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5247,6 +5448,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5322,6 +5526,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5397,6 +5604,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5472,6 +5682,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5547,6 +5760,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5622,6 +5838,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5697,6 +5916,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5772,6 +5994,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5847,6 +6072,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5922,6 +6150,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5997,6 +6228,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6072,6 +6306,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6147,6 +6384,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6222,6 +6462,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6297,6 +6540,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6372,6 +6618,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6447,6 +6696,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6522,6 +6774,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6597,6 +6852,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6672,6 +6930,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6747,6 +7008,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6822,6 +7086,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6897,6 +7164,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6972,6 +7242,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -7047,6 +7320,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -7122,6 +7398,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -7197,6 +7476,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -7272,6 +7554,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -7347,6 +7632,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -7422,6 +7710,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -7497,6 +7788,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -7572,6 +7866,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -7647,6 +7944,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -7722,6 +8022,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7797,6 +8100,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7872,6 +8178,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7947,6 +8256,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -8022,6 +8334,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -8097,6 +8412,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -8172,6 +8490,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -8247,6 +8568,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -8322,6 +8646,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -8397,6 +8724,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -8472,6 +8802,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -8547,6 +8880,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -8622,6 +8958,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -8697,6 +9036,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -8772,6 +9114,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -8847,6 +9192,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -8922,6 +9270,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -8997,6 +9348,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -9072,6 +9426,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -9147,6 +9504,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -9222,6 +9582,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -9297,6 +9660,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -9372,6 +9738,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -9447,6 +9816,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -9522,6 +9894,9 @@
         "blend": 11,
         "discount": -0.25
       },
+      "calc": "倍率 ×1.25 × 官方 $4 = ¥5/M",
+      "calc_basis": "倍率 ×1.25 × 官方 $4 = ¥5/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.25（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -9597,6 +9972,9 @@
         "blend": 22,
         "discount": -0.25
       },
+      "calc": "倍率 ×1.25 × 官方 $8 = ¥10/M",
+      "calc_basis": "倍率 ×1.25 × 官方 $8 = ¥10/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.25（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -9672,6 +10050,9 @@
         "blend": 6.6,
         "discount": -0.5
       },
+      "calc": "倍率 ×1.5 × 官方 $2 = ¥3/M",
+      "calc_basis": "倍率 ×1.5 × 官方 $2 = ¥3/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -9747,6 +10128,9 @@
         "blend": 6.6,
         "discount": -0.5
       },
+      "calc": "倍率 ×1.5 × 官方 $2 = ¥3/M",
+      "calc_basis": "倍率 ×1.5 × 官方 $2 = ¥3/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -9822,6 +10206,9 @@
         "blend": 6.6,
         "discount": -0.5
       },
+      "calc": "倍率 ×1.5 × 官方 $2 = ¥3/M",
+      "calc_basis": "倍率 ×1.5 × 官方 $2 = ¥3/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -9897,6 +10284,9 @@
         "blend": 1.0857,
         "discount": -0.9047
       },
+      "calc": "倍率 ×1.905 × 官方 $0.3 = ¥0.5714/M",
+      "calc_basis": "倍率 ×1.905 × 官方 $0.3 = ¥0.5714/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.905（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -9972,6 +10362,9 @@
         "blend": 4.1143,
         "discount": -0.948
       },
+      "calc": "倍率 ×1.948 × 官方 $1.32 = ¥2.5714/M",
+      "calc_basis": "倍率 ×1.948 × 官方 $1.32 = ¥2.5714/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.948（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10047,6 +10440,9 @@
         "blend": 1.14,
         "discount": -1
       },
+      "calc": "倍率 ×2 × 官方 $0.3 = ¥0.6/M",
+      "calc_basis": "倍率 ×2 × 官方 $0.3 = ¥0.6/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×2（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10123,6 +10519,9 @@
         "blend": 0.1794,
         "discount": 0.6853
       },
+      "calc": "站上标价 ¥1/M · × 计费 1.12 ÷ 赠送 1.5",
+      "calc_basis": "站上标价 ¥1/M",
+      "calc_adjust": "× 计费 1.12 ÷ 赠送 1.5",
       "health": {
         "days": 14,
         "uptime_7d": 1,
@@ -10205,6 +10604,9 @@
         "blend": 21,
         "discount": -1.3864
       },
+      "calc": "倍率 ×2.25 × 官方 $4 = ¥9/M",
+      "calc_basis": "倍率 ×2.25 × 官方 $4 = ¥9/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×2.25（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -10281,6 +10683,9 @@
         "blend": 0.8071,
         "discount": 0.6179
       },
+      "calc": "站上标价 ¥4.5/M · × 计费 1.12 ÷ 赠送 1.5",
+      "calc_basis": "站上标价 ¥4.5/M",
+      "calc_adjust": "× 计费 1.12 ÷ 赠送 1.5",
       "health": {
         "days": 14,
         "uptime_7d": 1,
@@ -10363,6 +10768,9 @@
         "blend": 1.9,
         "discount": -2.3333
       },
+      "calc": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
+      "calc_basis": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10438,6 +10846,9 @@
         "blend": 1.9,
         "discount": -2.3333
       },
+      "calc": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
+      "calc_basis": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10513,6 +10924,9 @@
         "blend": 1.9,
         "discount": -2.3333
       },
+      "calc": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
+      "calc_basis": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10588,6 +11002,9 @@
         "blend": 1.9,
         "discount": -2.3333
       },
+      "calc": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
+      "calc_basis": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10663,6 +11080,9 @@
         "blend": 1.9,
         "discount": -2.3333
       },
+      "calc": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
+      "calc_basis": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10738,6 +11158,9 @@
         "blend": 1.9,
         "discount": -2.3333
       },
+      "calc": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
+      "calc_basis": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10813,6 +11236,9 @@
         "blend": 7.2,
         "discount": -2.4091
       },
+      "calc": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
+      "calc_basis": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10888,6 +11314,9 @@
         "blend": 7.2,
         "discount": -2.4091
       },
+      "calc": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
+      "calc_basis": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10963,6 +11392,9 @@
         "blend": 7.2,
         "discount": -2.4091
       },
+      "calc": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
+      "calc_basis": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -11038,6 +11470,9 @@
         "blend": 7.2,
         "discount": -2.4091
       },
+      "calc": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
+      "calc_basis": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -11113,6 +11548,9 @@
         "blend": 7.2,
         "discount": -2.4091
       },
+      "calc": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
+      "calc_basis": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -11188,6 +11626,9 @@
         "blend": 7.2,
         "discount": -2.4091
       },
+      "calc": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
+      "calc_basis": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -11263,6 +11704,9 @@
         "blend": 7.2,
         "discount": -2.4091
       },
+      "calc": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
+      "calc_basis": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -11336,6 +11780,9 @@
         "blend": 0.2945,
         "discount": 0.4833
       },
+      "calc": "官方人民币 ¥1.9983 × 0.62 = ¥1.2389/M · ÷ 赠送 1.2",
+      "calc_basis": "官方人民币 ¥1.9983 × 0.62 = ¥1.2389/M",
+      "calc_adjust": "÷ 赠送 1.2",
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -11416,6 +11863,9 @@
         "blend": 1.0912,
         "discount": 0.4833
       },
+      "calc": "官方人民币 ¥8.7924 × 0.62 = ¥5.4513/M · ÷ 赠送 1.2",
+      "calc_basis": "官方人民币 ¥8.7924 × 0.62 = ¥5.4513/M",
+      "calc_adjust": "÷ 赠送 1.2",
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -11496,6 +11946,9 @@
         "blend": 2.2733,
         "discount": 0.4833
       },
+      "calc": "官方人民币 ¥13.3218 × 0.62 = ¥8.2595/M · ÷ 赠送 1.2",
+      "calc_basis": "官方人民币 ¥13.3218 × 0.62 = ¥8.2595/M",
+      "calc_adjust": "÷ 赠送 1.2",
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -11576,6 +12029,9 @@
         "blend": 2.2733,
         "discount": 0.4833
       },
+      "calc": "官方人民币 ¥13.3218 × 0.62 = ¥8.2595/M · ÷ 赠送 1.2",
+      "calc_basis": "官方人民币 ¥13.3218 × 0.62 = ¥8.2595/M",
+      "calc_adjust": "÷ 赠送 1.2",
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -11656,6 +12112,9 @@
         "blend": 4.5467,
         "discount": 0.4833
       },
+      "calc": "官方人民币 ¥26.6436 × 0.62 = ¥16.519/M · ÷ 赠送 1.2",
+      "calc_basis": "官方人民币 ¥26.6436 × 0.62 = ¥16.519/M",
+      "calc_adjust": "÷ 赠送 1.2",
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -11738,6 +12197,9 @@
         "blend": 26.4,
         "discount": -5
       },
+      "calc": "倍率 ×6 × 官方 $2 = ¥12/M",
+      "calc_basis": "倍率 ×6 × 官方 $2 = ¥12/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -11813,6 +12275,9 @@
         "blend": 52.8,
         "discount": -5
       },
+      "calc": "倍率 ×6 × 官方 $4 = ¥24/M",
+      "calc_basis": "倍率 ×6 × 官方 $4 = ¥24/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -11886,6 +12351,9 @@
         "blend": 0.57,
         "discount": 0
       },
+      "calc": "官方 $0.3/M × 汇率 6.6609 = ¥1.9983/M",
+      "calc_basis": "官方 $0.3/M × 汇率 6.6609 = ¥1.9983/M",
+      "calc_adjust": "",
       "health": null,
       "note": null,
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
@@ -11958,6 +12426,9 @@
         "blend": 2.112,
         "discount": 0
       },
+      "calc": "官方 $1.32/M × 汇率 6.6609 = ¥8.7924/M",
+      "calc_basis": "官方 $1.32/M × 汇率 6.6609 = ¥8.7924/M",
+      "calc_adjust": "",
       "health": null,
       "note": null,
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
@@ -12030,6 +12501,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "官方 $2/M × 汇率 6.6609 = ¥13.3218/M",
+      "calc_basis": "官方 $2/M × 汇率 6.6609 = ¥13.3218/M",
+      "calc_adjust": "",
       "health": null,
       "note": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
@@ -12102,6 +12576,9 @@
         "blend": 4.4,
         "discount": 0
       },
+      "calc": "官方 $2/M × 汇率 6.6609 = ¥13.3218/M",
+      "calc_basis": "官方 $2/M × 汇率 6.6609 = ¥13.3218/M",
+      "calc_adjust": "",
       "health": null,
       "note": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
@@ -12174,6 +12651,9 @@
         "blend": 8.8,
         "discount": 0
       },
+      "calc": "官方 $4/M × 汇率 6.6609 = ¥26.6436/M",
+      "calc_basis": "官方 $4/M × 汇率 6.6609 = ¥26.6436/M",
+      "calc_adjust": "",
       "health": null,
       "note": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
@@ -12246,6 +12726,9 @@
         "blend": 17.6,
         "discount": 0
       },
+      "calc": "官方 $8/M × 汇率 6.6609 = ¥53.2872/M",
+      "calc_basis": "官方 $8/M × 汇率 6.6609 = ¥53.2872/M",
+      "calc_adjust": "",
       "health": null,
       "note": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
@@ -12320,6 +12803,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -12395,6 +12881,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -12470,6 +12959,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -12545,6 +13037,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -12620,6 +13115,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -12695,6 +13193,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -12770,6 +13271,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -12845,6 +13349,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -12920,6 +13427,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -12995,6 +13505,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -13070,6 +13583,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -13145,6 +13661,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -13220,6 +13739,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -13295,6 +13817,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -13370,6 +13895,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -13445,6 +13973,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -13520,6 +14051,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -13595,6 +14129,9 @@
         "blend": 3.8,
         "discount": -5.6667
       },
+      "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -13670,6 +14207,9 @@
         "blend": 14.4,
         "discount": -5.8182
       },
+      "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -13745,6 +14285,9 @@
         "blend": 14.4,
         "discount": -5.8182
       },
+      "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -13820,6 +14363,9 @@
         "blend": 14.4,
         "discount": -5.8182
       },
+      "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -13895,6 +14441,9 @@
         "blend": 14.4,
         "discount": -5.8182
       },
+      "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -13970,6 +14519,9 @@
         "blend": 14.4,
         "discount": -5.8182
       },
+      "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -14045,6 +14597,9 @@
         "blend": 14.4,
         "discount": -5.8182
       },
+      "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -14120,6 +14675,9 @@
         "blend": 14.4,
         "discount": -5.8182
       },
+      "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -14195,6 +14753,9 @@
         "blend": 14.4,
         "discount": -5.8182
       },
+      "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -14270,6 +14831,9 @@
         "blend": 14.4,
         "discount": -5.8182
       },
+      "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -14345,6 +14909,9 @@
         "blend": 14.4,
         "discount": -5.8182
       },
+      "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -14420,6 +14987,9 @@
         "blend": 165,
         "discount": -8.375
       },
+      "calc": "倍率 ×9.375 × 官方 $8 = ¥75/M",
+      "calc_basis": "倍率 ×9.375 × 官方 $8 = ¥75/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×9.375（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -14495,6 +15065,9 @@
         "blend": 5.7,
         "discount": -9
       },
+      "calc": "倍率 ×10 × 官方 $0.3 = ¥3/M",
+      "calc_basis": "倍率 ×10 × 官方 $0.3 = ¥3/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×10（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -14570,6 +15143,9 @@
         "blend": 6.65,
         "discount": -10.6667
       },
+      "calc": "倍率 ×11.667 × 官方 $0.3 = ¥3.5/M",
+      "calc_basis": "倍率 ×11.667 × 官方 $0.3 = ¥3.5/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×11.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -14645,6 +15221,9 @@
         "blend": 165,
         "discount": -36.5
       },
+      "calc": "倍率 ×37.5 × 官方 $2 = ¥75/M",
+      "calc_basis": "倍率 ×37.5 × 官方 $2 = ¥75/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×37.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -14720,6 +15299,9 @@
         "blend": 165,
         "discount": -36.5
       },
+      "calc": "倍率 ×37.5 × 官方 $2 = ¥75/M",
+      "calc_basis": "倍率 ×37.5 × 官方 $2 = ¥75/M",
+      "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×37.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",

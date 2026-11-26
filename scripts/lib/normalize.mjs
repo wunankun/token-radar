@@ -45,6 +45,9 @@ export const FLAG_LABEL = {
 };
 
 const r4 = (n) => (n == null || !Number.isFinite(n) ? null : Math.round(n * 10000) / 10000);
+const fmt = (n) => (n == null || !Number.isFinite(n) ? '—' : String(Number(n.toFixed(4))));
+const usd = (n) => '$' + fmt(n);
+const cny = (n) => '¥' + fmt(n);
 const num = (v) => (typeof v === 'number' && Number.isFinite(v) ? v : null);
 const div = (a, b) => (a == null || !b ? null : a / b);
 
@@ -162,6 +165,27 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
   const usdBlend = usdEffective.input == null || usdEffective.output == null ? null : usdEffective.input * w.input + usdEffective.output * w.output;
   const usdOffBlend = official && official.usd.input != null ? official.usd.input * w.input + official.usd.output * w.output : null;
 
+  // 「怎么算的」：把这一行的推导写成人话，表格里单独一栏
+  let basis;
+  const base = stationModel?.base || 'usd_official';
+  const value = num(stationModel?.value);
+  if (mode === 'official') {
+    basis = `官方 ${usd(official?.usd.input)}/M × 汇率 ${fmt(fx)} = ${cny(officialCny?.input)}/M`;
+  } else if (mode === 'multiplier' && base === 'usd_official') {
+    basis = `官方 ${usd(official?.usd.input)} × ${fmt(value)} = ${cny(nominal.input)}/M（1 元买 1 美元额度）`;
+  } else if (mode === 'multiplier') {
+    basis = `官方人民币 ${cny(officialCny?.input)} × ${fmt(value)} = ${cny(nominal.input)}/M`;
+  } else if (num(stationModel?.multiple) != null && official) {
+    basis =
+      `倍率 ×${fmt(stationModel.multiple)} × 官方 ${usd(official.usd.input)} = ${cny(nominal.input)}/M`;
+  } else {
+    basis = `站上标价 ${cny(nominal.input)}/M`;
+  }
+  const adj = [];
+  if (billing !== 1) adj.push(`× 计费 ${fmt(billing)}`);
+  if (bonus !== 1) adj.push(`÷ 赠送 ${fmt(bonus)}`);
+  const calc = basis + (adj.length ? ` · ${adj.join(' ')}` : '');
+
   return {
     row: {
       station: {
@@ -198,6 +222,9 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
         blend: r4(usdBlend),
         discount: div(usdBlend, usdOffBlend) == null ? null : r4(1 - div(usdBlend, usdOffBlend)),
       },
+      calc,
+      calc_basis: basis,
+      calc_adjust: adj.join(' '),
       health: health || null,
       note: stationModel?.note ?? null,
       pricing_url: official?.pricing_url ?? station.pricing_url ?? station.homepage ?? null,

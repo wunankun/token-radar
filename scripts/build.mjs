@@ -137,7 +137,13 @@ for (const p of [...providers, ...scanned]) {
     const stationModel = manual
       ? inherit(manual)
       : auto
-        ? { mode: 'absolute', input: auto.input, output: auto.output, cache_read: auto.cache_read }
+        ? {
+            mode: 'absolute',
+            input: auto.input,
+            output: auto.output,
+            cache_read: auto.cache_read,
+            multiple: verdict?.mult?.get(modelId) ?? null,
+          }
         : null;
     if (!stationModel) continue;
 

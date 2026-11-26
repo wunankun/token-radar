@@ -109,6 +109,7 @@ ${css}
           <th class="num"><span class="th-u">输出 $/百万</span><br><span class="th-sub">现价 / 官方</span></th>
           <th class="num hide-md"><span class="th-u">缓存 $/百万</span><br><span class="th-sub">现价 / 官方</span></th>
           <th class="num">优惠力度</th>
+          <th class="calc-th">怎么算的<sup title="以输入价为例；输出价同一套系数">以输入为例</sup></th>
           <th class="hide-md">价格来源</th>
         </tr>
       </thead>
