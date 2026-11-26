@@ -7,7 +7,7 @@
  */
 import { join } from 'node:path';
 import { writeFileSync } from 'node:fs';
-import { loadAll, writeJson, DIST, ensureDir, loadHealth } from './lib/io.mjs';
+import { loadAll, writeJson, DIST, DATA, ensureDir, loadHealth, readJson } from './lib/io.mjs';
 import { loadObservedStations, loadVerdicts } from './lib/observed-stations.mjs';
 const round4 = (n) => (Number.isFinite(n) ? Math.round(n * 1e4) / 1e4 : n);
 import { pickGroup, GROUP_SOURCE_LABEL } from './lib/pick-group.mjs';
@@ -303,6 +303,15 @@ const meta = {
     : null,
   models: modelList,
   heat: { source: heatFromData ? 'coverage' : 'manual', stations: heatStations.size, max_coverage: maxCoverage },
+  disabled_sources: (readJson(join(DATA, 'sources.json'), { sources: [] }).sources || [])
+    .filter((s) => s && s.enabled === false)
+    .map((s) => ({
+      id: s.id,
+      name: s.name || s.id,
+      status: s.status || 'off',
+      note: s.note || '',
+      disabled_at: s.disabled_at || '',
+    })),
   disclosure: config.disclosure,
   site: config.site,
 };

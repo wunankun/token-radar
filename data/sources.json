@@ -73,11 +73,14 @@
       "name": "token.pudport.com",
       "homepage": "https://token.pudport.com",
       "pricing_url": "https://token.pudport.com/api/pricing",
-      "enabled": true,
+      "enabled": false,
       "group_ratio": 1,
       "models_observed": 324,
       "first_seen": "2026-11-26",
-      "origin": "scan"
+      "origin": "scan",
+      "status": "broken",
+      "disabled_at": "2026-11-26",
+      "note": "官网流程跑不通，用户实测"
     },
     {
       "id": "api-openlux-ai",

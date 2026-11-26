@@ -172,7 +172,7 @@ node scripts/fetch-pricing.mjs --write    # 落盘
 
 | 文件 | 内容 |
 | --- | --- |
-| `data/sources.json` | 待抓站点清单（`enabled: false` 可临时停抓） |
+| `data/sources.json` | 待抓站点清单。`enabled: false` 停抓；配 `status` / `note` / `disabled_at` 会在页面底部写明「已停用 X 家：域名（原因）」，停用站既不抓也不上榜 |
 | `data/observed/<id>.json` | 最新一次快照：模型价、`group_ratio`、HTTP 状态、耗时、未匹配的模型名 |
 | `data/price-history/<id>.jsonl` | 每次抓取追加一行，用来算涨跌和历史曲线 |
 | `data/observed/index.json` | 全部站点最近一次抓取的总览 |

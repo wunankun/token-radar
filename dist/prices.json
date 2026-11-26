@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T15:29:06.465Z",
+    "generated_at": "2026-11-26T16:03:23.940Z",
     "fx": {
       "usd_cny": 6.6609,
       "as_of": "2026-11-26",
@@ -11,14 +11,14 @@
       "output": 0.3
     },
     "counts": {
-      "rows": 199,
-      "stations": 61,
+      "rows": 196,
+      "stations": 60,
       "models": 6,
       "official_rows": 6,
       "demo_rows": 11,
       "with_affiliate": 11,
-      "auto_rows": 182,
-      "auto_stations": 55
+      "auto_rows": 179,
+      "auto_stations": 54
     },
     "best": {
       "station": "api.yinziapi.top",
@@ -57,8 +57,8 @@
         "label": "DeepSeek Flash",
         "vendor": "DeepSeek",
         "popularity": 85,
-        "coverage": 34,
-        "heat": 83,
+        "coverage": 33,
+        "heat": 80,
         "heat_source": "coverage"
       },
       {
@@ -75,8 +75,8 @@
         "label": "GPT-6.2 Sol",
         "vendor": "OpenAI",
         "popularity": 88,
-        "coverage": 26,
-        "heat": 63,
+        "coverage": 25,
+        "heat": 61,
         "heat_source": "coverage"
       },
       {
@@ -84,8 +84,8 @@
         "label": "GPT-6.2 Astra",
         "vendor": "OpenAI",
         "popularity": 68,
-        "coverage": 26,
-        "heat": 63,
+        "coverage": 25,
+        "heat": 61,
         "heat_source": "coverage"
       },
       {
@@ -100,9 +100,18 @@
     ],
     "heat": {
       "source": "coverage",
-      "stations": 55,
+      "stations": 54,
       "max_coverage": 41
     },
+    "disabled_sources": [
+      {
+        "id": "token-pudport-com",
+        "name": "token.pudport.com",
+        "status": "broken",
+        "note": "官网流程跑不通，用户实测",
+        "disabled_at": "2026-11-26"
+      }
+    ],
     "disclosure": "本页部分链接为推广链接，通过链接注册我们可能拿到返佣。排名只按折算后的真实到手价排序，不售卖榜位；返佣与名次无关。价格均来自站点公开页面或公开 API，随时可能变，下单前请自行核对。",
     "site": {
       "name": "Token 雷达",
@@ -8274,97 +8283,6 @@
     },
     {
       "station": {
-        "id": "token-pudport-com",
-        "name": "token.pudport.com",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://token.pudport.com",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "deepseek-flash",
-        "label": "DeepSeek Flash",
-        "vendor": "DeepSeek",
-        "context": 1000000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 0.15,
-        "output": 0.6,
-        "cache_read": 0.003
-      },
-      "effective": {
-        "input": 0.15,
-        "output": 0.6,
-        "cache_read": 0.003
-      },
-      "official_cny": {
-        "input": 1.9983,
-        "output": 7.9931,
-        "cache_read": 0.04
-      },
-      "official_usd": {
-        "input": 0.3,
-        "output": 1.2,
-        "cache_read": 0.006,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 0.0751,
-        "output": 0.0751,
-        "blend": 0.0751
-      },
-      "discount": 0.9249,
-      "blend_effective": 0.285,
-      "usd": {
-        "effective": {
-          "input": 0.0225,
-          "output": 0.0901,
-          "cache_read": 0.0005
-        },
-        "official": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.006
-        },
-        "blend": 0.0428,
-        "discount": 0.9249
-      },
-      "calc": "官方 $0.3 × 倍率 0.5（default·默认分组） = ¥0.15/M",
-      "calc_full": "官方 $0.3 × 倍率 0.5（default·默认分组） = ¥0.15/M",
-      "calc_basis": "官方 $0.3 × 倍率 0.5（default·默认分组） = ¥0.15/M",
-      "group": {
-        "name": "default",
-        "full": "default",
-        "ratio": 1,
-        "source": "default",
-        "source_label": "默认分组",
-        "desc": "",
-        "count": null
-      },
-      "observed": true,
-      "tiers": null,
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×0.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
         "id": "bearlab-space",
         "name": "bearlab.space",
         "kind": "relay",
@@ -11345,97 +11263,6 @@
     },
     {
       "station": {
-        "id": "token-pudport-com",
-        "name": "token.pudport.com",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://token.pudport.com",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "gpt-6.2-sol",
-        "label": "GPT-6.2 Sol",
-        "vendor": "OpenAI",
-        "context": 400000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 2,
-        "output": 10,
-        "cache_read": 0.1
-      },
-      "effective": {
-        "input": 2,
-        "output": 10,
-        "cache_read": 0.1
-      },
-      "official_cny": {
-        "input": 13.3218,
-        "output": 66.609,
-        "cache_read": 0.6661
-      },
-      "official_usd": {
-        "input": 2,
-        "output": 10,
-        "cache_read": 0.1,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 0.1501,
-        "output": 0.1501,
-        "blend": 0.1501
-      },
-      "discount": 0.8499,
-      "blend_effective": 4.4,
-      "usd": {
-        "effective": {
-          "input": 0.3003,
-          "output": 1.5013,
-          "cache_read": 0.015
-        },
-        "official": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
-        },
-        "blend": 0.6606,
-        "discount": 0.8499
-      },
-      "calc": "官方 $2 × 倍率 1（default·默认分组） = ¥2/M",
-      "calc_full": "官方 $2 × 倍率 1（default·默认分组） = ¥2/M",
-      "calc_basis": "官方 $2 × 倍率 1（default·默认分组） = ¥2/M",
-      "group": {
-        "name": "default",
-        "full": "default",
-        "ratio": 1,
-        "source": "default",
-        "source_label": "默认分组",
-        "desc": "",
-        "count": null
-      },
-      "observed": true,
-      "tiers": null,
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://platform.openai.com/docs/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
         "id": "apibasis-com",
         "name": "apibasis.com",
         "kind": "relay",
@@ -12958,97 +12785,6 @@
         "max": 10,
         "min_name": "Codex-Plus-Pro 混池"
       },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://platform.openai.com/docs/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
-        "id": "token-pudport-com",
-        "name": "token.pudport.com",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://token.pudport.com",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "gpt-6.2-astra",
-        "label": "GPT-6.2 Astra",
-        "vendor": "OpenAI",
-        "context": 400000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 8,
-        "output": 40,
-        "cache_read": 0.4
-      },
-      "effective": {
-        "input": 8,
-        "output": 40,
-        "cache_read": 0.4
-      },
-      "official_cny": {
-        "input": 53.2872,
-        "output": 266.436,
-        "cache_read": 2.6644
-      },
-      "official_usd": {
-        "input": 8,
-        "output": 40,
-        "cache_read": 0.4,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 0.1501,
-        "output": 0.1501,
-        "blend": 0.1501
-      },
-      "discount": 0.8499,
-      "blend_effective": 17.6,
-      "usd": {
-        "effective": {
-          "input": 1.201,
-          "output": 6.0052,
-          "cache_read": 0.0601
-        },
-        "official": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
-        },
-        "blend": 2.6423,
-        "discount": 0.8499
-      },
-      "calc": "官方 $8 × 倍率 1（default·默认分组） = ¥8/M",
-      "calc_full": "官方 $8 × 倍率 1（default·默认分组） = ¥8/M",
-      "calc_basis": "官方 $8 × 倍率 1（default·默认分组） = ¥8/M",
-      "group": {
-        "name": "default",
-        "full": "default",
-        "ratio": 1,
-        "source": "default",
-        "source_label": "默认分组",
-        "desc": "",
-        "count": null
-      },
-      "observed": true,
-      "tiers": null,
       "recharge": null,
       "calc_adjust": "",
       "health": null,

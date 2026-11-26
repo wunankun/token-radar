@@ -117,6 +117,7 @@ ${css}
     </table>
   </div>
   <div class="pager" id="pager"></div>
+  ${(meta.disabled_sources || []).length ? `<p class="off-list"><b>已停用 ${(meta.disabled_sources || []).length} 家</b>：${(meta.disabled_sources || []).map((s) => `${esc(s.name)}${s.note ? `（${esc(s.note)}）` : ''}`).join('、')}　不再抓取，也不参与排名。</p>` : ''}
 
   <section class="method">
     <details open>

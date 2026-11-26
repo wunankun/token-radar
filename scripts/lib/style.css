@@ -273,3 +273,7 @@ td.calc {
   background: #f0f7f5; color: #2c5a52; font-size: 12.5px; line-height: 1.65;
 }
 .cur-note[hidden] { display: none; }
+
+/* 已停用站点提示（data/sources.json 里 enabled:false 的站） */
+.off-list { margin: 10px 2px 0; font-size: 12.5px; line-height: 1.6; color: var(--ink-3); }
+.off-list b { color: var(--ink-2); font-weight: 600; }
