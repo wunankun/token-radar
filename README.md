@@ -2,6 +2,8 @@
 
 把 AI API 中转站的「倍率」「充值赠送」「计费虚高」折算成**人民币 / 百万 token 的真实到手价**，再和官方直购价对齐比较。GitHub Actions 定时抓取 + 探活，静态站一键部署到 Pages。
 
+**在线站：<https://wunankun.github.io/token-radar/>** ｜ 仓库：<https://github.com/wunankun/token-radar>
+
 ![预览](docs/preview.png)
 
 > 仓库里的 `demo-alpha / demo-beta / demo-gamma` 是**演示数据**（`demo: true`），只为展示折算和排序效果。换成真实站点后自动消失。
