@@ -21,6 +21,19 @@ const warn = (m) => warnings.push(m);
 
 const { config, models, official, providers, observed } = loadAll();
 
+/* ---------- models ---------- */
+// popularity：0-100 的手工热度，决定下拉里谁排在前面（越热越靠前）
+for (const [id, m] of Object.entries(models)) {
+  if (m.popularity === undefined) {
+    warn(`data/models.json: ${id} 没有 popularity，会排在下拉最后`);
+  } else if (typeof m.popularity !== 'number' || m.popularity < 0 || m.popularity > 100) {
+    err(`data/models.json: ${id}.popularity 必须是 0-100 的数字`);
+  }
+}
+const modelList = Object.entries(models)
+  .map(([id, m]) => ({ id, label: m.label, vendor: m.vendor, popularity: m.popularity ?? 0 }))
+  .sort((a, b) => b.popularity - a.popularity || a.label.localeCompare(b.label));
+
 /* ---------- config ---------- */
 const fx = Number(config?.fx?.usd_cny);
 if (!Number.isFinite(fx) || fx <= 0) err('config.json: fx.usd_cny 必须是正数');
@@ -164,6 +177,7 @@ const meta = {
   best_demo: bestDemo
     ? { station: bestDemo.station.name, model: bestDemo.model.label, ratio: bestDemo.ratio.blend, discount: bestDemo.discount, effective: bestDemo.effective }
     : null,
+  models: modelList,
   disclosure: config.disclosure,
   site: config.site,
 };

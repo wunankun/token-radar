@@ -59,6 +59,14 @@ node scripts/demo-crawl.mjs     # 看抓取+比价整条链路跑一遍
 - 倍率模式必须有官方基准价，否则无法折算
 - 每个站点的价格要能回溯到 `pricing_url`
 
+### 模型目录与热度
+
+`data/models.json` 里每个模型除了 `label` / `vendor` / `aliases`，还有一个 `popularity`（0–100）：
+
+- 页面上的模型筛选是**两栏级联面板**：点开先看左栏公司，右栏是这家公司的模型；公司按自家最热的模型排先后，模型按 `popularity` 从高到低，右栏第一项「全部 X 模型」可以整家筛；
+- 它是**人工标注**的市场热度，不是流量统计。想让某个模型排前面就改这个数字，重新 `node scripts/build.mjs` 即可；
+- 缺字段只产生 warning（排到最后），超出 0–100 直接构建失败。
+
 ---
 
 ## 数据从哪来
@@ -243,7 +251,7 @@ PROBE_KEYS = {"my-station":"sk-xxxx","another-station":"sk-yyyy"}
 token-radar/
 ├── config.json              # 站点名、汇率、混合权重、推广披露文案
 ├── data/
-│   ├── models.json          # 规范模型 id + 别名（用于匹配各站不同的模型命名）
+│   ├── models.json          # 规范模型 id + 别名 + 热度（下拉排序用）
 │   ├── official.json        # 官方价（USD/百万），含 verified_at 与来源链接
 │   ├── providers/*.json     # 一站一文件：价格、充值、计费系数、推广链接、风险标签
 │   ├── sources.json         # 待抓站点清单

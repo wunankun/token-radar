@@ -8,6 +8,12 @@
   var W = meta.blend || { input: 0.7, output: 0.3 };
 
   var state = { q: '', model: '', kind: '', sort: 'discount', showDemo: true, onlyAff: false };
+
+  // 模型目录：meta.models 已按热度降序；缺字段时回落到表格里出现过的模型
+  var MODELS = {};
+  (meta.models || []).forEach(function (m) {
+    MODELS[m.id] = { id: m.id, label: m.label, vendor: m.vendor, popularity: m.popularity || 0 };
+  });
   var $ = function (sel) { return document.querySelector(sel); };
 
   /* ---------- 格式化 ---------- */
@@ -104,10 +110,16 @@
     return rows.filter(function (r) {
       if (!state.showDemo && r.station.demo) return false;
       if (state.onlyAff && !r.station.affiliate_url) return false;
-      if (state.model && r.model.id !== state.model) return false;
+      if (state.model) {
+        if (state.model.indexOf('vendor:') === 0) {
+          if (r.model.vendor !== state.model.slice(7)) return false;
+        } else if (r.model.id !== state.model) {
+          return false;
+        }
+      }
       if (state.kind && r.station.kind !== state.kind) return false;
       if (q) {
-        var hay = (r.station.name + ' ' + r.model.label + ' ' + r.model.id + ' ' + r.station.kind_label).toLowerCase();
+        var hay = (r.station.name + ' ' + r.model.label + ' ' + r.model.id + ' ' + r.model.vendor + ' ' + r.station.kind_label).toLowerCase();
         if (hay.indexOf(q) === -1) return false;
       }
       return true;
@@ -176,16 +188,148 @@
     $('#count').textContent = list.length + ' / ' + rows.length + ' 行';
   }
 
-  function fillSelect(id, values, label) {
+  function fillSelect(id, values, label, current) {
     var sel = $(id);
-    sel.innerHTML = '<option value="">' + label + '</option>' + values.map(function (v) {
+    sel.innerHTML = '<option value="">' + esc(label) + '</option>' + values.map(function (v) {
       return '<option value="' + esc(v.value) + '">' + esc(v.text) + '</option>';
     }).join('');
-    sel.addEventListener('change', function () {
-      var key = id === '#f-model' ? 'model' : 'kind';
-      state[key] = sel.value;
-      render();
+    sel.value = current || '';
+    if (sel.value !== (current || '')) sel.value = '';
+  }
+
+  /* ---------- 模型级联选择：左栏公司 → 右栏模型 ---------- */
+  var picker = { open: false, vendor: null };
+
+  function groupsByVendor() {
+    var by = {};
+    Object.keys(MODELS).forEach(function (id) {
+      var v = String(MODELS[id].vendor || '其他').trim();
+      (by[v] = by[v] || []).push(MODELS[id]);
     });
+    var top = function (v) { return by[v].reduce(function (m, x) { return Math.max(m, x.popularity); }, 0); };
+    var vendors = Object.keys(by).sort(function (a, b) { return top(b) - top(a) || a.localeCompare(b); });
+    vendors.forEach(function (v) {
+      by[v].sort(function (a, b) { return b.popularity - a.popularity || a.label.localeCompare(b.label); });
+    });
+    return { vendors: vendors, by: by };
+  }
+
+  function pickerLabel() {
+    if (!state.model) return '全部模型';
+    if (state.model.indexOf('vendor:') === 0) return '全部 ' + state.model.slice(7) + ' 模型';
+    var m = MODELS[state.model];
+    return m ? m.vendor + ' · ' + m.label : '全部模型';
+  }
+
+  function initPicker() {
+    var wrap = $('#f-model-wrap');
+    var btn = $('#f-model');
+    var pop = $('#f-model-pop');
+    var vBox = $('#picker-vendors');
+    var mBox = $('#picker-models');
+    var G = groupsByVendor();
+
+    vBox.innerHTML = '<button type="button" class="pk-item" data-vendor="">全部模型</button>' +
+      G.vendors.map(function (v) {
+        return '<button type="button" class="pk-item has-sub" data-vendor="' + esc(v) + '">' +
+          '<span>' + esc(v) + '</span><span class="pk-chev" aria-hidden="true">›</span></button>';
+      }).join('');
+
+    function paint(vendor) {
+      var list = vendor
+        ? G.by[vendor]
+        : G.vendors.reduce(function (a, v) { return a.concat(G.by[v]); }, []).sort(function (a, b) {
+            return b.popularity - a.popularity || a.label.localeCompare(b.label);
+          });
+      mBox.dataset.vendor = vendor || '';
+      mBox.innerHTML = (vendor
+          ? '<button type="button" class="pk-item pk-all" data-pick="vendor">全部 ' + esc(vendor) + ' 模型</button>'
+          : '') +
+        list.map(function (m) {
+          return '<button type="button" class="pk-item" data-model="' + esc(m.id) + '">' +
+            '<span>' + esc(m.label) + '</span>' +
+            (vendor ? '' : '<span class="pk-sub">' + esc(m.vendor) + '</span>') +
+            '</button>';
+        }).join('');
+      mark();
+    }
+
+    function mark() {
+      Array.prototype.forEach.call(vBox.children, function (b) {
+        b.classList.toggle('on', (b.dataset.vendor || null) === (picker.vendor || null));
+      });
+      Array.prototype.forEach.call(mBox.children, function (b) {
+        var on = b.dataset.model
+          ? b.dataset.model === state.model
+          : 'vendor:' + mBox.dataset.vendor === state.model;
+        b.classList.toggle('on', !!on);
+      });
+    }
+
+    function open() {
+      if (state.model.indexOf('vendor:') === 0) picker.vendor = state.model.slice(7);
+      else if (MODELS[state.model]) picker.vendor = MODELS[state.model].vendor;
+      paint(picker.vendor);
+      pop.hidden = false;
+      wrap.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+      picker.open = true;
+    }
+
+    function close() {
+      pop.hidden = true;
+      wrap.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+      picker.open = false;
+    }
+
+    function choose(v) {
+      state.model = v;
+      $('#f-model-label').textContent = pickerLabel();
+      close();
+      render();
+    }
+
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      if (picker.open) close(); else open();
+    });
+
+    vBox.addEventListener('mouseover', function (e) {
+      var b = e.target.closest('[data-vendor]');
+      if (!b) return;
+      var v = b.dataset.vendor || null;
+      if (v === picker.vendor) return;
+      picker.vendor = v;
+      paint(v);
+    });
+
+    vBox.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-vendor]');
+      if (!b) return;
+      e.stopPropagation();
+      var v = b.dataset.vendor || '';
+      if (!v) { choose(''); return; }
+      picker.vendor = v;
+      paint(v);
+    });
+
+    mBox.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-model],[data-pick]');
+      if (!b) return;
+      e.stopPropagation();
+      if (b.dataset.pick === 'vendor') choose('vendor:' + mBox.dataset.vendor);
+      else choose(b.dataset.model);
+    });
+
+    document.addEventListener('click', function (e) {
+      if (picker.open && !e.target.closest('#f-model-wrap')) close();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && picker.open) { close(); btn.focus(); }
+    });
+
+    $('#f-model-label').textContent = pickerLabel();
   }
 
   /* 表头吸顶的落点：筛选条的实际高度 */
@@ -199,19 +343,21 @@
   function init() {
     renderKpis();
 
-    var models = {};
-    rows.forEach(function (r) { models[r.model.id] = r.model.label; });
-    fillSelect('#f-model', Object.keys(models).sort(function (a, b) {
-      return models[a].localeCompare(models[b]);
-    }).map(function (id) { return { value: id, text: models[id] }; }), '全部模型');
+    rows.forEach(function (r) {
+      if (!MODELS[r.model.id]) {
+        MODELS[r.model.id] = { id: r.model.id, label: r.model.label, vendor: r.model.vendor, popularity: 0 };
+      }
+    });
+    initPicker();
 
     var kinds = {};
     rows.forEach(function (r) { kinds[r.station.kind] = r.station.kind_label; });
     fillSelect('#f-kind', Object.keys(kinds).map(function (k) {
       return { value: k, text: kinds[k] };
-    }), '全部类型');
+    }), '全部类型', state.kind);
 
     $('#f-q').addEventListener('input', function (e) { state.q = e.target.value; render(); });
+    $('#f-kind').addEventListener('change', function (e) { state.kind = e.target.value; render(); });
     $('#f-sort').addEventListener('change', function (e) { state.sort = e.target.value; render(); });
     $('#f-demo').addEventListener('change', function (e) { state.showDemo = e.target.checked; render(); });
     $('#f-aff').addEventListener('change', function (e) { state.onlyAff = e.target.checked; render(); });

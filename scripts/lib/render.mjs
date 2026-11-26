@@ -74,7 +74,15 @@ ${css}
 
   <div class="controls">
     <input id="f-q" type="search" placeholder="搜索站点 / 模型…" autocomplete="off">
-    <select id="f-model" aria-label="按模型筛选"></select>
+    <div class="picker" id="f-model-wrap">
+      <button type="button" id="f-model" class="picker-btn" aria-haspopup="listbox" aria-expanded="false">
+        <span id="f-model-label">全部模型</span><span class="chev" aria-hidden="true"></span>
+      </button>
+      <div class="picker-pop" id="f-model-pop" role="listbox" hidden>
+        <div class="pk-col" id="picker-vendors"></div>
+        <div class="pk-col" id="picker-models"></div>
+      </div>
+    </div>
     <select id="f-kind" aria-label="按类型筛选"></select>
     <select id="f-sort" aria-label="排序方式">
       <option value="discount">按优惠力度排序</option>
