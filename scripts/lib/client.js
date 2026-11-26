@@ -52,7 +52,8 @@
   function pairCell(now, off, tip) {
     if (now === null || now === undefined) return '<span class="muted">—</span>';
     var html = '<span class="unit" title="' + (tip || '') + '">' + money(now) + '</span>';
-    if (off !== null && off !== undefined) {
+    // 和官方价一样就只显示一个数（官方行、以及已经被官方原价卖的站）
+    if (off !== null && off !== undefined && money(now) !== money(off)) {
       html += '<span class="offp" title="官方同口径">' + money(off) + '</span>';
     }
     return html;
