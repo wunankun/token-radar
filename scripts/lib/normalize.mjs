@@ -133,13 +133,18 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
     return { error: `${station.id}/${modelId}: 未知的定价模式 ${mode}` };
   }
 
+  // 站内汇率：这家站自己声明「1 美元额度值多少人民币」（/api/status 的 usd_exchange_rate）。
+  // 只有「按美元额度计价」的行才乘它：倍率乘的是官方美元价、或自动抓来的 model_ratio。
+  // 声明为 1 的站 = 1 元买 1 美元额度（国内常见）；声明 7.3 的站 = 1 美元额度真要 ¥7.3。
+  const moneyPerUsd = num(station.usd_rate) > 0 ? num(station.usd_rate) : 1;
+  const usdPriced = mode === 'multiplier' ? (stationModel?.base || 'usd_official') === 'usd_official' : !!stationModel?.observed;
   const bonus = rechargeBonus(station.recharge);
   const manualBilling = num(station.billing?.ratio);
   const probedBilling = num(health?.usage_ratio);
   const billing = manualBilling ?? probedBilling ?? 1;
   const billingSource = manualBilling != null ? 'manual' : probedBilling != null ? 'probe' : 'default';
   // 实际到手价 = 标价 × 计费虚高系数（充值赠送不计入价格，单独成列）
-  const effective = scaleObj(nominal, billing);
+  const effective = scaleObj(nominal, billing * (usdPriced ? moneyPerUsd : 1));
 
   const ratio = {
     input: officialCny ? div(effective.input, officialCny.input) : null,
@@ -161,10 +166,11 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
   let basis;
   const base = stationModel?.base || 'usd_official';
   const value = num(stationModel?.value);
+  const fxNote = usdPriced && moneyPerUsd !== 1 ? ` × 站内汇率 ${fmt(moneyPerUsd)}（该站 1 美元额度 = ¥${fmt(moneyPerUsd)}）` : '';
   if (mode === 'official') {
     basis = `官方 ${usd(official?.usd.input)}/M × 汇率 ${fmt(fx)} = ${cny(officialCny?.input)}/M`;
   } else if (mode === 'multiplier' && base === 'usd_official') {
-    basis = `官方 ${usd(official?.usd.input)} × ${fmt(value)} = ${cny(nominal.input)}/M（1 元买 1 美元额度）`;
+    basis = `官方 ${usd(official?.usd.input)} × ${fmt(value)}${fxNote || '（1 元买 1 美元额度）'} = ${cny(effective.input)}/M`;
   } else if (mode === 'multiplier') {
     basis = `官方人民币 ${cny(officialCny?.input)} × ${fmt(value)} = ${cny(nominal.input)}/M`;
   } else if (stationModel?.observed && stationModel?.group && official?.usd?.input) {
@@ -172,14 +178,14 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
     const g = stationModel.group;
     const mult = r4(nominal.input / official.usd.input);
     basis =
-      `官方 ${usd(official.usd.input)} × 倍率 ${fmt(mult)}（${g.name}·${g.source_label || '分组'}）` +
-      ` = ${cny(nominal.input)}/M`;
+      `官方 ${usd(official.usd.input)} × 倍率 ${fmt(mult)}（${g.name}·${g.source_label || '分组'}）${fxNote}` +
+      ` = ${cny(effective.input)}/M`;
   } else if (num(stationModel?.multiple) != null && official) {
     const g = stationModel.group;
     basis =
       `官方 ${usd(official.usd.input)} × 倍率 ${fmt(stationModel.multiple)}` +
-      (g && g.name ? `（${g.name} 组）` : '') +
-      ` = ${cny(nominal.input)}/M`;
+      (g && g.name ? `（${g.name} 组）` : '') + fxNote +
+      ` = ${cny(effective.input)}/M`;
   } else {
     basis = `站上标价 ${cny(nominal.input)}/M`;
   }
@@ -192,7 +198,8 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
     : '';
   const g = stationModel?.group;
   const groupNote = g && g.desc ? `（${g.source_label}：${g.desc}）` : '';
-  const calc = basis + (adj.length ? ` · ${adj.join(' ')}` : '') + (tierNote ? `；${tierNote}` : '');
+  const rateNote = usdPriced && moneyPerUsd === 1 ? '（该站未声明汇率，按 1 元 = 1 美元额度的常见惯例算）' : '';
+  const calc = basis + (adj.length ? ` · ${adj.join(' ')}` : '') + (tierNote ? `；${tierNote}` : '') + rateNote;
   const calc_full = calc + groupNote;
 
   return {

@@ -115,9 +115,16 @@ for (const p of [...providers, ...scanned]) {
   const obs = observed.get(p.id);
   // /api/status 里的汇率：只用来在页面上提醒「这个站的 1 美元额度不是 1 元买的」
   const st = (obs && obs.status) || p.status || null;
-  if (st && Number(st.usd_exchange_rate) > 1.05) {
-    p.usd_rate = Number(st.usd_exchange_rate);
-    p.top_up = st.top_up_link || null;
+  if (st) {
+    // usd_exchange_rate 是站自己声明的「1 美元额度值多少人民币」；没有它时，有些站把同一个数
+    // 写在 price 里（1.5–12 之间才可信，0.1 这种是别的含义，别当汇率用）。
+    const r1 = Number(st.usd_exchange_rate);
+    const r2 = Number(st.price);
+    const rate = r1 > 1.05 ? r1 : r2 > 1.5 && r2 < 12 ? r2 : null;
+    if (rate) {
+      p.usd_rate = rate;
+      p.top_up = st.top_up_link || null;
+    }
   }
   const declared = p.models || {};
   const modelIds = new Set([...Object.keys(declared), ...Object.keys(obs?.models || {})]);

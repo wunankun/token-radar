@@ -189,7 +189,7 @@
     if (s.affiliate_url) inner += '<span class="aff-dot" title="推广链接：通过此链接注册我们可能获得返佣，排名不受影响">AD</span>';
     var extra = '';
     if (s.usd_rate && s.usd_rate > 1.05) {
-      extra = '<span class="chip chip-fx" title="该站自己的 /api/status 声明 1 美元额度要 ¥' + money(s.usd_rate) + '，所以本页「1 元 = 1 美元额度」的折算对它不成立，真实到手价还要再乘这个汇率">1$=¥' + money(s.usd_rate) + '</span>';
+      extra = '<span class="chip chip-fx" title="该站 /api/status 声明 1 美元额度 = ¥' + money(s.usd_rate) + '，本行价格已按这个汇率折算（不是 1 元 = 1 美元）">1$=¥' + money(s.usd_rate) + '</span>';
     }
     return '<div class="station"><div class="name">' + inner + '</div>' +
       '<div class="chips"><span class="chip kind-' + s.kind + '">' + esc(s.kind_label) + '</span>' + extra + '</div></div>';
