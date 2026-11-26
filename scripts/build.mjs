@@ -269,7 +269,10 @@ const usage = {};
 if (rankings && Array.isArray(rankings.models)) {
   const byKey = new Map();
   for (const r of rankings.models) {
-    byKey.set(normKey(String(r.slug).split('/').pop()), r);
+    const k = normKey(String(r.slug).split('/').pop());
+    const prev = byKey.get(k);
+    // 同一模型可能既有带日期的快照、又有别名，取名次最高的那条
+    if (!prev || r.rank < prev.rank) byKey.set(k, r);
   }
   for (const [id, m] of Object.entries(models)) {
     const keys = [m.official?.model, id, ...(m.aliases || [])].filter(Boolean);

@@ -168,12 +168,13 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
   const base = stationModel?.base || 'usd_official';
   const value = num(stationModel?.value);
   const fxNote = usdPriced && moneyPerUsd !== 1 ? ` × 站内汇率 ${fmt(moneyPerUsd)}（该站 1 美元额度 = ¥${fmt(moneyPerUsd)}）` : '';
+  const srcName = priceSource === 'reference' ? 'OpenRouter' : '官方';
   if (mode === 'official') {
-    basis = `官方 ${usd(official?.usd.input)}/M × 汇率 ${fmt(fx)} = ${cny(officialCny?.input)}/M`;
+    basis = `${srcName} ${usd(official?.usd.input)}/M × 汇率 ${fmt(fx)} = ${cny(officialCny?.input)}/M`;
   } else if (mode === 'multiplier' && base === 'usd_official') {
-    basis = `官方 ${usd(official?.usd.input)} × ${fmt(value)}${fxNote || '（1 元买 1 美元额度）'} = ${cny(effective.input)}/M`;
+    basis = `${srcName} ${usd(official?.usd.input)} × ${fmt(value)}${fxNote || '（1 元买 1 美元额度）'} = ${cny(effective.input)}/M`;
   } else if (mode === 'multiplier') {
-    basis = `官方人民币 ${cny(officialCny?.input)} × ${fmt(value)} = ${cny(nominal.input)}/M`;
+    basis = `${srcName}人民币 ${cny(officialCny?.input)} × ${fmt(value)} = ${cny(nominal.input)}/M`;
   } else if (stationModel?.observed && stationModel?.group && official?.usd?.input) {
     // 自动抓的行：model_ratio 是站上的基准倍率，group.ratio 是「用户会落到的那一档」
     const g = stationModel.group;
