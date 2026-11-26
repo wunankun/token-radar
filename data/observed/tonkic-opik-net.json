@@ -1,0 +1,91 @@
+{
+  "station_id": "tonkic-opik-net",
+  "endpoint": "https://tonkic.opik.net/api/pricing",
+  "fetched_at": "2026-11-26T13:04:15.438Z",
+  "http_status": 200,
+  "latency_ms": 1307,
+  "assumption": "face_value_1cny_per_usd",
+  "parser": "new-api/one-api",
+  "group_ratio": 1,
+  "group_source": "manual",
+  "groups": 7,
+  "group_ratios": {
+    "0.05羊毛": 0.05,
+    "0.1": 0.1,
+    "0.15不降智": 0.15,
+    "0.2": 0.2,
+    "bps-local": 1,
+    "claude": 0.1,
+    "grok": 0.1
+  },
+  "stats": {
+    "total": 9,
+    "matched": 2,
+    "per_call": 0,
+    "no_ratio": 0,
+    "duplicate": 0
+  },
+  "models": {
+    "gpt-6.2-astra": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "gpt-6.2-sol": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-sol",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    }
+  },
+  "unmatched": [
+    {
+      "model_name": "gpt-6-astra",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-6-luna",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-5.6-terra",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-6-sol",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-6.1-sol",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-5.6-luna",
+      "model_ratio": 0.1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-5.6-sol",
+      "model_ratio": 2,
+      "completion_ratio": 5
+    }
+  ]
+}

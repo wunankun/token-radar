@@ -1,0 +1,443 @@
+{
+  "station_id": "deepkey-top",
+  "endpoint": "https://deepkey.top/api/pricing",
+  "fetched_at": "2026-11-26T13:04:01.748Z",
+  "http_status": 200,
+  "latency_ms": 986,
+  "assumption": "face_value_1cny_per_usd",
+  "parser": "new-api/one-api",
+  "group_ratio": 1,
+  "group_source": "manual",
+  "groups": 91,
+  "group_ratios": {
+    "claude": 0.4,
+    "claude-anti": 0.4,
+    "claude-api": 4,
+    "claude-aws-bedrock": 3,
+    "claude-aws-bedrock-stable": 3.5,
+    "claude-azure-api": 1.8,
+    "claude-cc": 0.5,
+    "claude-cc2": 0.6,
+    "claude-cc3": 0.18,
+    "claude-cc4": 0.3,
+    "claude-copilot": 0.55,
+    "claude-cursor": 0.4,
+    "claude-cursor2": 0.5,
+    "claude-kiro": 0.4,
+    "claude-kiro-discount": 0.25,
+    "claude-kiro-discount2": 0.12,
+    "claude-kiro-enterprise": 0.5,
+    "claude-kiro-enterprise-85": 0.6,
+    "claude-kiro-enterprise-96": 0.75,
+    "claude-kiro-pro": 0.3,
+    "claude-kiro-sale": 0.1,
+    "claude-max": 1.5,
+    "claude-max-0": 1.6,
+    "claude-max-any-client": 1.2,
+    "claude-max-api": 1.8,
+    "claude-max-discount": 1.15,
+    "claude-max-sale": 1,
+    "claude-max-特价": 0.9,
+    "claude-pro": 0.85,
+    "claude-quick": 0.2,
+    "claude-quick-discount": 0.06,
+    "codex": 0.12,
+    "codex-discount": 0.05,
+    "codex-team": 0.08,
+    "deepseek": 0.55,
+    "deepseek-deploy": 0.45,
+    "deepseek-官渠": 0.25,
+    "default": 1,
+    "gemini": 0.3,
+    "gemini-anti": 0.3,
+    "gemini-cli": 0.45,
+    "gemini-count": 0.01,
+    "gemini-enterprise": 1,
+    "gemini-gcp": 1.8,
+    "gemini-image": 0.12,
+    "gemini-t3": 2.5,
+    "gemini-t3-stable": 3,
+    "gemini-ultra": 0.4,
+    "gemini-ultra-high": 0.55,
+    "gemini-vertex": 2,
+    "gemini-vertex-25": 2.5,
+    "gemini-vertex-30": 3,
+    "glm": 0.55,
+    "gpt": 0.2,
+    "gpt-azure": 1,
+    "gpt-azure-18": 1.8,
+    "gpt-azure-image": 3,
+    "gpt-azure-t6": 2,
+    "gpt-azure2": 0.6,
+    "gpt-azure4": 1.6,
+    "gpt-enterprise": 0.3,
+    "gpt-fast": 0.35,
+    "gpt-fast-discount": 0.18,
+    "gpt-image": 0.08,
+    "gpt-image-adobe": 0.12,
+    "gpt-image-low": 0.03,
+    "gpt-image-openai": 3,
+    "gpt-luna": 0.6,
+    "gpt-openai": 3,
+    "gpt-openai3": 0.4,
+    "gpt-openai4": 0.35,
+    "gpt-ultra-fast-discount": 0.2,
+    "gpt-不降智合作池": 0.3,
+    "gpt-不降智合作池二号": 0.25,
+    "gpt-不降智特价": 0.15,
+    "grok": 0.1,
+    "grok-free": 0.06,
+    "grok-official": 0.8,
+    "grok-super": 0.15,
+    "grok-ultra": 0.22,
+    "kimi": 0.55,
+    "kimi-aws": 0.35,
+    "kimi-cursor": 0.25,
+    "minimax-h3": 0.1,
+    "muse": 0.5,
+    "opencode": 0.3,
+    "pj": 0.35,
+    "seedance": 1,
+    "seedance-native": 0.75,
+    "seedance-off": 0.7,
+    "test": 1
+  },
+  "stats": {
+    "total": 377,
+    "matched": 6,
+    "per_call": 37,
+    "no_ratio": 0,
+    "duplicate": 1
+  },
+  "models": {
+    "claude-sonnet-5-5": {
+      "input": 3,
+      "output": 15,
+      "cache_read": null,
+      "raw": {
+        "model_name": "claude-sonnet-4-5",
+        "model_ratio": 1.5,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "gpt-6.2-astra": {
+      "input": 8,
+      "output": 40,
+      "cache_read": 0.4,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 4,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05
+      }
+    },
+    "deepseek-v4-pro": {
+      "input": 9,
+      "output": 27,
+      "cache_read": 0.2997,
+      "raw": {
+        "model_name": "deepseek-v4-pro",
+        "model_ratio": 4.5,
+        "completion_ratio": 3,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.0333
+      }
+    },
+    "deepseek-flash": {
+      "input": 2,
+      "output": 8,
+      "cache_read": 0.04,
+      "raw": {
+        "model_name": "deepseek-v4.1-flash",
+        "model_ratio": 1,
+        "completion_ratio": 4,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.02
+      }
+    },
+    "claude-opus-5-5": {
+      "input": 4,
+      "output": 20,
+      "cache_read": 0.2,
+      "raw": {
+        "model_name": "claude-opus-5-5",
+        "model_ratio": 2,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05
+      }
+    },
+    "gpt-6.2-sol": {
+      "input": 2,
+      "output": 10,
+      "cache_read": 0.1,
+      "raw": {
+        "model_name": "gpt-6.2-sol",
+        "model_ratio": 1,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05
+      }
+    }
+  },
+  "unmatched": [
+    {
+      "model_name": "claude-opus-4-6-thinking",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.4-mini",
+      "model_ratio": 0.375,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "whisper-1",
+      "model_ratio": 15,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "grok-build-0.1",
+      "model_ratio": 0.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "deepseek-v4-pro-0813",
+      "model_ratio": 4.5,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "gemini-2.5-pro",
+      "model_ratio": 0.625,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "gemini-4-neon-count",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gemini-3-flash-preview-thinking",
+      "model_ratio": 0.25,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gemini-4-hydrogen-xhigh",
+      "model_ratio": 0.75,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.5-instant",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-4o-transcribe",
+      "model_ratio": 0.625,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-5",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-haiku-5-5-thinking",
+      "model_ratio": 0.05,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5-nano-2025-08-07",
+      "model_ratio": 0.025,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "gpt-5.6-sol",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gemini-3.8-flash-extended-count",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gpt-3.5-turbo-16k-0613",
+      "model_ratio": 1.5,
+      "completion_ratio": 1.3334
+    },
+    {
+      "model_name": "text-embedding-3-small",
+      "model_ratio": 0.01,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-5-codex-low",
+      "model_ratio": 0.625,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-5-thinking",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-4.1",
+      "model_ratio": 1,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gpt-4-0613",
+      "model_ratio": 15,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-4o",
+      "model_ratio": 2.5,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "o3-2025-04-16-medium",
+      "model_ratio": 1,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gpt-5.2-codex-xhigh",
+      "model_ratio": 0.875,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "kimi-k3.1-pro",
+      "model_ratio": 6.5,
+      "completion_ratio": 5.230769
+    },
+    {
+      "model_name": "gemini-3-flash",
+      "model_ratio": 0.25,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-5",
+      "model_ratio": 0.625,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-6-luna",
+      "model_ratio": 0.05,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.2-chat-latest",
+      "model_ratio": 0.875,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "grok-4.20-0309-reasoning",
+      "model_ratio": 0.625,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "kimi-k3",
+      "model_ratio": 10,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.1-pro-video-count",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gemini-4-hydrogen-search-count",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gemini-3.6-flash-low",
+      "model_ratio": 0.75,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "o3-2025-04-16-low",
+      "model_ratio": 1,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "grok-4.20-multi-agent-0309",
+      "model_ratio": 0.625,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "doubao-seedance-2-0-mini-260615",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "seedance-2.5",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-3-pro-preview-thinking-128",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-4.1-nano-2025-04-14",
+      "model_ratio": 0.05,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gpt-image-1-all",
+      "model_ratio": 2.5,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "o3-mini",
+      "model_ratio": 0.55,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gpt-5-pro",
+      "model_ratio": 0.625,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "tts-1",
+      "model_ratio": 7.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-5.6-pro",
+      "model_ratio": 37.5,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "gpt-5.2-2025-12-11",
+      "model_ratio": 0.875,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "o1-pro",
+      "model_ratio": 75,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "o3-pro",
+      "model_ratio": 10,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "glm-5.3",
+      "model_ratio": 4,
+      "completion_ratio": 3.5
+    }
+  ]
+}

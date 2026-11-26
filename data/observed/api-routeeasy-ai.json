@@ -1,0 +1,398 @@
+{
+  "station_id": "api-routeeasy-ai",
+  "endpoint": "https://api.routeeasy.ai/api/pricing",
+  "fetched_at": "2026-11-26T13:04:01.937Z",
+  "http_status": 200,
+  "latency_ms": 1173,
+  "assumption": "face_value_1cny_per_usd",
+  "parser": "new-api/one-api",
+  "group_ratio": 1,
+  "group_source": "manual",
+  "groups": 73,
+  "group_ratios": {
+    "0.2-codex-1029": 0.2,
+    "0.35-kiro": 0.35,
+    "0.4-kiro-duigong-0909": 0.4,
+    "Claude官转-1110-37": 3.7,
+    "Claude官转-1110-38": 3.8,
+    "Claude官转-3.4-1106": 3.4,
+    "Gemini-纯v-1102-1.7": 1.7,
+    "Gemini-纯v-1102-1.9": 1.9,
+    "Gemini_enterprise_c": 1,
+    "anti-cc-0.1": 0.1,
+    "anti-cc-0.5-1019": 0.5,
+    "anti-gemini-0.1-1030": 0.1,
+    "anti-gemini-0.15-0930": 0.15,
+    "anti-gemini-0.3-0915": 0.3,
+    "anti-gemini-0.6-1124": 0.6,
+    "anti-gemini-0930-0.2": 0.2,
+    "anti-gemini-1-1116": 1,
+    "anti_claude_cc_0822_035": 0.35,
+    "anti_gemini_0706_025_qing": 0.25,
+    "awsb-0915-3.4": 3.4,
+    "awsb-0916-3.3": 3.3,
+    "awsb-0920-对公组": 3.9,
+    "awsb-0928-3": 3,
+    "awsb-1003": 3,
+    "awsb-1021": 2.3,
+    "awsb-1021-3.3": 3.3,
+    "awsb-2-1021": 2,
+    "awsb-2.9": 2.9,
+    "awsb-3.4-1111": 3.4,
+    "awsb-3.5-0928": 3.5,
+    "awsb-速刷-1103-1.7": 1.7,
+    "awsb_0911_2.7": 2.7,
+    "awsb_1021_25": 2.5,
+    "az gpt-1.6-1026": 1.6,
+    "az-gpt-1.4-1125": 1.4,
+    "az-gpt-1007-1.4": 1.4,
+    "az-gpt-1025-1.7": 1.7,
+    "az-gpt-2.7-1125": 2.7,
+    "cache_99_kiro_025_0711": 0.25,
+    "claude-官转-3.5-1123": 3.5,
+    "claude_kiro_025": 0.25,
+    "codex-0.25": 0.25,
+    "codex_030": 0.3,
+    "default": 1,
+    "gemini-纯v-1021-1.5": 1.5,
+    "gemini_cli_0401_038": 0.38,
+    "gemini_cli_enterprise_040": 0.4,
+    "gemini_studio_09": 0.9,
+    "gemini_studio_18": 1.8,
+    "gemini_vertex_19": 1.9,
+    "gpt_image_0603_24": 2.4,
+    "gpt_image_pro_0604_0545": 0.54545455,
+    "gpt低级模型专用分组2.5": 2.5,
+    "kiro-0.08-1011": 0.08,
+    "kiro-0.13-109": 0.13,
+    "kiro-0.15-0930": 0.15,
+    "kiro-0.3-0831": 0.3,
+    "kiro-正价0.3-1009": 0.3,
+    "oai-官转-2.6-1029": 2.6,
+    "oai-官转-2.7-1013": 2.7,
+    "oai-官转-2.9": 2.9,
+    "oai-官转-3.5-1126": 3.5,
+    "oai-官转全模型-1026-2.8": 2.8,
+    "oai-官转分组-3.2-1123": 3.2,
+    "oai-官转生图-3.3-1115": 3.3,
+    "oai-官转生图3-1023-2.9": 2.9,
+    "oai-官转画图-1111": 2.7,
+    "oai-官转画图-3-1014": 3,
+    "oai官转生图-稳定-1120": 2.8,
+    "oai官转生图2.8-1117": 2.8,
+    "oai正向画图-3.0": 3,
+    "zhu_anti_ci": 1,
+    "纯vt-gemini-2.5-1125": 2.5
+  },
+  "stats": {
+    "total": 537,
+    "matched": 4,
+    "per_call": 69,
+    "no_ratio": 0,
+    "duplicate": 1
+  },
+  "models": {
+    "claude-opus-5-5": {
+      "input": 4,
+      "output": 20,
+      "cache_read": 0.2,
+      "raw": {
+        "model_name": "claude-opus-5-5",
+        "model_ratio": 2,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05
+      }
+    },
+    "claude-sonnet-5-5": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
+      "raw": {
+        "model_name": "claude-sonnet-4-5",
+        "model_ratio": 1.5,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.1
+      }
+    },
+    "gpt-6.2-astra": {
+      "input": 75,
+      "output": 75,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 37.5,
+        "completion_ratio": 1,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "gpt-6.2-sol": {
+      "input": 75,
+      "output": 75,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-sol",
+        "model_ratio": 37.5,
+        "completion_ratio": 1,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    }
+  },
+  "unmatched": [
+    {
+      "model_name": "KIMI-K2.6",
+      "model_ratio": 3.25,
+      "completion_ratio": 4.16
+    },
+    {
+      "model_name": "MAI-DS-R1",
+      "model_ratio": 2,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "claude-fable-5-1",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-fable-5-1-thinking",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-fable-5-2",
+      "model_ratio": 4,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-fable-5-thinking",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-fable-5.1",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-haiku-4-5",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-haiku-4-5-20251001",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-haiku-4-5-20251001-thinking",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-haiku-4-5-thinking",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-haiku-5-5",
+      "model_ratio": 0.05,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-haiku-5-5-thinking",
+      "model_ratio": 0.05,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-1-20250805",
+      "model_ratio": 7.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-1-20250805-thinking",
+      "model_ratio": 7.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-20250514",
+      "model_ratio": 7.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-20250514-thinking",
+      "model_ratio": 7.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-5",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-5-20251101",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-5-20251101-thinking",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-5-thinking",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-8-thinking",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-5-5-high",
+      "model_ratio": 2,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-5-5-thinking",
+      "model_ratio": 2,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-5-thinking",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-sonnet-4-20250514",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-sonnet-4-20250514-thinking",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-sonnet-4-5-20250929",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-sonnet-4-5-20250929-thinking",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-sonnet-4-5-thinking",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-sonnet-5-5-high",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-sonnet-5-5-thinking",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "codex-auto-review",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "codex-mini",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "computer-use-preview",
+      "model_ratio": 1.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "dall-e-3",
+      "model_ratio": 20,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "deepseek-r1",
+      "model_ratio": 2,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "deepseek-r1-0528",
+      "model_ratio": 2,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "deepseek-v3",
+      "model_ratio": 1,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "deepseek-v3-0324",
+      "model_ratio": 1,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "deepseek-v3-0324-az",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "deepseek-v3.1",
+      "model_ratio": 2,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "deepseek-v3.2",
+      "model_ratio": 1,
+      "completion_ratio": 1.5
+    },
+    {
+      "model_name": "deepseek-v3.2-speciale",
+      "model_ratio": 1,
+      "completion_ratio": 1.5
+    },
+    {
+      "model_name": "gemini-2.5-flash",
+      "model_ratio": 0.15,
+      "completion_ratio": 8.34
+    },
+    {
+      "model_name": "gemini-2.5-flash-image-preview-c",
+      "model_ratio": 0.15,
+      "completion_ratio": 8.333333333333334
+    },
+    {
+      "model_name": "gemini-2.5-flash-maxthinking",
+      "model_ratio": 0.15,
+      "completion_ratio": 8.34
+    },
+    {
+      "model_name": "gemini-2.5-flash-nothinking",
+      "model_ratio": 0.15,
+      "completion_ratio": 8.34
+    },
+    {
+      "model_name": "gemini-2.5-flash-search",
+      "model_ratio": 0.15,
+      "completion_ratio": 8.34
+    },
+    {
+      "model_name": "gemini-2.5-flash-thinking",
+      "model_ratio": 0.15,
+      "completion_ratio": 8.34
+    }
+  ]
+}

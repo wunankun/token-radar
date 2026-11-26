@@ -1,0 +1,340 @@
+{
+  "station_id": "b-kr777-top",
+  "endpoint": "https://b.kr777.top/api/pricing",
+  "fetched_at": "2026-11-26T13:04:06.760Z",
+  "http_status": 200,
+  "latency_ms": 685,
+  "assumption": "face_value_1cny_per_usd",
+  "parser": "new-api/one-api",
+  "group_ratio": 1,
+  "group_source": "manual",
+  "groups": 15,
+  "group_ratios": {
+    "Gemini": 0.3,
+    "MAX外接": 0.85,
+    "MAX外接-1": 0.85,
+    "gpt-plus": 0.07,
+    "gpt-plus高": 0.17,
+    "gpt-pro": 0.22,
+    "gpt-pro-专属": 0.16,
+    "gpt-pro特惠": 0.09,
+    "grok": 0.11,
+    "kiro": 0.25,
+    "kiro低缓": 0.1,
+    "kiro高缓": 0.33,
+    "max20-中": 0.82,
+    "max20-低": 0.66,
+    "max20-高": 1.1
+  },
+  "stats": {
+    "total": 126,
+    "matched": 4,
+    "per_call": 6,
+    "no_ratio": 0,
+    "duplicate": 0
+  },
+  "models": {
+    "gpt-6.2-astra": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "claude-sonnet-5-5": {
+      "input": 2,
+      "output": 10,
+      "cache_read": 0.2,
+      "raw": {
+        "model_name": "claude-sonnet-5-5",
+        "model_ratio": 1,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.1
+      }
+    },
+    "claude-opus-5-5": {
+      "input": 4,
+      "output": 20,
+      "cache_read": 0.2,
+      "raw": {
+        "model_name": "claude-opus-5-5",
+        "model_ratio": 2,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05
+      }
+    },
+    "gpt-6.2-sol": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-sol",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    }
+  },
+  "unmatched": [
+    {
+      "model_name": "gemini-3.1-flash-preview",
+      "model_ratio": 0.25,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-5.6-terra-openai-compact",
+      "model_ratio": 37.5,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "gemini-3.1-pro-preview-customtools",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gemini-3.1-pro-preview-low",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gemini-3.7-flash-high",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-fable-5-1",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.6",
+      "model_ratio": 37.5,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "gpt-5.2",
+      "model_ratio": 0.65625,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "gemini-3.6-flash-medium",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "claude-opus-4-8-thinking",
+      "model_ratio": 37.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-6-astra",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-6.1-sol",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.1-flash-lite",
+      "model_ratio": 0.125,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gemini-3.8-flash",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-flash-lite-latest",
+      "model_ratio": 0.05,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gpt-image-1.5",
+      "model_ratio": 3,
+      "completion_ratio": 6.4
+    },
+    {
+      "model_name": "gemini-embedding-2-preview",
+      "model_ratio": 0.7,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "codex-auto-review",
+      "model_ratio": 0.46875,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "claude-sonnet-5-thinking",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-3.8-flash-medium",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-embedding-001",
+      "model_ratio": 0.084375,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gpt-5.4-2026-03-05",
+      "model_ratio": 0.9375,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gemini-2.5-flash",
+      "model_ratio": 0.15,
+      "completion_ratio": 8.333333
+    },
+    {
+      "model_name": "grok-4.3",
+      "model_ratio": 0.625,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gemini-3.1-pro",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-5.2-pro-2025-12-11",
+      "model_ratio": 7.875,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "claude-haiku-5-5",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "claude-sonnet-4-5-20250929",
+      "model_ratio": 1.125,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.8-flash-high",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3-flash-thinking-128",
+      "model_ratio": 0.25,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-opus-4-8",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-pro-latest-thinking-*",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gemini-2.5-pro-preview-tts",
+      "model_ratio": 0.1875,
+      "completion_ratio": 20
+    },
+    {
+      "model_name": "gpt-image-1",
+      "model_ratio": 3,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "claude-fable-5",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-2.5-pro",
+      "model_ratio": 0.625,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "gemini-2.5-flash-nothinking",
+      "model_ratio": 0.15,
+      "completion_ratio": 8.333333
+    },
+    {
+      "model_name": "gemini-4-carbon",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-4-argon-high",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-5-thinking",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.2-2025-12-11",
+      "model_ratio": 0.65625,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "gemini-3-flash-preview-thinking-*",
+      "model_ratio": 0.25,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gemini-3.5-flash",
+      "model_ratio": 0.75,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "grok-4.7",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "grok-composer-2.5-fast",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-2.5-flash-lite",
+      "model_ratio": 0.05,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "claude-sonnet-4-6",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-7-thinking",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-6-luna",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gemini-3.5-flash-low",
+      "model_ratio": 0.75,
+      "completion_ratio": 6
+    }
+  ]
+}

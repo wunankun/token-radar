@@ -203,7 +203,9 @@ async function handleOne(src, preset = null) {
       }
     }
 
-    const parsed = parsePricing(got.payload, { resolveModel });
+    const groupOverride = Number.isFinite(Number(src.group_ratio)) && Number(src.group_ratio) >= 0 ? Number(src.group_ratio) : null;
+    const parsed = parsePricing(got.payload, { resolveModel, groupRatioOverride: groupOverride });
+    const groups = got.payload?.group_ratio && typeof got.payload.group_ratio === 'object' ? got.payload.group_ratio : null;
     const snapshot = {
       station_id: src.id,
       endpoint: endpoint || got.url,
@@ -213,6 +215,9 @@ async function handleOne(src, preset = null) {
       assumption: 'face_value_1cny_per_usd',
       parser: parsed.format,
       group_ratio: parsed.groupRatio,
+      group_source: groupOverride != null ? 'manual' : 'auto',
+      groups: groups ? Object.keys(groups).length : 0,
+      group_ratios: groups || null,
       stats: parsed.stats,
       models: parsed.models,
       unmatched: parsed.unmatched.slice(0, 50),

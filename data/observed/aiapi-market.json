@@ -1,0 +1,410 @@
+{
+  "station_id": "aiapi-market",
+  "endpoint": "https://aiapi.market/api/pricing",
+  "fetched_at": "2026-11-26T13:04:13.791Z",
+  "http_status": 200,
+  "latency_ms": 1323,
+  "assumption": "face_value_1cny_per_usd",
+  "parser": "new-api/one-api",
+  "group_ratio": 1,
+  "group_source": "manual",
+  "groups": 62,
+  "group_ratios": {
+    "3D模型": 10,
+    "8倍速": 3.3,
+    "audio": 10,
+    "cc-free": 0.1,
+    "cc_kiro": 1.6,
+    "cc_kiro2": 2.8,
+    "cc_kiro3": 3.5,
+    "cc_kiro4": 2.5,
+    "cc_kiro5": 1.2,
+    "cc_max": 10,
+    "cc_max2": 11,
+    "cc_max20x": 18,
+    "cc_md": 6,
+    "cn": 0.7,
+    "cn-free": 0.1,
+    "codex": 1,
+    "codex1": 1.1,
+    "codex2": 0.7,
+    "codex3": 1.3,
+    "default": 5,
+    "dp": 0.6,
+    "dp2": 1.1,
+    "dp3": 0.3,
+    "gemini": 2.6,
+    "gemini2": 2,
+    "gemini3": 4,
+    "gemini4": 6.3,
+    "gemini4首发": 6.3,
+    "glm": 0.2,
+    "gpt-free": 0.1,
+    "gpt-free2": 1,
+    "gpt婆家": 4,
+    "grok": 2,
+    "grok-media": 3.2,
+    "grok2": 1.8,
+    "image-2": 10,
+    "img": 10,
+    "img-2": 10,
+    "img-3": 10,
+    "km": 0.23,
+    "km-free": 0.1,
+    "km2": 0.5,
+    "luna": 0.29,
+    "media": 10,
+    "music": 10,
+    "plus": 1.5,
+    "plus2": 0.2,
+    "plus3": 0.9,
+    "plus4": 1.4,
+    "pro": 1.9,
+    "pro+plus": 1.9,
+    "pro2": 1.6,
+    "pro3": 1.6,
+    "pro4": 2.2,
+    "pro5": 15,
+    "pro不降智": 2.9,
+    "pro不降智2": 2.1,
+    "sd官转": 10,
+    "video": 10,
+    "vt-gemini": 30,
+    "兜一切底": 2,
+    "官key": 3
+  },
+  "stats": {
+    "total": 279,
+    "matched": 6,
+    "per_call": 186,
+    "no_ratio": 0,
+    "duplicate": 3
+  },
+  "models": {
+    "deepseek-flash": {
+      "input": 75,
+      "output": 75,
+      "cache_read": null,
+      "raw": {
+        "model_name": "deepseek-flash",
+        "model_ratio": 37.5,
+        "completion_ratio": 1,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "gpt-6.2-astra": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "deepseek-v4-pro": {
+      "input": 9,
+      "output": 27,
+      "cache_read": 0.3,
+      "raw": {
+        "model_name": "deepseek-v4-pro",
+        "model_ratio": 4.5,
+        "completion_ratio": 3,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.033333333333
+      }
+    },
+    "claude-sonnet-5-5": {
+      "input": 75,
+      "output": 75,
+      "cache_read": null,
+      "raw": {
+        "model_name": "claude-sonnet-5-5",
+        "model_ratio": 37.5,
+        "completion_ratio": 1,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "gpt-6.2-sol": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-sol",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "claude-opus-5-5": {
+      "input": 75,
+      "output": 75,
+      "cache_read": null,
+      "raw": {
+        "model_name": "claude-opus-5-5",
+        "model_ratio": 37.5,
+        "completion_ratio": 1,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    }
+  },
+  "unmatched": [
+    {
+      "model_name": "claude-opus-4-1-20250805",
+      "model_ratio": 7.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "suno-lyrics",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "suno-wav",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "claude-sonnet-4-20250514",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "grok-4.5-c",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "kimi-k3.1-pro",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-3.8-flash",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gemini-3.7-flash",
+      "model_ratio": 0.75,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-6-luna",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gemini-4-argon",
+      "model_ratio": 2,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.5-flash-lite",
+      "model_ratio": 0.15,
+      "completion_ratio": 8.333333333333
+    },
+    {
+      "model_name": "trellis",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-6-sol",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "claude-opus-4-8-max",
+      "model_ratio": 37.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.5-flash",
+      "model_ratio": 0.75,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-sonnet-4-6",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-5",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-6.1-terra",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "claude-opus-4-7",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "suno-extend-audio",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "xx-gemini-3.1-flash-image",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "suno-v6",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "doubao-seedance-2-0-mini-260615",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "kl1-kling-3.0",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "claude-opus-4-5",
+      "model_ratio": 37.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.6-luna",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "glm-5.3-flash",
+      "model_ratio": 5.25,
+      "completion_ratio": 3.5
+    },
+    {
+      "model_name": "gemini-stt",
+      "model_ratio": 7.199999999999999,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gemini-tts",
+      "model_ratio": 18,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "suno-timestamped-lyrics",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-5.6-sol",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-haiku-4-5",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-haiku-5-5",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "mu1-muse-director",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-4-hydrogen",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "codex-auto-review",
+      "model_ratio": 1,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "grok-4.7",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "flux-3-klein",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-5.5",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "doubao-seedance-2-0-fast-260128",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "qwen3.5-122b-a10b",
+      "model_ratio": 1,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "speech-2.8-turbo",
+      "model_ratio": 120,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "claude-opus-4-8",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-fable-5-1",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "suno-add-instrumental",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "wan4-wan3.0",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "speech-2.8-hd",
+      "model_ratio": 210,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "claude-haiku-4-5-20251001",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-4-carbon-high",
+      "model_ratio": 2,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-20250514",
+      "model_ratio": 7.5,
+      "completion_ratio": 5
+    }
+  ]
+}

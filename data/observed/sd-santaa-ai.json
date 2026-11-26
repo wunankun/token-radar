@@ -1,0 +1,312 @@
+{
+  "station_id": "sd-santaa-ai",
+  "endpoint": "https://sd.santaa.ai/api/pricing",
+  "fetched_at": "2026-11-26T13:04:01.702Z",
+  "http_status": 200,
+  "latency_ms": 976,
+  "assumption": "face_value_1cny_per_usd",
+  "parser": "new-api/one-api",
+  "group_ratio": 1,
+  "group_source": "manual",
+  "groups": 13,
+  "group_ratios": {
+    "CC Max": 1.5,
+    "Cursor反代": 0.1,
+    "GPT": 0.1,
+    "Gemini": 1,
+    "Kimi": 0.5,
+    "SD.20-1": 1,
+    "SD2.0": 1,
+    "SD2.0/2.5": 1,
+    "auto": 1,
+    "中专": 0.1,
+    "火山官方渠道": 1,
+    "自用": 0.01,
+    "速刷渠道": 0.01
+  },
+  "stats": {
+    "total": 1186,
+    "matched": 2,
+    "per_call": 0,
+    "no_ratio": 0,
+    "duplicate": 2
+  },
+  "models": {
+    "deepseek-flash": {
+      "input": 75,
+      "output": 75,
+      "cache_read": null,
+      "raw": {
+        "model_name": "deepseek-flash",
+        "model_ratio": 37.5,
+        "completion_ratio": 1,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "deepseek-v4-pro": {
+      "input": 12,
+      "output": 27,
+      "cache_read": null,
+      "raw": {
+        "model_name": "deepseek-v4-pro",
+        "model_ratio": 6,
+        "completion_ratio": 2.25,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    }
+  },
+  "unmatched": [
+    {
+      "model_name": "sec/sensenova-6.8-flash-lite",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "claude-5-fable",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "openai-compatible-chat-7be5b3ac-7a9c-4df7-8881-17e4409399e8/llamacoder-coder",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/~openai/gpt-mini-latest",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "codex/gpt-6-astra-medium",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "antigravity/claude-opus-5-5-high",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "no-think/agy/claude-opus-5-5",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "glm-5.3",
+      "model_ratio": 6,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "cl/openai/gpt-6.1-terra",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/qwen/qwen3.5-flash-02-23",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/nex-agi/nex-n2.5-mini",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/poolside/laguna-s-2.1:free",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "as/gpt-5.6-terra",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "sec/step-5-preview",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/mistralai/mistral-small-3.1-24b-instruct",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "auto/chat",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "codex/astra-ultra",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "no-think/antigravity/claude-sonnet-5-5",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini/gemini-2.0-flash-preview-tts",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "ollama/beam",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/mancer/weaver",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-4-argon-medium",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "as/glm-5.3-flashx-mod",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cx/gpt-6-astra-ultra",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "fast-text",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/google/gemini-3.1-flash-image-preview",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/qwen/qwen3.7-plus",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/qwen/qwen3-vl-235b-a22b-instruct",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cohere/tiny-aya-global",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/anthropic/claude-fable-5.1",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/mistralai/mixtral-8x22b-instruct",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "web-workers",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "openai-compatible-chat-7be5b3ac-7a9c-4df7-8881-17e4409399e8/browser-fast",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "ollama/clef:cloud",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "auto/pro-fast",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "auto/best-free",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/moonshotai/kimi-k3",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cohere/command-a-vision",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "derouter/gpt-6-sol",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "agnes/agnes-3.0-flash",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "ollama/clef",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "g37-1m",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/aion-labs/aion-3.5-mini",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/openai/gpt-5.2",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "mac",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "ultracode",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/fireworks/ember-1",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/google/gemma-4-26b-a4b-it:free",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "cl/openai/gpt-5",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-3.8-flash-high",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    }
+  ]
+}

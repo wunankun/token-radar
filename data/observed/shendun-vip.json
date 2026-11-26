@@ -1,0 +1,363 @@
+{
+  "station_id": "shendun-vip",
+  "endpoint": "https://shendun.vip/api/pricing",
+  "fetched_at": "2026-11-26T13:04:06.988Z",
+  "http_status": 200,
+  "latency_ms": 628,
+  "assumption": "face_value_1cny_per_usd",
+  "parser": "new-api/one-api",
+  "group_ratio": 1,
+  "group_source": "manual",
+  "groups": 49,
+  "group_ratios": {
+    "1k-企业级稳定": 0.21,
+    "720P不支持视频参考": 0.5,
+    "720P全能参考": 1,
+    "AWS-Claude-分组": 1,
+    "Claude-任意客户端": 2,
+    "Code-Claude-分组": 1.5,
+    "GPT-plus+pro混合稳定线路": 1.6,
+    "GPT-优质主线路": 0.12,
+    "GPT-优质官转分组tpm3.5": 3.3,
+    "GPT-官AZ稳定并发": 1.32,
+    "GPT-纯pro-高速稳定": 2.1,
+    "GPT-限时特价": 0.08,
+    "GROK优质": 1,
+    "GROK官key": 3.5,
+    "GROK特惠": 0.1,
+    "Kiro-Claude-分组": 0.1,
+    "deepseek-v4-flash": 0.1,
+    "default": 1,
+    "gemini优质": 1,
+    "gemini官key": 2.8,
+    "gemini特惠": 0.5,
+    "gpt-官key-满血": 0.3,
+    "image官key": 2,
+    "official_claude": 4.5,
+    "原生4k企业级稳定": 1.8,
+    "原生4k全参数支持透明背景": 1.6,
+    "原生中等质量": 0.8,
+    "原生全质量": 1.2,
+    "原生支持透明背景": 1.6,
+    "原生香蕉": 1,
+    "国模全系列特价": 0.1,
+    "国模官key直连": 0.6,
+    "国模满血（禁止破限）": 0.2,
+    "官key": 1,
+    "测试分组": 0.78,
+    "生图-优质线路": 1,
+    "生图-特惠通道": 0.7,
+    "视频720p按次": 1,
+    "视频官Key7.8折": 0.78,
+    "视频官价1.4折": 0.14,
+    "视频官价2折": 0.2,
+    "视频官价3折": 0.3,
+    "视频按次计费": 1,
+    "视频按秒付费": 1,
+    "超分4k-企业级稳定": 0.45,
+    "超分香蕉特价": 0.5,
+    "香蕉企业专线": 1,
+    "香蕉官key": 2,
+    "香蕉官转直出": 1.2
+  },
+  "stats": {
+    "total": 122,
+    "matched": 3,
+    "per_call": 59,
+    "no_ratio": 0,
+    "duplicate": 1
+  },
+  "models": {
+    "deepseek-v4-pro": {
+      "input": 9,
+      "output": 27,
+      "cache_read": 0.9,
+      "raw": {
+        "model_name": "deepseek-v4-pro",
+        "model_ratio": 4.5,
+        "completion_ratio": 3,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.1
+      }
+    },
+    "deepseek-flash": {
+      "input": 1,
+      "output": 4,
+      "cache_read": 0.1,
+      "raw": {
+        "model_name": "deepseek-v4-flash",
+        "model_ratio": 0.5,
+        "completion_ratio": 4,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.1
+      }
+    },
+    "claude-sonnet-5-5": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.6,
+      "raw": {
+        "model_name": "claude-sonnet-4-5",
+        "model_ratio": 1.5,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.2
+      }
+    }
+  },
+  "unmatched": [
+    {
+      "model_name": "gpt-6-astra",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "grok-4.3",
+      "model_ratio": 0.625,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "claude-opus-4-8",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-haiku-4-5",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "glm-5.3-flash",
+      "model_ratio": 0.525,
+      "completion_ratio": 3.333333333333333
+    },
+    {
+      "model_name": "gpt-5.3-codex",
+      "model_ratio": 0.875,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "minimax-m3",
+      "model_ratio": 1.05,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "grok-4.5",
+      "model_ratio": 1,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "claude-sonnet-4-6",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "qwen3.8-flash",
+      "model_ratio": 0.525,
+      "completion_ratio": 3.1333333333333333
+    },
+    {
+      "model_name": "gpt-5.6-terra",
+      "model_ratio": 1.25,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "mimo-v2.5-pro",
+      "model_ratio": 1.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gemini-4-carbon",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gpt-5.6-sol",
+      "model_ratio": 2.5,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "gpt-6-sol",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "hy3-preview",
+      "model_ratio": 0.63,
+      "completion_ratio": 3.3333333333333335
+    },
+    {
+      "model_name": "gpt-5.4-mini",
+      "model_ratio": 0.375,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-opus-5",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.5-flash-lite",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gemini-3.1-pro-preview",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gemini-3-pro-preview",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gemini-3.1-flash-lite",
+      "model_ratio": 0.125,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "midjourney-v7-stable",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-5.6-luna",
+      "model_ratio": 0.5,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "glm-5.3",
+      "model_ratio": 4.9,
+      "completion_ratio": 3.142857142857143
+    },
+    {
+      "model_name": "claude-opus-4-5",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-fable-5-1",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "kimi-k3",
+      "model_ratio": 10.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-4-argon",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-2.5-flash",
+      "model_ratio": 0.15,
+      "completion_ratio": 8.333333333333334
+    },
+    {
+      "model_name": "gpt-6.1-sol",
+      "model_ratio": 1.1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "qwen3.8-max",
+      "model_ratio": 7,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "gemini-2.5-pro",
+      "model_ratio": 0.625,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "gemini-3.5-flash",
+      "model_ratio": 0.75,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-opus-4-7",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.6-flash",
+      "model_ratio": 0.75,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "midjourney-v8.2-stable",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-5.5",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-opus-4-6",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-sonnet-5",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.7-flash",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "glm-5.2",
+      "model_ratio": 4.9,
+      "completion_ratio": 3.142857142857143
+    },
+    {
+      "model_name": "mimo-v2.6-pro",
+      "model_ratio": 1.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gemini-3.8-flash",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.4",
+      "model_ratio": 1.25,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-5.3-codex-spark",
+      "model_ratio": 0.875,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "grok-build-0.1",
+      "model_ratio": 0.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "midjourney-v8.1-stable",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "mimo-v2.5",
+      "model_ratio": 0.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "kimi-k3.1-pro",
+      "model_ratio": 7,
+      "completion_ratio": 5
+    }
+  ]
+}

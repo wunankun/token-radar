@@ -1,0 +1,379 @@
+{
+  "station_id": "ai-songsongcard-shop",
+  "endpoint": "https://ai.songsongcard.shop/api/pricing",
+  "fetched_at": "2026-11-26T13:04:01.760Z",
+  "http_status": 200,
+  "latency_ms": 1000,
+  "assumption": "face_value_1cny_per_usd",
+  "parser": "new-api/one-api",
+  "group_ratio": 1,
+  "group_source": "manual",
+  "groups": 31,
+  "group_ratios": {
+    "AWSB_低价渠道": 2.1,
+    "Claude Code 0注入": 1.8,
+    "Claude Code Fable5-2 单独分组": 1.8,
+    "Claude Code Kiro": 0.3,
+    "Claude Code Kiro 特价": 0.35,
+    "Claude Code 可外接": 1.4,
+    "Claude Code 官转一": 1.3,
+    "Claude Code 特特价": 1.3,
+    "Claude 反代": 0.2,
+    "ClaudeCode 官 key": 3.9,
+    "Claude_AWS_bedrock": 3.2,
+    "Claude_AWS_bedrock_F5": 4.6,
+    "Claude_AWS_bedrock_高": 4.5,
+    "GPT PLUS": 0.1,
+    "GPT Pro": 0.25,
+    "GPT Pro  低价渠道": 0.1,
+    "GPT 生图 一": 1,
+    "Gemini VT 渠道二": 1,
+    "Gemini vt 渠道 1": 2.8,
+    "Gemini 混池 渠道一": 2.5,
+    "Gemini 混池 渠道二": 2.5,
+    "Gemini_Vertex直连": 2.3,
+    "Gemini稳定渠道": 1.2,
+    "Grok Super": 0.2,
+    "Grok 官 K": 1.7,
+    "NanoBanana2": 1,
+    "awsb 官 k 混池": 3,
+    "gemini vt 低价渠道": 2,
+    "gemini-反重力pro/utlra": 0.4,
+    "kiro GPT": 2.2,
+    "国模渠道": 0.5
+  },
+  "stats": {
+    "total": 676,
+    "matched": 6,
+    "per_call": 27,
+    "no_ratio": 3,
+    "duplicate": 6
+  },
+  "models": {
+    "gpt-6.2-astra": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "claude-opus-5-5": {
+      "input": 15,
+      "output": 75,
+      "cache_read": 1.5,
+      "raw": {
+        "model_name": "claude-3-opus-20240229",
+        "model_ratio": 7.5,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.1
+      }
+    },
+    "deepseek-flash": {
+      "input": 75,
+      "output": 75,
+      "cache_read": null,
+      "raw": {
+        "model_name": "deepseek-flash",
+        "model_ratio": 37.5,
+        "completion_ratio": 1,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "gpt-6.2-sol": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-sol",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "deepseek-v4-pro": {
+      "input": 75,
+      "output": 75,
+      "cache_read": null,
+      "raw": {
+        "model_name": "deepseek-v4-pro",
+        "model_ratio": 37.5,
+        "completion_ratio": 1,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "claude-sonnet-5-5": {
+      "input": 75,
+      "output": 375,
+      "cache_read": null,
+      "raw": {
+        "model_name": "claude-sonnet-4-5",
+        "model_ratio": 37.5,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    }
+  },
+  "unmatched": [
+    {
+      "model_name": "Doubao-1.5-pro-vision-32k",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "openai/gpt-oss-120b",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "speech-01-hd",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "minimax-m3",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "o3-mini",
+      "model_ratio": 0.55,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gpt-image-1-mini",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "qwen-plus",
+      "model_ratio": 10,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "@hf/thebloke/neural-chat-7b-v3-1-awq",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "ernie-lite-8k",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-flash-lite-latest",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "glm-4.6",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "abab6.5s-chat-pro",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "claude-sonnet-4-20250514",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "BLOOMZ-7B",
+      "model_ratio": 0.273972602739726,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "chatglm_lite",
+      "model_ratio": 0.1429,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "rerank-english-v2.0",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "abab6.5s-chat",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "ernie-char-fiction-8k",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-4-argon",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "claude-sonnet-4-20250514-thinking",
+      "model_ratio": 37.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-7-low",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "@cf/mistral/mistral-7b-instruct-v0.1",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "Doubao-pro-128k",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "grok-4-20",
+      "model_ratio": 0.71,
+      "completion_ratio": 1.992957746479
+    },
+    {
+      "model_name": "ERNIE-Speed-8K",
+      "model_ratio": 0.273972602739726,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "glm-4.6v",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "ernie-novel-8k",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-3.1-pro-preview",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gpt-image-2.5-sunburst",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "claude-opus-4-7-high",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "llama-3-8b-instruct",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "THUDM/chatglm3-6b",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-4o-2024-05-13",
+      "model_ratio": 2.5,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "claude-opus-4-6-high",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "command-r-08-2024",
+      "model_ratio": 0.075,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "netease-youdao/bce-embedding-base_v1",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "MiniMax-M2.1-highspeed",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-3.1-flash-tts-preview",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "ernie-3.5-8k-preview",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-5.5-openai-compact",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-6.1-terra",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gemini-2.5-flash-lite",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "claude-opus-4-8-xhigh",
+      "model_ratio": 37.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "hunyuan-standard",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "nova-micro-v1:0",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "Qwen/Qwen1.5-32B-Chat",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "moonshot-v1-128k",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-4o-search-preview-2025-03-11",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "o1-mini",
+      "model_ratio": 0.55,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gpt-realtime-mini-2025-10-06",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "station_id": "openrouter",
+  "kind": "aggregator",
+  "endpoint": "https://openrouter.ai/api/v1/models",
+  "fetched_at": "2026-11-26T13:05:20.431Z",
+  "http_status": 200,
+  "latency_ms": 1169,
+  "assumption": "usd_per_million",
+  "models": {
+    "gpt-6.2-astra": {
+      "openrouter_id": "openai/gpt-6.2-astra",
+      "name": "OpenAI: GPT-6.2 Astra",
+      "input": 8,
+      "output": 40,
+      "cache_read": 0.4
+    },
+    "gpt-6.2-sol": {
+      "openrouter_id": "openai/gpt-6.2-sol",
+      "name": "OpenAI: GPT-6.2 Sol",
+      "input": 2,
+      "output": 10,
+      "cache_read": 0.1
+    },
+    "claude-sonnet-5-5": {
+      "openrouter_id": "anthropic/claude-sonnet-5.5",
+      "name": "Anthropic: Claude Sonnet 5.5",
+      "input": 2,
+      "output": 10,
+      "cache_read": 0.1
+    },
+    "claude-opus-5-5": {
+      "openrouter_id": "anthropic/claude-opus-5.5",
+      "name": "Anthropic: Claude Opus 5.5",
+      "input": 4,
+      "output": 20,
+      "cache_read": 0.2
+    },
+    "deepseek-flash": {
+      "openrouter_id": "deepseek/deepseek-v4.1-flash",
+      "name": "DeepSeek: DeepSeek V4.1 Flash",
+      "input": 0.0507,
+      "output": 0.2028,
+      "cache_read": 0.001
+    },
+    "deepseek-v4-pro": {
+      "openrouter_id": "deepseek/deepseek-v4-pro",
+      "name": "DeepSeek: DeepSeek V4 Pro 0423",
+      "input": 0.8671,
+      "output": 1.5228,
+      "cache_read": 0.2
+    }
+  }
+}

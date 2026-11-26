@@ -1,0 +1,356 @@
+{
+  "station_id": "zlkpro-tech",
+  "endpoint": "https://zlkpro.tech/api/pricing",
+  "fetched_at": "2026-11-26T13:04:09.369Z",
+  "http_status": 200,
+  "latency_ms": 940,
+  "assumption": "face_value_1cny_per_usd",
+  "parser": "new-api/one-api",
+  "group_ratio": 1,
+  "group_source": "manual",
+  "groups": 6,
+  "group_ratios": {
+    "default": 0.1,
+    "discount": 0.005,
+    "free": 0,
+    "free-pro": 0.033,
+    "kiro": 0.01,
+    "vip": 0.05
+  },
+  "stats": {
+    "total": 94,
+    "matched": 6,
+    "per_call": 0,
+    "no_ratio": 0,
+    "duplicate": 2
+  },
+  "models": {
+    "claude-sonnet-5-5": {
+      "input": 75,
+      "output": 375,
+      "cache_read": null,
+      "raw": {
+        "model_name": "claude-sonnet-4-5",
+        "model_ratio": 37.5,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "deepseek-v4-pro": {
+      "input": 1.91,
+      "output": 3.83,
+      "cache_read": 0.33,
+      "raw": {
+        "model_name": "deepseek-v4-pro",
+        "model_ratio": 0.955,
+        "completion_ratio": 2.005236,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.172775
+      }
+    },
+    "claude-opus-5-5": {
+      "input": 9,
+      "output": 49,
+      "cache_read": 1.8,
+      "raw": {
+        "model_name": "claude-opus-5-5",
+        "model_ratio": 4.5,
+        "completion_ratio": 5.444444444,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.2
+      }
+    },
+    "deepseek-flash": {
+      "input": 0.21,
+      "output": 1.28,
+      "cache_read": 0.07,
+      "raw": {
+        "model_name": "deepseek-v4-flash",
+        "model_ratio": 0.105,
+        "completion_ratio": 6.095238,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.333333
+      }
+    },
+    "gpt-6.2-astra": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    },
+    "gpt-6.2-sol": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-sol",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0
+      }
+    }
+  },
+  "unmatched": [
+    {
+      "model_name": "gpt-6-sol",
+      "model_ratio": 2,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-5",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "deepseek-v4.1-flash-abliterated",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "glm-5.3-abliterated",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "kimi-k3.1-pro-abliterated",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "step-3.7-flash",
+      "model_ratio": 0.1,
+      "completion_ratio": 5.75
+    },
+    {
+      "model_name": "deepseek-v4-flash-vision-exp",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "deepseek-v4.1-flash-uncensored",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "nemotron-3-ultra-550b-a55b",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "kimi-k3.1-pro:free",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-4-hydrogen",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "kimi-k3.1-pro-highspeed",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "deepseek-v4-flash-0731",
+      "model_ratio": 0.22,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "deepseek-v4-pro-abliterated",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "minimax-m3",
+      "model_ratio": 0.375,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gemma-4-26b-a4b-it",
+      "model_ratio": 0.075,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "glm-5.3-flash-abliterated",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-4-neon",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "glm-4.7-flash",
+      "model_ratio": 0.035,
+      "completion_ratio": 5.714286
+    },
+    {
+      "model_name": "claude-opus-4-5",
+      "model_ratio": 37.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-6-astra",
+      "model_ratio": 30,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "qwen4-max",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "qwen3.8-flash",
+      "model_ratio": 0.075,
+      "completion_ratio": 3.133333
+    },
+    {
+      "model_name": "claude-fable-5-2",
+      "model_ratio": 25.5,
+      "completion_ratio": 5.098039
+    },
+    {
+      "model_name": "nemotron-3.5-super-vl-120b-a12b",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "llama-3.3-70b-instruct",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "laguna-xs-2.1",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-3.8-flash",
+      "model_ratio": 0.675,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "deepseek-v4.1-flash-1017",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "google/gemma-4-31b-it",
+      "model_ratio": 0.045,
+      "completion_ratio": 3.777778
+    },
+    {
+      "model_name": "gpt-oss-120b",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "glyph-cluster",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "claude-opus-4-8",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-6",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.6-sol",
+      "model_ratio": 2.2,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "step-5-preview",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-6.1-terra",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "grok-4.6",
+      "model_ratio": 2,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "flint-v1.0",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "claude-sonnet-4-6",
+      "model_ratio": 37.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-haiku-4-5",
+      "model_ratio": 0.55,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "stepfun-ai/step-5-preview",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "kimi-k3.1-pro",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "qwen3.7-flash",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "glm-5.4",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "minimax-m2.7",
+      "model_ratio": 0.3,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "glm-5.3",
+      "model_ratio": 1.4,
+      "completion_ratio": 3.142857
+    },
+    {
+      "model_name": "deepseek-v4-pro-0813",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "glm-4.7-flash-heretic",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "unobaba-v1.0-flash",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    }
+  ]
+}

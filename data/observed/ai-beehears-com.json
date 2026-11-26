@@ -1,0 +1,409 @@
+{
+  "station_id": "ai-beehears-com",
+  "endpoint": "https://ai.beehears.com/api/pricing",
+  "fetched_at": "2026-11-26T13:04:12.344Z",
+  "http_status": 200,
+  "latency_ms": 878,
+  "assumption": "face_value_1cny_per_usd",
+  "parser": "new-api/one-api",
+  "group_ratio": 1,
+  "group_source": "manual",
+  "groups": 56,
+  "group_ratios": {
+    "⁉️ TypeSafe-Jev": 4,
+    "♠️ Claude-高阶订阅": 1,
+    "♣️ Claude-初阶订阅": 1,
+    "♥️ Claude-进阶订阅": 1,
+    "♻️ default": 1,
+    "✖️ Grok - VIP生图视频": 1,
+    "✖️ Grok - 官转": 1.5,
+    "✖️ Grok - 高可用": 0.5,
+    "✳️ GPT生图2 - AZ": 1.5,
+    "✳️ GPT生图2 - CX": 1,
+    "✳️ GPT生图3 - AZ": 3.2,
+    "🆒 Claude - Cursor Max": 0.45,
+    "🆙 GPT - Codex": 0.1,
+    "🆙 GPT - Codex - Pro": 0.2,
+    "🆙 GPT - Codex - Pro - 严选": 0.3,
+    "🆙 GPT - 订阅可用": 1,
+    "🇨🇳 Made in China": 0.25,
+    "🌏️ Claude AWS Bedrock": 3.5,
+    "🌏️ Claude AWS Bedrock Mix": 3.5,
+    "🌏️ Claude AWS Bedrock S1": 3.6,
+    "🌏️ Claude Azure": 1.8,
+    "🌏️ Claude 企业": 2.8,
+    "🌏️ Claude 官转": 3.5,
+    "🌏️ OpenAI Awsb": 2,
+    "🌏️ OpenAI Azure": 2,
+    "🌏️ OpenAI 官转": 2.8,
+    "🌙 月之暗面 Kimi": 0.45,
+    "🌚 Kimi 自建": 0.55,
+    "🍌 Banana 生图 - 按次": 1,
+    "🎥 视频生成 SeeDance-2": 8,
+    "🎬 视频生成": 1,
+    "🐱 Gemini AiStudio/Vertex Mix": 1.8,
+    "🐱 Gemini Vertex Official": 2.4,
+    "🐳 Deepseek": 0.4,
+    "👻 Claude Kiro 企业版": 0.5,
+    "👻 Claude Kiro 按次": 1,
+    "👻 Claude Kiro 无缓": 0.05,
+    "👻 Claude Kiro 稳定版": 0.35,
+    "👻 Claude Kiro 高可用": 0.2,
+    "🔄 Claude 混合线路 - P3": 0.4,
+    "🔆 Gemini - 生图 - P5": 1,
+    "🔐 临时测试": 2,
+    "🔒 OpenRouter": 3,
+    "🔥 Claude - Max 企业/蒸馏": 2.8,
+    "🙋‍♂️ 千问 Qwen": 0.7,
+    "🚀 Claude - Max2": 1.8,
+    "🚀 Claude - Max2 - P1": 1.5,
+    "🚀 Claude - Max2 - P3": 1,
+    "🚀 Claude - Max5": 1.3,
+    "🛸 Claude Anit 反重力 - P3": 0.4,
+    "🛸 Claude Anit 反重力 - P6": 0.6,
+    "🤔 Claude-Thinking-按次": 1,
+    "🦁 Gemini-按次": 1,
+    "🪀 智谱 GLM": 0.4,
+    "🪐 Gemini - Max1 -P6": 0.6,
+    "🪐 Gemini - Plus - P5": 0.5
+  },
+  "stats": {
+    "total": 353,
+    "matched": 6,
+    "per_call": 48,
+    "no_ratio": 0,
+    "duplicate": 4
+  },
+  "models": {
+    "claude-opus-5-5": {
+      "input": 4,
+      "output": 20,
+      "cache_read": 0.2,
+      "raw": {
+        "model_name": "claude-opus-5-5",
+        "model_ratio": 2,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05
+      }
+    },
+    "claude-sonnet-5-5": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
+      "raw": {
+        "model_name": "claude-sonnet-4-5",
+        "model_ratio": 1.5,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.1
+      }
+    },
+    "deepseek-flash": {
+      "input": 2,
+      "output": 8,
+      "cache_read": 0.04,
+      "raw": {
+        "model_name": "deepseek-v4.1-flash",
+        "model_ratio": 1,
+        "completion_ratio": 4,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.02
+      }
+    },
+    "gpt-6.2-sol": {
+      "input": 2,
+      "output": 10,
+      "cache_read": 0.1,
+      "raw": {
+        "model_name": "gpt-6.2-sol",
+        "model_ratio": 1,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05
+      }
+    },
+    "gpt-6.2-astra": {
+      "input": 8,
+      "output": 40,
+      "cache_read": 0.4,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 4,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05
+      }
+    },
+    "deepseek-v4-pro": {
+      "input": 9,
+      "output": 27,
+      "cache_read": 0.3,
+      "raw": {
+        "model_name": "deepseek-v4-pro",
+        "model_ratio": 4.5,
+        "completion_ratio": 3,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.0333333
+      }
+    }
+  },
+  "unmatched": [
+    {
+      "model_name": "gemini-3.1-pro",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "glm-5.2",
+      "model_ratio": 4,
+      "completion_ratio": 3.5
+    },
+    {
+      "model_name": "gpt-4-dalle",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-5.4-mini-2026-03-17",
+      "model_ratio": 0.375,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "dreamina-seedance-2-0-260128",
+      "model_ratio": 3.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-4-hydrogen-xhigh",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "glm-5.3-flashx",
+      "model_ratio": 1,
+      "completion_ratio": 3.5
+    },
+    {
+      "model_name": "doubao-seedance-2.0-mini-720p-15s",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-3.5-flash-lite",
+      "model_ratio": 0.15,
+      "completion_ratio": 8.3333
+    },
+    {
+      "model_name": "gpt-5.2-xhigh",
+      "model_ratio": 37.5,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "hy4-preview",
+      "model_ratio": 3,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "gemini-2.5-flash-native-audio-preview-09-2025",
+      "model_ratio": 37.5,
+      "completion_ratio": 8.333333333333334
+    },
+    {
+      "model_name": "gemini-3.1-flash-image",
+      "model_ratio": 0.25,
+      "completion_ratio": 120
+    },
+    {
+      "model_name": "gemini-3.5-transcribe-live",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "o4-mini-2025-04-16",
+      "model_ratio": 0.55,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "doubao-seedance-2-0",
+      "model_ratio": 2.8,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "dreamina-seedance-2-0-260128-max",
+      "model_ratio": 3.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-nano-banana-2.1",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "mimo-v2.5",
+      "model_ratio": 0.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "mimo-v2.6-pro",
+      "model_ratio": 1.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "claude-haiku-4-5-20251001",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-3.5-turbo-1106",
+      "model_ratio": 0.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-5.4",
+      "model_ratio": 37.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gemini-3.1-flash-image-preview",
+      "model_ratio": 0.25,
+      "completion_ratio": 120
+    },
+    {
+      "model_name": "gemma-4-31b-it",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "doubao-seedance-2-0-fast-260128-max",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "seedream-5-0-260128",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-5.6-terra-openai-compact",
+      "model_ratio": 37.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-image-2.6-sunburst",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-5.2-2025-12-11",
+      "model_ratio": 0.875,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "claude-opus-4-8-thinking",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.1-pro-preview-customtools",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "doubao-seedance-2.5",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-3.7-flash",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-4-all",
+      "model_ratio": 15,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-4.1-nano",
+      "model_ratio": 0.05,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-4o",
+      "model_ratio": 1.25,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "o1",
+      "model_ratio": 7.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "o3-mini-2025-01-31-medium",
+      "model_ratio": 0.55,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gemini-4-barium",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.6-terra",
+      "model_ratio": 37.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-4o-all",
+      "model_ratio": 15,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "claude-haiku-4-5",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-4-hydrogen-tiered-xhigh",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gpt-5.6",
+      "model_ratio": 37.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-4.1",
+      "model_ratio": 1,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gpt-4o-mini",
+      "model_ratio": 0.075,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "text-embedding-3-small",
+      "model_ratio": 0.01,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "doubao-seedance-2.0-fast-720p-10s",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-5.4-pro",
+      "model_ratio": 15,
+      "completion_ratio": 6
+    }
+  ]
+}

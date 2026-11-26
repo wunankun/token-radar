@@ -1,0 +1,449 @@
+{
+  "station_id": "api-deepflowapi-com",
+  "endpoint": "https://api.deepflowapi.com/api/pricing",
+  "fetched_at": "2026-11-26T13:04:03.818Z",
+  "http_status": 200,
+  "latency_ms": 2110,
+  "assumption": "face_value_1cny_per_usd",
+  "parser": "new-api/one-api",
+  "group_ratio": 1,
+  "group_source": "manual",
+  "groups": 96,
+  "group_ratios": {
+    "AWS-Bedrock-1": 0.7500060000000001,
+    "AWS-Bedrock-2": 1.000008,
+    "AWS-Claude-1": 0.7500060000000001,
+    "AWS-Claude-2": 1.5000120000000001,
+    "AWS-Claude-3": 1.87,
+    "AWS-Gpt-1": 0.500004,
+    "Aigc-Video-1": 1.53,
+    "Aistudio-Gemini-1": 0.29999899999999996,
+    "Aistudio-Gemini-2": 0.450007,
+    "Aistudio-Gemini-3": 0.7500060000000001,
+    "Aistudio-Gemini-4": 1.625013,
+    "Alibaba-1": 0.85,
+    "Alibaba-2": 1.275,
+    "Alibaba-3": 1.87,
+    "Alibaba-image-1": 1.105,
+    "Alibaba-image-2": 1.36,
+    "Alibaba-video-1": 1.105,
+    "Alibaba-video-2": 1.19,
+    "Anthropic-Claude-1": 1.87,
+    "Anti-Gemini-1": 0.125001,
+    "Anti-Gemini-2": 0.255,
+    "Azure-Claude-1": 0.7500060000000001,
+    "Azure-Gpt-1": 0.07479999999999999,
+    "Azure-Gpt-2": 0.17,
+    "Azure-Gpt-3": 0.374,
+    "Azure-Gpt-4": 0.748,
+    "Azure-Gpt-5": 1.02,
+    "Azure-Gpt-6": 1.53,
+    "Azure-Grok-1": 0.125001,
+    "Azure-Grok-2": 0.18750999999999998,
+    "Claude-Code-1": 0.29999899999999996,
+    "Claude-Code-2": 0.500004,
+    "Claude-Code-3": 0.765,
+    "Cli-Gemini-1": 0.125001,
+    "Cli-Grok-1": 0.125001,
+    "Cli-Grok-2": 0.175015,
+    "Codex-Gpt-1": 0.062509,
+    "Codex-Gpt-2": 0.100011,
+    "Codex-Gpt-3": 0.125001,
+    "Discounted-Banana-1": 0.125001,
+    "Discounted-Banana-2": 0.175015,
+    "Discounted-Gemini-1": 0.125001,
+    "Discounted-Gemini-2": 0.24413699999999997,
+    "Discounted-Seedance-1": 1.105,
+    "Doubao-1": 0.85,
+    "Doubao-2": 1.275,
+    "Doubao-3": 1.87,
+    "Eleven-1": 1.02,
+    "Gpt-Image-1": 0.125001,
+    "Gpt-Image-2": 0.156264,
+    "Gpt-Image-3": 0.23437899999999998,
+    "Hailuo-1": 1.36,
+    "Hailuo-2": 1.275,
+    "Hailuo-3": 1.87,
+    "Kimi-1": 1.275,
+    "Kimi-2": 1.87,
+    "Kiro-Claude-1": 0.150008,
+    "Kling-1": 1.02,
+    "Kling-2": 1.4449999999999998,
+    "Kling-3": 1.615,
+    "MJ-1": 0.075004,
+    "MJ-2": 0.125001,
+    "MJ-3": 0.24989999999999998,
+    "Openai-Gpt-1": 1.000008,
+    "Openai-Gpt-2": 1.2500099999999998,
+    "Pix-CN-1": 1.19,
+    "Pix-GL-1": 1.19,
+    "Seedance-1": 1.105,
+    "Seedance-2": 1.4449999999999998,
+    "Self-Deployed-1": 0.51,
+    "Self-Deployed-2": 0.85,
+    "Self-Deployed-3": 1.275,
+    "SiliconFlow-1": 1.275,
+    "Spark-1": 1.87,
+    "Special-Muse-1": 0.7500399999999999,
+    "Special-Muse-Video-1": 0.9999399999999998,
+    "Suno-1": 0.125001,
+    "Suno-2": 0.18750999999999998,
+    "Vertex-Claude-1": 0.7500060000000001,
+    "Vertex-Gemini-1": 0.34,
+    "Vertex-Gemini-2": 0.51,
+    "Vertex-Gemini-3": 1.53,
+    "Vidu-1": 1.02,
+    "Vidu-2": 1.36,
+    "Wenxin-1": 1.87,
+    "Xai-Grok-1": 0.7500060000000001,
+    "Xiaomi-1": 1.275,
+    "Xiaomi-2": 1.87,
+    "aigc-image-1": 1.19,
+    "deepseek-1": 1.87,
+    "doubao-image-1": 1.258,
+    "doubao-image-2": 1.4449999999999998,
+    "glm-1": 1.87,
+    "hunyuan-1": 1.02,
+    "hunyuan-2": 1.615,
+    "jev-1": 0.68
+  },
+  "stats": {
+    "total": 320,
+    "matched": 6,
+    "per_call": 107,
+    "no_ratio": 0,
+    "duplicate": 0
+  },
+  "models": {
+    "claude-opus-5-5": {
+      "input": 4,
+      "output": 20,
+      "cache_read": 0.2,
+      "raw": {
+        "model_name": "claude-opus-5-5",
+        "model_ratio": 2,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05
+      }
+    },
+    "gpt-6.2-astra": {
+      "input": 8,
+      "output": 40,
+      "cache_read": 0.4,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 4,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05
+      }
+    },
+    "gpt-6.2-sol": {
+      "input": 2,
+      "output": 10,
+      "cache_read": 0.1,
+      "raw": {
+        "model_name": "gpt-6.2-sol",
+        "model_ratio": 1,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05
+      }
+    },
+    "deepseek-flash": {
+      "input": 0.3,
+      "output": 1.2,
+      "cache_read": 0.006,
+      "raw": {
+        "model_name": "deepseek-v4.1-flash",
+        "model_ratio": 0.15,
+        "completion_ratio": 4,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.02
+      }
+    },
+    "claude-sonnet-5-5": {
+      "input": 2,
+      "output": 10,
+      "cache_read": 0.1,
+      "raw": {
+        "model_name": "claude-sonnet-5-5",
+        "model_ratio": 1,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05
+      }
+    },
+    "deepseek-v4-pro": {
+      "input": 1.32,
+      "output": 3.96,
+      "cache_read": 0.044,
+      "raw": {
+        "model_name": "deepseek-v4-pro",
+        "model_ratio": 0.66,
+        "completion_ratio": 3,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.03333
+      }
+    }
+  },
+  "unmatched": [
+    {
+      "model_name": "gpt-6.1-sol",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3-flash-preview",
+      "model_ratio": 0.25,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gemini-3.5-flash-lite",
+      "model_ratio": 0.15,
+      "completion_ratio": 8.33333333333
+    },
+    {
+      "model_name": "gpt-6-astra",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-fable-5-2",
+      "model_ratio": 4,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.5-flash",
+      "model_ratio": 0.75,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gemini-3.1-pro-preview",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-5.6-sol",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-image-2",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-5.5",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gemini-3.7-flash",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.8-flash",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-sonnet-5",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.6-flash",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-image-2.5-sunburst",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-5.6-luna",
+      "model_ratio": 0.1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-6-luna",
+      "model_ratio": 0.05,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-8",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-4-hydrogen",
+      "model_ratio": 0.75,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-fable-5-1",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-5",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-6",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.1-flash-lite",
+      "model_ratio": 0.125,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-6-sol",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-4-carbon",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.4",
+      "model_ratio": 1.25,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-image-2.6-sunburst",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-haiku-5-5",
+      "model_ratio": 0.05,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "glm-5.3-flash",
+      "model_ratio": 0.075,
+      "completion_ratio": 3.33333333333
+    },
+    {
+      "model_name": "gemini-4-argon",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-image-2.5-flare",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-4o-mini",
+      "model_ratio": 0.075,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gemini-3-pro-preview",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-5.6-terra",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-fable-5",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "kimi-k3.1-pro",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-sonnet-4-6",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "glm-5.3",
+      "model_ratio": 0.7,
+      "completion_ratio": 3.14285714286
+    },
+    {
+      "model_name": "gpt-image-2.6-flare",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-6.1-terra",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-4o",
+      "model_ratio": 1.25,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "grok-4.7",
+      "model_ratio": 1,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "kimi-k3",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-4.1",
+      "model_ratio": 1,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gemini-4-neon",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-7",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.4-mini",
+      "model_ratio": 0.375,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-haiku-4-5-20251001",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "deepseek-v4-flash-0731",
+      "model_ratio": 0.22,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "gpt-4.1-mini",
+      "model_ratio": 0.2,
+      "completion_ratio": 4
+    }
+  ]
+}
