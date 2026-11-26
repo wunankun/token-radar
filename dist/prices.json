@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T15:04:39.043Z",
+    "generated_at": "2026-11-26T15:11:56.862Z",
     "fx": {
       "usd_cny": 6.6609,
       "as_of": "2026-11-26",
@@ -182,9 +182,11 @@
         "blend": 0.0428,
         "discount": 0.9249
       },
-      "calc": "倍率 ×0.5 × 官方 $0.3 = ¥0.15/M",
-      "calc_basis": "倍率 ×0.5 × 官方 $0.3 = ¥0.15/M",
+      "calc": "官方 $0.3 × 倍率 0.5 = ¥0.15/M",
+      "calc_basis": "官方 $0.3 × 倍率 0.5 = ¥0.15/M",
       "group": null,
+      "tiers": null,
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×0.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -267,6 +269,12 @@
       "calc": "官方 $2 × 0.5 = ¥1/M（1 元买 1 美元额度） · × 计费 1.35",
       "calc_basis": "官方 $2 × 0.5 = ¥1/M（1 元买 1 美元额度）",
       "group": null,
+      "tiers": null,
+      "recharge": {
+        "pay": 50,
+        "get": 50,
+        "note": "无赠送"
+      },
       "calc_adjust": "× 计费 1.35",
       "health": {
         "days": 14,
@@ -356,6 +364,12 @@
       "calc": "官方 $8 × 0.5 = ¥4/M（1 元买 1 美元额度） · × 计费 1.35",
       "calc_basis": "官方 $8 × 0.5 = ¥4/M（1 元买 1 美元额度）",
       "group": null,
+      "tiers": null,
+      "recharge": {
+        "pay": 50,
+        "get": 50,
+        "note": "无赠送"
+      },
       "calc_adjust": "× 计费 1.35",
       "health": {
         "days": 14,
@@ -445,6 +459,12 @@
       "calc": "官方 $2 × 0.55 = ¥1.1/M（1 元买 1 美元额度） · × 计费 1.35",
       "calc_basis": "官方 $2 × 0.55 = ¥1.1/M（1 元买 1 美元额度）",
       "group": null,
+      "tiers": null,
+      "recharge": {
+        "pay": 50,
+        "get": 50,
+        "note": "无赠送"
+      },
       "calc_adjust": "× 计费 1.35",
       "health": {
         "days": 14,
@@ -534,6 +554,12 @@
       "calc": "官方 $4 × 0.55 = ¥2.2/M（1 元买 1 美元额度） · × 计费 1.35",
       "calc_basis": "官方 $4 × 0.55 = ¥2.2/M（1 元买 1 美元额度）",
       "group": null,
+      "tiers": null,
+      "recharge": {
+        "pay": 50,
+        "get": 50,
+        "note": "无赠送"
+      },
       "calc_adjust": "× 计费 1.35",
       "health": {
         "days": 14,
@@ -617,8 +643,8 @@
         "blend": 0.0856,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $0.3 = ¥0.3/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $0.3 = ¥0.3/M",
+      "calc": "官方 $0.3 × 倍率 1（default 组） = ¥0.3/M；96 个分组档位 0.0368–1.1×，最低「Codex-Gpt-1」",
+      "calc_basis": "官方 $0.3 × 倍率 1（default 组） = ¥0.3/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -626,6 +652,13 @@
         "min": 0.03677,
         "max": 1.1
       },
+      "tiers": {
+        "count": 96,
+        "min": 0.03677,
+        "max": 1.1,
+        "min_name": "Codex-Gpt-1"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -702,8 +735,8 @@
         "blend": 0.0856,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $0.3 = ¥0.3/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $0.3 = ¥0.3/M",
+      "calc": "官方 $0.3 × 倍率 1（default 组） = ¥0.3/M；96 个分组档位 0.0625–1.87×，最低「Codex-Gpt-1」",
+      "calc_basis": "官方 $0.3 × 倍率 1（default 组） = ¥0.3/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -711,6 +744,13 @@
         "min": 0.062509,
         "max": 1.87
       },
+      "tiers": {
+        "count": 96,
+        "min": 0.062509,
+        "max": 1.87,
+        "min_name": "Codex-Gpt-1"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -787,8 +827,8 @@
         "blend": 0.3171,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $1.32 = ¥1.32/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $1.32 = ¥1.32/M",
+      "calc": "官方 $1.32 × 倍率 1（default 组） = ¥1.32/M；96 个分组档位 0.0368–1.1×，最低「Codex-Gpt-1」",
+      "calc_basis": "官方 $1.32 × 倍率 1（default 组） = ¥1.32/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -796,6 +836,13 @@
         "min": 0.03677,
         "max": 1.1
       },
+      "tiers": {
+        "count": 96,
+        "min": 0.03677,
+        "max": 1.1,
+        "min_name": "Codex-Gpt-1"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -872,8 +919,8 @@
         "blend": 0.3171,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $1.32 = ¥1.32/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $1.32 = ¥1.32/M",
+      "calc": "官方 $1.32 × 倍率 1（default 组） = ¥1.32/M；96 个分组档位 0.0625–1.87×，最低「Codex-Gpt-1」",
+      "calc_basis": "官方 $1.32 × 倍率 1（default 组） = ¥1.32/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -881,6 +928,13 @@
         "min": 0.062509,
         "max": 1.87
       },
+      "tiers": {
+        "count": 96,
+        "min": 0.062509,
+        "max": 1.87,
+        "min_name": "Codex-Gpt-1"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -957,8 +1011,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；37 个分组档位 0.08–10×，最低「Codex-Plus-Pro 混池」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -966,6 +1020,13 @@
         "min": 0.08,
         "max": 10
       },
+      "tiers": {
+        "count": 37,
+        "min": 0.08,
+        "max": 10,
+        "min_name": "Codex-Plus-Pro 混池"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -1042,8 +1103,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；91 个分组档位 0.01–4×，最低「gemini-count」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -1051,6 +1112,13 @@
         "min": 0.01,
         "max": 4
       },
+      "tiers": {
+        "count": 91,
+        "min": 0.01,
+        "max": 4,
+        "min_name": "gemini-count"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -1127,8 +1195,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；56 个分组档位 0.05–8×，最低「Claude Kiro 无缓」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -1136,6 +1204,13 @@
         "min": 0.05,
         "max": 8
       },
+      "tiers": {
+        "count": 56,
+        "min": 0.05,
+        "max": 8,
+        "min_name": "Claude Kiro 无缓"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -1212,9 +1287,11 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1 = ¥2/M",
+      "calc_basis": "官方 $2 × 倍率 1 = ¥2/M",
       "group": null,
+      "tiers": null,
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -1291,8 +1368,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；96 个分组档位 0.0368–1.1×，最低「Codex-Gpt-1」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -1300,6 +1377,13 @@
         "min": 0.03677,
         "max": 1.1
       },
+      "tiers": {
+        "count": 96,
+        "min": 0.03677,
+        "max": 1.1,
+        "min_name": "Codex-Gpt-1"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -1376,8 +1460,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；96 个分组档位 0.0368–1.1×，最低「Codex-Gpt-1」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -1385,6 +1469,13 @@
         "min": 0.03677,
         "max": 1.1
       },
+      "tiers": {
+        "count": 96,
+        "min": 0.03677,
+        "max": 1.1,
+        "min_name": "Codex-Gpt-1"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -1461,8 +1552,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；96 个分组档位 0.0625–1.87×，最低「Codex-Gpt-1」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -1470,6 +1561,13 @@
         "min": 0.062509,
         "max": 1.87
       },
+      "tiers": {
+        "count": 96,
+        "min": 0.062509,
+        "max": 1.87,
+        "min_name": "Codex-Gpt-1"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -1546,8 +1644,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；96 个分组档位 0.0625–1.87×，最低「Codex-Gpt-1」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -1555,6 +1653,13 @@
         "min": 0.062509,
         "max": 1.87
       },
+      "tiers": {
+        "count": 96,
+        "min": 0.062509,
+        "max": 1.87,
+        "min_name": "Codex-Gpt-1"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -1631,8 +1736,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Grok 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（Grok 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（Grok 组） = ¥2/M；14 个分组档位 0.1–5×，最低「claude_free」",
+      "calc_basis": "官方 $2 × 倍率 1（Grok 组） = ¥2/M",
       "group": {
         "name": "Grok",
         "ratio": 1,
@@ -1640,6 +1745,13 @@
         "min": 0.1,
         "max": 5
       },
+      "tiers": {
+        "count": 14,
+        "min": 0.1,
+        "max": 5,
+        "min_name": "claude_free"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -1716,8 +1828,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Grok 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（Grok 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（Grok 组） = ¥2/M；14 个分组档位 0.1–5×，最低「claude_free」",
+      "calc_basis": "官方 $2 × 倍率 1（Grok 组） = ¥2/M",
       "group": {
         "name": "Grok",
         "ratio": 1,
@@ -1725,6 +1837,13 @@
         "min": 0.1,
         "max": 5
       },
+      "tiers": {
+        "count": 14,
+        "min": 0.1,
+        "max": 5,
+        "min_name": "claude_free"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -1801,8 +1920,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（gemini生图渠道 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（gemini生图渠道 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（gemini生图渠道 组） = ¥2/M；113 个分组档位 0.0001–8×，最低「群友福利-GLM54体验」",
+      "calc_basis": "官方 $2 × 倍率 1（gemini生图渠道 组） = ¥2/M",
       "group": {
         "name": "gemini生图渠道",
         "ratio": 1,
@@ -1810,6 +1929,13 @@
         "min": 0.0001,
         "max": 8
       },
+      "tiers": {
+        "count": 113,
+        "min": 0.0001,
+        "max": 8,
+        "min_name": "群友福利-GLM54体验"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -1886,8 +2012,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（codex-pro正价 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（codex-pro正价 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（codex-pro正价 组） = ¥2/M；31 个分组档位 0.1–6.6×，最低「cc-kiro-90缓」",
+      "calc_basis": "官方 $2 × 倍率 1（codex-pro正价 组） = ¥2/M",
       "group": {
         "name": "codex-pro正价",
         "ratio": 1,
@@ -1895,6 +2021,13 @@
         "min": 0.1,
         "max": 6.6
       },
+      "tiers": {
+        "count": 31,
+        "min": 0.1,
+        "max": 6.6,
+        "min_name": "cc-kiro-90缓"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -1971,8 +2104,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（原生生图Nano Banana-默认URL 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（原生生图Nano Banana-默认URL 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（原生生图Nano Banana-默认URL 组） = ¥2/M；38 个分组档位 0.02–3×，最低「Codex-GPT-特惠」",
+      "calc_basis": "官方 $2 × 倍率 1（原生生图Nano Banana-默认URL 组） = ¥2/M",
       "group": {
         "name": "原生生图Nano Banana-默认URL",
         "ratio": 1,
@@ -1980,6 +2113,13 @@
         "min": 0.02,
         "max": 3
       },
+      "tiers": {
+        "count": 38,
+        "min": 0.02,
+        "max": 3,
+        "min_name": "Codex-GPT-特惠"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -2056,8 +2196,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；32 个分组档位 0.08–5.32×，最低「奇奇怪怪的渠道」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -2065,6 +2205,13 @@
         "min": 0.08,
         "max": 5.32
       },
+      "tiers": {
+        "count": 32,
+        "min": 0.08,
+        "max": 5.32,
+        "min_name": "奇奇怪怪的渠道"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -2141,8 +2288,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；43 个分组档位 0.03–4×，最低「claude-kiro-超低价版80缓」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -2150,6 +2297,13 @@
         "min": 0.03,
         "max": 4
       },
+      "tiers": {
+        "count": 43,
+        "min": 0.03,
+        "max": 4,
+        "min_name": "claude-kiro-超低价版80缓"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -2226,8 +2380,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Claude MAX高缓存特惠 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（Claude MAX高缓存特惠 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（Claude MAX高缓存特惠 组） = ¥2/M；21 个分组档位 0.03–3.2×，最低「国模003」",
+      "calc_basis": "官方 $2 × 倍率 1（Claude MAX高缓存特惠 组） = ¥2/M",
       "group": {
         "name": "Claude MAX高缓存特惠",
         "ratio": 1,
@@ -2235,6 +2389,13 @@
         "min": 0.03,
         "max": 3.2
       },
+      "tiers": {
+        "count": 21,
+        "min": 0.03,
+        "max": 3.2,
+        "min_name": "国模003"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -2311,8 +2472,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（image 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（image 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（image 组） = ¥2/M；16 个分组档位 0.0275–1.6×，最低「gpt-promax」",
+      "calc_basis": "官方 $2 × 倍率 1（image 组） = ¥2/M",
       "group": {
         "name": "image",
         "ratio": 1,
@@ -2320,6 +2481,13 @@
         "min": 0.0275,
         "max": 1.6
       },
+      "tiers": {
+        "count": 16,
+        "min": 0.0275,
+        "max": 1.6,
+        "min_name": "gpt-promax"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -2396,8 +2564,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（image 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（image 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（image 组） = ¥2/M；16 个分组档位 0.0275–1.6×，最低「gpt-promax」",
+      "calc_basis": "官方 $2 × 倍率 1（image 组） = ¥2/M",
       "group": {
         "name": "image",
         "ratio": 1,
@@ -2405,6 +2573,13 @@
         "min": 0.0275,
         "max": 1.6
       },
+      "tiers": {
+        "count": 16,
+        "min": 0.0275,
+        "max": 1.6,
+        "min_name": "gpt-promax"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -2481,8 +2656,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（默认用户 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（默认用户 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（默认用户 组） = ¥2/M；25 个分组档位 0.07–3×，最低「GPT-福利」",
+      "calc_basis": "官方 $2 × 倍率 1（默认用户 组） = ¥2/M",
       "group": {
         "name": "默认用户",
         "ratio": 1,
@@ -2490,6 +2665,13 @@
         "min": 0.07,
         "max": 3
       },
+      "tiers": {
+        "count": 25,
+        "min": 0.07,
+        "max": 3,
+        "min_name": "GPT-福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -2566,8 +2748,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（默认用户 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（默认用户 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（默认用户 组） = ¥2/M；25 个分组档位 0.07–3×，最低「GPT-福利」",
+      "calc_basis": "官方 $2 × 倍率 1（默认用户 组） = ¥2/M",
       "group": {
         "name": "默认用户",
         "ratio": 1,
@@ -2575,6 +2757,13 @@
         "min": 0.07,
         "max": 3
       },
+      "tiers": {
+        "count": 25,
+        "min": 0.07,
+        "max": 3,
+        "min_name": "GPT-福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -2651,8 +2840,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；15 个分组档位 0.07–1.1×，最低「gpt-plus」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -2660,6 +2849,13 @@
         "min": 0.07,
         "max": 1.1
       },
+      "tiers": {
+        "count": 15,
+        "min": 0.07,
+        "max": 1.1,
+        "min_name": "gpt-plus"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -2736,8 +2932,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Grok生图视频特价 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（Grok生图视频特价 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（Grok生图视频特价 组） = ¥2/M；29 个分组档位 0.12–2.3×，最低「codex限时特价福利」",
+      "calc_basis": "官方 $2 × 倍率 1（Grok生图视频特价 组） = ¥2/M",
       "group": {
         "name": "Grok生图视频特价",
         "ratio": 1,
@@ -2745,6 +2941,13 @@
         "min": 0.12,
         "max": 2.3
       },
+      "tiers": {
+        "count": 29,
+        "min": 0.12,
+        "max": 2.3,
+        "min_name": "codex限时特价福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -2821,8 +3024,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（nano-banana 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（nano-banana 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（nano-banana 组） = ¥2/M；13 个分组档位 0.18–1.2×，最低「codex-pro」",
+      "calc_basis": "官方 $2 × 倍率 1（nano-banana 组） = ¥2/M",
       "group": {
         "name": "nano-banana",
         "ratio": 1,
@@ -2830,6 +3033,13 @@
         "min": 0.18,
         "max": 1.2
       },
+      "tiers": {
+        "count": 13,
+        "min": 0.18,
+        "max": 1.2,
+        "min_name": "codex-pro"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -2906,8 +3116,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（nano-banana 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（nano-banana 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（nano-banana 组） = ¥2/M；13 个分组档位 0.18–1.2×，最低「codex-pro」",
+      "calc_basis": "官方 $2 × 倍率 1（nano-banana 组） = ¥2/M",
       "group": {
         "name": "nano-banana",
         "ratio": 1,
@@ -2915,6 +3125,13 @@
         "min": 0.18,
         "max": 1.2
       },
+      "tiers": {
+        "count": 13,
+        "min": 0.18,
+        "max": 1.2,
+        "min_name": "codex-pro"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -2991,8 +3208,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（auto 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（auto 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（auto 组） = ¥2/M；14 个分组档位 0.03–1.1×，最低「GPT特价」",
+      "calc_basis": "官方 $2 × 倍率 1（auto 组） = ¥2/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -3000,6 +3217,13 @@
         "min": 0.03,
         "max": 1.1
       },
+      "tiers": {
+        "count": 14,
+        "min": 0.03,
+        "max": 1.1,
+        "min_name": "GPT特价"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -3076,8 +3300,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（生图专用 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（生图专用 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（生图专用 组） = ¥2/M；11 个分组档位 0.08–1.35×，最低「GPT-Plus」",
+      "calc_basis": "官方 $2 × 倍率 1（生图专用 组） = ¥2/M",
       "group": {
         "name": "生图专用",
         "ratio": 1,
@@ -3085,6 +3309,13 @@
         "min": 0.08,
         "max": 1.35
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.08,
+        "max": 1.35,
+        "min_name": "GPT-Plus"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -3161,8 +3392,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（生图专用 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（生图专用 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（生图专用 组） = ¥2/M；11 个分组档位 0.08–1.35×，最低「GPT-Plus」",
+      "calc_basis": "官方 $2 × 倍率 1（生图专用 组） = ¥2/M",
       "group": {
         "name": "生图专用",
         "ratio": 1,
@@ -3170,6 +3401,13 @@
         "min": 0.08,
         "max": 1.35
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.08,
+        "max": 1.35,
+        "min_name": "GPT-Plus"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -3246,8 +3484,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；25 个分组档位 0.001–4.5×，最低「公益免费」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -3255,6 +3493,13 @@
         "min": 0.001,
         "max": 4.5
       },
+      "tiers": {
+        "count": 25,
+        "min": 0.001,
+        "max": 4.5,
+        "min_name": "公益免费"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -3331,8 +3576,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Suno 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（Suno 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（Suno 组） = ¥2/M；22 个分组档位 0.1–1×，最低「claude-kiro」",
+      "calc_basis": "官方 $2 × 倍率 1（Suno 组） = ¥2/M",
       "group": {
         "name": "Suno",
         "ratio": 1,
@@ -3340,6 +3585,13 @@
         "min": 0.1,
         "max": 1
       },
+      "tiers": {
+        "count": 22,
+        "min": 0.1,
+        "max": 1,
+        "min_name": "claude-kiro"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -3416,8 +3668,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（DeepSeek 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（DeepSeek 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（DeepSeek 组） = ¥2/M；17 个分组档位 0.25–8×，最低「Grok专用-SuperGrok」",
+      "calc_basis": "官方 $2 × 倍率 1（DeepSeek 组） = ¥2/M",
       "group": {
         "name": "DeepSeek",
         "ratio": 1,
@@ -3425,6 +3677,13 @@
         "min": 0.25,
         "max": 8
       },
+      "tiers": {
+        "count": 17,
+        "min": 0.25,
+        "max": 8,
+        "min_name": "Grok专用-SuperGrok"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -3501,8 +3760,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（antigravity-c 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（antigravity-c 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（antigravity-c 组） = ¥2/M；28 个分组档位 0.03–2.4×，最低「codex-pro」",
+      "calc_basis": "官方 $2 × 倍率 1（antigravity-c 组） = ¥2/M",
       "group": {
         "name": "antigravity-c",
         "ratio": 1,
@@ -3510,6 +3769,13 @@
         "min": 0.03,
         "max": 2.4
       },
+      "tiers": {
+        "count": 28,
+        "min": 0.03,
+        "max": 2.4,
+        "min_name": "codex-pro"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -3586,8 +3852,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Claude 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（Claude 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（Claude 组） = ¥2/M；19 个分组档位 0.3–1.8×，最低「image-2」",
+      "calc_basis": "官方 $2 × 倍率 1（Claude 组） = ¥2/M",
       "group": {
         "name": "Claude",
         "ratio": 1,
@@ -3595,6 +3861,13 @@
         "min": 0.3,
         "max": 1.8
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.3,
+        "max": 1.8,
+        "min_name": "image-2"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -3671,8 +3944,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Claude 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（Claude 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（Claude 组） = ¥2/M；19 个分组档位 0.3–1.8×，最低「image-2」",
+      "calc_basis": "官方 $2 × 倍率 1（Claude 组） = ¥2/M",
       "group": {
         "name": "Claude",
         "ratio": 1,
@@ -3680,6 +3953,13 @@
         "min": 0.3,
         "max": 1.8
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.3,
+        "max": 1.8,
+        "min_name": "image-2"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -3756,8 +4036,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（gptimageadobe 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（gptimageadobe 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（gptimageadobe 组） = ¥2/M；20 个分组档位 0.04–7×，最低「gpt混池」",
+      "calc_basis": "官方 $2 × 倍率 1（gptimageadobe 组） = ¥2/M",
       "group": {
         "name": "gptimageadobe",
         "ratio": 1,
@@ -3765,6 +4045,13 @@
         "min": 0.04,
         "max": 7
       },
+      "tiers": {
+        "count": 20,
+        "min": 0.04,
+        "max": 7,
+        "min_name": "gpt混池"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -3841,8 +4128,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；14 个分组档位 0.1–8×，最低「grok」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -3850,6 +4137,13 @@
         "min": 0.1,
         "max": 8
       },
+      "tiers": {
+        "count": 14,
+        "min": 0.1,
+        "max": 8,
+        "min_name": "grok"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -3926,8 +4220,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；14 个分组档位 0.1–8×，最低「grok」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -3935,6 +4229,13 @@
         "min": 0.1,
         "max": 8
       },
+      "tiers": {
+        "count": 14,
+        "min": 0.1,
+        "max": 8,
+        "min_name": "grok"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -4011,8 +4312,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（玩具 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（玩具 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（玩具 组） = ¥2/M；11 个分组档位 0.01–1.25×，最低「grok」",
+      "calc_basis": "官方 $2 × 倍率 1（玩具 组） = ¥2/M",
       "group": {
         "name": "玩具",
         "ratio": 1,
@@ -4020,6 +4321,13 @@
         "min": 0.01,
         "max": 1.25
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.01,
+        "max": 1.25,
+        "min_name": "grok"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -4096,8 +4404,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（玩具 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（玩具 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（玩具 组） = ¥2/M；11 个分组档位 0.01–1.25×，最低「grok」",
+      "calc_basis": "官方 $2 × 倍率 1（玩具 组） = ¥2/M",
       "group": {
         "name": "玩具",
         "ratio": 1,
@@ -4105,6 +4413,13 @@
         "min": 0.01,
         "max": 1.25
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.01,
+        "max": 1.25,
+        "min_name": "grok"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -4181,8 +4496,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；17 个分组档位 0.39–6×，最低「CODEX」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -4190,6 +4505,13 @@
         "min": 0.39,
         "max": 6
       },
+      "tiers": {
+        "count": 17,
+        "min": 0.39,
+        "max": 6,
+        "min_name": "CODEX"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -4266,8 +4588,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（auto 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（auto 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（auto 组） = ¥2/M；19 个分组档位 0.002–1×，最低「Grok畅享」",
+      "calc_basis": "官方 $2 × 倍率 1（auto 组） = ¥2/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -4275,6 +4597,13 @@
         "min": 0.002,
         "max": 1
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.002,
+        "max": 1,
+        "min_name": "Grok畅享"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -4351,8 +4680,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（auto 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（auto 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（auto 组） = ¥2/M；19 个分组档位 0.002–1×，最低「Grok畅享」",
+      "calc_basis": "官方 $2 × 倍率 1（auto 组） = ¥2/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -4360,6 +4689,13 @@
         "min": 0.002,
         "max": 1
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.002,
+        "max": 1,
+        "min_name": "Grok畅享"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -4436,9 +4772,11 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1 = ¥2/M",
+      "calc_basis": "官方 $2 × 倍率 1 = ¥2/M",
       "group": null,
+      "tiers": null,
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -4515,8 +4853,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；14 个分组档位 0.06–1×，最低「gpt生图」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -4524,6 +4862,13 @@
         "min": 0.06,
         "max": 1
       },
+      "tiers": {
+        "count": 14,
+        "min": 0.06,
+        "max": 1,
+        "min_name": "gpt生图"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -4600,8 +4945,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M；19 个分组档位 0.1–1.8×，最低「gpt-不降智」",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -4609,6 +4954,13 @@
         "min": 0.1,
         "max": 1.8
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.1,
+        "max": 1.8,
+        "min_name": "gpt-不降智"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -4685,8 +5037,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（auto 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（auto 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（auto 组） = ¥2/M；19 个分组档位 0.08–5×，最低「GPT-k12」",
+      "calc_basis": "官方 $2 × 倍率 1（auto 组） = ¥2/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -4694,6 +5046,13 @@
         "min": 0.08,
         "max": 5
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.08,
+        "max": 5,
+        "min_name": "GPT-k12"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -4770,8 +5129,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（auto 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（auto 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（auto 组） = ¥2/M；19 个分组档位 0.08–5×，最低「GPT-k12」",
+      "calc_basis": "官方 $2 × 倍率 1（auto 组） = ¥2/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -4779,6 +5138,13 @@
         "min": 0.08,
         "max": 5
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.08,
+        "max": 5,
+        "min_name": "GPT-k12"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -4855,8 +5221,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（auto 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（auto 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（auto 组） = ¥2/M；8 个分组档位 0.1–5×，最低「image2」",
+      "calc_basis": "官方 $2 × 倍率 1（auto 组） = ¥2/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -4864,6 +5230,13 @@
         "min": 0.1,
         "max": 5
       },
+      "tiers": {
+        "count": 8,
+        "min": 0.1,
+        "max": 5,
+        "min_name": "image2"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -4940,8 +5313,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（GPT生图1-4K 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（GPT生图1-4K 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（GPT生图1-4K 组） = ¥2/M；9 个分组档位 0.5–2.05×，最低「GPT 福利」",
+      "calc_basis": "官方 $2 × 倍率 1（GPT生图1-4K 组） = ¥2/M",
       "group": {
         "name": "GPT生图1-4K",
         "ratio": 1,
@@ -4949,6 +5322,13 @@
         "min": 0.5,
         "max": 2.05
       },
+      "tiers": {
+        "count": 9,
+        "min": 0.5,
+        "max": 2.05,
+        "min_name": "GPT 福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -5025,8 +5405,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（GPT生图1-4K 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（GPT生图1-4K 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（GPT生图1-4K 组） = ¥2/M；9 个分组档位 0.5–2.05×，最低「GPT 福利」",
+      "calc_basis": "官方 $2 × 倍率 1（GPT生图1-4K 组） = ¥2/M",
       "group": {
         "name": "GPT生图1-4K",
         "ratio": 1,
@@ -5034,6 +5414,13 @@
         "min": 0.5,
         "max": 2.05
       },
+      "tiers": {
+        "count": 9,
+        "min": 0.5,
+        "max": 2.05,
+        "min_name": "GPT 福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -5110,8 +5497,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（google-video专用 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（google-video专用 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（google-video专用 组） = ¥2/M；13 个分组档位 0.03–100×，最低「deepseek福利」",
+      "calc_basis": "官方 $2 × 倍率 1（google-video专用 组） = ¥2/M",
       "group": {
         "name": "google-video专用",
         "ratio": 1,
@@ -5119,6 +5506,13 @@
         "min": 0.03,
         "max": 100
       },
+      "tiers": {
+        "count": 13,
+        "min": 0.03,
+        "max": 100,
+        "min_name": "deepseek福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -5195,8 +5589,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（google-video专用 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（google-video专用 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（google-video专用 组） = ¥2/M；13 个分组档位 0.03–100×，最低「deepseek福利」",
+      "calc_basis": "官方 $2 × 倍率 1（google-video专用 组） = ¥2/M",
       "group": {
         "name": "google-video专用",
         "ratio": 1,
@@ -5204,6 +5598,13 @@
         "min": 0.03,
         "max": 100
       },
+      "tiers": {
+        "count": 13,
+        "min": 0.03,
+        "max": 100,
+        "min_name": "deepseek福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -5280,8 +5681,8 @@
         "blend": 0.6606,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $2 = ¥2/M",
+      "calc": "官方 $2 × 倍率 1（default 组） = ¥2/M",
+      "calc_basis": "官方 $2 × 倍率 1（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 2,
@@ -5289,6 +5690,8 @@
         "min": 2,
         "max": 2
       },
+      "tiers": null,
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -5365,8 +5768,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；73 个分组档位 0.08–3.9×，最低「kiro-008-1011」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -5374,6 +5777,13 @@
         "min": 0.08,
         "max": 3.9
       },
+      "tiers": {
+        "count": 73,
+        "min": 0.08,
+        "max": 3.9,
+        "min_name": "kiro-008-1011"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -5450,8 +5860,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；37 个分组档位 0.08–10×，最低「Codex-Plus-Pro 混池」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -5459,6 +5869,13 @@
         "min": 0.08,
         "max": 10
       },
+      "tiers": {
+        "count": 37,
+        "min": 0.08,
+        "max": 10,
+        "min_name": "Codex-Plus-Pro 混池"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -5535,8 +5952,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；91 个分组档位 0.01–4×，最低「gemini-count」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -5544,6 +5961,13 @@
         "min": 0.01,
         "max": 4
       },
+      "tiers": {
+        "count": 91,
+        "min": 0.01,
+        "max": 4,
+        "min_name": "gemini-count"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -5620,8 +6044,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；56 个分组档位 0.05–8×，最低「Claude Kiro 无缓」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -5629,6 +6053,13 @@
         "min": 0.05,
         "max": 8
       },
+      "tiers": {
+        "count": 56,
+        "min": 0.05,
+        "max": 8,
+        "min_name": "Claude Kiro 无缓"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -5705,8 +6136,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；96 个分组档位 0.0368–1.1×，最低「Codex-Gpt-1」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -5714,6 +6145,13 @@
         "min": 0.03677,
         "max": 1.1
       },
+      "tiers": {
+        "count": 96,
+        "min": 0.03677,
+        "max": 1.1,
+        "min_name": "Codex-Gpt-1"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -5790,8 +6228,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；96 个分组档位 0.0625–1.87×，最低「Codex-Gpt-1」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -5799,6 +6237,13 @@
         "min": 0.062509,
         "max": 1.87
       },
+      "tiers": {
+        "count": 96,
+        "min": 0.062509,
+        "max": 1.87,
+        "min_name": "Codex-Gpt-1"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -5875,8 +6320,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Grok 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（Grok 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（Grok 组） = ¥4/M；14 个分组档位 0.1–5×，最低「claude_free」",
+      "calc_basis": "官方 $4 × 倍率 1（Grok 组） = ¥4/M",
       "group": {
         "name": "Grok",
         "ratio": 1,
@@ -5884,6 +6329,13 @@
         "min": 0.1,
         "max": 5
       },
+      "tiers": {
+        "count": 14,
+        "min": 0.1,
+        "max": 5,
+        "min_name": "claude_free"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -5960,8 +6412,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（gemini生图渠道 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（gemini生图渠道 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（gemini生图渠道 组） = ¥4/M；113 个分组档位 0.0001–8×，最低「群友福利-GLM54体验」",
+      "calc_basis": "官方 $4 × 倍率 1（gemini生图渠道 组） = ¥4/M",
       "group": {
         "name": "gemini生图渠道",
         "ratio": 1,
@@ -5969,6 +6421,13 @@
         "min": 0.0001,
         "max": 8
       },
+      "tiers": {
+        "count": 113,
+        "min": 0.0001,
+        "max": 8,
+        "min_name": "群友福利-GLM54体验"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -6045,8 +6504,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（codex-pro正价 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（codex-pro正价 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（codex-pro正价 组） = ¥4/M；31 个分组档位 0.1–6.6×，最低「cc-kiro-90缓」",
+      "calc_basis": "官方 $4 × 倍率 1（codex-pro正价 组） = ¥4/M",
       "group": {
         "name": "codex-pro正价",
         "ratio": 1,
@@ -6054,6 +6513,13 @@
         "min": 0.1,
         "max": 6.6
       },
+      "tiers": {
+        "count": 31,
+        "min": 0.1,
+        "max": 6.6,
+        "min_name": "cc-kiro-90缓"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -6130,8 +6596,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；32 个分组档位 0.08–5.32×，最低「奇奇怪怪的渠道」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -6139,6 +6605,13 @@
         "min": 0.08,
         "max": 5.32
       },
+      "tiers": {
+        "count": 32,
+        "min": 0.08,
+        "max": 5.32,
+        "min_name": "奇奇怪怪的渠道"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -6215,8 +6688,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；43 个分组档位 0.03–4×，最低「claude-kiro-超低价版80缓」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -6224,6 +6697,13 @@
         "min": 0.03,
         "max": 4
       },
+      "tiers": {
+        "count": 43,
+        "min": 0.03,
+        "max": 4,
+        "min_name": "claude-kiro-超低价版80缓"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -6300,8 +6780,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；24 个分组档位 0.01–250×，最低「特惠玩耍bearlab专用」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -6309,6 +6789,13 @@
         "min": 0.01,
         "max": 250
       },
+      "tiers": {
+        "count": 24,
+        "min": 0.01,
+        "max": 250,
+        "min_name": "特惠玩耍bearlab专用"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -6385,8 +6872,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Claude MAX高缓存特惠 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（Claude MAX高缓存特惠 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（Claude MAX高缓存特惠 组） = ¥4/M；21 个分组档位 0.03–3.2×，最低「国模003」",
+      "calc_basis": "官方 $4 × 倍率 1（Claude MAX高缓存特惠 组） = ¥4/M",
       "group": {
         "name": "Claude MAX高缓存特惠",
         "ratio": 1,
@@ -6394,6 +6881,13 @@
         "min": 0.03,
         "max": 3.2
       },
+      "tiers": {
+        "count": 21,
+        "min": 0.03,
+        "max": 3.2,
+        "min_name": "国模003"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -6470,8 +6964,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Claude反重力按次 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（Claude反重力按次 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（Claude反重力按次 组） = ¥4/M；44 个分组档位 0.033–2.3×，最低「超级福利GPT组」",
+      "calc_basis": "官方 $4 × 倍率 1（Claude反重力按次 组） = ¥4/M",
       "group": {
         "name": "Claude反重力按次",
         "ratio": 1,
@@ -6479,6 +6973,13 @@
         "min": 0.033,
         "max": 2.3
       },
+      "tiers": {
+        "count": 44,
+        "min": 0.033,
+        "max": 2.3,
+        "min_name": "超级福利GPT组"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -6555,8 +7056,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（image 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（image 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（image 组） = ¥4/M；16 个分组档位 0.0275–1.6×，最低「gpt-promax」",
+      "calc_basis": "官方 $4 × 倍率 1（image 组） = ¥4/M",
       "group": {
         "name": "image",
         "ratio": 1,
@@ -6564,6 +7065,13 @@
         "min": 0.0275,
         "max": 1.6
       },
+      "tiers": {
+        "count": 16,
+        "min": 0.0275,
+        "max": 1.6,
+        "min_name": "gpt-promax"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -6640,8 +7148,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；15 个分组档位 0.07–1.1×，最低「gpt-plus」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -6649,6 +7157,13 @@
         "min": 0.07,
         "max": 1.1
       },
+      "tiers": {
+        "count": 15,
+        "min": 0.07,
+        "max": 1.1,
+        "min_name": "gpt-plus"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -6725,8 +7240,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（nano-banana 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（nano-banana 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（nano-banana 组） = ¥4/M；13 个分组档位 0.18–1.2×，最低「codex-pro」",
+      "calc_basis": "官方 $4 × 倍率 1（nano-banana 组） = ¥4/M",
       "group": {
         "name": "nano-banana",
         "ratio": 1,
@@ -6734,6 +7249,13 @@
         "min": 0.18,
         "max": 1.2
       },
+      "tiers": {
+        "count": 13,
+        "min": 0.18,
+        "max": 1.2,
+        "min_name": "codex-pro"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -6810,8 +7332,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（生图专用 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（生图专用 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（生图专用 组） = ¥4/M；11 个分组档位 0.08–1.35×，最低「GPT-Plus」",
+      "calc_basis": "官方 $4 × 倍率 1（生图专用 组） = ¥4/M",
       "group": {
         "name": "生图专用",
         "ratio": 1,
@@ -6819,6 +7341,13 @@
         "min": 0.08,
         "max": 1.35
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.08,
+        "max": 1.35,
+        "min_name": "GPT-Plus"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -6895,8 +7424,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；25 个分组档位 0.001–4.5×，最低「公益免费」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -6904,6 +7433,13 @@
         "min": 0.001,
         "max": 4.5
       },
+      "tiers": {
+        "count": 25,
+        "min": 0.001,
+        "max": 4.5,
+        "min_name": "公益免费"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -6980,8 +7516,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Suno 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（Suno 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（Suno 组） = ¥4/M；22 个分组档位 0.1–1×，最低「claude-kiro」",
+      "calc_basis": "官方 $4 × 倍率 1（Suno 组） = ¥4/M",
       "group": {
         "name": "Suno",
         "ratio": 1,
@@ -6989,6 +7525,13 @@
         "min": 0.1,
         "max": 1
       },
+      "tiers": {
+        "count": 22,
+        "min": 0.1,
+        "max": 1,
+        "min_name": "claude-kiro"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -7065,8 +7608,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（DeepSeek 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（DeepSeek 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（DeepSeek 组） = ¥4/M；17 个分组档位 0.25–8×，最低「Grok专用-SuperGrok」",
+      "calc_basis": "官方 $4 × 倍率 1（DeepSeek 组） = ¥4/M",
       "group": {
         "name": "DeepSeek",
         "ratio": 1,
@@ -7074,6 +7617,13 @@
         "min": 0.25,
         "max": 8
       },
+      "tiers": {
+        "count": 17,
+        "min": 0.25,
+        "max": 8,
+        "min_name": "Grok专用-SuperGrok"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -7150,8 +7700,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；25 个分组档位 0.1–5.3×，最低「CodeX转Claude Code」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -7159,6 +7709,13 @@
         "min": 0.1,
         "max": 5.3
       },
+      "tiers": {
+        "count": 25,
+        "min": 0.1,
+        "max": 5.3,
+        "min_name": "CodeX转Claude Code"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -7235,8 +7792,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（antigravity-c 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（antigravity-c 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（antigravity-c 组） = ¥4/M；28 个分组档位 0.03–2.4×，最低「codex-pro」",
+      "calc_basis": "官方 $4 × 倍率 1（antigravity-c 组） = ¥4/M",
       "group": {
         "name": "antigravity-c",
         "ratio": 1,
@@ -7244,6 +7801,13 @@
         "min": 0.03,
         "max": 2.4
       },
+      "tiers": {
+        "count": 28,
+        "min": 0.03,
+        "max": 2.4,
+        "min_name": "codex-pro"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -7320,8 +7884,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Claude 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（Claude 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（Claude 组） = ¥4/M；19 个分组档位 0.3–1.8×，最低「image-2」",
+      "calc_basis": "官方 $4 × 倍率 1（Claude 组） = ¥4/M",
       "group": {
         "name": "Claude",
         "ratio": 1,
@@ -7329,6 +7893,13 @@
         "min": 0.3,
         "max": 1.8
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.3,
+        "max": 1.8,
+        "min_name": "image-2"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -7405,8 +7976,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（默认 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（默认 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（默认 组） = ¥4/M；29 个分组档位 0.03–1×，最低「GPT image 全系 超分」",
+      "calc_basis": "官方 $4 × 倍率 1（默认 组） = ¥4/M",
       "group": {
         "name": "默认",
         "ratio": 1,
@@ -7414,6 +7985,13 @@
         "min": 0.03,
         "max": 1
       },
+      "tiers": {
+        "count": 29,
+        "min": 0.03,
+        "max": 1,
+        "min_name": "GPT image 全系 超分"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -7490,8 +8068,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（gptimageadobe 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（gptimageadobe 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（gptimageadobe 组） = ¥4/M；20 个分组档位 0.04–7×，最低「gpt混池」",
+      "calc_basis": "官方 $4 × 倍率 1（gptimageadobe 组） = ¥4/M",
       "group": {
         "name": "gptimageadobe",
         "ratio": 1,
@@ -7499,6 +8077,13 @@
         "min": 0.04,
         "max": 7
       },
+      "tiers": {
+        "count": 20,
+        "min": 0.04,
+        "max": 7,
+        "min_name": "gpt混池"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -7575,8 +8160,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（auto 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（auto 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（auto 组） = ¥4/M；36 个分组档位 0.08–3×，最低「image2」",
+      "calc_basis": "官方 $4 × 倍率 1（auto 组） = ¥4/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -7584,6 +8169,13 @@
         "min": 0.08,
         "max": 3
       },
+      "tiers": {
+        "count": 36,
+        "min": 0.08,
+        "max": 3,
+        "min_name": "image2"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -7660,8 +8252,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；14 个分组档位 0.1–8×，最低「grok」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -7669,6 +8261,13 @@
         "min": 0.1,
         "max": 8
       },
+      "tiers": {
+        "count": 14,
+        "min": 0.1,
+        "max": 8,
+        "min_name": "grok"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -7745,8 +8344,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（玩具 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（玩具 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（玩具 组） = ¥4/M；11 个分组档位 0.01–1.25×，最低「grok」",
+      "calc_basis": "官方 $4 × 倍率 1（玩具 组） = ¥4/M",
       "group": {
         "name": "玩具",
         "ratio": 1,
@@ -7754,6 +8353,13 @@
         "min": 0.01,
         "max": 1.25
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.01,
+        "max": 1.25,
+        "min_name": "grok"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -7830,8 +8436,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；17 个分组档位 0.39–6×，最低「CODEX」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -7839,6 +8445,13 @@
         "min": 0.39,
         "max": 6
       },
+      "tiers": {
+        "count": 17,
+        "min": 0.39,
+        "max": 6,
+        "min_name": "CODEX"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -7915,8 +8528,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（auto 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（auto 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（auto 组） = ¥4/M；19 个分组档位 0.002–1×，最低「Grok畅享」",
+      "calc_basis": "官方 $4 × 倍率 1（auto 组） = ¥4/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -7924,6 +8537,13 @@
         "min": 0.002,
         "max": 1
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.002,
+        "max": 1,
+        "min_name": "Grok畅享"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -8000,9 +8620,11 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1 = ¥4/M",
+      "calc_basis": "官方 $4 × 倍率 1 = ¥4/M",
       "group": null,
+      "tiers": null,
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -8079,8 +8701,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；14 个分组档位 0.06–1×，最低「gpt生图」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -8088,6 +8710,13 @@
         "min": 0.06,
         "max": 1
       },
+      "tiers": {
+        "count": 14,
+        "min": 0.06,
+        "max": 1,
+        "min_name": "gpt生图"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -8164,8 +8793,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；19 个分组档位 0.1–1.8×，最低「gpt-不降智」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -8173,6 +8802,13 @@
         "min": 0.1,
         "max": 1.8
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.1,
+        "max": 1.8,
+        "min_name": "gpt-不降智"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -8249,8 +8885,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（auto 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（auto 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（auto 组） = ¥4/M；19 个分组档位 0.08–5×，最低「GPT-k12」",
+      "calc_basis": "官方 $4 × 倍率 1（auto 组） = ¥4/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -8258,6 +8894,13 @@
         "min": 0.08,
         "max": 5
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.08,
+        "max": 5,
+        "min_name": "GPT-k12"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -8334,8 +8977,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（auto 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（auto 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（auto 组） = ¥4/M；8 个分组档位 0.1–5×，最低「image2」",
+      "calc_basis": "官方 $4 × 倍率 1（auto 组） = ¥4/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -8343,6 +8986,13 @@
         "min": 0.1,
         "max": 5
       },
+      "tiers": {
+        "count": 8,
+        "min": 0.1,
+        "max": 5,
+        "min_name": "image2"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -8419,8 +9069,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（GPT生图1-4K 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（GPT生图1-4K 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（GPT生图1-4K 组） = ¥4/M；9 个分组档位 0.5–2.05×，最低「GPT 福利」",
+      "calc_basis": "官方 $4 × 倍率 1（GPT生图1-4K 组） = ¥4/M",
       "group": {
         "name": "GPT生图1-4K",
         "ratio": 1,
@@ -8428,6 +9078,13 @@
         "min": 0.5,
         "max": 2.05
       },
+      "tiers": {
+        "count": 9,
+        "min": 0.5,
+        "max": 2.05,
+        "min_name": "GPT 福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -8504,8 +9161,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（default 组） = ¥4/M；11 个分组档位 0.02–1.65×，最低「活动002分组-开放的时候会有通知-没在群里也可以在模型里看」",
+      "calc_basis": "官方 $4 × 倍率 1（default 组） = ¥4/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -8513,6 +9170,13 @@
         "min": 0.02,
         "max": 1.65
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.02,
+        "max": 1.65,
+        "min_name": "活动002分组-开放的时候会有通知-没在群里也可以在模型里看"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -8589,8 +9253,8 @@
         "blend": 1.3211,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（google-video专用 组） × 官方 $4 = ¥4/M",
-      "calc_basis": "倍率 ×1（google-video专用 组） × 官方 $4 = ¥4/M",
+      "calc": "官方 $4 × 倍率 1（google-video专用 组） = ¥4/M；13 个分组档位 0.03–100×，最低「deepseek福利」",
+      "calc_basis": "官方 $4 × 倍率 1（google-video专用 组） = ¥4/M",
       "group": {
         "name": "google-video专用",
         "ratio": 1,
@@ -8598,6 +9262,13 @@
         "min": 0.03,
         "max": 100
       },
+      "tiers": {
+        "count": 13,
+        "min": 0.03,
+        "max": 100,
+        "min_name": "deepseek福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -8674,8 +9345,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（default 组） = ¥8/M；37 个分组档位 0.08–10×，最低「Codex-Plus-Pro 混池」",
+      "calc_basis": "官方 $8 × 倍率 1（default 组） = ¥8/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -8683,6 +9354,13 @@
         "min": 0.08,
         "max": 10
       },
+      "tiers": {
+        "count": 37,
+        "min": 0.08,
+        "max": 10,
+        "min_name": "Codex-Plus-Pro 混池"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -8759,8 +9437,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（default 组） = ¥8/M；91 个分组档位 0.01–4×，最低「gemini-count」",
+      "calc_basis": "官方 $8 × 倍率 1（default 组） = ¥8/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -8768,6 +9446,13 @@
         "min": 0.01,
         "max": 4
       },
+      "tiers": {
+        "count": 91,
+        "min": 0.01,
+        "max": 4,
+        "min_name": "gemini-count"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -8844,8 +9529,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（default 组） = ¥8/M；56 个分组档位 0.05–8×，最低「Claude Kiro 无缓」",
+      "calc_basis": "官方 $8 × 倍率 1（default 组） = ¥8/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -8853,6 +9538,13 @@
         "min": 0.05,
         "max": 8
       },
+      "tiers": {
+        "count": 56,
+        "min": 0.05,
+        "max": 8,
+        "min_name": "Claude Kiro 无缓"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -8929,9 +9621,11 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1 = ¥8/M",
+      "calc_basis": "官方 $8 × 倍率 1 = ¥8/M",
       "group": null,
+      "tiers": null,
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -9008,8 +9702,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（default 组） = ¥8/M；96 个分组档位 0.0368–1.1×，最低「Codex-Gpt-1」",
+      "calc_basis": "官方 $8 × 倍率 1（default 组） = ¥8/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -9017,6 +9711,13 @@
         "min": 0.03677,
         "max": 1.1
       },
+      "tiers": {
+        "count": 96,
+        "min": 0.03677,
+        "max": 1.1,
+        "min_name": "Codex-Gpt-1"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -9093,8 +9794,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（default 组） = ¥8/M；96 个分组档位 0.0625–1.87×，最低「Codex-Gpt-1」",
+      "calc_basis": "官方 $8 × 倍率 1（default 组） = ¥8/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -9102,6 +9803,13 @@
         "min": 0.062509,
         "max": 1.87
       },
+      "tiers": {
+        "count": 96,
+        "min": 0.062509,
+        "max": 1.87,
+        "min_name": "Codex-Gpt-1"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -9178,8 +9886,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Grok 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（Grok 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（Grok 组） = ¥8/M；14 个分组档位 0.1–5×，最低「claude_free」",
+      "calc_basis": "官方 $8 × 倍率 1（Grok 组） = ¥8/M",
       "group": {
         "name": "Grok",
         "ratio": 1,
@@ -9187,6 +9895,13 @@
         "min": 0.1,
         "max": 5
       },
+      "tiers": {
+        "count": 14,
+        "min": 0.1,
+        "max": 5,
+        "min_name": "claude_free"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -9263,8 +9978,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（gemini生图渠道 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（gemini生图渠道 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（gemini生图渠道 组） = ¥8/M；113 个分组档位 0.0001–8×，最低「群友福利-GLM54体验」",
+      "calc_basis": "官方 $8 × 倍率 1（gemini生图渠道 组） = ¥8/M",
       "group": {
         "name": "gemini生图渠道",
         "ratio": 1,
@@ -9272,6 +9987,13 @@
         "min": 0.0001,
         "max": 8
       },
+      "tiers": {
+        "count": 113,
+        "min": 0.0001,
+        "max": 8,
+        "min_name": "群友福利-GLM54体验"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -9348,8 +10070,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Claude MAX高缓存特惠 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（Claude MAX高缓存特惠 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（Claude MAX高缓存特惠 组） = ¥8/M；21 个分组档位 0.03–3.2×，最低「国模003」",
+      "calc_basis": "官方 $8 × 倍率 1（Claude MAX高缓存特惠 组） = ¥8/M",
       "group": {
         "name": "Claude MAX高缓存特惠",
         "ratio": 1,
@@ -9357,6 +10079,13 @@
         "min": 0.03,
         "max": 3.2
       },
+      "tiers": {
+        "count": 21,
+        "min": 0.03,
+        "max": 3.2,
+        "min_name": "国模003"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -9433,8 +10162,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（image 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（image 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（image 组） = ¥8/M；16 个分组档位 0.0275–1.6×，最低「gpt-promax」",
+      "calc_basis": "官方 $8 × 倍率 1（image 组） = ¥8/M",
       "group": {
         "name": "image",
         "ratio": 1,
@@ -9442,6 +10171,13 @@
         "min": 0.0275,
         "max": 1.6
       },
+      "tiers": {
+        "count": 16,
+        "min": 0.0275,
+        "max": 1.6,
+        "min_name": "gpt-promax"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -9518,8 +10254,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（默认用户 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（默认用户 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（默认用户 组） = ¥8/M；25 个分组档位 0.07–3×，最低「GPT-福利」",
+      "calc_basis": "官方 $8 × 倍率 1（默认用户 组） = ¥8/M",
       "group": {
         "name": "默认用户",
         "ratio": 1,
@@ -9527,6 +10263,13 @@
         "min": 0.07,
         "max": 3
       },
+      "tiers": {
+        "count": 25,
+        "min": 0.07,
+        "max": 3,
+        "min_name": "GPT-福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -9603,8 +10346,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Grok生图视频特价 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（Grok生图视频特价 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（Grok生图视频特价 组） = ¥8/M；29 个分组档位 0.12–2.3×，最低「codex限时特价福利」",
+      "calc_basis": "官方 $8 × 倍率 1（Grok生图视频特价 组） = ¥8/M",
       "group": {
         "name": "Grok生图视频特价",
         "ratio": 1,
@@ -9612,6 +10355,13 @@
         "min": 0.12,
         "max": 2.3
       },
+      "tiers": {
+        "count": 29,
+        "min": 0.12,
+        "max": 2.3,
+        "min_name": "codex限时特价福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -9688,8 +10438,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（nano-banana 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（nano-banana 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（nano-banana 组） = ¥8/M；13 个分组档位 0.18–1.2×，最低「codex-pro」",
+      "calc_basis": "官方 $8 × 倍率 1（nano-banana 组） = ¥8/M",
       "group": {
         "name": "nano-banana",
         "ratio": 1,
@@ -9697,6 +10447,13 @@
         "min": 0.18,
         "max": 1.2
       },
+      "tiers": {
+        "count": 13,
+        "min": 0.18,
+        "max": 1.2,
+        "min_name": "codex-pro"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -9773,8 +10530,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（auto 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（auto 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（auto 组） = ¥8/M；14 个分组档位 0.03–1.1×，最低「GPT特价」",
+      "calc_basis": "官方 $8 × 倍率 1（auto 组） = ¥8/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -9782,6 +10539,13 @@
         "min": 0.03,
         "max": 1.1
       },
+      "tiers": {
+        "count": 14,
+        "min": 0.03,
+        "max": 1.1,
+        "min_name": "GPT特价"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -9858,8 +10622,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（生图专用 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（生图专用 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（生图专用 组） = ¥8/M；11 个分组档位 0.08–1.35×，最低「GPT-Plus」",
+      "calc_basis": "官方 $8 × 倍率 1（生图专用 组） = ¥8/M",
       "group": {
         "name": "生图专用",
         "ratio": 1,
@@ -9867,6 +10631,13 @@
         "min": 0.08,
         "max": 1.35
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.08,
+        "max": 1.35,
+        "min_name": "GPT-Plus"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -9943,8 +10714,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（Claude 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（Claude 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（Claude 组） = ¥8/M；19 个分组档位 0.3–1.8×，最低「image-2」",
+      "calc_basis": "官方 $8 × 倍率 1（Claude 组） = ¥8/M",
       "group": {
         "name": "Claude",
         "ratio": 1,
@@ -9952,6 +10723,13 @@
         "min": 0.3,
         "max": 1.8
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.3,
+        "max": 1.8,
+        "min_name": "image-2"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -10028,8 +10806,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（default 组） = ¥8/M；14 个分组档位 0.1–8×，最低「grok」",
+      "calc_basis": "官方 $8 × 倍率 1（default 组） = ¥8/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -10037,6 +10815,13 @@
         "min": 0.1,
         "max": 8
       },
+      "tiers": {
+        "count": 14,
+        "min": 0.1,
+        "max": 8,
+        "min_name": "grok"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -10113,8 +10898,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（玩具 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（玩具 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（玩具 组） = ¥8/M；11 个分组档位 0.01–1.25×，最低「grok」",
+      "calc_basis": "官方 $8 × 倍率 1（玩具 组） = ¥8/M",
       "group": {
         "name": "玩具",
         "ratio": 1,
@@ -10122,6 +10907,13 @@
         "min": 0.01,
         "max": 1.25
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.01,
+        "max": 1.25,
+        "min_name": "grok"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -10198,8 +10990,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（auto 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（auto 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（auto 组） = ¥8/M；19 个分组档位 0.002–1×，最低「Grok畅享」",
+      "calc_basis": "官方 $8 × 倍率 1（auto 组） = ¥8/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -10207,6 +10999,13 @@
         "min": 0.002,
         "max": 1
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.002,
+        "max": 1,
+        "min_name": "Grok畅享"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -10283,9 +11082,11 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1 = ¥8/M",
+      "calc_basis": "官方 $8 × 倍率 1 = ¥8/M",
       "group": null,
+      "tiers": null,
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -10362,8 +11163,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（default 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（default 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（default 组） = ¥8/M；19 个分组档位 0.1–1.8×，最低「gpt-不降智」",
+      "calc_basis": "官方 $8 × 倍率 1（default 组） = ¥8/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -10371,6 +11172,13 @@
         "min": 0.1,
         "max": 1.8
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.1,
+        "max": 1.8,
+        "min_name": "gpt-不降智"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -10447,8 +11255,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（auto 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（auto 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（auto 组） = ¥8/M；19 个分组档位 0.08–5×，最低「GPT-k12」",
+      "calc_basis": "官方 $8 × 倍率 1（auto 组） = ¥8/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -10456,6 +11264,13 @@
         "min": 0.08,
         "max": 5
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.08,
+        "max": 5,
+        "min_name": "GPT-k12"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -10532,8 +11347,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（GPT生图1-4K 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（GPT生图1-4K 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（GPT生图1-4K 组） = ¥8/M；9 个分组档位 0.5–2.05×，最低「GPT 福利」",
+      "calc_basis": "官方 $8 × 倍率 1（GPT生图1-4K 组） = ¥8/M",
       "group": {
         "name": "GPT生图1-4K",
         "ratio": 1,
@@ -10541,6 +11356,13 @@
         "min": 0.5,
         "max": 2.05
       },
+      "tiers": {
+        "count": 9,
+        "min": 0.5,
+        "max": 2.05,
+        "min_name": "GPT 福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -10617,8 +11439,8 @@
         "blend": 2.6423,
         "discount": 0.8499
       },
-      "calc": "倍率 ×1（google-video专用 组） × 官方 $8 = ¥8/M",
-      "calc_basis": "倍率 ×1（google-video专用 组） × 官方 $8 = ¥8/M",
+      "calc": "官方 $8 × 倍率 1（google-video专用 组） = ¥8/M；13 个分组档位 0.03–100×，最低「deepseek福利」",
+      "calc_basis": "官方 $8 × 倍率 1（google-video专用 组） = ¥8/M",
       "group": {
         "name": "google-video专用",
         "ratio": 1,
@@ -10626,6 +11448,13 @@
         "min": 0.03,
         "max": 100
       },
+      "tiers": {
+        "count": 13,
+        "min": 0.03,
+        "max": 100,
+        "min_name": "deepseek福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -10702,8 +11531,8 @@
         "blend": 1.6514,
         "discount": 0.8123
       },
-      "calc": "倍率 ×1.25（Grok生图视频特价 组） × 官方 $4 = ¥5/M",
-      "calc_basis": "倍率 ×1.25（Grok生图视频特价 组） × 官方 $4 = ¥5/M",
+      "calc": "官方 $4 × 倍率 1.25（Grok生图视频特价 组） = ¥5/M；29 个分组档位 0.12–2.3×，最低「codex限时特价福利」",
+      "calc_basis": "官方 $4 × 倍率 1.25（Grok生图视频特价 组） = ¥5/M",
       "group": {
         "name": "Grok生图视频特价",
         "ratio": 1,
@@ -10711,6 +11540,13 @@
         "min": 0.12,
         "max": 2.3
       },
+      "tiers": {
+        "count": 29,
+        "min": 0.12,
+        "max": 2.3,
+        "min_name": "codex限时特价福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.25（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -10787,8 +11623,8 @@
         "blend": 3.3029,
         "discount": 0.8123
       },
-      "calc": "倍率 ×1.25（default 组） × 官方 $8 = ¥10/M",
-      "calc_basis": "倍率 ×1.25（default 组） × 官方 $8 = ¥10/M",
+      "calc": "官方 $8 × 倍率 1.25（default 组） = ¥10/M",
+      "calc_basis": "官方 $8 × 倍率 1.25（default 组） = ¥10/M",
       "group": {
         "name": "default",
         "ratio": 2,
@@ -10796,6 +11632,8 @@
         "min": 2,
         "max": 2
       },
+      "tiers": null,
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.25（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -10872,8 +11710,8 @@
         "blend": 0.9909,
         "discount": 0.7748
       },
-      "calc": "倍率 ×1.5（default 组） × 官方 $2 = ¥3/M",
-      "calc_basis": "倍率 ×1.5（default 组） × 官方 $2 = ¥3/M",
+      "calc": "官方 $2 × 倍率 1.5（default 组） = ¥3/M；37 个分组档位 0.08–10×，最低「Codex-Plus-Pro 混池」",
+      "calc_basis": "官方 $2 × 倍率 1.5（default 组） = ¥3/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -10881,6 +11719,13 @@
         "min": 0.08,
         "max": 10
       },
+      "tiers": {
+        "count": 37,
+        "min": 0.08,
+        "max": 10,
+        "min_name": "Codex-Plus-Pro 混池"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -10957,8 +11802,8 @@
         "blend": 0.9909,
         "discount": 0.7748
       },
-      "calc": "倍率 ×1.5（codex-pro正价 组） × 官方 $2 = ¥3/M",
-      "calc_basis": "倍率 ×1.5（codex-pro正价 组） × 官方 $2 = ¥3/M",
+      "calc": "官方 $2 × 倍率 1.5（codex-pro正价 组） = ¥3/M；31 个分组档位 0.1–6.6×，最低「cc-kiro-90缓」",
+      "calc_basis": "官方 $2 × 倍率 1.5（codex-pro正价 组） = ¥3/M",
       "group": {
         "name": "codex-pro正价",
         "ratio": 1,
@@ -10966,6 +11811,13 @@
         "min": 0.1,
         "max": 6.6
       },
+      "tiers": {
+        "count": 31,
+        "min": 0.1,
+        "max": 6.6,
+        "min_name": "cc-kiro-90缓"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -11042,8 +11894,8 @@
         "blend": 0.9909,
         "discount": 0.7748
       },
-      "calc": "倍率 ×1.5（默认 组） × 官方 $2 = ¥3/M",
-      "calc_basis": "倍率 ×1.5（默认 组） × 官方 $2 = ¥3/M",
+      "calc": "官方 $2 × 倍率 1.5（默认 组） = ¥3/M；29 个分组档位 0.03–1×，最低「GPT image 全系 超分」",
+      "calc_basis": "官方 $2 × 倍率 1.5（默认 组） = ¥3/M",
       "group": {
         "name": "默认",
         "ratio": 1,
@@ -11051,6 +11903,13 @@
         "min": 0.03,
         "max": 1
       },
+      "tiers": {
+        "count": 29,
+        "min": 0.03,
+        "max": 1,
+        "min_name": "GPT image 全系 超分"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -11127,8 +11986,8 @@
         "blend": 0.163,
         "discount": 0.714
       },
-      "calc": "倍率 ×1.905（auto 组） × 官方 $0.3 = ¥0.5714/M",
-      "calc_basis": "倍率 ×1.905（auto 组） × 官方 $0.3 = ¥0.5714/M",
+      "calc": "官方 $0.3 × 倍率 1.905（auto 组） = ¥0.5714/M；19 个分组档位 0.002–1×，最低「Grok畅享」",
+      "calc_basis": "官方 $0.3 × 倍率 1.905（auto 组） = ¥0.5714/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -11136,6 +11995,13 @@
         "min": 0.002,
         "max": 1
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.002,
+        "max": 1,
+        "min_name": "Grok畅享"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.905（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -11212,8 +12078,8 @@
         "blend": 0.6177,
         "discount": 0.7075
       },
-      "calc": "倍率 ×1.948（auto 组） × 官方 $1.32 = ¥2.5714/M",
-      "calc_basis": "倍率 ×1.948（auto 组） × 官方 $1.32 = ¥2.5714/M",
+      "calc": "官方 $1.32 × 倍率 1.948（auto 组） = ¥2.5714/M；19 个分组档位 0.002–1×，最低「Grok畅享」",
+      "calc_basis": "官方 $1.32 × 倍率 1.948（auto 组） = ¥2.5714/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -11221,6 +12087,13 @@
         "min": 0.002,
         "max": 1
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.002,
+        "max": 1,
+        "min_name": "Grok畅享"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.948（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -11297,8 +12170,8 @@
         "blend": 0.1711,
         "discount": 0.6997
       },
-      "calc": "倍率 ×2（antigravity-c 组） × 官方 $0.3 = ¥0.6/M",
-      "calc_basis": "倍率 ×2（antigravity-c 组） × 官方 $0.3 = ¥0.6/M",
+      "calc": "官方 $0.3 × 倍率 2（antigravity-c 组） = ¥0.6/M；28 个分组档位 0.03–2.4×，最低「codex-pro」",
+      "calc_basis": "官方 $0.3 × 倍率 2（antigravity-c 组） = ¥0.6/M",
       "group": {
         "name": "antigravity-c",
         "ratio": 1,
@@ -11306,98 +12179,18 @@
         "min": 0.03,
         "max": 2.4
       },
+      "tiers": {
+        "count": 28,
+        "min": 0.03,
+        "max": 2.4,
+        "min_name": "codex-pro"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×2（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
       "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
-        "id": "demo-gamma",
-        "name": "示例站 Gamma",
-        "kind": "mixed",
-        "kind_label": "混合",
-        "demo": true,
-        "homepage": "https://example.net",
-        "affiliate_url": "https://example.net/register?aff=YOURCODE",
-        "affiliate_code": "YOURCODE",
-        "commission": "8%",
-        "risk_flags": [
-          "limited-models",
-          "unverified"
-        ],
-        "first_seen": "2026-08-30",
-        "note": null
-      },
-      "model": {
-        "id": "deepseek-flash",
-        "label": "DeepSeek Flash",
-        "vendor": "DeepSeek",
-        "context": 1000000
-      },
-      "mode": "absolute",
-      "price_source": "manual",
-      "bonus": 1.5,
-      "billing_ratio": 1.12,
-      "billing_source": "manual",
-      "nominal": {
-        "input": 1,
-        "output": 3,
-        "cache_read": 0.1
-      },
-      "effective": {
-        "input": 0.7467,
-        "output": 2.24,
-        "cache_read": 0.0747
-      },
-      "official_cny": {
-        "input": 1.9983,
-        "output": 7.9931,
-        "cache_read": 0.04
-      },
-      "official_usd": {
-        "input": 0.3,
-        "output": 1.2,
-        "cache_read": 0.006,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 0.3737,
-        "output": 0.2802,
-        "blend": 0.3147
-      },
-      "discount": 0.6853,
-      "blend_effective": 1.1947,
-      "usd": {
-        "effective": {
-          "input": 0.1121,
-          "output": 0.3363,
-          "cache_read": 0.0112
-        },
-        "official": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.006
-        },
-        "blend": 0.1794,
-        "discount": 0.6853
-      },
-      "calc": "站上标价 ¥1/M · × 计费 1.12 ÷ 赠送 1.5",
-      "calc_basis": "站上标价 ¥1/M",
-      "group": null,
-      "calc_adjust": "× 计费 1.12 ÷ 赠送 1.5",
-      "health": {
-        "days": 14,
-        "uptime_7d": 1,
-        "uptime_30d": 1,
-        "last_ok": "2026-11-26",
-        "last_checked": "2026-11-26",
-        "latency_ms": 1182,
-        "usage_ratio": null
-      },
-      "note": null,
-      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
     },
     {
       "station": {
@@ -11469,8 +12262,8 @@
         "blend": 3.1527,
         "discount": 0.6417
       },
-      "calc": "倍率 ×2.25（default 组） × 官方 $4 = ¥9/M",
-      "calc_basis": "倍率 ×2.25（default 组） × 官方 $4 = ¥9/M",
+      "calc": "官方 $4 × 倍率 2.25（default 组） = ¥9/M；5 个分组档位 0.005–0.1×，最低「discount」",
+      "calc_basis": "官方 $4 × 倍率 2.25（default 组） = ¥9/M",
       "group": {
         "name": "default",
         "ratio": 0.1,
@@ -11478,6 +12271,13 @@
         "min": 0.005,
         "max": 0.1
       },
+      "tiers": {
+        "count": 5,
+        "min": 0.005,
+        "max": 0.1,
+        "min_name": "discount"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×2.25（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -11503,8 +12303,8 @@
         "note": null
       },
       "model": {
-        "id": "deepseek-v4-pro",
-        "label": "DeepSeek V4 Pro",
+        "id": "deepseek-flash",
+        "label": "DeepSeek Flash",
         "vendor": "DeepSeek",
         "context": 1000000
       },
@@ -11514,51 +12314,57 @@
       "billing_ratio": 1.12,
       "billing_source": "manual",
       "nominal": {
-        "input": 4.5,
-        "output": 13.5,
-        "cache_read": 0.5
+        "input": 1,
+        "output": 3,
+        "cache_read": 0.1
       },
       "effective": {
-        "input": 3.36,
-        "output": 10.08,
-        "cache_read": 0.3733
+        "input": 1.12,
+        "output": 3.36,
+        "cache_read": 0.112
       },
       "official_cny": {
-        "input": 8.7924,
-        "output": 26.3772,
-        "cache_read": 0.2931
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
-        "input": 1.32,
-        "output": 3.96,
-        "cache_read": 0.044,
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006,
         "cache_write": null
       },
       "ratio": {
-        "input": 0.3821,
-        "output": 0.3821,
-        "blend": 0.3821
+        "input": 0.5605,
+        "output": 0.4204,
+        "blend": 0.472
       },
-      "discount": 0.6179,
-      "blend_effective": 5.376,
+      "discount": 0.528,
+      "blend_effective": 1.792,
       "usd": {
         "effective": {
-          "input": 0.5044,
-          "output": 1.5133,
-          "cache_read": 0.056
+          "input": 0.1681,
+          "output": 0.5044,
+          "cache_read": 0.0168
         },
         "official": {
-          "input": 1.32,
-          "output": 3.96,
-          "cache_read": 0.044
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
         },
-        "blend": 0.8071,
-        "discount": 0.6179
+        "blend": 0.269,
+        "discount": 0.528
       },
-      "calc": "站上标价 ¥4.5/M · × 计费 1.12 ÷ 赠送 1.5",
-      "calc_basis": "站上标价 ¥4.5/M",
+      "calc": "站上标价 ¥1/M · × 计费 1.12",
+      "calc_basis": "站上标价 ¥1/M",
       "group": null,
-      "calc_adjust": "× 计费 1.12 ÷ 赠送 1.5",
+      "tiers": null,
+      "recharge": {
+        "pay": 300,
+        "get": 450,
+        "note": "充 300 得 450（1.5 倍额度）"
+      },
+      "calc_adjust": "× 计费 1.12",
       "health": {
         "days": 14,
         "uptime_7d": 1,
@@ -11641,8 +12447,8 @@
         "blend": 0.2852,
         "discount": 0.4996
       },
-      "calc": "倍率 ×3.333（codex-pro正价 组） × 官方 $0.3 = ¥1/M",
-      "calc_basis": "倍率 ×3.333（codex-pro正价 组） × 官方 $0.3 = ¥1/M",
+      "calc": "官方 $0.3 × 倍率 3.333（codex-pro正价 组） = ¥1/M；31 个分组档位 0.1–6.6×，最低「cc-kiro-90缓」",
+      "calc_basis": "官方 $0.3 × 倍率 3.333（codex-pro正价 组） = ¥1/M",
       "group": {
         "name": "codex-pro正价",
         "ratio": 1,
@@ -11650,6 +12456,13 @@
         "min": 0.1,
         "max": 6.6
       },
+      "tiers": {
+        "count": 31,
+        "min": 0.1,
+        "max": 6.6,
+        "min_name": "cc-kiro-90缓"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -11726,8 +12539,8 @@
         "blend": 0.2852,
         "discount": 0.4996
       },
-      "calc": "倍率 ×3.333（Claude MAX高缓存特惠 组） × 官方 $0.3 = ¥1/M",
-      "calc_basis": "倍率 ×3.333（Claude MAX高缓存特惠 组） × 官方 $0.3 = ¥1/M",
+      "calc": "官方 $0.3 × 倍率 3.333（Claude MAX高缓存特惠 组） = ¥1/M；21 个分组档位 0.03–3.2×，最低「国模003」",
+      "calc_basis": "官方 $0.3 × 倍率 3.333（Claude MAX高缓存特惠 组） = ¥1/M",
       "group": {
         "name": "Claude MAX高缓存特惠",
         "ratio": 1,
@@ -11735,6 +12548,13 @@
         "min": 0.03,
         "max": 3.2
       },
+      "tiers": {
+        "count": 21,
+        "min": 0.03,
+        "max": 3.2,
+        "min_name": "国模003"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -11811,8 +12631,8 @@
         "blend": 0.2852,
         "discount": 0.4996
       },
-      "calc": "倍率 ×3.333（CCMAX不可外接节点不可破限不可蒸馏 组） × 官方 $0.3 = ¥1/M",
-      "calc_basis": "倍率 ×3.333（CCMAX不可外接节点不可破限不可蒸馏 组） × 官方 $0.3 = ¥1/M",
+      "calc": "官方 $0.3 × 倍率 3.333（CCMAX不可外接节点不可破限不可蒸馏 组） = ¥1/M；70 个分组档位 0.0001–3×，最低「国产英伟达免费分组」",
+      "calc_basis": "官方 $0.3 × 倍率 3.333（CCMAX不可外接节点不可破限不可蒸馏 组） = ¥1/M",
       "group": {
         "name": "CCMAX不可外接节点不可破限不可蒸馏",
         "ratio": 1,
@@ -11820,6 +12640,13 @@
         "min": 0.0001,
         "max": 3
       },
+      "tiers": {
+        "count": 70,
+        "min": 0.0001,
+        "max": 3,
+        "min_name": "国产英伟达免费分组"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -11896,8 +12723,8 @@
         "blend": 0.2852,
         "discount": 0.4996
       },
-      "calc": "倍率 ×3.333（default 组） × 官方 $0.3 = ¥1/M",
-      "calc_basis": "倍率 ×3.333（default 组） × 官方 $0.3 = ¥1/M",
+      "calc": "官方 $0.3 × 倍率 3.333（default 组） = ¥1/M；49 个分组档位 0.08–4.5×，最低「GPT-限时特价」",
+      "calc_basis": "官方 $0.3 × 倍率 3.333（default 组） = ¥1/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -11905,6 +12732,13 @@
         "min": 0.08,
         "max": 4.5
       },
+      "tiers": {
+        "count": 49,
+        "min": 0.08,
+        "max": 4.5,
+        "min_name": "GPT-限时特价"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -11981,8 +12815,8 @@
         "blend": 0.2852,
         "discount": 0.4996
       },
-      "calc": "倍率 ×3.333（生图专用 组） × 官方 $0.3 = ¥1/M",
-      "calc_basis": "倍率 ×3.333（生图专用 组） × 官方 $0.3 = ¥1/M",
+      "calc": "官方 $0.3 × 倍率 3.333（生图专用 组） = ¥1/M；11 个分组档位 0.08–1.35×，最低「GPT-Plus」",
+      "calc_basis": "官方 $0.3 × 倍率 3.333（生图专用 组） = ¥1/M",
       "group": {
         "name": "生图专用",
         "ratio": 1,
@@ -11990,6 +12824,13 @@
         "min": 0.08,
         "max": 1.35
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.08,
+        "max": 1.35,
+        "min_name": "GPT-Plus"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -12066,8 +12907,8 @@
         "blend": 0.2852,
         "discount": 0.4996
       },
-      "calc": "倍率 ×3.333（默认 组） × 官方 $0.3 = ¥1/M",
-      "calc_basis": "倍率 ×3.333（默认 组） × 官方 $0.3 = ¥1/M",
+      "calc": "官方 $0.3 × 倍率 3.333（默认 组） = ¥1/M；29 个分组档位 0.03–1×，最低「GPT image 全系 超分」",
+      "calc_basis": "官方 $0.3 × 倍率 3.333（默认 组） = ¥1/M",
       "group": {
         "name": "默认",
         "ratio": 1,
@@ -12075,6 +12916,13 @@
         "min": 0.03,
         "max": 1
       },
+      "tiers": {
+        "count": 29,
+        "min": 0.03,
+        "max": 1,
+        "min_name": "GPT image 全系 超分"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -12151,8 +12999,8 @@
         "blend": 1.0809,
         "discount": 0.4882
       },
-      "calc": "倍率 ×3.409（codex-pro正价 组） × 官方 $1.32 = ¥4.5/M",
-      "calc_basis": "倍率 ×3.409（codex-pro正价 组） × 官方 $1.32 = ¥4.5/M",
+      "calc": "官方 $1.32 × 倍率 3.409（codex-pro正价 组） = ¥4.5/M；31 个分组档位 0.1–6.6×，最低「cc-kiro-90缓」",
+      "calc_basis": "官方 $1.32 × 倍率 3.409（codex-pro正价 组） = ¥4.5/M",
       "group": {
         "name": "codex-pro正价",
         "ratio": 1,
@@ -12160,6 +13008,13 @@
         "min": 0.1,
         "max": 6.6
       },
+      "tiers": {
+        "count": 31,
+        "min": 0.1,
+        "max": 6.6,
+        "min_name": "cc-kiro-90缓"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -12236,8 +13091,8 @@
         "blend": 1.0809,
         "discount": 0.4882
       },
-      "calc": "倍率 ×3.409（default 组） × 官方 $1.32 = ¥4.5/M",
-      "calc_basis": "倍率 ×3.409（default 组） × 官方 $1.32 = ¥4.5/M",
+      "calc": "官方 $1.32 × 倍率 3.409（default 组） = ¥4.5/M；32 个分组档位 0.08–5.32×，最低「奇奇怪怪的渠道」",
+      "calc_basis": "官方 $1.32 × 倍率 3.409（default 组） = ¥4.5/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -12245,6 +13100,13 @@
         "min": 0.08,
         "max": 5.32
       },
+      "tiers": {
+        "count": 32,
+        "min": 0.08,
+        "max": 5.32,
+        "min_name": "奇奇怪怪的渠道"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -12321,8 +13183,8 @@
         "blend": 1.0809,
         "discount": 0.4882
       },
-      "calc": "倍率 ×3.409（Claude反重力按次 组） × 官方 $1.32 = ¥4.5/M",
-      "calc_basis": "倍率 ×3.409（Claude反重力按次 组） × 官方 $1.32 = ¥4.5/M",
+      "calc": "官方 $1.32 × 倍率 3.409（Claude反重力按次 组） = ¥4.5/M；44 个分组档位 0.033–2.3×，最低「超级福利GPT组」",
+      "calc_basis": "官方 $1.32 × 倍率 3.409（Claude反重力按次 组） = ¥4.5/M",
       "group": {
         "name": "Claude反重力按次",
         "ratio": 1,
@@ -12330,6 +13192,13 @@
         "min": 0.033,
         "max": 2.3
       },
+      "tiers": {
+        "count": 44,
+        "min": 0.033,
+        "max": 2.3,
+        "min_name": "超级福利GPT组"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -12406,8 +13275,8 @@
         "blend": 1.0809,
         "discount": 0.4882
       },
-      "calc": "倍率 ×3.409（nano-banana 组） × 官方 $1.32 = ¥4.5/M",
-      "calc_basis": "倍率 ×3.409（nano-banana 组） × 官方 $1.32 = ¥4.5/M",
+      "calc": "官方 $1.32 × 倍率 3.409（nano-banana 组） = ¥4.5/M；13 个分组档位 0.18–1.2×，最低「codex-pro」",
+      "calc_basis": "官方 $1.32 × 倍率 3.409（nano-banana 组） = ¥4.5/M",
       "group": {
         "name": "nano-banana",
         "ratio": 1,
@@ -12415,6 +13284,13 @@
         "min": 0.18,
         "max": 1.2
       },
+      "tiers": {
+        "count": 13,
+        "min": 0.18,
+        "max": 1.2,
+        "min_name": "codex-pro"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -12491,8 +13367,8 @@
         "blend": 1.0809,
         "discount": 0.4882
       },
-      "calc": "倍率 ×3.409（adb渠道生图image-2 组） × 官方 $1.32 = ¥4.5/M",
-      "calc_basis": "倍率 ×3.409（adb渠道生图image-2 组） × 官方 $1.32 = ¥4.5/M",
+      "calc": "官方 $1.32 × 倍率 3.409（adb渠道生图image-2 组） = ¥4.5/M；51 个分组档位 0.0001–1.7×，最低「免费分组」",
+      "calc_basis": "官方 $1.32 × 倍率 3.409（adb渠道生图image-2 组） = ¥4.5/M",
       "group": {
         "name": "adb渠道生图image-2",
         "ratio": 1,
@@ -12500,6 +13376,13 @@
         "min": 0.0001,
         "max": 1.7
       },
+      "tiers": {
+        "count": 51,
+        "min": 0.0001,
+        "max": 1.7,
+        "min_name": "免费分组"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -12576,8 +13459,8 @@
         "blend": 1.0809,
         "discount": 0.4882
       },
-      "calc": "倍率 ×3.409（default 组） × 官方 $1.32 = ¥4.5/M",
-      "calc_basis": "倍率 ×3.409（default 组） × 官方 $1.32 = ¥4.5/M",
+      "calc": "官方 $1.32 × 倍率 3.409（default 组） = ¥4.5/M；21 个分组档位 0.1–1.45×，最低「T01AGPT 特价」",
+      "calc_basis": "官方 $1.32 × 倍率 3.409（default 组） = ¥4.5/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -12585,6 +13468,13 @@
         "min": 0.1,
         "max": 1.45
       },
+      "tiers": {
+        "count": 21,
+        "min": 0.1,
+        "max": 1.45,
+        "min_name": "T01AGPT 特价"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -12661,8 +13551,8 @@
         "blend": 1.0809,
         "discount": 0.4882
       },
-      "calc": "倍率 ×3.409（默认 组） × 官方 $1.32 = ¥4.5/M",
-      "calc_basis": "倍率 ×3.409（默认 组） × 官方 $1.32 = ¥4.5/M",
+      "calc": "官方 $1.32 × 倍率 3.409（默认 组） = ¥4.5/M；29 个分组档位 0.03–1×，最低「GPT image 全系 超分」",
+      "calc_basis": "官方 $1.32 × 倍率 3.409（默认 组） = ¥4.5/M",
       "group": {
         "name": "默认",
         "ratio": 1,
@@ -12670,11 +13560,111 @@
         "min": 0.03,
         "max": 1
       },
+      "tiers": {
+        "count": 29,
+        "min": 0.03,
+        "max": 1,
+        "min_name": "GPT image 全系 超分"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
       "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
+        "id": "demo-gamma",
+        "name": "示例站 Gamma",
+        "kind": "mixed",
+        "kind_label": "混合",
+        "demo": true,
+        "homepage": "https://example.net",
+        "affiliate_url": "https://example.net/register?aff=YOURCODE",
+        "affiliate_code": "YOURCODE",
+        "commission": "8%",
+        "risk_flags": [
+          "limited-models",
+          "unverified"
+        ],
+        "first_seen": "2026-08-30",
+        "note": null
+      },
+      "model": {
+        "id": "deepseek-v4-pro",
+        "label": "DeepSeek V4 Pro",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1.5,
+      "billing_ratio": 1.12,
+      "billing_source": "manual",
+      "nominal": {
+        "input": 4.5,
+        "output": 13.5,
+        "cache_read": 0.5
+      },
+      "effective": {
+        "input": 5.04,
+        "output": 15.12,
+        "cache_read": 0.56
+      },
+      "official_cny": {
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
+      },
+      "official_usd": {
+        "input": 1.32,
+        "output": 3.96,
+        "cache_read": 0.044,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.5732,
+        "output": 0.5732,
+        "blend": 0.5732
+      },
+      "discount": 0.4268,
+      "blend_effective": 8.064,
+      "usd": {
+        "effective": {
+          "input": 0.7567,
+          "output": 2.27,
+          "cache_read": 0.0841
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 1.2106,
+        "discount": 0.4268
+      },
+      "calc": "站上标价 ¥4.5/M · × 计费 1.12",
+      "calc_basis": "站上标价 ¥4.5/M",
+      "group": null,
+      "tiers": null,
+      "recharge": {
+        "pay": 300,
+        "get": 450,
+        "note": "充 300 得 450（1.5 倍额度）"
+      },
+      "calc_adjust": "× 计费 1.12",
+      "health": {
+        "days": 14,
+        "uptime_7d": 1,
+        "uptime_30d": 1,
+        "last_ok": "2026-11-26",
+        "last_checked": "2026-11-26",
+        "latency_ms": 1182,
+        "usage_ratio": null
+      },
+      "note": null,
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
     },
     {
       "station": {
@@ -12708,9 +13698,9 @@
         "cache_read": 0.0248
       },
       "effective": {
-        "input": 1.0324,
-        "output": 4.1298,
-        "cache_read": 0.0206
+        "input": 1.2389,
+        "output": 4.9557,
+        "cache_read": 0.0248
       },
       "official_cny": {
         "input": 1.9983,
@@ -12724,30 +13714,36 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.5167,
-        "output": 0.5167,
-        "blend": 0.5167
+        "input": 0.62,
+        "output": 0.62,
+        "blend": 0.62
       },
-      "discount": 0.4833,
-      "blend_effective": 1.9616,
+      "discount": 0.38,
+      "blend_effective": 2.354,
       "usd": {
         "effective": {
-          "input": 0.155,
-          "output": 0.62,
-          "cache_read": 0.0031
+          "input": 0.186,
+          "output": 0.744,
+          "cache_read": 0.0037
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 0.2945,
-        "discount": 0.4833
+        "blend": 0.3534,
+        "discount": 0.38
       },
-      "calc": "官方人民币 ¥1.9983 × 0.62 = ¥1.2389/M · ÷ 赠送 1.2",
+      "calc": "官方人民币 ¥1.9983 × 0.62 = ¥1.2389/M",
       "calc_basis": "官方人民币 ¥1.9983 × 0.62 = ¥1.2389/M",
       "group": null,
-      "calc_adjust": "÷ 赠送 1.2",
+      "tiers": null,
+      "recharge": {
+        "pay": 100,
+        "get": 120,
+        "note": "充 100 得 120（限时活动）；倍率折算必须把这一层算进去，否则看到的是假低价。"
+      },
+      "calc_adjust": "",
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -12792,9 +13788,9 @@
         "cache_read": 0.1817
       },
       "effective": {
-        "input": 4.5427,
-        "output": 13.6282,
-        "cache_read": 0.1514
+        "input": 5.4513,
+        "output": 16.3538,
+        "cache_read": 0.1817
       },
       "official_cny": {
         "input": 8.7924,
@@ -12808,30 +13804,36 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.5167,
-        "output": 0.5167,
-        "blend": 0.5167
+        "input": 0.62,
+        "output": 0.62,
+        "blend": 0.62
       },
-      "discount": 0.4833,
-      "blend_effective": 7.2684,
+      "discount": 0.38,
+      "blend_effective": 8.722,
       "usd": {
         "effective": {
-          "input": 0.682,
-          "output": 2.046,
-          "cache_read": 0.0227
+          "input": 0.8184,
+          "output": 2.4552,
+          "cache_read": 0.0273
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 1.0912,
-        "discount": 0.4833
+        "blend": 1.3094,
+        "discount": 0.38
       },
-      "calc": "官方人民币 ¥8.7924 × 0.62 = ¥5.4513/M · ÷ 赠送 1.2",
+      "calc": "官方人民币 ¥8.7924 × 0.62 = ¥5.4513/M",
       "calc_basis": "官方人民币 ¥8.7924 × 0.62 = ¥5.4513/M",
       "group": null,
-      "calc_adjust": "÷ 赠送 1.2",
+      "tiers": null,
+      "recharge": {
+        "pay": 100,
+        "get": 120,
+        "note": "充 100 得 120（限时活动）；倍率折算必须把这一层算进去，否则看到的是假低价。"
+      },
+      "calc_adjust": "",
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -12876,9 +13878,9 @@
         "cache_read": 0.413
       },
       "effective": {
-        "input": 6.8829,
-        "output": 34.4147,
-        "cache_read": 0.3441
+        "input": 8.2595,
+        "output": 41.2976,
+        "cache_read": 0.413
       },
       "official_cny": {
         "input": 13.3218,
@@ -12892,30 +13894,36 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.5167,
-        "output": 0.5167,
-        "blend": 0.5167
+        "input": 0.62,
+        "output": 0.62,
+        "blend": 0.62
       },
-      "discount": 0.4833,
-      "blend_effective": 15.1424,
+      "discount": 0.38,
+      "blend_effective": 18.1709,
       "usd": {
         "effective": {
-          "input": 1.0333,
-          "output": 5.1667,
-          "cache_read": 0.0517
+          "input": 1.24,
+          "output": 6.2,
+          "cache_read": 0.062
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 2.2733,
-        "discount": 0.4833
+        "blend": 2.728,
+        "discount": 0.38
       },
-      "calc": "官方人民币 ¥13.3218 × 0.62 = ¥8.2595/M · ÷ 赠送 1.2",
+      "calc": "官方人民币 ¥13.3218 × 0.62 = ¥8.2595/M",
       "calc_basis": "官方人民币 ¥13.3218 × 0.62 = ¥8.2595/M",
       "group": null,
-      "calc_adjust": "÷ 赠送 1.2",
+      "tiers": null,
+      "recharge": {
+        "pay": 100,
+        "get": 120,
+        "note": "充 100 得 120（限时活动）；倍率折算必须把这一层算进去，否则看到的是假低价。"
+      },
+      "calc_adjust": "",
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -12960,9 +13968,9 @@
         "cache_read": 0.413
       },
       "effective": {
-        "input": 6.8829,
-        "output": 34.4147,
-        "cache_read": 0.3441
+        "input": 8.2595,
+        "output": 41.2976,
+        "cache_read": 0.413
       },
       "official_cny": {
         "input": 13.3218,
@@ -12976,30 +13984,36 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.5167,
-        "output": 0.5167,
-        "blend": 0.5167
+        "input": 0.62,
+        "output": 0.62,
+        "blend": 0.62
       },
-      "discount": 0.4833,
-      "blend_effective": 15.1424,
+      "discount": 0.38,
+      "blend_effective": 18.1709,
       "usd": {
         "effective": {
-          "input": 1.0333,
-          "output": 5.1667,
-          "cache_read": 0.0517
+          "input": 1.24,
+          "output": 6.2,
+          "cache_read": 0.062
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 2.2733,
-        "discount": 0.4833
+        "blend": 2.728,
+        "discount": 0.38
       },
-      "calc": "官方人民币 ¥13.3218 × 0.62 = ¥8.2595/M · ÷ 赠送 1.2",
+      "calc": "官方人民币 ¥13.3218 × 0.62 = ¥8.2595/M",
       "calc_basis": "官方人民币 ¥13.3218 × 0.62 = ¥8.2595/M",
       "group": null,
-      "calc_adjust": "÷ 赠送 1.2",
+      "tiers": null,
+      "recharge": {
+        "pay": 100,
+        "get": 120,
+        "note": "充 100 得 120（限时活动）；倍率折算必须把这一层算进去，否则看到的是假低价。"
+      },
+      "calc_adjust": "",
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -13044,9 +14058,9 @@
         "cache_read": 0.826
       },
       "effective": {
-        "input": 13.7659,
-        "output": 68.8293,
-        "cache_read": 0.6883
+        "input": 16.519,
+        "output": 82.5952,
+        "cache_read": 0.826
       },
       "official_cny": {
         "input": 26.6436,
@@ -13060,30 +14074,36 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.5167,
-        "output": 0.5167,
-        "blend": 0.5167
+        "input": 0.62,
+        "output": 0.62,
+        "blend": 0.62
       },
-      "discount": 0.4833,
-      "blend_effective": 30.2849,
+      "discount": 0.38,
+      "blend_effective": 36.3419,
       "usd": {
         "effective": {
-          "input": 2.0667,
-          "output": 10.3333,
-          "cache_read": 0.1033
+          "input": 2.48,
+          "output": 12.4,
+          "cache_read": 0.124
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 4.5467,
-        "discount": 0.4833
+        "blend": 5.456,
+        "discount": 0.38
       },
-      "calc": "官方人民币 ¥26.6436 × 0.62 = ¥16.519/M · ÷ 赠送 1.2",
+      "calc": "官方人民币 ¥26.6436 × 0.62 = ¥16.519/M",
       "calc_basis": "官方人民币 ¥26.6436 × 0.62 = ¥16.519/M",
       "group": null,
-      "calc_adjust": "÷ 赠送 1.2",
+      "tiers": null,
+      "recharge": {
+        "pay": 100,
+        "get": 120,
+        "note": "充 100 得 120（限时活动）；倍率折算必须把这一层算进去，否则看到的是假低价。"
+      },
+      "calc_adjust": "",
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -13166,8 +14186,8 @@
         "blend": 3.9634,
         "discount": 0.0992
       },
-      "calc": "倍率 ×6（default 组） × 官方 $2 = ¥12/M",
-      "calc_basis": "倍率 ×6（default 组） × 官方 $2 = ¥12/M",
+      "calc": "官方 $2 × 倍率 6（default 组） = ¥12/M；11 个分组档位 0.25–15×，最低「GPT-混池」",
+      "calc_basis": "官方 $2 × 倍率 6（default 组） = ¥12/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -13175,6 +14195,13 @@
         "min": 0.25,
         "max": 15
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.25,
+        "max": 15,
+        "min_name": "GPT-混池"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -13251,8 +14278,8 @@
         "blend": 7.9269,
         "discount": 0.0992
       },
-      "calc": "倍率 ×6（default 组） × 官方 $4 = ¥24/M",
-      "calc_basis": "倍率 ×6（default 组） × 官方 $4 = ¥24/M",
+      "calc": "官方 $4 × 倍率 6（default 组） = ¥24/M；11 个分组档位 0.25–15×，最低「GPT-混池」",
+      "calc_basis": "官方 $4 × 倍率 6（default 组） = ¥24/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -13260,6 +14287,13 @@
         "min": 0.25,
         "max": 15
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.25,
+        "max": 15,
+        "min_name": "GPT-混池"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -13337,6 +14371,8 @@
       "calc": "官方 $0.3/M × 汇率 6.6609 = ¥1.9983/M",
       "calc_basis": "官方 $0.3/M × 汇率 6.6609 = ¥1.9983/M",
       "group": null,
+      "tiers": null,
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": null,
@@ -13413,6 +14449,8 @@
       "calc": "官方 $1.32/M × 汇率 6.6609 = ¥8.7924/M",
       "calc_basis": "官方 $1.32/M × 汇率 6.6609 = ¥8.7924/M",
       "group": null,
+      "tiers": null,
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": null,
@@ -13489,6 +14527,8 @@
       "calc": "官方 $2/M × 汇率 6.6609 = ¥13.3218/M",
       "calc_basis": "官方 $2/M × 汇率 6.6609 = ¥13.3218/M",
       "group": null,
+      "tiers": null,
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": null,
@@ -13565,6 +14605,8 @@
       "calc": "官方 $2/M × 汇率 6.6609 = ¥13.3218/M",
       "calc_basis": "官方 $2/M × 汇率 6.6609 = ¥13.3218/M",
       "group": null,
+      "tiers": null,
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": null,
@@ -13641,6 +14683,8 @@
       "calc": "官方 $4/M × 汇率 6.6609 = ¥26.6436/M",
       "calc_basis": "官方 $4/M × 汇率 6.6609 = ¥26.6436/M",
       "group": null,
+      "tiers": null,
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": null,
@@ -13717,6 +14761,8 @@
       "calc": "官方 $8/M × 汇率 6.6609 = ¥53.2872/M",
       "calc_basis": "官方 $8/M × 汇率 6.6609 = ¥53.2872/M",
       "group": null,
+      "tiers": null,
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": null,
@@ -13792,8 +14838,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M；37 个分组档位 0.08–10×，最低「Codex-Plus-Pro 混池」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -13801,6 +14847,13 @@
         "min": 0.08,
         "max": 10
       },
+      "tiers": {
+        "count": 37,
+        "min": 0.08,
+        "max": 10,
+        "min_name": "Codex-Plus-Pro 混池"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -13877,8 +14930,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M；91 个分组档位 0.01–4×，最低「gemini-count」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -13886,6 +14939,13 @@
         "min": 0.01,
         "max": 4
       },
+      "tiers": {
+        "count": 91,
+        "min": 0.01,
+        "max": 4,
+        "min_name": "gemini-count"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -13962,8 +15022,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M；56 个分组档位 0.05–8×，最低「Claude Kiro 无缓」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -13971,6 +15031,13 @@
         "min": 0.05,
         "max": 8
       },
+      "tiers": {
+        "count": 56,
+        "min": 0.05,
+        "max": 8,
+        "min_name": "Claude Kiro 无缓"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -14047,8 +15114,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（gemini生图渠道 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（gemini生图渠道 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（gemini生图渠道 组） = ¥2/M；113 个分组档位 0.0001–8×，最低「群友福利-GLM54体验」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（gemini生图渠道 组） = ¥2/M",
       "group": {
         "name": "gemini生图渠道",
         "ratio": 1,
@@ -14056,6 +15123,13 @@
         "min": 0.0001,
         "max": 8
       },
+      "tiers": {
+        "count": 113,
+        "min": 0.0001,
+        "max": 8,
+        "min_name": "群友福利-GLM54体验"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -14132,8 +15206,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M；32 个分组档位 0.08–5.32×，最低「奇奇怪怪的渠道」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -14141,6 +15215,13 @@
         "min": 0.08,
         "max": 5.32
       },
+      "tiers": {
+        "count": 32,
+        "min": 0.08,
+        "max": 5.32,
+        "min_name": "奇奇怪怪的渠道"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -14217,8 +15298,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（image 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（image 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（image 组） = ¥2/M；16 个分组档位 0.0275–1.6×，最低「gpt-promax」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（image 组） = ¥2/M",
       "group": {
         "name": "image",
         "ratio": 1,
@@ -14226,6 +15307,13 @@
         "min": 0.0275,
         "max": 1.6
       },
+      "tiers": {
+        "count": 16,
+        "min": 0.0275,
+        "max": 1.6,
+        "min_name": "gpt-promax"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -14302,8 +15390,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（DeepSeek 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（DeepSeek 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（DeepSeek 组） = ¥2/M；17 个分组档位 0.25–8×，最低「Grok专用-SuperGrok」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（DeepSeek 组） = ¥2/M",
       "group": {
         "name": "DeepSeek",
         "ratio": 1,
@@ -14311,6 +15399,13 @@
         "min": 0.25,
         "max": 8
       },
+      "tiers": {
+        "count": 17,
+        "min": 0.25,
+        "max": 8,
+        "min_name": "Grok专用-SuperGrok"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -14387,8 +15482,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（adb渠道生图image-2 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（adb渠道生图image-2 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（adb渠道生图image-2 组） = ¥2/M；51 个分组档位 0.0001–1.7×，最低「免费分组」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（adb渠道生图image-2 组） = ¥2/M",
       "group": {
         "name": "adb渠道生图image-2",
         "ratio": 1,
@@ -14396,6 +15491,13 @@
         "min": 0.0001,
         "max": 1.7
       },
+      "tiers": {
+        "count": 51,
+        "min": 0.0001,
+        "max": 1.7,
+        "min_name": "免费分组"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -14472,8 +15574,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M；16 个分组档位 0.03–1.3×，最低「codex-混池」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -14481,6 +15583,13 @@
         "min": 0.03,
         "max": 1.3
       },
+      "tiers": {
+        "count": 16,
+        "min": 0.03,
+        "max": 1.3,
+        "min_name": "codex-混池"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -14557,8 +15666,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（Claude 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（Claude 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（Claude 组） = ¥2/M；19 个分组档位 0.3–1.8×，最低「image-2」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（Claude 组） = ¥2/M",
       "group": {
         "name": "Claude",
         "ratio": 1,
@@ -14566,6 +15675,13 @@
         "min": 0.3,
         "max": 1.8
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.3,
+        "max": 1.8,
+        "min_name": "image-2"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -14642,8 +15758,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（gptimageadobe 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（gptimageadobe 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（gptimageadobe 组） = ¥2/M；20 个分组档位 0.04–7×，最低「gpt混池」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（gptimageadobe 组） = ¥2/M",
       "group": {
         "name": "gptimageadobe",
         "ratio": 1,
@@ -14651,6 +15767,13 @@
         "min": 0.04,
         "max": 7
       },
+      "tiers": {
+        "count": 20,
+        "min": 0.04,
+        "max": 7,
+        "min_name": "gpt混池"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -14727,8 +15850,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（auto 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（auto 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（auto 组） = ¥2/M；36 个分组档位 0.08–3×，最低「image2」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（auto 组） = ¥2/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -14736,6 +15859,13 @@
         "min": 0.08,
         "max": 3
       },
+      "tiers": {
+        "count": 36,
+        "min": 0.08,
+        "max": 3,
+        "min_name": "image2"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -14812,8 +15942,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M；14 个分组档位 0.1–8×，最低「grok」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -14821,6 +15951,13 @@
         "min": 0.1,
         "max": 8
       },
+      "tiers": {
+        "count": 14,
+        "min": 0.1,
+        "max": 8,
+        "min_name": "grok"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -14897,8 +16034,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（玩具 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（玩具 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（玩具 组） = ¥2/M；11 个分组档位 0.01–1.25×，最低「grok」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（玩具 组） = ¥2/M",
       "group": {
         "name": "玩具",
         "ratio": 1,
@@ -14906,6 +16043,13 @@
         "min": 0.01,
         "max": 1.25
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.01,
+        "max": 1.25,
+        "min_name": "grok"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -14982,8 +16126,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M；19 个分组档位 0.1–1.8×，最低「gpt-不降智」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -14991,6 +16135,13 @@
         "min": 0.1,
         "max": 1.8
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.1,
+        "max": 1.8,
+        "min_name": "gpt-不降智"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -15067,8 +16218,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（auto 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（auto 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（auto 组） = ¥2/M；19 个分组档位 0.08–5×，最低「GPT-k12」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（auto 组） = ¥2/M",
       "group": {
         "name": "auto",
         "ratio": 1,
@@ -15076,6 +16227,13 @@
         "min": 0.08,
         "max": 5
       },
+      "tiers": {
+        "count": 19,
+        "min": 0.08,
+        "max": 5,
+        "min_name": "GPT-k12"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -15152,8 +16310,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（default 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M；11 个分组档位 0.02–1.65×，最低「活动002分组-开放的时候会有通知-没在群里也可以在模型里看」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（default 组） = ¥2/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -15161,6 +16319,13 @@
         "min": 0.02,
         "max": 1.65
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.02,
+        "max": 1.65,
+        "min_name": "活动002分组-开放的时候会有通知-没在群里也可以在模型里看"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -15237,8 +16402,8 @@
         "blend": 0.5705,
         "discount": -0.0009
       },
-      "calc": "倍率 ×6.667（google-video专用 组） × 官方 $0.3 = ¥2/M",
-      "calc_basis": "倍率 ×6.667（google-video专用 组） × 官方 $0.3 = ¥2/M",
+      "calc": "官方 $0.3 × 倍率 6.667（google-video专用 组） = ¥2/M；13 个分组档位 0.03–100×，最低「deepseek福利」",
+      "calc_basis": "官方 $0.3 × 倍率 6.667（google-video专用 组） = ¥2/M",
       "group": {
         "name": "google-video专用",
         "ratio": 1,
@@ -15246,6 +16411,13 @@
         "min": 0.03,
         "max": 100
       },
+      "tiers": {
+        "count": 13,
+        "min": 0.03,
+        "max": 100,
+        "min_name": "deepseek福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -15322,8 +16494,8 @@
         "blend": 2.1619,
         "discount": -0.0236
       },
-      "calc": "倍率 ×6.818（default 组） × 官方 $1.32 = ¥9/M",
-      "calc_basis": "倍率 ×6.818（default 组） × 官方 $1.32 = ¥9/M",
+      "calc": "官方 $1.32 × 倍率 6.818（default 组） = ¥9/M；91 个分组档位 0.01–4×，最低「gemini-count」",
+      "calc_basis": "官方 $1.32 × 倍率 6.818（default 组） = ¥9/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -15331,6 +16503,13 @@
         "min": 0.01,
         "max": 4
       },
+      "tiers": {
+        "count": 91,
+        "min": 0.01,
+        "max": 4,
+        "min_name": "gemini-count"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -15407,8 +16586,8 @@
         "blend": 2.1619,
         "discount": -0.0236
       },
-      "calc": "倍率 ×6.818（default 组） × 官方 $1.32 = ¥9/M",
-      "calc_basis": "倍率 ×6.818（default 组） × 官方 $1.32 = ¥9/M",
+      "calc": "官方 $1.32 × 倍率 6.818（default 组） = ¥9/M；56 个分组档位 0.05–8×，最低「Claude Kiro 无缓」",
+      "calc_basis": "官方 $1.32 × 倍率 6.818（default 组） = ¥9/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -15416,6 +16595,13 @@
         "min": 0.05,
         "max": 8
       },
+      "tiers": {
+        "count": 56,
+        "min": 0.05,
+        "max": 8,
+        "min_name": "Claude Kiro 无缓"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -15492,8 +16678,8 @@
         "blend": 2.1619,
         "discount": -0.0236
       },
-      "calc": "倍率 ×6.818（codex 组） × 官方 $1.32 = ¥9/M",
-      "calc_basis": "倍率 ×6.818（codex 组） × 官方 $1.32 = ¥9/M",
+      "calc": "官方 $1.32 × 倍率 6.818（codex 组） = ¥9/M；62 个分组档位 0.1–30×，最低「cc-free」",
+      "calc_basis": "官方 $1.32 × 倍率 6.818（codex 组） = ¥9/M",
       "group": {
         "name": "codex",
         "ratio": 1,
@@ -15501,6 +16687,13 @@
         "min": 0.1,
         "max": 30
       },
+      "tiers": {
+        "count": 62,
+        "min": 0.1,
+        "max": 30,
+        "min_name": "cc-free"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -15577,8 +16770,8 @@
         "blend": 2.1619,
         "discount": -0.0236
       },
-      "calc": "倍率 ×6.818（default 组） × 官方 $1.32 = ¥9/M",
-      "calc_basis": "倍率 ×6.818（default 组） × 官方 $1.32 = ¥9/M",
+      "calc": "官方 $1.32 × 倍率 6.818（default 组） = ¥9/M；43 个分组档位 0.03–4×，最低「claude-kiro-超低价版80缓」",
+      "calc_basis": "官方 $1.32 × 倍率 6.818（default 组） = ¥9/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -15586,6 +16779,13 @@
         "min": 0.03,
         "max": 4
       },
+      "tiers": {
+        "count": 43,
+        "min": 0.03,
+        "max": 4,
+        "min_name": "claude-kiro-超低价版80缓"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -15662,8 +16862,8 @@
         "blend": 2.1619,
         "discount": -0.0236
       },
-      "calc": "倍率 ×6.818（image 组） × 官方 $1.32 = ¥9/M",
-      "calc_basis": "倍率 ×6.818（image 组） × 官方 $1.32 = ¥9/M",
+      "calc": "官方 $1.32 × 倍率 6.818（image 组） = ¥9/M；16 个分组档位 0.0275–1.6×，最低「gpt-promax」",
+      "calc_basis": "官方 $1.32 × 倍率 6.818（image 组） = ¥9/M",
       "group": {
         "name": "image",
         "ratio": 1,
@@ -15671,6 +16871,13 @@
         "min": 0.0275,
         "max": 1.6
       },
+      "tiers": {
+        "count": 16,
+        "min": 0.0275,
+        "max": 1.6,
+        "min_name": "gpt-promax"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -15747,8 +16954,8 @@
         "blend": 2.1619,
         "discount": -0.0236
       },
-      "calc": "倍率 ×6.818（default 组） × 官方 $1.32 = ¥9/M",
-      "calc_basis": "倍率 ×6.818（default 组） × 官方 $1.32 = ¥9/M",
+      "calc": "官方 $1.32 × 倍率 6.818（default 组） = ¥9/M；49 个分组档位 0.08–4.5×，最低「GPT-限时特价」",
+      "calc_basis": "官方 $1.32 × 倍率 6.818（default 组） = ¥9/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -15756,6 +16963,13 @@
         "min": 0.08,
         "max": 4.5
       },
+      "tiers": {
+        "count": 49,
+        "min": 0.08,
+        "max": 4.5,
+        "min_name": "GPT-限时特价"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -15832,8 +17046,8 @@
         "blend": 2.1619,
         "discount": -0.0236
       },
-      "calc": "倍率 ×6.818（default 组） × 官方 $1.32 = ¥9/M",
-      "calc_basis": "倍率 ×6.818（default 组） × 官方 $1.32 = ¥9/M",
+      "calc": "官方 $1.32 × 倍率 6.818（default 组） = ¥9/M；16 个分组档位 0.03–1.3×，最低「codex-混池」",
+      "calc_basis": "官方 $1.32 × 倍率 6.818（default 组） = ¥9/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -15841,6 +17055,13 @@
         "min": 0.03,
         "max": 1.3
       },
+      "tiers": {
+        "count": 16,
+        "min": 0.03,
+        "max": 1.3,
+        "min_name": "codex-混池"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -15917,8 +17138,8 @@
         "blend": 2.1619,
         "discount": -0.0236
       },
-      "calc": "倍率 ×6.818（gptimageadobe 组） × 官方 $1.32 = ¥9/M",
-      "calc_basis": "倍率 ×6.818（gptimageadobe 组） × 官方 $1.32 = ¥9/M",
+      "calc": "官方 $1.32 × 倍率 6.818（gptimageadobe 组） = ¥9/M；20 个分组档位 0.04–7×，最低「gpt混池」",
+      "calc_basis": "官方 $1.32 × 倍率 6.818（gptimageadobe 组） = ¥9/M",
       "group": {
         "name": "gptimageadobe",
         "ratio": 1,
@@ -15926,6 +17147,13 @@
         "min": 0.04,
         "max": 7
       },
+      "tiers": {
+        "count": 20,
+        "min": 0.04,
+        "max": 7,
+        "min_name": "gpt混池"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -16002,8 +17230,8 @@
         "blend": 2.1619,
         "discount": -0.0236
       },
-      "calc": "倍率 ×6.818（default 组） × 官方 $1.32 = ¥9/M",
-      "calc_basis": "倍率 ×6.818（default 组） × 官方 $1.32 = ¥9/M",
+      "calc": "官方 $1.32 × 倍率 6.818（default 组） = ¥9/M；14 个分组档位 0.1–8×，最低「grok」",
+      "calc_basis": "官方 $1.32 × 倍率 6.818（default 组） = ¥9/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -16011,6 +17239,13 @@
         "min": 0.1,
         "max": 8
       },
+      "tiers": {
+        "count": 14,
+        "min": 0.1,
+        "max": 8,
+        "min_name": "grok"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -16087,8 +17322,8 @@
         "blend": 2.1619,
         "discount": -0.0236
       },
-      "calc": "倍率 ×6.818（google-video专用 组） × 官方 $1.32 = ¥9/M",
-      "calc_basis": "倍率 ×6.818（google-video专用 组） × 官方 $1.32 = ¥9/M",
+      "calc": "官方 $1.32 × 倍率 6.818（google-video专用 组） = ¥9/M；13 个分组档位 0.03–100×，最低「deepseek福利」",
+      "calc_basis": "官方 $1.32 × 倍率 6.818（google-video专用 组） = ¥9/M",
       "group": {
         "name": "google-video专用",
         "ratio": 1,
@@ -16096,6 +17331,13 @@
         "min": 0.03,
         "max": 100
       },
+      "tiers": {
+        "count": 13,
+        "min": 0.03,
+        "max": 100,
+        "min_name": "deepseek福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -16172,8 +17414,8 @@
         "blend": 24.7714,
         "discount": -0.4075
       },
-      "calc": "倍率 ×9.375（GPT-Image 组） × 官方 $8 = ¥75/M",
-      "calc_basis": "倍率 ×9.375（GPT-Image 组） × 官方 $8 = ¥75/M",
+      "calc": "官方 $8 × 倍率 9.375（GPT-Image 组） = ¥75/M；18 个分组档位 0.03–2.2×，最低「Claude-超值」",
+      "calc_basis": "官方 $8 × 倍率 9.375（GPT-Image 组） = ¥75/M",
       "group": {
         "name": "GPT-Image",
         "ratio": 1,
@@ -16181,6 +17423,13 @@
         "min": 0.03,
         "max": 2.2
       },
+      "tiers": {
+        "count": 18,
+        "min": 0.03,
+        "max": 2.2,
+        "min_name": "Claude-超值"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×9.375（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -16257,8 +17506,8 @@
         "blend": 0.8557,
         "discount": -0.5013
       },
-      "calc": "倍率 ×10（Grok生图视频特价 组） × 官方 $0.3 = ¥3/M",
-      "calc_basis": "倍率 ×10（Grok生图视频特价 组） × 官方 $0.3 = ¥3/M",
+      "calc": "官方 $0.3 × 倍率 10（Grok生图视频特价 组） = ¥3/M；29 个分组档位 0.12–2.3×，最低「codex限时特价福利」",
+      "calc_basis": "官方 $0.3 × 倍率 10（Grok生图视频特价 组） = ¥3/M",
       "group": {
         "name": "Grok生图视频特价",
         "ratio": 1,
@@ -16266,6 +17515,13 @@
         "min": 0.12,
         "max": 2.3
       },
+      "tiers": {
+        "count": 29,
+        "min": 0.12,
+        "max": 2.3,
+        "min_name": "codex限时特价福利"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×10（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -16342,8 +17598,8 @@
         "blend": 0.9984,
         "discount": -0.7515
       },
-      "calc": "倍率 ×11.667（default 组） × 官方 $0.3 = ¥3.5/M",
-      "calc_basis": "倍率 ×11.667（default 组） × 官方 $0.3 = ¥3.5/M",
+      "calc": "官方 $0.3 × 倍率 11.667（default 组） = ¥3.5/M；11 个分组档位 0.25–15×，最低「GPT-混池」",
+      "calc_basis": "官方 $0.3 × 倍率 11.667（default 组） = ¥3.5/M",
       "group": {
         "name": "default",
         "ratio": 1,
@@ -16351,6 +17607,13 @@
         "min": 0.25,
         "max": 15
       },
+      "tiers": {
+        "count": 11,
+        "min": 0.25,
+        "max": 15,
+        "min_name": "GPT-混池"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×11.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -16427,8 +17690,8 @@
         "blend": 24.7714,
         "discount": -4.6299
       },
-      "calc": "倍率 ×37.5（GPT-Image 组） × 官方 $2 = ¥75/M",
-      "calc_basis": "倍率 ×37.5（GPT-Image 组） × 官方 $2 = ¥75/M",
+      "calc": "官方 $2 × 倍率 37.5（GPT-Image 组） = ¥75/M；18 个分组档位 0.03–2.2×，最低「Claude-超值」",
+      "calc_basis": "官方 $2 × 倍率 37.5（GPT-Image 组） = ¥75/M",
       "group": {
         "name": "GPT-Image",
         "ratio": 1,
@@ -16436,6 +17699,13 @@
         "min": 0.03,
         "max": 2.2
       },
+      "tiers": {
+        "count": 18,
+        "min": 0.03,
+        "max": 2.2,
+        "min_name": "Claude-超值"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×37.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
@@ -16512,8 +17782,8 @@
         "blend": 24.7714,
         "discount": -4.6299
       },
-      "calc": "倍率 ×37.5（adb渠道生图image-2 组） × 官方 $2 = ¥75/M",
-      "calc_basis": "倍率 ×37.5（adb渠道生图image-2 组） × 官方 $2 = ¥75/M",
+      "calc": "官方 $2 × 倍率 37.5（adb渠道生图image-2 组） = ¥75/M；51 个分组档位 0.0001–1.7×，最低「免费分组」",
+      "calc_basis": "官方 $2 × 倍率 37.5（adb渠道生图image-2 组） = ¥75/M",
       "group": {
         "name": "adb渠道生图image-2",
         "ratio": 1,
@@ -16521,6 +17791,13 @@
         "min": 0.0001,
         "max": 1.7
       },
+      "tiers": {
+        "count": 51,
+        "min": 0.0001,
+        "max": 1.7,
+        "min_name": "免费分组"
+      },
+      "recharge": null,
       "calc_adjust": "",
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×37.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",

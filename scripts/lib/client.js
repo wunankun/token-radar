@@ -54,8 +54,8 @@
   /* 优惠力度：0.854 = 便宜 85.4%；负数 = 比官方贵 */
   function discCls(d) {
     if (d === null || d === undefined) return 'd-na';
+    if (Math.abs(d) < 0.005) return 'd-flat';
     if (d < 0) return 'd-neg';
-    if (d < 0.005) return 'd-flat';
     if (d < 0.3) return 'd-low';
     if (d < 0.6) return 'd-mid';
     if (d < 0.8) return 'd-good';
@@ -64,7 +64,7 @@
   function discText(d) {
     if (d === null || d === undefined) return '—';
     var p = d * 100;
-    if (Math.abs(p) < 0.05) return '0%';
+    if (Math.abs(p) < 0.5) return '0%';
     if (p < 0) return '贵 ' + Math.abs(p).toFixed(0) + '%';
     return (p >= 10 ? p.toFixed(0) : p.toFixed(1)) + '%';
   }
@@ -200,13 +200,21 @@
     return '<span class="src" title="' + tip + '">' + label + '</span>';
   }
 
+  function rechargeCell(r) {
+    var rc = r.recharge;
+    if (!rc || !rc.pay || !rc.get) return '<span class="muted">—</span>';
+    return '<span class="rc" title="充 ' + rc.pay + ' 得 ' + rc.get +
+      '，相当于单价再打 ' + (rc.get / rc.pay).toFixed(4).replace(/0+$/, '').replace(/\.$/, '') +
+      ' 折；本站不计入价格，只影响你要充多少钱">充' + rc.pay + '得' + rc.get + '</span>';
+  }
+
   function renderRow(r) {
     var v = view(r);
     var d = v.disc;
     var isOff = r.station.kind === 'official';
     var calcTip = r.station.kind === 'official'
       ? '官方基准价'
-      : '站上标价 ' + money(state.currency === 'usd' ? r.nominal.input : r.nominal.input) + ' × 计费 ' + (r.billing_ratio || 1).toFixed(2) + ' ÷ 赠送 ' + (r.bonus || 1).toFixed(2) + ' = 到手价';
+      : '站上标价 ' + money(r.nominal.input) + ' × 计费 ' + (r.billing_ratio || 1).toFixed(2) + ' = 到手价；充值优惠不算在内';
     var gTip = r.group
       ? '\n这家站公开了 ' + r.group.count + ' 个分组，倍率 ' + r.group.min + '–' + r.group.max + '×，本站按「' + r.group.name + '」组（×' + r.group.ratio + '）算'
       : '';
@@ -224,7 +232,9 @@
       '<td class="num hide-md">' + pairCell(v.cache_read, v.off && v.off.cache_read, calcTip, isOff) + '</td>' +
       '<td class="num"><span class="disc ' + discCls(d) + '" title="' + dTip + '">' +
         (r.station.kind === 'official' ? '官方' : discText(d)) + '</span></td>' +
-      '<td class="calc hide-lg" title="' + esc(r.calc || '') + '">' + esc(r.calc_v || r.calc || '') + '</td>' +
+
+      '<td class="num recharge">' + rechargeCell(r) + '</td>' +
+      '<td class="calc hide-lg" title="' + esc(r.calc || '') + '">' + esc(r.calc || '') + '</td>' +
       '<td class="hide-md">' + sourceCell(r) + '</td>' +
       '</tr>';
   }
@@ -241,7 +251,7 @@
 
     $('#tbody').innerHTML = slice.length
       ? slice.map(renderRow).join('')
-      : '<tr><td colspan="8" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
+      : '<tr><td colspan="9" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
     $('#count').textContent = list.length + ' / ' + rows.length + ' 行';
     renderPager(list.length, pages, start, slice.length);
     renderUnits();

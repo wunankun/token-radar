@@ -138,8 +138,8 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
   const probedBilling = num(health?.usage_ratio);
   const billing = manualBilling ?? probedBilling ?? 1;
   const billingSource = manualBilling != null ? 'manual' : probedBilling != null ? 'probe' : 'default';
-  // 实际到手价 = 标价 × 计费虚高系数 ÷ 充值赠送倍数
-  const effective = scaleObj(nominal, billing / bonus);
+  // 实际到手价 = 标价 × 计费虚高系数（充值赠送不计入价格，单独成列）
+  const effective = scaleObj(nominal, billing);
 
   const ratio = {
     input: officialCny ? div(effective.input, officialCny.input) : null,
@@ -170,16 +170,20 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
   } else if (num(stationModel?.multiple) != null && official) {
     const g = stationModel.group;
     basis =
-      `倍率 ×${fmt(stationModel.multiple)}` +
+      `官方 ${usd(official.usd.input)} × 倍率 ${fmt(stationModel.multiple)}` +
       (g && g.name ? `（${g.name} 组）` : '') +
-      ` × 官方 ${usd(official.usd.input)} = ${cny(nominal.input)}/M`;
+      ` = ${cny(nominal.input)}/M`;
   } else {
     basis = `站上标价 ${cny(nominal.input)}/M`;
   }
   const adj = [];
   if (billing !== 1) adj.push(`× 计费 ${fmt(billing)}`);
-  if (bonus !== 1) adj.push(`÷ 赠送 ${fmt(bonus)}`);
-  const calc = basis + (adj.length ? ` · ${adj.join(' ')}` : '');
+  const tiers = stationModel?.tiers || null;
+  const tierNote = tiers
+    ? `${tiers.count} 个分组档位 ${fmt(tiers.min)}–${fmt(tiers.max)}×` +
+      (tiers.min_name ? `，最低「${tiers.min_name}」` : '')
+    : '';
+  const calc = basis + (adj.length ? ` · ${adj.join(' ')}` : '') + (tierNote ? `；${tierNote}` : '');
 
   return {
     row: {
@@ -220,6 +224,8 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
       calc,
       calc_basis: basis,
       group: stationModel?.group ?? null,
+      tiers: tiers || null,
+      recharge: station.recharge || null,
       calc_adjust: adj.join(' '),
       health: health || null,
       note: stationModel?.note ?? null,

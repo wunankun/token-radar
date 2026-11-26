@@ -124,6 +124,20 @@ for (const p of [...providers, ...scanned]) {
     }
     const manual = declared[modelId];
     const auto = obs?.models?.[modelId];
+    const tierInfo = (o) => {
+      const g = o?.group_ratios || {};
+      const names = Object.keys(g).filter((n) => typeof g[n] === 'number' && g[n] > 0);
+      if (names.length < 2) return null;
+      let minName = names[0];
+      for (const n of names) if (g[n] < g[minName]) minName = n;
+      const vals = names.map((n) => g[n]);
+      return {
+        count: names.length,
+        min: Math.min(...vals),
+        max: Math.max(...vals),
+        min_name: minName.replace(/[^0-9A-Za-z\u4e00-\u9fa5 _-]/g, '').trim() || null,
+      };
+    };
     const groupInfo = (o) => {
       const g = o?.group_ratios || {};
       const names = Object.keys(g);
@@ -162,6 +176,7 @@ for (const p of [...providers, ...scanned]) {
             cache_read: auto.cache_read,
             multiple: verdict?.mult?.get(modelId) ?? null,
             group: groupInfo(obs),
+            tiers: tierInfo(obs),
           }
         : null;
     if (!stationModel) continue;
