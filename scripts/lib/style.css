@@ -234,3 +234,32 @@ footer.bottom { margin-top: 26px; color: var(--ink-3); font-size: 12.5px; displa
   thead th:nth-child(7), tbody td:nth-child(7) { display: none; }
   thead th, tbody td { padding: 9px 7px; font-size: 12.5px; }
 }
+
+/* 计价口径切换 */
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #fff; }
+.seg button {
+  font: inherit; font-size: 13px; line-height: 1; padding: 9px 12px; height: 34px;
+  border: 0; background: #fff; color: var(--muted); cursor: pointer;
+}
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button.on { background: var(--accent); color: #fff; }
+
+/* 分页 */
+.pager {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding: 14px 4px 4px; font-size: 13px; color: var(--muted);
+}
+.pager .pstat { margin-right: auto; }
+.pager button {
+  font: inherit; font-size: 13px; min-width: 34px; height: 32px; padding: 0 10px;
+  border: 1px solid var(--line); background: #fff; color: var(--ink); border-radius: 8px; cursor: pointer;
+}
+.pager button + button { margin-left: 6px; }
+.pager button.on { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+.pager button[disabled] { opacity: .4; cursor: default; }
+.pager select {
+  font: inherit; font-size: 13px; height: 32px; padding: 0 8px;
+  border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink);
+}
+@media (max-width: 640px) { .pager { padding-top: 10px; } }
+.disc.d-flat { background: #f1f2f4; color: #5b616e; }

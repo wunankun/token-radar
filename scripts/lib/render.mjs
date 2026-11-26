@@ -89,6 +89,9 @@ ${css}
       <option value="output">按输出价排序</option>
       <option value="cache_read">按缓存价排序</option>
     </select>
+    <span class="seg" id="f-cur" role="group" aria-label="计价口径">
+      <button type="button" data-cur="usd" class="on" title="站上标的美元牌价：倍率 1.0 就是 0%">美元</button><button type="button" data-cur="cny" title="你实际掏的人民币：按 1 元 = 1 美元额度折算">人民币</button>
+    </span>
     <label class="toggle"><input type="checkbox" id="f-demo">显示演示数据</label>
     <label class="toggle"><input type="checkbox" id="f-aff">只看带推广链接</label>
     <span class="count" id="count"></span>
@@ -100,9 +103,9 @@ ${css}
         <tr>
           <th>站点</th>
           <th>模型</th>
-          <th class="num">输入 ¥/百万<br><span class="th-sub">现价 / 官方</span></th>
-          <th class="num">输出 ¥/百万<br><span class="th-sub">现价 / 官方</span></th>
-          <th class="num hide-md">缓存 ¥/百万<br><span class="th-sub">现价 / 官方</span></th>
+          <th class="num"><span class="th-u">输入 $/百万</span><br><span class="th-sub">现价 / 官方</span></th>
+          <th class="num"><span class="th-u">输出 $/百万</span><br><span class="th-sub">现价 / 官方</span></th>
+          <th class="num hide-md"><span class="th-u">缓存 $/百万</span><br><span class="th-sub">现价 / 官方</span></th>
           <th class="num">优惠力度</th>
           <th class="hide-md">价格来源</th>
         </tr>
@@ -110,6 +113,7 @@ ${css}
       <tbody id="tbody"></tbody>
     </table>
   </div>
+  <div class="pager" id="pager"></div>
 
   <section class="method">
     <details open>

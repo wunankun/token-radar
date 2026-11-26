@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T14:19:18.286Z",
+    "generated_at": "2026-11-26T14:27:20.340Z",
     "fx": {
       "usd_cny": 7.1,
       "as_of": "2026-11-26",
@@ -168,6 +168,20 @@
       },
       "discount": 0.9296,
       "blend_effective": 0.285,
+      "usd": {
+        "effective": {
+          "input": 0.15,
+          "output": 0.6,
+          "cache_read": 0.003
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 0.285,
+        "discount": 0.5
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×0.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -232,6 +246,20 @@
       },
       "discount": 0.9049,
       "blend_effective": 2.97,
+      "usd": {
+        "effective": {
+          "input": 1.35,
+          "output": 6.75,
+          "cache_read": 0.0675
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 2.97,
+        "discount": 0.325
+      },
       "health": {
         "days": 14,
         "uptime_7d": 0.7142857142857143,
@@ -303,6 +331,20 @@
       },
       "discount": 0.9049,
       "blend_effective": 11.88,
+      "usd": {
+        "effective": {
+          "input": 5.4,
+          "output": 27,
+          "cache_read": 0.27
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 11.88,
+        "discount": 0.325
+      },
       "health": {
         "days": 14,
         "uptime_7d": 0.7142857142857143,
@@ -374,6 +416,20 @@
       },
       "discount": 0.8954,
       "blend_effective": 3.267,
+      "usd": {
+        "effective": {
+          "input": 1.485,
+          "output": 7.425,
+          "cache_read": 0.0743
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 3.267,
+        "discount": 0.2575
+      },
       "health": {
         "days": 14,
         "uptime_7d": 0.7142857142857143,
@@ -445,6 +501,20 @@
       },
       "discount": 0.8954,
       "blend_effective": 6.534,
+      "usd": {
+        "effective": {
+          "input": 2.97,
+          "output": 14.85,
+          "cache_read": 0.1485
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 6.534,
+        "discount": 0.2575
+      },
       "health": {
         "days": 14,
         "uptime_7d": 0.7142857142857143,
@@ -513,6 +583,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 0.57,
+      "usd": {
+        "effective": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 0.57,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -574,6 +658,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 0.57,
+      "usd": {
+        "effective": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 0.57,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -635,6 +733,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 2.112,
+      "usd": {
+        "effective": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 2.112,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -696,6 +808,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 2.112,
+      "usd": {
+        "effective": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 2.112,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -757,6 +883,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -818,6 +958,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -879,6 +1033,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -940,6 +1108,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1001,6 +1183,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1062,6 +1258,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -1123,6 +1333,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1184,6 +1408,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -1245,6 +1483,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -1306,6 +1558,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1367,6 +1633,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1428,6 +1708,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1489,6 +1783,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -1550,6 +1858,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -1611,6 +1933,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -1672,6 +2008,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1733,6 +2083,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1794,6 +2158,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -1855,6 +2233,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -1916,6 +2308,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -1977,6 +2383,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2038,6 +2458,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -2099,6 +2533,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -2160,6 +2608,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2221,6 +2683,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -2282,6 +2758,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2343,6 +2833,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -2404,6 +2908,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2465,6 +2983,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2526,6 +3058,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2587,6 +3133,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2648,6 +3208,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -2709,6 +3283,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.15
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2770,6 +3358,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2831,6 +3433,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -2892,6 +3508,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -2953,6 +3583,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -3014,6 +3658,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3075,6 +3733,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3136,6 +3808,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -3197,6 +3883,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3258,6 +3958,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -3319,6 +4033,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3380,6 +4108,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": null
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3441,6 +4183,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3502,6 +4258,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -3563,6 +4333,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3624,6 +4408,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3685,6 +4483,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -3746,6 +4558,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -3807,6 +4633,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3868,6 +4708,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -3929,6 +4783,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -3990,6 +4858,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4051,6 +4933,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4112,6 +5008,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4173,6 +5083,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4234,6 +5158,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4295,6 +5233,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4356,6 +5308,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4417,6 +5383,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4478,6 +5458,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4539,6 +5533,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4600,6 +5608,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4661,6 +5683,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4722,6 +5758,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4783,6 +5833,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4844,6 +5908,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4905,6 +5983,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -4966,6 +6058,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5027,6 +6133,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5088,6 +6208,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5149,6 +6283,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5210,6 +6358,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5271,6 +6433,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5332,6 +6508,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.3
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5393,6 +6583,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5454,6 +6658,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5515,6 +6733,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5576,6 +6808,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5637,6 +6883,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5698,6 +6958,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5759,6 +7033,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5820,6 +7108,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5881,6 +7183,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -5942,6 +7258,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6003,6 +7333,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6064,6 +7408,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6125,6 +7483,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6186,6 +7558,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6247,6 +7633,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 8.8,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -6308,6 +7708,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -6369,6 +7783,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -6430,6 +7858,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -6491,6 +7933,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -6552,6 +8008,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -6613,6 +8083,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -6674,6 +8158,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -6735,6 +8233,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -6796,6 +8308,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -6857,6 +8383,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -6918,6 +8458,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -6979,6 +8533,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.8
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7040,6 +8608,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7101,6 +8683,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7162,6 +8758,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7223,6 +8833,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7284,6 +8908,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7345,6 +8983,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7406,6 +9058,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7467,6 +9133,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7528,6 +9208,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7589,6 +9283,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7650,6 +9358,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7711,6 +9433,20 @@
       },
       "discount": 0.8592,
       "blend_effective": 17.6,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7772,6 +9508,20 @@
       },
       "discount": 0.8239,
       "blend_effective": 11,
+      "usd": {
+        "effective": {
+          "input": 5,
+          "output": 25,
+          "cache_read": 0.25
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 11,
+        "discount": -0.25
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.25（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -7833,6 +9583,20 @@
       },
       "discount": 0.8239,
       "blend_effective": 22,
+      "usd": {
+        "effective": {
+          "input": 10,
+          "output": 50,
+          "cache_read": 1
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 22,
+        "discount": -0.25
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.25（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -7894,6 +9658,20 @@
       },
       "discount": 0.7887,
       "blend_effective": 6.6,
+      "usd": {
+        "effective": {
+          "input": 3,
+          "output": 15,
+          "cache_read": 0.3
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 6.6,
+        "discount": -0.5
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -7955,6 +9733,20 @@
       },
       "discount": 0.7887,
       "blend_effective": 6.6,
+      "usd": {
+        "effective": {
+          "input": 3,
+          "output": 15,
+          "cache_read": 0.3
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 6.6,
+        "discount": -0.5
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -8016,6 +9808,20 @@
       },
       "discount": 0.7887,
       "blend_effective": 6.6,
+      "usd": {
+        "effective": {
+          "input": 3,
+          "output": 15,
+          "cache_read": 0.3
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 6.6,
+        "discount": -0.5
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -8077,6 +9883,20 @@
       },
       "discount": 0.7317,
       "blend_effective": 1.0857,
+      "usd": {
+        "effective": {
+          "input": 0.5714,
+          "output": 2.2857,
+          "cache_read": 0.0114
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 1.0857,
+        "discount": -0.9047
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.905（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -8138,6 +9958,20 @@
       },
       "discount": 0.7256,
       "blend_effective": 4.1143,
+      "usd": {
+        "effective": {
+          "input": 2.5714,
+          "output": 7.7143,
+          "cache_read": 0.0857
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 4.1143,
+        "discount": -0.948
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.948（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -8199,6 +10033,20 @@
       },
       "discount": 0.7183,
       "blend_effective": 1.14,
+      "usd": {
+        "effective": {
+          "input": 0.6,
+          "output": 2.4,
+          "cache_read": 0.012
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 1.14,
+        "discount": -1
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×2（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -8261,6 +10109,20 @@
       },
       "discount": 0.7048,
       "blend_effective": 1.1947,
+      "usd": {
+        "effective": {
+          "input": 0.1052,
+          "output": 0.3155,
+          "cache_read": 0.0105
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 0.1683,
+        "discount": 0.7048
+      },
       "health": {
         "days": 14,
         "uptime_7d": 1,
@@ -8329,6 +10191,20 @@
       },
       "discount": 0.6639,
       "blend_effective": 21,
+      "usd": {
+        "effective": {
+          "input": 9,
+          "output": 49,
+          "cache_read": 1.8
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 21,
+        "discount": -1.3864
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×2.25（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -8391,6 +10267,20 @@
       },
       "discount": 0.6415,
       "blend_effective": 5.376,
+      "usd": {
+        "effective": {
+          "input": 0.4732,
+          "output": 1.4197,
+          "cache_read": 0.0526
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 0.7572,
+        "discount": 0.6415
+      },
       "health": {
         "days": 14,
         "uptime_7d": 1,
@@ -8459,6 +10349,20 @@
       },
       "discount": 0.5305,
       "blend_effective": 1.9,
+      "usd": {
+        "effective": {
+          "input": 1,
+          "output": 4,
+          "cache_read": 0.02
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 1.9,
+        "discount": -2.3333
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -8520,6 +10424,20 @@
       },
       "discount": 0.5305,
       "blend_effective": 1.9,
+      "usd": {
+        "effective": {
+          "input": 1,
+          "output": 4,
+          "cache_read": 0.02
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 1.9,
+        "discount": -2.3333
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -8581,6 +10499,20 @@
       },
       "discount": 0.5305,
       "blend_effective": 1.9,
+      "usd": {
+        "effective": {
+          "input": 1,
+          "output": 4,
+          "cache_read": 0.02
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 1.9,
+        "discount": -2.3333
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -8642,6 +10574,20 @@
       },
       "discount": 0.5305,
       "blend_effective": 1.9,
+      "usd": {
+        "effective": {
+          "input": 1,
+          "output": 4,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 1.9,
+        "discount": -2.3333
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -8703,6 +10649,20 @@
       },
       "discount": 0.5305,
       "blend_effective": 1.9,
+      "usd": {
+        "effective": {
+          "input": 1,
+          "output": 4,
+          "cache_read": 0.02
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 1.9,
+        "discount": -2.3333
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -8764,6 +10724,20 @@
       },
       "discount": 0.5305,
       "blend_effective": 1.9,
+      "usd": {
+        "effective": {
+          "input": 1,
+          "output": 4,
+          "cache_read": 0.02
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 1.9,
+        "discount": -2.3333
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -8825,6 +10799,20 @@
       },
       "discount": 0.5198,
       "blend_effective": 7.2,
+      "usd": {
+        "effective": {
+          "input": 4.5,
+          "output": 13.5,
+          "cache_read": 0.15
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 7.2,
+        "discount": -2.4091
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -8886,6 +10874,20 @@
       },
       "discount": 0.5198,
       "blend_effective": 7.2,
+      "usd": {
+        "effective": {
+          "input": 4.5,
+          "output": 13.5,
+          "cache_read": 0.45
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 7.2,
+        "discount": -2.4091
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -8947,6 +10949,20 @@
       },
       "discount": 0.5198,
       "blend_effective": 7.2,
+      "usd": {
+        "effective": {
+          "input": 4.5,
+          "output": 13.5,
+          "cache_read": 0.15
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 7.2,
+        "discount": -2.4091
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -9008,6 +11024,20 @@
       },
       "discount": 0.5198,
       "blend_effective": 7.2,
+      "usd": {
+        "effective": {
+          "input": 4.5,
+          "output": 13.5,
+          "cache_read": 0.09
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 7.2,
+        "discount": -2.4091
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -9069,6 +11099,20 @@
       },
       "discount": 0.5198,
       "blend_effective": 7.2,
+      "usd": {
+        "effective": {
+          "input": 4.5,
+          "output": 13.5,
+          "cache_read": 0.15
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 7.2,
+        "discount": -2.4091
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -9130,6 +11174,20 @@
       },
       "discount": 0.5198,
       "blend_effective": 7.2,
+      "usd": {
+        "effective": {
+          "input": 4.5,
+          "output": 13.5,
+          "cache_read": 0.15
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 7.2,
+        "discount": -2.4091
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -9191,6 +11249,20 @@
       },
       "discount": 0.5198,
       "blend_effective": 7.2,
+      "usd": {
+        "effective": {
+          "input": 4.5,
+          "output": 13.5,
+          "cache_read": 0.15
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 7.2,
+        "discount": -2.4091
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.409（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -9250,6 +11322,20 @@
       },
       "discount": 0.4833,
       "blend_effective": 2.091,
+      "usd": {
+        "effective": {
+          "input": 0.155,
+          "output": 0.62,
+          "cache_read": 0.0031
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 0.2945,
+        "discount": 0.4833
+      },
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -9316,6 +11402,20 @@
       },
       "discount": 0.4833,
       "blend_effective": 7.7475,
+      "usd": {
+        "effective": {
+          "input": 0.682,
+          "output": 2.046,
+          "cache_read": 0.0227
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 1.0912,
+        "discount": 0.4833
+      },
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -9382,6 +11482,20 @@
       },
       "discount": 0.4833,
       "blend_effective": 16.1407,
+      "usd": {
+        "effective": {
+          "input": 1.0333,
+          "output": 5.1667,
+          "cache_read": 0.0517
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 2.2733,
+        "discount": 0.4833
+      },
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -9448,6 +11562,20 @@
       },
       "discount": 0.4833,
       "blend_effective": 16.1407,
+      "usd": {
+        "effective": {
+          "input": 1.0333,
+          "output": 5.1667,
+          "cache_read": 0.0517
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 2.2733,
+        "discount": 0.4833
+      },
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -9514,6 +11642,20 @@
       },
       "discount": 0.4833,
       "blend_effective": 32.2813,
+      "usd": {
+        "effective": {
+          "input": 2.0667,
+          "output": 10.3333,
+          "cache_read": 0.1033
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 4.5467,
+        "discount": 0.4833
+      },
       "health": {
         "days": 14,
         "uptime_7d": 0.8571428571428571,
@@ -9582,6 +11724,20 @@
       },
       "discount": 0.1549,
       "blend_effective": 26.4,
+      "usd": {
+        "effective": {
+          "input": 12,
+          "output": 60,
+          "cache_read": 1.2
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 26.4,
+        "discount": -5
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -9643,6 +11799,20 @@
       },
       "discount": 0.1549,
       "blend_effective": 52.8,
+      "usd": {
+        "effective": {
+          "input": 24,
+          "output": 120,
+          "cache_read": 1.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 52.8,
+        "discount": -5
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
@@ -9704,6 +11874,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.04
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -9765,6 +11949,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.04
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -9826,6 +12024,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.04
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -9887,6 +12099,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -9948,6 +12174,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.05
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10009,6 +12249,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.04
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10070,6 +12324,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.04
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10131,6 +12399,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.05
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10192,6 +12474,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.05
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10253,6 +12549,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.06
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10314,6 +12624,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.04
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10375,6 +12699,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.04
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10436,6 +12774,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.04
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10497,6 +12849,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.04
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10558,6 +12924,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.04
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10619,6 +12999,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10680,6 +13074,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.04
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10741,6 +13149,20 @@
       },
       "discount": 0.061,
       "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 8,
+          "cache_read": 0.04
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 3.8,
+        "discount": -5.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10802,6 +13224,20 @@
       },
       "discount": 0.0397,
       "blend_effective": 14.4,
+      "usd": {
+        "effective": {
+          "input": 9,
+          "output": 27,
+          "cache_read": 0.2997
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 14.4,
+        "discount": -5.8182
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10863,6 +13299,20 @@
       },
       "discount": 0.0397,
       "blend_effective": 14.4,
+      "usd": {
+        "effective": {
+          "input": 9,
+          "output": 27,
+          "cache_read": 0.3
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 14.4,
+        "discount": -5.8182
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10924,6 +13374,20 @@
       },
       "discount": 0.0397,
       "blend_effective": 14.4,
+      "usd": {
+        "effective": {
+          "input": 9,
+          "output": 27,
+          "cache_read": 0.3
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 14.4,
+        "discount": -5.8182
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -10985,6 +13449,20 @@
       },
       "discount": 0.0397,
       "blend_effective": 14.4,
+      "usd": {
+        "effective": {
+          "input": 9,
+          "output": 27,
+          "cache_read": 0.3
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 14.4,
+        "discount": -5.8182
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -11046,6 +13524,20 @@
       },
       "discount": 0.0397,
       "blend_effective": 14.4,
+      "usd": {
+        "effective": {
+          "input": 9,
+          "output": 27,
+          "cache_read": 0.3
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 14.4,
+        "discount": -5.8182
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -11107,6 +13599,20 @@
       },
       "discount": 0.0397,
       "blend_effective": 14.4,
+      "usd": {
+        "effective": {
+          "input": 9,
+          "output": 27,
+          "cache_read": 0.9
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 14.4,
+        "discount": -5.8182
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -11168,6 +13674,20 @@
       },
       "discount": 0.0397,
       "blend_effective": 14.4,
+      "usd": {
+        "effective": {
+          "input": 9,
+          "output": 27,
+          "cache_read": 0.3
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 14.4,
+        "discount": -5.8182
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -11229,6 +13749,20 @@
       },
       "discount": 0.0397,
       "blend_effective": 14.4,
+      "usd": {
+        "effective": {
+          "input": 9,
+          "output": 27,
+          "cache_read": 0.3
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 14.4,
+        "discount": -5.8182
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -11290,6 +13824,20 @@
       },
       "discount": 0.0397,
       "blend_effective": 14.4,
+      "usd": {
+        "effective": {
+          "input": 9,
+          "output": 27,
+          "cache_read": 0.3
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 14.4,
+        "discount": -5.8182
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -11351,6 +13899,20 @@
       },
       "discount": 0.0397,
       "blend_effective": 14.4,
+      "usd": {
+        "effective": {
+          "input": 9,
+          "output": 27,
+          "cache_read": 0.3
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 14.4,
+        "discount": -5.8182
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -11410,6 +13972,20 @@
       },
       "discount": 0,
       "blend_effective": 4.047,
+      "usd": {
+        "effective": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 0.57,
+        "discount": 0
+      },
       "health": null,
       "note": null,
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
@@ -11468,6 +14044,20 @@
       },
       "discount": 0,
       "blend_effective": 14.9952,
+      "usd": {
+        "effective": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 2.112,
+        "discount": 0
+      },
       "health": null,
       "note": null,
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
@@ -11526,6 +14116,20 @@
       },
       "discount": 0,
       "blend_effective": 31.24,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
@@ -11584,6 +14188,20 @@
       },
       "discount": 0,
       "blend_effective": 31.24,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
       "health": null,
       "note": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
@@ -11642,6 +14260,20 @@
       },
       "discount": 0,
       "blend_effective": 62.48,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
       "health": null,
       "note": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
@@ -11700,6 +14332,20 @@
       },
       "discount": 0,
       "blend_effective": 124.96,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
       "health": null,
       "note": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
@@ -11760,6 +14406,20 @@
       },
       "discount": -0.3204,
       "blend_effective": 165,
+      "usd": {
+        "effective": {
+          "input": 75,
+          "output": 375,
+          "cache_read": 7.5
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 165,
+        "discount": -8.375
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×9.375（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -11821,6 +14481,20 @@
       },
       "discount": -0.4085,
       "blend_effective": 5.7,
+      "usd": {
+        "effective": {
+          "input": 3,
+          "output": 12,
+          "cache_read": 0.9
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 5.7,
+        "discount": -9
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×10（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -11882,6 +14556,20 @@
       },
       "discount": -0.6432,
       "blend_effective": 6.65,
+      "usd": {
+        "effective": {
+          "input": 3.5,
+          "output": 14,
+          "cache_read": 0.07
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 6.65,
+        "discount": -10.6667
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×11.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
@@ -11943,6 +14631,20 @@
       },
       "discount": -4.2817,
       "blend_effective": 165,
+      "usd": {
+        "effective": {
+          "input": 75,
+          "output": 375,
+          "cache_read": null
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 165,
+        "discount": -36.5
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×37.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://platform.openai.com/docs/pricing",
@@ -12004,6 +14706,20 @@
       },
       "discount": -4.2817,
       "blend_effective": 165,
+      "usd": {
+        "effective": {
+          "input": 75,
+          "output": 375,
+          "cache_read": 7.5
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 165,
+        "discount": -36.5
+      },
       "health": null,
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×37.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",

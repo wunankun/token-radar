@@ -7,7 +7,20 @@
   var meta = DATA.meta || {};
   var W = meta.blend || { input: 0.7, output: 0.3 };
 
-  var state = { q: '', model: '', kind: '', sort: 'discount', showDemo: false, onlyAff: false };
+  var state = { q: '', model: '', kind: '', sort: 'discount', showDemo: false, onlyAff: false, currency: 'usd', page: 1, perPage: 50 };
+
+  // 当前计价口径：美元 = 站上标的美元牌价（倍率 1.0 → 0%）；人民币 = 你实际掏的钱（1 元 = 1 美元额度）
+  var CUR = {
+    usd: { unit: '$', eff: 'usd' },
+    cny: { unit: '¥', eff: 'cny' },
+  };
+  function view(r) {
+    if (state.currency === 'usd' && r.usd) {
+      return { input: r.usd.effective.input, output: r.usd.effective.output, cache_read: r.usd.effective.cache_read, off: r.usd.official, disc: r.usd.discount, blend: r.usd.blend };
+    }
+    return { input: r.effective.input, output: r.effective.output, cache_read: r.effective.cache_read, off: r.official_cny, disc: r.discount, blend: r.blend_effective };
+  }
+  function unit() { return CUR[state.currency].unit; }
 
   // 模型目录：meta.models 已按热度降序；缺字段时回落到表格里出现过的模型
   var MODELS = {};
@@ -42,6 +55,7 @@
   function discCls(d) {
     if (d === null || d === undefined) return 'd-na';
     if (d < 0) return 'd-neg';
+    if (d < 0.005) return 'd-flat';
     if (d < 0.3) return 'd-low';
     if (d < 0.6) return 'd-mid';
     if (d < 0.8) return 'd-good';
@@ -50,12 +64,18 @@
   function discText(d) {
     if (d === null || d === undefined) return '—';
     var p = d * 100;
-    if (Math.abs(p) < 0.05) return '官方';
+    if (Math.abs(p) < 0.05) return '0%';
     if (p < 0) return '贵 ' + Math.abs(p).toFixed(0) + '%';
     return (p >= 10 ? p.toFixed(0) : p.toFixed(1)) + '%';
   }
 
   /* 官方价的同口径混合成本（只用于排序和优惠力度，不单独占列） */
+  function offBlend(r) {
+    if (state.currency === 'usd' && r.usd && r.usd.official) {
+      return r.usd.official.input * W.input + r.usd.official.output * W.output;
+    }
+    return officialBlend(r);
+  }
   function officialBlend(r) {
     var o = r.official_cny;
     if (!o || o.input == null || o.output == null) return null;
@@ -76,8 +96,14 @@
   /* ---------- KPI ---------- */
   function renderKpis() {
     var c = meta.counts || {};
-    var best = meta.best || meta.best_demo;
-    var bestDemoOnly = !meta.best && !!meta.best_demo;
+    var best = null;
+    rows.forEach(function (r) {
+      if (r.station.demo || r.station.kind === 'official') return;
+      var v = view(r);
+      if (v.disc == null) return;
+      if (!best || v.disc > best.disc) best = { disc: v.disc, station: r.station.name, model: r.model.label };
+    });
+    var bestDemoOnly = false;
     var autoRows = rows.filter(function (r) { return r.price_source === 'auto'; });
     var autoStations = {};
     autoRows.forEach(function (r) { autoStations[r.station.id] = 1; });
@@ -91,14 +117,14 @@
       },
       {
         k: '最高优惠力度', accent: true,
-        v: best && best.discount != null ? discText(best.discount) : '—',
+        v: best && best.disc != null ? discText(best.disc) : '—',
         s: best
           ? (bestDemoOnly ? '演示：' : '') + esc(best.station) + ' · ' + esc(best.model)
           : '录入真实中转站后自动计算'
       },
       {
         k: '汇率 USD→CNY', v: String((meta.fx && meta.fx.usd_cny) || '—'),
-        s: '手工维护 · ' + esc((meta.fx && meta.fx.as_of) || '') + ' · 官方价按此折人民币'
+        s: state.currency === 'usd' ? '当前按美元显示 · 切到人民币时用这个汇率' : '手工维护 · ' + esc((meta.fx && meta.fx.as_of) || '') + ' · 官方价按此折人民币'
       },
       {
         k: '推广链接', v: String(aff), small: '行',
@@ -137,13 +163,15 @@
       }
       return true;
     }).sort(function (a, b) {
+      var va = view(a);
+      var vb = view(b);
       if (state.sort === 'discount') {
-        var av = a.discount === null || a.discount === undefined ? -Infinity : a.discount;
-        var bv = b.discount === null || b.discount === undefined ? -Infinity : b.discount;
+        var av = va.disc == null ? -Infinity : va.disc;
+        var bv = vb.disc == null ? -Infinity : vb.disc;
         return bv - av;
       }
-      var an = a.effective && a.effective[state.sort] != null ? a.effective[state.sort] : Infinity;
-      var bn = b.effective && b.effective[state.sort] != null ? b.effective[state.sort] : Infinity;
+      var an = va[state.sort] != null ? va[state.sort] : Infinity;
+      var bn = vb[state.sort] != null ? vb[state.sort] : Infinity;
       return an - bn;
     });
   }
@@ -171,23 +199,23 @@
   }
 
   function renderRow(r) {
-    var off = r.official_cny;
-    var nullOff = '<span class="muted"></span>';
-    var d = r.discount;
+    var v = view(r);
+    var d = v.disc;
     var calcTip = r.station.kind === 'official'
       ? '官方基准价'
-      : '站上标价 ' + money(r.nominal.input) + ' × 计费 ' + (r.billing_ratio || 1).toFixed(2) + ' ÷ 赠送 ' + (r.bonus || 1).toFixed(2) + ' = 到手价';
-    var dTip = '比官方便宜 ' + (d == null ? '—' : (d * 100).toFixed(1) + '%') +
-      '（混合成本 ' + money(r.blend_effective) + ' vs 官方 ' + money(officialBlend(r)) + '，' +
-      W.input + '×输入 + ' + W.output + '×输出）';
+      : '站上标价 ' + money(state.currency === 'usd' ? r.nominal.input : r.nominal.input) + ' × 计费 ' + (r.billing_ratio || 1).toFixed(2) + ' ÷ 赠送 ' + (r.bonus || 1).toFixed(2) + ' = 到手价';
+    var dTip = (d == null ? '—' : (d >= 0 ? '比官方便宜 ' : '比官方贵 ') + (Math.abs(d) * 100).toFixed(1) + '%') +
+      '（混合成本 ' + money(v.blend) + ' vs 官方 ' + money(offBlend(r)) + '，' + W.input + '×输入 + ' + W.output + '×输出）' +
+      (state.currency === 'usd' ? '；美元口径 = 站上牌的美元价，不是人民币实付' : '；人民币口径已按 1 元 = 1 美元额度折成实付');
 
     return '<tr class="' + (r.station.demo ? 'is-demo' : '') + '">' +
       '<td>' + stationCell(r) + '</td>' +
       '<td><div class="model"><div class="m">' + esc(r.model.label) + '</div><div class="v">' + esc(r.model.vendor) + '</div></div></td>' +
-      '<td class="num">' + pairCell(r.effective.input, off && off.input, calcTip) + '</td>' +
-      '<td class="num">' + pairCell(r.effective.output, off && off.output, calcTip) + '</td>' +
-      '<td class="num hide-md">' + pairCell(r.effective.cache_read, off && off.cache_read, calcTip) + '</td>' +
-      '<td class="num"><span class="disc ' + discCls(d) + '" title="' + dTip + '">' + discText(d) + '</span></td>' +
+      '<td class="num">' + pairCell(v.input, v.off && v.off.input, calcTip) + '</td>' +
+      '<td class="num">' + pairCell(v.output, v.off && v.off.output, calcTip) + '</td>' +
+      '<td class="num hide-md">' + pairCell(v.cache_read, v.off && v.off.cache_read, calcTip) + '</td>' +
+      '<td class="num"><span class="disc ' + discCls(d) + '" title="' + dTip + '">' +
+        (r.station.kind === 'official' ? '官方' : discText(d)) + '</span></td>' +
       '<td class="hide-md">' + sourceCell(r) + '</td>' +
       '</tr>';
   }
@@ -195,10 +223,63 @@
   /* ---------- 渲染 ---------- */
   function render() {
     var list = filtered();
-    $('#tbody').innerHTML = list.length
-      ? list.map(renderRow).join('')
+    var per = state.perPage || list.length || 1;
+    var pages = Math.max(1, Math.ceil(list.length / per));
+    if (state.page > pages) state.page = pages;
+    if (state.page < 1) state.page = 1;
+    var start = (state.page - 1) * per;
+    var slice = list.slice(start, start + per);
+
+    $('#tbody').innerHTML = slice.length
+      ? slice.map(renderRow).join('')
       : '<tr><td colspan="7" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
     $('#count').textContent = list.length + ' / ' + rows.length + ' 行';
+    renderPager(list.length, pages, start, slice.length);
+    renderUnits();
+    renderKpis();
+  }
+
+  /* ---------- 分页 ---------- */
+  function pageWindow(cur, pages) {
+    var out = [];
+    if (pages <= 7) { for (var i = 1; i <= pages; i++) out.push(i); return out; }
+    out.push(1);
+    var from = Math.max(2, cur - 1);
+    var to = Math.min(pages - 1, cur + 1);
+    if (from > 2) out.push('…');
+    for (var j = from; j <= to; j++) out.push(j);
+    if (to < pages - 1) out.push('…');
+    out.push(pages);
+    return out;
+  }
+
+  function renderPager(total, pages, start, shown) {
+    var el = $('#pager');
+    if (!el) return;
+    var from = total ? start + 1 : 0;
+    var html = '<span class="pstat">第 ' + from + '–' + (start + shown) + ' 行 / 共 ' + total + ' 行</span>';
+    html += '<select id="p-size" aria-label="每页行数">' +
+      [50, 100, 200].map(function (n) {
+        return '<option value="' + n + '"' + (state.perPage === n ? ' selected' : '') + '>每页 ' + n + '</option>';
+      }).join('') +
+      '<option value="0"' + (state.perPage === 0 ? ' selected' : '') + '>全部</option></select>';
+    if (pages > 1) {
+      html += '<button data-pg="' + Math.max(1, state.page - 1) + '"' + (state.page === 1 ? ' disabled' : '') + '>上一页</button>';
+      pageWindow(state.page, pages).forEach(function (p) {
+        html += p === '…'
+          ? '<button disabled>…</button>'
+          : '<button data-pg="' + p + '" class="' + (p === state.page ? 'on' : '') + '">' + p + '</button>';
+      });
+      html += '<button data-pg="' + Math.min(pages, state.page + 1) + '"' + (state.page === pages ? ' disabled' : '') + '>下一页</button>';
+    }
+    el.innerHTML = html;
+  }
+
+  function renderUnits() {
+    var u = unit();
+    Array.prototype.forEach.call(document.querySelectorAll('.th-u'), function (el) {
+      el.textContent = el.textContent.replace(/[$¥]/, u);
+    });
   }
 
   function fillSelect(id, values, label, current) {
@@ -351,11 +432,36 @@
       return { value: k, text: kinds[k] };
     }), '全部类型', state.kind);
 
-    $('#f-q').addEventListener('input', function (e) { state.q = e.target.value; render(); });
-    $('#f-kind').addEventListener('change', function (e) { state.kind = e.target.value; render(); });
-    $('#f-sort').addEventListener('change', function (e) { state.sort = e.target.value; render(); });
-    $('#f-demo').addEventListener('change', function (e) { state.showDemo = e.target.checked; render(); });
-    $('#f-aff').addEventListener('change', function (e) { state.onlyAff = e.target.checked; render(); });
+    $('#f-q').addEventListener('input', function (e) { state.q = e.target.value; state.page = 1; render(); });
+    $('#f-kind').addEventListener('change', function (e) { state.kind = e.target.value; state.page = 1; render(); });
+    $('#f-sort').addEventListener('change', function (e) { state.sort = e.target.value; state.page = 1; render(); });
+    $('#f-demo').addEventListener('change', function (e) { state.showDemo = e.target.checked; state.page = 1; render(); });
+    $('#f-aff').addEventListener('change', function (e) { state.onlyAff = e.target.checked; state.page = 1; render(); });
+
+    $('#f-cur').addEventListener('click', function (e) {
+      var b = e.target.closest('button[data-cur]');
+      if (!b || b.dataset.cur === state.currency) return;
+      state.currency = b.dataset.cur;
+      Array.prototype.forEach.call(document.querySelectorAll('#f-cur button'), function (x) {
+        x.classList.toggle('on', x.dataset.cur === state.currency);
+      });
+      render();
+    });
+
+    $('#pager').addEventListener('click', function (e) {
+      var b = e.target.closest('button[data-pg]');
+      if (!b || b.disabled) return;
+      state.page = Number(b.dataset.pg);
+      render();
+      var t = document.querySelector('.tablewrap');
+      if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - document.querySelector('.controls').getBoundingClientRect().height - 10, behavior: 'smooth' });
+    });
+    $('#pager').addEventListener('change', function (e) {
+      if (e.target.id !== 'p-size') return;
+      state.perPage = Number(e.target.value);
+      state.page = 1;
+      render();
+    });
 
     var demoCount = rows.filter(function (r) { return r.station.demo; }).length;
     if (demoCount) {

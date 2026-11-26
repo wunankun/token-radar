@@ -93,7 +93,7 @@ function scaleObj(o, k) {
  * 单条 (站点 × 模型) 折算。
  * @returns {{error?: string, row?: object}}
  */
-export function normalizeEntry({ station, modelId, model, stationModel, official, fx, blend, health, priceSource }) {
+export function normalizeEntry({ station, modelId, model, stationModel, official, fx, blend, health, priceSource, faceValue = false }) {
   const officialCny = official
     ? scaleObj({ input: official.usd.input, output: official.usd.output, cache_read: official.usd.cache_read }, fx)
     : null;
@@ -148,6 +148,20 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
   const offBlend = officialCny && officialCny.input != null ? officialCny.input * w.input + officialCny.output * w.output : null;
   ratio.blend = div(effBlend, offBlend);
 
+  // 美元口径：站上自己标的那个美元价（new-api 的 model_ratio 算出来的数），
+  // 用来给「倍率 1.0 = 0%」的对照。人民币口径回答「我实际掏多少钱」，
+  // 美元口径回答「它相对官方美元价打几折」，两个问题不是一回事。
+  const usdNominal = mode === 'official'
+    ? { ...official.usd }
+    : mode === 'multiplier'
+      ? scaleObj(official.usd, num(stationModel.value))
+      : faceValue
+        ? { ...nominal }
+        : scaleObj(nominal, 1 / fx);
+  const usdEffective = scaleObj(usdNominal, billing / bonus);
+  const usdBlend = usdEffective.input == null || usdEffective.output == null ? null : usdEffective.input * w.input + usdEffective.output * w.output;
+  const usdOffBlend = official && official.usd.input != null ? official.usd.input * w.input + official.usd.output * w.output : null;
+
   return {
     row: {
       station: {
@@ -178,6 +192,12 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
       // 优惠力度：比官方便宜多少（0.854 = 便宜 85.4%），负数表示比官方还贵
       discount: ratio.blend == null ? null : r4(1 - ratio.blend),
       blend_effective: r4(effBlend),
+      usd: {
+        effective: { input: r4(usdEffective.input), output: r4(usdEffective.output), cache_read: r4(usdEffective.cache_read) },
+        official: official ? { input: r4(official.usd.input), output: r4(official.usd.output), cache_read: r4(official.usd.cache_read) } : null,
+        blend: r4(usdBlend),
+        discount: div(usdBlend, usdOffBlend) == null ? null : r4(1 - div(usdBlend, usdOffBlend)),
+      },
       health: health || null,
       note: stationModel?.note ?? null,
       pricing_url: official?.pricing_url ?? station.pricing_url ?? station.homepage ?? null,

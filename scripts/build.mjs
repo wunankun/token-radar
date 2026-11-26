@@ -151,6 +151,8 @@ for (const p of [...providers, ...scanned]) {
       blend: config.blend,
       health: loadHealth(p.id),
       priceSource: manual ? 'manual' : 'auto',
+      // 抓来的站按「1 元 = 1 美元额度」面值：它标的那个数既是人民币实付，也是美元牌价
+      faceValue: !manual && (p.observed_only || obs?.assumption === 'face_value_1cny_per_usd'),
     });
     if (res.error) {
       if (manual) err(res.error);
