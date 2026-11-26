@@ -77,10 +77,10 @@ ${css}
     <select id="f-model" aria-label="按模型筛选"></select>
     <select id="f-kind" aria-label="按类型筛选"></select>
     <select id="f-sort" aria-label="排序方式">
-      <option value="ratio">按折扣排序</option>
-      <option value="output">按输出价排序</option>
+      <option value="discount">按优惠力度排序</option>
       <option value="input">按输入价排序</option>
-      <option value="uptime">按 7 日可用率排序</option>
+      <option value="output">按输出价排序</option>
+      <option value="cache_read">按缓存价排序</option>
     </select>
     <label class="toggle"><input type="checkbox" id="f-demo" checked>显示演示数据</label>
     <label class="toggle"><input type="checkbox" id="f-aff">只看带推广链接</label>
@@ -93,11 +93,12 @@ ${css}
         <tr>
           <th>站点</th>
           <th>模型</th>
-          <th class="num">标价 ¥/M<br><span style="font-weight:400">输入 / 输出</span></th>
-          <th class="num">赠送 / 计费</th>
-          <th class="num">实际到手 ¥/M<br><span style="font-weight:400">输入 / 输出</span></th>
-          <th class="num">相对官方</th>
-          <th class="num hide-md">7 日可用</th>
+          <th class="num">输入<br><span class="th-sub">¥/百万</span></th>
+          <th class="num">输出<br><span class="th-sub">¥/百万</span></th>
+          <th class="num hide-md">缓存<br><span class="th-sub">¥/百万</span></th>
+          <th class="num">现价<br><span class="th-sub">混合成本 ¥/百万</span></th>
+          <th class="num">官方价<br><span class="th-sub">同口径</span></th>
+          <th class="num">优惠力度</th>
           <th class="hide-md">价格来源</th>
         </tr>
       </thead>
@@ -111,8 +112,8 @@ ${css}
       <div class="body">
         <p>同一张表里的「0.5 倍率」和「5 折」经常不是一回事，所以本站统一折成<b>人民币 / 百万 token 的到手价</b>再比：</p>
 <pre>实际到手价 = 标价 × 计费系数 ÷ 充值赠送倍数
-相对官方   = 实际到手价 ÷ (官方美元价 × 汇率 USD→CNY)
-混合成本   = ${meta.blend.input} × 输入价 + ${meta.blend.output} × 输出价</pre>
+混合成本   = ${meta.blend.input} × 输入价 + ${meta.blend.output} × 输出价   ← 表里的「现价」
+优惠力度   = 1 − 现价 ÷ 官方价   （百分比越大越优惠，负数表示比官方还贵）</pre>
         <ul>
           <li><b>坑一：倍率的口径。</b>多数中转站是「1 元 = 1 美元额度」，所以「0.5 倍率」= 官方美元价 × 0.5，<b>以人民币结算</b>，并不乘汇率 —— 这才是「便宜十几倍」的来源。而「官转」通常是按官方<b>人民币</b>价打几折。两种口径在数据里用 <code>base: usd_official | cny_official</code> 区分，混用会算出完全错误的排名。</li>
           <li><b>坑二：充值赠送。</b>「充 100 得 120」等于单价直接打 0.83 折，但很多榜单只抄标价。</li>
@@ -127,7 +128,7 @@ ${css}
         <ul>
           <li><b>官方价：</b>人工从各厂官方计费页读取，记录 <code>verified_at</code>，来源链接就在 <code>data/official.json</code>。</li>
           <li><b>中转站价：</b>优先人工核验（<code>data/providers/*.json</code>）；支持 new-api / one-api 系的站点会由 GitHub Actions 定时拉取公开的 <code>/api/pricing</code>，标为「自动抓取」，未经核验的行会显示提示。</li>
-          <li><b>可用率：</b>定时探活，只统计最近 7 天的成功率；没有 key 的站点不做探活，显示「—」。</li>
+          <li><b>可用率：</b>定时探活记录到 <code>data/health/</code>（近 7 天成功率），不占榜单列，只作为「计费系数」与人工判断的依据；没有 key 的站点不探活。</li>
           <li>更新频率：每 ${config?.update?.interval_hours ?? 6} 小时，以及每次人工合并 PR 后。</li>
         </ul>
       </div>
@@ -136,7 +137,7 @@ ${css}
       <summary>为什么必须标注风险</summary>
       <div class="body">
         <p>价格低到一定程度，通常意味着渠道不是官方直连。arXiv 上有一篇对中转站的实测研究（<a href="https://arxiv.org/abs/2603.01919" target="_blank" rel="noopener">Real Money, Fake Models</a>）：在被学术引用过的 17 个中转站里，<b>45.83%</b> 的节点没通过模型身份验证；同一批测试中，部分影子接口在专业问答上的正确率比官方低 40 个百分点以上。价格倍率本身几乎不能预测这种劣化。</p>
-        <p>所以这里除了价格，还标 <b>逆向 / 低价陷阱 / 疑似掉包 / 计费虚高</b> 等标签，以及 7 日可用率。便宜和稳定，自己权衡。</p>
+        <p>所以这里除了价格，还标 <b>逆向 / 低价陷阱 / 疑似掉包 / 计费虚高</b> 等标签；探活得到的可用率与计费系数在后台记录，直接参与「现价」折算。便宜和稳定，自己权衡。</p>
       </div>
     </details>
     <details>

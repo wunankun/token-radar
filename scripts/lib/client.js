@@ -5,6 +5,7 @@
   var DATA = window.__DATA__ || { rows: [], meta: {} };
   var rows = DATA.rows || [];
   var meta = DATA.meta || {};
+  var W = meta.blend || { input: 0.7, output: 0.3 };
 
   var FLAG_LABEL = {
     unverified: '未核验', reverse: '逆向渠道', 'cheap-trap': '低价陷阱',
@@ -14,7 +15,7 @@
   };
   var DANGER_FLAGS = ['ran-away', 'model-substitution', 'no-entity'];
 
-  var state = { q: '', model: '', kind: '', sort: 'ratio', showDemo: true, onlyAff: false };
+  var state = { q: '', model: '', kind: '', sort: 'discount', showDemo: true, onlyAff: false };
   var $ = function (sel) { return document.querySelector(sel); };
 
   /* ---------- 格式化 ---------- */
@@ -25,38 +26,54 @@
     if (v < 1) return v.toFixed(3);
     return v.toFixed(2);
   }
-  function ratioCls(r) {
-    if (r === null || r === undefined) return 'r-na';
-    if (r > 1.05) return 'r-bad';
-    if (r >= 0.95) return 'r-eq';
-    if (r >= 0.5) return 'r-low';
-    if (r >= 0.2) return 'r-mid';
-    return 'r-hi';
-  }
-  function ratioText(r) {
-    if (r === null || r === undefined) return '—';
-    if (r >= 0.95 && r <= 1.05) return '官方价';
-    var z = r * 10;
-    return (z < 1 ? z.toFixed(2) : z.toFixed(1)) + ' 折';
-  }
   function pct(v) {
     if (v === null || v === undefined) return '—';
-    return (v * 100).toFixed(v === 1 ? 0 : 1) + '%';
+    return (v * 100).toFixed(1) + '%';
   }
   function esc(s) {
     return String(s === null || s === undefined ? '' : s)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
   }
-  function pair(o, cls) {
-    if (!o) return '<span class="muted">—</span>';
-    return '<span class="pair ' + (cls || '') + '">' + money(o.input) + ' <span class="in">/</span> <b>' + money(o.output) + '</b></span>';
+
+  /* 优惠力度：0.854 = 便宜 85.4%；负数 = 比官方贵 */
+  function discCls(d) {
+    if (d === null || d === undefined) return 'd-na';
+    if (d < 0) return 'd-neg';
+    if (d < 0.3) return 'd-low';
+    if (d < 0.6) return 'd-mid';
+    if (d < 0.8) return 'd-good';
+    return 'd-best';
+  }
+  function discText(d) {
+    if (d === null || d === undefined) return '—';
+    var p = d * 100;
+    if (Math.abs(p) < 0.05) return '官方';
+    if (p < 0) return '贵 ' + Math.abs(p).toFixed(0) + '%';
+    return (p >= 10 ? p.toFixed(0) : p.toFixed(1)) + '%';
+  }
+
+  /* 官方价的同口径混合成本 */
+  function officialBlend(r) {
+    var o = r.official_cny;
+    if (!o || o.input == null || o.output == null) return null;
+    return o.input * W.input + o.output * W.output;
+  }
+
+  function unitCell(v, nominal) {
+    if (v === null || v === undefined) return '<span class="muted">—</span>';
+    var html = '<span class="unit">' + money(v) + '</span>';
+    if (nominal !== null && nominal !== undefined && Math.abs(nominal - v) > 0.0005) {
+      html += '<div class="unit-sub">标 ' + money(nominal) + '</div>';
+    }
+    return html;
   }
 
   /* ---------- KPI ---------- */
   function renderKpis() {
     var c = meta.counts || {};
-    var best = meta.best;
+    var best = meta.best || meta.best_demo;
+    var bestDemoOnly = !meta.best && !!meta.best_demo;
     var auto = rows.filter(function (r) { return r.price_source === 'auto'; }).length;
     var aff = rows.filter(function (r) { return r.station.affiliate_url; }).length;
 
@@ -66,9 +83,11 @@
         s: (c.models || 0) + ' 个模型 · ' + (c.rows || 0) + ' 行价格'
       },
       {
-        k: '最低综合折扣', accent: true,
-        v: best ? ratioText(best.ratio) : '—',
-        s: best ? (esc(best.station) + ' · ' + esc(best.model)) : '录入真实中转站后自动计算'
+        k: '最高优惠力度', accent: true,
+        v: best && best.discount != null ? discText(best.discount) : '—',
+        s: best
+          ? (bestDemoOnly ? '演示：' : '') + esc(best.station) + ' · ' + esc(best.model)
+          : '录入真实中转站后自动计算'
       },
       {
         k: '汇率 USD→CNY', v: String((meta.fx && meta.fx.usd_cny) || '—'),
@@ -89,7 +108,7 @@
     }).join('');
   }
 
-  /* ---------- 筛选 ---------- */
+  /* ---------- 筛选 + 排序 ---------- */
   function filtered() {
     var q = state.q.trim().toLowerCase();
     return rows.filter(function (r) {
@@ -103,20 +122,14 @@
       }
       return true;
     }).sort(function (a, b) {
-      var av, bv;
-      if (state.sort === 'uptime') {
-        av = a.health && a.health.uptime_7d != null ? a.health.uptime_7d : -1;
-        bv = b.health && b.health.uptime_7d != null ? b.health.uptime_7d : -1;
+      if (state.sort === 'discount') {
+        var av = a.discount === null || a.discount === undefined ? -Infinity : a.discount;
+        var bv = b.discount === null || b.discount === undefined ? -Infinity : b.discount;
         return bv - av;
       }
-      if (state.sort === 'ratio') {
-        av = a.ratio.blend == null ? Infinity : a.ratio.blend;
-        bv = b.ratio.blend == null ? Infinity : b.ratio.blend;
-        return av - bv;
-      }
-      av = a.effective && a.effective[state.sort] != null ? a.effective[state.sort] : Infinity;
-      bv = b.effective && b.effective[state.sort] != null ? b.effective[state.sort] : Infinity;
-      return av - bv;
+      var an = a.effective && a.effective[state.sort] != null ? a.effective[state.sort] : Infinity;
+      var bn = b.effective && b.effective[state.sort] != null ? b.effective[state.sort] : Infinity;
+      return an - bn;
     });
   }
 
@@ -150,20 +163,26 @@
   }
 
   function renderRow(r) {
-    var h = r.health;
+    var off = officialBlend(r);
+    var d = r.discount;
     var offTip = r.official_cny
-      ? '官方 ' + money(r.official_cny.input) + ' / ' + money(r.official_cny.output) + ' 元/百万'
+      ? '官方 ' + money(r.official_cny.input) + ' / ' + money(r.official_cny.output) + ' 元/百万（混合成本 ' + money(off) + '）'
       : '没有官方基准价';
+    var nowTip = W.input + '×输入 + ' + W.output + '×输出，已按充值赠送 ×' + (r.bonus || 1).toFixed(2) +
+      '、实测计费 ×' + (r.billing_ratio || 1).toFixed(2) + ' 折算';
+    var dTip = '比官方便宜 ' + (d == null ? '—' : (d * 100).toFixed(1) + '%') +
+      '（官方 ' + money(off) + ' → 现价 ' + money(r.blend_effective) + '）';
+
     return '<tr class="' + (r.station.demo ? 'is-demo' : '') + '">' +
       '<td>' + stationCell(r) + '</td>' +
       '<td><div class="model"><div class="m">' + esc(r.model.label) + '</div><div class="v">' + esc(r.model.vendor) + '</div></div></td>' +
-      '<td class="num">' + pair(r.nominal) + '</td>' +
-      '<td class="num muted" title="充值赠送 ×' + (r.bonus || 1).toFixed(2) + '（充得多单价就更低）· 实测计费系数 ×' + (r.billing_ratio || 1).toFixed(2) + '（>1 表示 usage 报得比实际多）">×' + (r.bonus || 1).toFixed(2) + ' / ×' + (r.billing_ratio || 1).toFixed(2) + '</td>' +
-      '<td class="num big">' + pair(r.effective) + '</td>' +
-      '<td class="num"><span class="ratio ' + ratioCls(r.ratio.blend) + '" title="' + offTip + '">' + ratioText(r.ratio.blend) + '</span></td>' +
-      '<td class="num hide-md">' + (h && h.uptime_7d != null
-        ? '<span class="uptime">' + pct(h.uptime_7d) + '</span><span class="bar"><i style="width:' + Math.round(h.uptime_7d * 100) + '%"></i></span>'
-        : '<span class="muted">—</span>') + '</td>' +
+      '<td class="num">' + unitCell(r.effective.input, r.nominal.input) + '</td>' +
+      '<td class="num">' + unitCell(r.effective.output, r.nominal.output) + '</td>' +
+      '<td class="num hide-md">' + unitCell(r.effective.cache_read, r.nominal.cache_read) + '</td>' +
+      '<td class="num"><div class="nowp" title="' + nowTip + '">' + money(r.blend_effective) + '</div>' +
+        '<div class="nowp-sub">赠送 ×' + (r.bonus || 1).toFixed(2) + ' · 计费 ×' + (r.billing_ratio || 1).toFixed(2) + '</div></td>' +
+      '<td class="num"><span class="offp" title="' + offTip + '">' + money(off) + '</span></td>' +
+      '<td class="num"><span class="disc ' + discCls(d) + '" title="' + dTip + '">' + discText(d) + '</span></td>' +
       '<td class="hide-md">' + sourceCell(r) + '</td>' +
       '</tr>';
   }
@@ -173,7 +192,7 @@
     var list = filtered();
     $('#tbody').innerHTML = list.length
       ? list.map(renderRow).join('')
-      : '<tr><td colspan="8" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
+      : '<tr><td colspan="9" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
     $('#count').textContent = list.length + ' / ' + rows.length + ' 行';
   }
 
@@ -215,7 +234,7 @@
       b.hidden = false;
       var d = meta.best_demo;
       b.innerHTML = '⚠️ 当前含 <b>' + demoCount + '</b> 条演示数据（<code>demo: true</code>），用于展示折算与排序效果，并非真实站点。' +
-        (d ? '演示数据里最低为 <b>' + ratioText(d.ratio) + '</b>（' + esc(d.station) + ' · ' + esc(d.model) + '）。' : '') +
+        (d ? '演示数据里最优惠为 <b>' + discText(d.discount) + '</b>（' + esc(d.station) + ' · ' + esc(d.model) + '）。' : '') +
         '把 <code>data/providers/</code> 里的示例文件换成真实站点后自动消失。';
     }
     render();

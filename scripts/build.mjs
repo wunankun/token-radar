@@ -159,10 +159,10 @@ const meta = {
     with_affiliate: stations.filter((s) => s.station.affiliate_url).length,
   },
   best: best
-    ? { station: best.station.name, model: best.model.label, ratio: best.ratio.blend, effective: best.effective }
+    ? { station: best.station.name, model: best.model.label, ratio: best.ratio.blend, discount: best.discount, effective: best.effective }
     : null,
   best_demo: bestDemo
-    ? { station: bestDemo.station.name, model: bestDemo.model.label, ratio: bestDemo.ratio.blend, effective: bestDemo.effective }
+    ? { station: bestDemo.station.name, model: bestDemo.model.label, ratio: bestDemo.ratio.blend, discount: bestDemo.discount, effective: bestDemo.effective }
     : null,
   disclosure: config.disclosure,
   site: config.site,
@@ -178,7 +178,7 @@ writeFileSync(join(DIST, 'index.html'), html, 'utf8');
 console.log(`\nToken 雷达 · build`);
 console.log(`  行数 ${meta.counts.rows} / 站点 ${meta.counts.stations} / 模型 ${meta.counts.models}`);
 console.log(`  官方基准 ${meta.counts.official_rows} 行，演示 ${meta.counts.demo_rows} 行，带推广链接 ${meta.counts.with_affiliate} 行`);
-if (best) console.log(`  当前最低：${best.station.name} · ${best.model.label} · ${(best.ratio.blend * 10).toFixed(1)} 折`);
+if (best) console.log(`  当前最优惠：${best.station.name} · ${best.model.label} · 便宜 ${(best.discount * 100).toFixed(1)}%`);
 
 if (warnings.length) {
   console.log(`\n⚠️  ${warnings.length} 条 warning`);

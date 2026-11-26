@@ -174,6 +174,8 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
       official_cny: officialCny ? { input: r4(officialCny.input), output: r4(officialCny.output), cache_read: r4(officialCny.cache_read) } : null,
       official_usd: official ? { ...official.usd } : null,
       ratio: { input: r4(ratio.input), output: r4(ratio.output), blend: r4(ratio.blend) },
+      // 优惠力度：比官方便宜多少（0.854 = 便宜 85.4%），负数表示比官方还贵
+      discount: ratio.blend == null ? null : r4(1 - ratio.blend),
       blend_effective: r4(effBlend),
       health: health || null,
       note: stationModel?.note ?? null,

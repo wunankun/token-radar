@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T05:29:28.525Z",
+    "generated_at": "2026-11-26T05:46:16.956Z",
     "fx": {
       "usd_cny": 7.1,
       "as_of": "2026-11-26",
@@ -23,6 +23,7 @@
       "station": "示例站 Beta",
       "model": "GPT-6.2 Sol",
       "ratio": 0.0951,
+      "discount": 0.9049,
       "effective": {
         "input": 1.35,
         "output": 6.75,
@@ -95,6 +96,7 @@
         "output": 0.0951,
         "blend": 0.0951
       },
+      "discount": 0.9049,
       "blend_effective": 2.97,
       "health": {
         "days": 14,
@@ -165,6 +167,7 @@
         "output": 0.0951,
         "blend": 0.0951
       },
+      "discount": 0.9049,
       "blend_effective": 11.88,
       "health": {
         "days": 14,
@@ -235,6 +238,7 @@
         "output": 0.1046,
         "blend": 0.1046
       },
+      "discount": 0.8954,
       "blend_effective": 3.267,
       "health": {
         "days": 14,
@@ -305,6 +309,7 @@
         "output": 0.1046,
         "blend": 0.1046
       },
+      "discount": 0.8954,
       "blend_effective": 6.534,
       "health": {
         "days": 14,
@@ -373,6 +378,7 @@
         "output": 0.2629,
         "blend": 0.2952
       },
+      "discount": 0.7048,
       "blend_effective": 1.1947,
       "health": {
         "days": 14,
@@ -441,6 +447,7 @@
         "output": 0.3585,
         "blend": 0.3585
       },
+      "discount": 0.6415,
       "blend_effective": 5.376,
       "health": {
         "days": 14,
@@ -506,6 +513,7 @@
         "output": 0.5167,
         "blend": 0.5167
       },
+      "discount": 0.4833,
       "blend_effective": 2.091,
       "health": {
         "days": 14,
@@ -571,6 +579,7 @@
         "output": 0.5167,
         "blend": 0.5167
       },
+      "discount": 0.4833,
       "blend_effective": 7.7475,
       "health": {
         "days": 14,
@@ -636,6 +645,7 @@
         "output": 0.5167,
         "blend": 0.5167
       },
+      "discount": 0.4833,
       "blend_effective": 16.1407,
       "health": {
         "days": 14,
@@ -701,6 +711,7 @@
         "output": 0.5167,
         "blend": 0.5167
       },
+      "discount": 0.4833,
       "blend_effective": 16.1407,
       "health": {
         "days": 14,
@@ -766,6 +777,7 @@
         "output": 0.5167,
         "blend": 0.5167
       },
+      "discount": 0.4833,
       "blend_effective": 32.2813,
       "health": {
         "days": 14,
@@ -831,6 +843,7 @@
         "output": 1,
         "blend": 1
       },
+      "discount": 0,
       "blend_effective": 4.047,
       "health": null,
       "note": null,
@@ -888,6 +901,7 @@
         "output": 1,
         "blend": 1
       },
+      "discount": 0,
       "blend_effective": 14.9952,
       "health": null,
       "note": null,
@@ -945,6 +959,7 @@
         "output": 1,
         "blend": 1
       },
+      "discount": 0,
       "blend_effective": 31.24,
       "health": null,
       "note": null,
@@ -1002,6 +1017,7 @@
         "output": 1,
         "blend": 1
       },
+      "discount": 0,
       "blend_effective": 31.24,
       "health": null,
       "note": null,
@@ -1059,6 +1075,7 @@
         "output": 1,
         "blend": 1
       },
+      "discount": 0,
       "blend_effective": 62.48,
       "health": null,
       "note": null,
@@ -1116,6 +1133,7 @@
         "output": 1,
         "blend": 1
       },
+      "discount": 0,
       "blend_effective": 124.96,
       "health": null,
       "note": null,
