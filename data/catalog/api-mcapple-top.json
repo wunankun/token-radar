@@ -1,0 +1,1241 @@
+{
+  "station_id": "api-mcapple-top",
+  "endpoint": "https://api.mcapple.top/api/pricing",
+  "fetched_at": "2026-11-26T16:34:38.692Z",
+  "http_status": 200,
+  "total": 154,
+  "models": [
+    {
+      "n": "claude-sonnet-5.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "grok-4.7-build-fast",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grokUltra"
+    },
+    {
+      "n": "naiwa/sora-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4.1-flash-1017",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "ds"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "gemini-3.5-flash-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "claude-opus-4-5-20251101-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "naiwa/gemini-3.8-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-5-5-medium",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "反重力CC-高智商opus55和sonnet55"
+    },
+    {
+      "n": "send",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "接码"
+    },
+    {
+      "n": "gemini-3-flash-preview",
+      "r": 0.5,
+      "c": 3,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini Ultra 03"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Ultra 03"
+    },
+    {
+      "n": "gemini-2.5-flash-lite",
+      "r": 0.15,
+      "c": 1.3333,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "grok-composer-2.5-fast",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1,
+      "c": 6,
+      "cr": 0.125,
+      "g": 1,
+      "gn": "plus特惠004"
+    },
+    {
+      "n": "claude-3-7-sonnet-20250219",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "ccmax09"
+    },
+    {
+      "n": "gemini-3.7-flash-tiered",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "claude-opus-4-5-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "naiwa/claude-sonnet-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-5-5-high",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "反重力CC-高智商opus55和sonnet55"
+    },
+    {
+      "n": "gpt-image-2",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2.5-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "plus特惠004"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "plus特惠004"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro特惠99 007"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro特惠99 007"
+    },
+    {
+      "n": "claude-sonnet-4-20250514",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "ccmax09"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini Ultra 03"
+    },
+    {
+      "n": "gemini-3.6-flash-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "naiwa/claude-fable-5-1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "naiwa/gpt-6.1-sol",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-5-5-low",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "反重力CC-高智商opus55和sonnet55"
+    },
+    {
+      "n": "gpt-image-2.6",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2.6-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "fetch",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-3.8-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "workbuddy"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "luna"
+    },
+    {
+      "n": "gemini-3.7-flash-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "claude-opus-4-6-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "claude-opus-5-5-high",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "反重力CC-高智商opus55和sonnet55"
+    },
+    {
+      "n": "grok-imagine-video-2.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "plus特惠004"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "gpt-image-2.5-flare-1",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "管key025"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grokUltra"
+    },
+    {
+      "n": "step-5-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "workbuddy"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "grok-chat-fast",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-3.8-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "workbuddy"
+    },
+    {
+      "n": "gpt-image-2-5-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-8-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "minimax-m3.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "workbuddy"
+    },
+    {
+      "n": "gemini-3.1-pro-preview-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "workbuddy"
+    },
+    {
+      "n": "claude-sonnet-5-thinking",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "claude-haiku-4.5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "claude-sonnet-5-5-low",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "反重力CC-高智商opus55和sonnet55"
+    },
+    {
+      "n": "claude-3-5-haiku-20241022",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "ccmax09"
+    },
+    {
+      "n": "claude-sonnet-4-5-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "claude-sonnet-5-5-thinking",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "plus特惠004"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "deepseek-v4.1-flash-1017-1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "ds"
+    },
+    {
+      "n": "gemini-2.5-pro",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "qwen-4-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "workbuddy"
+    },
+    {
+      "n": "getPhone",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "接码"
+    },
+    {
+      "n": "gemini-3.1-pro",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "claude-opus-5-5-thinking",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "plus稳定008"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grokUltra"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-preview",
+      "r": 0.25,
+      "c": 3,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "claude-fable-5.2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "claude-sonnet-4.5-20250929",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "claude-3-5-sonnet-20240620",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "ccmax09"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini Ultra 03"
+    },
+    {
+      "n": "gemini-3.7-flash-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "naiwa/claude-opus-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen=3.8=flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "workbuddy"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "gemini-3.1-pro-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "claude-haiku-4-5-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "claude-opus-5-thinking",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "claude-opus-4.6",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "claude-sonnet-4",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "naiwa/gemini-3.1-pro-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "claude-fable-5-thinking",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.25,
+      "c": 3,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini Ultra 03"
+    },
+    {
+      "n": "gemini-3.5-flash-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "gemini-3.7-flash-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "claude-opus-4.7",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "gemini-3.1-pro-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Ultra 03"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini Ultra 03"
+    },
+    {
+      "n": "grok-4.3",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.4,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2-1",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "管key025"
+    },
+    {
+      "n": "ocr",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Ultra 03"
+    },
+    {
+      "n": "claude-fable-5.1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "claude-haiku-5.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "gpt-image-2.5",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2.5-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2.6-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 1.25,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "plus特惠004"
+    },
+    {
+      "n": "claude-opus-5.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "naiwa/gpt-6-astra",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2.5-sunburst-1",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "管key025"
+    },
+    {
+      "n": "claude-3-5-sonnet-20241022",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "ccmax09"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Ultra 03"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "claude-opus-4-1-20250805",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "ccmax09"
+    },
+    {
+      "n": "grok-4.20-multi-agent-0309",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mcapple-guard-v1.0-flash-20261121",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grokUltra"
+    },
+    {
+      "n": "naiwa/claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "plus特惠004"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "ds"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "gemini-3.6-flash-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "workbuddy"
+    },
+    {
+      "n": "claude-opus-4-7-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "gemini-2.5-flash-nothinking",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "claude-haiku-5-5-thinking",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "claude-sonnet-4.5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 0.5,
+      "c": 2.5,
+      "cr": 0.03,
+      "g": 1,
+      "gn": "Gemini Ultra 03"
+    },
+    {
+      "n": "claude-sonnet-4-6-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kirobug号"
+    },
+    {
+      "n": "claude-sonnet-4.6",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "gpt-image-2-5-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "search",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-build-0.1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grokUltra"
+    },
+    {
+      "n": "naiwa/sora-2-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-5-5-medium",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "反重力CC-高智商opus55和sonnet55"
+    },
+    {
+      "n": "claude-opus-4-20250514",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "ccmax09"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini Ultra 03"
+    },
+    {
+      "n": "claude-opus-4.5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "claude-opus-4.8",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro正价"
+    },
+    {
+      "n": "naiwa/gemini-4-argon",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "naiwa/gpt-6-luna",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.6-flash-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Vertex"
+    },
+    {
+      "n": "getMsg",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "接码"
+    },
+    {
+      "n": "grok-imagine-image-2.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "plus特惠004"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.2,
+      "c": 3.5,
+      "cr": 0.2875,
+      "g": 1,
+      "gn": "workbuddy"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kirobug号"
+    }
+  ]
+}

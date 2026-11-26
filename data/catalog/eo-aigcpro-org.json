@@ -1,0 +1,433 @@
+{
+  "station_id": "eo-aigcpro-org",
+  "endpoint": "https://eo.aigcpro.org/api/pricing",
+  "fetched_at": "2026-11-26T16:34:53.030Z",
+  "http_status": 200,
+  "total": 53,
+  "models": [
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 3.25,
+      "c": 4.1538,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国模官key"
+    },
+    {
+      "n": "C-sonnet-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.3-flashx",
+      "r": 1,
+      "c": 3.5,
+      "cr": 0.285,
+      "g": 1,
+      "gn": "国模官key"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok heavy"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "C-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "claude max"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini Ultra池"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini Ultra池"
+    },
+    {
+      "n": "kimi-k2.6",
+      "r": 3.25,
+      "c": 4.1538,
+      "cr": 0.1692,
+      "g": 1,
+      "gn": "国模官key"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "正价kiro号池"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 4.5,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "国模"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude max"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "正价kiro号池"
+    },
+    {
+      "n": "minimax-m3.1-flash",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国模"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ccmax 蒸馏"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "满血不降智gpt"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "g5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini Ultra池"
+    },
+    {
+      "n": "kimi-k3.1-pro-highspeed",
+      "r": 13,
+      "c": 5.2308,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模官key"
+    },
+    {
+      "n": "glm-5.3-prime",
+      "r": 8,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国模官key"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok heavy"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "正价kiro号池"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok heavy"
+    },
+    {
+      "n": "mimo-v2.6-pro",
+      "r": 1.5,
+      "c": 2,
+      "cr": 0.0083,
+      "g": 1,
+      "gn": "国模"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini Ultra池"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模官key"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 6.5,
+      "c": 5.2308,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国模"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude max"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "g5.6-terra",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 4,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "claude max"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini Ultra池"
+    },
+    {
+      "n": "kimi-k2.7-code-highspeed",
+      "r": 6.5,
+      "c": 4.1538,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国模官key"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "国模"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.4,
+      "c": 3.5,
+      "cr": 0.2875,
+      "g": 1,
+      "gn": "国模"
+    }
+  ]
+}

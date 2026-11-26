@@ -1,0 +1,1449 @@
+{
+  "station_id": "chat-openapi-wang",
+  "endpoint": "https://chat.openapi.wang/api/pricing",
+  "fetched_at": "2026-11-26T16:34:36.680Z",
+  "http_status": 200,
+  "total": 180,
+  "models": [
+    {
+      "n": "glm-5.1",
+      "r": 3,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国产福利区"
+    },
+    {
+      "n": "gpt-4-0613",
+      "r": 15,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.1-codex",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国产福利区"
+    },
+    {
+      "n": "gpt-4o-mini-realtime-preview",
+      "r": 0.3,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.1",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-5.4-nano",
+      "r": 0.1,
+      "c": 6.25,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2.5-flare",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.4,
+      "g": 1,
+      "gn": "OpenAI官方Key池"
+    },
+    {
+      "n": "text-embedding-3-small",
+      "r": 2,
+      "c": 2,
+      "cr": 0.01,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "kimi-k2.6",
+      "r": 0.475,
+      "c": 4.2105,
+      "cr": 0.1684,
+      "g": 1,
+      "gn": "国产福利区"
+    },
+    {
+      "n": "gpt-5-chat-latest",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-5.4-nano-2026-03-17",
+      "r": 0.1,
+      "c": 6.25,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "text-embedding-3-large",
+      "r": 3.5,
+      "c": 1.4286,
+      "cr": 0.0071,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.1-flash-live-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gemini-embedding-2-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gpt-4o-audio-preview",
+      "r": 1.25,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-3.5-turbo-instruct",
+      "r": 0.75,
+      "c": 1.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4-turbo",
+      "r": 5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "gemini-3-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gemini-flash-latest",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 直连-1"
+    },
+    {
+      "n": "gpt-4o",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-image-2-2026-04-21",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.2143,
+      "g": 1,
+      "gn": "奇奇怪怪的渠道"
+    },
+    {
+      "n": "gemini-embedding-2",
+      "r": 0.1,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "grok heavy"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "gpt-5.2-high",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "o1-preview",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-pro 优质"
+    },
+    {
+      "n": "o1",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "gemini-omni-1.1-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-高可用"
+    },
+    {
+      "n": "o1-mini",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "hy3",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国产福利区"
+    },
+    {
+      "n": "gpt-4o-mini-2024-07-18",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "o3-mini-2025-01-31",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok heavy"
+    },
+    {
+      "n": "gpt-realtime-1.5",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-5.1-codex-mini",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.2",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-5.3-codex",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "o3-mini",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "claude-sonnet-4",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "claude-sonnet-4.5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "gpt-3.5-turbo-0125",
+      "r": 0.25,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 2.25,
+      "c": 3,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "奇奇怪怪的渠道"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-2.5-flash-lite",
+      "r": 0.05,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-image",
+      "r": 0.125,
+      "c": 120,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "o3-pro",
+      "r": 10,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ccmax 渠道1"
+    },
+    {
+      "n": "gemini-3-flash-preview",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gpt-3.5-turbo-1106",
+      "r": 0.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-4",
+      "r": 15,
+      "c": 2,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4.1-nano",
+      "r": 0.05,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-4o-realtime-preview",
+      "r": 2.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.4-pro",
+      "r": 15,
+      "c": 6,
+      "cr": 1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "tts-1-hd-1106",
+      "r": 15,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "gpt-3.5-turbo",
+      "r": 0.25,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 直连-1"
+    },
+    {
+      "n": "gemini-flash-lite-latest",
+      "r": 0.25,
+      "c": 3,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gpt-5.3-codex-2026-02-24",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-4.1-2025-04-14",
+      "r": 1,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "o4-mini",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国产福利区"
+    },
+    {
+      "n": "gpt-3.5-turbo-16k",
+      "r": 1.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方"
+    },
+    {
+      "n": "gpt-5.4-mini-2026-03-17",
+      "r": 0.375,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "whisper-1",
+      "r": 15,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 稳定"
+    },
+    {
+      "n": "gpt-4-32k",
+      "r": 30,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-5-mini",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "o3-deep-research-2025-06-26",
+      "r": 5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "奇奇怪怪的渠道"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.4,
+      "c": 3.5,
+      "cr": 0.2875,
+      "g": 1,
+      "gn": "国产福利区"
+    },
+    {
+      "n": "gemini-3-pro-image",
+      "r": 1,
+      "c": 60,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gpt-5.2-chat-latest",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-1.5",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方"
+    },
+    {
+      "n": "o3-deep-research",
+      "r": 5,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.1-flash-image-preview",
+      "r": 0.25,
+      "c": 120,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gemini-3.1-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gpt-4.1-nano-2025-04-14",
+      "r": 0.05,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-5-nano",
+      "r": 0.025,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "gpt-5.2-pro",
+      "r": 10.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4o-2024-05-13",
+      "r": 2.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-4o-mini-transcribe",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-1-mini",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok heavy"
+    },
+    {
+      "n": "gpt-4.5-preview",
+      "r": 37.5,
+      "c": 2,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.1-2025-11-13",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "o3-2025-04-16",
+      "r": 1,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "tts-1",
+      "r": 7.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "国产福利区"
+    },
+    {
+      "n": "gemini-2.5-pro",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gpt-4.1-mini",
+      "r": 0.2,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-5-nano-2025-08-07",
+      "r": 0.025,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gemini-embedding-001",
+      "r": 0.075,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gpt-3.5-turbo-0613",
+      "r": 1.5,
+      "c": 1.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4o-transcribe",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.2-2025-12-11",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 0.375,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "o3",
+      "r": 1,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "tts-1-1106",
+      "r": 7.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gpt-4-turbo-2024-04-09",
+      "r": 5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4.1-mini-2025-04-14",
+      "r": 0.2,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-team"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2.5-sunburst",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.4,
+      "g": 1,
+      "gn": "OpenAI官方Key池"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-pro 优质"
+    },
+    {
+      "n": "gpt-4.1",
+      "r": 1,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "o4-mini-2025-04-16",
+      "r": 0.55,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 特价"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini 特价"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini 特价"
+    },
+    {
+      "n": "gemini-3-pro-image-preview",
+      "r": 1,
+      "c": 60,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gpt-4o-2024-11-20",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.1-flash-image",
+      "r": 0.25,
+      "c": 120,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-preview",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gpt-oss-120b",
+      "r": 0.125,
+      "c": 2.76,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini 特价"
+    },
+    {
+      "n": "claude-haiku-4.5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "gpt-5.1-high",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-5.6",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "hy4",
+      "r": 3,
+      "c": 3,
+      "cr": 0.3,
+      "g": 1,
+      "gn": "国产福利区"
+    },
+    {
+      "n": "gpt-5-2025-08-07",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-5-codex",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5-mini-2025-08-07",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-5.1-chat-latest",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "tts-1-hd",
+      "r": 15,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 稳定"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "gpt-4o-2024-08-06",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-5.1-codex-max",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2",
+      "r": 2.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI官方Key池"
+    },
+    {
+      "n": "o1-2024-12-17",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "text-embedding-ada-002",
+      "r": 3,
+      "c": 2,
+      "cr": 0.01,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 3.25,
+      "c": 4.1538,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国产福利区"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini 特价"
+    },
+    {
+      "n": "gpt-5.2-codex",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-2.5-flash-image",
+      "r": 0.15,
+      "c": 100,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gemini-pro-latest",
+      "r": 37.5,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gpt-4o-audio-preview-2024-10-01",
+      "r": 1.25,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5-pro",
+      "r": 7.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-1",
+      "r": 5,
+      "c": 2,
+      "cr": 0.01,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.1-pro-preview-customtools",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gpt-4o-mini",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI官方-2"
+    },
+    {
+      "n": "gpt-4.5-preview-2025-02-27",
+      "r": 37.5,
+      "c": 2,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "o3-pro-2025-06-10",
+      "r": 10,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 0.05,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ccmax 渠道3"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro 低价3"
+    },
+    {
+      "n": "minimax-m3",
+      "r": 0.15,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国产福利区"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini 画图"
+    },
+    {
+      "n": "gpt-3.5-turbo-16k-0613",
+      "r": 1.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4-32k-0613",
+      "r": 30,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5-pro-2025-10-06",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.2-pro-2025-12-11",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.3-chat-latest",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 4,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "ccmax 渠道3"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "station_id": "aceoai-com",
+  "endpoint": "https://aceoai.com/api/pricing",
+  "fetched_at": "2026-11-26T16:34:57.651Z",
+  "http_status": 200,
+  "total": 10,
+  "models": [
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt福利"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt福利"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gpt福利"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "claude专用"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "claude专用"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 4.5,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "deepseek专用"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "deepseek福利"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt福利"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 4,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gpt福利"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gpt福利"
+    }
+  ]
+}

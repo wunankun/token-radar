@@ -1,0 +1,409 @@
+{
+  "station_id": "aiplaceer-com",
+  "endpoint": "https://aiplaceer.com/api/pricing",
+  "fetched_at": "2026-11-26T16:34:54.802Z",
+  "http_status": 200,
+  "total": 50,
+  "models": [
+    {
+      "n": "claude-opus-4-7-medium",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-3-5-sonnet-20240620",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-7-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-7-xhigh",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-20250514",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-3-5-sonnet-20241022",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-1-20250805",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-3-haiku-20240307",
+      "r": 0.125,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-3-sonnet-20240229",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-1-20250805-thinking",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-20250514",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-5-20251101-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6-low",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-7-max",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-3-7-sonnet-20250219",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-3-opus-20240229",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6-high",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6-medium",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-20250514-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.2",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6",
+      "r": 5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6-max",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 4,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-3-5-haiku-20241022",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-3-7-sonnet-20250219-thinking",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-20250514-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 0.05,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-7-high",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-7-low",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    }
+  ]
+}

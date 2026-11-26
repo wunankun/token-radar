@@ -119,6 +119,24 @@ ${css}
   <div class="pager" id="pager"></div>
   ${(meta.disabled_sources || []).length ? `<p class="off-list"><b>已停用 ${(meta.disabled_sources || []).length} 家</b>：${(meta.disabled_sources || []).map((s) => `${esc(s.name)}${s.note ? `（${esc(s.note)}）` : ''}`).join('、')}　不再抓取，也不参与排名。</p>` : ''}
 
+  ${(() => {
+    const cat = meta.catalog;
+    if (!cat) return '';
+    const auto = JSON.parse(readFileSync(join(HERE, '..', '..', 'data', 'models-auto.json'), 'utf8'));
+    const opts = auto.models
+      .map((m) => `<option value="${esc(m.id)}">${esc(m.label)} · ${m.coverage} 站${m.baseline ? '' : ' · 无参照价'}</option>`)
+      .join('');
+    return `<section class="catsec">
+    <h2>按模型查价<span class="cat-sub">全站 ${cat.stations} 家里，被 ≥${cat.threshold} 家同时收录的模型共 ${cat.count} 个</span></h2>
+    <div class="catbar">
+      <input id="cat-q" list="cat-list" placeholder="输入模型名，比如 gpt-6.2-sol、claude-opus-4-8、kimi-k3" autocomplete="off">
+      <datalist id="cat-list">${opts}</datalist>
+      <button type="button" id="cat-clear">清空</button>
+    </div>
+    <div id="cat-out" class="cat-out"></div>
+  </section>`;
+  })()}
+
   <section class="method">
     <details open>
       <summary>价格怎么算的（三个坑）</summary>

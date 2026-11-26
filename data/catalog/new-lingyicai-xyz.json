@@ -1,0 +1,481 @@
+{
+  "station_id": "new-lingyicai-xyz",
+  "endpoint": "https://new.lingyicai.xyz/api/pricing",
+  "fetched_at": "2026-11-26T16:34:52.497Z",
+  "http_status": 200,
+  "total": 59,
+  "models": [
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "claude-sonnet-4-6-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特惠Codex-Pro"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "GLM"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "claude-sonnet-4",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "kimi-k3.1-pro-highspeed",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Kimi"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kimi"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "claude-opus-4-7-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Grok"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 0.75,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "DeepSeek"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特惠Codex-Pro"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠Codex-Pro"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "gemini-3-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "DeepSeek"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "claude-opus-4-6-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠Codex-Pro"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Kimi"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 2.25,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "DeepSeek"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "GLM"
+    },
+    {
+      "n": "glm-5.4",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GLM"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-preview",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠Codex-Pro"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1.25,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex-Pro"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex-Pro"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 2,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Grok"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.4,
+      "c": 3.5,
+      "cr": 0.2875,
+      "g": 1,
+      "gn": "GLM"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠Codex-Pro"
+    },
+    {
+      "n": "claude-opus-4-5-20251101-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Krio逆向-高缓存"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    }
+  ]
+}

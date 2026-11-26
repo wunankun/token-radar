@@ -25,11 +25,19 @@ const res = await fetchJson(URL, { timeout: 30000, retries: 2 });
 const list = Array.isArray(res.json?.data) ? res.json.data : [];
 
 const found = {};
+const all = [];
 for (const item of list) {
   const pricing = item.pricing || {};
   const input = Number(pricing.prompt) * 1e6;
   const output = Number(pricing.completion) * 1e6;
   if (!Number.isFinite(input) || (input <= 0 && output <= 0)) continue;
+
+  all.push({
+    id: item.id,
+    name: item.name,
+    input: Math.round(input * 1e4) / 1e4,
+    output: Math.round(output * 1e4) / 1e4,
+  });
 
   // openrouter 的 id 形如 deepseek/deepseek-v4-pro，按最后一段和历史别名匹配
   const tail = String(item.id || '').split('/').pop().toLowerCase();
@@ -48,6 +56,13 @@ console.log(`OpenRouter 返回 ${list.length} 个模型，命中我们关注的 
 for (const [id, v] of Object.entries(found)) console.log(`  ${id.padEnd(18)} $${v.input}/${v.output}  (${v.openrouter_id})`);
 
 if (WRITE) {
+  // 全量清单：给「官方价缺失的模型」当参照价用（data/catalog 里的模型靠它算优惠力度）
+  writeJson(join(DATA, 'openrouter-models.json'), {
+    fetched_at: new Date().toISOString(),
+    source: URL,
+    total: all.length,
+    models: all,
+  });
   writeJson(join(DATA, 'observed', 'openrouter.json'), {
     station_id: 'openrouter',
     kind: 'aggregator',

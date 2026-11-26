@@ -1,0 +1,545 @@
+{
+  "station_id": "tokenflux-cloud",
+  "endpoint": "https://tokenflux.cloud/api/pricing",
+  "fetched_at": "2026-11-26T16:34:51.239Z",
+  "http_status": 200,
+  "total": 67,
+  "models": [
+    {
+      "n": "grok-4.3",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Gork"
+    },
+    {
+      "n": "grok-3-mini-fast",
+      "r": 0.3,
+      "c": 6.6667,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Gork"
+    },
+    {
+      "n": "claude-opus-4-5-20251101-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 0.87,
+      "c": 2,
+      "cr": 0.0115,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-20250514",
+      "r": 1.496,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929-thinking",
+      "r": 1.496,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "gpt-5.5-openai-compact",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 1.25,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "gpt-5.6",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "gpt-image-2.5-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "绘图模型"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "GPT-5.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "grok-4.20-0309-reasoning",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Gork"
+    },
+    {
+      "n": "mimo-v2.5-tts",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "MIMO"
+    },
+    {
+      "n": "mimo-v2.5-tts-voicedesign",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "MIMO"
+    },
+    {
+      "n": "grok-imagine-image",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Gork"
+    },
+    {
+      "n": "grok-4.20-0309-non-reasoning",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Gork"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "mimo-v2.5-pro",
+      "r": 0.2,
+      "c": 2,
+      "cr": 0.0075,
+      "g": 1,
+      "gn": "MIMO"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 0.475,
+      "c": 4.2105,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "GPT-5.4 Mini",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "grok-build-0.1",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Gork"
+    },
+    {
+      "n": "claude-opus-4-1-20250805",
+      "r": 7.497,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.499,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "GPT-5.3 Codex Spark",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "gpt-image-1.5",
+      "r": 2.5,
+      "c": 6.4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "绘图模型"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.496,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "Gork"
+    },
+    {
+      "n": "gpt-5.4-openai-compact",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.35,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "GPT-5.4",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "wan2.7-image-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.7-plus",
+      "r": 0.2,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.7-max",
+      "r": 2.5,
+      "c": 3,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2.5-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "绘图模型"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "mimo-v2.5-asr",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "MIMO"
+    },
+    {
+      "n": "kimi-k2.6",
+      "r": 0.475,
+      "c": 4.2105,
+      "cr": 0.1684,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-3-mini",
+      "r": 0.15,
+      "c": 1.6667,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Gork"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "claude-opus-4-20250514",
+      "r": 7.497,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "gpt-5.2",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "mimo-v2.5",
+      "r": 0.07,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "MIMO"
+    },
+    {
+      "n": "grok-4.20-multi-agent-0309",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Gork"
+    },
+    {
+      "n": "grok-imagine-video-1.5-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Gork"
+    },
+    {
+      "n": "grok-imagine-image-quality",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Gork"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 0.375,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 0.07,
+      "c": 2,
+      "cr": 0.0714,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-imagine-video",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Gork"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "gpt-5.3-codex-spark",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 1.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    },
+    {
+      "n": "GPT Image 2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex号池"
+    },
+    {
+      "n": "grok-composer-2.5-fast",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Gork"
+    },
+    {
+      "n": "mimo-v2.5-tts-voiceclone",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "MIMO"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code 特惠"
+    }
+  ]
+}

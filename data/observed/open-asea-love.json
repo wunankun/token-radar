@@ -1,9 +1,9 @@
 {
   "station_id": "open-asea-love",
   "endpoint": "https://open.asea.love/api/pricing",
-  "fetched_at": "2026-11-26T16:17:20.557Z",
+  "fetched_at": "2026-11-26T16:34:56.447Z",
   "http_status": 200,
-  "latency_ms": 891,
+  "latency_ms": 732,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -36,6 +36,15 @@
     "特惠pro": "官渠pro特惠区"
   },
   "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
+  "status": {
+    "usd_exchange_rate": 1,
+    "quota_per_unit": 500000,
+    "price": 1,
+    "currency": "¤",
+    "top_up_link": null,
+    "system_name": "AseaAPI",
+    "version": "cc12h-04b823f3f"
+  },
   "stats": {
     "total": 28,
     "matched": 5,
@@ -44,6 +53,22 @@
     "duplicate": 1
   },
   "models": {
+    "claude-sonnet-5-5": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
+      "raw": {
+        "model_name": "claude-sonnet-4-5",
+        "model_ratio": 1.5,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.1,
+        "enable_groups": [
+          "CC特供分组"
+        ]
+      }
+    },
     "gpt-6.2-astra": {
       "input": 75,
       "output": 150,
@@ -55,13 +80,47 @@
         "group_ratio": 1,
         "quota_type": 0,
         "enable_groups": [
-          "codex ｜ plus",
-          "特惠pro",
           "codex ｜ pro",
-          "特惠plus"
+          "特惠plus",
+          "codex ｜ plus",
+          "特惠pro"
         ],
         "billing_mode": "tiered_expr",
         "billing_expr": "len <= 272000 ? tier(\"standard\", p * 8 + c * 40 + cr * 0.4 + cc * 10 + cc12h * 20) : tier(\"long_context\", p * 16 + c * 60 + cr * 0.8 + cc * 20 + cc12h * 40)"
+      }
+    },
+    "deepseek-flash": {
+      "input": 2,
+      "output": 8,
+      "cache_read": 0.04,
+      "raw": {
+        "model_name": "deepseek-v4.1-flash",
+        "model_ratio": 1,
+        "completion_ratio": 4,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.02,
+        "enable_groups": [
+          "国模"
+        ]
+      }
+    },
+    "claude-opus-5-5": {
+      "input": 4,
+      "output": 20,
+      "cache_read": 0.2,
+      "raw": {
+        "model_name": "claude-opus-5-5",
+        "model_ratio": 2,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05,
+        "enable_groups": [
+          "CC专用分组-无限制可外接",
+          "CC特供分组",
+          "【Cursor】claude分组"
+        ]
       }
     },
     "gpt-6.2-sol": {
@@ -83,61 +142,41 @@
         "billing_mode": "tiered_expr",
         "billing_expr": "len <= 272000 ? tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc12h * 5) : tier(\"long_context\", p * 4 + c * 15 + cr * 0.2 + cc * 5 + cc12h * 10)"
       }
-    },
-    "claude-opus-5-5": {
-      "input": 4,
-      "output": 20,
-      "cache_read": 0.2,
-      "raw": {
-        "model_name": "claude-opus-5-5",
-        "model_ratio": 2,
-        "completion_ratio": 5,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "cache_ratio": 0.05,
-        "enable_groups": [
-          "CC专用分组-无限制可外接",
-          "CC特供分组",
-          "【Cursor】claude分组"
-        ]
-      }
-    },
-    "claude-sonnet-5-5": {
-      "input": 3,
-      "output": 15,
-      "cache_read": 0.3,
-      "raw": {
-        "model_name": "claude-sonnet-4-5",
-        "model_ratio": 1.5,
-        "completion_ratio": 5,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "cache_ratio": 0.1,
-        "enable_groups": [
-          "CC特供分组"
-        ]
-      }
-    },
-    "deepseek-flash": {
-      "input": 2,
-      "output": 8,
-      "cache_read": 0.04,
-      "raw": {
-        "model_name": "deepseek-v4.1-flash",
-        "model_ratio": 1,
-        "completion_ratio": 4,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "cache_ratio": 0.02,
-        "enable_groups": [
-          "国模"
-        ]
-      }
     }
   },
   "unmatched": [
     {
-      "model_name": "gpt-6-astra",
+      "model_name": "grok-4.5",
+      "model_ratio": 1,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "claude-fable-5-1",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-haiku-5-5",
+      "model_ratio": 0.05,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-7",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-sonnet-4-5-20250929",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-6.1-sol",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-fable-5",
       "model_ratio": 5,
       "completion_ratio": 5
     },
@@ -147,12 +186,37 @@
       "completion_ratio": 5
     },
     {
-      "model_name": "claude-haiku-4-5",
+      "model_name": "claude-opus-4-5",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-6",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-8",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-sonnet-5",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "codex-auto-review",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-haiku-4-5-20251001",
       "model_ratio": 0.5,
       "completion_ratio": 5
     },
     {
-      "model_name": "claude-opus-4-7",
+      "model_name": "claude-opus-4-5-20251101",
       "model_ratio": 2.5,
       "completion_ratio": 5
     },
@@ -167,84 +231,29 @@
       "completion_ratio": 5
     },
     {
-      "model_name": "grok-4.6",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "claude-opus-4-6",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-sonnet-5",
-      "model_ratio": 1,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-6.1-sol",
-      "model_ratio": 1,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-fable-5-1",
-      "model_ratio": 5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-opus-4-5",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-opus-4-5-20251101",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-opus-4-8",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-sonnet-4-5-20250929",
-      "model_ratio": 1.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "codex-auto-review",
-      "model_ratio": 2.5,
-      "completion_ratio": 6
-    },
-    {
       "model_name": "gpt-6-sol",
       "model_ratio": 1,
       "completion_ratio": 5
     },
     {
-      "model_name": "grok-4.5",
-      "model_ratio": 1,
-      "completion_ratio": 3
-    },
-    {
-      "model_name": "claude-fable-5",
-      "model_ratio": 5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-haiku-4-5-20251001",
+      "model_name": "claude-haiku-4-5",
       "model_ratio": 0.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-haiku-5-5",
-      "model_ratio": 0.05,
       "completion_ratio": 5
     },
     {
       "model_name": "claude-opus-5",
       "model_ratio": 2.5,
       "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-6-astra",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "grok-4.6",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
     }
   ],
   "derivation": {
@@ -263,6 +272,16 @@
     ],
     "models": [
       {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-4-5",
+        "input": 3,
+        "output": 15,
+        "multiple": 1.5,
+        "shape_ok": true,
+        "verdict": "legacy",
+        "why": "旧代数型号名，价格表已过期"
+      },
+      {
         "id": "gpt-6.2-astra",
         "name": "gpt-6.2-astra",
         "input": 75,
@@ -273,14 +292,14 @@
         "why": "输出/输入比 2，官方是 5，不是同一计价形状"
       },
       {
-        "id": "gpt-6.2-sol",
-        "name": "gpt-6.2-sol",
-        "input": 75,
-        "output": 150,
-        "multiple": 37.5,
-        "shape_ok": false,
-        "verdict": "shape",
-        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
+        "id": "deepseek-flash",
+        "name": "deepseek-v4.1-flash",
+        "input": 2,
+        "output": 8,
+        "multiple": 6.667,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
       },
       {
         "id": "claude-opus-5-5",
@@ -293,24 +312,14 @@
         "why": "输出/输入比与官方一致，这一行能单独算"
       },
       {
-        "id": "claude-sonnet-5-5",
-        "name": "claude-sonnet-4-5",
-        "input": 3,
-        "output": 15,
-        "multiple": 1.5,
-        "shape_ok": true,
-        "verdict": "legacy",
-        "why": "旧代数型号名，价格表已过期"
-      },
-      {
-        "id": "deepseek-flash",
-        "name": "deepseek-v4.1-flash",
-        "input": 2,
-        "output": 8,
-        "multiple": 6.667,
-        "shape_ok": true,
-        "verdict": "ok",
-        "why": "输出/输入比与官方一致，这一行能单独算"
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "input": 75,
+        "output": 150,
+        "multiple": 37.5,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
       }
     ],
     "rows_ok": 2,
@@ -322,19 +331,19 @@
         "multiple": 9.375
       },
       {
-        "id": "gpt-6.2-sol",
-        "name": "gpt-6.2-sol",
-        "multiple": 37.5
-      },
-      {
         "id": "deepseek-flash",
         "name": "deepseek-v4.1-flash",
         "multiple": 6.667
+      },
+      {
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "multiple": 37.5
       }
     ],
     "flat_price": null,
     "confidence": "low",
     "note": "站内倍率吵成一团：5 个对得上的模型里没有多数派（最集中的只占 25%），从 1 倍散到 37.5 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。 另：旧代数命名 claude-sonnet-4-5 已单列，不参与判定。",
-    "computed_at": "2026-11-26T16:17:31.318Z"
+    "computed_at": "2026-11-26T16:35:14.895Z"
   }
 }

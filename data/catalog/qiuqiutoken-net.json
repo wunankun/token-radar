@@ -1,0 +1,641 @@
+{
+  "station_id": "qiuqiutoken-net",
+  "endpoint": "https://qiuqiutoken.net/api/pricing",
+  "fetched_at": "2026-11-26T16:34:46.961Z",
+  "http_status": 200,
+  "total": 79,
+  "models": [
+    {
+      "n": "claude-opus-4-7-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Moonshot"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini专用-外接供应商"
+    },
+    {
+      "n": "gemini-4-carbon-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini专用-Ultra号池"
+    },
+    {
+      "n": "claude-opus-4-6-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2.5-sunburst-key",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.4,
+      "g": 1,
+      "gn": "CodeX专用-官Key"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "CodeX专用-Pro号池-稳定"
+    },
+    {
+      "n": "claude-opus-4.5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "Claude Code专用-外接供应商"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "CodeX专用-Pro号池-稳定"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Grok专用-SuperGrok"
+    },
+    {
+      "n": "claude-opus-4-8-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Code专用-外接供应商"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code专用-特惠"
+    },
+    {
+      "n": "deepseek-v4.1-flash-1017",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "DeepSeek"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini专用-Ultra号池"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini专用-外接供应商"
+    },
+    {
+      "n": "gemini-4-argon-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini专用-Ultra号池"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "CodeX专用-Pro号池-稳定"
+    },
+    {
+      "n": "claude-opus-5.5-thinking",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2.6-sunburst-key",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "CodeX专用-官Key"
+    },
+    {
+      "n": "grok-build-0.1",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Grok专用-SuperGrok"
+    },
+    {
+      "n": "gemini-4-argon-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini专用-外接供应商"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini专用-Ultra号池"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Grok专用-SuperGrok"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code专用-特惠"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Claude Code专用-特惠"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "DeepSeek"
+    },
+    {
+      "n": "gemini-4-argon-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini专用-Ultra号池"
+    },
+    {
+      "n": "gemini-4-hydrogen-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini专用-Ultra号池"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "CodeX专用-Pro号池-稳定"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Grok专用-SuperGrok"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 0.215,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code专用-特惠"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 6,
+      "c": 2,
+      "cr": 0.0833,
+      "g": 1,
+      "gn": "DeepSeek"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "智谱"
+    },
+    {
+      "n": "jev-1.13.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "TypeSafe"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini专用-Ultra号池"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "CodeX专用-Pro号池-稳定"
+    },
+    {
+      "n": "claude-sonnet-4-6-thinking",
+      "r": 1.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-carbon-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini专用-Ultra号池"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "CodeX专用-Pro号池-稳定"
+    },
+    {
+      "n": "claude-opus-4.5-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-thinking",
+      "r": 1.496,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code专用-特惠"
+    },
+    {
+      "n": "claude-sonnet-5.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "DeepSeek"
+    },
+    {
+      "n": "gpt-image-2.6-flare-key",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "CodeX专用-官Key"
+    },
+    {
+      "n": "gemini-4-hydrogen-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini专用-Ultra号池"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "CodeX专用-Pro号池-稳定"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code专用-外接供应商"
+    },
+    {
+      "n": "jev-1.14.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "TypeSafe"
+    },
+    {
+      "n": "gpt-image-2.5-flare-key",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.4,
+      "g": 1,
+      "gn": "CodeX专用-官Key"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini专用-Ultra号池"
+    },
+    {
+      "n": "gemini-4-hydrogen-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini专用-Ultra号池"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "CodeX专用-Pro号池-稳定"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code专用-特惠"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code专用-特惠"
+    },
+    {
+      "n": "minimax-video-h3",
+      "r": 5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "MiniMax"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini专用-Ultra号池"
+    },
+    {
+      "n": "gemini-4-carbon-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini专用-Ultra号池"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "CodeX专用-Pro号池-稳定"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "CodeX专用-Pro号池-稳定"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 0.355,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code专用-特惠"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code专用-特惠"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code专用-特惠"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Moonshot"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Code专用-特惠"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini专用-外接供应商"
+    },
+    {
+      "n": "grok-4.3",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Grok专用-SuperGrok"
+    },
+    {
+      "n": "claude-opus-5-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-5-thinking",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.07,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code专用-特惠"
+    },
+    {
+      "n": "minimax-video-h3-max",
+      "r": 5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "MiniMax"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "CodeX专用-Pro号池-稳定"
+    },
+    {
+      "n": "claude-sonnet-4-5-thinking",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-haiku-4.5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2-key",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.4,
+      "g": 1,
+      "gn": "CodeX专用-官Key"
+    }
+  ]
+}

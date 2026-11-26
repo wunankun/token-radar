@@ -1,0 +1,1057 @@
+{
+  "station_id": "new-vethra-top",
+  "endpoint": "https://new.vethra.top/api/pricing",
+  "fetched_at": "2026-11-26T16:32:43.153Z",
+  "http_status": 200,
+  "total": 131,
+  "models": [
+    {
+      "n": "gemini-4-hydrogen-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gpt-5.6-sol-openai-compact",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 2.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt特惠不降智分组2"
+    },
+    {
+      "n": "gpt-6",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-hydrogen-sonar",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt特惠不降智分组1"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "gemini-2.5-flash-lite",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-3.8-flash-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.55,
+      "c": 3.1818,
+      "cr": 0.2727,
+      "g": 1,
+      "gn": "国模 Anthropic 端点"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "claude-opus-4-5-20251101-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "claude-opus-5-5-high",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "claude-sonnet-5-5-medium",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-3.5-flash-extra-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠cursor"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt特惠不降智分组1"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "claude-opus-5-5-medium",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "claude-opus-4-1-20250805",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ccmax微注入"
+    },
+    {
+      "n": "deepseek-v4-flash-0731",
+      "r": 0.84,
+      "c": 2.9167,
+      "cr": 0.0595,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "glm-5.3-flashx",
+      "r": 1,
+      "c": 3.5,
+      "cr": 0.285,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "gemini-3.8-flash-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-3.8-flash-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-hydrogen-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-neon-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "deepseek-v4-pro-0813",
+      "r": 2.35,
+      "c": 2.9574,
+      "cr": 0.0426,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "claude-sonnet-5-5-high",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-hydrogen-tiered-xhigh",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-carbon-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "claude-opus-5-thinking",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "gpt-5.5-openai-compact",
+      "r": 2.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 0.375,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "claude-sonnet-4-20250514",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ccmax微注入"
+    },
+    {
+      "n": "gpt-image-2.5-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.7-flash-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt特惠不降智分组1"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 7,
+      "c": 3,
+      "cr": 0.1286,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "gpt-image-2.6-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-carbon-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-hydrogen-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ccmax微注入"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "mimo-v2.5-pro",
+      "r": 1.55,
+      "c": 1.9677,
+      "cr": 0.0323,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "MiniMax-M2.7",
+      "r": 1.05,
+      "c": 4,
+      "cr": 0.2381,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "claude-3-7-sonnet-20250219",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ccmax微注入"
+    },
+    {
+      "n": "kimi-k2.6",
+      "r": 3.35,
+      "c": 4.1791,
+      "cr": 0.1791,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ccmax微注入"
+    },
+    {
+      "n": "claude-opus-5-5-thinking",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "deepseek-v4.1-flash-1017",
+      "r": 0.84,
+      "c": 2.9167,
+      "cr": 0.0595,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "gemini-3.1-flash-image",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gpt-5.6",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "gpt-image-2.6-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-2.5-flash-thinking",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-3.5-flash-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "claude-opus-4-20250514",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ccmax微注入"
+    },
+    {
+      "n": "gpt-image-2.5-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-neon-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "hy3",
+      "r": 0.5,
+      "c": 4.1,
+      "cr": 0.3,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "gemini-4-argon-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-hydrogen-xhigh",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929-thinking",
+      "r": 1.496,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "gemini-3.7-flash-tiered",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "claude-opus-4-7-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "claude-sonnet-5-5-low",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-neon-xhigh",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gpt-5.6-terra-openai-compact",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "MiniMax-M3",
+      "r": 1.05,
+      "c": 4,
+      "cr": 0.2381,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "claude-opus-4-6-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "qwen3.8-flash",
+      "r": 0.54,
+      "c": 2.9259,
+      "cr": 0.1019,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "claude-3-5-haiku-20241022",
+      "r": 0.4,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ccmax微注入"
+    },
+    {
+      "n": "gpt-5.3-codex-spark",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "claude-sonnet-4-6-thinking",
+      "r": 1.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 0.84,
+      "c": 2.9167,
+      "cr": 0.0595,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "gemini-3-flash-agent",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "claude-3-5-sonnet-20240620",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ccmax微注入"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "高智商kiro"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "glm-5.1",
+      "r": 4.9,
+      "c": 3.1531,
+      "cr": 0.1939,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt特惠不降智分组1"
+    },
+    {
+      "n": "claude-fable-5-1-thinking",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "hy4-preview",
+      "r": 2.9,
+      "c": 3.0172,
+      "cr": 0.0517,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "gemini-4-argon-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-hydrogen-tiered-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-neon-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "qwen3.7-max",
+      "r": 8.75,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国模 Anthropic 端点"
+    },
+    {
+      "n": "MiniMax-M2.7-highspeed",
+      "r": 1.05,
+      "c": 4,
+      "cr": 0.2381,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "claude-opus-4-8-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "claude-sonnet-5-thinking",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特惠kiro"
+    },
+    {
+      "n": "deepseek-v4-flash-vision-exp",
+      "r": 0.84,
+      "c": 2.9167,
+      "cr": 0.0595,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4.9,
+      "c": 3.1531,
+      "cr": 0.1939,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "mimo-v2.5",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "gpt-6.2-astra-law",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt特惠不降智分组1"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 3.85,
+      "c": 4.5455,
+      "cr": 0.1948,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "gpt-5.2",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.0714,
+      "g": 1,
+      "gn": "gpt不降智分组"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ccmax微注入"
+    },
+    {
+      "n": "gemini-3.8-flash-tiered",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-carbon-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "claude-opus-5-5-low",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "claude-3-5-sonnet-20241022",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ccmax微注入"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4.9,
+      "c": 3.1531,
+      "cr": 0.1939,
+      "g": 1,
+      "gn": "国模 Openai 端点"
+    },
+    {
+      "n": "gemini-2.5-pro",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    },
+    {
+      "n": "gemini-4-argon-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini ultra"
+    }
+  ]
+}

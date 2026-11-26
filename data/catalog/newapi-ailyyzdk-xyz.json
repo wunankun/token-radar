@@ -1,0 +1,1049 @@
+{
+  "station_id": "newapi-ailyyzdk-xyz",
+  "endpoint": "https://newapi.ailyyzdk.xyz/api/pricing",
+  "fetched_at": "2026-11-26T16:34:38.790Z",
+  "http_status": 200,
+  "total": 130,
+  "models": [
+    {
+      "n": "deepseek-v4.1-flash-1017",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "国模008"
+    },
+    {
+      "n": "gpt-4o-audio-preview",
+      "r": 1.25,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "gpt-5.2-pro-2025-12-11",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "grok-4-5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "mimo-v2.6-flash",
+      "r": 1,
+      "c": 2,
+      "cr": 0.03,
+      "g": 1,
+      "gn": "国模008"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.5,
+      "c": 3.35,
+      "cr": 0.23,
+      "g": 1,
+      "gn": "国模015"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude MAX高缓存特惠"
+    },
+    {
+      "n": "claude-opus-4-20250514",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "gpt-4o-realtime-preview",
+      "r": 2.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "gemini-3.1-pro",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "qwen3.7-max",
+      "r": 6,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国模008"
+    },
+    {
+      "n": "gpt-5.2",
+      "r": 0.875,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "claude-opus-4-5-20251101-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "grok-imagine-image-2026-03-02",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "gpt-5.4-openai-compact",
+      "r": 0.625,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "官转codex"
+    },
+    {
+      "n": "gpt-5.6",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "grok-4.20-0309-reasoning",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "gemini-3.1-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "composer-2.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "deepseek-v4-pro-0813",
+      "r": 2.25,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "国模008"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "grok-4.20-multi-agent-0309",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "grok-composer",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "glm-5.1",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国模003"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 4,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929-thinking",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 3.25,
+      "c": 4.1538,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国模003"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "aws"
+    },
+    {
+      "n": "minimax-m3.1-flash",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.12,
+      "g": 1,
+      "gn": "国模015"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "特价codexPRO号池"
+    },
+    {
+      "n": "gemini-3-flash-preview",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "gpt-image-1.5",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "特价codexPRO号池"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模003"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "gemini-2.5-flash-nothinking",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "grok",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "grok-4.3",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "MiniMax-M3",
+      "r": 1.05,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国模015"
+    },
+    {
+      "n": "qwen3.8-flash",
+      "r": 0.4,
+      "c": 3.375,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国模015"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 0.375,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "claude-sonnet-4",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "aws"
+    },
+    {
+      "n": "gpt-5.3-codex-spark",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "国模008"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "gemini-3-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "gemini-2.5-flash-lite",
+      "r": 0.05,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 4,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "cursor速刷渠道"
+    },
+    {
+      "n": "grok-imagine-image-quality-latest",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 0.05,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价满分cc"
+    },
+    {
+      "n": "claude-sonnet-4-5-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "满血逆向"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国模003"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "gpt-5.5-openai-compact",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "官转codex"
+    },
+    {
+      "n": "gemini-2.5-pro-thinking-128",
+      "r": 0.625,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "grok-build-latest",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "claude-sonnet-4-6-thinking",
+      "r": 1.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "满血逆向"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "grok-latest",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "minimax-m3",
+      "r": 1.05,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国模008"
+    },
+    {
+      "n": "claude-sonnet-4-20250514",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "claude-opus-4-6-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "满血逆向"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 6,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国模008"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "grok-composer-2.5-fast",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "gpt-6.2-astra-ultrafast",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "ultrafast"
+    },
+    {
+      "n": "grok-4.20-non-reasoning",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "grok-build",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "grok-imagine-edit",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "grok-4.5-latest",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "grok-4.20-reasoning",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "grok-imagine-image-2.0-latest",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "grok-imagine-video-1.5-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "grok-build-0.1",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "grok-imagine-image",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "grok-4.6-latest",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "gpt-6-astra-ultrafast",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "ultrafast"
+    },
+    {
+      "n": "gpt-6.1-sol-ultrafast",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "ultrafast"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 6.5,
+      "c": 5.2308,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模015"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "glm-5.3-flashx",
+      "r": 1,
+      "c": 3.5,
+      "cr": 0.285,
+      "g": 1,
+      "gn": "国模008"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "gemini-2.5-pro",
+      "r": 0.625,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "grok-imagine-image-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "claude-opus-4-5-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "满血逆向"
+    },
+    {
+      "n": "gpt-5.2-chat-latest",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "gpt-5.2-pro",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "grok-4.7-latest",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国模003"
+    },
+    {
+      "n": "hy3",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国模015"
+    },
+    {
+      "n": "gpt-5.4-2026-03-05",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "claude-opus-4-1",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "aws"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-preview",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价Gemini"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "gpt-6.2-sol-ultrafast",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "ultrafast"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "grok-imagine-image-quality-20260403",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "gpt-5.2-2025-12-11",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "福利codex"
+    },
+    {
+      "n": "claude-opus-4-1-20250805",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价cc"
+    },
+    {
+      "n": "grok-4.20-0309-non-reasoning",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "hy4-preview",
+      "r": 3,
+      "c": 3,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "国模008"
+    },
+    {
+      "n": "mimo-v2.6-pro",
+      "r": 2.175,
+      "c": 2,
+      "cr": 0.0083,
+      "g": 1,
+      "gn": "国模008"
+    },
+    {
+      "n": "claude-opus-5.5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "特价满分cc"
+    }
+  ]
+}

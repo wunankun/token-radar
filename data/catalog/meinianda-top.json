@@ -1,0 +1,809 @@
+{
+  "station_id": "meinianda-top",
+  "endpoint": "https://meinianda.top/api/pricing",
+  "fetched_at": "2026-11-26T16:34:39.790Z",
+  "http_status": 200,
+  "total": 100,
+  "models": [
+    {
+      "n": "claude-fable-5.1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "MiniMax-M2.7-highspeed",
+      "r": 0.42,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模-特惠"
+    },
+    {
+      "n": "gemini-4-argon-ultra-0.5x",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.07,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-福利"
+    },
+    {
+      "n": "krea/krea-lora-the-explorer",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "sd2.5-720p-official",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grokultra"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "Claude-Cursor"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "ClaudeKiro-福利"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.04,
+      "g": 1,
+      "gn": "国模-特惠"
+    },
+    {
+      "n": "MiniMax-M3",
+      "r": 0.21,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国模-特惠"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Grokultra"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 1.5,
+      "c": 2,
+      "cr": 0.0067,
+      "g": 1,
+      "gn": "国模-特惠"
+    },
+    {
+      "n": "claude-opus-4.8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "sd2.0-720p-fast-official-nsfw",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "GPT-福利"
+    },
+    {
+      "n": "poolside/laguna-xs-2.1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001-thinking",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "claude-opus-4-7-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-福利"
+    },
+    {
+      "n": "sd2.0-720p-mini-official",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "hy3",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国模-特惠"
+    },
+    {
+      "n": "minimax-m3.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模-特惠"
+    },
+    {
+      "n": "kimi-k2.6",
+      "r": 3.25,
+      "c": 4.1538,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国模高质量"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-稳定PRO不降智"
+    },
+    {
+      "n": "tencent/HY-Motion-1.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "sd2.0-720p-fast-official",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-企业分组"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "sd2.0-720p-official-nsfw",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 2,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模-特惠"
+    },
+    {
+      "n": "Image-2.1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeMax-稳定"
+    },
+    {
+      "n": "claude-opus-4-6-thinking",
+      "r": 2,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-福利"
+    },
+    {
+      "n": "grok-imagine-video-1.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "claude-opus-4.5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模-特惠"
+    },
+    {
+      "n": "claude-sonnet-4-6-thinking",
+      "r": 1.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "krea/Krea-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "mimo-v2.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模-特惠"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-Cursor"
+    },
+    {
+      "n": "claude-opus-5.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 3.25,
+      "c": 1,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国模高质量"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "ClaudeKiro-企业分组"
+    },
+    {
+      "n": "microsoft/kosmos-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "hy4-preview",
+      "r": 3,
+      "c": 3,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "国模-特惠"
+    },
+    {
+      "n": "glm-5.3-flashx",
+      "r": 1,
+      "c": 3.5,
+      "cr": 0.285,
+      "g": 1,
+      "gn": "国模高质量"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "ClaudeKiro-福利"
+    },
+    {
+      "n": "claude-sonnet-4-5-thinking",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "nvidia/llama-nemotron-embed-vl-1b-v2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "minimaxai/minimax-m3.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 4,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "Claude-Cursor"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 0.8,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国模-特惠"
+    },
+    {
+      "n": "Qwen/Qwen-Image-Edit-2511",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-福利"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-企业分组"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.08,
+      "c": 3.5,
+      "cr": 0.2875,
+      "g": 1,
+      "gn": "特价-国模"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-福利"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-稳定PRO不降智"
+    },
+    {
+      "n": "sd2.0-720p-official",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "google/deplot",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "deepseek-ai/deepseek-v4.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "MiniMax-M2.7",
+      "r": 0.21,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国模-特惠"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-福利"
+    },
+    {
+      "n": "mimo-v2.6-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模-特惠"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-福利"
+    },
+    {
+      "n": "claude-sonnet-4",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "stepfun-ai/step-5-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "kimi-k2.7-code-highspeed",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模高质量"
+    },
+    {
+      "n": "glm-5.3-prime",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模高质量"
+    },
+    {
+      "n": "Image-2.1-Turbo",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "claude-sonnet-5-thinking",
+      "r": 1,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-福利"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1.25,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-稳定PRO不降智"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 1,
+      "c": 1,
+      "cr": 1,
+      "g": 1,
+      "gn": "Grokultra"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "claude-opus-4-8-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "mimo-v2.5-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模-特惠"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "grok-imagine-video-1.5-lite",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "claude-opus-5-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "sd2.5-720p-official-nsfw",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "kimi-k3.1-pro-highspeed",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模高质量"
+    },
+    {
+      "n": "deepseek-v4.1-flash-1017",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "特价-国模"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "特价-国模"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 4,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "GPT-福利"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-稳定"
+    },
+    {
+      "n": "Qwen/Qwen-Image-2512",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认用户"
+    },
+    {
+      "n": "gemini-3.1-pro",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ClaudeKiro-福利"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 0.8,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国模-特惠"
+    }
+  ]
+}

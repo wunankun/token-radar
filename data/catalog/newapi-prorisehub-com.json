@@ -1,0 +1,2937 @@
+{
+  "station_id": "newapi-prorisehub-com",
+  "endpoint": "https://newapi.prorisehub.com/api/pricing",
+  "fetched_at": "2026-11-26T16:34:34.245Z",
+  "http_status": 200,
+  "total": 366,
+  "models": [
+    {
+      "n": "gpt-5-mini",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-hydrogen-tiered",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.8-27b",
+      "r": 0.107,
+      "c": 11.9159,
+      "cr": 0.7009,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "sonar-pro",
+      "r": 1.496,
+      "c": 5.0114,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 6,
+      "c": 3,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v3.2-exp",
+      "r": 0.135,
+      "c": 1.5185,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3-pro-image",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.20",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4o-mini-transcribe-2025-03-20",
+      "r": 0.625,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "ministral-3b-2512",
+      "r": 0.05,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-coder",
+      "r": 0.11,
+      "c": 4.3182,
+      "cr": 0.3333,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-omni-flash",
+      "r": 0.029,
+      "c": 3.9655,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-plus-20260420",
+      "r": 0.15,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-embedding-2-preview",
+      "r": 0.1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-plus-2026-02-15",
+      "r": 0.4,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "cf/bge-base-en-v1.5",
+      "r": 0.0335,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "whisper-1",
+      "r": 15,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3-flash-preview",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-robotics-er-2-preview",
+      "r": 0.75,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "o3-mini",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "llama-3.2-3b-instruct",
+      "r": 0.015,
+      "c": 1.6667,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mistral-small-2603",
+      "r": 0.075,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 4,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4.1",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k2.6",
+      "r": 3.25,
+      "c": 4.154,
+      "cr": 0.1684,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.7-max-2026-05-17",
+      "r": 6,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-luna-pro",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "ember-1",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-2.5-pro-preview",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4.5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.5-medium",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k2.8-preview",
+      "r": 3.25,
+      "c": 4.1538,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-search",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "llama-3.1-8b-instruct",
+      "r": 0.01,
+      "c": 2.5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-c",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.1-codex",
+      "r": 0.875,
+      "c": 7.9439,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "ministral-14b-2512",
+      "r": 0.1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "auto",
+      "r": 0.425,
+      "c": 1.8235,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-chat-latest",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-vl-ocr-2025-11-20",
+      "r": 0.15,
+      "c": 1.6667,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.8-2.4t-a95b",
+      "r": 1,
+      "c": 3,
+      "cr": 0.125,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "tts-1",
+      "r": 7.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4o",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.4-pro",
+      "r": 15,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.8-flash-lite-tts",
+      "r": 0.75,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "seed-2.0-code",
+      "r": 0.25,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.1",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mimo-v2.6-pro-ultraspeed",
+      "r": 2.175,
+      "c": 2,
+      "cr": 0.0083,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-14b",
+      "r": 0.072,
+      "c": 3.9861,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.8-flash-tts",
+      "r": 0.75,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-nano-banana-2.1",
+      "r": 0.75,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.6-plus",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "seed-1.6",
+      "r": 0.125,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-flash-02-23",
+      "r": 0.0325,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.6-flash",
+      "r": 0.6,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.5-high",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemma-3-27b-it",
+      "r": 0.125,
+      "c": 2,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-astra-pro",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-plus",
+      "r": 0.4,
+      "c": 2.5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-235b-a22b-thinking-2507",
+      "r": 0.225,
+      "c": 7.7778,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4.6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.1-pro-preview-customtools",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "ling-3.0-flash-vl",
+      "r": 0.03,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-30b-a3b-instruct-2507",
+      "r": 0.05,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.4-nano",
+      "r": 0.1,
+      "c": 6.25,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "hy-mt2-30b-a3b",
+      "r": 0.037,
+      "c": 3.9865,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k2.7-code-highspeed",
+      "r": 6.5,
+      "c": 4.1538,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mimo-v2.5-pro",
+      "r": 0.2175,
+      "c": 2,
+      "cr": 0.0083,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 4.5,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemma-4-26b-a4b-it",
+      "r": 0.021,
+      "c": 5.2381,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "hy4-preview",
+      "r": 0.417,
+      "c": 2.9988,
+      "cr": 0.0504,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mimo-v2.6-pro",
+      "r": 0.2175,
+      "c": 2,
+      "cr": 0.0083,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-2.5-72b-instruct",
+      "r": 0.031,
+      "c": 3.7258,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-4.5",
+      "r": 0.143,
+      "c": 3.993,
+      "cr": 0.1833,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-plus-2026-04-20",
+      "r": 0.4,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.6-flash-2026-04-16",
+      "r": 0.6,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-2.5-flash-lite",
+      "r": 0.05,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-flash-0731",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.2-pro",
+      "r": 9.45,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-plus-character",
+      "r": 0.0575,
+      "c": 2.4957,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "step-5-preview",
+      "r": 0.5,
+      "c": 2.7,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-flash-lite-latest",
+      "r": 0.05,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "sonar",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "tts-1-hd",
+      "r": 15,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-r1-distill-qwen-1.5b",
+      "r": 0.009,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-4.6",
+      "r": 0.143,
+      "c": 3.993,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-plus",
+      "r": 0.4,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v3.1-terminus",
+      "r": 0.135,
+      "c": 3.7037,
+      "cr": 0.8,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-pro-latest",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-4.7",
+      "r": 0.143,
+      "c": 3.993,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-3.5-turbo-16k",
+      "r": 1.5,
+      "c": 1.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4.1-nano",
+      "r": 0.05,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.3-codex",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5-turbo",
+      "r": 0.36,
+      "c": 4.4444,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mistral-large",
+      "r": 1,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k2-0905",
+      "r": 0.25,
+      "c": 4,
+      "cr": 0.8,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "llama-4-scout",
+      "r": 0.04,
+      "c": 3.75,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5.1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5",
+      "r": 3,
+      "c": 3.6667,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "doubao-seed-2-1-pro",
+      "r": 0.4167,
+      "c": 5,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-terra-pro",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 6.5,
+      "c": 5.2308,
+      "cr": 0.1538,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.7-plus",
+      "r": 1,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-omni-flash",
+      "r": 1.1,
+      "c": 6.0455,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.7-flash-2026-07-15",
+      "r": 0.1,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.4,
+      "c": 3.5,
+      "cr": 0.2875,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.6-xhigh",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5-pro",
+      "r": 6.75,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-max",
+      "r": 1.2,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-plus-2025-12-01",
+      "r": 0.4,
+      "c": 2.5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "ling-3.0-flash",
+      "r": 0.0105,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-preview",
+      "r": 0.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-27b",
+      "r": 0.15,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "hunyuan-a13b-instruct",
+      "r": 0.07,
+      "c": 4.0714,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-397b-a17b",
+      "r": 0.215,
+      "c": 6,
+      "cr": 0.4091,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "cf/bge-m3",
+      "r": 0.006,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "MiniMax-M2.1",
+      "r": 0.15,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "minimax-m2.5",
+      "r": 0.1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 4,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "llama-3.1-70b-instruct",
+      "r": 0.36,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-reasoner",
+      "r": 0.07,
+      "c": 2,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-1-flash-1017",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.7-flash",
+      "r": 0.1,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "cf/qwen-embedding-0.6b",
+      "r": 0.006,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "MiniMax-M2.5-highspeed",
+      "r": 0.3,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-9b",
+      "r": 0.05,
+      "c": 1.5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "sonar-reasoning-pro",
+      "r": 1,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.1",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-vl-ocr",
+      "r": 0.3585,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-coder-flash-2025-07-28",
+      "r": 0.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "seed-2.1-turbo",
+      "r": 0.25,
+      "c": 2,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-embedding-2",
+      "r": 0.075,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.4-image-2",
+      "r": 4,
+      "c": 6,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mercury-2",
+      "r": 0.125,
+      "c": 3,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-vl-8b-instruct",
+      "r": 0.05,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.8-max-0902",
+      "r": 6,
+      "c": 3,
+      "cr": 0.125,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "step-3.7-flash",
+      "r": 0.1,
+      "c": 5.75,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "codestral-2508",
+      "r": 0.15,
+      "c": 3,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "command-r-08-2024",
+      "r": 0.075,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.2-fast-preview",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "seed-1.6-flash",
+      "r": 0.0375,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4.5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4.6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4",
+      "r": 15,
+      "c": 2,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.8-omni-flash",
+      "r": 0.075,
+      "c": 3.1333,
+      "cr": 0.1067,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "seed-2-1-turbo",
+      "r": 0.25,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "step-3.5-flash",
+      "r": 0.5,
+      "c": 1,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "o4-mini",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-plus-2025-01-25",
+      "r": 0.4,
+      "c": 2.5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-chat",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4.1-flash-1017",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5v-turbo",
+      "r": 0.3521,
+      "c": 4.4,
+      "cr": 0.24,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4o-mini-transcribe",
+      "r": 0.625,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-vl-30b-a3b-instruct",
+      "r": 0.05,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.7-max-preview",
+      "r": 6,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-flash",
+      "r": 0.1,
+      "c": 10,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-3-5-sonnet-c",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-plus-2025-11-05",
+      "r": 0.4,
+      "c": 2.5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-4.5v",
+      "r": 0.145,
+      "c": 2.9655,
+      "cr": 0.1833,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.3",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "llama-3.3-70b-instruct",
+      "r": 0.0445,
+      "c": 3.0899,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.7-max-2026-06-08",
+      "r": 6,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "cf/bge-small-en-v1.5",
+      "r": 0.01,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "command-r-plus-08-2024",
+      "r": 1.25,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "hy3",
+      "r": 0.066,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-pro-0813",
+      "r": 4.5,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3-pro-image-preview",
+      "r": 1,
+      "c": 60,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "nova-pro-v1",
+      "r": 0.508,
+      "c": 3.997,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemma-3-12b-it",
+      "r": 0.025,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-omni-plus-2026-03-15",
+      "r": 3.5,
+      "c": 5.7143,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-hydrogen-sonar",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "solar-pro4",
+      "r": 0.15,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-2.5-flash-thinking",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 1,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "MiniMax-M2.7-highspeed",
+      "r": 0.3,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mimo-v2.6-flash",
+      "r": 0.07,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.7-max-2026-05-20",
+      "r": 6,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "cf/embeddinggemma-300m",
+      "r": 0.0075,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "llama-4-maverick",
+      "r": 0.075,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-vl-235b-a22b-instruct",
+      "r": 0.15,
+      "c": 5,
+      "cr": 0.4762,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "phi-4",
+      "r": 0.0625,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "o3",
+      "r": 1,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-oss-safeguard-20b",
+      "r": 0.0375,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-flash-character",
+      "r": 0.125,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "cf/plamo-embedding-1b",
+      "r": 0.0095,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k3-256k",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "minimax-m3.1-flash",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-35b-a3b",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4.8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.3-flashx",
+      "r": 1.89,
+      "c": 3.3784,
+      "cr": 0.2432,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "MiniMax-M2.5",
+      "r": 0.15,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-flash",
+      "r": 0.011,
+      "c": 10,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-next-80b-a3b-instruct",
+      "r": 0.07,
+      "c": 10,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-flash-latest",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-max-longcontext",
+      "r": 0.1725,
+      "c": 3.9913,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mistral-nemo",
+      "r": 0.075,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-deep-search-planning",
+      "r": 0.1715,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-oss-20b",
+      "r": 0.025,
+      "c": 4,
+      "cr": 1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 3.25,
+      "c": 4.154,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.1-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4o-transcribe-diarize",
+      "r": 3,
+      "c": 1.6667,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-flash-character-2026-02-26",
+      "r": 0.09,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-chat-v3.1",
+      "r": 0.125,
+      "c": 3.8,
+      "cr": 0.52,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "sonar-deep-research",
+      "r": 1,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-plus-02-15",
+      "r": 0.13,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "seed-2.0-mini",
+      "r": 0.05,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-omni-1.1-flash",
+      "r": 0.75,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-oss-120b",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mistral-large-2512",
+      "r": 0.25,
+      "c": 3,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k3.1-pro-highspeed",
+      "r": 13,
+      "c": 5.2308,
+      "cr": 0.1538,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4o-2024-05-13",
+      "r": 2.5,
+      "c": 3,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k2.5",
+      "r": 2,
+      "c": 4,
+      "cr": 0.1667,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-mt-plus",
+      "r": 0.1295,
+      "c": 2.9923,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4o-mini",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.5-low",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-build",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "hy3-preview",
+      "r": 0.6,
+      "c": 3.3333,
+      "cr": 0.3333,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "command-r7b-12-2024",
+      "r": 0.0188,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-flash-2025-07-28",
+      "r": 0.6,
+      "c": 10,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-plus-2025-04-28",
+      "r": 0.4,
+      "c": 2.5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4o-transcribe",
+      "r": 3,
+      "c": 1.6667,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-2.5-coder-32b-instruct",
+      "r": 0.33,
+      "c": 1.5152,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-2.5-pro",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5-image-mini",
+      "r": 1.25,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.20-multi-agent",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "ling-3.1-flash",
+      "r": 0.0105,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "ministral-8b-2512",
+      "r": 0.075,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen2.5-vl-72b-instruct",
+      "r": 0.505,
+      "c": 1,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.6-27b",
+      "r": 0.3,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4.1-mini",
+      "r": 0.2,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-4.6v",
+      "r": 0.0725,
+      "c": 2.9655,
+      "cr": 0.1833,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "nemotron-3-super-120b-a12b",
+      "r": 0.133,
+      "c": 3.0038,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-30b-a3b",
+      "r": 0.04,
+      "c": 3.625,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-32b",
+      "r": 0.045,
+      "c": 2.7778,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-3-7-sonnet-c",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4o-2024-08-06",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-deep-research-2025-12-15",
+      "r": 39.5,
+      "c": 2.9873,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-plus-2025-07-14",
+      "r": 0.4,
+      "c": 2.5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen4-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-4.5-air",
+      "r": 0.0572,
+      "c": 2.5022,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "hy-mt2-1.8b",
+      "r": 0.022,
+      "c": 4.0227,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.6-plus-2026-04-02",
+      "r": 1,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.7-max",
+      "r": 6,
+      "c": 3,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-haiku-4.5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.7-plus-2026-05-26",
+      "r": 1,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.2",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-coder-next",
+      "r": 0.079,
+      "c": 5.3165,
+      "cr": 0.5833,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.6-35b-a3b",
+      "r": 0.124,
+      "c": 5.9879,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.1-pro",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "seed-2.0-lite",
+      "r": 0.125,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-122b-a10b",
+      "r": 0.2,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5-nano",
+      "r": 0.0225,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4o-mini-transcribe-2025-12-15",
+      "r": 0.625,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.6-low",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.6-medium",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "minimax-m2.7",
+      "r": 1.09,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-c",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-long",
+      "r": 0.25,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-235b-a22b-2507",
+      "r": 0.0438,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4o-2024-11-20",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "MiniMax-M3",
+      "r": 0.15,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-3.5-turbo-0613",
+      "r": 1.5,
+      "c": 1.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemma-4-31b-it",
+      "r": 0.045,
+      "c": 3.7778,
+      "cr": 0.5556,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "hy-mt2-7b",
+      "r": 0.037,
+      "c": 3.9865,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-r1-0528",
+      "r": 0.287,
+      "c": 3.9965,
+      "cr": 0.7,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-flash-2026-02-23",
+      "r": 0.1,
+      "c": 10,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "seed-1.8",
+      "r": 0.25,
+      "c": 2,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "longcat-2.0",
+      "r": 0.15,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.8-flash",
+      "r": 0.4,
+      "c": 3.375,
+      "cr": 0.1067,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "ui-tars-1.5-7b",
+      "r": 0.05,
+      "c": 2,
+      "cr": 1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-chat-v3-0324",
+      "r": 0.125,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-vl-plus",
+      "r": 0.0717,
+      "c": 10,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-ocr",
+      "r": 0.25,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-5.5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemma-3-4b-it",
+      "r": 0.025,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-coder-30b-a3b-instruct",
+      "r": 0.0265,
+      "c": 4.1887,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3-pro",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4.7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-sol-pro",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mimo-v2.5",
+      "r": 0.07,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "devstral-2512",
+      "r": 0.2,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-4.7-flash",
+      "r": 0.3,
+      "c": 3.6667,
+      "cr": 0.1833,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-flash-vision-exp",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "MiniMax-M2.7",
+      "r": 0.15,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3-coder-flash",
+      "r": 0.072,
+      "c": 3.9861,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "o1",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "cf/bge-large-en-v1.5",
+      "r": 0.102,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4o-mini-2024-07-18",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.1-codex-max",
+      "r": 0.5625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "muse-spark-open",
+      "r": 4.17,
+      "c": 3.4,
+      "cr": 0.12,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "nano-banana-2.1",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-doc-turbo",
+      "r": 0.0435,
+      "c": 1.6552,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v3.2",
+      "r": 0.133,
+      "c": 1.6692,
+      "cr": 0.1071,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "morph-v3-large",
+      "r": 0.45,
+      "c": 2.1111,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-omni-flash-2026-03-15",
+      "r": 1.1,
+      "c": 6.0455,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.5-omni-plus",
+      "r": 3.5,
+      "c": 5.7143,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-3-5-sonnet-20241022-c",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.3-prime",
+      "r": 1.4,
+      "c": 3.1429,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-embedding-001",
+      "r": 0.075,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4.1",
+      "r": 1,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "MiniMax-M2",
+      "r": 0.085,
+      "c": 9,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemma-2-27b-it",
+      "r": 0.325,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "MiniMax-M2.1-highspeed",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "tts-1-hd-1106",
+      "r": 15,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.6-high",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "morph-v3-fast",
+      "r": 0.4,
+      "c": 1.5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "voxtral-small-24b-2507",
+      "r": 0.075,
+      "c": 2.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-mt-lite",
+      "r": 0.3,
+      "c": 2.6667,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.5-transcribe",
+      "r": 0.75,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "minimax-m3",
+      "r": 1.09,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-mt-flash",
+      "r": 0.35,
+      "c": 2.7857,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-plus-latest",
+      "r": 0.4,
+      "c": 2.5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-max-1201",
+      "r": 1.2,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    }
+  ]
+}

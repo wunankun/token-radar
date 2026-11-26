@@ -1,0 +1,1713 @@
+{
+  "station_id": "api-deepflowapi-com",
+  "endpoint": "https://api.deepflowapi.com/api/pricing",
+  "fetched_at": "2026-11-26T16:34:56.958Z",
+  "http_status": 200,
+  "total": 213,
+  "models": [
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Kiro-Claude-1"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Codex-Gpt-1"
+    },
+    {
+      "n": "gemini-3-flash-preview",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Anti-Gemini-1"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Anti-Gemini-1"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex-Gpt-1"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 4,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Codex-Gpt-1"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 4,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "Claude-Code-1"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Anti-Gemini-1"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex-Gpt-1"
+    },
+    {
+      "n": "gemini-3.1-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Vertex-Gemini-1"
+    },
+    {
+      "n": "gpt-image-2",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.4,
+      "g": 1,
+      "gn": "Codex-Gpt-2"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Codex-Gpt-1"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 0.15,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex-Gpt-1"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Aistudio-Gemini-3"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Kiro-Claude-1"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-1"
+    },
+    {
+      "n": "gpt-image-2.5-sunburst",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.4,
+      "g": 1,
+      "gn": "Codex-Gpt-2"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Aistudio-Gemini-2"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-3"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Anti-Gemini-2"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 0.05,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-4"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-1"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Aistudio-Gemini-3"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-1"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "Claude-Code-1"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-1"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Anti-Gemini-1"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex-Gpt-1"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-3"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Anti-Gemini-2"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Aistudio-Gemini-2"
+    },
+    {
+      "n": "gpt-image-2.6-sunburst",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.4,
+      "g": 1,
+      "gn": "Codex-Gpt-2"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.075,
+      "c": 3.3333,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gpt-image-2.5-flare",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.4,
+      "g": 1,
+      "gn": "Codex-Gpt-2"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 0.05,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-1"
+    },
+    {
+      "n": "gemini-3-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Aistudio-Gemini-2"
+    },
+    {
+      "n": "gpt-4o-mini",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex-Gpt-1"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-Code-1"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-1"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 0.7,
+      "c": 3.1429,
+      "cr": 0.1857,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gpt-image-2.6-flare",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.4,
+      "g": 1,
+      "gn": "Codex-Gpt-2"
+    },
+    {
+      "n": "gpt-4o",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Cli-Grok-1"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Codex-Gpt-1"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Aistudio-Gemini-3"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 0.66,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gpt-4.1",
+      "r": 1,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "Azure-Gpt-2"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 0.375,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-2"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-1"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-Code-1"
+    },
+    {
+      "n": "deepseek-v4-flash-0731",
+      "r": 0.22,
+      "c": 3,
+      "cr": 0.0318,
+      "g": 1,
+      "gn": "deepseek-1"
+    },
+    {
+      "n": "gpt-5.1-2025-11-13",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "gpt-4.1-mini",
+      "r": 0.2,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 1,
+      "c": 3,
+      "cr": 0.125,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gpt-5.2",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-3"
+    },
+    {
+      "n": "gemini-3.1-flash-tts-preview",
+      "r": 0.5,
+      "c": 20,
+      "cr": null,
+      "g": 1,
+      "gn": "Vertex-Gemini-2"
+    },
+    {
+      "n": "gpt-5",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 0.15,
+      "c": 8.34,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Anti-Gemini-1"
+    },
+    {
+      "n": "gpt-5-mini",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-3"
+    },
+    {
+      "n": "gemini-3.8-flash-tts",
+      "r": 0.25,
+      "c": 18,
+      "cr": null,
+      "g": 1,
+      "gn": "Aistudio-Gemini-3"
+    },
+    {
+      "n": "MiniMax-M3.1-Flash",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gpt-5.1",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "qwen3.6-35b-a3b",
+      "r": 0.1875,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-2"
+    },
+    {
+      "n": "qwen4-max",
+      "r": 0.75,
+      "c": 3,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "qwen3.8-27b",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Self-Deployed-3"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-1"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Cli-Grok-1"
+    },
+    {
+      "n": "qwen3.8-max-0902",
+      "r": 1,
+      "c": 3,
+      "cr": 0.125,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "qwen3.8-flash",
+      "r": 0.075,
+      "c": 3.1333,
+      "cr": 0.1067,
+      "g": 1,
+      "gn": "Alibaba-2"
+    },
+    {
+      "n": "doubao-seed-2-1-pro-260915",
+      "r": 0.45,
+      "c": 5,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "gpt-5.4-nano",
+      "r": 0.1,
+      "c": 6.25,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-3"
+    },
+    {
+      "n": "gpt-5-2025-08-07",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "grok-4-20-non-reasoning",
+      "r": 0.625,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Xai-Grok-1"
+    },
+    {
+      "n": "qwen3.6-27b",
+      "r": 0.3,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-2"
+    },
+    {
+      "n": "gpt-4.1-nano-2025-04-14",
+      "r": 0.05,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Azure-Gpt-2"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Cli-Grok-1"
+    },
+    {
+      "n": "gpt-5-nano",
+      "r": 0.025,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-2"
+    },
+    {
+      "n": "qwen3.5-27b",
+      "r": 0.15,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "gpt-4o-mini-2024-07-18",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "qwen3.5-35b-a3b",
+      "r": 0.125,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-1"
+    },
+    {
+      "n": "deepseek-v4-pro-0813",
+      "r": 0.66,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "deepseek-1"
+    },
+    {
+      "n": "grok-4.3",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Azure-Grok-1"
+    },
+    {
+      "n": "MiniMax-M3",
+      "r": 0.15,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "gemini-2.5-flash-lite",
+      "r": 0.05,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Anti-Gemini-2"
+    },
+    {
+      "n": "doubao-seed-2-1-pro-260628",
+      "r": 0.45,
+      "c": 5,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "gpt-3.5-turbo",
+      "r": 0.25,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-4"
+    },
+    {
+      "n": "qwen3.8-omni-flash",
+      "r": 0.075,
+      "c": 3.1333,
+      "cr": 0.1067,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "deepseek-v3-1",
+      "r": 0.2899,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gpt-4.1-mini-2025-04-14",
+      "r": 0.2,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "doubao-seed-2-1-turbo-260628",
+      "r": 0.225,
+      "c": 5,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "qwen3.7-max",
+      "r": 1.25,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "gpt-5-search-api",
+      "r": 0.625,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Openai-Gpt-1"
+    },
+    {
+      "n": "gpt-4o-2024-11-20",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 0.7,
+      "c": 3.1429,
+      "cr": 0.1857,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gpt-5-mini-2025-08-07",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-3"
+    },
+    {
+      "n": "mimo-v2.6-pro",
+      "r": 0.2175,
+      "c": 2,
+      "cr": 0.0083,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "qwen3.5-122b-a10b",
+      "r": 0.2,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "qwen3.6-plus",
+      "r": 0.25,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-2"
+    },
+    {
+      "n": "doubao-seed-2-0-pro-260215",
+      "r": 0.24,
+      "c": 5,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "eleven_v4_turbo",
+      "r": 20,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Eleven-1"
+    },
+    {
+      "n": "qwen3.5-397b-a17b",
+      "r": 0.3,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "qwen3.5-plus",
+      "r": 0.2,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "kimi-k2.5",
+      "r": 0.3,
+      "c": 5.25,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "grok-4",
+      "r": 1.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Cli-Grok-1"
+    },
+    {
+      "n": "doubao-seed-2-0-lite-260215",
+      "r": 0.045,
+      "c": 6.1111,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "gpt-image-1.5",
+      "r": 2.5,
+      "c": 6.4,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-3"
+    },
+    {
+      "n": "kimi-k2.6",
+      "r": 0.475,
+      "c": 4.2105,
+      "cr": 0.1684,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gpt-5.5-pro",
+      "r": 15,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Openai-Gpt-1"
+    },
+    {
+      "n": "eleven_multilingual_v2",
+      "r": 40,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Eleven-1"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-preview",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Cli-Gemini-1"
+    },
+    {
+      "n": "gpt-4o-2024-08-06",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "Azure-Gpt-2"
+    },
+    {
+      "n": "gpt-4.1-2025-04-14",
+      "r": 1,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Azure-Gpt-2"
+    },
+    {
+      "n": "glm-5.1",
+      "r": 0.7,
+      "c": 3.1429,
+      "cr": 0.1857,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "qwen3-vl-plus",
+      "r": 0.1,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "doubao-seed-2-0-lite-260428",
+      "r": 0.045,
+      "c": 6.1111,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "mimo-v2.6-flash",
+      "r": 0.07,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "qwen3.7-plus",
+      "r": 0.2,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Alibaba-2"
+    },
+    {
+      "n": "qwen-plus",
+      "r": 0.2,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "qwen-flash",
+      "r": 0.025,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "gpt-5.3-codex",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Openai-Gpt-1"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 0.475,
+      "c": 4.2105,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gpt-4.1-nano",
+      "r": 0.05,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-2"
+    },
+    {
+      "n": "text-embedding-3-large",
+      "r": 0.065,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "eleven_v4",
+      "r": 40,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Eleven-1"
+    },
+    {
+      "n": "MiniMax-M2.5",
+      "r": 0.15,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "hy4",
+      "r": 0.417,
+      "c": 2.9988,
+      "cr": 0.0504,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "text-embedding-3-small",
+      "r": 0.01,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "qwen3-rerank",
+      "r": 0.05,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "gpt-5.4-pro",
+      "r": 15,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-4"
+    },
+    {
+      "n": "doubao-seed-2-0-code-preview-260215",
+      "r": 0.24,
+      "c": 5,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "gpt-4o-2024-05-13",
+      "r": 2.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "o4-mini",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "gpt-5-codex",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-4"
+    },
+    {
+      "n": "qwen-max",
+      "r": 0.8,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "gpt-4-turbo",
+      "r": 5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-4"
+    },
+    {
+      "n": "o3-mini",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "o3",
+      "r": 1,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "qwen3.5-plus-2026-02-15",
+      "r": 0.2,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "hy4-flash",
+      "r": 0.035,
+      "c": 4.0143,
+      "cr": 0.0429,
+      "g": 1,
+      "gn": "hunyuan-1"
+    },
+    {
+      "n": "eleven_flash_v2_5",
+      "r": 20,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Eleven-1"
+    },
+    {
+      "n": "eleven_v3",
+      "r": 40,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Eleven-1"
+    },
+    {
+      "n": "grok-4-20-reasoning",
+      "r": 0.625,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Xai-Grok-1"
+    },
+    {
+      "n": "glm-4-airx",
+      "r": 0.0265,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "o1",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "doubao-seed-1-8-251228",
+      "r": 0.06,
+      "c": 10,
+      "cr": null,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "gpt-chat-latest",
+      "r": 2.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-4"
+    },
+    {
+      "n": "llama-2-7b",
+      "r": 1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "qwen-plus-2025-12-01",
+      "r": 0.2,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "doubao-seed-1-6-250615",
+      "r": 0.06,
+      "c": 10,
+      "cr": null,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "gpt-5-search-api-2025-10-14",
+      "r": 0.625,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Openai-Gpt-1"
+    },
+    {
+      "n": "MiniMax-M2.7",
+      "r": 0.15,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Hailuo-3"
+    },
+    {
+      "n": "o4-mini-2025-04-16",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Azure-Gpt-2"
+    },
+    {
+      "n": "text-embedding-ada-002",
+      "r": 0.05,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "kimi-k2-0711-preview",
+      "r": 0.3,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gpt-4-turbo-2024-04-09",
+      "r": 5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-4"
+    },
+    {
+      "n": "o1-2024-12-17",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "hy4-preview",
+      "r": 0.417,
+      "c": 2.9988,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gpt-4o-mini-tts",
+      "r": 0.3,
+      "c": 20,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-3"
+    },
+    {
+      "n": "qwen3.6-plus-2026-04-02",
+      "r": 0.25,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-2"
+    },
+    {
+      "n": "llama-3.1-70b",
+      "r": 2,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "glm-4-long",
+      "r": 0.0265,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "o3-mini-2025-01-31",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "glm-5",
+      "r": 0.5,
+      "c": 3.2,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "gpt-3.5-turbo-0125",
+      "r": 0.25,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-4"
+    },
+    {
+      "n": "gpt-5-pro",
+      "r": 7.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Openai-Gpt-1"
+    },
+    {
+      "n": "gpt-4-1106-preview",
+      "r": 5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-2"
+    },
+    {
+      "n": "qwq-32b",
+      "r": 1,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "llama-3.2-90b-vision-instruct",
+      "r": 3,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "llama-3.1-405b",
+      "r": 3,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "qwen-plus-character",
+      "r": 0.25,
+      "c": 2.8,
+      "cr": null,
+      "g": 1,
+      "gn": "Alibaba-1"
+    },
+    {
+      "n": "llama-3.1-8b",
+      "r": 1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "eleven_v3_conversational",
+      "r": 20,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Eleven-1"
+    },
+    {
+      "n": "o3-2025-04-16",
+      "r": 1,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Azure-Gpt-1"
+    },
+    {
+      "n": "llama-3-70b",
+      "r": 2,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "eleven_flash_v2",
+      "r": 20,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Eleven-1"
+    },
+    {
+      "n": "llama-2-70b",
+      "r": 1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "mimo-v2.5",
+      "r": 0.07,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "Xiaomi-1"
+    },
+    {
+      "n": "llama-3.2-11b-vision-instruct",
+      "r": 1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "llama-3-8b",
+      "r": 1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "llama-3.2-3b-instruct",
+      "r": 0.5,
+      "c": 0.5,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "llama-3.2-1b-instruct",
+      "r": 0.25,
+      "c": 0.25,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-2"
+    },
+    {
+      "n": "doubao-seed-2-0-mini-260428",
+      "r": 0.015,
+      "c": 10,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "gpt-5.4-mini-2026-03-17",
+      "r": 0.375,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-2"
+    },
+    {
+      "n": "gpt-5.4-nano-2026-03-17",
+      "r": 0.1,
+      "c": 6.25,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Openai-Gpt-1"
+    },
+    {
+      "n": "mimo-v2.5-pro",
+      "r": 0.2175,
+      "c": 2,
+      "cr": 0.0083,
+      "g": 1,
+      "gn": "Xiaomi-1"
+    },
+    {
+      "n": "doubao-seed-2-0-mini-260215",
+      "r": 0.015,
+      "c": 10,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "gpt-5.4-pro-2026-03-05",
+      "r": 15,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Openai-Gpt-1"
+    },
+    {
+      "n": "gpt-5.2-chat-latest",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Openai-Gpt-1"
+    },
+    {
+      "n": "gpt-5.2-pro",
+      "r": 10.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Openai-Gpt-1"
+    },
+    {
+      "n": "gemini-2.5-flash-preview-tts",
+      "r": 0.25,
+      "c": 20,
+      "cr": null,
+      "g": 1,
+      "gn": "Aistudio-Gemini-3"
+    },
+    {
+      "n": "gemini-2.5-pro-preview-tts",
+      "r": 0.5,
+      "c": 20,
+      "cr": null,
+      "g": 1,
+      "gn": "Aistudio-Gemini-3"
+    },
+    {
+      "n": "claude-opus-4-1-20250805",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "AWS-Claude-3"
+    },
+    {
+      "n": "gpt-5-nano-2025-08-07",
+      "r": 0.025,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Azure-Gpt-2"
+    },
+    {
+      "n": "gpt-5.1-chat-latest",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Openai-Gpt-1"
+    },
+    {
+      "n": "gpt-5-chat-latest",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Openai-Gpt-1"
+    },
+    {
+      "n": "gpt-5.1-codex",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Openai-Gpt-1"
+    },
+    {
+      "n": "gpt-image-1",
+      "r": 2.5,
+      "c": 8,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Azure-Gpt-3"
+    },
+    {
+      "n": "glm-4.5",
+      "r": 0.3,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "doubao-seed-1-6-251015",
+      "r": 0.06,
+      "c": 10,
+      "cr": null,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "doubao-seed-1-6-flash-250828",
+      "r": 0.0225,
+      "c": 10,
+      "cr": null,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "doubao-seed-1-6-thinking-250615",
+      "r": 0.06,
+      "c": 10,
+      "cr": null,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "doubao-seed-1-6-thinking-250715",
+      "r": 0.06,
+      "c": 10,
+      "cr": null,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "doubao-seed-1-6-vision-250815",
+      "r": 0.12,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Doubao-2"
+    },
+    {
+      "n": "glm-4-flash",
+      "r": 0.0265,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "glm-4.5-air",
+      "r": 0.1,
+      "c": 5.5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Self-Deployed-1"
+    },
+    {
+      "n": "gpt-3.5-turbo-1106",
+      "r": 0.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-2"
+    },
+    {
+      "n": "gpt-oss-120b",
+      "r": 0.55,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Azure-Gpt-2"
+    },
+    {
+      "n": "llama-3.3-70b-instruct",
+      "r": 0.36,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Self-Deployed-3"
+    }
+  ]
+}

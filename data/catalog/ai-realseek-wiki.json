@@ -1,0 +1,537 @@
+{
+  "station_id": "ai-realseek-wiki",
+  "endpoint": "https://ai.realseek.wiki/api/pricing",
+  "fetched_at": "2026-11-26T16:32:50.237Z",
+  "http_status": 200,
+  "total": 66,
+  "models": [
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-max"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.4,
+      "c": 3.5,
+      "cr": 0.2875,
+      "g": 1,
+      "gn": "glm-自部署"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "glm-自部署"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kimi-官key"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 3.25,
+      "c": 4.1538,
+      "cr": null,
+      "g": 1,
+      "gn": "kimi-官key"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 1.5,
+      "c": 2,
+      "cr": 0.0083,
+      "g": 1,
+      "gn": "DeepSeek-自部署"
+    },
+    {
+      "n": "grok-imagine-video-1.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-特价"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kimi-自部署"
+    },
+    {
+      "n": "seedance-2.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "wan3.0-video-prime",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-特价"
+    },
+    {
+      "n": "seedance-2.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-特价"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "MiniMax-H3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "hy4-preview",
+      "r": 3,
+      "c": 3,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "hunyuan"
+    },
+    {
+      "n": "glm-5.1",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "glm-自部署"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "claude-kiro正价"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "deepseek-tts",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Deepseek-官key"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "glm-自部署"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "hy3",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "hunyuan"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "claude-max"
+    },
+    {
+      "n": "kimi-k2.7-code-highspeed",
+      "r": 0.95,
+      "c": 4.2105,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "kimi-官key"
+    },
+    {
+      "n": "qwen3.7-plus",
+      "r": 1,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "qwen"
+    },
+    {
+      "n": "deepseek-fetch",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Deepseek-官key"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-特价"
+    },
+    {
+      "n": "qwen3.8-flash",
+      "r": 0.4,
+      "c": 3.375,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "qwen"
+    },
+    {
+      "n": "seedance-2.0-mini",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "wan3.0-video",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.3-flashx",
+      "r": 1,
+      "c": 3.5,
+      "cr": 0.285,
+      "g": 1,
+      "gn": "glm-自部署"
+    },
+    {
+      "n": "qwen3.6-plus",
+      "r": 1,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "qwen"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-特价"
+    },
+    {
+      "n": "deepseek-search",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Deepseek-官key"
+    },
+    {
+      "n": "seedance-2.0-fast",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-特价"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-特价"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-官key"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "claude-kiro正价"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "DeepSeek-自部署"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini"
+    },
+    {
+      "n": "kimi-k2.6",
+      "r": 3.25,
+      "c": 4.1538,
+      "cr": null,
+      "g": 1,
+      "gn": "kimi-官key"
+    },
+    {
+      "n": "deepseek-ocr",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Deepseek-官key"
+    },
+    {
+      "n": "deepseek-asr",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Deepseek-官key"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini"
+    },
+    {
+      "n": "MiniMax-M3.1-Flash",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "minimax"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-特价"
+    },
+    {
+      "n": "kimi-k3.1-pro-highspeed",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kimi-官key"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 6,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "qwen"
+    },
+    {
+      "n": "glm-5.4",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "glm-官key"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro正价"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-特价"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-特价"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini"
+    },
+    {
+      "n": "MiniMax-M3",
+      "r": 2,
+      "c": 2.1,
+      "cr": 0.015,
+      "g": 1,
+      "gn": "minimax"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini"
+    }
+  ]
+}

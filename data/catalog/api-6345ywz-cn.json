@@ -1,0 +1,1465 @@
+{
+  "station_id": "api-6345ywz-cn",
+  "endpoint": "https://api.6345ywz.cn/api/pricing",
+  "fetched_at": "2026-11-26T16:34:37.099Z",
+  "http_status": 200,
+  "total": 182,
+  "models": [
+    {
+      "n": "qwen/qwen2.5-vl-32b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "grok-4.3-console",
+      "r": 1.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "minimaxai/minimax-m3",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "grok-4.20-0309",
+      "r": 1,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-ai/DeepSeek-V3",
+      "r": 0.625,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "deepseek-ai/deepseek-v4-flash",
+      "r": 0.5,
+      "c": 3,
+      "cr": 0.3,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "google/gemma-4-31b-it",
+      "r": 0.07,
+      "c": 2.8571,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "zai-org/GLM-4.5-Air",
+      "r": 0.07,
+      "c": 6.1429,
+      "cr": null,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "Qwen/Qwen3-Embedding-8B",
+      "r": 0.06,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "grok-4.3-high",
+      "r": 1.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "z-ai/glm-5.1",
+      "r": 0.63,
+      "c": 3.1429,
+      "cr": 0.2167,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "laguna-s-2.1-free",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "nvidia/cosmos-reason2-8b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "writer/palmyra-med-70b-32k",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "stepfun-ai/step-5-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "minimaxai/minimax-m3.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "tencent/Hunyuan-MT-7B",
+      "r": 5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "nvidia/nemotron-3-ultra-550b-a55b",
+      "r": 0.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "神秘模型",
+      "r": 1.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "翻译"
+    },
+    {
+      "n": "meta/codellama-70b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "grok-4.20-multi-agent-console",
+      "r": 1.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "nvidia/llama-3.1-nemoguard-8b-content-safety",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "microsoft/phi-3-vision-128k-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "Pro/moonshotai/Kimi-K2.6",
+      "r": 0.475,
+      "c": 4.2105,
+      "cr": 0.1684,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "aisingapore/sea-lion-7b-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "deepseek-ai/deepseek-v4.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "meta/llama2-70b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "deepseek-ai/deepseek-coder-6.7b-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "google/gemma-3-12b-it",
+      "r": 0.02,
+      "c": 3.25,
+      "cr": 0.375,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/nemotron-3.5-bolt-e4b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/llama3-chatqa-1.5-70b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "qwen/qwen3-8b",
+      "r": 0.025,
+      "c": 8,
+      "cr": 1,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "zhipu/glm-4.6v-flash",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nemotron-3-ultra-free",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "meta/llama-3.2-90b-vision-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "adept/fuyu-8b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "deepseek-ai/DeepSeek-R1",
+      "r": 1.5,
+      "c": 2.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "google/gemma-3-4b-it",
+      "r": 0.02,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "bigcode/starcoder2-15b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/nemotron-3.5-embed-8b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "qwen/qwen3-14b",
+      "r": 0.03,
+      "c": 4,
+      "cr": 0.4167,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "gemini-3.1-pro",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "mistralai/mistral-large",
+      "r": 1,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "moonshotai/kimi-k3",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "google/gemma-3-27b",
+      "r": 0.5,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "grok-4.20-0309-non-reasoning",
+      "r": 1,
+      "c": 3,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "ibm/granite-3.0-3b-a800m-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "google/codegemma-1.1-7b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/nemotron-3.5-embed-1b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "zai-org/GLM-4.5V",
+      "r": 0.07,
+      "c": 6.1429,
+      "cr": null,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "qwen/qwen3-coder-480b-a35b-instruct",
+      "r": 0.15,
+      "c": 4.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.104,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.2,
+      "c": 6.25,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "meta/llama-guard-4-12b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "google/recurrentgemma-2b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "longcat-2.0-free",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mimo-v2.5-free",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "ai21labs/jamba-1.5-large-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/riva-translate-4b-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/nemotron-3-embed-1b",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "grok-4.1-fast-reasoning",
+      "r": 0.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "openai/gpt-oss-120b",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "moonshotai/kimi-k2.6",
+      "r": 0.475,
+      "c": 4.2105,
+      "cr": 0.1684,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "mistralai/mixtral-8x22b-v0.1",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/nemotron-parse",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "r": 0.045,
+      "c": 6.6667,
+      "cr": null,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "google/gemma-2b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "不稳定luna"
+    },
+    {
+      "n": "nvidia/nv-embedqa-mistral-7b-v2",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/nemotron-3-super-120b-a12b",
+      "r": 0.075,
+      "c": 4.3333,
+      "cr": 1,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "poolside/laguna-xs-2.1",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "deepseek/deepseek-v3-0324",
+      "r": 0.135,
+      "c": 4.1481,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "xiaomi/mimo-v2-flash",
+      "r": 0.05,
+      "c": 2.9,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "Pro/deepseek-ai/DeepSeek-V3.2",
+      "r": 0.135,
+      "c": 1.5556,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 0.375,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "nvidia/nemotron-4-340b-reward",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "FAST/deepseek-v3.2",
+      "r": 1.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "翻译"
+    },
+    {
+      "n": "deepseek-v3.2",
+      "r": 0.29,
+      "c": 2.8966,
+      "cr": 0.1071,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-ai/deepseek-v4-pro",
+      "r": 7.5,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "snowflake/arctic-embed-l",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "zhipu/glm-4-flash",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "microsoft/kosmos-2",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/nemotron-4-340b-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "zyphra/zamba2-7b-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/nemotron-3.5-content-safety",
+      "r": 0.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "mimo-v2.5-pro",
+      "r": 0.5,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "microsoft/phi-3.5-moe-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "grok-imagine-image-lite",
+      "r": 0.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen/qwen2.5-7b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "mistralai/codestral-22b-instruct-v0.1",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/neva-22b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+      "r": 1.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "nvidia/llama-3.2-nv-embedqa-1b-v1",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "LoRA/Qwen/Qwen2.5-72B-Instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "zai-org/GLM-4.6V",
+      "r": 0.15,
+      "c": 3,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.4,
+      "c": 3.5,
+      "cr": null,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "qwen/qwen3-30b-a3b",
+      "r": 0.04,
+      "c": 3.5,
+      "cr": 0.375,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "deepseek-v4-flash-free",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "nvidia/llama-3.1-nemoguard-8b-topic-control",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/nemotron-parse-2.0",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "Pro/deepseek-ai/DeepSeek-R1",
+      "r": 0.25,
+      "c": 4.36,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "zai-org/GLM-4.6",
+      "r": 0.25,
+      "c": 3.8,
+      "cr": 0.186,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "deepseek/deepseek-r1-0528",
+      "r": 0.225,
+      "c": 4.7778,
+      "cr": 0.4444,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "openai/gpt-oss-20b",
+      "r": 0.015,
+      "c": 5.3333,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "zhipu/glm-4.1v-thinking-flash",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "google/gemini-2.0-flash-exp",
+      "r": 0.5,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "grok-4.1-fast-non-reasoning",
+      "r": 0.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-ai/DeepSeek-V4-Flash",
+      "r": 0.5,
+      "c": 3,
+      "cr": 0.3,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "ling-3.0-flash-free",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "nv-mistralai/mistral-nemo-12b-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "google/diffusiongemma-26b-a4b-it",
+      "r": 0.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "deepseek-ai/DeepSeek-V4-Pro",
+      "r": 1,
+      "c": 3,
+      "cr": 0.3,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "qwen/qwen2.5-72b",
+      "r": 0.5,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 1.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "north-mini-code-free",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "ibm/granite-34b-code-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "ibm/granite-8b-code-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/riva-translate-4b-instruct-v2",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "MiniMax-M3",
+      "r": 0.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "google/codegemma-7b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "grok-4.20-reasoning",
+      "r": 0.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "nvidia/llama-3.1-nemotron-70b-instruct",
+      "r": 0.6,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "zhipu/glm-4.7-flash",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "mimo-v2.5",
+      "r": 0.2,
+      "c": 5,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "不稳定luna"
+    },
+    {
+      "n": "Pro/MiniMaxAI/MiniMax-M2.5",
+      "r": 0.15,
+      "c": 4.0667,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "meta/muse-glimmer-30b",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "z-ai/glm-5.3",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/nemotron-3.5-super-vl-120b-a12b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/vila",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "grok-4.3",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "google/deplot",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "gpt-oss-120b",
+      "r": 0.5,
+      "c": 4.2,
+      "cr": null,
+      "g": 1,
+      "gn": "翻译"
+    },
+    {
+      "n": "grok-4.3-medium",
+      "r": 1.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "nvidia/nemotron-nano-3-30b-a3b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "deepseek-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "grok-4.20-fast",
+      "r": 1,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "01-ai/yi-large",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "writer/palmyra-med-70b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "deepseek/deepseek-r1-70b",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "writer/palmyra-fin-70b-32k",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "FAST/deepseek-v3.1",
+      "r": 1.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "翻译"
+    },
+    {
+      "n": "grok-4.20-non-reasoning",
+      "r": 0.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "Qwen/Qwen3.5-4B",
+      "r": 1.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "z-ai/glm-5.3-flash",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "zhipu/glm-4-9b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "deepseek-ai/DeepSeek-V3.2",
+      "r": 0.135,
+      "c": 1.5556,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "glm-5.1",
+      "r": 3,
+      "c": 4,
+      "cr": 0.2167,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.2",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.0714,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "zhipu/glm-4v-flash",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "meta/llama-3.2-11b-vision-instruct",
+      "r": 0.0275,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/llama-3.1-nemotron-51b-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "writer/palmyra-creative-122b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "mistralai/mistral-large-2-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/mistral-nemo-minitron-8b-8k-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "databricks/dbrx-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "1/deepseek-v4.1-flash",
+      "r": 0.25,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 2.25,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/ai-synthetic-video-detector",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/nvclip",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "qwen/qwen3-coder",
+      "r": 0.15,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "MiniMaxAI/MiniMax-M2.5",
+      "r": 0.15,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 0.5,
+      "c": 3,
+      "cr": 0.3,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/embed-qa-4",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/llama-nemotron-embed-vl-1b-v2",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "deepseek/deepseek-r1-32b",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "gpt-5.4-nano",
+      "r": 0.1,
+      "c": 6.25,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "5倍倍率分组"
+    },
+    {
+      "n": "mistralai/mistral-7b-instruct-v0.3",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "ibm/granite-3.0-8b-instruct",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "mistralai/mistral-large-4-1t-a52b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "nvidia/ising-calibration-1.5-31b",
+      "r": 1.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "1倍倍率分组"
+    },
+    {
+      "n": "FAST/minimax-m2.7",
+      "r": 1.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "翻译"
+    }
+  ]
+}

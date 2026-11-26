@@ -277,3 +277,32 @@ td.calc {
 /* 已停用站点提示（data/sources.json 里 enabled:false 的站） */
 .off-list { margin: 10px 2px 0; font-size: 12.5px; line-height: 1.6; color: var(--ink-3); }
 .off-list b { color: var(--ink-2); font-weight: 600; }
+
+/* ---------- 按模型查价 ---------- */
+.catsec { margin: 34px 0 6px; }
+.catsec h2 { font-size: 15px; margin: 0 0 10px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.cat-sub { font-weight: 400; font-size: 12px; color: var(--muted); }
+.catbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.catbar input { flex: 1 1 300px; min-width: 220px; height: 34px; padding: 0 11px; border: 1px solid var(--line); border-radius: 9px; background: #fff; font-size: 13px; color: var(--ink); }
+.catbar input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(15,118,110,.12); }
+.catbar button { height: 34px; padding: 0 14px; border: 1px solid var(--line); border-radius: 9px; background: #fff; font-size: 13px; color: var(--muted); cursor: pointer; }
+.catbar button:hover { color: var(--ink); border-color: #d8d6cf; }
+.cat-out { margin-top: 12px; }
+.cat-empty { font-size: 13px; color: var(--muted); margin: 6px 0; }
+.cat-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; font-size: 13px; }
+.cat-meta { font-size: 12px; color: var(--muted); }
+.cat-wrap { max-height: 420px; overflow: auto; border: 1px solid var(--line); border-radius: 12px; }
+.cat-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.cat-table th { position: static; text-align: left; font-weight: 500; font-size: 12px; color: var(--muted); background: #faf9f6; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+.cat-table th.num { text-align: right; }
+.cat-table td { padding: 8px 12px; border-bottom: 1px solid var(--line2); font-variant-numeric: tabular-nums; }
+.cat-table tr:last-child td { border-bottom: 0; }
+.cat-table td.num { text-align: right; }
+.cat-name { color: var(--muted); font-size: 12px; }
+@media (max-width: 640px) {
+  .cat-table .hide-md, .cat-table th.hide-md { display: none; }
+}
+
+.chip-fx { background: #fdf0e3; color: #9a5b12; border: 1px solid #f2d9bb; }
+
+.cat-tip { font-size: 12px; color: var(--muted); line-height: 1.65; margin: 8px 0 0; }

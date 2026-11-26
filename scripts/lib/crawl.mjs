@@ -3,6 +3,8 @@
  * 只放纯逻辑 + 网络，不碰文件系统 —— 文件读写和 CLI 在 fetch-pricing.mjs。
  */
 
+import { pickGroup } from './pick-group.mjs';
+
 export const UA = 'token-radar/1.0 (pricing crawler; +https://github.com/wunankun/token-radar)';
 
 export class FetchError extends Error {
@@ -164,12 +166,55 @@ export function normalizeOrigin(input) {
  *
  * @returns {{format:string, groupRatio:number, models:Object, unmatched:Array, stats:Object}}
  */
+// /api/status 里藏着「这家站的钱怎么算」的关键参数：1 美元额度要多少人民币、
+// 充值入口在哪、货币符号是什么。抓不到就算了，不影响价格解析。
+export async function fetchStatus(origin, opts = {}) {
+  try {
+    const got = await fetchWithRetry(origin.replace(/\/+$/, '') + '/api/status', { timeout: 8000, retries: 0, ...opts });
+    const j = JSON.parse(got.text);
+    const d = j?.data || j;
+    if (!d || typeof d !== 'object') return null;
+    const num = (v) => (Number.isFinite(Number(v)) && Number(v) > 0 ? Number(v) : null);
+    return {
+      usd_exchange_rate: num(d.usd_exchange_rate ?? d.usdExchangeRate),
+      quota_per_unit: num(d.quota_per_unit),
+      price: num(d.price),
+      currency: d.custom_currency_symbol || d.currency || null,
+      top_up_link: d.top_up_link || null,
+      system_name: d.system_name || null,
+      version: d.version || null,
+    };
+  } catch {
+    return null;
+  }
+}
+
 export function parsePricing(payload, { resolveModel = (n) => n, groupRatioOverride = null } = {}) {
   const list = extractList(payload);
   if (!list.length) throw new Error('没找到价格数组（payload.data 为空或结构不认识）');
 
   const groupRatio = groupRatioOverride ?? guessGroupRatio(payload) ?? 1;
+  const meta = payload?.data && !Array.isArray(payload.data) ? payload.data : payload;
+  const clean = (v) => String(v || '').replace(/\s+/g, ' ').trim().slice(0, 80);
+  const usable = meta?.usable_group && typeof meta.usable_group === 'object'
+    ? Object.fromEntries(Object.entries(meta.usable_group).slice(0, 80).map(([k, v]) => [k, clean(v)]))
+    : {};
+  const extras = {
+    ...(Array.isArray(meta?.auto_groups) && meta.auto_groups.length ? { auto_groups: meta.auto_groups.slice(0, 20) } : {}),
+    ...(meta?.base_group_ratio && typeof meta.base_group_ratio === 'object' ? { base_group_ratio: meta.base_group_ratio } : {}),
+    ...(Object.keys(usable).length ? { usable_group: usable } : {}),
+    ...(meta?.pricing_version ? { pricing_version: String(meta.pricing_version) } : {}),
+  };
+  // 选档需要的东西：分组倍率表 + 站点声明的自动分组 + 分组说明
+  const snapLike = {
+    group_ratios: (meta && typeof meta.group_ratio === 'object' ? meta.group_ratio : {}) || {},
+    auto_groups: extras.auto_groups || [],
+    usable_group: usable,
+    group_ratio: groupRatio,
+  };
+
   const models = {};
+  const all = [];
   const unmatched = [];
   const stats = { total: list.length, matched: 0, per_call: 0, no_ratio: 0, duplicate: 0 };
 
@@ -190,10 +235,21 @@ export function parsePricing(payload, { resolveModel = (n) => n, groupRatioOverr
       continue;
     }
     const completion = Number(item.completion_ratio) || 1;
+    const picked = pickGroup(snapLike, { enable_groups: item.enable_groups });
+    // models[] 保持「站点默认档」口径（公式可审计）；catalog 里另外记每个模型自己选中的档 g
     const gr = Number.isFinite(Number(item.group_ratio)) && Number(item.group_ratio) > 0 ? Number(item.group_ratio) : groupRatio;
 
     const input = ratio * 2 * gr;
     const output = input * completion;
+    // 全量目录：不管能不能对上标准模型，都记下来（data/catalog/<id>.json 用来统计全站模型供给）
+    all.push({
+      n: name,
+      r: round(ratio),
+      c: round(completion),
+      cr: Number.isFinite(Number(item.cache_ratio)) && Number(item.cache_ratio) > 0 ? round(Number(item.cache_ratio)) : null,
+      g: round(gr),
+      gn: picked.name,
+    });
     const cacheRatio = Number(item.cache_ratio);
     const cache_read = Number.isFinite(cacheRatio) && cacheRatio > 0 ? round(input * cacheRatio) : null;
 
@@ -227,19 +283,7 @@ export function parsePricing(payload, { resolveModel = (n) => n, groupRatioOverr
     };
   }
 
-  const meta = payload?.data && !Array.isArray(payload.data) ? payload.data : payload;
-  const clean = (v) => String(v || '').replace(/\s+/g, ' ').trim().slice(0, 80);
-  const usable = meta?.usable_group && typeof meta.usable_group === 'object'
-    ? Object.fromEntries(Object.entries(meta.usable_group).slice(0, 80).map(([k, v]) => [k, clean(v)]))
-    : {};
-  const extras = {
-    ...(Array.isArray(meta?.auto_groups) && meta.auto_groups.length ? { auto_groups: meta.auto_groups.slice(0, 20) } : {}),
-    ...(meta?.base_group_ratio && typeof meta.base_group_ratio === 'object' ? { base_group_ratio: meta.base_group_ratio } : {}),
-    ...(Object.keys(usable).length ? { usable_group: usable } : {}),
-    ...(meta?.pricing_version ? { pricing_version: String(meta.pricing_version) } : {}),
-  };
-
-  return { format: 'new-api/one-api', groupRatio, models, unmatched, stats, extras };
+  return { format: 'new-api/one-api', groupRatio, models, all, unmatched, stats, extras };
 }
 
 function extractList(payload) {

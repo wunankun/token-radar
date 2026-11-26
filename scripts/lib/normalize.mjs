@@ -207,6 +207,8 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
         affiliate_url: station.affiliate?.url ?? null,
         affiliate_code: station.affiliate?.code ?? null,
         commission: station.affiliate?.commission ?? null,
+        usd_rate: Number(station.usd_rate) > 0 ? Number(station.usd_rate) : null,
+        top_up: station.top_up ?? null,
         risk_flags: station.risk_flags || [],
         first_seen: station.first_seen ?? null,
         note: station.note ?? null,

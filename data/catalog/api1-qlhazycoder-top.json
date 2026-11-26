@@ -1,0 +1,649 @@
+{
+  "station_id": "api1-qlhazycoder-top",
+  "endpoint": "https://api1.qlhazycoder.top/api/pricing",
+  "fetched_at": "2026-11-26T16:34:42.955Z",
+  "http_status": 200,
+  "total": 80,
+  "models": [
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-Max"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "qwen4-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "grok-4.5-聊天",
+      "r": 1,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok-heavy"
+    },
+    {
+      "n": "H3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-Max"
+    },
+    {
+      "n": "gemini-3.1-flash-tts",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "音频模型"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-Max"
+    },
+    {
+      "n": "MiniMax-M3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "MiniMax-M3.1-Flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-Max"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-Pro-正价"
+    },
+    {
+      "n": "mimo-v2.6-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "seedance-2.0-mini-offical",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "text-embedding-3-small-inference",
+      "r": 0.1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "seedance-2.0-offical",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-Pro-正价"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "seedance-2.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-Max"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-Max"
+    },
+    {
+      "n": "seedance-2.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "grok-imagine-video",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Grok-heavy"
+    },
+    {
+      "n": "wan3.0-official",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "doubao-seedance-2-5-260628",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance官渠 全分辨率 海外版"
+    },
+    {
+      "n": "gpt-5.6-luna-原价",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-Luna模型专用"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-Max"
+    },
+    {
+      "n": "qwen3.8-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-Max"
+    },
+    {
+      "n": "qwen3.8-omni-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "doubao-seedance-2-0-fast-260128",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance官渠 全分辨率 海外版"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "grok-4.7-build-fast",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok-heavy"
+    },
+    {
+      "n": "hy4-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra-企业"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-Max"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok-heavy"
+    },
+    {
+      "n": "suno-v6-wild",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "音频模型"
+    },
+    {
+      "n": "kimi-k3.1-pro-highspeed",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型-官key"
+    },
+    {
+      "n": "text-embedding-3-small",
+      "r": 0.1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-Pro-正价"
+    },
+    {
+      "n": "gpt-6-luna-原价",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-Luna模型专用"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "Claude-Max"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "Grok-heavy"
+    },
+    {
+      "n": "glm-5.3-flashx",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型-官key"
+    },
+    {
+      "n": "gpt-4o",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 0.1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-Pro-正价"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra"
+    },
+    {
+      "n": "Suno v5.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "音频模型"
+    },
+    {
+      "n": "codex-auto-review-openai-compact",
+      "r": 0.1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-Pro-正价"
+    },
+    {
+      "n": "mimo-v2.6-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "deepseek-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型-官key"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-Pro-正价"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-Max"
+    },
+    {
+      "n": "gpt-4.1",
+      "r": 1,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-Pro-正价"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra"
+    },
+    {
+      "n": "seedance-2.0-fast-offical",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "speech-2.8",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "音频模型"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-Pro-正价"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-Pro-正价"
+    },
+    {
+      "n": "doubao-seedance-2-0-260128",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance官渠 全分辨率 海外版"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-Max"
+    },
+    {
+      "n": "suno-v6-mini",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "音频模型"
+    },
+    {
+      "n": "grok-imagine-video-1.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-官Key"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-Max"
+    },
+    {
+      "n": "suno_music",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "音频模型"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-Pro-正价"
+    },
+    {
+      "n": "doubao-seedance-2-0-mini-260615",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance官渠 全分辨率 海外版"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-Pro-正价"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-Pro-正价"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-Max"
+    }
+  ]
+}

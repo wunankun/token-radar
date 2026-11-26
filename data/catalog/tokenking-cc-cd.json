@@ -1,0 +1,497 @@
+{
+  "station_id": "tokenking-cc-cd",
+  "endpoint": "https://tokenking.cc.cd/api/pricing",
+  "fetched_at": "2026-11-26T16:34:51.828Z",
+  "http_status": 200,
+  "total": 61,
+  "models": [
+    {
+      "n": "gemini-4-argon-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini4-专用"
+    },
+    {
+      "n": "gemini-4-carbon-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini4-专用"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Z-Claude 特价逆向分组"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Y-百炼国模"
+    },
+    {
+      "n": "minimax-m3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-百炼国模"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 1.5,
+      "c": 2,
+      "cr": 0.0083,
+      "g": 1,
+      "gn": "Y-百炼国模"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "D-default"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini4-专用"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "D-default"
+    },
+    {
+      "n": "gemini-4-carbon-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini4-专用"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Z-酒馆Kiro-按量计费"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Z-酒馆Kiro-按量计费"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-百炼国模"
+    },
+    {
+      "n": "gemini-4-hydrogen-xhigh",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "D-default"
+    },
+    {
+      "n": "gemini-4-hydrogen-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Z-Claude 特价逆向分组"
+    },
+    {
+      "n": "gemini-3.1-pro-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "D-default"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "D-default"
+    },
+    {
+      "n": "qwen3.8-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-百炼国模"
+    },
+    {
+      "n": "gemini-4-argon-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini4-专用"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Z-Claude 特价逆向分组"
+    },
+    {
+      "n": "deepseek-v4-pro-0813",
+      "r": 4.5,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "Y-百炼国模"
+    },
+    {
+      "n": "gemini-3.8-flash-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Z-Claude 特价逆向分组"
+    },
+    {
+      "n": "hy4",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-百炼国模"
+    },
+    {
+      "n": "gemini-3.8-flash-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Z-Claude 特价逆向分组"
+    },
+    {
+      "n": "deepseek-v4-flash-0731",
+      "r": 1.5,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "Y-百炼国模"
+    },
+    {
+      "n": "gemini-4-carbon-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini4-专用"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Z-Claude-AWS-Kiro"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-百炼国模"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "F-GPT Pro x20"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "D-default"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Z-酒馆Kiro-按量计费"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 6,
+      "c": 3,
+      "cr": 0.125,
+      "g": 1,
+      "gn": "Y-百炼国模"
+    },
+    {
+      "n": "mimo-v2.6-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-百炼国模"
+    },
+    {
+      "n": "gemini-3.7-flash-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "gemini-3.7-flash-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "gemini-4-hydrogen-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "gemini-4-argon-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini4-专用"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "D-default"
+    },
+    {
+      "n": "gemini-3.7-flash-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "gemini-4-hydrogen-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "D-default"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Z-酒馆Kiro-按量计费"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "Y-百炼国模"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "D-default"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "gemini-3.8-flash-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini"
+    },
+    {
+      "n": "hy4-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-百炼国模"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-Gemini4-专用"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Z-酒馆Kiro-按量计费"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Z-酒馆Kiro-按量计费"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Y-百炼国模"
+    },
+    {
+      "n": "gemini-2.5-flash-lite",
+      "r": 0.05,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Y-Gemini"
+    }
+  ]
+}

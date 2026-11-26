@@ -1,0 +1,289 @@
+{
+  "station_id": "pdhlzy-com",
+  "endpoint": "https://pdhlzy.com/api/pricing",
+  "fetched_at": "2026-11-26T16:34:55.491Z",
+  "http_status": 200,
+  "total": 35,
+  "models": [
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro-稳定版"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "GPT-plus"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro-稳定版"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro-稳定版"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro-稳定版"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-plus"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-plus"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠国模"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro-稳定版"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.75,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.83,
+      "c": 3.512,
+      "cr": null,
+      "g": 1,
+      "gn": "特惠国模"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "GPT-plus"
+    },
+    {
+      "n": "glm-5.1",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.125,
+      "g": 1,
+      "gn": "GLM"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "claude"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "kiro-稳定版"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro-稳定版"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 1,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Deepseek满血版"
+    },
+    {
+      "n": "gemini-3-flash-preview",
+      "r": 0.035,
+      "c": 6.1429,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 4,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "GPT-plus"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "vertex-claude-逆向"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro-稳定版"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro-稳定版"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro-稳定版"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": null,
+      "g": 1,
+      "gn": "GLM"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": null,
+      "g": 1,
+      "gn": "GLM"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 2,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kiro-稳定版"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.125,
+      "c": 6,
+      "cr": 1,
+      "g": 1,
+      "gn": "gemini"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-plus"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-plus"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    }
+  ]
+}

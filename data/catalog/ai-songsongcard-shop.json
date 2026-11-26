@@ -1,0 +1,5177 @@
+{
+  "station_id": "ai-songsongcard-shop",
+  "endpoint": "https://ai.songsongcard.shop/api/pricing",
+  "fetched_at": "2026-11-26T16:34:34.644Z",
+  "http_status": 200,
+  "total": 646,
+  "models": [
+    {
+      "n": "gemini-pro-latest",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4.1-nano-2025-04-14",
+      "r": 0.05,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o1-mini",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-realtime-2025-08-28",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "llama-3-70b-instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/qwen/qwen1.5-1.8b-chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "MiniMax-M2.7-highspeed",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-audio-preview-2024-10-01",
+      "r": 1.25,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ERNIE-Bot-8K",
+      "r": 1.6438,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "sonar-reasoning",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@hf/mistralai/mistral-7b-instruct-v0.2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/defog/sqlcoder-7b-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "BAAI/bge-large-zh-v1.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-v4-pro-none",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.5-flash-preview-tts",
+      "r": 37.5,
+      "c": 23.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o4-mini-deep-research-2025-06-26",
+      "r": 1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-pro-4k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3-flash-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o3-mini-medium",
+      "r": 0.55,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "qwen-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "glm-4-airx",
+      "r": 0.6849,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "command-r-plus-08-2024",
+      "r": 1.25,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "InstantX/InstantID",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-4.0-turbo-8k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-v4-pro-0831",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "glm-4-air",
+      "r": 0.0685,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "rerank-english-v3.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "01-ai/Yi-1.5-9B-Chat-16K",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-tiny-8k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-pro-256k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "chatglm_pro",
+      "r": 0.7143,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/qwen/qwen1.5-14b-chat-awq",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "moonshot-v1-32k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-1.5-pro-256k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "omni-moderation-latest",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Qwen/Qwen1.5-14B-Chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "image-01",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "qwen-plus",
+      "r": 10,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Pro/Qwen/Qwen1.5-7B-Chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-lite-4k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-speed-pro-128k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-lite-8k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-反重力proutlra"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "gemini-3.5-flash-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini稳定渠道"
+    },
+    {
+      "n": "gpt-5.1-2025-11-13",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.5-flash-lite-preview-09-2025",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-pro-32k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "doubao-seedream-4-0-250828",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "abab6.5s-chat-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4.5-preview",
+      "r": 37.5,
+      "c": 2,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "imagen-4.0-fast-generate-001",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "sonar-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "yi-large-preview",
+      "r": 1.3699,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.1-chat-latest",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "open-mixtral-8x7b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4.20-multi-agent-high",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "@cf/meta/llama-3.1-8b-instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@hf/nousresearch/hermes-2-pro-mistral-7b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "m3e-small",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ERNIE-3.5-8K-0205",
+      "r": 1.6438,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "tao-8k",
+      "r": 0.137,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "glm-4.6v",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3-flash-agent",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini稳定渠道"
+    },
+    {
+      "n": "o4-mini-2025-04-16",
+      "r": 0.55,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.1-codex",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "jina-reranker-v2-base-multilingual",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-4.0-8k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5-nano-2025-08-07",
+      "r": 0.025,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5-pro",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.0-flash-lite",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/tinyllama/tinyllama-1.1b-chat-v1.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-ai/DeepSeek-Coder-V2-Instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-r1-distill-qwen-14b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-3-5-sonnet-20240620",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-audio",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "llama3-7b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "abab5.5-chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "tts-1-1106",
+      "r": 7.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "m3e-base",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "seed-1-6-thinking-250715",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "dall-e-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "qwen3-vl-embedding",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/meta/llama-3-8b-instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4-fast-reasoning",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-3-mini-low",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+      "r": 0.6,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-2024-11-20",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "hunyuan-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.5-flash-native-audio-preview-12-2025",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "speech-01-hd",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "text-curie-001",
+      "r": 1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "text-ada-001",
+      "r": 0.2,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "nova-reel-v1:1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "mimo-v2.6-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "gpt-4o",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4.1-2025-04-14",
+      "r": 1,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o4-mini-deep-research",
+      "r": 1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemma-3-1b-it",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemma-3n-e2b-it",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "glm-4.7",
+      "r": 0.3,
+      "c": 3.6667,
+      "cr": 0.1833,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-20250514",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "tts-1",
+      "r": 7.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "qwq-32b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4.20-multi-agent-medium",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "gemini-3.8-flash-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini稳定渠道"
+    },
+    {
+      "n": "glm-4v",
+      "r": 3.4247,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@hf/google/gemma-7b-it",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "THUDM/glm-4-9b-chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-4-argon-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini稳定渠道"
+    },
+    {
+      "n": "gpt-4-0125-preview",
+      "r": 5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5-search-api-2025-10-14",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "command-light-nightly",
+      "r": 0.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Qwen/Qwen1.5-32B-Chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "speech-02-hd",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.2-2025-12-11",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "davinci-002",
+      "r": 1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "meta/llama3-405b-instruct-maas",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-embedding",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude 反代"
+    },
+    {
+      "n": "gpt-5-2025-08-07",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4-fast-reasoning-search",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "MiniMax-M2.5",
+      "r": 1.05,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3-pro-image-preview",
+      "r": 37.5,
+      "c": 60,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-2024-05-13",
+      "r": 2.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.5-flash-native-audio-preview-09-2025",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-2-vision-1212",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-2-image-1212",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "imagen-4.0-generate-001",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "command",
+      "r": 0.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Qwen/Qwen2-72B-Instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4.20-multi-agent-xhigh",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/deepseek-ai/deepseek-math-7b-instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/qwen/qwen1.5-0.5b-chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "yi-large-rag",
+      "r": 1.7123,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-v4.1-flash-1017",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "minimax-m3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "minimax-m3.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "kimi-k2-thinking-turbo",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "glm-4-alltools",
+      "r": 6.8493,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4-1-fast-non-reasoning-search",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3.1-flash-image-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-反重力proutlra"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-反重力proutlra"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini VT 渠道二"
+    },
+    {
+      "n": "claude-sonnet-4-20250514",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-8-medium",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/meta/llama-2-7b-chat-int8",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "speech-2.5-hd-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.2-pro-2025-12-11",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-robotics-er-1.5-preview",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "gpt-5.1",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "nova-lite-v1:0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Qwen/Qwen1.5-7B-Chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-4.0-8k-latest",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Qwen/Qwen2-Math-72B-Instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "abab5.5s-chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-flash-latest",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4.1",
+      "r": 1,
+      "c": 2,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-audio-mini-2025-10-06",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-realtime-whisper",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "01-ai/Yi-1.5-6B-Chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-1.5-pro-vision-32k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-1.5-lite-32k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-3.5-turbo",
+      "r": 0.25,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4.1-mini-2025-04-14",
+      "r": 0.2,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "01-ai/Yi-1.5-34B-Chat-16K",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-3-5-haiku-20241022",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "glm-3-turbo",
+      "r": 0.3572,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@hf/thebloke/llamaguard-7b-awq",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-1.5-thinking-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4.20-multi-agent-console",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "gemini-3.8-flash-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini稳定渠道"
+    },
+    {
+      "n": "gpt-4-turbo-preview",
+      "r": 5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-7-max",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@hf/thebloke/deepseek-coder-6.7b-base-awq",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-ai/DeepSeek-R1",
+      "r": 0.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-image-1.5",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3.8-flash-tiered",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini稳定渠道"
+    },
+    {
+      "n": "o1",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "chatglm_std",
+      "r": 0.3572,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-imagine-image",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-5-thinking",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Code Kiro 特价"
+    },
+    {
+      "n": "gemini-2.5-pro",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o1-mini-2024-09-12",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-realtime-mini",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "aqa",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/mistral/mistral-7b-instruct-v0.1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "mistral-small-latest",
+      "r": 37.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-speed-8k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "glm-4",
+      "r": 7.143,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/google/gemma-2b-it-lora",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "netease-youdao/bce-embedding-base_v1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "step-1v-8k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "kimi-k2.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "speech-2.5-turbo-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-mini-transcribe-2025-03-20",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-mini-transcribe-2025-12-15",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-realtime-preview-2024-10-01",
+      "r": 2.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-8-xhigh",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "hunyuan-lite",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4-0613",
+      "r": 15,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-3-sonnet-20240229",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemma-3-27b-it",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "glm-4-0520",
+      "r": 6.8493,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-mini-tts-2025-03-20",
+      "r": 37.5,
+      "c": 20,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-audio-mini",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Qwen/Qwen2-57B-A14B-Instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5-mini",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-1-20250805-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Qwen/Qwen1.5-110B-Chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Qwen/Qwen2-7B-Instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "yi-vision",
+      "r": 0.411,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.5-flash-image",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-4-hydrogen-xhigh",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "nova-canvas-v1:0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "jina-reranker-m0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude 反代"
+    },
+    {
+      "n": "mimo-v2.6-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "gpt-4-turbo",
+      "r": 5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4.1-nano",
+      "r": 0.05,
+      "c": 2,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "tts-1-hd",
+      "r": 15,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-6-medium",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-6-low",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3-pro-preview",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "glm-5",
+      "r": 0.43,
+      "c": 3.6628,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Qwen/Qwen2-1.5B-Instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4-1-fast-reasoning-search",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-vision-pro-32k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-3-haiku-20240307",
+      "r": 0.125,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ERNIE-4.0-8K",
+      "r": 8.2192,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "mixtral-8x7b-instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Pro/THUDM/chatglm3-6b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-char-8k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-ai/DeepSeek-R1-0528",
+      "r": 0.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude 反代"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5-chat-latest",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ERNIE-Speed-128K",
+      "r": 0.274,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "m3e-large",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-3-mini-high",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "NousResearch/Hermes-4-405B-FP8",
+      "r": 0.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.5-flash-lite",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-3.5-turbo-0613",
+      "r": 0.75,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o3-mini-2025-01-31-low",
+      "r": 0.55,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-realtime-2.1",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-image-1-mini",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-search",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4-0709",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "kimi-k2-thinking",
+      "r": 2,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.0-flash",
+      "r": 0.05,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Pro/google/gemma-2-9b-it",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "doubao-seedance-1-0-pro-250528",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "yi-spark",
+      "r": 0.0685,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gte-rerank-v2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deep-research-pro-preview-12-2025",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.4-2026-03-05",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "chatgpt-image-latest",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-search-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-5-20251101-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-ai/deepseek-llm-67b-chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4.20-multi-agent-low",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "MiniMax-M3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "gpt-4.5-preview-2025-02-27",
+      "r": 37.5,
+      "c": 2,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o1-preview-2024-09-12",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5-search-api",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "internlm/internlm2_5-7b-chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-v4-pro-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.6",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4.3-low",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "gpt-5.4-openai-compact",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-3-7-sonnet-20250219-thinking",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-pro-128k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-3.5-8k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "r": 0.3,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "glm-4v-plus",
+      "r": 0.6849,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-image-2",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.5-flash-thinking",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini稳定渠道"
+    },
+    {
+      "n": "o3-mini-low",
+      "r": 0.55,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@hf/thebloke/llama-2-13b-chat-awq",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-4-argon-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini稳定渠道"
+    },
+    {
+      "n": "o3-mini-2025-01-31-high",
+      "r": 0.55,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "text-moderation-stable",
+      "r": 0.1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-8-high",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "jina-clip-v1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/tiiuae/falcon-7b-instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Pro/Qwen/Qwen2-1.5B-Instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "moonshot-v1-8k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-realtime-preview",
+      "r": 2.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-nano-banana-2.1",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini VT 渠道二"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "gpt-audio-1.5",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "mistral-medium-latest",
+      "r": 37.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-3.5-8k-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "bge-large-zh",
+      "r": 0.137,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.2-pro",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-transcribe",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-mini-audio-preview-2024-12-17",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "text-moderation-latest",
+      "r": 0.1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "tts-1-hd-1106",
+      "r": 15,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "command-r-plus",
+      "r": 1.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-ai/DeepSeek-V3-0324",
+      "r": 0.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "SparkDesk",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemma-3-4b-it",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.3-codex",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "jimeng_high_aes_general_v21_L",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude 反代"
+    },
+    {
+      "n": "grok-build-console",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "gemini-3.1-flash-image",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "nova-sonic-v1:0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-ai/DeepSeek-V2-Chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-r1-distill-qwen-32b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-3-search",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-realtime-mini-2025-12-15",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4-fast-non-reasoning-search",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-反重力proutlra"
+    },
+    {
+      "n": "grok-4.3-console",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok 官 K"
+    },
+    {
+      "n": "o1-preview",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "BLOOMZ-7B",
+      "r": 0.274,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.5-computer-use-preview-10-2025",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Pro/Qwen/Qwen2-7B-Instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Pro/mistralai/Mistral-7B-Instruct-v0.2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4.3-high",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "gpt-image-2.5-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "DeepSeek-V4-Flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "o3-mini-high",
+      "r": 0.55,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/openchat/openchat-3.5-0106",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "mistral-large-latest",
+      "r": 37.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4-0709-search",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-3-5-sonnet-20241022",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-3.5-turbo-instruct-0914",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4.1-mini",
+      "r": 0.2,
+      "c": 2,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o1-pro",
+      "r": 75,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.1-codex-max",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-realtime-preview-2025-06-03",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude 反代"
+    },
+    {
+      "n": "MiniMax-M2.1",
+      "r": 1.05,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-search-preview-2025-03-11",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "step-1.5v-mini",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-6-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Code Kiro 特价"
+    },
+    {
+      "n": "claude-opus-4-8-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/meta/llama-2-7b-chat-fp16",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-1.5-pro-32k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-6.1-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "text-davinci-edit-001",
+      "r": 10,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "openai/gpt-oss-120b",
+      "r": 0.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-image-2.6-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "mimo-v2.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "o1-2024-12-17",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-4.0-turbo-8k-latest",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-char-fiction-8k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "speech-02-turbo",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-3.5-turbo-16k-0613",
+      "r": 1.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4-32k-0613",
+      "r": 30,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.4-pro",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "computer-use-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "glm-4.6",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/mistral/mistral-7b-instruct-v0.2-lora",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.2-chat-latest",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-image-2.5-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4.3-medium",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "text-embedding-3-large",
+      "r": 0.065,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "doubao-seed-1-6-thinking-250715",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "text-embedding-ada-002",
+      "r": 0.05,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-6-high",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "SparkDesk-v4.0",
+      "r": 1.2858,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "c4ai-aya-23-35b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/qwen/qwen1.5-7b-chat-awq",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-ops-4-7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "ClaudeCode 官 key"
+    },
+    {
+      "n": "SparkDesk-v2.1",
+      "r": 1.2858,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-3.5-128k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-embedding-2-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/microsoft/phi-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "mistral-embed",
+      "r": 37.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-4.0-turbo-8k-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-imagine-image-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "yi-medium",
+      "r": 0.1712,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "gpt-4o-2024-08-06",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-3-opus-20240229",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "SparkDesk-v3.1",
+      "r": 1.2858,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "netease-youdao/bce-reranker-base_v1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "MiniMax-M2.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok 官 K"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-image",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini VT 渠道二"
+    },
+    {
+      "n": "gemini-2.5-pro-preview-tts",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-realtime-2",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-sonnet-4-20250514-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-6-max",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4-20",
+      "r": 0.71,
+      "c": 1.993,
+      "cr": 0.162,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "gpt-realtime-mini-2025-10-06",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-7-xhigh",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "veo-2.0-generate-001",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/thebloke/discolm-german-7b-v1-awq",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@hf/thebloke/neural-chat-7b-v3-1-awq",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "abab6.5-chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "black-forest-labs/FLUX.1-schnell",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Embedding-V1",
+      "r": 0.137,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "glm-4-long",
+      "r": 0.0685,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "FunAudioLLM/SenseVoiceSmall",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-novel-8k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "qwen3.7-plus",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "gemini-4-argon-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini稳定渠道"
+    },
+    {
+      "n": "gpt-3.5-turbo-16k",
+      "r": 1.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-audio-mini-2025-12-15",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "command-r-08-2024",
+      "r": 0.075,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "rerank-multilingual-v2.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Pro/THUDM/glm-4-9b-chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude 反代"
+    },
+    {
+      "n": "gemini-3.7-flash-tiered",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini稳定渠道"
+    },
+    {
+      "n": "hunyuan-standard",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-lite-128k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-3-mini",
+      "r": 0.15,
+      "c": 1.6667,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "kimi-k2-0905-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "speech-01-turbo",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini VT 渠道二"
+    },
+    {
+      "n": "gemini-embedding-001",
+      "r": 0.075,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "command-r",
+      "r": 0.25,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o3-mini-2025-01-31",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-20250514-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "nova-premier-v1:0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-flash-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-r1",
+      "r": 2,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "yi-large-rag-preview",
+      "r": 1.7123,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5-pro-2025-10-06",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "kimi-k2-turbo-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3.8-flash-tts",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini_Vertex直连"
+    },
+    {
+      "n": "ERNIE-3.5-8K",
+      "r": 0.8219,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ERNIE-Lite-8K-0308",
+      "r": 0.2055,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemma-3-12b-it",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude 反代"
+    },
+    {
+      "n": "gpt-5-codex",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "whisper-1",
+      "r": 15,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ERNIE-3.5-8K-1222",
+      "r": 0.8219,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-1-20250805",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "llama-3-8b-instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Pro/01-ai/Yi-1.5-9B-Chat-16K",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-audio-2025-08-28",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "glm-4-plus",
+      "r": 3.4247,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "seedream-4-0-250828",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "abab6.5s-chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4-1-fast-reasoning",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3.1-flash-tts-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini_Vertex直连"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-反重力proutlra"
+    },
+    {
+      "n": "gpt-3.5-turbo-0125",
+      "r": 0.25,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o3-pro-2025-06-10",
+      "r": 10,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@hf/nexusflow/starling-lm-7b-beta",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ERNIE-Tiny-8K",
+      "r": 0.0685,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "qwen3-235b-a22b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "nova-micro-v1:0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini VT 渠道二"
+    },
+    {
+      "n": "deepseek-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-code-fast-1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-realtime-preview-2024-12-17",
+      "r": 2.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.0-flash-lite-001",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4-vision-preview",
+      "r": 5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "text-embedding-3-small",
+      "r": 0.01,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-8-max",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "text-embedding-v1",
+      "r": 0.05,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "command-a-03-2025",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-4.0-turbo-128k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-3.5-turbo-instruct",
+      "r": 0.75,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-imagine-video",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-audio-preview",
+      "r": 1.25,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-audio-preview-2025-06-03",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-realtime-1.5",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "babbage-002",
+      "r": 0.2,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/deepseek-ai/deepseek-math-7b-base",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3.1-pro-preview-customtools",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.5-flash-image-preview",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini_Vertex直连"
+    },
+    {
+      "n": "gpt-3.5-turbo-1106",
+      "r": 0.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "omni-moderation-2024-09-26",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ERNIE-Speed-8K",
+      "r": 0.274,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@cf/google/gemma-7b-it-lora",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "BAAI/bge-m3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "internlm/internlm2_5-20b-chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-mini",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5-mini-2025-08-07",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.5-flash-native-audio-latest",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4-fast-non-reasoning",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3.1-pro-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o3-mini-2025-01-31-medium",
+      "r": 0.55,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o3-pro",
+      "r": 10,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-realtime-2.1-mini",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-7-high",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "qwen-turbo",
+      "r": 0.8572,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemma-3n-e4b-it",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-4.0-8k-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-v3.2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "gpt-4o-mini-2024-07-18",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.1-codex-mini",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-7-low",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "PaLM-2",
+      "r": 1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-speed-128k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-ai/DeepSeek-V3.1",
+      "r": 0.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-image-1",
+      "r": 2.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "moonshot-v1-128k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o3-mini",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o4-mini",
+      "r": 0.55,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.3-chat-latest",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "glm-4.7-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "c4ai-aya-23-8b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "command-light",
+      "r": 0.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Pro/meta-llama/Meta-Llama-3-8B-Instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "GLM-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "llama-3-sonar-small-32k-chat",
+      "r": 0.1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Pro/01-ai/Yi-1.5-6B-Chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "zai-org/GLM-4.5-FP8",
+      "r": 0.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4",
+      "r": 15,
+      "c": 2,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4-1106-preview",
+      "r": 5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "chatgpt-4o-latest",
+      "r": 2.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "sonar",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-v4-pro-low",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-3-mini-search",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-vision-lite-32k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "BAAI/bge-reranker-v2-m3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4.20-0309-non-reasoning-console",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "gpt-4o-mini-realtime-preview",
+      "r": 0.3,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "chatglm_turbo",
+      "r": 0.3572,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "rerank-english-v2.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude 反代"
+    },
+    {
+      "n": "gemini-3.6-flash-tiered",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini稳定渠道"
+    },
+    {
+      "n": "gpt-4o-mini-tts-2025-12-15",
+      "r": 37.5,
+      "c": 20,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.4-pro-2026-03-05",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "bge-large-en",
+      "r": 0.137,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-7-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "qwen-max-longcontext",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@hf/thebloke/openhermes-2.5-mistral-7b-awq",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "seedance-1-0-pro-250528",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4.20-0309-console",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude 反代"
+    },
+    {
+      "n": "grok-4.3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "imagen-4.0-ultra-generate-001",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@hf/thebloke/mistral-7b-instruct-v0.1-awq",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ERNIE-3.5-4K-0205",
+      "r": 0.8219,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-fetch",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "image-01-live",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "yi-large-turbo",
+      "r": 0.8219,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "qwen3.7-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "gemini-3.5-flash-extra-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini稳定渠道"
+    },
+    {
+      "n": "gpt-5.2-codex",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-mini-realtime-preview-2024-12-17",
+      "r": 0.3,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+      "r": 0.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "MiniMax-M2.5-highspeed",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "yi-large",
+      "r": 1.3699,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "llama-3-sonar-small-32k-online",
+      "r": 0.1,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "THUDM/chatglm3-6b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-flash-low",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-r1-distill-qwen-7b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "yi-medium-200k",
+      "r": 0.8219,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "hunyuan-standard-256K",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4-20-non-reasoning",
+      "r": 1,
+      "c": 3,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "claude-3-7-sonnet-20250219",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o3-2025-04-16",
+      "r": 1,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-realtime",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.3-codex-spark",
+      "r": 0.875,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-v4-pro-0813",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "gpt-4-turbo-2024-04-09",
+      "r": 5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-transcribe-diarize",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o1-pro-2025-03-19",
+      "r": 75,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o3-deep-research-2025-06-26",
+      "r": 5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-realtime-translate",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "computer-use-preview-2025-03-11",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.5-openai-compact",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-image-2.6-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude 反代"
+    },
+    {
+      "n": "mimo-v2.5-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "gpt-4o-mini-audio-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "nova-reel-v1:0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "open-mistral-7b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5.2",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude 反代"
+    },
+    {
+      "n": "gpt-6",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "command-nightly",
+      "r": 0.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "rerank-multilingual-v3.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ernie-lite-pro-128k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-5-nano",
+      "r": 0.025,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "chatglm_lite",
+      "r": 0.1429,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "SparkDesk-v1.1",
+      "r": 1.2858,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Pro/internlm/internlm2_5-7b-chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4-1-fast-non-reasoning",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "abab6-chat",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "MiniMax-M2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-3-pro-image",
+      "r": 37.5,
+      "c": 60,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-mini-search-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@hf/thebloke/zephyr-7b-beta-awq",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-v3",
+      "r": 1,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Baichuan4",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "MiniMax-M2.1-highspeed",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-flash-lite-latest",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-v4-flash-0731",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模渠道"
+    },
+    {
+      "n": "gpt-4-32k",
+      "r": 30,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-mini-transcribe",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-4o-audio-preview-2024-12-17",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "text-babbage-001",
+      "r": 0.25,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "@hf/thebloke/deepseek-coder-6.7b-instruct-awq",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ByteDance/SDXL-Lightning",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "nano-banana-pro-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "nova-pro-v1:0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "BAAI/bge-large-en-v1.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "SparkDesk-v3.5",
+      "r": 1.2858,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o3-deep-research",
+      "r": 5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "ERNIE-Lite-8K-0922",
+      "r": 0.5479,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "deepseek-flash-none",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "Doubao-lite-32k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-8-low",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gemini-2.0-flash-001",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "grok-4.20-0309-reasoning-console",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "Grok Super"
+    },
+    {
+      "n": "gpt-4o-mini-search-preview-2025-03-11",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "o3",
+      "r": 1,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "claude-opus-4-7-medium",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT Pro"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT Pro"
+    }
+  ]
+}

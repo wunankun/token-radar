@@ -1,9 +1,9 @@
 {
   "station_id": "aceoai-com",
   "endpoint": "https://aceoai.com/api/pricing",
-  "fetched_at": "2026-11-26T16:17:20.796Z",
+  "fetched_at": "2026-11-26T16:34:57.651Z",
   "http_status": 200,
-  "latency_ms": 855,
+  "latency_ms": 914,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -40,6 +40,15 @@
     "test": "站长测试稳定性分组"
   },
   "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
+  "status": {
+    "usd_exchange_rate": 1,
+    "quota_per_unit": 500000,
+    "price": 1,
+    "currency": "¤",
+    "top_up_link": null,
+    "system_name": "ACEO AI",
+    "version": "v1.0.0-rc.48"
+  },
   "stats": {
     "total": 18,
     "matched": 6,
@@ -48,21 +57,24 @@
     "duplicate": 0
   },
   "models": {
-    "deepseek-flash": {
-      "input": 2,
-      "output": 8,
-      "cache_read": 0.04,
+    "claude-opus-5-5": {
+      "input": 4,
+      "output": 20,
+      "cache_read": 0.2,
       "raw": {
-        "model_name": "deepseek-v4.1-flash",
-        "model_ratio": 1,
-        "completion_ratio": 4,
+        "model_name": "claude-opus-5-5",
+        "model_ratio": 2,
+        "completion_ratio": 5,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.02,
+        "cache_ratio": 0.05,
         "enable_groups": [
-          "deepseek专用",
-          "deepseek福利"
-        ]
+          "claude专用",
+          "claude-svip专用",
+          "claude-vip专用"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "tier(\"base\", p * 4 + c * 20 + cr * 0.2 + cc * 5 + cc1h * 8)"
       }
     },
     "claude-sonnet-5-5": {
@@ -101,6 +113,23 @@
         ]
       }
     },
+    "deepseek-flash": {
+      "input": 2,
+      "output": 8,
+      "cache_read": 0.04,
+      "raw": {
+        "model_name": "deepseek-v4.1-flash",
+        "model_ratio": 1,
+        "completion_ratio": 4,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.02,
+        "enable_groups": [
+          "deepseek专用",
+          "deepseek福利"
+        ]
+      }
+    },
     "gpt-6.2-astra": {
       "input": 8,
       "output": 40,
@@ -133,32 +162,12 @@
         "quota_type": 0,
         "cache_ratio": 0.05,
         "enable_groups": [
-          "gpt福利",
           "gpt-vip专用",
-          "gpt专用"
+          "gpt专用",
+          "gpt福利"
         ],
         "billing_mode": "tiered_expr",
         "billing_expr": "((len <= 272000)) ? (tier(\"base\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 2.5 + cc12h * 5)) : (tier(\"long_context\", p * 4 + c * 15 + cr * 0.2 + cc * 5 + cc1h * 5 + cc12h * 10"
-      }
-    },
-    "claude-opus-5-5": {
-      "input": 4,
-      "output": 20,
-      "cache_read": 0.2,
-      "raw": {
-        "model_name": "claude-opus-5-5",
-        "model_ratio": 2,
-        "completion_ratio": 5,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "cache_ratio": 0.05,
-        "enable_groups": [
-          "claude-svip专用",
-          "claude-vip专用",
-          "claude专用"
-        ],
-        "billing_mode": "tiered_expr",
-        "billing_expr": "tier(\"base\", p * 4 + c * 20 + cr * 0.2 + cc * 5 + cc1h * 8)"
       }
     }
   },
@@ -196,18 +205,18 @@
     "dominant_multiple": 1,
     "agreement": 0.667,
     "comparable_models": [
+      "claude-opus-5-5",
       "claude-sonnet-5-5",
       "gpt-6.2-astra",
-      "gpt-6.2-sol",
-      "claude-opus-5-5"
+      "gpt-6.2-sol"
     ],
     "models": [
       {
-        "id": "deepseek-flash",
-        "name": "deepseek-v4.1-flash",
-        "input": 2,
-        "output": 8,
-        "multiple": 6.667,
+        "id": "claude-opus-5-5",
+        "name": "claude-opus-5-5",
+        "input": 4,
+        "output": 20,
+        "multiple": 1,
         "shape_ok": true,
         "verdict": "ok",
         "why": "输出/输入比与官方一致，这一行能单独算"
@@ -233,6 +242,16 @@
         "why": "输出/输入比与官方一致，这一行能单独算"
       },
       {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4.1-flash",
+        "input": 2,
+        "output": 8,
+        "multiple": 6.667,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
         "id": "gpt-6.2-astra",
         "name": "gpt-6.2-astra",
         "input": 8,
@@ -251,35 +270,25 @@
         "shape_ok": true,
         "verdict": "ok",
         "why": "输出/输入比与官方一致，这一行能单独算"
-      },
-      {
-        "id": "claude-opus-5-5",
-        "name": "claude-opus-5-5",
-        "input": 4,
-        "output": 20,
-        "multiple": 1,
-        "shape_ok": true,
-        "verdict": "ok",
-        "why": "输出/输入比与官方一致，这一行能单独算"
       }
     ],
     "rows_ok": 6,
     "rows_total": 6,
     "excluded_models": [
       {
-        "id": "deepseek-flash",
-        "name": "deepseek-v4.1-flash",
-        "multiple": 6.667
-      },
-      {
         "id": "deepseek-v4-pro",
         "name": "deepseek-v4-pro",
         "multiple": 6.818
+      },
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4.1-flash",
+        "multiple": 6.667
       }
     ],
     "flat_price": null,
     "confidence": "medium",
-    "note": "对得上官方价的 6 个模型里，4 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 13 个分组倍率，真正的折扣在那里。 对不上的 2 个：deepseek-flash×6.67、deepseek-v4-pro×6.82，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。",
-    "computed_at": "2026-11-26T16:17:31.299Z"
+    "note": "对得上官方价的 6 个模型里，4 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 13 个分组倍率，真正的折扣在那里。 对不上的 2 个：deepseek-v4-pro×6.82、deepseek-flash×6.67，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。",
+    "computed_at": "2026-11-26T16:35:14.875Z"
   }
 }

@@ -1,0 +1,497 @@
+{
+  "station_id": "apibasis-com",
+  "endpoint": "https://apibasis.com/api/pricing",
+  "fetched_at": "2026-11-26T16:34:50.207Z",
+  "http_status": 200,
+  "total": 61,
+  "models": [
+    {
+      "n": "gemini-nano-banana-2.1",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "默认"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT 优惠"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "企业池pro"
+    },
+    {
+      "n": "GPT-6-Astra",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT 纯血PRO"
+    },
+    {
+      "n": "gpt-6",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "稳定GPT备用"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT 优惠"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro 90缓存"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro 90缓存"
+    },
+    {
+      "n": "kimi-k3-1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认"
+    },
+    {
+      "n": "gemini-3-pro-image",
+      "r": 37.5,
+      "c": 60,
+      "cr": null,
+      "g": 1,
+      "gn": "默认"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Kimi 月之暗面"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 2.25,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "DeepSeek 深度求索"
+    },
+    {
+      "n": "Qwen3.8-Flash",
+      "r": 3,
+      "c": 3,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Qwen 千问"
+    },
+    {
+      "n": "grok-4.6-latest",
+      "r": 1,
+      "c": 6,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "默认"
+    },
+    {
+      "n": "gpt-image-2.6-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "默认"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Qwen 千问"
+    },
+    {
+      "n": "Qwen3.8-Max",
+      "r": 6,
+      "c": 3,
+      "cr": 0.125,
+      "g": 1,
+      "gn": "Qwen 千问"
+    },
+    {
+      "n": "grok-4.5-latest",
+      "r": 1,
+      "c": 3,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "默认"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "CCMAX带F5"
+    },
+    {
+      "n": "gemini-3.1-flash-image",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "默认"
+    },
+    {
+      "n": "gpt-image-2.6",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "默认"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 1,
+      "c": 6,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "默认"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro 90缓存"
+    },
+    {
+      "n": "claude-sonnet-4.5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro 90缓存"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT 优惠"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "DeepSeek 深度求索"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "稳定GPT备用"
+    },
+    {
+      "n": "deepseek-v4.1-flash-1017",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "DeepSeek 深度求索"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro 90缓存"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT 优惠"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Luna专用分组"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Luna专用分组"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kimi 月之暗面"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini 谷歌"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "CCMAX带F5"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini 谷歌"
+    },
+    {
+      "n": "claude-sonnet-4",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro 90缓存"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT 优惠"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "默认"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Kiro 90缓存"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "GLM 智谱"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.4,
+      "c": 3.5,
+      "cr": 0.2875,
+      "g": 1,
+      "gn": "GLM 智谱"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT 优惠"
+    },
+    {
+      "n": "gpt-image-2.6-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "默认"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "CCMAX带F5"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 3.25,
+      "c": 4.1538,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Kimi 月之暗面"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini 谷歌"
+    },
+    {
+      "n": "grok-4.7-latest",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "默认"
+    },
+    {
+      "n": "gpt-5.6",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT 纯血PRO"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro 90缓存"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini 谷歌"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "CCMAX带F5"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro 90缓存"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "CCMAX带F5"
+    },
+    {
+      "n": "claude-haiku-4.5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro 90缓存"
+    },
+    {
+      "n": "claude-5-fable",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Testing 002"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "GLM 智谱"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT 优惠"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT 优惠"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro 90缓存"
+    }
+  ]
+}

@@ -1,0 +1,1489 @@
+{
+  "station_id": "yanai-it-com",
+  "endpoint": "https://yanai.it.com/api/pricing",
+  "fetched_at": "2026-11-26T16:34:35.753Z",
+  "http_status": 200,
+  "total": 185,
+  "models": [
+    {
+      "n": "gemini-3.7-flash-tiered",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "doubao-seedance-2-0-260128-max",
+      "r": 23,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "gemini-3.1-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "企业专属"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "11kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "grok-4.7-build-fast",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "gpt-image-2.5",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "12kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "gpt-image-2-ad",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-argon-high",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "3kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "7kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "gemini-3.8-flash-medium",
+      "r": 0.375,
+      "c": 4.6667,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti"
+    },
+    {
+      "n": "gpt-image-2.6",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929-thinking",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "AWSB"
+    },
+    {
+      "n": "gemini-2.5-flash-image-preview",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 6.5,
+      "c": 5.2308,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "自部署kimi"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-pro号池"
+    },
+    {
+      "n": "gpt-5-mini",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "抗截断/gemini-4-argon",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "codex-pro号池"
+    },
+    {
+      "n": "muse-spark-1.3",
+      "r": 0.625,
+      "c": 3.4,
+      "cr": 0.12,
+      "g": 1,
+      "gn": "muse"
+    },
+    {
+      "n": "gpt-4.1-nano",
+      "r": 0.05,
+      "c": 2,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.8-flash-low",
+      "r": 0.375,
+      "c": 4.6667,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "gemini-4-hydrogen-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "doubao-seedance-2-0-fast-260128-max",
+      "r": 18.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 0.375,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "gpt-5.6",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-pro号池"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 0.05,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.4,
+      "c": 3.5,
+      "cr": 0.2875,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "抗截断/gemini-3.1-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "an/claude-opus-4-6-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "c/gemini-4-argon-low",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 0.75,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "自部署ds"
+    },
+    {
+      "n": "4kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "grok-build-0.1",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "企业专属"
+    },
+    {
+      "n": "gemini-4-hydrogen-xhigh",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "gemini-3.7-flash-high",
+      "r": 0.375,
+      "c": 4.6667,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "自部署kimi"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "AWSB"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-pro号池"
+    },
+    {
+      "n": "gpt-5.1-codex",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "企业专属"
+    },
+    {
+      "n": "gpt-image-1.5",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "gpt-5-nano",
+      "r": 0.025,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti"
+    },
+    {
+      "n": "muse-wonder-full-1.0",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "muse-wonder"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "6kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "kimi-k2.8",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "gpt-image-2pro",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "muse-wonder-full-1.0-contributor",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "muse-wonder"
+    },
+    {
+      "n": "c/gemini-4-argon",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.7-fast",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "ccmax-正价"
+    },
+    {
+      "n": "gpt-4o-mini",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "企业专属"
+    },
+    {
+      "n": "gpt-image-2.6-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "gemini-4-argon-medium",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "an/claude-opus-4-6",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "doubao-seedance-2-5-260628-max",
+      "r": 35,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "claude-opus-4-5-20251101-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "AWSB"
+    },
+    {
+      "n": "muse-spark-1.2",
+      "r": 0.625,
+      "c": 3.4,
+      "cr": 0.12,
+      "g": 1,
+      "gn": "muse-wonder"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-preview",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "gemini-3.6-flash-high",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-image",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "企业专属"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 2.25,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "自部署ds"
+    },
+    {
+      "n": "muse-spark-1.3-contributor",
+      "r": 0.625,
+      "c": 3.4,
+      "cr": 0.12,
+      "g": 1,
+      "gn": "muse"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "muse-wonder-1.0",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "muse-wonder"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti"
+    },
+    {
+      "n": "gemini-4-hydrogen-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "qwen3.7-max",
+      "r": 6,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "阿里百炼"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti"
+    },
+    {
+      "n": "kimi-k3/fw",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "gpt-5",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.7-flash-low",
+      "r": 0.375,
+      "c": 4.6667,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "gemini-3.6-flash-medium",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "doubao-seedance-2-5-flash-261115-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "kimi-k3.1-pro-highspeed",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "codex-pro号池"
+    },
+    {
+      "n": "muse-video",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-pro:0813",
+      "r": 2.25,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2-count",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "企业专属"
+    },
+    {
+      "n": "deepseek-v4-flash-0713",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "自部署ds"
+    },
+    {
+      "n": "deepseek-v4.1-flash-1017",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "自部署ds"
+    },
+    {
+      "n": "5kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "gpt-reserve",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "gpt-4o",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "企业专属"
+    },
+    {
+      "n": "gpt-5.1",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.8-flash-high",
+      "r": 0.375,
+      "c": 4.6667,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti"
+    },
+    {
+      "n": "gemini-4-hydrogen-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti"
+    },
+    {
+      "n": "gpt-5.3-codex-spark",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "gpt-5.2",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "gemini-3.6-flash-low",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "gemini-3-pro-image-preview",
+      "r": 37.5,
+      "c": 60,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k3-fireworks",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "fireworks"
+    },
+    {
+      "n": "gemini-3.8-flash-tiered",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-anti"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "阿里百炼"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "c/gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "企业专属"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-pro号池"
+    },
+    {
+      "n": "claude-opus-4-6-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "AWSB"
+    },
+    {
+      "n": "gemini-3.1-flash-image-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "13kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "kimi-k3/az",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "an/claude-sonnet-4-6",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "c/gemini-4-argon-high",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "gpt-image-1",
+      "r": 2.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "gpt-4o-2024-05-13",
+      "r": 2.5,
+      "c": 3,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "muse-spark-1.1",
+      "r": 0.625,
+      "c": 3.4,
+      "cr": 0.12,
+      "g": 1,
+      "gn": "muse-wonder"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "doubao-seedance-2-0-mini-260615-max",
+      "r": 11.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "1kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "14kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "gemini-3-pro-image",
+      "r": 37.5,
+      "c": 60,
+      "cr": null,
+      "g": 1,
+      "gn": "企业专属"
+    },
+    {
+      "n": "gpt-image-2.5-prism",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-argon-low",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "muse-wonder-1.0-contributor",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "muse-wonder"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "抗截断/gemini-3.7-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.0375,
+      "g": 1,
+      "gn": "gemini-anti"
+    },
+    {
+      "n": "qwen-max",
+      "r": 1.2,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "阿里百炼"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti"
+    },
+    {
+      "n": "gemini-3.7-flash-medium",
+      "r": 0.375,
+      "c": 4.6667,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-pro号池"
+    },
+    {
+      "n": "gpt-image-2",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "AWSB"
+    },
+    {
+      "n": "gpt-5.4-nano",
+      "r": 37.5,
+      "c": 6.25,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "muse-spark-1.2-contributor",
+      "r": 0.05,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "muse-wonder"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "自部署ds"
+    },
+    {
+      "n": "抗截断/gemini-3.8-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "c/gemini-3.8-flash-high",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "codex-pro号池"
+    },
+    {
+      "n": "gemini-3.1-flash-image",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "企业专属"
+    },
+    {
+      "n": "gemini-4-carbon-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "an/claude-sonnet-4-6-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "抗截断/gemini-4-argon-low",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-6-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "AWSB"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "2kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "gpt-5.3-codex",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "企业专属"
+    },
+    {
+      "n": "gemini-3-flash-preview",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-anti"
+    },
+    {
+      "n": "deepseek-v4-pro-0813",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "自部署ds"
+    },
+    {
+      "n": "gpt-4.1-mini",
+      "r": 0.2,
+      "c": 2,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "企业专属"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "自部署glm"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "ccmax-正价"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "8kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "gpt-image-2.6-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "gpt-4.1",
+      "r": 1,
+      "c": 2,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-2.5-flash-image",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "企业专属"
+    },
+    {
+      "n": "10kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-pro号池"
+    },
+    {
+      "n": "gpt-image-2.5-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "gemini-4-carbon-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "c/gemini-3.7-flash-high",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "抗截断/gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-kiro-90缓"
+    },
+    {
+      "n": "kimi-k3/dw",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "gpt-6",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-pro号池"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-pro号池"
+    },
+    {
+      "n": "9kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "k3-test"
+    },
+    {
+      "n": "gpt-image-2.5-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "c/gemini-3.1-pro-high",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "抗截断/gemini-4-argon-high",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-neon-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt不降智"
+    },
+    {
+      "n": "claude-opus-4-1-20250805",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "AWSB"
+    },
+    {
+      "n": "gemini-4-carbon-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-anti-ultra"
+    }
+  ]
+}

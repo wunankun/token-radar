@@ -1,0 +1,937 @@
+{
+  "station_id": "nova-vcrauo-com",
+  "endpoint": "https://nova.vcrauo.com/api/pricing",
+  "fetched_at": "2026-11-26T16:34:40.539Z",
+  "http_status": 200,
+  "total": 116,
+  "models": [
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude--kiro稳定高缓渠道"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Ultra反重力渠道"
+    },
+    {
+      "n": "qwen3.8-flash",
+      "r": 0.4,
+      "c": 3.375,
+      "cr": 0.125,
+      "g": 1,
+      "gn": "国产稳定反代渠道"
+    },
+    {
+      "n": "Free-gpt-image-2.6-flare",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "x-2.5-480p",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点一"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex福利节点二渠道"
+    },
+    {
+      "n": "Adobe-gpt-image-2.6-sunburst",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Ultra反重力渠道"
+    },
+    {
+      "n": "Free-gpt-image-2.5-flare",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2.5-sunburst-CF",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2.6-CF",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "minimax-m3.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产稳定反代渠道"
+    },
+    {
+      "n": "Free-gpt-image-2.5-sunburst",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "GrokSuper节点"
+    },
+    {
+      "n": "gpt-image-2.5-CF",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "seedance-2.5-720-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点二"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude--kiro稳定高缓渠道"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "Claude--kiro兜底高缓渠道"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude--kiroPower渠道企业级kiro智商较高"
+    },
+    {
+      "n": "doubao-seedance-2-0-260128",
+      "r": 18.4,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包官转节点"
+    },
+    {
+      "n": "kimi-k3.1-pro-highspeed",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Kimi官Key"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex福利节点一渠道"
+    },
+    {
+      "n": "Free-gpt-image-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 6,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国产福利渠道高缓"
+    },
+    {
+      "n": "yy-seedance2.5-480p",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点一"
+    },
+    {
+      "n": "j-2.0-t-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点一"
+    },
+    {
+      "n": "Free-gpt-image-2.6-sunburst",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude--kiroPro正价渠道"
+    },
+    {
+      "n": "mimo-v2.5-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产特惠反代渠道"
+    },
+    {
+      "n": "glm-5.3-prime",
+      "r": 1.4,
+      "c": 3.1429,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Glm官Key"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex高速节点一渠道"
+    },
+    {
+      "n": "gpt-image-2.6",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "MiniMax-M2.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产稳定反代渠道"
+    },
+    {
+      "n": "jimeng-seedance-2.5-480",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点一"
+    },
+    {
+      "n": "doubao-seedance-2-5-260628",
+      "r": 18.4,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包官转节点"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude--kiro稳定高缓渠道"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "国产福利渠道高缓高速"
+    },
+    {
+      "n": "glm-5.3-flashx",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产特惠反代渠道"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude--kiro稳定高缓渠道"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gpt-Free渠道"
+    },
+    {
+      "n": "mimo-v2.6-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产特惠反代渠道"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产特惠反代渠道"
+    },
+    {
+      "n": "kimi-k2.6",
+      "r": 3.25,
+      "c": 4.1538,
+      "cr": 0.1692,
+      "g": 1,
+      "gn": "Kimi官Key"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Ultra反重力渠道"
+    },
+    {
+      "n": "gpt-image-2",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "seedance2.0-pro-720p",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点二"
+    },
+    {
+      "n": "kimi-k2.7-code-highspeed",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Kimi官Key"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Ultra反重力渠道"
+    },
+    {
+      "n": "gpt-image-2.5",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "seedance2.5-pro-720p",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点二"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude--kiro稳定高缓渠道"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex福利节点一渠道"
+    },
+    {
+      "n": "gpt-image-2-CF",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2.5-flare-CF",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "Adobe-gpt-image-2.5-sunburst",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-image-2.6-flare-CF",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 3.25,
+      "c": 4.1538,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国产福利节点"
+    },
+    {
+      "n": "Adobe-gpt-image-2.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude--kiro稳定高缓渠道"
+    },
+    {
+      "n": "doubao-seedance-2.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点二"
+    },
+    {
+      "n": "minimax-m3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产特惠反代渠道"
+    },
+    {
+      "n": "mimo-v2.6-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产特惠反代渠道"
+    },
+    {
+      "n": "hy3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产稳定反代渠道"
+    },
+    {
+      "n": "gpt-image-2.5-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "Adobe-gpt-image-2.5-flare",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude--kiro稳定高缓渠道"
+    },
+    {
+      "n": "deepseek-v4-pro-0813",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产特惠反代渠道"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国产福利节点"
+    },
+    {
+      "n": "qwen3.7-max",
+      "r": 6,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国产稳定反代渠道"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude--kiro稳定高缓渠道"
+    },
+    {
+      "n": "mimo-v2.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产稳定反代渠道"
+    },
+    {
+      "n": "doubao-seedance-2.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点二"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gpt-Free渠道"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex福利节点一渠道"
+    },
+    {
+      "n": "gpt-image-2.5-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-flash-0731",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产稳定反代渠道"
+    },
+    {
+      "n": "seedance-2.0-933",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点二"
+    },
+    {
+      "n": "gpt-image-2.6-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude--kiro稳定高缓渠道"
+    },
+    {
+      "n": "minimax-h3-original-cf-2k",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex福利节点二渠道"
+    },
+    {
+      "n": "deepseek-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Deepseek官Key"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini Ultra反重力渠道"
+    },
+    {
+      "n": "x-2.5-720p",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点一"
+    },
+    {
+      "n": "deepseek-v4.1-flash-1017",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产福利渠道高缓高速"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok福利节点"
+    },
+    {
+      "n": "yy-seedance2.5-720p",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点一"
+    },
+    {
+      "n": "xinyao-2.0-720p-TJ",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点一"
+    },
+    {
+      "n": "Adobe-gpt-image-2.6-flare",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "GrokSuper节点"
+    },
+    {
+      "n": "a-2.0-720p-v1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点一"
+    },
+    {
+      "n": "gpt-image-2.6-sunburst-CF",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5.1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "Claude--kiro稳定高缓渠道"
+    },
+    {
+      "n": "kimi-k2.8",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产福利节点"
+    },
+    {
+      "n": "glm-5.1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产福利节点"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.4,
+      "c": 3.5,
+      "cr": 0.2875,
+      "g": 1,
+      "gn": "国产特惠反代渠道"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Deepseek官Key"
+    },
+    {
+      "n": "grok-4.7-build-fast",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GrokSuper节点"
+    },
+    {
+      "n": "gemini-3.8-flash-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini Ultra兜底"
+    },
+    {
+      "n": "x-2.5-1080p",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点一"
+    },
+    {
+      "n": "sd-2.0fast-720p",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点一"
+    },
+    {
+      "n": "deepseek-v4.1-flash-1017-cyber",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "自部署无审查deepseek-机房直出"
+    },
+    {
+      "n": "MiniMax-M3",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国产稳定反代渠道"
+    },
+    {
+      "n": "jimeng-seedance-2.5-720",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点一"
+    },
+    {
+      "n": "sd-2.0fast-480p",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Seedance豆包稳定节点一"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude--kiro稳定高缓渠道"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国产福利节点"
+    },
+    {
+      "n": "claude-opus-4-6-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "CCMAX满血高性能特价"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国产福利节点"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude--kiro稳定高缓渠道"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude--kiroPro正价渠道"
+    },
+    {
+      "n": "Adobe-gpt-image-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-build-0.1",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "GrokSuper节点"
+    },
+    {
+      "n": "gpt-image-2.6-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "hy4-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产特惠反代渠道"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude--kiro稳定高缓渠道"
+    }
+  ]
+}

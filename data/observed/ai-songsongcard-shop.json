@@ -1,9 +1,9 @@
 {
   "station_id": "ai-songsongcard-shop",
   "endpoint": "https://ai.songsongcard.shop/api/pricing",
-  "fetched_at": "2026-11-26T16:17:08.002Z",
+  "fetched_at": "2026-11-26T16:34:34.644Z",
   "http_status": 200,
-  "latency_ms": 1074,
+  "latency_ms": 1748,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -79,6 +79,15 @@
     "国模渠道": "Deepseek、GLM5.2 等"
   },
   "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
+  "status": {
+    "usd_exchange_rate": 7.3,
+    "quota_per_unit": 500000,
+    "price": 7.3,
+    "currency": "¤",
+    "top_up_link": null,
+    "system_name": "SongSong AI",
+    "version": "prod-20261125-main-8a37f28c5"
+  },
   "stats": {
     "total": 676,
     "matched": 6,
@@ -87,29 +96,38 @@
     "duplicate": 6
   },
   "models": {
-    "claude-sonnet-5-5": {
+    "deepseek-flash": {
       "input": 75,
       "output": 75,
       "cache_read": null,
       "raw": {
-        "model_name": "claude-sonnet-5-5",
+        "model_name": "deepseek-v4.1-flash",
         "model_ratio": 37.5,
         "completion_ratio": 1,
         "group_ratio": 1,
         "quota_type": 0,
         "enable_groups": [
-          "Claude Code 官转一",
-          "Claude Code 可外接",
-          "Claude 反代",
-          "Claude Code Kiro 特价",
-          "Claude Code 特特价",
-          "ClaudeCode 官 key",
-          "Claude Code 0注入",
-          "Claude Code Kiro",
-          "Claude_AWS_bedrock"
+          "国模渠道"
         ],
         "billing_mode": "tiered_expr",
-        "billing_expr": "tier(\"base\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 4 + cc12h * 2.5)"
+        "billing_expr": "(weekday(\"Asia/Shanghai\") >= 1 && weekday(\"Asia/Shanghai\") <= 5 && hour(\"Asia/Shanghai\") >= 9 && hour(\"Asia/Shanghai\") < 12) ? tier(\"time_1_standard\", p * 2 + c * 8 + cr * 0.04 + c"
+      }
+    },
+    "claude-sonnet-5-5": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
+      "raw": {
+        "model_name": "claude-3-5-sonnet-20241022",
+        "model_ratio": 1.5,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.1,
+        "enable_groups": [
+          "GPT Pro",
+          "Claude Code 可外接"
+        ]
       }
     },
     "deepseek-v4-pro": {
@@ -130,6 +148,22 @@
         "billing_expr": "(weekday(\"Asia/Shanghai\") >= 1 && weekday(\"Asia/Shanghai\") <= 5 && hour(\"Asia/Shanghai\") >= 9 && hour(\"Asia/Shanghai\") < 12) ? tier(\"time_1_standard\", p * 9 + c * 27 + cr * 0.3 + c"
       }
     },
+    "claude-opus-5-5": {
+      "input": 15,
+      "output": 75,
+      "cache_read": 1.5,
+      "raw": {
+        "model_name": "claude-3-opus-20240229",
+        "model_ratio": 7.5,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.1,
+        "enable_groups": [
+          "GPT Pro"
+        ]
+      }
+    },
     "gpt-6.2-astra": {
       "input": 75,
       "output": 150,
@@ -145,39 +179,6 @@
         ],
         "billing_mode": "tiered_expr",
         "billing_expr": "len <= 272000 ? tier(\"standard\", p * 8 + c * 40 + cr * 0.4 + cc * 10 + cc12h * 20) : tier(\"long_context\", p * 16 + c * 60 + cr * 0.8 + cc * 20 + cc12h * 40)"
-      }
-    },
-    "deepseek-flash": {
-      "input": 75,
-      "output": 75,
-      "cache_read": null,
-      "raw": {
-        "model_name": "deepseek-v4-flash",
-        "model_ratio": 37.5,
-        "completion_ratio": 1,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "enable_groups": [
-          "国模渠道"
-        ],
-        "billing_mode": "tiered_expr",
-        "billing_expr": "(weekday(\"Asia/Shanghai\") >= 1 && weekday(\"Asia/Shanghai\") <= 5 && hour(\"Asia/Shanghai\") >= 9 && hour(\"Asia/Shanghai\") < 12) ? tier(\"time_1_standard\", p * 3 + c * 9 + cr * 0.1 + cc"
-      }
-    },
-    "claude-opus-5-5": {
-      "input": 15,
-      "output": 75,
-      "cache_read": 1.5,
-      "raw": {
-        "model_name": "claude-3-opus-20240229",
-        "model_ratio": 7.5,
-        "completion_ratio": 5,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "cache_ratio": 0.1,
-        "enable_groups": [
-          "GPT Pro"
-        ]
       }
     },
     "gpt-6.2-sol": {
@@ -200,37 +201,32 @@
   },
   "unmatched": [
     {
-      "model_name": "ernie-speed-128k",
+      "model_name": "gemini-pro-latest",
       "model_ratio": 37.5,
-      "completion_ratio": 1
+      "completion_ratio": 4
     },
     {
-      "model_name": "grok-3",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
+      "model_name": "gpt-4.1-nano-2025-04-14",
+      "model_ratio": 0.05,
+      "completion_ratio": 2
     },
     {
-      "model_name": "gpt-5.2-chat-latest",
-      "model_ratio": 37.5,
-      "completion_ratio": 6
+      "model_name": "o1-mini",
+      "model_ratio": 0.55,
+      "completion_ratio": 4
     },
     {
-      "model_name": "gpt-6.1-luna",
+      "model_name": "gpt-realtime-2025-08-28",
       "model_ratio": 37.5,
       "completion_ratio": 2
     },
     {
-      "model_name": "gpt-5.1-chat-latest",
+      "model_name": "llama-3-70b-instruct",
       "model_ratio": 37.5,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "text-curie-001",
-      "model_ratio": 1,
       "completion_ratio": 1
     },
     {
-      "model_name": "mimo-v2.5",
+      "model_name": "@cf/qwen/qwen1.5-1.8b-chat",
       "model_ratio": 37.5,
       "completion_ratio": 1
     },
@@ -240,12 +236,112 @@
       "completion_ratio": 1
     },
     {
-      "model_name": "computer-use-preview",
+      "model_name": "gpt-4o-audio-preview-2024-10-01",
+      "model_ratio": 1.25,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "ERNIE-Bot-8K",
+      "model_ratio": 1.643835616438356,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "sonar-reasoning",
       "model_ratio": 37.5,
       "completion_ratio": 1
     },
     {
-      "model_name": "Qwen/Qwen1.5-110B-Chat",
+      "model_name": "@hf/mistralai/mistral-7b-instruct-v0.2",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "@cf/defog/sqlcoder-7b-2",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "BAAI/bge-large-zh-v1.5",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "deepseek-v4-pro-none",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-2.5-flash-preview-tts",
+      "model_ratio": 37.5,
+      "completion_ratio": 23.333333333333332
+    },
+    {
+      "model_name": "o4-mini-deep-research-2025-06-26",
+      "model_ratio": 1,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "Doubao-pro-4k",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-3-flash-preview",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "o3-mini-medium",
+      "model_ratio": 0.55,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "qwen-max",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "glm-4-airx",
+      "model_ratio": 0.684931506849315,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "command-r-plus-08-2024",
+      "model_ratio": 1.25,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "InstantX/InstantID",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "ernie-4.0-turbo-8k",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-5.4",
+      "model_ratio": 37.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "deepseek-v4-pro-0831",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "glm-4-air",
+      "model_ratio": 0.0684931506849315,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "rerank-english-v3.0",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "01-ai/Yi-1.5-9B-Chat-16K",
       "model_ratio": 37.5,
       "completion_ratio": 1
     },
@@ -255,199 +351,104 @@
       "completion_ratio": 1
     },
     {
-      "model_name": "gemini-3.1-pro-preview",
+      "model_name": "Doubao-pro-256k",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "chatglm_pro",
+      "model_ratio": 0.7143,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "@cf/qwen/qwen1.5-14b-chat-awq",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "moonshot-v1-32k",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "Doubao-1.5-pro-256k",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "omni-moderation-latest",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "Qwen/Qwen1.5-14B-Chat",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "image-01",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "qwen-plus",
+      "model_ratio": 10,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "Pro/Qwen/Qwen1.5-7B-Chat",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "Doubao-lite-4k",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "ernie-speed-pro-128k",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "ernie-lite-8k",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-3.5-flash-lite",
       "model_ratio": 37.5,
       "completion_ratio": 4
     },
     {
-      "model_name": "gpt-5.4-mini",
-      "model_ratio": 37.5,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "mimo-v2.6-pro",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "MiniMax-M2.5",
-      "model_ratio": 1.05,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "claude-opus-4-5-20251101",
-      "model_ratio": 37.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gemini-3.1-flash-tts-preview",
+      "model_name": "gemini-3.5-flash-low",
       "model_ratio": 37.5,
       "completion_ratio": 4
     },
     {
-      "model_name": "hunyuan-pro",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "mixtral-8x7b-instruct",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "@hf/thebloke/deepseek-coder-6.7b-instruct-awq",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "grok-code-fast-1",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gpt-5.5",
+      "model_name": "gpt-5.1-2025-11-13",
       "model_ratio": 37.5,
       "completion_ratio": 6
     },
     {
-      "model_name": "claude-opus-4-8-low",
-      "model_ratio": 37.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "01-ai/Yi-1.5-9B-Chat-16K",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "o4-mini",
-      "model_ratio": 0.55,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gpt-realtime-mini-2025-10-06",
-      "model_ratio": 37.5,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "gte-rerank-v2",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "nano-banana-pro-preview",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "seedream-4-0-250828",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gpt-5.2",
-      "model_ratio": 37.5,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "grok-4.7",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "MiniMax-M3",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gemini-3.7-flash-tiered",
+      "model_name": "gemini-2.5-flash-lite-preview-09-2025",
       "model_ratio": 37.5,
       "completion_ratio": 4
     },
     {
-      "model_name": "@hf/thebloke/neural-chat-7b-v3-1-awq",
+      "model_name": "Doubao-pro-32k",
       "model_ratio": 37.5,
       "completion_ratio": 1
     },
     {
-      "model_name": "deepseek-flash-max",
+      "model_name": "doubao-seedream-4-0-250828",
       "model_ratio": 37.5,
       "completion_ratio": 1
     },
     {
-      "model_name": "deepseek-search",
+      "model_name": "abab6.5s-chat-pro",
       "model_ratio": 37.5,
       "completion_ratio": 1
-    },
-    {
-      "model_name": "claude-opus-4-7",
-      "model_ratio": 37.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-5.6-terra",
-      "model_ratio": 37.5,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "gemini-3-pro-image",
-      "model_ratio": 37.5,
-      "completion_ratio": 60
-    },
-    {
-      "model_name": "imagen-4.0-ultra-generate-001",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "deepseek-v3",
-      "model_ratio": 1,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "grok-4.20-multi-agent-medium",
-      "model_ratio": 0.625,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "gemini-3-pro-preview",
-      "model_ratio": 37.5,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "glm-5.3-flash",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "tts-1",
-      "model_ratio": 7.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "grok-2-image-1212",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "yi-vision",
-      "model_ratio": 0.410958904109589,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gpt-image-1.5",
-      "model_ratio": 37.5,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "deepseek-v4.1-flash-1017",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gpt-5.1-codex-mini",
-      "model_ratio": 37.5,
-      "completion_ratio": 6
     }
   ],
   "derivation": {
@@ -458,23 +459,32 @@
     "group_ratio": 1,
     "group_source": "manual",
     "matched": 6,
-    "comparable": 5,
-    "dominant_multiple": 37.5,
-    "agreement": 0.4,
+    "comparable": 4,
+    "dominant_multiple": 9.375,
+    "agreement": 0.25,
     "comparable_models": [
-      "claude-sonnet-5-5",
-      "gpt-6.2-sol"
+      "gpt-6.2-astra"
     ],
     "models": [
       {
-        "id": "claude-sonnet-5-5",
-        "name": "claude-sonnet-5-5",
+        "id": "deepseek-flash",
+        "name": "deepseek-v4.1-flash",
         "input": 75,
         "output": 75,
-        "multiple": 37.5,
+        "multiple": 250,
         "shape_ok": false,
         "verdict": "shape",
-        "why": "输出/输入比 1，官方是 5，不是同一计价形状"
+        "why": "输出/输入比 1，官方是 4，不是同一计价形状"
+      },
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-3-5-sonnet-20241022",
+        "input": 3,
+        "output": 15,
+        "multiple": 1.5,
+        "shape_ok": true,
+        "verdict": "legacy",
+        "why": "旧代数型号名，价格表已过期"
       },
       {
         "id": "deepseek-v4-pro",
@@ -487,26 +497,6 @@
         "why": "输出/输入比 1，官方是 3，不是同一计价形状"
       },
       {
-        "id": "gpt-6.2-astra",
-        "name": "gpt-6.2-astra",
-        "input": 75,
-        "output": 150,
-        "multiple": 9.375,
-        "shape_ok": false,
-        "verdict": "shape",
-        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
-      },
-      {
-        "id": "deepseek-flash",
-        "name": "deepseek-v4-flash",
-        "input": 75,
-        "output": 75,
-        "multiple": 250,
-        "shape_ok": false,
-        "verdict": "shape",
-        "why": "输出/输入比 1，官方是 4，不是同一计价形状"
-      },
-      {
         "id": "claude-opus-5-5",
         "name": "claude-3-opus-20240229",
         "input": 15,
@@ -515,6 +505,16 @@
         "shape_ok": true,
         "verdict": "legacy",
         "why": "旧代数型号名，价格表已过期"
+      },
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "input": 75,
+        "output": 150,
+        "multiple": 9.375,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
       },
       {
         "id": "gpt-6.2-sol",
@@ -531,19 +531,19 @@
     "rows_total": 6,
     "excluded_models": [
       {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4.1-flash",
+        "multiple": 250
+      },
+      {
         "id": "deepseek-v4-pro",
         "name": "deepseek-v4-pro",
         "multiple": 56.818
       },
       {
-        "id": "gpt-6.2-astra",
-        "name": "gpt-6.2-astra",
-        "multiple": 9.375
-      },
-      {
-        "id": "deepseek-flash",
-        "name": "deepseek-v4-flash",
-        "multiple": 250
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "multiple": 37.5
       }
     ],
     "flat_price": {
@@ -551,7 +551,7 @@
       "output": 75
     },
     "confidence": "medium",
-    "note": "这站不按模型定价：5 个模型在 group_ratio=1（手填） 时输入价都正好是 $75/M。倍数看着从 37.5 到几十倍很大，其实是官方各型号价不同、它只收一个价。最终只能记「统一单价 $75/M 输入」，不能逐模型对比。实际扣费还要乘它自己的分组倍率（该站 31 个组，从 0.1 到 4.6），所以真价 = 75 × 分组倍率。 另：旧代数命名 claude-3-opus-20240229 已单列，不参与判定。",
-    "computed_at": "2026-11-26T16:17:31.301Z"
+    "note": "这站不按模型定价：4 个模型在 group_ratio=1（手填） 时输入价都正好是 $75/M。倍数看着从 9.38 到几十倍很大，其实是官方各型号价不同、它只收一个价。最终只能记「统一单价 $75/M 输入」，不能逐模型对比。实际扣费还要乘它自己的分组倍率（该站 31 个组，从 0.1 到 4.6），所以真价 = 75 × 分组倍率。 另：旧代数命名 claude-3-5-sonnet-20241022、claude-3-opus-20240229 已单列，不参与判定。",
+    "computed_at": "2026-11-26T16:35:14.877Z"
   }
 }

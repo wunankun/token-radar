@@ -2,3 +2,6 @@
 {"t":"2026-11-26T13:04:10.731Z","http":200,"models":{"gpt-6.2-astra":[75,150],"claude-sonnet-5-5":[12,60],"claude-opus-5-5":[24,120],"deepseek-flash":[3.5,14],"gpt-6.2-sol":[75,150]}}
 {"t":"2026-11-26T15:27:04.036Z","http":200,"models":{"claude-sonnet-5-5":[18,90],"claude-opus-5-5":[24,120],"deepseek-flash":[3.5,14],"gpt-6.2-sol":[75,150],"gpt-6.2-astra":[75,150]}}
 {"t":"2026-11-26T16:17:18.057Z","v":2,"http":200,"models":{"deepseek-flash":[3.5,14],"claude-sonnet-5-5":[12,60],"claude-opus-5-5":[24,120],"gpt-6.2-sol":[75,150],"gpt-6.2-astra":[75,150]}}
+{"t":"2026-11-26T16:25:56.847Z","v":2,"http":200,"models":{"claude-opus-5-5":[24,120],"gpt-6.2-astra":[75,150],"gpt-6.2-sol":[75,150],"claude-sonnet-5-5":[18,90],"deepseek-flash":[3.5,14]}}
+{"t":"2026-11-26T16:32:52.176Z","v":2,"http":200,"models":{"gpt-6.2-sol":[75,150],"claude-opus-5-5":[24,120],"claude-sonnet-5-5":[12,60],"gpt-6.2-astra":[75,150],"deepseek-flash":[3.5,14]}}
+{"t":"2026-11-26T16:34:50.334Z","v":2,"http":200,"models":{"gpt-6.2-astra":[75,150],"claude-opus-5-5":[24,120],"gpt-6.2-sol":[75,150],"claude-sonnet-5-5":[12,60],"deepseek-flash":[3.5,14]}}

@@ -1,0 +1,1081 @@
+{
+  "station_id": "api-1024token-xyz",
+  "endpoint": "https://api.1024token.xyz/api/pricing",
+  "fetched_at": "2026-11-26T16:34:38.948Z",
+  "http_status": 200,
+  "total": 134,
+  "models": [
+    {
+      "n": "claude-sonnet-4-20250514",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro-2"
+    },
+    {
+      "n": "gemini-3.5-flash-high",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gpt-4o-all",
+      "r": 15,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-4-turbo-2024-04-09",
+      "r": 5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gemini-3.5-flash-low",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-plus"
+    },
+    {
+      "n": "gemini-3.7-flash-high",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gpt-4.1-nano",
+      "r": 0.05,
+      "c": 2,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-5.1",
+      "r": 0.625,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "o3-mini",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-4.1",
+      "r": 1,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gemini-3.6-flash-medium",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "o1-mini",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "o3-2025-04-16",
+      "r": 1,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "o3-mini-2025-01-31",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-5.4-2026-03-05",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 37.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-plus"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-满血"
+    },
+    {
+      "n": "gpt-3.5-turbo-0613",
+      "r": 0.75,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-4.1-mini-2025-04-14",
+      "r": 0.2,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gemini-3.7-flash-low",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 1,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gpt-4o-2024-08-06",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-5.4-nano",
+      "r": 0.1,
+      "c": 6.25,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "gpt-4o",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "claude-opus-4-1-20250805",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro-2"
+    },
+    {
+      "n": "gpt-3.5-turbo",
+      "r": 0.25,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 37.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-pluspro"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "gemini-3.6-flash-high",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gemini-3.6-flash-low",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "o3-mini-medium",
+      "r": 0.55,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-4.1-2025-04-14",
+      "r": 1,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gemini-3.1-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro-2"
+    },
+    {
+      "n": "gpt-3.5-turbo-1106",
+      "r": 0.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gemini-3.8-flash-high",
+      "r": 0.375,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "gpt-3.5-turbo-16k",
+      "r": 1.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gemini-3.8-flash-low",
+      "r": 0.375,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gpt-5.2",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-5.3-codex-spark",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-plus"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-plus"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 1,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gpt-4o-2024-11-20",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 0.375,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-4.1-mini",
+      "r": 0.2,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gemini-3-flash-thinking-128",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 0.75,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gpt-5.2-codex",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "o1-2024-12-17",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-5-nano",
+      "r": 0.025,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-plus"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 37.5,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-满血"
+    },
+    {
+      "n": "gpt-5-codex",
+      "r": 0.3125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "claude-opus-4-20250514",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro-2"
+    },
+    {
+      "n": "gpt-4-all",
+      "r": 15,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gemini-3-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "text-embedding-3-small",
+      "r": 0.01,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1067,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "gpt-5-mini-2025-08-07",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-5.1-codex",
+      "r": 0.3125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "o1",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "glm"
+    },
+    {
+      "n": "glm-5.2-fast",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "glm"
+    },
+    {
+      "n": "claude-opus-4-5-20251101-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro-2"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 37.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "claude-opus-4-6-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-anti"
+    },
+    {
+      "n": "claude-3-5-haiku-20241022",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-3.5-turbo-0125",
+      "r": 0.25,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-4o-mini",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-plus"
+    },
+    {
+      "n": "o4-mini-2025-04-16",
+      "r": 0.55,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "gemini-3.8-flash-tiered",
+      "r": 0.375,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "gemini-2.5-flash-thinking",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gpt-5.3-codex",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "grok-4.7-build-fast",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gemini-2.5-flash-lite",
+      "r": 0.05,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gemini-2.5-flash-nothinking",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-preview",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "glm-5.1",
+      "r": 0.7,
+      "c": 3.1429,
+      "cr": 0.1857,
+      "g": 1,
+      "gn": "glm"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-plus"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-pro-稳定"
+    },
+    {
+      "n": "gemini-3.7-flash-medium",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929-thinking",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro-2"
+    },
+    {
+      "n": "gemini-3.7-flash-tiered",
+      "r": 0.375,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gpt-4.1-nano-2025-04-14",
+      "r": 0.05,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "o1-preview-2024-09-12",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "text-embedding-3-large",
+      "r": 0.065,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 37.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-plus"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "claude-满血"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 37.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gpt-5",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-5-mini",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": 0.125,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "gpt-3.5-turbo-16k-0613",
+      "r": 1.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-4o-mini-2024-07-18",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-5.4-mini-2026-03-17",
+      "r": 0.375,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gemini-3-flash-preview",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gemini-3.8-flash-medium",
+      "r": 0.375,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "o1-mini-2024-09-12",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-plus"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "o4-mini",
+      "r": 0.55,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gemini-3.1-pro-preview-low",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "gpt-4o-2024-05-13",
+      "r": 2.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-5-2025-08-07",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "o3",
+      "r": 1,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "text-embedding-ada-002",
+      "r": 0.05,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gpt-4-turbo",
+      "r": 5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "azure-gpt"
+    },
+    {
+      "n": "gemini-3.1-pro-high",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini"
+    },
+    {
+      "n": "grok-build-0.1",
+      "r": 37.5,
+      "c": 1,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "grok"
+    },
+    {
+      "n": "gpt-5-nano-2025-08-07",
+      "r": 0.025,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "azure-gpt"
+    }
+  ]
+}

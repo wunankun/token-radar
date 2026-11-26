@@ -320,6 +320,32 @@ node scripts/add-station.mjs --id my-station --name "某站" --kind official-rel
 
 ---
 
+### 全站模型目录（按模型查价）
+
+`data/models.json` 只维护 6 个人工核验的模型；其余模型不丢，全部落在 `data/catalog/<站点>.json` 里（每站 `/api/pricing` 的完整模型表）。
+
+```bash
+node scripts/build-catalog.mjs        # 汇总成 data/models-auto.json，并生成页面用的 dist/catalog.json
+```
+
+- 模型名先归一成「家族」：去日期后缀、`:free`、`-healthcare/-law/-preview`、`-thinking` 等，`gpt-6.2-sol-healthcare` 与 `gpt-6.2-sol` 算同一个。
+- 被 ≥3 家站收录的才进页面（阈值 `--min` 可调），本次 380 个；只被 1–2 家卖的不上榜，避免独家噪声。
+- 参照价优先级：`official.json`（人工核验）→ `data/openrouter-models.json`（OpenRouter 公开价）→ 无。没参照价的只显示绝对价。
+- 页面底部「按模型查价」里输入模型名即可看到它在 60 家站的报价横排；倍数远大于 3 的用 `37.5×` 这类中性标记，不用「贵 21 倍」，因为那通常是号池/统一价口径。
+
+### 充值优惠与站内汇率
+
+充值赠送（充 100 得 120）**不挂在公开 API 上**，抓不到，只能人工录 `recharge` 字段。但 `/api/status` 里有一个更关键的东西：
+
+| 字段 | 含义 | 例 |
+| --- | --- | --- |
+| `usd_exchange_rate` | 这家站 1 美元额度要多少人民帺 | beehears `1` / qinzhiai `7.3` / 36niu `7` |
+| `price` | 站内额度单价（多数与上面同值） | `7.3` |
+| `custom_currency_symbol` | 展示符号 | `$` 或 `¤` |
+| `top_up_link` | 充值入口 | `https://happp.cn/links/...` |
+
+`usd_exchange_rate > 1` 的站（本次 16 家）说明「1 元 = 1 美元额度」的假设对它们不成立，页面上会打 `1$=¥7.3` 的红标提醒，但**折算公式暂时没改**——要先用真实账单确认这类站到底是「1 美元额度卖 ¥7.3」还是别的口径，改了会引起全表跳变。
+
 ## 日常维护
 
 > 完整流程见 **[MAINTAIN.md](MAINTAIN.md)**（口径约定、常见故障、每周四步）。

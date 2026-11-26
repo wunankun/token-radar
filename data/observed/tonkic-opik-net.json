@@ -1,9 +1,9 @@
 {
   "station_id": "tonkic-opik-net",
   "endpoint": "https://tonkic.opik.net/api/pricing",
-  "fetched_at": "2026-11-26T16:17:21.924Z",
+  "fetched_at": "2026-11-26T16:34:58.750Z",
   "http_status": 200,
-  "latency_ms": 1514,
+  "latency_ms": 1655,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -34,6 +34,15 @@
     "grok": "Grok 4.6"
   },
   "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
+  "status": {
+    "usd_exchange_rate": 6.78,
+    "quota_per_unit": 500000,
+    "price": 1,
+    "currency": "¤",
+    "top_up_link": null,
+    "system_name": "TonkicAPI中转",
+    "version": "v1.0.0-rc.45.1-nowrite.0d3971d7b30a-20261118"
+  },
   "stats": {
     "total": 9,
     "matched": 2,
@@ -79,22 +88,7 @@
   },
   "unmatched": [
     {
-      "model_name": "gpt-5.6-luna",
-      "model_ratio": 0.1,
-      "completion_ratio": 6
-    },
-    {
       "model_name": "gpt-6-luna",
-      "model_ratio": 37.5,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "gpt-5.6-terra",
-      "model_ratio": 1,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "gpt-6.1-sol",
       "model_ratio": 37.5,
       "completion_ratio": 2
     },
@@ -110,6 +104,21 @@
     },
     {
       "model_name": "gpt-6-sol",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-5.6-luna",
+      "model_ratio": 0.1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-5.6-terra",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-6.1-sol",
       "model_ratio": 37.5,
       "completion_ratio": 2
     }
@@ -165,6 +174,6 @@
     },
     "confidence": "medium",
     "note": "这站不按模型定价：2 个模型在 group_ratio=1（手填） 时输入价都正好是 $75/M。倍数看着从 9.38 到几十倍很大，其实是官方各型号价不同、它只收一个价。最终只能记「统一单价 $75/M 输入」，不能逐模型对比。实际扣费还要乘它自己的分组倍率（该站 7 个组，从 0.05 到 1），所以真价 = 75 × 分组倍率。",
-    "computed_at": "2026-11-26T16:17:31.322Z"
+    "computed_at": "2026-11-26T16:35:14.899Z"
   }
 }

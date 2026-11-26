@@ -1,0 +1,313 @@
+{
+  "station_id": "memeapi-top",
+  "endpoint": "https://memeapi.top/api/pricing",
+  "fetched_at": "2026-11-26T16:34:54.714Z",
+  "http_status": 200,
+  "total": 38,
+  "models": [
+    {
+      "n": "gemini-4-hydrogen-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra高缓存分组"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt-不降智"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gpt-不降智"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "claude-pro"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "deepseek"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt-官key"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-官key"
+    },
+    {
+      "n": "gemini-4-neon-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra高缓存分组"
+    },
+    {
+      "n": "gemini-4-argon-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra高缓存分组"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-luna"
+    },
+    {
+      "n": "gemini-4-neon-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra高缓存分组"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-不降智"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 4,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gpt-不降智"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-pro"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt-luna"
+    },
+    {
+      "n": "gemini-4-argon-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra高缓存分组"
+    },
+    {
+      "n": "gemini-4-carbon-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra高缓存分组"
+    },
+    {
+      "n": "gemini-4-hydrogen-xhigh",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra高缓存分组"
+    },
+    {
+      "n": "gpt-image-2.5",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "claude-pro"
+    },
+    {
+      "n": "gemini-4-argon-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra高缓存分组"
+    },
+    {
+      "n": "gemini-4-hydrogen-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra高缓存分组"
+    },
+    {
+      "n": "gemini-4-neon-xhigh",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra高缓存分组"
+    },
+    {
+      "n": "gemini-4-carbon-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra高缓存分组"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-max"
+    },
+    {
+      "n": "gemini-4-hydrogen-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra高缓存分组"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 0.1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt-不降智"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 1.25,
+      "g": 1,
+      "gn": "claude-pro"
+    },
+    {
+      "n": "gemini-4-carbon-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra高缓存分组"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "az-gpt"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-max"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-不降智"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "claude-max"
+    },
+    {
+      "n": "gemini-4-neon-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini-Ultra高缓存分组"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt-不降智"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "claude-pro"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 1.5,
+      "c": 2,
+      "cr": 0.0083,
+      "g": 1,
+      "gn": "deepseek-官key"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "claude-max"
+    }
+  ]
+}

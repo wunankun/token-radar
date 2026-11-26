@@ -113,6 +113,12 @@ for (const p of [...providers, ...scanned]) {
 
   // 中转站：人工价优先，其次自动抓取的 observed
   const obs = observed.get(p.id);
+  // /api/status 里的汇率：只用来在页面上提醒「这个站的 1 美元额度不是 1 元买的」
+  const st = (obs && obs.status) || p.status || null;
+  if (st && Number(st.usd_exchange_rate) > 1.05) {
+    p.usd_rate = Number(st.usd_exchange_rate);
+    p.top_up = st.top_up_link || null;
+  }
   const declared = p.models || {};
   const modelIds = new Set([...Object.keys(declared), ...Object.keys(obs?.models || {})]);
 
@@ -303,6 +309,11 @@ const meta = {
     : null,
   models: modelList,
   heat: { source: heatFromData ? 'coverage' : 'manual', stations: heatStations.size, max_coverage: maxCoverage },
+  catalog: (() => {
+    const auto = readJson(join(DATA, 'models-auto.json'), null);
+    if (!auto) return null;
+    return { count: auto.count, stations: auto.stations, threshold: auto.threshold, baseline: auto.baseline };
+  })(),
   disabled_sources: (readJson(join(DATA, 'sources.json'), { sources: [] }).sources || [])
     .filter((s) => s && s.enabled === false)
     .map((s) => ({
@@ -332,6 +343,7 @@ console.log(
       : '暂无真实站，回落人工 popularity'
   }`,
 );
+if (meta.catalog) console.log(`  全站模型目录：${meta.catalog.count} 个模型（被 ≥${meta.catalog.threshold} 家站收录，共 ${meta.catalog.stations} 家站）`);
 if (skipped.length) console.log(`  已停更（不上榜）：${skipped.join('、')}`);
 console.log(`  官方基准 ${meta.counts.official_rows} 行，演示 ${meta.counts.demo_rows} 行，带推广链接 ${meta.counts.with_affiliate} 行`);
 if (best) console.log(`  当前最优惠：${best.station.name} · ${best.model.label} · 便宜 ${(best.discount * 100).toFixed(1)}%`);

@@ -1,9 +1,9 @@
 {
   "station_id": "corecode-live",
   "endpoint": "https://corecode.live/api/pricing",
-  "fetched_at": "2026-11-26T16:17:20.409Z",
+  "fetched_at": "2026-11-26T16:34:56.892Z",
   "http_status": 200,
-  "latency_ms": 981,
+  "latency_ms": 1353,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -39,6 +39,15 @@
     "auto": "自动：按模型自动选择分组，可调用所有分组"
   },
   "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
+  "status": {
+    "usd_exchange_rate": 6.8,
+    "quota_per_unit": 500000,
+    "price": 1,
+    "currency": "¤",
+    "top_up_link": null,
+    "system_name": "CoreCode",
+    "version": "2026.11.26"
+  },
   "stats": {
     "total": 28,
     "matched": 4,
@@ -96,9 +105,9 @@
         "quota_type": 0,
         "cache_ratio": 0.05,
         "enable_groups": [
-          "GPT 福利",
           "GPT（UltraFast）",
-          "GPT"
+          "GPT",
+          "GPT 福利"
         ],
         "billing_mode": "tiered_expr",
         "billing_expr": "len <= 272000 ? tier(\"0_272k\", p * 2 + cr * 0.1 + cc * 2.5 + c * 10) : tier(\"272k_plus\", p * 4 + cr * 0.2 + cc * 5 + c * 15)"
@@ -116,32 +125,22 @@
         "quota_type": 0,
         "cache_ratio": 0.05,
         "enable_groups": [
-          "Claude 满血（可外接）",
-          "Claude 满血（仅限CC）"
+          "Claude 满血（仅限CC）",
+          "Claude 满血（可外接）"
         ]
       }
     }
   },
   "unmatched": [
     {
-      "model_name": "grok-4.6",
-      "model_ratio": 1,
-      "completion_ratio": 3
-    },
-    {
       "model_name": "claude-haiku-5-5",
       "model_ratio": 0.05,
       "completion_ratio": 5
     },
     {
-      "model_name": "gpt-6-sol",
-      "model_ratio": 1,
+      "model_name": "claude-fable-5-2",
+      "model_ratio": 6,
       "completion_ratio": 5
-    },
-    {
-      "model_name": "codex-auto-review",
-      "model_ratio": 2.5,
-      "completion_ratio": 5.999999999999999
     },
     {
       "model_name": "seedance-2.5-720p",
@@ -154,13 +153,18 @@
       "completion_ratio": 5
     },
     {
-      "model_name": "claude-sonnet-5",
-      "model_ratio": 1,
+      "model_name": "gpt-6-astra",
+      "model_ratio": 5,
       "completion_ratio": 5
     },
     {
-      "model_name": "claude-fable-5-2",
-      "model_ratio": 6,
+      "model_name": "claude-opus-5",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-sonnet-5",
+      "model_ratio": 1,
       "completion_ratio": 5
     },
     {
@@ -174,26 +178,6 @@
       "completion_ratio": 3
     },
     {
-      "model_name": "gpt-5.6-sol",
-      "model_ratio": 2.5,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "seedance-2.5-480p",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gpt-6-astra",
-      "model_ratio": 5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-5.6-terra",
-      "model_ratio": 1,
-      "completion_ratio": 6
-    },
-    {
       "model_name": "gpt-6.1-terra",
       "model_ratio": 0.5,
       "completion_ratio": 5
@@ -204,9 +188,34 @@
       "completion_ratio": 5
     },
     {
-      "model_name": "claude-opus-5",
-      "model_ratio": 2.5,
+      "model_name": "grok-4.6",
+      "model_ratio": 1,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "gpt-6-sol",
+      "model_ratio": 1,
       "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.6-sol",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-5.6-terra",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "codex-auto-review",
+      "model_ratio": 2.5,
+      "completion_ratio": 5.999999999999999
+    },
+    {
+      "model_name": "seedance-2.5-480p",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
     }
   ],
   "derivation": {
@@ -274,6 +283,6 @@
     "flat_price": null,
     "confidence": "high",
     "note": "对得上官方价的 4 个模型里，4 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 9 个分组倍率，真正的折扣在那里。",
-    "computed_at": "2026-11-26T16:17:31.312Z"
+    "computed_at": "2026-11-26T16:35:14.888Z"
   }
 }

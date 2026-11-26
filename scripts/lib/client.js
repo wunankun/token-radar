@@ -187,8 +187,12 @@
       ? '<a href="' + esc(link) + '" target="_blank" rel="sponsored nofollow noopener">' + name + '</a>'
       : name;
     if (s.affiliate_url) inner += '<span class="aff-dot" title="推广链接：通过此链接注册我们可能获得返佣，排名不受影响">AD</span>';
+    var extra = '';
+    if (s.usd_rate && s.usd_rate > 1.05) {
+      extra = '<span class="chip chip-fx" title="该站自己的 /api/status 声明 1 美元额度要 ¥' + money(s.usd_rate) + '，所以本页「1 元 = 1 美元额度」的折算对它不成立，真实到手价还要再乘这个汇率">1$=¥' + money(s.usd_rate) + '</span>';
+    }
     return '<div class="station"><div class="name">' + inner + '</div>' +
-      '<div class="chips"><span class="chip kind-' + s.kind + '">' + esc(s.kind_label) + '</span></div></div>';
+      '<div class="chips"><span class="chip kind-' + s.kind + '">' + esc(s.kind_label) + '</span>' + extra + '</div></div>';
   }
 
   function sourceCell(r) {
@@ -471,6 +475,85 @@
     document.documentElement.style.setProperty('--stick-top', h + 'px');
   }
 
+
+  /* ---------- 按模型查价（全站目录 catalog.json） ---------- */
+  var CATALOG = null;
+  var catPending = null;
+  var STATION = {};
+  rows.forEach(function (r) { STATION[r.station.id] = r.station; });
+
+  function loadCatalog() {
+    if (CATALOG) return Promise.resolve(CATALOG);
+    if (!catPending) {
+      catPending = fetch('catalog.json')
+        .then(function (res) { return res.json(); })
+        .then(function (j) { CATALOG = j || { models: {} }; return CATALOG; })
+        .catch(function () { CATALOG = { models: {} }; return CATALOG; });
+    }
+    return catPending;
+  }
+
+  function blendOf(i, o) { return i * W.input + (o == null ? i : o) * W.output; }
+
+  function renderCat(id) {
+    var out = $('#cat-out');
+    if (!out) return;
+    if (!id) { out.innerHTML = ''; return; }
+    loadCatalog().then(function (cat) {
+      var m = cat.models[id];
+      if (!m) {
+        out.innerHTML = '<p class="cat-empty">目录里没有 <code>' + esc(id) + '</code>。可能收录它的站少于 3 家，或者名字对不上。</p>';
+        return;
+      }
+      var b = m.b;
+      var head = '<div class="cat-head"><b>' + esc(m.l) + '</b><span class="cat-meta">' + m.r.length + ' 家站在卖' +
+        (b ? ' · 参照价 ' + money(b[0]) + ' / ' + money(b[1]) + '（' + (b[2] === 'official' ? '官方' : 'OpenRouter') + '）' : ' · 无参照价，只能看绝对价') +
+        '</span><span class="cat-meta">单位：站上面值美元 / 百万 token</span></div>' +
+        '<p class="cat-tip">同一模型在各站能差两个数量级：倍数明显大于 3 的，多半是这家站把「号池 / 统一价 / 包月池」也写进了同一张倍率表，别直接读成「贵 21 倍」。表里只做横向参考，真正下单前看「计算方式」那一列的档位说明。</p>';
+      var trs = m.r.map(function (row) {
+        var sid = row[0], name = row[1], i = row[2], o = row[3], c = row[4];
+        var st = STATION[sid];
+        var d = b ? 1 - blendOf(i, o) / blendOf(b[0], b[1]) : null;
+        var odd = d != null && d < -1;
+        return '<tr><td>' + esc(st ? st.name : sid) + '</td><td class="num">' + money(i) + '</td><td class="num">' + money(o) + '</td>' +
+          '<td class="num hide-md">' + (c == null ? '<span class="dash">—</span>' : money(c)) + '</td>' +
+          '<td class="num">' + (d == null ? '<span class="dash">—</span>' : odd ? '<span class="disc d-flat" title="这家站对同一模型的报价远高于参照价，通常说明它的倍率表单位不同（号池 / 统一价）">' + (i / b[0]).toFixed(1) + '×</span>' : '<span class="disc ' + discCls(d) + '">' + discText(d) + '</span>') + '</td>' +
+          '<td class="cat-name">' + esc(name) + '</td></tr>';
+      }).join('');
+      out.innerHTML = head + '<div class="tablewrap cat-wrap"><table class="cat-table"><thead><tr><th>站点</th><th class="num">输入</th><th class="num">输出</th><th class="num hide-md">缓存</th><th class="num">对比参照价</th><th>站上模型名</th></tr></thead><tbody>' + trs + '</tbody></table></div>';
+    });
+  }
+
+  function initCatalog() {
+    var q = $('#cat-q');
+    if (!q) return;
+    q.addEventListener('focus', function () { loadCatalog(); }, { once: true });
+    // 目录是异步加载的，输入时先等它到齐再匹配，避免「第一次输入没反应」
+    function match(v) {
+      return loadCatalog().then(function (cat) {
+        var keys = Object.keys(cat.models || {});
+        for (var i = 0; i < keys.length; i++) {
+          var k = keys[i];
+          var l = (cat.models[k].l || '').toLowerCase();
+          if (k === v || l === v || l.replace(/\s+/g, '-') === v) return k;
+        }
+        return '';
+      });
+    }
+    q.addEventListener('input', function (e) {
+      var v = e.target.value.trim().toLowerCase();
+      if (!v) { renderCat(''); return; }
+      match(v).then(function (hit) { if (e.target.value.trim().toLowerCase() === v) renderCat(hit); });
+    });
+    q.addEventListener('change', function (e) {
+      var v = e.target.value.trim().toLowerCase();
+      if (!v) return;
+      match(v).then(renderCat);
+    });
+    var clr = $('#cat-clear');
+    if (clr) clr.addEventListener('click', function () { q.value = ''; renderCat(''); q.focus(); });
+  }
+
   function init() {
     renderKpis();
 
@@ -480,6 +563,7 @@
       }
     });
     initPicker();
+    initCatalog();
 
     var kinds = {};
     rows.forEach(function (r) { kinds[r.station.kind] = r.station.kind_label; });

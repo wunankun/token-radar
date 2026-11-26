@@ -1,0 +1,601 @@
+{
+  "station_id": "maiai-ai",
+  "endpoint": "https://maiai.ai/api/pricing",
+  "fetched_at": "2026-11-26T16:34:46.652Z",
+  "http_status": 200,
+  "total": 74,
+  "models": [
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "deepseek"
+    },
+    {
+      "n": "seedance-2.0-fast-480p",
+      "r": 18.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "deepseek"
+    },
+    {
+      "n": "seedance-2.0-720p",
+      "r": 23,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "seedance-2.0-mini-720p-video",
+      "r": 7,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "seedance-2.5-720p-video",
+      "r": 21,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "qwen3.7-max",
+      "r": 6,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "bailian"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-2"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-2"
+    },
+    {
+      "n": "g6astra",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-2"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.4,
+      "c": 3.5,
+      "cr": 0.2875,
+      "g": 1,
+      "gn": "glm"
+    },
+    {
+      "n": "seedance-2.0-1080p-video",
+      "r": 15.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "seedance-2.5-480p",
+      "r": 35,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-2"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 6,
+      "c": 3,
+      "cr": 0.125,
+      "g": 1,
+      "gn": "bailian"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "glm-5.1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "glm"
+    },
+    {
+      "n": "mimo-v2.6-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "mimo"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "glm"
+    },
+    {
+      "n": "seedance-2.0-mini-720p",
+      "r": 11.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "qwen4-max",
+      "r": 5,
+      "c": 3,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "bailian"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "MiniMax-M3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "minimax"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "kimi"
+    },
+    {
+      "n": "seedance-2.5-720p",
+      "r": 35,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "seedance-2.0-fast-480p-video",
+      "r": 11,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 3.25,
+      "c": 4.1538,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "kimi"
+    },
+    {
+      "n": "seedance-2.0-720p-video",
+      "r": 14,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "qwen3.8-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "bailian"
+    },
+    {
+      "n": "seedance-2.0-mini-480p",
+      "r": 11.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "ccmax-limit"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-2"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-2"
+    },
+    {
+      "n": "seedance-2.5-1080p-video",
+      "r": 23,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok-1"
+    },
+    {
+      "n": "seedance-2.0-fast-720p",
+      "r": 18.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "seedance-2.5-480p-video",
+      "r": 21,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok-1"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "deepseek"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kimi"
+    },
+    {
+      "n": "seedance-2.5-1080p",
+      "r": 38.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "jev-latest",
+      "r": 0.021,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-2"
+    },
+    {
+      "n": "seedance-2.0-mini-480p-video",
+      "r": 7,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex"
+    },
+    {
+      "n": "seedance-2.0-fast-720p-video",
+      "r": 11,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "MiniMax-M3.1-Flash",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "minimax"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-2"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-2"
+    },
+    {
+      "n": "g5.6-sol",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-2"
+    },
+    {
+      "n": "MiniMax-M2.7",
+      "r": 1.05,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "minimax"
+    },
+    {
+      "n": "seedance-2.0-1080p",
+      "r": 25.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "seedance-2.0-4k-video",
+      "r": 8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "seedance-2.0-4k",
+      "r": 13,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "glm"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "cc-1"
+    },
+    {
+      "n": "gk-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok-1"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok-1"
+    },
+    {
+      "n": "seedance-2.0-480p",
+      "r": 23,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    },
+    {
+      "n": "kimi-k2.6",
+      "r": 3.25,
+      "c": 4.1538,
+      "cr": null,
+      "g": 1,
+      "gn": "kimi"
+    },
+    {
+      "n": "mimo-v2.6-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "mimo"
+    },
+    {
+      "n": "seedance-2.0-480p-video",
+      "r": 14,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "seedance"
+    }
+  ]
+}

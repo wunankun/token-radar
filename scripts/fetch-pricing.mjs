@@ -15,7 +15,7 @@
 import { readFileSync, appendFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { loadAll, readJson, writeJson, listJson, DATA, ROOT } from './lib/io.mjs';
-import { discoverPricing, diffSnapshots, fetchJson, normalizeOrigin, parsePricing, runPool, FetchError } from './lib/crawl.mjs';
+import { discoverPricing, diffSnapshots, fetchJson, fetchStatus, normalizeOrigin, parsePricing, runPool, FetchError } from './lib/crawl.mjs';
 
 const argv = process.argv.slice(2);
 const flag = (n) => argv.includes(n);
@@ -37,6 +37,7 @@ const DRY = !WRITE;
 const SOURCES_FILE = join(DATA, 'sources.json');
 const OBSERVED = join(DATA, 'observed');
 const HISTORY = join(DATA, 'price-history');
+const CATALOG = join(DATA, 'catalog');
 // 计价管线版本：算法（选档/折算）一变就加 1，weekly 报表只对比同一版本的记录，避免把「改了算法」误报成「站点调价」。
 const PRICING_VERSION = 2;
 
@@ -208,6 +209,7 @@ async function handleOne(src, preset = null) {
     const groupOverride = Number.isFinite(Number(src.group_ratio)) && Number(src.group_ratio) >= 0 ? Number(src.group_ratio) : null;
     const parsed = parsePricing(got.payload, { resolveModel, groupRatioOverride: groupOverride });
     const groups = got.payload?.group_ratio && typeof got.payload.group_ratio === 'object' ? got.payload.group_ratio : null;
+    const status = await fetchStatus(normalizeOrigin(src.homepage || endpoint), { timeout: 8000, retries: 0 });
     const snapshot = {
       station_id: src.id,
       endpoint: endpoint || got.url,
@@ -221,6 +223,7 @@ async function handleOne(src, preset = null) {
       groups: groups ? Object.keys(groups).length : 0,
       group_ratios: groups || null,
       ...(parsed.extras || {}),
+      ...(status ? { status: status } : {}),
       stats: parsed.stats,
       models: parsed.models,
       unmatched: parsed.unmatched.slice(0, 50),
@@ -252,7 +255,17 @@ async function handleOne(src, preset = null) {
 
     if (WRITE) {
       mkdirSync(HISTORY, { recursive: true });
+      mkdirSync(CATALOG, { recursive: true });
       writeJson(join(OBSERVED, `${src.id}.json`), snapshot);
+      // 全量模型目录：这家站到底卖多少模型、每个的倍率是多少（不截断）
+      writeJson(join(CATALOG, `${src.id}.json`), {
+        station_id: src.id,
+        endpoint: snapshot.endpoint,
+        fetched_at: snapshot.fetched_at,
+        http_status: snapshot.http_status,
+        total: parsed.all.length,
+        models: parsed.all,
+      });
       appendFileSync(
         join(HISTORY, `${src.id}.jsonl`),
         JSON.stringify({ t: snapshot.fetched_at, v: PRICING_VERSION, http: snapshot.http_status, models: flatten(snapshot.models) }) + '\n',

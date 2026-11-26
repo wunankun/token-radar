@@ -1,0 +1,2529 @@
+{
+  "station_id": "ai-beehears-com",
+  "endpoint": "https://ai.beehears.com/api/pricing",
+  "fetched_at": "2026-11-26T16:34:56.615Z",
+  "http_status": 200,
+  "total": 315,
+  "models": [
+    {
+      "n": "dreamina-seedance-2-0-fast-260128-max",
+      "r": 2.8,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "dreamina-seedance-2-0-hc",
+      "r": 3.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-2.5-pro",
+      "r": 0.625,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-4-argon-medium",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "grok-build-0.1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok - 官转"
+    },
+    {
+      "n": "gpt-5.2-2025-12-11",
+      "r": 0.875,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o3-mini",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "claude-opus-4-6-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Anit 反重力 - P3"
+    },
+    {
+      "n": "gemini-2.5-pro-preview-tts",
+      "r": 0.5,
+      "c": 20,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3-pro-image",
+      "r": 1,
+      "c": 60,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "az-gpt-5.6-sol",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-5.4-mini-2026-03-17",
+      "r": 0.375,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "dreamina-seedance-2-0-260128",
+      "r": 3.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "o3-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "dreamina-seedance-2-0-mini-ep",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude 混合线路 - P3"
+    },
+    {
+      "n": "doubao-seedance-2.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-4.1-mini-2025-04-14",
+      "r": 0.2,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o3-mini-2025-01-31",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "lyria-3.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "gemini-2.5-flash-native-audio-latest",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3-flash-preview",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3.8-live",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "glm-5.1",
+      "r": 3,
+      "c": 4,
+      "cr": 0.2167,
+      "g": 1,
+      "gn": "智谱 GLM"
+    },
+    {
+      "n": "gemini-3.1-flash-tts-preview",
+      "r": 0.5,
+      "c": 20,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "kimi-k3.1-pro-highspeed",
+      "r": 13,
+      "c": 5.2308,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "月之暗面 Kimi"
+    },
+    {
+      "n": "doubao-seedance-2.0-fast-720p-10s",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-4o-image-vip",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-5.6-sol-2026-07-09",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-5.5-pro",
+      "r": 15,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "seedance-2-0",
+      "r": 2,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "Made in China"
+    },
+    {
+      "n": "gemini-3.7-flash-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3.8-live-extended-thinking",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-5.6-terra-openai-compact",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "qwen3.8-flash",
+      "r": 0.4,
+      "c": 3.375,
+      "cr": 0.125,
+      "g": 1,
+      "gn": "千问 Qwen"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok - 官转"
+    },
+    {
+      "n": "gpt-5-mini",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 4,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "Claude - Max2 - P3"
+    },
+    {
+      "n": "gemini-3.8-flash-tiered",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-5.4-nano",
+      "r": 0.1,
+      "c": 6.25,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gemini-flash-lite-latest",
+      "r": 0.125,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "gpt-transcribe",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "gpt-5.3-codex",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "claude-fable-5-thinking",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Kiro 企业版"
+    },
+    {
+      "n": "gemini-omni-1.1-flash",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "o3-pro-2025-06-10",
+      "r": 10,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "dreamina-seedance-2-0-mini-hc",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude 混合线路 - P3"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-4.1-nano",
+      "r": 0.05,
+      "c": 2,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-5-codex",
+      "r": 0.5,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gemini-3.1-pro-preview-customtools",
+      "r": 1,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-4-all",
+      "r": 15,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-5",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-5.6-terra-2026-07-09",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-5.1-2025-11-13",
+      "r": 0.625,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-live-1",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "gpt-live-transcribe",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "doubao-seedance-2.0-mini",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gemini-3.6-flash-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "智谱 GLM"
+    },
+    {
+      "n": "o3-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-realtime-2.1-mini",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "o3-pro",
+      "r": 10,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "doubao-seedance-2.0-fast",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gemini-4-carbon-low",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-5.1-codex",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "seedream-5-0-260128",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deep-research-preview-04-2026",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "gpt-realtime-1.5",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "glm-5.4",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "智谱 GLM"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "Claude 混合线路 - P3"
+    },
+    {
+      "n": "gpt-4o-mini",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o3-mini-2025-01-31-medium",
+      "r": 0.55,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o3-2025-04-16-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 3.25,
+      "c": 4.154,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "月之暗面 Kimi"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Kiro 企业版"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-3.5-turbo-0613",
+      "r": 0.75,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-4-turbo",
+      "r": 5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "claude-opus-5-5-thinking",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Claude Kiro 企业版"
+    },
+    {
+      "n": "o3-2025-04-16-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "tts-1-hd-1106",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 0.25,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 4.5,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "Made in China"
+    },
+    {
+      "n": "gemini-4-hydrogen-tiered-xhigh",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "gpt-realtime-translate",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "dreamina-seedance-2-5-260628-max",
+      "r": 5,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.7-flash-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3-pro-image-preview",
+      "r": 1,
+      "c": 60,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "minimax-h3-768p-10s",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "grok-4.20-0309-non-reasoning",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok - 官转"
+    },
+    {
+      "n": "gpt-6",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex - Pro"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Claude 混合线路 - P3"
+    },
+    {
+      "n": "gemini-3.1-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3.8-flash-medium",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-5.6-sol-openai-compact",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "text-embedding-3-large",
+      "r": 0.065,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "claude-3-7-sonnet-20250219",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Anit 反重力 - P3"
+    },
+    {
+      "n": "minimax-h3-max",
+      "r": 0.04,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5-2025-08-07",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-5.6-luna-2026-07-09",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o1",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o1-preview",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude 混合线路 - P3"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude 混合线路 - P3"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude 混合线路 - P3"
+    },
+    {
+      "n": "gemini-2.5-flash-thinking",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3.1-flash-image-preview",
+      "r": 0.25,
+      "c": 120,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "grok-4.3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok - 官转"
+    },
+    {
+      "n": "gpt-4o-mini-2024-07-18",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gemma-4-26b-a4b-it",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "gpt-realtime-2",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "doubao-seedance-2.0-fast-720p-sec",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "o3-mini-high",
+      "r": 0.55,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "dola-seedream-5-0-flash-260915",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "minimax-h3",
+      "r": 0.31,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-5.4-pro-2026-03-05",
+      "r": 15,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o4-mini-2025-04-16",
+      "r": 0.55,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gemini-4-hydrogen-medium",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "o3-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "kimi-k2.6",
+      "r": 3.25,
+      "c": 4.1539,
+      "cr": 0.1692,
+      "g": 1,
+      "gn": "月之暗面 Kimi"
+    },
+    {
+      "n": "doubao-seedance-2-0-260128-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "dreamina-seedance-2-0-ep",
+      "r": 3.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "text-embedding-3-small",
+      "r": 0.01,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o3-2025-04-16-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-audio-1.5",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "doubao-seedance-2-0",
+      "r": 2.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude 混合线路 - P3"
+    },
+    {
+      "n": "gemini-4-carbon-high",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-image-2",
+      "r": 2.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-image-2.6-flare",
+      "r": 2.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 0.05,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT - Codex - Pro"
+    },
+    {
+      "n": "gpt-reserve",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex - Pro"
+    },
+    {
+      "n": "gpt-4.1-2025-04-14",
+      "r": 1,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gemma-4-31b-it",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "gpt-5.3-codex-spark",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "dreamina-seedance-2-0-fast-ep",
+      "r": 2.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-2.5-flash-native-audio-preview-12-2025",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "kimi-k2.8",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "月之暗面 Kimi"
+    },
+    {
+      "n": "gemini-3.1-pro-preview-low",
+      "r": 1,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-4o",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o3",
+      "r": 1,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gemini-omni-flash-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "o1-preview-2024-09-12",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "deepseek-v4-pro-0813",
+      "r": 4.5,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "Made in China"
+    },
+    {
+      "n": "gemini-4-hydrogen-sonar",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "gpt-5.6",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-image-2.5-flare",
+      "r": 2.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-4o-all",
+      "r": 15,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o3-mini-medium",
+      "r": 0.55,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "deepseek-v4.1-flash-1017",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "Deepseek"
+    },
+    {
+      "n": "gemini-pro-latest",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "seedance-2-0-fast",
+      "r": 1.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.20-0309-reasoning",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok - 官转"
+    },
+    {
+      "n": "dreamina-seedance-2-0-fast-260128",
+      "r": 2.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "Deepseek"
+    },
+    {
+      "n": "gemini-flash-latest",
+      "r": 0.15,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "dreamina-seedance-2-0-fast-hc",
+      "r": 2.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.8-flash-lite-tts",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "grok-4.20-multi-agent-0309",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok - 官转"
+    },
+    {
+      "n": "gemini-4-hydrogen-xhigh",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "lyria-3-clip-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "gemini-3.1-flash-image",
+      "r": 0.25,
+      "c": 120,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-4-dalle",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-4o-image",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-5.2",
+      "r": 0.875,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gemini-3.1-flash-image-preview-count",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.2-pro",
+      "r": 10.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "doubao-seedance-2.0-fast-720p-15s",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-5.4-2026-03-05",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Kiro 企业版"
+    },
+    {
+      "n": "lyria-3-pro-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "tts-1-1106",
+      "r": 7.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-3.5-turbo-1106",
+      "r": 0.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "claude-opus-4-7-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Kiro 企业版"
+    },
+    {
+      "n": "gemini-2.5-flash-native-audio-preview-09-2025",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-4.1",
+      "r": 1,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o3-mini-2025-01-31-low",
+      "r": 0.55,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "seedream-4-5-251128",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-image-2.5-sunburst",
+      "r": 2.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-realtime-2.1",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "dreamina-seedance-2-5-ep",
+      "r": 5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-2.5-flash-nothinking",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3.5-transcribe",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-3.5-turbo-16k-0613",
+      "r": 1.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "dreamina-seedance-2-0-260128-max",
+      "r": 3.5,
+      "c": 1,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-image",
+      "r": 0.125,
+      "c": 120,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-4.1-mini",
+      "r": 0.2,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o3-mini-2025-01-31-high",
+      "r": 0.55,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "doubao-seedance-2-0-filter-off",
+      "r": 2.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "doubao-seedance-2.0-mini-720p-15s",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-5.2-codex",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "claude-sonnet-4-6-thinking",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Anit 反重力 - P6"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-preview",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 4,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-4.1-nano-2025-04-14",
+      "r": 0.05,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-4o-2024-11-20",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-5.2-xhigh",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "claude-opus-4-8-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Kiro 企业版"
+    },
+    {
+      "n": "minimax-h3-1440p-sec",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "whisper-1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "doubao-seedance-2-0-fast-260128-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-nano-banana-2.1",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "deep-research-pro-preview-12-2025",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "gemini-3.5-transcribe-live",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "Made in China"
+    },
+    {
+      "n": "tts-1",
+      "r": 7.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Kiro 高可用"
+    },
+    {
+      "n": "gemini-3.1-pro-low",
+      "r": 1,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.6-flash-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 6,
+      "c": 3,
+      "cr": 0.125,
+      "g": 1,
+      "gn": "千问 Qwen"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok - 官转"
+    },
+    {
+      "n": "claude-opus-4-5-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Kiro 企业版"
+    },
+    {
+      "n": "doubao-seedance-2.0-mini-720p-10s",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-image-2.6-sunburst",
+      "r": 2.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-5-nano-2025-08-07",
+      "r": 0.025,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "nano-banana-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-3-5-sonnet",
+      "r": 1.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Anit 反重力 - P3"
+    },
+    {
+      "n": "gemini-4-hydrogen-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "nano-banana-pro-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude 混合线路 - P3"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude 混合线路 - P3"
+    },
+    {
+      "n": "doubao-seedance-2.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gemini-3.1-pro",
+      "r": 1,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3.1-pro-high",
+      "r": 1,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3.5-live-translate-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 0.375,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT - Codex - Pro - 严选"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.4,
+      "c": 3.5,
+      "cr": 0.2875,
+      "g": 1,
+      "gn": "智谱 GLM"
+    },
+    {
+      "n": "qwen3.7-max",
+      "r": 6,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "千问 Qwen"
+    },
+    {
+      "n": "gpt-5.4-pro",
+      "r": 15,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "text-embedding-ada-002",
+      "r": 0.05,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o3-2025-04-16",
+      "r": 1,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "claude-3-5-sonnet-20241022",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude Anit 反重力 - P3"
+    },
+    {
+      "n": "gemini-4-hydrogen-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude Kiro 高可用"
+    },
+    {
+      "n": "gemini-2.5-flash-image",
+      "r": 0.15,
+      "c": 100,
+      "cr": 0.03,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-4-barium",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-4-carbon-medium",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-3.5-turbo-0125",
+      "r": 0.25,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-3.5-turbo-16k",
+      "r": 1.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "月之暗面 Kimi"
+    },
+    {
+      "n": "MiniMax-M2.7-highspeed",
+      "r": 2.1,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "月之暗面 Kimi"
+    },
+    {
+      "n": "gemini-2.5-flash-preview-tts",
+      "r": 0.25,
+      "c": 20,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3.8-flash-low",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3.8-flash-tts",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "minimax-h3-768p-sec",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "o1-mini",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "doubao-seedance-2-0-fast",
+      "r": 2.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3-flash-preview-nothinking",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3.1-flash-live-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-3.8-flash-high",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-4-turbo-2024-04-09",
+      "r": 5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "deepseek-v4-flash-0731",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "Made in China"
+    },
+    {
+      "n": "tts-1-hd",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "doubao-seedance-2-0-mini",
+      "r": 2.8,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "智谱 GLM"
+    },
+    {
+      "n": "minimax-h3-768p-15s",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gpt-5.1",
+      "r": 0.625,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "dreamina-seedance-2-0-mini-260615",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude 混合线路 - P3"
+    },
+    {
+      "n": "gpt-5-nano",
+      "r": 0.025,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o1-mini-2024-09-12",
+      "r": 0.55,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-5-pro",
+      "r": 7.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "doubao-seedance-2-0-mini-260615-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-2.5-flash-image-preview",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-4-argon-low",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "gpt-4o-2024-08-06",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-5-mini-2025-08-07",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "o4-mini",
+      "r": 0.55,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gemini-4-hydrogen-tiered-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "gpt-3.5-turbo",
+      "r": 0.25,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-4o-2024-05-13",
+      "r": 2.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "nano-banana-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deep-research-max-preview-04-2026",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "gemini-robotics-er-2-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "Gemini AiStudioVertex Mix"
+    },
+    {
+      "n": "gpt-image-1.5",
+      "r": 2.5,
+      "c": 6.4,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex - Pro"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude 混合线路 - P3"
+    },
+    {
+      "n": "gemini-2.5-flash-lite",
+      "r": 0.05,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "minimax-h3-1440p-15s",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "kimi-k2.8-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "月之暗面 Kimi"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 6.5,
+      "c": 5.2308,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "月之暗面 Kimi"
+    },
+    {
+      "n": "gemini-4-argon-high",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "o1-2024-12-17",
+      "r": 7.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-image-1",
+      "r": 2.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex - Pro"
+    },
+    {
+      "n": "glm-5.3-flashx",
+      "r": 1,
+      "c": 3.5,
+      "cr": 0.285,
+      "g": 1,
+      "gn": "智谱 GLM"
+    },
+    {
+      "n": "doubao-seedance-2-5-260628-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude 混合线路 - P3"
+    },
+    {
+      "n": "doubao-seedance-2.0-mini-720p-sec",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Gemini - Plus - P5"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Grok - 官转"
+    },
+    {
+      "n": "o3-mini-low",
+      "r": 0.55,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI Azure"
+    },
+    {
+      "n": "gpt-realtime-whisper",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "OpenAI 官转"
+    },
+    {
+      "n": "minimax-h3-1440p-10s",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT - Codex"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "station_id": "api-mindeck-cloud",
   "endpoint": "https://api.mindeck.cloud/api/pricing",
-  "fetched_at": "2026-11-26T16:17:21.905Z",
+  "fetched_at": "2026-11-26T16:34:58.621Z",
   "http_status": 200,
-  "latency_ms": 1962,
+  "latency_ms": 1898,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -19,6 +19,15 @@
     "default": "GPT -PRO 不降智分组"
   },
   "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
+  "status": {
+    "usd_exchange_rate": 7.3,
+    "quota_per_unit": 500000,
+    "price": 0.1,
+    "currency": "¤",
+    "top_up_link": null,
+    "system_name": "MindDeck API",
+    "version": null
+  },
   "stats": {
     "total": 15,
     "matched": 2,
@@ -39,13 +48,13 @@
         "quota_type": 0,
         "cache_ratio": 0.1,
         "enable_groups": [
+          "codex-stable",
+          "default",
           "grok",
+          "image2",
           "svip",
           "vip",
           "claude",
-          "default",
-          "image2",
-          "codex-stable",
           "deepseek"
         ]
       }
@@ -64,11 +73,11 @@
         "enable_groups": [
           "vip",
           "claude",
+          "codex-stable",
+          "default",
           "image2",
           "svip",
-          "codex-stable",
           "deepseek",
-          "default",
           "grok"
         ]
       }
@@ -76,8 +85,23 @@
   },
   "unmatched": [
     {
+      "model_name": "gpt-6-luna",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
       "model_name": "gpt-6-sol",
       "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-5.6-sol",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "codex-auto-review",
+      "model_ratio": 1.25,
       "completion_ratio": 6
     },
     {
@@ -96,29 +120,14 @@
       "completion_ratio": 6
     },
     {
-      "model_name": "codex-auto-review",
-      "model_ratio": 1.25,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "gpt-6.1-sol",
-      "model_ratio": 1,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-5.6-sol",
-      "model_ratio": 2.5,
-      "completion_ratio": 6
-    },
-    {
       "model_name": "gpt-6-astra",
       "model_ratio": 5,
       "completion_ratio": 5
     },
     {
-      "model_name": "gpt-6-luna",
-      "model_ratio": 2.5,
-      "completion_ratio": 6
+      "model_name": "gpt-6.1-sol",
+      "model_ratio": 1,
+      "completion_ratio": 5
     }
   ],
   "derivation": {
@@ -169,6 +178,6 @@
     "flat_price": null,
     "confidence": "medium",
     "note": "对得上官方价的 2 个模型里，1 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 1 个分组倍率，真正的折扣在那里。 对不上的 1 个：gpt-6.2-astra×1.25，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。",
-    "computed_at": "2026-11-26T16:17:31.305Z"
+    "computed_at": "2026-11-26T16:35:14.881Z"
   }
 }

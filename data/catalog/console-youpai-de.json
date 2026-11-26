@@ -1,0 +1,505 @@
+{
+  "station_id": "console-youpai-de",
+  "endpoint": "https://console.youpai.de/api/pricing",
+  "fetched_at": "2026-11-26T16:34:51.822Z",
+  "http_status": 200,
+  "total": 62,
+  "models": [
+    {
+      "n": "grok-imagine-image-2.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "T11Grok"
+    },
+    {
+      "n": "claude-sonnet-4",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "gemini-3.1-flash-image",
+      "r": 0.25,
+      "c": 120,
+      "cr": null,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "gemini-3.1-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "claude-sonnet-4.5",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "gemini-3-flash-agent",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T01AGPT 特价"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "claude-opus-4-1-20250805",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T07Claude Code MAX"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "T11Grok"
+    },
+    {
+      "n": "gemini-3.5-flash-low",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "gemini-3.7-flash-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "claude-haiku-4.5",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "claude-sonnet-4-20250514",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "T11Grok"
+    },
+    {
+      "n": "claude-opus-5-thinking",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 0.5,
+      "c": 2.5,
+      "cr": 0.03,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "gemini-3.5-flash-extra-low",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "gemini-3.1-pro",
+      "r": 37.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "gemini-pro-agent",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T15Kimi-K3"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "gemini-2.5-flash-lite",
+      "r": 0.15,
+      "c": 4,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "gemini-3-pro-preview",
+      "r": 37.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T01AGPT 特价"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "grok-imagine-image-lite",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "T11Grok"
+    },
+    {
+      "n": "claude-opus-4-20250514",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T07Claude Code MAX"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 2.25,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "T16DeepSeek V4 企业"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "gemini-2.0-flash",
+      "r": 0.05,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "grok-imagine-image-edit",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "T11Grok"
+    },
+    {
+      "n": "gemini-3.6-flash-high",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "claude-fable-5.1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "grok-imagine-image",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "T11Grok"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "gemini-2.5-pro",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "gemini-3-flash-preview",
+      "r": 0.5,
+      "c": 6,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "T01AGPT 特价"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T01AGPT 特价"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T01AGPT 特价"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T04Claude Kiro 特价"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 0.75,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "T16DeepSeek V4 企业"
+    },
+    {
+      "n": "gemini-3.1-pro-low",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T12Gemini"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "T01AGPT 特价"
+    }
+  ]
+}

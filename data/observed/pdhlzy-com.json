@@ -1,9 +1,9 @@
 {
   "station_id": "pdhlzy-com",
   "endpoint": "https://pdhlzy.com/api/pricing",
-  "fetched_at": "2026-11-26T16:17:19.426Z",
+  "fetched_at": "2026-11-26T16:34:55.491Z",
   "http_status": 200,
-  "latency_ms": 709,
+  "latency_ms": 801,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -61,6 +61,15 @@
     "生图1k": ""
   },
   "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
+  "status": {
+    "usd_exchange_rate": 1,
+    "quota_per_unit": 500000,
+    "price": 1,
+    "currency": "¤",
+    "top_up_link": null,
+    "system_name": "Pdh API ",
+    "version": "v1.0.0-rc.51-pdh-prod-20261117"
+  },
   "stats": {
     "total": 39,
     "matched": 5,
@@ -69,23 +78,6 @@
     "duplicate": 0
   },
   "models": {
-    "gpt-6.2-astra": {
-      "input": 8,
-      "output": 40,
-      "cache_read": 0.4,
-      "raw": {
-        "model_name": "gpt-6.2-astra",
-        "model_ratio": 4,
-        "completion_ratio": 5,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "cache_ratio": 0.05,
-        "enable_groups": [
-          "GPT",
-          "GPT-plus"
-        ]
-      }
-    },
     "claude-sonnet-5-5": {
       "input": 2,
       "output": 10,
@@ -98,14 +90,31 @@
         "quota_type": 0,
         "cache_ratio": 0.1,
         "enable_groups": [
-          "vertex-claude-逆向",
           "claude",
           "claude备用组",
           "kiro-正价组",
-          "kiro-稳定版"
+          "kiro-稳定版",
+          "vertex-claude-逆向"
         ],
         "billing_mode": "tiered_expr",
         "billing_expr": "tier(\"base\", p * 2 + c * 10 + cr * 0.2 + cc * 2.5 + cc1h * 4)"
+      }
+    },
+    "gpt-6.2-sol": {
+      "input": 2,
+      "output": 10,
+      "cache_read": 0.1,
+      "raw": {
+        "model_name": "gpt-6.2-sol",
+        "model_ratio": 1,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05,
+        "enable_groups": [
+          "GPT",
+          "GPT-plus"
+        ]
       }
     },
     "claude-opus-5-5": {
@@ -130,23 +139,6 @@
         "billing_expr": "tier(\"base\", p * 4 + c * 20 + cr * 0.2 + cc * 5 + cc1h * 8)"
       }
     },
-    "gpt-6.2-sol": {
-      "input": 2,
-      "output": 10,
-      "cache_read": 0.1,
-      "raw": {
-        "model_name": "gpt-6.2-sol",
-        "model_ratio": 1,
-        "completion_ratio": 5,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "cache_ratio": 0.05,
-        "enable_groups": [
-          "GPT",
-          "GPT-plus"
-        ]
-      }
-    },
     "deepseek-flash": {
       "input": 2,
       "output": 8,
@@ -163,36 +155,43 @@
         "billing_mode": "tiered_expr",
         "billing_expr": "tier(\"off_peak\", p * 2 + cr * 0.02 + c * 8)"
       }
+    },
+    "gpt-6.2-astra": {
+      "input": 8,
+      "output": 40,
+      "cache_read": 0.4,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 4,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05,
+        "enable_groups": [
+          "GPT",
+          "GPT-plus"
+        ]
+      }
     }
   },
   "unmatched": [
     {
-      "model_name": "gemini-2.5-flash",
-      "model_ratio": 0.15,
-      "completion_ratio": 8.333333333333
+      "model_name": "gpt-6.1-terra",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
     },
     {
-      "model_name": "gemini-3-flash-preview",
-      "model_ratio": 0.035,
-      "completion_ratio": 6.142857
-    },
-    {
-      "model_name": "glm-5.3",
-      "model_ratio": 4,
-      "completion_ratio": 3.5
-    },
-    {
-      "model_name": "glm-5.3-flash",
-      "model_ratio": 0.83,
-      "completion_ratio": 3.512048192771
-    },
-    {
-      "model_name": "gpt-6-astra",
+      "model_name": "grok-4.6",
       "model_ratio": 37.5,
-      "completion_ratio": 2
+      "completion_ratio": 1
     },
     {
-      "model_name": "claude-opus-5",
+      "model_name": "claude-opus-4-6",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-7",
       "model_ratio": 2.5,
       "completion_ratio": 5
     },
@@ -202,18 +201,28 @@
       "completion_ratio": 5
     },
     {
+      "model_name": "gemini-2.5-flash",
+      "model_ratio": 0.15,
+      "completion_ratio": 8.333333333333
+    },
+    {
+      "model_name": "gpt-6-astra",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
       "model_name": "gpt-6-sol",
       "model_ratio": 1,
       "completion_ratio": 5
     },
     {
-      "model_name": "grok-4.7",
-      "model_ratio": 2,
-      "completion_ratio": 3
+      "model_name": "kimi-k3",
+      "model_ratio": 10,
+      "completion_ratio": 5
     },
     {
-      "model_name": "claude-haiku-4-5",
-      "model_ratio": 1,
+      "model_name": "claude-sonnet-4-6",
+      "model_ratio": 1.5,
       "completion_ratio": 5
     },
     {
@@ -227,14 +236,29 @@
       "completion_ratio": 4
     },
     {
-      "model_name": "gpt-6.1-terra",
-      "model_ratio": 0.5,
+      "model_name": "glm-5.3-flash",
+      "model_ratio": 0.83,
+      "completion_ratio": 3.512048192771
+    },
+    {
+      "model_name": "glm-5.1",
+      "model_ratio": 4,
+      "completion_ratio": 3.5
+    },
+    {
+      "model_name": "claude-fable-5-2",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "claude-fable-5-1",
+      "model_ratio": 5,
       "completion_ratio": 5
     },
     {
-      "model_name": "grok-4.5",
-      "model_ratio": 1,
-      "completion_ratio": 3
+      "model_name": "gemini-3-flash-preview",
+      "model_ratio": 0.035,
+      "completion_ratio": 6.142857
     },
     {
       "model_name": "claude-haiku-5-5",
@@ -242,18 +266,43 @@
       "completion_ratio": 1
     },
     {
-      "model_name": "gpt-5.6-sol",
-      "model_ratio": 37.5,
-      "completion_ratio": 6
-    },
-    {
       "model_name": "claude-fable-5",
       "model_ratio": 5,
       "completion_ratio": 5
     },
     {
-      "model_name": "claude-sonnet-4-6",
-      "model_ratio": 1.5,
+      "model_name": "claude-opus-4-8",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-5",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3-flash",
+      "model_ratio": 0.25,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "glm-5.2",
+      "model_ratio": 4,
+      "completion_ratio": 3.5
+    },
+    {
+      "model_name": "glm-5.3",
+      "model_ratio": 4,
+      "completion_ratio": 3.5
+    },
+    {
+      "model_name": "grok-4.7",
+      "model_ratio": 2,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "claude-haiku-4-5",
+      "model_ratio": 1,
       "completion_ratio": 5
     },
     {
@@ -262,59 +311,19 @@
       "completion_ratio": 6
     },
     {
-      "model_name": "claude-fable-5-2",
+      "model_name": "gpt-5.6-sol",
       "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gemini-3-flash",
-      "model_ratio": 0.25,
       "completion_ratio": 6
-    },
-    {
-      "model_name": "claude-opus-4-8",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-opus-4-6",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "grok-4.6",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "kimi-k3",
-      "model_ratio": 10,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-opus-4-7",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-fable-5-1",
-      "model_ratio": 5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "glm-5.1",
-      "model_ratio": 4,
-      "completion_ratio": 3.5
-    },
-    {
-      "model_name": "glm-5.2",
-      "model_ratio": 4,
-      "completion_ratio": 3.5
     },
     {
       "model_name": "gpt-6.1-sol",
       "model_ratio": 37.5,
       "completion_ratio": 2
+    },
+    {
+      "model_name": "grok-4.5",
+      "model_ratio": 1,
+      "completion_ratio": 3
     }
   ],
   "derivation": {
@@ -329,25 +338,25 @@
     "dominant_multiple": 1,
     "agreement": 0.8,
     "comparable_models": [
-      "gpt-6.2-astra",
       "claude-sonnet-5-5",
+      "gpt-6.2-sol",
       "claude-opus-5-5",
-      "gpt-6.2-sol"
+      "gpt-6.2-astra"
     ],
     "models": [
       {
-        "id": "gpt-6.2-astra",
-        "name": "gpt-6.2-astra",
-        "input": 8,
-        "output": 40,
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-5-5",
+        "input": 2,
+        "output": 10,
         "multiple": 1,
         "shape_ok": true,
         "verdict": "ok",
         "why": "输出/输入比与官方一致，这一行能单独算"
       },
       {
-        "id": "claude-sonnet-5-5",
-        "name": "claude-sonnet-5-5",
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
         "input": 2,
         "output": 10,
         "multiple": 1,
@@ -366,21 +375,21 @@
         "why": "输出/输入比与官方一致，这一行能单独算"
       },
       {
-        "id": "gpt-6.2-sol",
-        "name": "gpt-6.2-sol",
-        "input": 2,
-        "output": 10,
-        "multiple": 1,
-        "shape_ok": true,
-        "verdict": "ok",
-        "why": "输出/输入比与官方一致，这一行能单独算"
-      },
-      {
         "id": "deepseek-flash",
         "name": "deepseek-v4.1-flash",
         "input": 2,
         "output": 8,
         "multiple": 6.667,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "input": 8,
+        "output": 40,
+        "multiple": 1,
         "shape_ok": true,
         "verdict": "ok",
         "why": "输出/输入比与官方一致，这一行能单独算"
@@ -398,6 +407,6 @@
     "flat_price": null,
     "confidence": "medium",
     "note": "对得上官方价的 5 个模型里，4 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 19 个分组倍率，真正的折扣在那里。 对不上的 1 个：deepseek-flash×6.67，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。",
-    "computed_at": "2026-11-26T16:17:31.319Z"
+    "computed_at": "2026-11-26T16:35:14.895Z"
   }
 }

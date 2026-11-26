@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T16:17:57.542Z",
+    "generated_at": "2026-11-26T16:36:38.814Z",
     "fx": {
       "usd_cny": 6.6711,
       "as_of": "2026-11-25",
@@ -11,13 +11,13 @@
       "output": 0.3
     },
     "counts": {
-      "rows": 194,
+      "rows": 192,
       "stations": 60,
       "models": 6,
       "official_rows": 6,
       "demo_rows": 11,
       "with_affiliate": 11,
-      "auto_rows": 177,
+      "auto_rows": 175,
       "auto_stations": 54
     },
     "best": {
@@ -48,7 +48,7 @@
         "label": "Claude Opus 5.5",
         "vendor": "Anthropic",
         "popularity": 76,
-        "coverage": 43,
+        "coverage": 41,
         "heat": 100,
         "heat_source": "coverage"
       },
@@ -58,7 +58,7 @@
         "vendor": "Anthropic",
         "popularity": 92,
         "coverage": 32,
-        "heat": 74,
+        "heat": 78,
         "heat_source": "coverage"
       },
       {
@@ -66,8 +66,8 @@
         "label": "DeepSeek Flash",
         "vendor": "DeepSeek",
         "popularity": 85,
-        "coverage": 30,
-        "heat": 70,
+        "coverage": 29,
+        "heat": 71,
         "heat_source": "coverage"
       },
       {
@@ -76,7 +76,7 @@
         "vendor": "OpenAI",
         "popularity": 88,
         "coverage": 25,
-        "heat": 58,
+        "heat": 61,
         "heat_source": "coverage"
       },
       {
@@ -85,7 +85,7 @@
         "vendor": "OpenAI",
         "popularity": 68,
         "coverage": 25,
-        "heat": 58,
+        "heat": 61,
         "heat_source": "coverage"
       },
       {
@@ -93,15 +93,25 @@
         "label": "DeepSeek V4 Pro",
         "vendor": "DeepSeek",
         "popularity": 96,
-        "coverage": 22,
-        "heat": 51,
+        "coverage": 23,
+        "heat": 56,
         "heat_source": "coverage"
       }
     ],
     "heat": {
       "source": "coverage",
       "stations": 54,
-      "max_coverage": 43
+      "max_coverage": 41
+    },
+    "catalog": {
+      "count": 380,
+      "stations": 66,
+      "threshold": 3,
+      "baseline": {
+        "openrouter": 154,
+        "none": 220,
+        "official": 6
+      }
     },
     "disabled_sources": [
       {
@@ -132,6 +142,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -228,6 +240,106 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-26",
+        "note": null
+      },
+      "model": {
+        "id": "claude-sonnet-5-5",
+        "label": "Claude Sonnet 5.5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "auto",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.06,
+        "output": 0.3,
+        "cache_read": 0.003
+      },
+      "effective": {
+        "input": 0.06,
+        "output": 0.3,
+        "cache_read": 0.003
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 0.6671
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "ratio": {
+        "input": 0.0045,
+        "output": 0.0045,
+        "blend": 0.0045
+      },
+      "discount": 0.9955,
+      "blend_effective": 0.132,
+      "usd": {
+        "effective": {
+          "input": 0.009,
+          "output": 0.045,
+          "cache_read": 0.0004
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 0.0198,
+        "discount": 0.9955
+      },
+      "calc": "官方 $2 × 倍率 0.03（claude-kiro-超低价版80缓·可选最省） = ¥0.06/M；43 个分组档位 0.03–4×，最低「claude-kiro-超低价版80缓」",
+      "calc_full": "官方 $2 × 倍率 0.03（claude-kiro-超低价版80缓·可选最省） = ¥0.06/M；43 个分组档位 0.03–4×，最低「claude-kiro-超低价版80缓」（可选最省：claude-kiro-超低价版(80缓)）",
+      "calc_basis": "官方 $2 × 倍率 0.03（claude-kiro-超低价版80缓·可选最省） = ¥0.06/M",
+      "group": {
+        "name": "claude-kiro-超低价版80缓",
+        "full": "claude-kiro-超低价版(80缓)",
+        "ratio": 0.03,
+        "source": "enabled",
+        "source_label": "可选最省",
+        "desc": "claude-kiro-超低价版(80缓)",
+        "count": 43
+      },
+      "observed": true,
+      "tiers": {
+        "count": 43,
+        "min": 0.03,
+        "max": 4,
+        "min_name": "claude-kiro-超低价版80缓"
+      },
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+      "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
+        "id": "code28-ccwu-cc",
+        "name": "code28.ccwu.cc",
+        "kind": "relay",
+        "kind_label": "中转·未分类",
+        "demo": false,
+        "homepage": "https://code28.ccwu.cc",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -324,6 +436,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -420,6 +534,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.68752,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -516,6 +632,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.68752,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -612,6 +730,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -708,6 +828,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -795,15 +917,17 @@
     },
     {
       "station": {
-        "id": "apipaths-com",
-        "name": "apipaths.com",
+        "id": "deepkey-top",
+        "name": "deepkey.top",
         "kind": "relay",
         "kind_label": "中转·未分类",
         "demo": false,
-        "homepage": "https://apipaths.com",
+        "homepage": "https://deepkey.top",
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -863,24 +987,24 @@
         "blend": 0.0396,
         "discount": 0.991
       },
-      "calc": "官方 $2 × 倍率 0.06（Claude-kiro-高缓·自动分组） = ¥0.12/M；38 个分组档位 0.02–3×，最低「Codex-GPT-特惠」",
-      "calc_full": "官方 $2 × 倍率 0.06（Claude-kiro-高缓·自动分组） = ¥0.12/M；38 个分组档位 0.02–3×，最低「Codex-GPT-特惠」（自动分组：kiro渠道，高缓--高速--稳定，高并发）",
-      "calc_basis": "官方 $2 × 倍率 0.06（Claude-kiro-高缓·自动分组） = ¥0.12/M",
+      "calc": "官方 $2 × 倍率 0.06（claude-quick-discount·可选最省） = ¥0.12/M；91 个分组档位 0.01–4×，最低「gemini-count」",
+      "calc_full": "官方 $2 × 倍率 0.06（claude-quick-discount·可选最省） = ¥0.12/M；91 个分组档位 0.01–4×，最低「gemini-count」（可选最省：claude-quick-特价-可能工具有问题-还在调试）",
+      "calc_basis": "官方 $2 × 倍率 0.06（claude-quick-discount·可选最省） = ¥0.12/M",
       "group": {
-        "name": "Claude-kiro-高缓",
-        "full": "Claude-kiro-高缓",
+        "name": "claude-quick-discount",
+        "full": "claude-quick-discount",
         "ratio": 0.06,
-        "source": "auto",
-        "source_label": "自动分组",
-        "desc": "kiro渠道，高缓--高速--稳定，高并发",
-        "count": 39
+        "source": "enabled",
+        "source_label": "可选最省",
+        "desc": "claude-quick-特价-可能工具有问题-还在调试",
+        "count": 91
       },
       "observed": true,
       "tiers": {
-        "count": 38,
-        "min": 0.02,
-        "max": 3,
-        "min_name": "Codex-GPT-特惠"
+        "count": 91,
+        "min": 0.01,
+        "max": 4,
+        "min_name": "gemini-count"
       },
       "recharge": null,
       "calc_adjust": "",
@@ -900,6 +1024,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -996,6 +1122,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -1092,6 +1220,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -1188,6 +1318,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.68752,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -1284,6 +1416,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.68752,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -1380,6 +1514,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -1467,6 +1603,104 @@
     },
     {
       "station": {
+        "id": "api-yinziapi-top",
+        "name": "api.yinziapi.top",
+        "kind": "relay",
+        "kind_label": "中转·未分类",
+        "demo": false,
+        "homepage": "https://api.yinziapi.top",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-26",
+        "note": null
+      },
+      "model": {
+        "id": "claude-opus-5-5",
+        "label": "Claude Opus 5.5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "auto",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.26,
+        "output": 1.3,
+        "cache_read": 0.026
+      },
+      "effective": {
+        "input": 0.26,
+        "output": 1.3,
+        "cache_read": 0.026
+      },
+      "official_cny": {
+        "input": 26.6844,
+        "output": 133.422,
+        "cache_read": 1.3342
+      },
+      "official_usd": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2,
+        "cache_write": 5
+      },
+      "ratio": {
+        "input": 0.0097,
+        "output": 0.0097,
+        "blend": 0.0097
+      },
+      "discount": 0.9903,
+      "blend_effective": 0.572,
+      "usd": {
+        "effective": {
+          "input": 0.039,
+          "output": 0.1949,
+          "cache_read": 0.0039
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 0.0857,
+        "discount": 0.9903
+      },
+      "calc": "官方 $4 × 倍率 0.065（claude-kiro限时活动分组·可选最省） = ¥0.26/M；112 个分组档位 0.0001–8×，最低「群友福利-GLM54体验」",
+      "calc_full": "官方 $4 × 倍率 0.065（claude-kiro限时活动分组·可选最省） = ¥0.26/M；112 个分组档位 0.0001–8×，最低「群友福利-GLM54体验」（可选最省：claude-kiro限时活动分组）",
+      "calc_basis": "官方 $4 × 倍率 0.065（claude-kiro限时活动分组·可选最省） = ¥0.26/M",
+      "group": {
+        "name": "claude-kiro限时活动分组",
+        "full": "claude-kiro限时活动分组",
+        "ratio": 0.065,
+        "source": "enabled",
+        "source_label": "可选最省",
+        "desc": "claude-kiro限时活动分组",
+        "count": 113
+      },
+      "observed": true,
+      "tiers": {
+        "count": 112,
+        "min": 0.0001,
+        "max": 8,
+        "min_name": "群友福利-GLM54体验"
+      },
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+      "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
         "id": "aceoai-com",
         "name": "aceoai.com",
         "kind": "relay",
@@ -1476,6 +1710,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -1572,6 +1808,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -1668,6 +1906,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -1764,6 +2004,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -1860,6 +2102,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -1956,6 +2200,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -2052,6 +2298,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -2148,6 +2396,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -2244,6 +2494,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -2340,6 +2592,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -2436,6 +2690,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -2532,6 +2788,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -2628,6 +2886,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -2724,6 +2984,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.68752,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -2820,6 +3082,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.68752,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -2916,6 +3180,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -3003,15 +3269,17 @@
     },
     {
       "station": {
-        "id": "newapi-ailyyzdk-xyz",
-        "name": "newapi.ailyyzdk.xyz",
+        "id": "newapi-dragon3api-com",
+        "name": "newapi.dragon3api.com",
         "kind": "relay",
         "kind_label": "中转·未分类",
         "demo": false,
-        "homepage": "https://newapi.ailyyzdk.xyz",
+        "homepage": "https://newapi.dragon3api.com",
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -3032,12 +3300,12 @@
       "nominal": {
         "input": 0.2,
         "output": 1,
-        "cache_read": 0.02
+        "cache_read": 0.01
       },
       "effective": {
         "input": 0.2,
         "output": 1,
-        "cache_read": 0.02
+        "cache_read": 0.01
       },
       "official_cny": {
         "input": 13.3422,
@@ -3061,7 +3329,7 @@
         "effective": {
           "input": 0.03,
           "output": 0.1499,
-          "cache_read": 0.003
+          "cache_read": 0.0015
         },
         "official": {
           "input": 2,
@@ -3071,24 +3339,122 @@
         "blend": 0.066,
         "discount": 0.985
       },
-      "calc": "官方 $2 × 倍率 0.1（特价cc·可选最省） = ¥0.2/M；21 个分组档位 0.03–3.2×，最低「国模003」",
-      "calc_full": "官方 $2 × 倍率 0.1（特价cc·可选最省） = ¥0.2/M；21 个分组档位 0.03–3.2×，最低「国模003」（可选最省：特价claude）",
-      "calc_basis": "官方 $2 × 倍率 0.1（特价cc·可选最省） = ¥0.2/M",
+      "calc": "官方 $2 × 倍率 0.1（claude-kiro·自动分组） = ¥0.2/M；16 个分组档位 0.0275–1.6×，最低「gpt-promax」",
+      "calc_full": "官方 $2 × 倍率 0.1（claude-kiro·自动分组） = ¥0.2/M；16 个分组档位 0.0275–1.6×，最低「gpt-promax」（自动分组：Claude 低价档 · 流口水，第三方上游，智商不能保证，质量和稳定性会波动，小白尽量不用）",
+      "calc_basis": "官方 $2 × 倍率 0.1（claude-kiro·自动分组） = ¥0.2/M",
       "group": {
-        "name": "特价cc",
-        "full": "特价cc",
+        "name": "claude-kiro",
+        "full": "claude-kiro",
         "ratio": 0.1,
-        "source": "enabled",
-        "source_label": "可选最省",
-        "desc": "特价claude",
-        "count": 21
+        "source": "auto",
+        "source_label": "自动分组",
+        "desc": "Claude 低价档 · 流口水，第三方上游，智商不能保证，质量和稳定性会波动，小白尽量不用",
+        "count": 16
       },
       "observed": true,
       "tiers": {
-        "count": 21,
-        "min": 0.03,
-        "max": 3.2,
-        "min_name": "国模003"
+        "count": 16,
+        "min": 0.0275,
+        "max": 1.6,
+        "min_name": "gpt-promax"
+      },
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+      "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
+        "id": "meinianda-top",
+        "name": "meinianda.top",
+        "kind": "relay",
+        "kind_label": "中转·未分类",
+        "demo": false,
+        "homepage": "https://meinianda.top",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-26",
+        "note": null
+      },
+      "model": {
+        "id": "claude-sonnet-5-5",
+        "label": "Claude Sonnet 5.5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "auto",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.2,
+        "output": 1,
+        "cache_read": 0.01
+      },
+      "effective": {
+        "input": 0.2,
+        "output": 1,
+        "cache_read": 0.01
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 0.6671
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "ratio": {
+        "input": 0.015,
+        "output": 0.015,
+        "blend": 0.015
+      },
+      "discount": 0.985,
+      "blend_effective": 0.44,
+      "usd": {
+        "effective": {
+          "input": 0.03,
+          "output": 0.1499,
+          "cache_read": 0.0015
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 0.066,
+        "discount": 0.985
+      },
+      "calc": "官方 $2 × 倍率 0.1（ClaudeKiro-福利·可选最省） = ¥0.2/M；25 个分组档位 0.07–3×，最低「GPT-福利」",
+      "calc_full": "官方 $2 × 倍率 0.1（ClaudeKiro-福利·可选最省） = ¥0.2/M；25 个分组档位 0.07–3×，最低「GPT-福利」",
+      "calc_basis": "官方 $2 × 倍率 0.1（ClaudeKiro-福利·可选最省） = ¥0.2/M",
+      "group": {
+        "name": "ClaudeKiro-福利",
+        "full": "ClaudeKiro-福利",
+        "ratio": 0.1,
+        "source": "enabled",
+        "source_label": "可选最省",
+        "desc": "",
+        "count": 26
+      },
+      "observed": true,
+      "tiers": {
+        "count": 25,
+        "min": 0.07,
+        "max": 3,
+        "min_name": "GPT-福利"
       },
       "recharge": null,
       "calc_adjust": "",
@@ -3108,6 +3474,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -3204,6 +3572,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -3291,6 +3661,104 @@
     },
     {
       "station": {
+        "id": "newapi-ailyyzdk-xyz",
+        "name": "newapi.ailyyzdk.xyz",
+        "kind": "relay",
+        "kind_label": "中转·未分类",
+        "demo": false,
+        "homepage": "https://newapi.ailyyzdk.xyz",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-26",
+        "note": null
+      },
+      "model": {
+        "id": "claude-opus-5-5",
+        "label": "Claude Opus 5.5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "auto",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.4,
+        "output": 2,
+        "cache_read": 0.02
+      },
+      "effective": {
+        "input": 0.4,
+        "output": 2,
+        "cache_read": 0.02
+      },
+      "official_cny": {
+        "input": 26.6844,
+        "output": 133.422,
+        "cache_read": 1.3342
+      },
+      "official_usd": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2,
+        "cache_write": 5
+      },
+      "ratio": {
+        "input": 0.015,
+        "output": 0.015,
+        "blend": 0.015
+      },
+      "discount": 0.985,
+      "blend_effective": 0.88,
+      "usd": {
+        "effective": {
+          "input": 0.06,
+          "output": 0.2998,
+          "cache_read": 0.003
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 0.1319,
+        "discount": 0.985
+      },
+      "calc": "官方 $4 × 倍率 0.1（特价cc·可选最省） = ¥0.4/M；21 个分组档位 0.03–3.2×，最低「国模003」",
+      "calc_full": "官方 $4 × 倍率 0.1（特价cc·可选最省） = ¥0.4/M；21 个分组档位 0.03–3.2×，最低「国模003」（可选最省：特价claude）",
+      "calc_basis": "官方 $4 × 倍率 0.1（特价cc·可选最省） = ¥0.4/M",
+      "group": {
+        "name": "特价cc",
+        "full": "特价cc",
+        "ratio": 0.1,
+        "source": "enabled",
+        "source_label": "可选最省",
+        "desc": "特价claude",
+        "count": 21
+      },
+      "observed": true,
+      "tiers": {
+        "count": 21,
+        "min": 0.03,
+        "max": 3.2,
+        "min_name": "国模003"
+      },
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+      "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
         "id": "api-yuaiapi-com",
         "name": "api.yuaiapi.com",
         "kind": "relay",
@@ -3300,6 +3768,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -3396,6 +3866,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -3483,102 +3955,6 @@
     },
     {
       "station": {
-        "id": "meinianda-top",
-        "name": "meinianda.top",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://meinianda.top",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "claude-opus-5-5",
-        "label": "Claude Opus 5.5",
-        "vendor": "Anthropic",
-        "context": 200000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 0.4,
-        "output": 2,
-        "cache_read": 0.02
-      },
-      "effective": {
-        "input": 0.4,
-        "output": 2,
-        "cache_read": 0.02
-      },
-      "official_cny": {
-        "input": 26.6844,
-        "output": 133.422,
-        "cache_read": 1.3342
-      },
-      "official_usd": {
-        "input": 4,
-        "output": 20,
-        "cache_read": 0.2,
-        "cache_write": 5
-      },
-      "ratio": {
-        "input": 0.015,
-        "output": 0.015,
-        "blend": 0.015
-      },
-      "discount": 0.985,
-      "blend_effective": 0.88,
-      "usd": {
-        "effective": {
-          "input": 0.06,
-          "output": 0.2998,
-          "cache_read": 0.003
-        },
-        "official": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
-        },
-        "blend": 0.1319,
-        "discount": 0.985
-      },
-      "calc": "官方 $4 × 倍率 0.1（ClaudeKiro-福利·可选最省） = ¥0.4/M；25 个分组档位 0.07–3×，最低「GPT-福利」",
-      "calc_full": "官方 $4 × 倍率 0.1（ClaudeKiro-福利·可选最省） = ¥0.4/M；25 个分组档位 0.07–3×，最低「GPT-福利」",
-      "calc_basis": "官方 $4 × 倍率 0.1（ClaudeKiro-福利·可选最省） = ¥0.4/M",
-      "group": {
-        "name": "ClaudeKiro-福利",
-        "full": "ClaudeKiro-福利",
-        "ratio": 0.1,
-        "source": "enabled",
-        "source_label": "可选最省",
-        "desc": "",
-        "count": 26
-      },
-      "observed": true,
-      "tiers": {
-        "count": 25,
-        "min": 0.07,
-        "max": 3,
-        "min_name": "GPT-福利"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
         "id": "ai-realseek-wiki",
         "name": "ai.realseek.wiki",
         "kind": "relay",
@@ -3588,6 +3964,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -3684,6 +4062,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -3780,6 +4160,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -3876,6 +4258,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -3972,6 +4356,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -4068,6 +4454,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -4164,6 +4552,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -4260,6 +4650,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -4356,6 +4748,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -4452,6 +4846,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -4548,6 +4944,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -4644,6 +5042,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -4740,6 +5140,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -4836,6 +5238,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -4932,6 +5336,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -5028,6 +5434,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -5115,102 +5523,6 @@
     },
     {
       "station": {
-        "id": "yanai-it-com",
-        "name": "yanai.it.com",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://yanai.it.com",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "claude-sonnet-5-5",
-        "label": "Claude Sonnet 5.5",
-        "vendor": "Anthropic",
-        "context": 200000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 0.3,
-        "output": 1.5,
-        "cache_read": 0.03
-      },
-      "effective": {
-        "input": 0.3,
-        "output": 1.5,
-        "cache_read": 0.03
-      },
-      "official_cny": {
-        "input": 13.3422,
-        "output": 66.711,
-        "cache_read": 0.6671
-      },
-      "official_usd": {
-        "input": 2,
-        "output": 10,
-        "cache_read": 0.1,
-        "cache_write": 2.5
-      },
-      "ratio": {
-        "input": 0.0225,
-        "output": 0.0225,
-        "blend": 0.0225
-      },
-      "discount": 0.9775,
-      "blend_effective": 0.66,
-      "usd": {
-        "effective": {
-          "input": 0.045,
-          "output": 0.2249,
-          "cache_read": 0.0045
-        },
-        "official": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
-        },
-        "blend": 0.0989,
-        "discount": 0.9775
-      },
-      "calc": "官方 $2 × 倍率 0.15（cc-kiro-90缓·自动分组） = ¥0.3/M；31 个分组档位 0.1–6.6×，最低「cc-kiro-90缓」",
-      "calc_full": "官方 $2 × 倍率 0.15（cc-kiro-90缓·自动分组） = ¥0.3/M；31 个分组档位 0.1–6.6×，最低「cc-kiro-90缓」（自动分组：挑战全网最稳，高价渠道兜底，不赚钱就是为了挑战，只能在 cc 用）",
-      "calc_basis": "官方 $2 × 倍率 0.15（cc-kiro-90缓·自动分组） = ¥0.3/M",
-      "group": {
-        "name": "cc-kiro-90缓",
-        "full": "cc-kiro-90缓",
-        "ratio": 0.1,
-        "source": "auto",
-        "source_label": "自动分组",
-        "desc": "挑战全网最稳，高价渠道兜底，不赚钱就是为了挑战，只能在 cc 用",
-        "count": 31
-      },
-      "observed": true,
-      "tiers": {
-        "count": 31,
-        "min": 0.1,
-        "max": 6.6,
-        "min_name": "cc-kiro-90缓"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
         "id": "36niu-com",
         "name": "36niu.com",
         "kind": "relay",
@@ -5220,6 +5532,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -5316,6 +5630,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.68752,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -5412,6 +5728,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -5508,6 +5826,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -5604,6 +5924,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -5700,6 +6022,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.68752,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -5796,6 +6120,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.76,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -5892,6 +6218,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.76,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -5988,6 +6316,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -6084,6 +6414,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -6171,102 +6503,6 @@
     },
     {
       "station": {
-        "id": "zlkpro-tech",
-        "name": "zlkpro.tech",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://zlkpro.tech",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "deepseek-flash",
-        "label": "DeepSeek Flash",
-        "vendor": "DeepSeek",
-        "context": 1000000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 0.06,
-        "output": 0.24,
-        "cache_read": 0.014
-      },
-      "effective": {
-        "input": 0.06,
-        "output": 0.24,
-        "cache_read": 0.014
-      },
-      "official_cny": {
-        "input": 2.0013,
-        "output": 8.0053,
-        "cache_read": 0.04
-      },
-      "official_usd": {
-        "input": 0.3,
-        "output": 1.2,
-        "cache_read": 0.006,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 0.03,
-        "output": 0.03,
-        "blend": 0.03
-      },
-      "discount": 0.97,
-      "blend_effective": 0.114,
-      "usd": {
-        "effective": {
-          "input": 0.009,
-          "output": 0.036,
-          "cache_read": 0.0021
-        },
-        "official": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.006
-        },
-        "blend": 0.0171,
-        "discount": 0.97
-      },
-      "calc": "官方 $0.3 × 倍率 0.2（default·自动分组） = ¥0.06/M；5 个分组档位 0.005–0.1×，最低「discount」",
-      "calc_full": "官方 $0.3 × 倍率 0.2（default·自动分组） = ¥0.06/M；5 个分组档位 0.005–0.1×，最低「discount」（自动分组：default group）",
-      "calc_basis": "官方 $0.3 × 倍率 0.2（default·自动分组） = ¥0.06/M",
-      "group": {
-        "name": "default",
-        "full": "default",
-        "ratio": 0.1,
-        "source": "auto",
-        "source_label": "自动分组",
-        "desc": "default group",
-        "count": 6
-      },
-      "observed": true,
-      "tiers": {
-        "count": 5,
-        "min": 0.005,
-        "max": 0.1,
-        "min_name": "discount"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×2（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
         "id": "aceoai-com",
         "name": "aceoai.com",
         "kind": "relay",
@@ -6276,6 +6512,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -6372,6 +6610,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -6468,6 +6708,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -6564,6 +6806,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -6660,6 +6904,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -6747,6 +6993,202 @@
     },
     {
       "station": {
+        "id": "chat-openapi-wang",
+        "name": "chat.openapi.wang",
+        "kind": "relay",
+        "kind_label": "中转·未分类",
+        "demo": false,
+        "homepage": "https://chat.openapi.wang",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-26",
+        "note": null
+      },
+      "model": {
+        "id": "claude-sonnet-5-5",
+        "label": "Claude Sonnet 5.5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "auto",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.45,
+        "output": 2.25,
+        "cache_read": 0.045
+      },
+      "effective": {
+        "input": 0.45,
+        "output": 2.25,
+        "cache_read": 0.045
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 0.6671
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "ratio": {
+        "input": 0.0337,
+        "output": 0.0337,
+        "blend": 0.0337
+      },
+      "discount": 0.9663,
+      "blend_effective": 0.99,
+      "usd": {
+        "effective": {
+          "input": 0.0675,
+          "output": 0.3373,
+          "cache_read": 0.0067
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 0.1484,
+        "discount": 0.9663
+      },
+      "calc": "官方 $2 × 倍率 0.225（kiro 低价3·可选最省） = ¥0.45/M；32 个分组档位 0.08–5.32×，最低「奇奇怪怪的渠道」",
+      "calc_full": "官方 $2 × 倍率 0.225（kiro 低价3·可选最省） = ¥0.45/M；32 个分组档位 0.08–5.32×，最低「奇奇怪怪的渠道」（可选最省：逆向渠道claude逆向, 高缓存支持1m）",
+      "calc_basis": "官方 $2 × 倍率 0.225（kiro 低价3·可选最省） = ¥0.45/M",
+      "group": {
+        "name": "kiro 低价3",
+        "full": "kiro 低价3",
+        "ratio": 0.15,
+        "source": "enabled",
+        "source_label": "可选最省",
+        "desc": "逆向渠道claude逆向, 高缓存支持1m",
+        "count": 32
+      },
+      "observed": true,
+      "tiers": {
+        "count": 32,
+        "min": 0.08,
+        "max": 5.32,
+        "min_name": "奇奇怪怪的渠道"
+      },
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+      "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
+        "id": "nova-vcrauo-com",
+        "name": "nova.vcrauo.com",
+        "kind": "relay",
+        "kind_label": "中转·未分类",
+        "demo": false,
+        "homepage": "https://nova.vcrauo.com",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-26",
+        "note": null
+      },
+      "model": {
+        "id": "deepseek-flash",
+        "label": "DeepSeek Flash",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "auto",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.07,
+        "output": 0.28,
+        "cache_read": 0.0014
+      },
+      "effective": {
+        "input": 0.07,
+        "output": 0.28,
+        "cache_read": 0.0014
+      },
+      "official_cny": {
+        "input": 2.0013,
+        "output": 8.0053,
+        "cache_read": 0.04
+      },
+      "official_usd": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.035,
+        "output": 0.035,
+        "blend": 0.035
+      },
+      "discount": 0.965,
+      "blend_effective": 0.133,
+      "usd": {
+        "effective": {
+          "input": 0.0105,
+          "output": 0.042,
+          "cache_read": 0.0002
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 0.0199,
+        "discount": 0.965
+      },
+      "calc": "官方 $0.3 × 倍率 0.2333（国产福利渠道高缓高速·可选最省） = ¥0.07/M；67 个分组档位 0.0001–3×，最低「国产英伟达免费分组」",
+      "calc_full": "官方 $0.3 × 倍率 0.2333（国产福利渠道高缓高速·可选最省） = ¥0.07/M；67 个分组档位 0.0001–3×，最低「国产英伟达免费分组」（可选最省：Deepseek-V4.1flash/Deepseek-v4.1flash-1017）",
+      "calc_basis": "官方 $0.3 × 倍率 0.2333（国产福利渠道高缓高速·可选最省） = ¥0.07/M",
+      "group": {
+        "name": "国产福利渠道高缓高速",
+        "full": "国产福利渠道·高缓|高速",
+        "ratio": 0.07,
+        "source": "enabled",
+        "source_label": "可选最省",
+        "desc": "Deepseek-V4.1flash/Deepseek-v4.1flash-1017",
+        "count": 67
+      },
+      "observed": true,
+      "tiers": {
+        "count": 67,
+        "min": 0.0001,
+        "max": 3,
+        "min_name": "国产英伟达免费分组"
+      },
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
         "id": "linksapi-cn",
         "name": "linksapi.cn",
         "kind": "relay",
@@ -6756,6 +7198,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -6852,6 +7296,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -6948,6 +7394,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -7044,6 +7492,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.76,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -7140,6 +7590,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -7236,6 +7688,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.76,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -7332,6 +7786,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -7428,6 +7884,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -7524,6 +7982,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -7620,6 +8080,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.68752,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -7716,6 +8178,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.68752,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -7812,6 +8276,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -7908,6 +8374,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -7995,102 +8463,6 @@
     },
     {
       "station": {
-        "id": "shendun-vip",
-        "name": "shendun.vip",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://shendun.vip",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "deepseek-flash",
-        "label": "DeepSeek Flash",
-        "vendor": "DeepSeek",
-        "context": 1000000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 0.1,
-        "output": 0.4,
-        "cache_read": 0.01
-      },
-      "effective": {
-        "input": 0.1,
-        "output": 0.4,
-        "cache_read": 0.01
-      },
-      "official_cny": {
-        "input": 2.0013,
-        "output": 8.0053,
-        "cache_read": 0.04
-      },
-      "official_usd": {
-        "input": 0.3,
-        "output": 1.2,
-        "cache_read": 0.006,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 0.05,
-        "output": 0.05,
-        "blend": 0.05
-      },
-      "discount": 0.95,
-      "blend_effective": 0.19,
-      "usd": {
-        "effective": {
-          "input": 0.015,
-          "output": 0.06,
-          "cache_read": 0.0015
-        },
-        "official": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.006
-        },
-        "blend": 0.0285,
-        "discount": 0.95
-      },
-      "calc": "官方 $0.3 × 倍率 0.3333（deepseek-v4-flash·自动分组） = ¥0.1/M；49 个分组档位 0.08–4.5×，最低「GPT-限时特价」",
-      "calc_full": "官方 $0.3 × 倍率 0.3333（deepseek-v4-flash·自动分组） = ¥0.1/M；49 个分组档位 0.08–4.5×，最低「GPT-限时特价」（自动分组：可以自己选择不同渠道）",
-      "calc_basis": "官方 $0.3 × 倍率 0.3333（deepseek-v4-flash·自动分组） = ¥0.1/M",
-      "group": {
-        "name": "deepseek-v4-flash",
-        "full": "deepseek-v4-flash",
-        "ratio": 0.1,
-        "source": "auto",
-        "source_label": "自动分组",
-        "desc": "可以自己选择不同渠道",
-        "count": 49
-      },
-      "observed": true,
-      "tiers": {
-        "count": 49,
-        "min": 0.08,
-        "max": 4.5,
-        "min_name": "GPT-限时特价"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
         "id": "maiai-ai",
         "name": "maiai.ai",
         "kind": "relay",
@@ -8100,6 +8472,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -8187,15 +8561,17 @@
     },
     {
       "station": {
-        "id": "newapi-ailyyzdk-xyz",
-        "name": "newapi.ailyyzdk.xyz",
+        "id": "eo-aigcpro-org",
+        "name": "eo.aigcpro.org",
         "kind": "relay",
         "kind_label": "中转·未分类",
         "demo": false,
-        "homepage": "https://newapi.ailyyzdk.xyz",
+        "homepage": "https://eo.aigcpro.org",
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -8203,8 +8579,8 @@
         "note": null
       },
       "model": {
-        "id": "claude-opus-5-5",
-        "label": "Claude Opus 5.5",
+        "id": "claude-sonnet-5-5",
+        "label": "Claude Sonnet 5.5",
         "vendor": "Anthropic",
         "context": 200000
       },
@@ -8214,25 +8590,25 @@
       "billing_ratio": 1,
       "billing_source": "default",
       "nominal": {
-        "input": 1.4,
-        "output": 7,
-        "cache_read": 0.07
+        "input": 0.7,
+        "output": 3.5,
+        "cache_read": 0.035
       },
       "effective": {
-        "input": 1.4,
-        "output": 7,
-        "cache_read": 0.07
+        "input": 0.7,
+        "output": 3.5,
+        "cache_read": 0.035
       },
       "official_cny": {
-        "input": 26.6844,
-        "output": 133.422,
-        "cache_read": 1.3342
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 0.6671
       },
       "official_usd": {
-        "input": 4,
-        "output": 20,
-        "cache_read": 0.2,
-        "cache_write": 5
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
       },
       "ratio": {
         "input": 0.0525,
@@ -8240,39 +8616,39 @@
         "blend": 0.0525
       },
       "discount": 0.9475,
-      "blend_effective": 3.08,
+      "blend_effective": 1.54,
       "usd": {
         "effective": {
-          "input": 0.2099,
-          "output": 1.0493,
-          "cache_read": 0.0105
+          "input": 0.1049,
+          "output": 0.5247,
+          "cache_read": 0.0052
         },
         "official": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
         },
-        "blend": 0.4617,
+        "blend": 0.2308,
         "discount": 0.9475
       },
-      "calc": "官方 $4 × 倍率 0.35（特价满分cc·可选最省） = ¥1.4/M；21 个分组档位 0.03–3.2×，最低「国模003」",
-      "calc_full": "官方 $4 × 倍率 0.35（特价满分cc·可选最省） = ¥1.4/M；21 个分组档位 0.03–3.2×，最低「国模003」（可选最省：kiro正价bug号，智商在线）",
-      "calc_basis": "官方 $4 × 倍率 0.35（特价满分cc·可选最省） = ¥1.4/M",
+      "calc": "官方 $2 × 倍率 0.35（正价kiro号池·可选最省） = ¥0.7/M；20 个分组档位 0.04–7×，最低「gpt混池」",
+      "calc_full": "官方 $2 × 倍率 0.35（正价kiro号池·可选最省） = ¥0.7/M；20 个分组档位 0.04–7×，最低「gpt混池」（可选最省：实付kiro号号池，高缓）",
+      "calc_basis": "官方 $2 × 倍率 0.35（正价kiro号池·可选最省） = ¥0.7/M",
       "group": {
-        "name": "特价满分cc",
-        "full": "特价满分cc",
+        "name": "正价kiro号池",
+        "full": "正价kiro号池",
         "ratio": 0.35,
         "source": "enabled",
         "source_label": "可选最省",
-        "desc": "kiro正价bug号，智商在线",
-        "count": 21
+        "desc": "实付kiro号号池，高缓",
+        "count": 20
       },
       "observed": true,
       "tiers": {
-        "count": 21,
-        "min": 0.03,
-        "max": 3.2,
-        "min_name": "国模003"
+        "count": 20,
+        "min": 0.04,
+        "max": 7,
+        "min_name": "gpt混池"
       },
       "recharge": null,
       "calc_adjust": "",
@@ -8292,6 +8668,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -8379,102 +8757,6 @@
     },
     {
       "station": {
-        "id": "ai-beehears-com",
-        "name": "ai.beehears.com",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://ai.beehears.com",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "claude-sonnet-5-5",
-        "label": "Claude Sonnet 5.5",
-        "vendor": "Anthropic",
-        "context": 200000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 0.8,
-        "output": 4,
-        "cache_read": 0.08
-      },
-      "effective": {
-        "input": 0.8,
-        "output": 4,
-        "cache_read": 0.08
-      },
-      "official_cny": {
-        "input": 13.3422,
-        "output": 66.711,
-        "cache_read": 0.6671
-      },
-      "official_usd": {
-        "input": 2,
-        "output": 10,
-        "cache_read": 0.1,
-        "cache_write": 2.5
-      },
-      "ratio": {
-        "input": 0.06,
-        "output": 0.06,
-        "blend": 0.06
-      },
-      "discount": 0.94,
-      "blend_effective": 1.76,
-      "usd": {
-        "effective": {
-          "input": 0.1199,
-          "output": 0.5996,
-          "cache_read": 0.012
-        },
-        "official": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
-        },
-        "blend": 0.2638,
-        "discount": 0.94
-      },
-      "calc": "官方 $2 × 倍率 0.4（Claude 混合线路 - P3·自动分组） = ¥0.8/M；56 个分组档位 0.05–8×，最低「Claude Kiro 无缓」",
-      "calc_full": "官方 $2 × 倍率 0.4（Claude 混合线路 - P3·自动分组） = ¥0.8/M；56 个分组档位 0.05–8×，最低「Claude Kiro 无缓」（自动分组：🔙｜反重力+Kiro+Windsurf+Cursor｜自动切换）",
-      "calc_basis": "官方 $2 × 倍率 0.4（Claude 混合线路 - P3·自动分组） = ¥0.8/M",
-      "group": {
-        "name": "Claude 混合线路 - P3",
-        "full": "🔄 Claude 混合线路 - P3",
-        "ratio": 0.4,
-        "source": "auto",
-        "source_label": "自动分组",
-        "desc": "🔙｜反重力+Kiro+Windsurf+Cursor｜自动切换",
-        "count": 56
-      },
-      "observed": true,
-      "tiers": {
-        "count": 56,
-        "min": 0.05,
-        "max": 8,
-        "min_name": "Claude Kiro 无缓"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
         "id": "ai-realseek-wiki",
         "name": "ai.realseek.wiki",
         "kind": "relay",
@@ -8484,6 +8766,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -8580,6 +8864,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -8676,6 +8962,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -8772,6 +9060,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -8868,6 +9158,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -8964,6 +9256,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -9051,15 +9345,17 @@
     },
     {
       "station": {
-        "id": "newcy-10dianai-com",
-        "name": "newcy.10dianai.com",
+        "id": "bearlab-space",
+        "name": "bearlab.space",
         "kind": "relay",
         "kind_label": "中转·未分类",
         "demo": false,
-        "homepage": "https://newcy.10dianai.com",
+        "homepage": "https://bearlab.space",
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -9119,29 +9415,29 @@
         "blend": 0.0427,
         "discount": 0.925
       },
-      "calc": "官方 $0.3 × 倍率 0.5（Private-official domestic model·可选最省） = ¥0.15/M；28 个分组档位 0.03–2.4×，最低「codex-pro」",
-      "calc_full": "官方 $0.3 × 倍率 0.5（Private-official domestic model·可选最省） = ¥0.15/M；28 个分组档位 0.03–2.4×，最低「codex-pro」（可选最省：咳咳，无需多言自行体会）",
-      "calc_basis": "官方 $0.3 × 倍率 0.5（Private-official domestic model·可选最省） = ¥0.15/M",
+      "calc": "官方 $0.3 × 倍率 0.5（国模WB纯血高缓分组·可选最省） = ¥0.15/M；24 个分组档位 0.01–250×，最低「特惠玩耍bearlab专用」",
+      "calc_full": "官方 $0.3 × 倍率 0.5（国模WB纯血高缓分组·可选最省） = ¥0.15/M；24 个分组档位 0.01–250×，最低「特惠玩耍bearlab专用」（可选最省：纯血号池，缓存命中率高；无掺水以及模型替换。）",
+      "calc_basis": "官方 $0.3 × 倍率 0.5（国模WB纯血高缓分组·可选最省） = ¥0.15/M",
       "group": {
-        "name": "Private-official domestic model",
-        "full": "Private-official domestic model",
-        "ratio": 0.25,
+        "name": "国模WB纯血高缓分组",
+        "full": "【国模】WB纯血高缓分组",
+        "ratio": 0.15,
         "source": "enabled",
         "source_label": "可选最省",
-        "desc": "咳咳，无需多言自行体会",
-        "count": 28
+        "desc": "纯血号池，缓存命中率高；无掺水以及模型替换。",
+        "count": 24
       },
       "observed": true,
       "tiers": {
-        "count": 28,
-        "min": 0.03,
-        "max": 2.4,
-        "min_name": "codex-pro"
+        "count": 24,
+        "min": 0.01,
+        "max": 250,
+        "min_name": "特惠玩耍bearlab专用"
       },
       "recharge": null,
       "calc_adjust": "",
       "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×2（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
       "observed_at": "2026-11-26"
     },
@@ -9156,6 +9452,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -9252,6 +9550,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -9348,6 +9648,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -9444,6 +9746,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.68752,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -9540,6 +9844,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.68752,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -9636,6 +9942,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -9695,16 +10003,16 @@
         "blend": 0.1619,
         "discount": 0.9233
       },
-      "calc": "官方 $1.32 × 倍率 0.5114（ds41·可选最省） = ¥0.675/M；20 个分组档位 0.04–7×，最低「gpt混池」",
-      "calc_full": "官方 $1.32 × 倍率 0.5114（ds41·可选最省） = ¥0.675/M；20 个分组档位 0.04–7×，最低「gpt混池」（可选最省：该分组已合并到全国模分组）",
-      "calc_basis": "官方 $1.32 × 倍率 0.5114（ds41·可选最省） = ¥0.675/M",
+      "calc": "官方 $1.32 × 倍率 0.5114（国模·可选最省） = ¥0.675/M；20 个分组档位 0.04–7×，最低「gpt混池」",
+      "calc_full": "官方 $1.32 × 倍率 0.5114（国模·可选最省） = ¥0.675/M；20 个分组档位 0.04–7×，最低「gpt混池」（可选最省：全国模分组）",
+      "calc_basis": "官方 $1.32 × 倍率 0.5114（国模·可选最省） = ¥0.675/M",
       "group": {
-        "name": "ds41",
-        "full": "ds4.1",
+        "name": "国模",
+        "full": "国模",
         "ratio": 0.075,
         "source": "enabled",
         "source_label": "可选最省",
-        "desc": "该分组已合并到全国模分组",
+        "desc": "全国模分组",
         "count": 20
       },
       "observed": true,
@@ -9732,198 +10040,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "claude-sonnet-5-5",
-        "label": "Claude Sonnet 5.5",
-        "vendor": "Anthropic",
-        "context": 200000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 1.2,
-        "output": 6,
-        "cache_read": 0.12
-      },
-      "effective": {
-        "input": 1.2,
-        "output": 6,
-        "cache_read": 0.12
-      },
-      "official_cny": {
-        "input": 13.3422,
-        "output": 66.711,
-        "cache_read": 0.6671
-      },
-      "official_usd": {
-        "input": 2,
-        "output": 10,
-        "cache_read": 0.1,
-        "cache_write": 2.5
-      },
-      "ratio": {
-        "input": 0.0899,
-        "output": 0.0899,
-        "blend": 0.0899
-      },
-      "discount": 0.9101,
-      "blend_effective": 2.64,
-      "usd": {
-        "effective": {
-          "input": 0.1799,
-          "output": 0.8994,
-          "cache_read": 0.018
-        },
-        "official": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
-        },
-        "blend": 0.3957,
-        "discount": 0.9101
-      },
-      "calc": "官方 $2 × 倍率 0.6（Claude Code专用-特惠·可选最省） = ¥1.2/M；18 个分组档位 0.25–8×，最低「Grok专用-SuperGrok」",
-      "calc_full": "官方 $2 × 倍率 0.6（Claude Code专用-特惠·可选最省） = ¥1.2/M；18 个分组档位 0.25–8×，最低「Grok专用-SuperGrok」（可选最省：自建claude号池，特惠倍率，⛔禁止蒸馏破限）",
-      "calc_basis": "官方 $2 × 倍率 0.6（Claude Code专用-特惠·可选最省） = ¥1.2/M",
-      "group": {
-        "name": "Claude Code专用-特惠",
-        "full": "Claude Code专用-特惠",
-        "ratio": 0.6,
-        "source": "enabled",
-        "source_label": "可选最省",
-        "desc": "自建claude号池，特惠倍率，⛔禁止蒸馏破限",
-        "count": 18
-      },
-      "observed": true,
-      "tiers": {
-        "count": 18,
-        "min": 0.25,
-        "max": 8,
-        "min_name": "Grok专用-SuperGrok"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
-        "id": "api-yinziapi-top",
-        "name": "api.yinziapi.top",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://api.yinziapi.top",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "claude-opus-5-5",
-        "label": "Claude Opus 5.5",
-        "vendor": "Anthropic",
-        "context": 200000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 2.4,
-        "output": 12,
-        "cache_read": 0.24
-      },
-      "effective": {
-        "input": 2.4,
-        "output": 12,
-        "cache_read": 0.24
-      },
-      "official_cny": {
-        "input": 26.6844,
-        "output": 133.422,
-        "cache_read": 1.3342
-      },
-      "official_usd": {
-        "input": 4,
-        "output": 20,
-        "cache_read": 0.2,
-        "cache_write": 5
-      },
-      "ratio": {
-        "input": 0.0899,
-        "output": 0.0899,
-        "blend": 0.0899
-      },
-      "discount": 0.9101,
-      "blend_effective": 5.28,
-      "usd": {
-        "effective": {
-          "input": 0.3598,
-          "output": 1.7988,
-          "cache_read": 0.036
-        },
-        "official": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
-        },
-        "blend": 0.7915,
-        "discount": 0.9101
-      },
-      "calc": "官方 $4 × 倍率 0.6（claude-kiro无限分组·可选最省） = ¥2.4/M；112 个分组档位 0.0001–8×，最低「群友福利-GLM54体验」",
-      "calc_full": "官方 $4 × 倍率 0.6（claude-kiro无限分组·可选最省） = ¥2.4/M；112 个分组档位 0.0001–8×，最低「群友福利-GLM54体验」（可选最省：claude-kiro无限分组）",
-      "calc_basis": "官方 $4 × 倍率 0.6（claude-kiro无限分组·可选最省） = ¥2.4/M",
-      "group": {
-        "name": "claude-kiro无限分组",
-        "full": "claude-kiro无限分组",
-        "ratio": 0.6,
-        "source": "enabled",
-        "source_label": "可选最省",
-        "desc": "claude-kiro无限分组",
-        "count": 113
-      },
-      "observed": true,
-      "tiers": {
-        "count": 112,
-        "min": 0.0001,
-        "max": 8,
-        "min_name": "群友福利-GLM54体验"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
-        "id": "qiuqiutoken-net",
-        "name": "qiuqiutoken.net",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://qiuqiutoken.net",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -10020,6 +10138,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -10107,6 +10227,104 @@
     },
     {
       "station": {
+        "id": "shendun-vip",
+        "name": "shendun.vip",
+        "kind": "relay",
+        "kind_label": "中转·未分类",
+        "demo": false,
+        "homepage": "https://shendun.vip",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-26",
+        "note": null
+      },
+      "model": {
+        "id": "deepseek-flash",
+        "label": "DeepSeek Flash",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "auto",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.2,
+        "output": 0.8,
+        "cache_read": 0.02
+      },
+      "effective": {
+        "input": 0.2,
+        "output": 0.8,
+        "cache_read": 0.02
+      },
+      "official_cny": {
+        "input": 2.0013,
+        "output": 8.0053,
+        "cache_read": 0.04
+      },
+      "official_usd": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.0999,
+        "output": 0.0999,
+        "blend": 0.0999
+      },
+      "discount": 0.9001,
+      "blend_effective": 0.38,
+      "usd": {
+        "effective": {
+          "input": 0.03,
+          "output": 0.1199,
+          "cache_read": 0.003
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 0.057,
+        "discount": 0.9001
+      },
+      "calc": "官方 $0.3 × 倍率 0.6667（国模全系列特价·可选最省） = ¥0.2/M；49 个分组档位 0.08–4.5×，最低「GPT-限时特价」",
+      "calc_full": "官方 $0.3 × 倍率 0.6667（国模全系列特价·可选最省） = ¥0.2/M；49 个分组档位 0.08–4.5×，最低「GPT-限时特价」（可选最省：国模全系列特价）",
+      "calc_basis": "官方 $0.3 × 倍率 0.6667（国模全系列特价·可选最省） = ¥0.2/M",
+      "group": {
+        "name": "国模全系列特价",
+        "full": "国模全系列特价",
+        "ratio": 0.1,
+        "source": "enabled",
+        "source_label": "可选最省",
+        "desc": "国模全系列特价",
+        "count": 49
+      },
+      "observed": true,
+      "tiers": {
+        "count": 49,
+        "min": 0.08,
+        "max": 4.5,
+        "min_name": "GPT-限时特价"
+      },
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
         "id": "aitreez-com",
         "name": "aitreez.com",
         "kind": "relay",
@@ -10116,6 +10334,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -10212,6 +10432,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -10308,6 +10530,8 @@
         "affiliate_url": "https://example.org/register?aff=YOURCODE",
         "affiliate_code": "YOURCODE",
         "commission": "15%",
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "reverse",
           "cheap-trap",
@@ -10405,6 +10629,8 @@
         "affiliate_url": "https://example.org/register?aff=YOURCODE",
         "affiliate_code": "YOURCODE",
         "commission": "15%",
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "reverse",
           "cheap-trap",
@@ -10502,6 +10728,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -10598,6 +10826,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -10694,6 +10924,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -10790,6 +11022,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.8,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -10886,6 +11120,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.8,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -10982,6 +11218,8 @@
         "affiliate_url": "https://example.org/register?aff=YOURCODE",
         "affiliate_code": "YOURCODE",
         "commission": "15%",
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "reverse",
           "cheap-trap",
@@ -11079,6 +11317,8 @@
         "affiliate_url": "https://example.org/register?aff=YOURCODE",
         "affiliate_code": "YOURCODE",
         "commission": "15%",
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "reverse",
           "cheap-trap",
@@ -11176,6 +11416,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -11272,6 +11514,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -11368,6 +11612,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": "https://pay.ldxp.cn/shop/9RXRO7RB",
         "risk_flags": [
           "unverified"
         ],
@@ -11464,6 +11710,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -11560,6 +11808,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -11656,6 +11906,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": "https://pay.ldxp.cn/shop/9RXRO7RB",
         "risk_flags": [
           "unverified"
         ],
@@ -11752,6 +12004,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": "https://pay.ldxp.cn/shop/9RXRO7RB",
         "risk_flags": [
           "unverified"
         ],
@@ -11848,6 +12102,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": "https://pay.ldxp.cn/shop/9RXRO7RB",
         "risk_flags": [
           "unverified"
         ],
@@ -11944,6 +12200,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -12040,6 +12298,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -12127,6 +12387,104 @@
     },
     {
       "station": {
+        "id": "newapi-dragon3api-com",
+        "name": "newapi.dragon3api.com",
+        "kind": "relay",
+        "kind_label": "中转·未分类",
+        "demo": false,
+        "homepage": "https://newapi.dragon3api.com",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-26",
+        "note": null
+      },
+      "model": {
+        "id": "deepseek-flash",
+        "label": "DeepSeek Flash",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "auto",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006
+      },
+      "effective": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006
+      },
+      "official_cny": {
+        "input": 2.0013,
+        "output": 8.0053,
+        "cache_read": 0.04
+      },
+      "official_usd": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.1499,
+        "output": 0.1499,
+        "blend": 0.1499
+      },
+      "discount": 0.8501,
+      "blend_effective": 0.57,
+      "usd": {
+        "effective": {
+          "input": 0.045,
+          "output": 0.1799,
+          "cache_read": 0.0009
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 0.0854,
+        "discount": 0.8501
+      },
+      "calc": "官方 $0.3 × 倍率 1（国模·自动分组） = ¥0.3/M；16 个分组档位 0.0275–1.6×，最低「gpt-promax」",
+      "calc_full": "官方 $0.3 × 倍率 1（国模·自动分组） = ¥0.3/M；16 个分组档位 0.0275–1.6×，最低「gpt-promax」（自动分组：国产模型低价档 · DeepSeek、GLM、Kimi、MiniMax 等）",
+      "calc_basis": "官方 $0.3 × 倍率 1（国模·自动分组） = ¥0.3/M",
+      "group": {
+        "name": "国模",
+        "full": "国模",
+        "ratio": 0.15,
+        "source": "auto",
+        "source_label": "自动分组",
+        "desc": "国产模型低价档 · DeepSeek、GLM、Kimi、MiniMax 等",
+        "count": 16
+      },
+      "observed": true,
+      "tiers": {
+        "count": 16,
+        "min": 0.0275,
+        "max": 1.6,
+        "min_name": "gpt-promax"
+      },
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
         "id": "memeapi-top",
         "name": "memeapi.top",
         "kind": "relay",
@@ -12136,6 +12494,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -12232,6 +12592,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -12328,6 +12690,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -12424,102 +12788,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "claude-sonnet-5-5",
-        "label": "Claude Sonnet 5.5",
-        "vendor": "Anthropic",
-        "context": 200000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 2,
-        "output": 10,
-        "cache_read": 0.2
-      },
-      "effective": {
-        "input": 2,
-        "output": 10,
-        "cache_read": 0.2
-      },
-      "official_cny": {
-        "input": 13.3422,
-        "output": 66.711,
-        "cache_read": 0.6671
-      },
-      "official_usd": {
-        "input": 2,
-        "output": 10,
-        "cache_read": 0.1,
-        "cache_write": 2.5
-      },
-      "ratio": {
-        "input": 0.1499,
-        "output": 0.1499,
-        "blend": 0.1499
-      },
-      "discount": 0.8501,
-      "blend_effective": 4.4,
-      "usd": {
-        "effective": {
-          "input": 0.2998,
-          "output": 1.499,
-          "cache_read": 0.03
-        },
-        "official": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
-        },
-        "blend": 0.6596,
-        "discount": 0.8501
-      },
-      "calc": "官方 $2 × 倍率 1（claude_kiro·可选最省） = ¥2/M；14 个分组档位 0.1–8×，最低「grok」",
-      "calc_full": "官方 $2 × 倍率 1（claude_kiro·可选最省） = ¥2/M；14 个分组档位 0.1–8×，最低「grok」（可选最省：claude_kiro反代）",
-      "calc_basis": "官方 $2 × 倍率 1（claude_kiro·可选最省） = ¥2/M",
-      "group": {
-        "name": "claude_kiro",
-        "full": "claude_kiro",
-        "ratio": 1,
-        "source": "enabled",
-        "source_label": "可选最省",
-        "desc": "claude_kiro反代",
-        "count": 14
-      },
-      "observed": true,
-      "tiers": {
-        "count": 14,
-        "min": 0.1,
-        "max": 8,
-        "min_name": "grok"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
-        "id": "longent-tech",
-        "name": "longent.tech",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://longent.tech",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -12607,6 +12877,104 @@
     },
     {
       "station": {
+        "id": "longent-tech",
+        "name": "longent.tech",
+        "kind": "relay",
+        "kind_label": "中转·未分类",
+        "demo": false,
+        "homepage": "https://longent.tech",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-26",
+        "note": null
+      },
+      "model": {
+        "id": "claude-sonnet-5-5",
+        "label": "Claude Sonnet 5.5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "auto",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2
+      },
+      "effective": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.2
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 0.6671
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "ratio": {
+        "input": 0.1499,
+        "output": 0.1499,
+        "blend": 0.1499
+      },
+      "discount": 0.8501,
+      "blend_effective": 4.4,
+      "usd": {
+        "effective": {
+          "input": 0.2998,
+          "output": 1.499,
+          "cache_read": 0.03
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 0.6596,
+        "discount": 0.8501
+      },
+      "calc": "官方 $2 × 倍率 1（claude_kiro·可选最省） = ¥2/M；14 个分组档位 0.1–8×，最低「grok」",
+      "calc_full": "官方 $2 × 倍率 1（claude_kiro·可选最省） = ¥2/M；14 个分组档位 0.1–8×，最低「grok」（可选最省：claude_kiro反代）",
+      "calc_basis": "官方 $2 × 倍率 1（claude_kiro·可选最省） = ¥2/M",
+      "group": {
+        "name": "claude_kiro",
+        "full": "claude_kiro",
+        "ratio": 1,
+        "source": "enabled",
+        "source_label": "可选最省",
+        "desc": "claude_kiro反代",
+        "count": 14
+      },
+      "observed": true,
+      "tiers": {
+        "count": 14,
+        "min": 0.1,
+        "max": 8,
+        "min_name": "grok"
+      },
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+      "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
         "id": "aiplaceer-com",
         "name": "aiplaceer.com",
         "kind": "relay",
@@ -12616,6 +12984,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": "https://9.plus/shop/M5CIV6WS",
         "risk_flags": [
           "unverified"
         ],
@@ -12707,6 +13077,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -12803,6 +13175,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -12890,97 +13264,6 @@
     },
     {
       "station": {
-        "id": "aiplaceer-com",
-        "name": "aiplaceer.com",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://aiplaceer.com",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "claude-opus-5-5",
-        "label": "Claude Opus 5.5",
-        "vendor": "Anthropic",
-        "context": 200000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 4,
-        "output": 20,
-        "cache_read": 0.2
-      },
-      "effective": {
-        "input": 4,
-        "output": 20,
-        "cache_read": 0.2
-      },
-      "official_cny": {
-        "input": 26.6844,
-        "output": 133.422,
-        "cache_read": 1.3342
-      },
-      "official_usd": {
-        "input": 4,
-        "output": 20,
-        "cache_read": 0.2,
-        "cache_write": 5
-      },
-      "ratio": {
-        "input": 0.1499,
-        "output": 0.1499,
-        "blend": 0.1499
-      },
-      "discount": 0.8501,
-      "blend_effective": 8.8,
-      "usd": {
-        "effective": {
-          "input": 0.5996,
-          "output": 2.998,
-          "cache_read": 0.03
-        },
-        "official": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
-        },
-        "blend": 1.3191,
-        "discount": 0.8501
-      },
-      "calc": "官方 $4 × 倍率 1（default·默认分组） = ¥4/M",
-      "calc_full": "官方 $4 × 倍率 1（default·默认分组） = ¥4/M",
-      "calc_basis": "官方 $4 × 倍率 1（default·默认分组） = ¥4/M",
-      "group": {
-        "name": "default",
-        "full": "default",
-        "ratio": 1,
-        "source": "default",
-        "source_label": "默认分组",
-        "desc": "",
-        "count": null
-      },
-      "observed": true,
-      "tiers": null,
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
         "id": "newapi-prorisehub-com",
         "name": "newapi.prorisehub.com",
         "kind": "relay",
@@ -12990,6 +13273,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -13086,6 +13371,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -13182,6 +13469,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": "https://9.plus/shop/M5CIV6WS",
         "risk_flags": [
           "unverified"
         ],
@@ -13273,6 +13562,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -13369,6 +13660,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -13456,102 +13749,6 @@
     },
     {
       "station": {
-        "id": "new-lingyicai-xyz",
-        "name": "new.lingyicai.xyz",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://new.lingyicai.xyz",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "deepseek-flash",
-        "label": "DeepSeek Flash",
-        "vendor": "DeepSeek",
-        "context": 1000000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 0.3502,
-        "output": 1.4008,
-        "cache_read": 0.007
-      },
-      "effective": {
-        "input": 0.3502,
-        "output": 1.4008,
-        "cache_read": 0.007
-      },
-      "official_cny": {
-        "input": 2.0013,
-        "output": 8.0053,
-        "cache_read": 0.04
-      },
-      "official_usd": {
-        "input": 0.3,
-        "output": 1.2,
-        "cache_read": 0.006,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 0.175,
-        "output": 0.175,
-        "blend": 0.175
-      },
-      "discount": 0.825,
-      "blend_effective": 0.6654,
-      "usd": {
-        "effective": {
-          "input": 0.0525,
-          "output": 0.21,
-          "cache_read": 0.001
-        },
-        "official": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.006
-        },
-        "blend": 0.0997,
-        "discount": 0.825
-      },
-      "calc": "官方 $0.3 × 倍率 1.1673（DeepSeek·可选最省） = ¥0.3502/M；17 个分组档位 0.05–2×，最低「特惠Claude Krio逆向」",
-      "calc_full": "官方 $0.3 × 倍率 1.1673（DeepSeek·可选最省） = ¥0.3502/M；17 个分组档位 0.05–2×，最低「特惠Claude Krio逆向」（可选最省：DeepSeek自部署）",
-      "calc_basis": "官方 $0.3 × 倍率 1.1673（DeepSeek·可选最省） = ¥0.3502/M",
-      "group": {
-        "name": "DeepSeek",
-        "full": "DeepSeek",
-        "ratio": 0.3502,
-        "source": "enabled",
-        "source_label": "可选最省",
-        "desc": "DeepSeek自部署",
-        "count": 17
-      },
-      "observed": true,
-      "tiers": {
-        "count": 17,
-        "min": 0.05,
-        "max": 2,
-        "min_name": "特惠Claude Krio逆向"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
         "id": "apibasis-com",
         "name": "apibasis.com",
         "kind": "relay",
@@ -13561,6 +13758,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -13657,6 +13856,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -13753,6 +13954,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -13849,6 +14052,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -13945,6 +14150,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -14041,6 +14248,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -14128,198 +14337,6 @@
     },
     {
       "station": {
-        "id": "yanai-it-com",
-        "name": "yanai.it.com",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://yanai.it.com",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "deepseek-flash",
-        "label": "DeepSeek Flash",
-        "vendor": "DeepSeek",
-        "context": 1000000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 0.4,
-        "output": 1.6,
-        "cache_read": 0.008
-      },
-      "effective": {
-        "input": 0.4,
-        "output": 1.6,
-        "cache_read": 0.008
-      },
-      "official_cny": {
-        "input": 2.0013,
-        "output": 8.0053,
-        "cache_read": 0.04
-      },
-      "official_usd": {
-        "input": 0.3,
-        "output": 1.2,
-        "cache_read": 0.006,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 0.1999,
-        "output": 0.1999,
-        "blend": 0.1999
-      },
-      "discount": 0.8001,
-      "blend_effective": 0.76,
-      "usd": {
-        "effective": {
-          "input": 0.06,
-          "output": 0.2398,
-          "cache_read": 0.0012
-        },
-        "official": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.006
-        },
-        "blend": 0.1139,
-        "discount": 0.8001
-      },
-      "calc": "官方 $0.3 × 倍率 1.3333（自部署ds·可选最省） = ¥0.4/M；31 个分组档位 0.1–6.6×，最低「cc-kiro-90缓」",
-      "calc_full": "官方 $0.3 × 倍率 1.3333（自部署ds·可选最省） = ¥0.4/M；31 个分组档位 0.1–6.6×，最低「cc-kiro-90缓」（可选最省：自部署deepseek）",
-      "calc_basis": "官方 $0.3 × 倍率 1.3333（自部署ds·可选最省） = ¥0.4/M",
-      "group": {
-        "name": "自部署ds",
-        "full": "自部署ds",
-        "ratio": 0.4,
-        "source": "enabled",
-        "source_label": "可选最省",
-        "desc": "自部署deepseek",
-        "count": 31
-      },
-      "observed": true,
-      "tiers": {
-        "count": 31,
-        "min": 0.1,
-        "max": 6.6,
-        "min_name": "cc-kiro-90缓"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
-        "id": "apipaths-com",
-        "name": "apipaths.com",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://apipaths.com",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "deepseek-flash",
-        "label": "DeepSeek Flash",
-        "vendor": "DeepSeek",
-        "context": 1000000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 0.4,
-        "output": 1.6,
-        "cache_read": 0.008
-      },
-      "effective": {
-        "input": 0.4,
-        "output": 1.6,
-        "cache_read": 0.008
-      },
-      "official_cny": {
-        "input": 2.0013,
-        "output": 8.0053,
-        "cache_read": 0.04
-      },
-      "official_usd": {
-        "input": 0.3,
-        "output": 1.2,
-        "cache_read": 0.006,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 0.1999,
-        "output": 0.1999,
-        "blend": 0.1999
-      },
-      "discount": 0.8001,
-      "blend_effective": 0.76,
-      "usd": {
-        "effective": {
-          "input": 0.06,
-          "output": 0.2398,
-          "cache_read": 0.0012
-        },
-        "official": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.006
-        },
-        "blend": 0.1139,
-        "discount": 0.8001
-      },
-      "calc": "官方 $0.3 × 倍率 1.3333（default·默认分组） = ¥0.4/M；38 个分组档位 0.02–3×，最低「Codex-GPT-特惠」",
-      "calc_full": "官方 $0.3 × 倍率 1.3333（default·默认分组） = ¥0.4/M；38 个分组档位 0.02–3×，最低「Codex-GPT-特惠」（默认分组：默认分组,默认为Codex-0.2x-Plus 分组，质保不降智，）",
-      "calc_basis": "官方 $0.3 × 倍率 1.3333（default·默认分组） = ¥0.4/M",
-      "group": {
-        "name": "default",
-        "full": "default",
-        "ratio": 0.2,
-        "source": "default",
-        "source_label": "默认分组",
-        "desc": "默认分组,默认为Codex-0.2x-Plus 分组，质保不降智，",
-        "count": 39
-      },
-      "observed": true,
-      "tiers": {
-        "count": 38,
-        "min": 0.02,
-        "max": 3,
-        "min_name": "Codex-GPT-特惠"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
         "id": "pipio-dev",
         "name": "pipio.dev",
         "kind": "relay",
@@ -14329,6 +14346,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -14425,6 +14444,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -14521,6 +14542,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -14608,6 +14631,104 @@
     },
     {
       "station": {
+        "id": "newapi-prorisehub-com",
+        "name": "newapi.prorisehub.com",
+        "kind": "relay",
+        "kind_label": "中转·未分类",
+        "demo": false,
+        "homepage": "https://newapi.prorisehub.com",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-26",
+        "note": null
+      },
+      "model": {
+        "id": "claude-sonnet-5-5",
+        "label": "Claude Sonnet 5.5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "auto",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3
+      },
+      "effective": {
+        "input": 3,
+        "output": 15,
+        "cache_read": 0.3
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 0.6671
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "ratio": {
+        "input": 0.2249,
+        "output": 0.2249,
+        "blend": 0.2249
+      },
+      "discount": 0.7751,
+      "blend_effective": 6.6,
+      "usd": {
+        "effective": {
+          "input": 0.4497,
+          "output": 2.2485,
+          "cache_read": 0.045
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 0.9893,
+        "discount": 0.7751
+      },
+      "calc": "官方 $2 × 倍率 1.5（default·自动分组） = ¥3/M；37 个分组档位 0.08–10×，最低「Codex-Plus-Pro 混池」",
+      "calc_full": "官方 $2 × 倍率 1.5（default·自动分组） = ¥3/M；37 个分组档位 0.08–10×，最低「Codex-Plus-Pro 混池」（自动分组：⚠️ 默认通用分组：可调用全站所有模型，不懂别用！！！计费很贵！！！）",
+      "calc_basis": "官方 $2 × 倍率 1.5（default·自动分组） = ¥3/M",
+      "group": {
+        "name": "default",
+        "full": "default",
+        "ratio": 1,
+        "source": "auto",
+        "source_label": "自动分组",
+        "desc": "⚠️ 默认通用分组：可调用全站所有模型，不懂别用！！！计费很贵！！！",
+        "count": 37
+      },
+      "observed": true,
+      "tiers": {
+        "count": 37,
+        "min": 0.08,
+        "max": 10,
+        "min_name": "Codex-Plus-Pro 混池"
+      },
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×1.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+      "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
         "id": "cctq-ai",
         "name": "cctq.ai",
         "kind": "relay",
@@ -14617,6 +14738,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -14713,6 +14836,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -14809,6 +14934,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -14896,6 +15023,104 @@
     },
     {
       "station": {
+        "id": "ai-beehears-com",
+        "name": "ai.beehears.com",
+        "kind": "relay",
+        "kind_label": "中转·未分类",
+        "demo": false,
+        "homepage": "https://ai.beehears.com",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-26",
+        "note": null
+      },
+      "model": {
+        "id": "deepseek-flash",
+        "label": "DeepSeek Flash",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "auto",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.5,
+        "output": 2,
+        "cache_read": 0.01
+      },
+      "effective": {
+        "input": 0.5,
+        "output": 2,
+        "cache_read": 0.01
+      },
+      "official_cny": {
+        "input": 2.0013,
+        "output": 8.0053,
+        "cache_read": 0.04
+      },
+      "official_usd": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.2498,
+        "output": 0.2498,
+        "blend": 0.2498
+      },
+      "discount": 0.7502,
+      "blend_effective": 0.95,
+      "usd": {
+        "effective": {
+          "input": 0.075,
+          "output": 0.2998,
+          "cache_read": 0.0015
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 0.1424,
+        "discount": 0.7502
+      },
+      "calc": "官方 $0.3 × 倍率 1.6667（Made in China·可选最省） = ¥0.5/M；56 个分组档位 0.05–8×，最低「Claude Kiro 无缓」",
+      "calc_full": "官方 $0.3 × 倍率 1.6667（Made in China·可选最省） = ¥0.5/M；56 个分组档位 0.05–8×，最低「Claude Kiro 无缓」（可选最省：🔝｜MiniMax｜GLM｜Kimi｜Qwen｜Mino｜详情看模型广场）",
+      "calc_basis": "官方 $0.3 × 倍率 1.6667（Made in China·可选最省） = ¥0.5/M",
+      "group": {
+        "name": "Made in China",
+        "full": "🇨🇳 Made in China",
+        "ratio": 0.25,
+        "source": "enabled",
+        "source_label": "可选最省",
+        "desc": "🔝｜MiniMax｜GLM｜Kimi｜Qwen｜Mino｜详情看模型广场",
+        "count": 56
+      },
+      "observed": true,
+      "tiers": {
+        "count": 56,
+        "min": 0.05,
+        "max": 8,
+        "min_name": "Claude Kiro 无缓"
+      },
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
         "id": "api-strong-api-top",
         "name": "api.strong-api.top",
         "kind": "relay",
@@ -14905,6 +15130,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -15001,6 +15228,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -15097,6 +15326,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -15193,6 +15424,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -15289,6 +15522,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -15385,6 +15620,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -15476,6 +15713,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.76,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -15572,6 +15811,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.8,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -15668,6 +15909,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 6.8,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -15755,102 +15998,6 @@
     },
     {
       "station": {
-        "id": "api-llmgw-xyz",
-        "name": "api.llmgw.xyz",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://api.llmgw.xyz",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "claude-sonnet-5-5",
-        "label": "Claude Sonnet 5.5",
-        "vendor": "Anthropic",
-        "context": 200000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 4.5,
-        "output": 22.5,
-        "cache_read": 0.45
-      },
-      "effective": {
-        "input": 4.5,
-        "output": 22.5,
-        "cache_read": 0.45
-      },
-      "official_cny": {
-        "input": 13.3422,
-        "output": 66.711,
-        "cache_read": 0.6671
-      },
-      "official_usd": {
-        "input": 2,
-        "output": 10,
-        "cache_read": 0.1,
-        "cache_write": 2.5
-      },
-      "ratio": {
-        "input": 0.3373,
-        "output": 0.3373,
-        "blend": 0.3373
-      },
-      "discount": 0.6627,
-      "blend_effective": 9.9,
-      "usd": {
-        "effective": {
-          "input": 0.6746,
-          "output": 3.3728,
-          "cache_read": 0.0675
-        },
-        "official": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
-        },
-        "blend": 1.484,
-        "discount": 0.6627
-      },
-      "calc": "官方 $2 × 倍率 2.25（kiro15·可选最省） = ¥4.5/M；52 个分组档位 0.0001–1.7×，最低「免费分组」",
-      "calc_full": "官方 $2 × 倍率 2.25（kiro15·可选最省） = ¥4.5/M；52 个分组档位 0.0001–1.7×，最低「免费分组」",
-      "calc_basis": "官方 $2 × 倍率 2.25（kiro15·可选最省） = ¥4.5/M",
-      "group": {
-        "name": "kiro15",
-        "full": "kiro15",
-        "ratio": 0.06,
-        "source": "enabled",
-        "source_label": "可选最省",
-        "desc": "",
-        "count": 52
-      },
-      "observed": true,
-      "tiers": {
-        "count": 52,
-        "min": 0.0001,
-        "max": 1.7,
-        "min_name": "免费分组"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×37.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
         "id": "api-mindeck-cloud",
         "name": "api.mindeck.cloud",
         "kind": "relay",
@@ -15860,6 +16007,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -15942,198 +16091,6 @@
     },
     {
       "station": {
-        "id": "ai-beehears-com",
-        "name": "ai.beehears.com",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://ai.beehears.com",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "deepseek-flash",
-        "label": "DeepSeek Flash",
-        "vendor": "DeepSeek",
-        "context": 1000000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 0.8,
-        "output": 3.2,
-        "cache_read": 0.016
-      },
-      "effective": {
-        "input": 0.8,
-        "output": 3.2,
-        "cache_read": 0.016
-      },
-      "official_cny": {
-        "input": 2.0013,
-        "output": 8.0053,
-        "cache_read": 0.04
-      },
-      "official_usd": {
-        "input": 0.3,
-        "output": 1.2,
-        "cache_read": 0.006,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 0.3997,
-        "output": 0.3997,
-        "blend": 0.3997
-      },
-      "discount": 0.6003,
-      "blend_effective": 1.52,
-      "usd": {
-        "effective": {
-          "input": 0.1199,
-          "output": 0.4797,
-          "cache_read": 0.0024
-        },
-        "official": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.006
-        },
-        "blend": 0.2278,
-        "discount": 0.6003
-      },
-      "calc": "官方 $0.3 × 倍率 2.6667（Deepseek·可选最省） = ¥0.8/M；56 个分组档位 0.05–8×，最低「Claude Kiro 无缓」",
-      "calc_full": "官方 $0.3 × 倍率 2.6667（Deepseek·可选最省） = ¥0.8/M；56 个分组档位 0.05–8×，最低「Claude Kiro 无缓」（可选最省：🔝｜官网直连｜deepseek-v4-flash｜deepseek-v4-pro）",
-      "calc_basis": "官方 $0.3 × 倍率 2.6667（Deepseek·可选最省） = ¥0.8/M",
-      "group": {
-        "name": "Deepseek",
-        "full": "🐳 Deepseek",
-        "ratio": 0.4,
-        "source": "enabled",
-        "source_label": "可选最省",
-        "desc": "🔝｜官网直连｜deepseek-v4-flash｜deepseek-v4-pro",
-        "count": 56
-      },
-      "observed": true,
-      "tiers": {
-        "count": 56,
-        "min": 0.05,
-        "max": 8,
-        "min_name": "Claude Kiro 无缓"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
-        "id": "newapi-dragon3api-com",
-        "name": "newapi.dragon3api.com",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://newapi.dragon3api.com",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "deepseek-flash",
-        "label": "DeepSeek Flash",
-        "vendor": "DeepSeek",
-        "context": 1000000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 0.9,
-        "output": 3.6,
-        "cache_read": 0.018
-      },
-      "effective": {
-        "input": 0.9,
-        "output": 3.6,
-        "cache_read": 0.018
-      },
-      "official_cny": {
-        "input": 2.0013,
-        "output": 8.0053,
-        "cache_read": 0.04
-      },
-      "official_usd": {
-        "input": 0.3,
-        "output": 1.2,
-        "cache_read": 0.006,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 0.4497,
-        "output": 0.4497,
-        "blend": 0.4497
-      },
-      "discount": 0.5503,
-      "blend_effective": 1.71,
-      "usd": {
-        "effective": {
-          "input": 0.1349,
-          "output": 0.5396,
-          "cache_read": 0.0027
-        },
-        "official": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.006
-        },
-        "blend": 0.2563,
-        "discount": 0.5503
-      },
-      "calc": "官方 $0.3 × 倍率 3（国模-原厂·自动分组） = ¥0.9/M；16 个分组档位 0.0275–1.6×，最低「gpt-promax」",
-      "calc_full": "官方 $0.3 × 倍率 3（国模-原厂·自动分组） = ¥0.9/M；16 个分组档位 0.0275–1.6×，最低「gpt-promax」（自动分组：官方key）",
-      "calc_basis": "官方 $0.3 × 倍率 3（国模-原厂·自动分组） = ¥0.9/M",
-      "group": {
-        "name": "国模-原厂",
-        "full": "国模-原厂",
-        "ratio": 0.45,
-        "source": "auto",
-        "source_label": "自动分组",
-        "desc": "官方key",
-        "count": 16
-      },
-      "observed": true,
-      "tiers": {
-        "count": 16,
-        "min": 0.0275,
-        "max": 1.6,
-        "min_name": "gpt-promax"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
         "id": "open-asea-love",
         "name": "open.asea.love",
         "kind": "relay",
@@ -16143,6 +16100,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -16239,6 +16198,8 @@
         "affiliate_url": "https://example.net/register?aff=YOURCODE",
         "affiliate_code": "YOURCODE",
         "commission": "8%",
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "limited-models",
           "unverified"
@@ -16334,6 +16295,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -16430,6 +16393,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -16526,6 +16491,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -16622,102 +16589,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-26",
-        "note": null
-      },
-      "model": {
-        "id": "claude-sonnet-5-5",
-        "label": "Claude Sonnet 5.5",
-        "vendor": "Anthropic",
-        "context": 200000
-      },
-      "mode": "absolute",
-      "price_source": "auto",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 7.5,
-        "output": 37.5,
-        "cache_read": null
-      },
-      "effective": {
-        "input": 7.5,
-        "output": 37.5,
-        "cache_read": null
-      },
-      "official_cny": {
-        "input": 13.3422,
-        "output": 66.711,
-        "cache_read": 0.6671
-      },
-      "official_usd": {
-        "input": 2,
-        "output": 10,
-        "cache_read": 0.1,
-        "cache_write": 2.5
-      },
-      "ratio": {
-        "input": 0.5621,
-        "output": 0.5621,
-        "blend": 0.5621
-      },
-      "discount": 0.4379,
-      "blend_effective": 16.5,
-      "usd": {
-        "effective": {
-          "input": 1.1243,
-          "output": 5.6213,
-          "cache_read": null
-        },
-        "official": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
-        },
-        "blend": 2.4734,
-        "discount": 0.4379
-      },
-      "calc": "官方 $2 × 倍率 3.75（Kiro-Claude-正价·可选最省） = ¥7.5/M；18 个分组档位 0.03–2.2×，最低「Claude-超值」",
-      "calc_full": "官方 $2 × 倍率 3.75（Kiro-Claude-正价·可选最省） = ¥7.5/M；18 个分组档位 0.03–2.2×，最低「Claude-超值」（可选最省：Kiro正价号池，不降智商，无Fable系列）",
-      "calc_basis": "官方 $2 × 倍率 3.75（Kiro-Claude-正价·可选最省） = ¥7.5/M",
-      "group": {
-        "name": "Kiro-Claude-正价",
-        "full": "Kiro-Claude-正价",
-        "ratio": 0.1,
-        "source": "enabled",
-        "source_label": "可选最省",
-        "desc": "Kiro正价号池，不降智商，无Fable系列",
-        "count": 18
-      },
-      "observed": true,
-      "tiers": {
-        "count": 18,
-        "min": 0.03,
-        "max": 2.2,
-        "min_name": "Claude-超值"
-      },
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×37.5（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
-      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-      "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
-        "id": "claudeaihub-cloud",
-        "name": "claudeaihub.cloud",
-        "kind": "relay",
-        "kind_label": "中转·未分类",
-        "demo": false,
-        "homepage": "https://claudeaihub.cloud",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -16814,6 +16687,8 @@
         "affiliate_url": "https://example.net/register?aff=YOURCODE",
         "affiliate_code": "YOURCODE",
         "commission": "8%",
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "limited-models",
           "unverified"
@@ -16909,6 +16784,8 @@
         "affiliate_url": "https://example.com/register?aff=YOURCODE",
         "affiliate_code": "YOURCODE",
         "commission": "10%",
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [],
         "first_seen": "2026-09-12",
         "note": null
@@ -17001,6 +16878,8 @@
         "affiliate_url": "https://example.com/register?aff=YOURCODE",
         "affiliate_code": "YOURCODE",
         "commission": "10%",
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [],
         "first_seen": "2026-09-12",
         "note": null
@@ -17093,6 +16972,8 @@
         "affiliate_url": "https://example.com/register?aff=YOURCODE",
         "affiliate_code": "YOURCODE",
         "commission": "10%",
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [],
         "first_seen": "2026-09-12",
         "note": null
@@ -17185,6 +17066,8 @@
         "affiliate_url": "https://example.com/register?aff=YOURCODE",
         "affiliate_code": "YOURCODE",
         "commission": "10%",
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [],
         "first_seen": "2026-09-12",
         "note": null
@@ -17277,6 +17160,8 @@
         "affiliate_url": "https://example.com/register?aff=YOURCODE",
         "affiliate_code": "YOURCODE",
         "commission": "10%",
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [],
         "first_seen": "2026-09-12",
         "note": null
@@ -17369,6 +17254,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -17465,6 +17352,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": "https://pay.ldxp.cn/shop/9RXRO7RB",
         "risk_flags": [
           "unverified"
         ],
@@ -17561,6 +17450,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -17648,6 +17539,104 @@
     },
     {
       "station": {
+        "id": "qiuqiutoken-net",
+        "name": "qiuqiutoken.net",
+        "kind": "relay",
+        "kind_label": "中转·未分类",
+        "demo": false,
+        "homepage": "https://qiuqiutoken.net",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-26",
+        "note": null
+      },
+      "model": {
+        "id": "deepseek-flash",
+        "label": "DeepSeek Flash",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "auto",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 2,
+        "output": 8,
+        "cache_read": 0.04
+      },
+      "effective": {
+        "input": 2,
+        "output": 8,
+        "cache_read": 0.04
+      },
+      "official_cny": {
+        "input": 2.0013,
+        "output": 8.0053,
+        "cache_read": 0.04
+      },
+      "official_usd": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.9993,
+        "output": 0.9993,
+        "blend": 0.9993
+      },
+      "discount": 0.0007,
+      "blend_effective": 3.8,
+      "usd": {
+        "effective": {
+          "input": 0.2998,
+          "output": 1.1992,
+          "cache_read": 0.006
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 0.5696,
+        "discount": 0.0007
+      },
+      "calc": "官方 $0.3 × 倍率 6.6667（DeepSeek·可选最省） = ¥2/M；18 个分组档位 0.25–8×，最低「Grok专用-SuperGrok」",
+      "calc_full": "官方 $0.3 × 倍率 6.6667（DeepSeek·可选最省） = ¥2/M；18 个分组档位 0.25–8×，最低「Grok专用-SuperGrok」（可选最省：腾讯云官key）",
+      "calc_basis": "官方 $0.3 × 倍率 6.6667（DeepSeek·可选最省） = ¥2/M",
+      "group": {
+        "name": "DeepSeek",
+        "full": "DeepSeek",
+        "ratio": 1,
+        "source": "enabled",
+        "source_label": "可选最省",
+        "desc": "腾讯云官key",
+        "count": 18
+      },
+      "observed": true,
+      "tiers": {
+        "count": 18,
+        "min": 0.25,
+        "max": 8,
+        "min_name": "Grok专用-SuperGrok"
+      },
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.667（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
         "id": "deepseek",
         "name": "DeepSeek 官方",
         "kind": "official",
@@ -17657,6 +17646,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [],
         "first_seen": null,
         "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
@@ -17737,6 +17728,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [],
         "first_seen": null,
         "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
@@ -17817,6 +17810,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [],
         "first_seen": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
@@ -17897,6 +17892,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [],
         "first_seen": null,
         "note": "官方直购，价格锚。"
@@ -17977,6 +17974,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [],
         "first_seen": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
@@ -18057,6 +18056,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [],
         "first_seen": null,
         "note": "官方直购，价格锚。"
@@ -18128,6 +18129,104 @@
     },
     {
       "station": {
+        "id": "newapi-prorisehub-com",
+        "name": "newapi.prorisehub.com",
+        "kind": "relay",
+        "kind_label": "中转·未分类",
+        "demo": false,
+        "homepage": "https://newapi.prorisehub.com",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-26",
+        "note": null
+      },
+      "model": {
+        "id": "deepseek-v4-pro",
+        "label": "DeepSeek V4 Pro",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "auto",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 9,
+        "output": 27,
+        "cache_read": 0.3
+      },
+      "effective": {
+        "input": 9,
+        "output": 27,
+        "cache_read": 0.3
+      },
+      "official_cny": {
+        "input": 8.8059,
+        "output": 26.4176,
+        "cache_read": 0.2935
+      },
+      "official_usd": {
+        "input": 1.32,
+        "output": 3.96,
+        "cache_read": 0.044,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1.022,
+        "output": 1.022,
+        "blend": 1.022
+      },
+      "discount": -0.022,
+      "blend_effective": 14.4,
+      "usd": {
+        "effective": {
+          "input": 1.3491,
+          "output": 4.0473,
+          "cache_read": 0.045
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 2.1586,
+        "discount": -0.022
+      },
+      "calc": "官方 $1.32 × 倍率 6.8182（default·自动分组） = ¥9/M；37 个分组档位 0.08–10×，最低「Codex-Plus-Pro 混池」",
+      "calc_full": "官方 $1.32 × 倍率 6.8182（default·自动分组） = ¥9/M；37 个分组档位 0.08–10×，最低「Codex-Plus-Pro 混池」（自动分组：⚠️ 默认通用分组：可调用全站所有模型，不懂别用！！！计费很贵！！！）",
+      "calc_basis": "官方 $1.32 × 倍率 6.8182（default·自动分组） = ¥9/M",
+      "group": {
+        "name": "default",
+        "full": "default",
+        "ratio": 1,
+        "source": "auto",
+        "source_label": "自动分组",
+        "desc": "⚠️ 默认通用分组：可调用全站所有模型，不懂别用！！！计费很贵！！！",
+        "count": 37
+      },
+      "observed": true,
+      "tiers": {
+        "count": 37,
+        "min": 0.08,
+        "max": 10,
+        "min_name": "Codex-Plus-Pro 混池"
+      },
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
         "id": "console-youpai-de",
         "name": "console.youpai.de",
         "kind": "relay",
@@ -18137,6 +18236,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -18233,6 +18334,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": null,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -18329,6 +18432,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -18416,6 +18521,104 @@
     },
     {
       "station": {
+        "id": "api-6345ywz-cn",
+        "name": "api.6345ywz.cn",
+        "kind": "relay",
+        "kind_label": "中转·未分类",
+        "demo": false,
+        "homepage": "https://api.6345ywz.cn",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-26",
+        "note": null
+      },
+      "model": {
+        "id": "deepseek-flash",
+        "label": "DeepSeek Flash",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "auto",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 5,
+        "output": 20,
+        "cache_read": 0.1
+      },
+      "effective": {
+        "input": 5,
+        "output": 20,
+        "cache_read": 0.1
+      },
+      "official_cny": {
+        "input": 2.0013,
+        "output": 8.0053,
+        "cache_read": 0.04
+      },
+      "official_usd": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 2.4983,
+        "output": 2.4983,
+        "blend": 2.4983
+      },
+      "discount": -1.4983,
+      "blend_effective": 9.5,
+      "usd": {
+        "effective": {
+          "input": 0.7495,
+          "output": 2.998,
+          "cache_read": 0.015
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 1.4241,
+        "discount": -1.4983
+      },
+      "calc": "官方 $0.3 × 倍率 16.6667（5倍倍率分组·自动分组） = ¥5/M；11 个分组档位 0.01–5×，最低「临时渠道2」",
+      "calc_full": "官方 $0.3 × 倍率 16.6667（5倍倍率分组·自动分组） = ¥5/M；11 个分组档位 0.01–5×，最低「临时渠道2」（自动分组：5倍倍率分组）",
+      "calc_basis": "官方 $0.3 × 倍率 16.6667（5倍倍率分组·自动分组） = ¥5/M",
+      "group": {
+        "name": "5倍倍率分组",
+        "full": "5倍倍率分组",
+        "ratio": 5,
+        "source": "auto",
+        "source_label": "自动分组",
+        "desc": "5倍倍率分组",
+        "count": 11
+      },
+      "observed": true,
+      "tiers": {
+        "count": 11,
+        "min": 0.01,
+        "max": 5,
+        "min_name": "临时渠道2"
+      },
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×3.333（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
         "id": "longent-tech",
         "name": "longent.tech",
         "kind": "relay",
@@ -18425,6 +18628,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],
@@ -18521,6 +18726,8 @@
         "affiliate_url": null,
         "affiliate_code": null,
         "commission": null,
+        "usd_rate": 7.3,
+        "top_up": null,
         "risk_flags": [
           "unverified"
         ],

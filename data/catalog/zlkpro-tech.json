@@ -1,0 +1,761 @@
+{
+  "station_id": "zlkpro-tech",
+  "endpoint": "https://zlkpro.tech/api/pricing",
+  "fetched_at": "2026-11-26T16:34:48.483Z",
+  "http_status": 200,
+  "total": 94,
+  "models": [
+    {
+      "n": "claude-fable-5",
+      "r": 31.5,
+      "c": 5,
+      "cr": 0.3175,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mimo-v2.6-flash",
+      "r": 0.0875,
+      "c": 2,
+      "cr": 0.0214,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 2,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 6.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-pro-abliterated",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen4-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.675,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1.1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 25.5,
+      "c": 5.098,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 31.5,
+      "c": 5,
+      "cr": 0.3175,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mistral-large-4",
+      "r": 37.5,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 0.105,
+      "c": 6.0952,
+      "cr": 0.3333,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "minimax-m3.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 1.4,
+      "c": 3.1429,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "solar-pro-4-mod",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "free-pro"
+    },
+    {
+      "n": "minimax-m3",
+      "r": 0.375,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "agnes-3.0-flash",
+      "r": 0.05,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "free-pro"
+    },
+    {
+      "n": "flint-v1.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "free-pro"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 4.5,
+      "c": 5.4444,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 30,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "nemotron-3.5-super-vl-120b-a12b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemma-4-31b-it",
+      "r": 0.375,
+      "c": 1.5333,
+      "cr": 1,
+      "g": 1,
+      "gn": "free-pro"
+    },
+    {
+      "n": "glm-4.7-flash",
+      "r": 0.035,
+      "c": 5.7143,
+      "cr": 0.1429,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-flash-0731",
+      "r": 0.22,
+      "c": 3,
+      "cr": 0.1591,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 0.955,
+      "c": 2.0052,
+      "cr": 0.1728,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-4.7-flash-heretic",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "agnes-2.5-flash",
+      "r": 0.05,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "free-pro"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "uncensored-v1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 1.155,
+      "c": 3.4632,
+      "cr": 0.2078,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "step-5-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "free-pro"
+    },
+    {
+      "n": "gemma-4-26b-a4b-it",
+      "r": 0.075,
+      "c": 4,
+      "cr": 1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 2,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.5,
+      "c": 1,
+      "cr": 0.08,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4.1-flash-abliterated",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.3-abliterated",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "stepfun-ai/step-5-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "ernie-5.5-flash-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "free-pro"
+    },
+    {
+      "n": "llama-3.3-70b-instruct",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "free-pro"
+    },
+    {
+      "n": "kimi-k3.1-pro-abliterated",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "muse-glimmer-30b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.8-27b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-oss-120b",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "free-pro"
+    },
+    {
+      "n": "mimo-v2.6-pro",
+      "r": 0.2175,
+      "c": 2,
+      "cr": 0.0087,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "step-3.7-flash",
+      "r": 0.1,
+      "c": 5.75,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "free-pro"
+    },
+    {
+      "n": "qwen3.7-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glyph-cluster",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "free-pro"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "solar-mini-4",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "free-pro"
+    },
+    {
+      "n": "minimax-m2.7",
+      "r": 0.3,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 0.1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k3.1-pro-highspeed",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.3-flash-abliterated",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.8-flash",
+      "r": 0.075,
+      "c": 3.1333,
+      "cr": 0.1067,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "glm-5.4",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-pro-0813",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4-flash-vision-exp",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 2,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.55,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4.1-flash-1017",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k3.1-pro:free",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "free-pro"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 2.25,
+      "c": 5,
+      "cr": 0.3733,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "unobaba-v1.0-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen3.8-27b-uncensored",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "nemotron-3-ultra-550b-a55b",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "laguna-xs-2.1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "free-pro"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 2,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.2,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k2.6",
+      "r": 0.545,
+      "c": 4.2202,
+      "cr": 0.3394,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "hy4-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "google/gemma-4-31b-it",
+      "r": 0.045,
+      "c": 3.7778,
+      "cr": 0.5556,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4.1-flash-uncensored",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 0.3,
+      "c": 4,
+      "cr": 0.2333,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4.1-flash-fast",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "deepseek-v4.1-flash-abliterated-fast",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "qwen-3.8-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.2,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
   "station_id": "eo-aigcpro-org",
   "endpoint": "https://eo.aigcpro.org/api/pricing",
-  "fetched_at": "2026-11-26T16:17:18.416Z",
+  "fetched_at": "2026-11-26T16:34:53.030Z",
   "http_status": 200,
-  "latency_ms": 978,
+  "latency_ms": 1326,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -57,6 +57,15 @@
     "高质量image2": "支持全官方参数的官渠image2/2.5，0.14一张"
   },
   "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
+  "status": {
+    "usd_exchange_rate": 1,
+    "quota_per_unit": 500000,
+    "price": 1,
+    "currency": "¤",
+    "top_up_link": null,
+    "system_name": "AIGC Pro",
+    "version": "v1.0.0-rc.43"
+  },
   "stats": {
     "total": 65,
     "matched": 6,
@@ -65,88 +74,6 @@
     "duplicate": 1
   },
   "models": {
-    "gpt-6.2-astra": {
-      "input": 75,
-      "output": 150,
-      "cache_read": null,
-      "raw": {
-        "model_name": "gpt-6.2-astra",
-        "model_ratio": 37.5,
-        "completion_ratio": 2,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "enable_groups": [
-          "满血不降智gpt",
-          "plus-特惠",
-          "team炸弹车",
-          "astra不降智",
-          "default",
-          "plus",
-          "gptpro",
-          "gpt混池"
-        ],
-        "billing_mode": "tiered_expr",
-        "billing_expr": "len <= 272000 ? tier(\"standard\", p * 8 + c * 40 + cr * 0.4 + cc * 10) : tier(\"long_context\", p * 16 + c * 60 + cr * 0.8 + cc * 20)"
-      }
-    },
-    "gpt-6.2-sol": {
-      "input": 75,
-      "output": 150,
-      "cache_read": null,
-      "raw": {
-        "model_name": "gpt-6.2-sol",
-        "model_ratio": 37.5,
-        "completion_ratio": 2,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "enable_groups": [
-          "满血不降智gpt",
-          "plus-特惠",
-          "team炸弹车",
-          "astra不降智",
-          "plus",
-          "gptpro",
-          "gpt混池",
-          "default"
-        ],
-        "billing_mode": "tiered_expr",
-        "billing_expr": "len <= 272000 ? tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5) : tier(\"long_context\", p * 4 + c * 15 + cr * 0.2 + cc * 5)"
-      }
-    },
-    "claude-sonnet-5-5": {
-      "input": 3,
-      "output": 15,
-      "cache_read": 0.3,
-      "raw": {
-        "model_name": "claude-sonnet-4-5",
-        "model_ratio": 1.5,
-        "completion_ratio": 5,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "cache_ratio": 0.1,
-        "enable_groups": [
-          "正价kiro号池"
-        ]
-      }
-    },
-    "deepseek-flash": {
-      "input": 2,
-      "output": 8,
-      "cache_read": 0.04,
-      "raw": {
-        "model_name": "deepseek-v4.1-flash",
-        "model_ratio": 1,
-        "completion_ratio": 4,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "cache_ratio": 0.02,
-        "enable_groups": [
-          "国模",
-          "ds4.1",
-          "国模【官key】"
-        ]
-      }
-    },
     "claude-opus-5-5": {
       "input": 4,
       "output": 20,
@@ -169,6 +96,49 @@
         ]
       }
     },
+    "gpt-6.2-sol": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-sol",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "enable_groups": [
+          "default",
+          "gptpro",
+          "满血不降智gpt",
+          "plus-特惠",
+          "team炸弹车",
+          "astra不降智",
+          "gpt混池",
+          "plus"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "len <= 272000 ? tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5) : tier(\"long_context\", p * 4 + c * 15 + cr * 0.2 + cc * 5)"
+      }
+    },
+    "claude-sonnet-5-5": {
+      "input": 2,
+      "output": 10,
+      "cache_read": 0.1,
+      "raw": {
+        "model_name": "claude-sonnet-5-5",
+        "model_ratio": 1,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05,
+        "enable_groups": [
+          "ccmax 蒸馏",
+          "正价kiro号池",
+          "ccmax微注入【严禁破甲】",
+          "claude max"
+        ]
+      }
+    },
     "deepseek-v4-pro": {
       "input": 9,
       "output": 27,
@@ -181,48 +151,70 @@
         "quota_type": 0,
         "cache_ratio": 0.033333333333,
         "enable_groups": [
-          "ds4.1",
           "国模【官key】",
-          "国模"
+          "国模",
+          "ds4.1"
+        ]
+      }
+    },
+    "gpt-6.2-astra": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "enable_groups": [
+          "team炸弹车",
+          "gptpro",
+          "满血不降智gpt",
+          "astra不降智",
+          "plus",
+          "default",
+          "gpt混池",
+          "plus-特惠"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "len <= 272000 ? tier(\"standard\", p * 8 + c * 40 + cr * 0.4 + cc * 10) : tier(\"long_context\", p * 16 + c * 60 + cr * 0.8 + cc * 20)"
+      }
+    },
+    "deepseek-flash": {
+      "input": 2,
+      "output": 8,
+      "cache_read": 0.04,
+      "raw": {
+        "model_name": "deepseek-v4.1-flash",
+        "model_ratio": 1,
+        "completion_ratio": 4,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.02,
+        "enable_groups": [
+          "国模",
+          "ds4.1",
+          "国模【官key】"
         ]
       }
     }
   },
   "unmatched": [
     {
-      "model_name": "glm-5.3",
-      "model_ratio": 4,
-      "completion_ratio": 3.5
-    },
-    {
-      "model_name": "gemini-4-hydrogen",
-      "model_ratio": 0.75,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-5.5",
-      "model_ratio": 2.5,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "kimi-k2.6",
+      "model_name": "kimi-k2.7-code",
       "model_ratio": 3.25,
       "completion_ratio": 4.153846153846
     },
     {
-      "model_name": "grok-4.5",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
+      "model_name": "C-sonnet-5",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
     },
     {
-      "model_name": "glm-5.2",
-      "model_ratio": 4,
-      "completion_ratio": 3.5
-    },
-    {
-      "model_name": "kimi-k2.7-code-highspeed",
-      "model_ratio": 6.5,
-      "completion_ratio": 4.153846153846
+      "model_name": "codex-auto-review",
+      "model_ratio": 1.25,
+      "completion_ratio": 6
     },
     {
       "model_name": "glm-5.3-flashx",
@@ -230,37 +222,22 @@
       "completion_ratio": 3.5
     },
     {
-      "model_name": "claude-fable-5-2",
-      "model_ratio": 4,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-6-astra",
-      "model_ratio": 5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "g5.6-terra",
-      "model_ratio": 1.25,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "claude-sonnet-4-6",
-      "model_ratio": 1.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-6.1-sol",
+      "model_name": "grok-4.7",
       "model_ratio": 37.5,
-      "completion_ratio": 2
+      "completion_ratio": 1
     },
     {
-      "model_name": "claude-opus-4-6",
+      "model_name": "claude-opus-4-7",
       "model_ratio": 2.5,
       "completion_ratio": 5
     },
     {
-      "model_name": "claude-opus-4-8",
+      "model_name": "gpt-5.6-sol",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-opus-4-6",
       "model_ratio": 2.5,
       "completion_ratio": 5
     },
@@ -270,9 +247,69 @@
       "completion_ratio": 5
     },
     {
-      "model_name": "gpt-6.1-terra",
+      "model_name": "claude-fable-5-1",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-4-argon",
       "model_ratio": 37.5,
-      "completion_ratio": 2
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "gemini-4-neon",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "kimi-k2.6",
+      "model_ratio": 3.25,
+      "completion_ratio": 4.153846153846
+    },
+    {
+      "model_name": "claude-sonnet-4-6",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-6-astra",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-5-20251101",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "minimax-m3.1-flash",
+      "model_ratio": 0.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "glm-5.2",
+      "model_ratio": 4,
+      "completion_ratio": 3.5
+    },
+    {
+      "model_name": "claude-opus-5",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.6-terra",
+      "model_ratio": 1.25,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-haiku-4-5",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.5",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
     },
     {
       "model_name": "claude-sonnet-5",
@@ -285,14 +322,24 @@
       "completion_ratio": 6
     },
     {
+      "model_name": "gemini-4-hydrogen",
+      "model_ratio": 0.75,
+      "completion_ratio": 5
+    },
+    {
       "model_name": "kimi-k3.1-pro-highspeed",
       "model_ratio": 13,
       "completion_ratio": 5.230769230769
     },
     {
-      "model_name": "glm-5.3-flash",
-      "model_ratio": 0.4,
+      "model_name": "glm-5.3-prime",
+      "model_ratio": 8,
       "completion_ratio": 3.5
+    },
+    {
+      "model_name": "grok-4.6",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
     },
     {
       "model_name": "claude-opus-4-5",
@@ -300,9 +347,29 @@
       "completion_ratio": 5
     },
     {
-      "model_name": "glm-5.3-prime",
-      "model_ratio": 8,
-      "completion_ratio": 3.5
+      "model_name": "grok-4.5",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "mimo-v2.6-pro",
+      "model_ratio": 1.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-6.1-terra",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gemini-4-carbon",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "kimi-k3",
+      "model_ratio": 10,
+      "completion_ratio": 5
     },
     {
       "model_name": "kimi-k3.1-pro",
@@ -315,99 +382,9 @@
       "completion_ratio": 5
     },
     {
-      "model_name": "gpt-6-sol",
-      "model_ratio": 37.5,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "gemini-3.8-flash",
-      "model_ratio": 0.375,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "grok-4.6",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "claude-fable-5-1",
-      "model_ratio": 5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-5.6-sol",
-      "model_ratio": 2.5,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "gemini-4-carbon",
-      "model_ratio": 37.5,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "gemini-4-neon",
-      "model_ratio": 1.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "kimi-k3",
-      "model_ratio": 10,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "grok-4.7",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "claude-opus-5",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "kimi-k2.7-code",
-      "model_ratio": 3.25,
-      "completion_ratio": 4.153846153846
-    },
-    {
-      "model_name": "mimo-v2.6-pro",
-      "model_ratio": 1.5,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "gemini-4-argon",
-      "model_ratio": 37.5,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "claude-opus-4-7",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "minimax-m3.1-flash",
-      "model_ratio": 0.5,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "C-sonnet-5",
-      "model_ratio": 1.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-5.6-terra",
-      "model_ratio": 1.25,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "codex-auto-review",
-      "model_ratio": 1.25,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "claude-opus-4-5-20251101",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
+      "model_name": "glm-5.3",
+      "model_ratio": 4,
+      "completion_ratio": 3.5
     },
     {
       "model_name": "claude-fable-5",
@@ -415,9 +392,44 @@
       "completion_ratio": 5
     },
     {
-      "model_name": "claude-haiku-4-5",
-      "model_ratio": 0.5,
+      "model_name": "gpt-6-sol",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "g5.6-terra",
+      "model_ratio": 1.25,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-fable-5-2",
+      "model_ratio": 4,
       "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.8-flash",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "kimi-k2.7-code-highspeed",
+      "model_ratio": 6.5,
+      "completion_ratio": 4.153846153846
+    },
+    {
+      "model_name": "claude-opus-4-8",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-6.1-sol",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "glm-5.3-flash",
+      "model_ratio": 0.4,
+      "completion_ratio": 3.5
     }
   ],
   "derivation": {
@@ -428,23 +440,23 @@
     "group_ratio": 1,
     "group_source": "manual",
     "matched": 6,
-    "comparable": 5,
-    "dominant_multiple": 6.666666666666667,
-    "agreement": 0.4,
+    "comparable": 6,
+    "dominant_multiple": 1,
+    "agreement": 0.333,
     "comparable_models": [
-      "deepseek-flash",
-      "deepseek-v4-pro"
+      "claude-opus-5-5",
+      "claude-sonnet-5-5"
     ],
     "models": [
       {
-        "id": "gpt-6.2-astra",
-        "name": "gpt-6.2-astra",
-        "input": 75,
-        "output": 150,
-        "multiple": 9.375,
-        "shape_ok": false,
-        "verdict": "shape",
-        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
+        "id": "claude-opus-5-5",
+        "name": "claude-opus-5-5",
+        "input": 4,
+        "output": 20,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
       },
       {
         "id": "gpt-6.2-sol",
@@ -458,29 +470,9 @@
       },
       {
         "id": "claude-sonnet-5-5",
-        "name": "claude-sonnet-4-5",
-        "input": 3,
-        "output": 15,
-        "multiple": 1.5,
-        "shape_ok": true,
-        "verdict": "legacy",
-        "why": "旧代数型号名，价格表已过期"
-      },
-      {
-        "id": "deepseek-flash",
-        "name": "deepseek-v4.1-flash",
+        "name": "claude-sonnet-5-5",
         "input": 2,
-        "output": 8,
-        "multiple": 6.667,
-        "shape_ok": true,
-        "verdict": "ok",
-        "why": "输出/输入比与官方一致，这一行能单独算"
-      },
-      {
-        "id": "claude-opus-5-5",
-        "name": "claude-opus-5-5",
-        "input": 4,
-        "output": 20,
+        "output": 10,
         "multiple": 1,
         "shape_ok": true,
         "verdict": "ok",
@@ -495,30 +487,55 @@
         "shape_ok": true,
         "verdict": "ok",
         "why": "输出/输入比与官方一致，这一行能单独算"
-      }
-    ],
-    "rows_ok": 3,
-    "rows_total": 6,
-    "excluded_models": [
+      },
       {
         "id": "gpt-6.2-astra",
         "name": "gpt-6.2-astra",
-        "multiple": 9.375
+        "input": 75,
+        "output": 150,
+        "multiple": 9.375,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
       },
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4.1-flash",
+        "input": 2,
+        "output": 8,
+        "multiple": 6.667,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      }
+    ],
+    "rows_ok": 4,
+    "rows_total": 6,
+    "excluded_models": [
       {
         "id": "gpt-6.2-sol",
         "name": "gpt-6.2-sol",
         "multiple": 37.5
       },
       {
-        "id": "claude-opus-5-5",
-        "name": "claude-opus-5-5",
-        "multiple": 1
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "multiple": 6.818
+      },
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "multiple": 9.375
+      },
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4.1-flash",
+        "multiple": 6.667
       }
     ],
     "flat_price": null,
     "confidence": "low",
-    "note": "站内倍率吵成一团：6 个对得上的模型里没有多数派（最集中的只占 40%），从 6.67 倍散到 37.5 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。 另：旧代数命名 claude-sonnet-4-5 已单列，不参与判定。",
-    "computed_at": "2026-11-26T16:17:31.313Z"
+    "note": "站内倍率吵成一团：6 个对得上的模型里没有多数派（最集中的只占 33%），从 1 倍散到 37.5 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。",
+    "computed_at": "2026-11-26T16:35:14.889Z"
   }
 }

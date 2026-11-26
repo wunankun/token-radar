@@ -53,6 +53,7 @@ if (!SKIP_FETCH) {
 run('逐行判定可以怎么算', 'scripts/explain-observed.mjs', ['--write'], { fatal: true });
 
 /* ---------- 3. 构建（必须成功） ---------- */
+run('汇总全站模型目录', 'scripts/build-catalog.mjs', [], { fatal: true });
 run('构建站点', 'scripts/build.mjs', STRICT ? ['--strict'] : [], { fatal: true });
 
 /* ---------- 4. 审计（只提醒） ---------- */

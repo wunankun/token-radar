@@ -1,0 +1,321 @@
+{
+  "station_id": "vm2-pro",
+  "endpoint": "https://vm2.pro/api/pricing",
+  "fetched_at": "2026-11-26T16:35:00.763Z",
+  "http_status": 200,
+  "total": 39,
+  "models": [
+    {
+      "n": "mimo-v2.6-flash",
+      "r": 0.3696,
+      "c": 2,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "step-5-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT平价"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT平价"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT平价"
+    },
+    {
+      "n": "kimi-k2.8-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "kimi-k2.7-code-highspeed",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "kimi-k2.6",
+      "r": 0.342,
+      "c": 4.2105,
+      "cr": 0.1684,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "mimo-v2.6-pro",
+      "r": 1.1088,
+      "c": 2,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "minimax-m3",
+      "r": 0.288,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "minimax-m2.7",
+      "r": 0.144,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "hy-mt2-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "hy-mt2-lite",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT平价"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 0.342,
+      "c": 4.2105,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 2.88,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "deepseek/deepseek-v4-flash-vision-exp",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 0.8448,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT平价"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT平价"
+    },
+    {
+      "n": "hy4",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "hunyuan-role-latest",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "hy-mt2-plus",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "deepseek-v4-pro-202606",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1.25,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT平价"
+    },
+    {
+      "n": "hy4-preview",
+      "r": 0.4032,
+      "c": 3,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 7.2,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "hy-role",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT平价"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT平价"
+    },
+    {
+      "n": "hy3",
+      "r": 0.048,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "deepseek/deepseek-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "kimi-k3.1-pro-highspeed",
+      "r": 10.92,
+      "c": 5.23,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "glm-5v-turbo",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    },
+    {
+      "n": "deepseek-v4-flash-202605",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "正价claude"
+    }
+  ]
+}

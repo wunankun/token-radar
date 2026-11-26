@@ -1,0 +1,1217 @@
+{
+  "station_id": "apipaths-com",
+  "endpoint": "https://apipaths.com/api/pricing",
+  "fetched_at": "2026-11-26T16:34:36.673Z",
+  "http_status": 200,
+  "total": 151,
+  "models": [
+    {
+      "n": "claude-opus-4-8",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "gemini-4-carbon-high",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok-superheavy"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok-superheavy"
+    },
+    {
+      "n": "doubao-seed-2-1-pro",
+      "r": 9,
+      "c": 3.3333,
+      "cr": 0.0667,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "claude-fable-5.2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.375,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "deepseek-v4-pro-0813",
+      "r": 4.5,
+      "c": 3,
+      "cr": 0.0075,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "gpt-5.4-nano",
+      "r": 0.1,
+      "c": 6.25,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-官key"
+    },
+    {
+      "n": "gemini-3-flash-agent",
+      "r": 0.25,
+      "c": 6,
+      "cr": 1,
+      "g": 1,
+      "gn": "gemini听话"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex-02x-Plus"
+    },
+    {
+      "n": "glm-5.3-flashx",
+      "r": 1,
+      "c": 3.5,
+      "cr": 0.285,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.7-flash-low",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "space-bunny",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "hy3",
+      "r": 0.5,
+      "c": 4.1,
+      "cr": 0.3,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "mimo-v2.6-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "gpt-4.1-mini",
+      "r": 0.2,
+      "c": 2,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "GPT-官key"
+    },
+    {
+      "n": "minimax-m3",
+      "r": 1.05,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "grok-stt",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "语音模型"
+    },
+    {
+      "n": "gemini-3.5-flash-extra-low",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "MiniMax-M2.7-highspeed",
+      "r": 1.05,
+      "c": 4,
+      "cr": 0.2381,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "qwen3.8-flash",
+      "r": 0.15,
+      "c": 10.6667,
+      "cr": 0.8333,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "glm-5v-turbo",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "gpt-6",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "mimo-v2.5",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "grok-voice-3.0",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "语音模型"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Luna分组"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex-02x-Plus"
+    },
+    {
+      "n": "gemini-4-carbon-medium",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "deepseek-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.4,
+      "c": 3.5,
+      "cr": 0.2875,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "gemini-3-stt",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "语音模型"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 0.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "glm-5.3-prime",
+      "r": 1.4,
+      "c": 3.1429,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-neon-xhigh",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "gemini-3.6-flash-tiered",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-4-argon-high",
+      "r": 2,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "kimi-k2.6",
+      "r": 3.35,
+      "c": 4.1791,
+      "cr": 0.1791,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "gemini-4-hydrogen-low",
+      "r": 1.875,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "gemini-3.7-flash-tiered",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "mimo-v2.5-pro",
+      "r": 1.55,
+      "c": 1.9677,
+      "cr": 0.0323,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5.4545,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "MiniMax-M2.7",
+      "r": 1.05,
+      "c": 4,
+      "cr": 0.2381,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "grok-tts",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "语音模型"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-3.1-pro-preview-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "kimi-k2.8",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "gpt-4o",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT-官key"
+    },
+    {
+      "n": "gemini-3.5-stt",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "语音模型"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 1.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-3.6-flash-medium",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex-02x-Plus"
+    },
+    {
+      "n": "gemini-4-hydrogen-tiered",
+      "r": 1.875,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "kimi-k3-1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "gpt-4.1",
+      "r": 1,
+      "c": 2,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "GPT-官key"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 2,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex-02x-Plus"
+    },
+    {
+      "n": "gemini-3.8-flash-low",
+      "r": 0.875,
+      "c": 2.1429,
+      "cr": 0.0429,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-4-hydrogen-medium",
+      "r": 1.875,
+      "c": 0.8,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "doubao-seed-2-1-pro-260628",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-preview",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.0667,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-3.7-flash-high",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "kimi-k2.7",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "gpt-4o-mini",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "GPT-官key"
+    },
+    {
+      "n": "mimo-v2.6-flash",
+      "r": 1,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "opencode-渠道"
+    },
+    {
+      "n": "gemini-3.8-flash-medium",
+      "r": 0.875,
+      "c": 2.1429,
+      "cr": 0.0429,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "glm-5.1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-官key"
+    },
+    {
+      "n": "muse-spark-1.3-contributor",
+      "r": 0.75,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "opencode-渠道"
+    },
+    {
+      "n": "gemini-2.5-pro-tts",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "语音模型"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "grok-superheavy"
+    },
+    {
+      "n": "MiniMax-M3",
+      "r": 1.05,
+      "c": 4,
+      "cr": 0.2381,
+      "g": 1,
+      "gn": "国产模型"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 0.375,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-官key"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "GPT-官key"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "gemini-4-argon-low",
+      "r": 2,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-3-flash-preview",
+      "r": 0.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-4-hydrogen-high",
+      "r": 1.875,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 3,
+      "c": 5,
+      "cr": 0.0833,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k2.7-code-highspeed",
+      "r": 6.5,
+      "c": 4.1538,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "hy4-preview",
+      "r": 2.9,
+      "c": 3.0172,
+      "cr": 0.0517,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 1.875,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "gemini-3.5-flash-low",
+      "r": 1,
+      "c": 5,
+      "cr": 0.225,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gpt-6.2-astra-pro",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-企业级专线"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex-02x-Plus"
+    },
+    {
+      "n": "gemini-3.5-transcribe",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "语音模型"
+    },
+    {
+      "n": "gemini-3.8-flash-tts",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "语音模型"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Luna分组"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 0.3,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-4-hydrogen-xhigh",
+      "r": 1.875,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "gemini-4-neon-medium",
+      "r": 3,
+      "c": 2.5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "deepseek-v4-flash-0731",
+      "r": 0.3375,
+      "c": 3,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-3.6-flash-low",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "qwen4-max",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "step-5-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 1.25,
+      "g": 1,
+      "gn": "Claude-Cursor"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex-02x-Plus"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 7,
+      "c": 3,
+      "cr": 0.1286,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "gemini-4-neon-low",
+      "r": 3,
+      "c": 2.5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 3,
+      "c": 2.5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-2.5-pro",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "kiro-福利"
+    },
+    {
+      "n": "gemini-3.8-flash-tiered",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "qwen3.7-max",
+      "r": 8.75,
+      "c": 3,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 3,
+      "c": 5,
+      "cr": 0.0833,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "kimi-k2.7-code",
+      "r": 3.35,
+      "c": 4.1791,
+      "cr": 0.209,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex-02x-Plus"
+    },
+    {
+      "n": "gemini-2.5-flash-lite",
+      "r": 0.15,
+      "c": 1.3333,
+      "cr": 0.0333,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-3.5-flash-high",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-4-neon-high",
+      "r": 3,
+      "c": 2.5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "gemini-4-argon-medium",
+      "r": 2,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "muse-spark-1.2-contributor",
+      "r": 0.075,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "opencode-渠道"
+    },
+    {
+      "n": "gemini-3.1-flash-tts",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "语音模型"
+    },
+    {
+      "n": "gemini-3.1-pro",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-4-carbon-low",
+      "r": 2,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "kimi-k2.8-preview",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "gpt-reserve",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.8-flash-lite-tts",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "语音模型"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "grok-voice-latest",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "语音模型"
+    },
+    {
+      "n": "gemini-3-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-稳定快速分组"
+    },
+    {
+      "n": "longcat-2.0",
+      "r": 0.225,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "opencode-渠道"
+    },
+    {
+      "n": "minimax-m3.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    },
+    {
+      "n": "qwen3.7-plus",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "opencode-渠道"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Codex-02x-Plus"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "Codex-02x-Plus"
+    },
+    {
+      "n": "gemini-3.1-pro-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-3.6-flash-high",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "gemini-3.8-flash-high",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-官转"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 37.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-kiro-高缓"
+    },
+    {
+      "n": "gemini-2.5-flash-tts",
+      "r": 37.5,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "语音模型"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "国模--特惠"
+    }
+  ]
+}

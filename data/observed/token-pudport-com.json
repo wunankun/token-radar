@@ -444,6 +444,6 @@
     "flat_price": null,
     "confidence": "medium",
     "note": "对得上官方价的 6 个模型里，2 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算。 对不上的 1 个：deepseek-flash×0.5，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。 另：旧代数命名 claude-3-opus-20240229、claude-sonnet-4-5、deepseek-chat 已单列，不参与判定。",
-    "computed_at": "2026-11-26T16:17:31.321Z"
+    "computed_at": "2026-11-26T16:35:14.898Z"
   }
 }

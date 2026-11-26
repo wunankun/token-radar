@@ -1,0 +1,1177 @@
+{
+  "station_id": "api-yinziapi-top",
+  "endpoint": "https://api.yinziapi.top/api/pricing",
+  "fetched_at": "2026-11-26T16:34:37.104Z",
+  "http_status": 200,
+  "total": 146,
+  "models": [
+    {
+      "n": "gemini-4-hydrogen",
+      "r": 0.75,
+      "c": 5,
+      "cr": 0.0667,
+      "g": 1,
+      "gn": "上游10-gemini-hy-4n"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 0.75,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-ultea"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "上游11-deepseek-官转"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 0.05,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "上游3-gpt福利混池"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini-ultea"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 0.25,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-反重力"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "Seedance 2.5 face flash 480-720p",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "限时特价即梦分组"
+    },
+    {
+      "n": "gemini-3.7-flash-tiered",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "上游3-gemini-ultra"
+    },
+    {
+      "n": "gpt-5.2",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "银子特价gpt4"
+    },
+    {
+      "n": "特价渠道 Seedance 2.0 满血 720p（933）",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5.3-codex",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-全模型官key-支持fast"
+    },
+    {
+      "n": "speech-2.8-hd",
+      "r": 218.75,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "minimax官方配音模型"
+    },
+    {
+      "n": "gemini-2.5-pro",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-无缓存"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.125,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-无缓存"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-ultea"
+    },
+    {
+      "n": "claude-3-5-sonnet-20240620",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "claude-haiku-4.5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok稳定备用分组4"
+    },
+    {
+      "n": "deepseek-flash",
+      "r": 0.075,
+      "c": 4,
+      "cr": 0.02,
+      "g": 1,
+      "gn": "上游5-deepseek-官转"
+    },
+    {
+      "n": "gemini-3.5-flash-extra-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-反重力"
+    },
+    {
+      "n": "gpt-6",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "银子特价gpt4"
+    },
+    {
+      "n": "grok-4.6-latest",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok稳定备用分组4"
+    },
+    {
+      "n": "speech-02-hd",
+      "r": 218.75,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "minimax官方配音模型"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.4,
+      "c": 3.5,
+      "cr": 0.2875,
+      "g": 1,
+      "gn": "上游4-国模全家桶"
+    },
+    {
+      "n": "gpt-5.4-openai-compact",
+      "r": 1.25,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "银子特价gpt2"
+    },
+    {
+      "n": "claude-sonnet-4-6-thinking",
+      "r": 1.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "claude-kiro无限分组"
+    },
+    {
+      "n": "grok-4.7-latest",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok稳定备用分组4"
+    },
+    {
+      "n": "gpt-image-2.5-native-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "上游4-绘图分组"
+    },
+    {
+      "n": "gpt-image-2-azure",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "上游4-绘图分组"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.545,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "grok-4.20-multi-agent-xhigh",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "稳定grok备用分组2"
+    },
+    {
+      "n": "gemini-3.8-flash-tiered",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-反重力"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "上游3-gpt福利混池"
+    },
+    {
+      "n": "gpt-5.3-codex-spark",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "上游3-gpt福利混池"
+    },
+    {
+      "n": "grok-build-latest",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok稳定备用分组4"
+    },
+    {
+      "n": "MINIMAX H3 质量版",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "speech-2.6-hd",
+      "r": 218.75,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "minimax官方配音模型"
+    },
+    {
+      "n": "grok-latest",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok稳定备用分组4"
+    },
+    {
+      "n": "gemini-3-pro-image-preview",
+      "r": 37.5,
+      "c": 60,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "银子特价gpt4"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "gemini-3.8-flash-high",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-无缓存"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "银子特价gpt4"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "claude-fable-5.1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "稳定上游-Claude KIRO正价稳定版"
+    },
+    {
+      "n": "gpt-5.5-openai-compact",
+      "r": 2.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt稳定备用分组-plus5"
+    },
+    {
+      "n": "gpt-image-2.5-native-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "上游4-绘图分组"
+    },
+    {
+      "n": "claude-3-5-haiku-20241022",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "gpt-5.6-sol-openai-compact",
+      "r": 2,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "上游3-gpt福利混池"
+    },
+    {
+      "n": "composer-2.5",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "grok稳定备用分组4"
+    },
+    {
+      "n": "grok",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok稳定备用分组4"
+    },
+    {
+      "n": "grok-4.5-latest",
+      "r": 1,
+      "c": 3,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "grok稳定备用分组4"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-无缓存"
+    },
+    {
+      "n": "nano-banana-2.1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "上游4-绘图分组"
+    },
+    {
+      "n": "claude-3-5-sonnet-20241022",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "gpt-5.4-2026-03-05",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt稳定备用分组-plus5"
+    },
+    {
+      "n": "特价渠道 MiniMax H3 480p-1080p [77e8ee7a]",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-20250514",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "gemini-4-argon-low",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "上游3-gemini-ultra"
+    },
+    {
+      "n": "gpt-4o-audio-preview",
+      "r": 1.25,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "银子特价gpt4"
+    },
+    {
+      "n": "特价渠道 MiniMax H3 480p-1080p [1eb6d53a]",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "MINIMAX H3 极速版",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "speech-2.6-turbo",
+      "r": 125,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "minimax官方配音模型"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "gemini-4-neon",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "上游10-gemini-hy-4n"
+    },
+    {
+      "n": "gemini-nano-banana-2.1",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-ultea"
+    },
+    {
+      "n": "grok-4-20",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "稳定grok备用分组2"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-无缓存"
+    },
+    {
+      "n": "claude-sonnet-4-20250514",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "claude-sonnet-4.5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "gpt-image-2-native",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "上游4-绘图分组"
+    },
+    {
+      "n": "gemini-3-flash-preview",
+      "r": 0.035,
+      "c": 6.1429,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-ultea"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "银子特价gpt4"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "银子特价gpt4"
+    },
+    {
+      "n": "gpt-image-2.5-flare-azure",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "上游4-绘图分组"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "银子gpt-plus"
+    },
+    {
+      "n": "claude-opus-5-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro无限分组"
+    },
+    {
+      "n": "gemini-3.8-flash-medium",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-无缓存"
+    },
+    {
+      "n": "gpt-5",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-全模型官key-支持fast"
+    },
+    {
+      "n": "GLM-5.4",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "上游3-claude-kiro-99缓存高智商"
+    },
+    {
+      "n": "grok-composer-2.5-fast",
+      "r": 0.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "grok稳定备用分组4"
+    },
+    {
+      "n": "gpt-4o",
+      "r": 1.25,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "codex-全模型官key-支持fast"
+    },
+    {
+      "n": "glm-5.4",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.1-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-ultea"
+    },
+    {
+      "n": "nano-banana-v2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "福利绘图大杂烩分组"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "特价国模分组"
+    },
+    {
+      "n": "gpt-5-mini",
+      "r": 0.125,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "codex-全模型官key-支持fast"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok稳定备用分组4"
+    },
+    {
+      "n": "claude-opus-4.5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "claude-opus-4.6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "gpt-5.6",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "上游3-gpt福利混池"
+    },
+    {
+      "n": "Seedance 2.0-native",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "限时特价即梦分组"
+    },
+    {
+      "n": "gemini-2.5-flash-lite",
+      "r": 0.05,
+      "c": 4,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "gemini-无缓存"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.025,
+      "g": 1,
+      "gn": "上游3-claude-kiro-99缓存高智商"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-ultea"
+    },
+    {
+      "n": "gemini-3.5-flash-low",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-反重力"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "银子特价gpt4"
+    },
+    {
+      "n": "特价官渠 Seedance 2.0 满血 720p（火山折扣）",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-5.5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro无限分组"
+    },
+    {
+      "n": "claude-3-7-sonnet-20250219",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "claude-opus-4-1-20250805",
+      "r": 7.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "上游4-国模全家桶"
+    },
+    {
+      "n": "claude-opus-4-5-20251101",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "grok-composer",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "grok稳定备用分组4"
+    },
+    {
+      "n": "speech-02-turbo",
+      "r": 125,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "minimax官方配音模型"
+    },
+    {
+      "n": "gemini-4-argon-high",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "上游3-gemini-ultra"
+    },
+    {
+      "n": "Seedance 2.5-native",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "限时特价即梦分组"
+    },
+    {
+      "n": "MINIMAX H3 无渲染版",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "限时特价即梦分组"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "银子特价gpt4"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": null,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "gemini-4-argon-medium",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "上游3-gemini-ultra"
+    },
+    {
+      "n": "特价渠道 Seedance 2.0 满血 480p (933)",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-5-pro",
+      "r": 37.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-全模型官key-支持fast"
+    },
+    {
+      "n": "speech-2.8-turbo",
+      "r": 125,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "minimax官方配音模型"
+    },
+    {
+      "n": "Seedance 2.5-face 480-1080p",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "限时特价即梦分组"
+    },
+    {
+      "n": "Seedance 2.0 face fast 480-720p",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "限时特价即梦分组"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "银子特价gpt4"
+    },
+    {
+      "n": "nano-banana",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-ultea"
+    },
+    {
+      "n": "Seedance 2.0-face 480-720p",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "限时特价即梦分组"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 1,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "上游3-gpt福利混池"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4,
+      "c": 3.5,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "上游4-国模全家桶"
+    },
+    {
+      "n": "gpt-5.4-nano",
+      "r": 0.1,
+      "c": 6.25,
+      "cr": null,
+      "g": 1,
+      "gn": "codex-全模型官key-支持fast"
+    },
+    {
+      "n": "MINIMAX H3 升级版",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gpt-4.1-nano",
+      "r": 0.05,
+      "c": 2,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "codex-全模型官key-支持fast"
+    },
+    {
+      "n": "gemini-3.1-flash-image-preview",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini-ultea"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 4,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "银子特价gpt4"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gemini-ultea"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 1,
+      "c": 3,
+      "cr": 0.25,
+      "g": 1,
+      "gn": "grok稳定备用分组4"
+    },
+    {
+      "n": "gpt-4o-realtime-preview",
+      "r": 2.5,
+      "c": 4,
+      "cr": 0.5,
+      "g": 1,
+      "gn": "银子特价gpt4"
+    },
+    {
+      "n": "gemini-3.8-flash-low",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-无缓存"
+    },
+    {
+      "n": "gemini-3.1-flash-lite-preview",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-ultea"
+    },
+    {
+      "n": "grok-4.3-high",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "稳定grok备用分组2"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "上游3-gpt福利混池"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "claude-kiro限时活动分组"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 1.875,
+      "c": 2,
+      "cr": 0.0083,
+      "g": 1,
+      "gn": "上游11-deepseek-官转"
+    },
+    {
+      "n": "Seedance 2.0 face mini 480-720p",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "限时特价即梦分组"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini-反重力"
+    }
+  ]
+}

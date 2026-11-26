@@ -1,0 +1,545 @@
+{
+  "station_id": "panel-model-port-xyz",
+  "endpoint": "https://panel.model-port.xyz/api/pricing",
+  "fetched_at": "2026-11-26T16:34:49.554Z",
+  "http_status": 200,
+  "total": 67,
+  "models": [
+    {
+      "n": "gpt-image-1k-th",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-plus-2"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 8,
+      "c": 3.5,
+      "cr": 0.375,
+      "g": 1,
+      "gn": "ds-v4-api-2"
+    },
+    {
+      "n": "codex-auto-review",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "svip"
+    },
+    {
+      "n": "gpt-image-1",
+      "r": 12.5,
+      "c": 8,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-plus-4"
+    },
+    {
+      "n": "claude-sonnet-5-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.075,
+      "g": 1,
+      "gn": "Claude-KIRO"
+    },
+    {
+      "n": "gpt-5.6",
+      "r": 37.5,
+      "c": 6,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-plus-2"
+    },
+    {
+      "n": "Codex Auto Review",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-plus-4"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 12,
+      "c": 3,
+      "cr": 0.1875,
+      "g": 1,
+      "gn": "ds-v4-api-2"
+    },
+    {
+      "n": "gpt-image-2-exact",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-plus-2"
+    },
+    {
+      "n": "minimax-m3.1-flash",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "ds-v4-api-2"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "gpt-plus-1"
+    },
+    {
+      "n": "claude-opus-4-8-max",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "minimax-m3",
+      "r": 1.05,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "ds-v4-api"
+    },
+    {
+      "n": "gpt-reserve",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-plus-1"
+    },
+    {
+      "n": "gpt-image-2.6-sunburst",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-plus-1"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude-KIRO"
+    },
+    {
+      "n": "claude-opus-5-5",
+      "r": 2,
+      "c": 5,
+      "cr": 0.075,
+      "g": 1,
+      "gn": "Claude-KIRO"
+    },
+    {
+      "n": "claude-opus-4-7-high",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "claude-opus-4-7-xhigh",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "gpt-6.2-astra",
+      "r": 4,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gpt-plus-1"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "gpt-5.5-openai-compact",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "20x-pro-1"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 5,
+      "c": 5,
+      "cr": 0.0375,
+      "g": 1,
+      "gn": "Claude-KIRO"
+    },
+    {
+      "n": "claude-haiku-4-5-20251001",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "claude-opus-4-8-medium",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "claude-opus-4-8-low",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "claude-opus-4-7-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "20x-pro-1"
+    },
+    {
+      "n": "gpt-6-luna",
+      "r": 0.05,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "gpt-plus-1"
+    },
+    {
+      "n": "claude-sonnet-4-5-20250929",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "claude-opus-4-8-high",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "claude-opus-4-7-medium",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "claude-opus-4-7-low",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "deepseek-v4-flash-0731",
+      "r": 1,
+      "c": 4,
+      "cr": 0.03,
+      "g": 1,
+      "gn": "ds-v4-api-2"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 0.625,
+      "c": 6,
+      "cr": 0.16,
+      "g": 1,
+      "gn": "20x-pro-1"
+    },
+    {
+      "n": "gpt-5.5-codex-auto-review",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "20x-pro-1"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude-KIRO"
+    },
+    {
+      "n": "deepseek-v4-pro-0813",
+      "r": 2.25,
+      "c": 3,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "ds-v4-api"
+    },
+    {
+      "n": "glm-5.3-flashx",
+      "r": 2,
+      "c": 3.5,
+      "cr": 0.4275,
+      "g": 1,
+      "gn": "ds-v4-api-2"
+    },
+    {
+      "n": "gpt-image",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "claude-opus-4-8-thinking",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.03,
+      "g": 1,
+      "gn": "ds-v4-api-2"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "ds-v4-api-2"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.075,
+      "g": 1,
+      "gn": "20x-pro-1"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "deepseek-v4.1-flash-1017",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.04,
+      "g": 1,
+      "gn": "ds-v4-api-2"
+    },
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.1,
+      "c": 6,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "gpt-plus-3"
+    },
+    {
+      "n": "claude-opus-4-8-xhigh",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "gpt-6.2-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.05,
+      "g": 1,
+      "gn": "gpt-plus-1"
+    },
+    {
+      "n": "gpt-image-2.6-flare",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-plus-1"
+    },
+    {
+      "n": "gpt-5.4-openai-compact",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "20x-pro-1"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "gpt-plus-3"
+    },
+    {
+      "n": "gpt-6",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-plus-4"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "gpt-plus-2"
+    },
+    {
+      "n": "claude-haiku-5-5",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "claude-code"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1,
+      "c": 6,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "20x-pro-3"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "ds-v4-api-2"
+    },
+    {
+      "n": "qwen3.8-flash",
+      "r": 0.8,
+      "c": 3.375,
+      "cr": 0.1875,
+      "g": 1,
+      "gn": "ds-v4-api-2"
+    },
+    {
+      "n": "MiniMax-M3",
+      "r": 1.05,
+      "c": 4,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "ds-v4-api-2"
+    },
+    {
+      "n": "gpt-6.1-terra",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "gpt-plus-1"
+    },
+    {
+      "n": "gpt-image-1.5",
+      "r": 37.5,
+      "c": 2,
+      "cr": null,
+      "g": 1,
+      "gn": "svip"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.8,
+      "c": 3.5,
+      "cr": 0.4313,
+      "g": 1,
+      "gn": "ds-v4-api-2"
+    },
+    {
+      "n": "claude-fable-5-2",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "claude-code"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "gpt-plus-1"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.15,
+      "g": 1,
+      "gn": "Claude-KIRO"
+    }
+  ]
+}

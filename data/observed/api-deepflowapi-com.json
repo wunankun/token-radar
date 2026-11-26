@@ -1,9 +1,9 @@
 {
   "station_id": "api-deepflowapi-com",
   "endpoint": "https://api.deepflowapi.com/api/pricing",
-  "fetched_at": "2026-11-26T16:17:09.014Z",
+  "fetched_at": "2026-11-26T16:34:56.958Z",
   "http_status": 200,
-  "latency_ms": 2078,
+  "latency_ms": 1753,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -188,6 +188,15 @@
     "Suno-2": "Suno-2",
     "Vertex-Claude-1": "Vertex-Claude-1",
     "Vertex-Gemini-1": "Vertex-Gemini-1"
+  },
+  "status": {
+    "usd_exchange_rate": 6.68752,
+    "quota_per_unit": 500000,
+    "price": 1,
+    "currency": null,
+    "top_up_link": null,
+    "system_name": "深流 API",
+    "version": "20261126-170118"
   },
   "stats": {
     "total": 320,
@@ -672,6 +681,6 @@
     "flat_price": null,
     "confidence": "high",
     "note": "对得上官方价的 6 个模型里，6 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 96 个分组倍率，真正的折扣在那里。",
-    "computed_at": "2026-11-26T16:17:31.304Z"
+    "computed_at": "2026-11-26T16:35:14.880Z"
   }
 }

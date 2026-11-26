@@ -1,0 +1,513 @@
+{
+  "station_id": "shendun-vip",
+  "endpoint": "https://shendun.vip/api/pricing",
+  "fetched_at": "2026-11-26T16:34:40.466Z",
+  "http_status": 200,
+  "total": 63,
+  "models": [
+    {
+      "n": "gpt-5.6-luna",
+      "r": 0.5,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-限时特价"
+    },
+    {
+      "n": "grok-4.7",
+      "r": 1,
+      "c": 3,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GROK官key"
+    },
+    {
+      "n": "grok-4.2",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GROK官key"
+    },
+    {
+      "n": "gpt-5.4-mini",
+      "r": 0.375,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-限时特价"
+    },
+    {
+      "n": "gemini-3.7-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini特惠"
+    },
+    {
+      "n": "gemini-2.5-pro",
+      "r": 0.625,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini官key"
+    },
+    {
+      "n": "hy4-preview",
+      "r": 2.92,
+      "c": 2.9983,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "claude-opus-4-6",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-分组"
+    },
+    {
+      "n": "gpt-5.3-codex",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-限时特价"
+    },
+    {
+      "n": "grok-4.6",
+      "r": 1,
+      "c": 3,
+      "cr": 0.13,
+      "g": 1,
+      "gn": "GROK特惠"
+    },
+    {
+      "n": "kimi-k3",
+      "r": 10.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "gpt-5.4",
+      "r": 1.25,
+      "c": 6,
+      "cr": 0.12,
+      "g": 1,
+      "gn": "GPT-限时特价"
+    },
+    {
+      "n": "claude-fable-5",
+      "r": 5,
+      "c": 5,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Kiro-Claude-分组"
+    },
+    {
+      "n": "grok-imagine-video-6s",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3.5-flash",
+      "r": 0.75,
+      "c": 6,
+      "cr": 0.12,
+      "g": 1,
+      "gn": "gemini特惠"
+    },
+    {
+      "n": "minimax-m3",
+      "r": 1.05,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "gemini-3.6-flash",
+      "r": 0.75,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini特惠"
+    },
+    {
+      "n": "midjourney-v8.1-stable",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3-flash",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "gemini优质"
+    },
+    {
+      "n": "kimi-k3.1-pro",
+      "r": 7,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "mimo-v2.6-pro",
+      "r": 1.5,
+      "c": 2,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "grok-build-0.1",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "GROK官key"
+    },
+    {
+      "n": "gemini-3.1-flash-lite",
+      "r": 0.125,
+      "c": 6,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "gemini官key"
+    },
+    {
+      "n": "gemini-3-flash-preview",
+      "r": 0.25,
+      "c": 6,
+      "cr": 0.12,
+      "g": 1,
+      "gn": "gemini特惠"
+    },
+    {
+      "n": "gpt-6.1-sol",
+      "r": 1.1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt-官key-满血"
+    },
+    {
+      "n": "qwen3.8-flash",
+      "r": 0.525,
+      "c": 3.1333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "claude-opus-4-7",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-分组"
+    },
+    {
+      "n": "hy3-preview",
+      "r": 0.63,
+      "c": 3.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "mimo-v2.5",
+      "r": 0.5,
+      "c": 2,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "gpt-5.6-sol",
+      "r": 2.5,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-限时特价"
+    },
+    {
+      "n": "midjourney-v8.2-stable",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-4-carbon",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini官key"
+    },
+    {
+      "n": "deepseek-v4-pro",
+      "r": 4.5,
+      "c": 3,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "gpt-6-astra",
+      "r": 5,
+      "c": 5,
+      "cr": 0.12,
+      "g": 1,
+      "gn": "gpt-官key-满血"
+    },
+    {
+      "n": "gemini-4-argon",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini特惠"
+    },
+    {
+      "n": "gemini-3.8-flash",
+      "r": 0.375,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini特惠"
+    },
+    {
+      "n": "claude-fable-5-1",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "Claude-任意客户端"
+    },
+    {
+      "n": "gpt-6-sol",
+      "r": 1,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gpt-官key-满血"
+    },
+    {
+      "n": "mimo-v2.5-pro",
+      "r": 1.5,
+      "c": 2,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "claude-opus-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Kiro-Claude-分组"
+    },
+    {
+      "n": "claude-haiku-4-5",
+      "r": 0.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-分组"
+    },
+    {
+      "n": "deepseek-v4.1-flash",
+      "r": 1,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "claude-sonnet-4-5",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "AWS-Claude-分组"
+    },
+    {
+      "n": "gpt-5.3-codex-spark",
+      "r": 0.875,
+      "c": 8,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "GPT-pluspro混合稳定线路"
+    },
+    {
+      "n": "qwen3.8-max",
+      "r": 7,
+      "c": 3,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "glm-5.3",
+      "r": 4.9,
+      "c": 3.1429,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "claude-sonnet-4-6",
+      "r": 1.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-分组"
+    },
+    {
+      "n": "glm-5.1",
+      "r": 4.9,
+      "c": 3.1429,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "grok-4.3",
+      "r": 0.625,
+      "c": 2,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "GROK官key"
+    },
+    {
+      "n": "gemini-3.1-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "gemini优质"
+    },
+    {
+      "n": "claude-opus-4-8",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-分组"
+    },
+    {
+      "n": "gemini-2.5-flash",
+      "r": 0.15,
+      "c": 8.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "gemini优质"
+    },
+    {
+      "n": "deepseek-v4-flash",
+      "r": 0.5,
+      "c": 4,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "deepseek-v4-flash"
+    },
+    {
+      "n": "midjourney-v7-stable",
+      "r": 37.5,
+      "c": 1,
+      "cr": null,
+      "g": 1,
+      "gn": "default"
+    },
+    {
+      "n": "gemini-3-pro-preview",
+      "r": 1,
+      "c": 6,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "gemini特惠"
+    },
+    {
+      "n": "glm-5.2",
+      "r": 4.9,
+      "c": 3.1429,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "gemini-3.5-flash-lite",
+      "r": 37.5,
+      "c": 4,
+      "cr": null,
+      "g": 1,
+      "gn": "gemini官key"
+    },
+    {
+      "n": "glm-5.3-flash",
+      "r": 0.525,
+      "c": 3.3333,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "国模全系列特价"
+    },
+    {
+      "n": "grok-4.5",
+      "r": 1,
+      "c": 3,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GROK特惠"
+    },
+    {
+      "n": "claude-opus-4-5",
+      "r": 2.5,
+      "c": 5,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "Kiro-Claude-分组"
+    },
+    {
+      "n": "gpt-5.5",
+      "r": 2.5,
+      "c": 6,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-限时特价"
+    },
+    {
+      "n": "gpt-5.6-terra",
+      "r": 1.25,
+      "c": 8,
+      "cr": 0.1,
+      "g": 1,
+      "gn": "GPT-限时特价"
+    },
+    {
+      "n": "claude-sonnet-5",
+      "r": 1,
+      "c": 5,
+      "cr": 0.2,
+      "g": 1,
+      "gn": "Kiro-Claude-分组"
+    }
+  ]
+}
