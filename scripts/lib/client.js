@@ -188,6 +188,14 @@
     });
   }
 
+  /* 表头吸顶的落点：筛选条的实际高度 */
+  function syncStickTop() {
+    var bar = document.querySelector('.controls');
+    if (!bar) return;
+    var h = Math.round(bar.getBoundingClientRect().height);
+    document.documentElement.style.setProperty('--stick-top', h + 'px');
+  }
+
   function init() {
     renderKpis();
 
@@ -218,6 +226,8 @@
         '把 <code>data/providers/</code> 里的示例文件换成真实站点后自动消失。';
     }
     render();
+    syncStickTop();
+    window.addEventListener('resize', syncStickTop);
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);

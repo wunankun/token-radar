@@ -85,12 +85,16 @@ h1 .dot { color: var(--accent); }
 .count { margin-left: auto; font-size: 12.5px; color: var(--ink-3); font-family: var(--mono); }
 
 /* ---------- table ---------- */
-.tablewrap { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.tablewrap { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: visible; }
 table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
 thead th {
+  position: sticky; top: var(--stick-top, 54px); z-index: 15;
   text-align: left; font-weight: 600; color: var(--ink-3); font-size: 11.5px; letter-spacing: 0.06em;
-  padding: 11px 12px; background: #faf9f6; border-bottom: 1px solid var(--line); white-space: nowrap;
+  padding: 11px 12px; background: #faf9f6; white-space: nowrap;
+  box-shadow: inset 0 -1px 0 var(--line), 0 6px 12px -8px rgba(22, 24, 29, 0.18);
 }
+thead th:first-child { border-top-left-radius: 11px; }
+thead th:last-child { border-top-right-radius: 11px; }
 thead th.num, tbody td.num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
 tbody td { padding: 11px 12px; border-bottom: 1px solid var(--line-2); vertical-align: top; }
 tbody tr:last-child td { border-bottom: none; }
