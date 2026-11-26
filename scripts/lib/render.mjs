@@ -93,11 +93,9 @@ ${css}
         <tr>
           <th>站点</th>
           <th>模型</th>
-          <th class="num">输入<br><span class="th-sub">¥/百万</span></th>
-          <th class="num">输出<br><span class="th-sub">¥/百万</span></th>
-          <th class="num hide-md">缓存<br><span class="th-sub">¥/百万</span></th>
-          <th class="num">现价<br><span class="th-sub">混合成本 ¥/百万</span></th>
-          <th class="num">官方价<br><span class="th-sub">同口径</span></th>
+          <th class="num">输入 ¥/百万<br><span class="th-sub">现价 / 官方</span></th>
+          <th class="num">输出 ¥/百万<br><span class="th-sub">现价 / 官方</span></th>
+          <th class="num hide-md">缓存 ¥/百万<br><span class="th-sub">现价 / 官方</span></th>
           <th class="num">优惠力度</th>
           <th class="hide-md">价格来源</th>
         </tr>
@@ -112,8 +110,9 @@ ${css}
       <div class="body">
         <p>同一张表里的「0.5 倍率」和「5 折」经常不是一回事，所以本站统一折成<b>人民币 / 百万 token 的到手价</b>再比：</p>
 <pre>实际到手价 = 标价 × 计费系数 ÷ 充值赠送倍数
-混合成本   = ${meta.blend.input} × 输入价 + ${meta.blend.output} × 输出价   ← 表里的「现价」
-优惠力度   = 1 − 现价 ÷ 官方价   （百分比越大越优惠，负数表示比官方还贵）</pre>
+优惠力度   = 1 − 混合成本 ÷ 官方混合成本   （百分比越大越优惠，负数表示比官方还贵）
+混合成本   = ${meta.blend.input} × 输入价 + ${meta.blend.output} × 输出价   （config.json 可改）</pre>
+        <p class="note">表格里每一格，左边是这站的到手价，右边灰字划掉的是官方同口径价格。</p>
         <ul>
           <li><b>坑一：倍率的口径。</b>多数中转站是「1 元 = 1 美元额度」，所以「0.5 倍率」= 官方美元价 × 0.5，<b>以人民币结算</b>，并不乘汇率 —— 这才是「便宜十几倍」的来源。而「官转」通常是按官方<b>人民币</b>价打几折。两种口径在数据里用 <code>base: usd_official | cny_official</code> 区分，混用会算出完全错误的排名。</li>
           <li><b>坑二：充值赠送。</b>「充 100 得 120」等于单价直接打 0.83 折，但很多榜单只抄标价。</li>

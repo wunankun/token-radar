@@ -7,14 +7,6 @@
   var meta = DATA.meta || {};
   var W = meta.blend || { input: 0.7, output: 0.3 };
 
-  var FLAG_LABEL = {
-    unverified: '未核验', reverse: '逆向渠道', 'cheap-trap': '低价陷阱',
-    'billing-inflation': '计费虚高', 'model-substitution': '疑似掉包', 'no-entity': '无主体',
-    'operator-self': '自营主体', 'ran-away': '已跑路', 'no-refund': '不退款',
-    'prepaid-only': '仅预付', 'limited-models': '型号不全'
-  };
-  var DANGER_FLAGS = ['ran-away', 'model-substitution', 'no-entity'];
-
   var state = { q: '', model: '', kind: '', sort: 'discount', showDemo: true, onlyAff: false };
   var $ = function (sel) { return document.querySelector(sel); };
 
@@ -25,10 +17,6 @@
     if (v < 0.01) return v.toFixed(4);
     if (v < 1) return v.toFixed(3);
     return v.toFixed(2);
-  }
-  function pct(v) {
-    if (v === null || v === undefined) return '—';
-    return (v * 100).toFixed(1) + '%';
   }
   function esc(s) {
     return String(s === null || s === undefined ? '' : s)
@@ -53,18 +41,19 @@
     return (p >= 10 ? p.toFixed(0) : p.toFixed(1)) + '%';
   }
 
-  /* 官方价的同口径混合成本 */
+  /* 官方价的同口径混合成本（只用于排序和优惠力度，不单独占列） */
   function officialBlend(r) {
     var o = r.official_cny;
     if (!o || o.input == null || o.output == null) return null;
     return o.input * W.input + o.output * W.output;
   }
 
-  function unitCell(v, nominal) {
-    if (v === null || v === undefined) return '<span class="muted">—</span>';
-    var html = '<span class="unit">' + money(v) + '</span>';
-    if (nominal !== null && nominal !== undefined && Math.abs(nominal - v) > 0.0005) {
-      html += '<div class="unit-sub">标 ' + money(nominal) + '</div>';
+  /* 一格两组数：左边现价，右边划掉的官方价 */
+  function pairCell(now, off, tip) {
+    if (now === null || now === undefined) return '<span class="muted">—</span>';
+    var html = '<span class="unit" title="' + (tip || '') + '">' + money(now) + '</span>';
+    if (off !== null && off !== undefined) {
+      html += '<span class="offp" title="官方同口径">' + money(off) + '</span>';
     }
     return html;
   }
@@ -142,15 +131,8 @@
       ? '<a href="' + esc(link) + '" target="_blank" rel="sponsored nofollow noopener">' + name + '</a>'
       : name;
     if (s.affiliate_url) inner += '<span class="aff-dot" title="推广链接：通过此链接注册我们可能获得返佣，排名不受影响">AD</span>';
-
-    var chips = ['<span class="chip kind-' + s.kind + '">' + esc(s.kind_label) + '</span>'];
-    if (s.demo) chips.push('<span class="chip demo">演示</span>');
-    (s.risk_flags || []).forEach(function (f) {
-      var cls = DANGER_FLAGS.indexOf(f) !== -1 ? ' flag-danger' : ' flag-warn';
-      chips.push('<span class="chip' + cls + '">' + esc(FLAG_LABEL[f] || f) + '</span>');
-    });
-
-    return '<div class="station"><div class="name">' + inner + '</div><div class="chips">' + chips.join('') + '</div></div>';
+    return '<div class="station"><div class="name">' + inner + '</div>' +
+      '<div class="chips"><span class="chip kind-' + s.kind + '">' + esc(s.kind_label) + '</span></div></div>';
   }
 
   function sourceCell(r) {
@@ -163,25 +145,22 @@
   }
 
   function renderRow(r) {
-    var off = officialBlend(r);
+    var off = r.official_cny;
+    var nullOff = '<span class="muted"></span>';
     var d = r.discount;
-    var offTip = r.official_cny
-      ? '官方 ' + money(r.official_cny.input) + ' / ' + money(r.official_cny.output) + ' 元/百万（混合成本 ' + money(off) + '）'
-      : '没有官方基准价';
-    var nowTip = W.input + '×输入 + ' + W.output + '×输出，已按充值赠送 ×' + (r.bonus || 1).toFixed(2) +
-      '、实测计费 ×' + (r.billing_ratio || 1).toFixed(2) + ' 折算';
+    var calcTip = r.station.kind === 'official'
+      ? '官方基准价'
+      : '站上标价 ' + money(r.nominal.input) + ' × 计费 ' + (r.billing_ratio || 1).toFixed(2) + ' ÷ 赠送 ' + (r.bonus || 1).toFixed(2) + ' = 到手价';
     var dTip = '比官方便宜 ' + (d == null ? '—' : (d * 100).toFixed(1) + '%') +
-      '（官方 ' + money(off) + ' → 现价 ' + money(r.blend_effective) + '）';
+      '（混合成本 ' + money(r.blend_effective) + ' vs 官方 ' + money(officialBlend(r)) + '，' +
+      W.input + '×输入 + ' + W.output + '×输出）';
 
     return '<tr class="' + (r.station.demo ? 'is-demo' : '') + '">' +
       '<td>' + stationCell(r) + '</td>' +
       '<td><div class="model"><div class="m">' + esc(r.model.label) + '</div><div class="v">' + esc(r.model.vendor) + '</div></div></td>' +
-      '<td class="num">' + unitCell(r.effective.input, r.nominal.input) + '</td>' +
-      '<td class="num">' + unitCell(r.effective.output, r.nominal.output) + '</td>' +
-      '<td class="num hide-md">' + unitCell(r.effective.cache_read, r.nominal.cache_read) + '</td>' +
-      '<td class="num"><div class="nowp" title="' + nowTip + '">' + money(r.blend_effective) + '</div>' +
-        '<div class="nowp-sub">赠送 ×' + (r.bonus || 1).toFixed(2) + ' · 计费 ×' + (r.billing_ratio || 1).toFixed(2) + '</div></td>' +
-      '<td class="num"><span class="offp" title="' + offTip + '">' + money(off) + '</span></td>' +
+      '<td class="num">' + pairCell(r.effective.input, off && off.input, calcTip) + '</td>' +
+      '<td class="num">' + pairCell(r.effective.output, off && off.output, calcTip) + '</td>' +
+      '<td class="num hide-md">' + pairCell(r.effective.cache_read, off && off.cache_read, calcTip) + '</td>' +
       '<td class="num"><span class="disc ' + discCls(d) + '" title="' + dTip + '">' + discText(d) + '</span></td>' +
       '<td class="hide-md">' + sourceCell(r) + '</td>' +
       '</tr>';
@@ -192,7 +171,7 @@
     var list = filtered();
     $('#tbody').innerHTML = list.length
       ? list.map(renderRow).join('')
-      : '<tr><td colspan="9" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
+      : '<tr><td colspan="7" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
     $('#count').textContent = list.length + ' / ' + rows.length + ' 行';
   }
 
