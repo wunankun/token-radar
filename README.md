@@ -99,11 +99,32 @@ node scripts/demo-crawl.mjs     # 看抓取+比价整条链路跑一遍
 | 官方价 | 人工读厂商计费页，记录 `verified_at` 与来源链接（`data/official.json`） | 官方计费页 |
 | 中转站价（人工） | 编辑 `data/providers/<id>.json` | 人工核验 |
 | 中转站价（自动） | `fetch-pricing.mjs` 拉 new-api / one-api 的公开 `GET /api/pricing` | 自动抓取（未核验） |
+| 汇率 | `fetch-fx.mjs` 每日抓 USD→CNY，写回 `config.json` 的 `fx` | 卡片上标来源与日期 |
 | 可用率 | 有 key 的站点探活，只统计最近 7 天（`data/health/`） | 后台记录，不占榜单列 |
 
 自动抓取当前**手动触发**（`node scripts/fetch-pricing.mjs --write`），定时任务还没开，原因见下面「抓取」一节。
 
 自动抓取只写 `data/observed/`，**人工确认后才进 `data/providers/`**。因为 `/api/pricing` 返回的是「站内面值」，只有确认了这站是「1 元 = 1 美元」还是按汇率收人民币，才能正确换算成人民币价。
+
+汇率是自动抓的，三个源依次 fallback（都失败就保留旧值，不会把 7.1 这种手填数写回页面）：
+
+```bash
+node scripts/fetch-fx.mjs          # 写回 config.json
+node scripts/fetch-fx.mjs --dry    # 只看不写
+```
+
+源：`fawazahmed0/currency-api`（jsDelivr，带日期）→ `open.er-api.com` → `frankfurter.app`。
+
+### 切换到人民币之后，站价为什么没变
+
+这不是 bug，是中转站的计价方式决定的：站上「1 元 = 1 美元额度」，所以它标 `$0.15/百万`，你实际付的就是 `¥0.15/百万`——**数字一样，单位不一样**。
+
+变的是两件事：
+
+- **官方价**：`$0.3` 按汇率折成 `¥2.0`（7.1 时代是 ¥2.13）
+- **优惠力度**：同一行从 50% 变成 92%
+
+也就是说，美元口径回答「它相对官方美元价打了几折」，人民币口径回答「你钱包里少掏多少钱」。页面上切到人民币时会显示一行提示说明这件事。
 
 官方价里还有几个现实变量，先按标准档记录，明细都在 `data/official.json` 的 `note` 里：
 

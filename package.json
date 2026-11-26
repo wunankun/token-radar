@@ -18,7 +18,8 @@
     "add": "node scripts/add-station.mjs",
     "audit": "node scripts/audit.mjs",
     "audit:md": "node scripts/audit.mjs --md",
-    "fetch:or": "node scripts/fetch-openrouter.mjs --write"
+    "fetch:or": "node scripts/fetch-openrouter.mjs --write",
+    "fetch:fx": "node scripts/fetch-fx.mjs"
   },
   "license": "MIT"
 }

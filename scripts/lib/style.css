@@ -99,13 +99,14 @@ h1 .dot { color: var(--accent); }
 
 .picker-pop {
   position: absolute; z-index: 40; top: calc(100% + 6px); left: 0;
-  display: block; width: 268px;
+  display: grid; grid-template-columns: 132px minmax(240px, 1fr);
   background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
   box-shadow: 0 20px 44px -20px rgba(22, 24, 29, .3), 0 2px 8px rgba(22, 24, 29, .05);
-  max-height: 372px; overflow: hidden;
+  max-height: 328px; overflow: hidden;
 }
 .picker-pop[hidden] { display: none; }
-.pk-list { overflow: auto; max-height: 372px; padding: 5px; }
+.pk-col { overflow: auto; padding: 4px; }
+.pk-col + .pk-col { border-left: 1px solid var(--line-2); }
 .pk-item {
   display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%;
   background: none; border: 0; border-radius: 7px; font: inherit; font-size: 13px; color: var(--ink);
@@ -117,14 +118,7 @@ h1 .dot { color: var(--accent); }
 .pk-item > span:first-child { white-space: nowrap; }
 .pk-item .pk-sub { color: var(--ink-3); font-size: 11.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 0 1 auto; }
 .pk-item.pk-all { color: var(--accent); }
-.pk-item.pk-group { font-weight: 600; color: var(--ink); margin-top: 3px; }
-.pk-item.pk-group.on { color: var(--accent); }
-.pk-item.pk-leaf { padding-left: 24px; color: var(--ink-2); position: relative; }
-.pk-item.pk-leaf::before {
-  content: ''; position: absolute; left: 12px; top: 50%; width: 6px; height: 1px;
-  background: var(--line); transform: translateY(-50%);
-}
-.pk-item.pk-leaf.on { color: var(--accent); }
+.pk-item .pk-chev { color: var(--ink-3); font-size: 15px; line-height: 1; margin-left: auto; }
 .pk-group-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); opacity: .18; flex: none; }
 
 .controls input[type="search"]:focus, .controls select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
@@ -224,7 +218,7 @@ footer.bottom { margin-top: 26px; color: var(--ink-3); font-size: 12.5px; displa
 
   /* 级联面板挂到筛选条上，左右撑满，避免被右边界裁掉 */
   .picker { position: static; }
-  .picker-pop { left: 12px; right: 12px; width: auto; }
+  .picker-pop { left: 12px; right: 12px; width: auto; grid-template-columns: 118px 1fr; }
   .picker-btn { min-width: 0; flex: 1 1 150px; }
 
   /* 手机上表格在框内横向滚（表头吸顶让位），并先收掉两列次要信息 */
@@ -263,3 +257,8 @@ footer.bottom { margin-top: 26px; color: var(--ink-3); font-size: 12.5px; displa
 }
 @media (max-width: 640px) { .pager { padding-top: 10px; } }
 .disc.d-flat { background: #f1f2f4; color: #5b616e; }
+.cur-note {
+  margin: 12px 0 0; padding: 9px 12px; border-radius: 8px;
+  background: #f0f7f5; color: #2c5a52; font-size: 12.5px; line-height: 1.65;
+}
+.cur-note[hidden] { display: none; }

@@ -53,6 +53,10 @@ jobs:
       - name: 构建
         run: node scripts/build.mjs --strict
 
+      - name: 抓汇率
+        run: node scripts/fetch-fx.mjs
+        if: github.event_name == 'workflow_dispatch'
+
       - name: 维护审计（只提醒，不阻塞）
         run: node scripts/audit.mjs
 

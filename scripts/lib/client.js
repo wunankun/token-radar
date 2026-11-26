@@ -124,7 +124,8 @@
       },
       {
         k: '汇率 USD→CNY', v: String((meta.fx && meta.fx.usd_cny) || '—'),
-        s: state.currency === 'usd' ? '当前按美元显示 · 切到人民币时用这个汇率' : '手工维护 · ' + esc((meta.fx && meta.fx.as_of) || '') + ' · 官方价按此折人民币'
+        s: (meta.fx && meta.fx.source ? '抓自 ' + esc(meta.fx.source) + ' · ' + esc(meta.fx.as_of || '') : '手工维护') +
+        (state.currency === 'usd' ? ' · 切到人民币时用它折算官方价' : ' · 官方价已按此折人民币')
       },
       {
         k: '推广链接', v: String(aff), small: '行',
@@ -236,6 +237,7 @@
     $('#count').textContent = list.length + ' / ' + rows.length + ' 行';
     renderPager(list.length, pages, start, slice.length);
     renderUnits();
+    renderCurNote();
     renderKpis();
   }
 
@@ -275,6 +277,11 @@
     el.innerHTML = html;
   }
 
+  function renderCurNote() {
+    var n = $('#cur-note');
+    if (n) n.hidden = state.currency !== 'cny';
+  }
+
   function renderUnits() {
     var u = unit();
     Array.prototype.forEach.call(document.querySelectorAll('.th-u'), function (el) {
@@ -291,14 +298,20 @@
     if (sel.value !== (current || '')) sel.value = '';
   }
 
-  /* ---------- 模型选择：一栏，公司分行，模型缩进 ---------- */
+  /* ---------- 模型级联选择：左栏公司 → 右栏模型 ---------- */
+  var picker = { open: false, vendor: null };
+
   // 热度：优先用构建期算出来的 heat（有几家真实站在卖），没有就退回人工 popularity
   function heatOf(m) { return m.heat == null ? m.popularity || 0 : m.heat; }
   function byHeat(a, b) {
     return heatOf(b) - heatOf(a) || (b.popularity || 0) - (a.popularity || 0) || a.label.localeCompare(b.label);
   }
-  function subOf(m) {
-    return m.coverage > 0 ? '<span class="pk-sub">' + m.coverage + ' 站</span>' : '';
+  // 右栏副标：一半是公司名（看全部时），一半是「N 站」收录数（有数据才显示）
+  function subOf(m, withVendor) {
+    var parts = [];
+    if (withVendor) parts.push(m.vendor);
+    if (m.coverage > 0) parts.push(m.coverage + ' 站');
+    return parts.length ? '<span class="pk-sub">' + esc(parts.join(' · ')) + '</span>' : '';
   }
 
   function groupsByVendor() {
@@ -318,7 +331,6 @@
     if (state.model.indexOf('vendor:') === 0) return '全部 ' + state.model.slice(7) + ' 模型';
     var m = MODELS[state.model];
     if (!m) return '全部模型';
-    // 模型名里已经带公司名（DeepSeek V4 Pro）就不要重复前缀
     if (String(m.label).toLowerCase().indexOf(String(m.vendor).toLowerCase()) === 0) return m.label;
     return m.vendor + ' · ' + m.label;
   }
@@ -327,82 +339,106 @@
     var wrap = $('#f-model-wrap');
     var btn = $('#f-model');
     var pop = $('#f-model-pop');
-    var list = $('#picker-list');
+    var vBox = $('#picker-vendors');
+    var mBox = $('#picker-models');
     var G = groupsByVendor();
-    var isOpen = false;
 
-    var html = ['<button type="button" class="pk-item pk-all" data-pick="">全部模型</button>'];
-    G.vendors.forEach(function (v) {
-      var covered = G.by[v].reduce(function (n, x) { return Math.max(n, x.coverage || 0); }, 0);
-      html.push(
-        '<button type="button" class="pk-item pk-group" data-vendor="' + esc(v) + '">' +
-          '<span>' + esc(v) + '</span>' +
-          '<span class="pk-sub">' + (covered > 0 ? covered + ' 站' : G.by[v].length + ' 个') + '</span>' +
-        '</button>',
-      );
-      G.by[v].forEach(function (m) {
-        html.push(
-          '<button type="button" class="pk-item pk-leaf" data-model="' + esc(m.id) + '">' +
-            '<span>' + esc(m.label) + '</span>' + subOf(m) +
-          '</button>',
-        );
-      });
-    });
-    list.innerHTML = html.join('');
+    vBox.innerHTML = '<button type="button" class="pk-item" data-vendor="">全部模型</button>' +
+      G.vendors.map(function (v) {
+        return '<button type="button" class="pk-item has-sub" data-vendor="' + esc(v) + '">' +
+          '<span>' + esc(v) + '</span><span class="pk-chev" aria-hidden="true">›</span></button>';
+      }).join('');
+
+    function paint(vendor) {
+      var list = vendor
+        ? G.by[vendor]
+        : G.vendors.reduce(function (a, v) { return a.concat(G.by[v]); }, []).sort(byHeat);
+      mBox.dataset.vendor = vendor || '';
+      mBox.innerHTML = (vendor
+          ? '<button type="button" class="pk-item pk-all" data-pick="vendor">全部 ' + esc(vendor) + ' 模型</button>'
+          : '') +
+        list.map(function (m) {
+          return '<button type="button" class="pk-item" data-model="' + esc(m.id) + '">' +
+            '<span>' + esc(m.label) + '</span>' + subOf(m, !vendor) +
+            '</button>';
+        }).join('');
+      mark();
+    }
 
     function mark() {
-      Array.prototype.forEach.call(list.children, function (b) {
-        var on = b.dataset.pick === '' ? !state.model
-          : b.dataset.vendor ? state.model === 'vendor:' + b.dataset.vendor
-          : b.dataset.model === state.model;
+      Array.prototype.forEach.call(vBox.children, function (b) {
+        b.classList.toggle('on', (b.dataset.vendor || null) === (picker.vendor || null));
+      });
+      Array.prototype.forEach.call(mBox.children, function (b) {
+        var on = b.dataset.model
+          ? b.dataset.model === state.model
+          : 'vendor:' + mBox.dataset.vendor === state.model;
         b.classList.toggle('on', !!on);
       });
     }
 
     function open() {
-      mark();
+      if (state.model.indexOf('vendor:') === 0) picker.vendor = state.model.slice(7);
+      else if (MODELS[state.model]) picker.vendor = MODELS[state.model].vendor;
+      paint(picker.vendor);
       pop.hidden = false;
       wrap.classList.add('open');
       btn.setAttribute('aria-expanded', 'true');
-      isOpen = true;
-      var on = list.querySelector('.on');
-      if (on) list.scrollTop = Math.max(0, on.offsetTop - 88);
+      picker.open = true;
     }
 
     function close() {
       pop.hidden = true;
       wrap.classList.remove('open');
       btn.setAttribute('aria-expanded', 'false');
-      isOpen = false;
+      picker.open = false;
     }
 
     function choose(v) {
       state.model = v;
       $('#f-model-label').textContent = pickerLabel();
-      mark();
+      if (typeof mark === 'function') mark();
       close();
       render();
     }
 
     btn.addEventListener('click', function (e) {
       e.stopPropagation();
-      if (isOpen) close(); else open();
+      if (picker.open) close(); else open();
     });
 
-    list.addEventListener('click', function (e) {
-      var b = e.target.closest('[data-pick],[data-vendor],[data-model]');
+    vBox.addEventListener('mouseover', function (e) {
+      var b = e.target.closest('[data-vendor]');
+      if (!b) return;
+      var v = b.dataset.vendor || null;
+      if (v === picker.vendor) return;
+      picker.vendor = v;
+      paint(v);
+    });
+
+    vBox.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-vendor]');
       if (!b) return;
       e.stopPropagation();
-      if (b.dataset.vendor) choose('vendor:' + b.dataset.vendor);
-      else if (b.dataset.model) choose(b.dataset.model);
-      else choose('');
+      var v = b.dataset.vendor || '';
+      if (!v) { choose(''); return; }
+      picker.vendor = v;
+      paint(v);
+    });
+
+    mBox.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-model],[data-pick]');
+      if (!b) return;
+      e.stopPropagation();
+      if (b.dataset.pick === 'vendor') choose('vendor:' + mBox.dataset.vendor);
+      else choose(b.dataset.model);
     });
 
     document.addEventListener('click', function (e) {
-      if (isOpen && !e.target.closest('#f-model-wrap')) close();
+      if (picker.open && !e.target.closest('#f-model-wrap')) close();
     });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && isOpen) { close(); btn.focus(); }
+      if (e.key === 'Escape' && picker.open) { close(); btn.focus(); }
     });
 
     $('#f-model-label').textContent = pickerLabel();

@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T14:27:20.340Z",
+    "generated_at": "2026-11-26T14:35:14.323Z",
     "fx": {
-      "usd_cny": 7.1,
+      "usd_cny": 6.6609,
       "as_of": "2026-11-26",
-      "source": "manual"
+      "source": "fawazahmed0/currency-api"
     },
     "blend": {
       "input": 0.7,
@@ -23,8 +23,8 @@
     "best": {
       "station": "token.pudport.com",
       "model": "DeepSeek Flash",
-      "ratio": 0.0704,
-      "discount": 0.9296,
+      "ratio": 0.0751,
+      "discount": 0.9249,
       "effective": {
         "input": 0.15,
         "output": 0.6,
@@ -34,8 +34,8 @@
     "best_demo": {
       "station": "示例站 Beta",
       "model": "GPT-6.2 Sol",
-      "ratio": 0.0951,
-      "discount": 0.9049,
+      "ratio": 0.1013,
+      "discount": 0.8987,
       "effective": {
         "input": 1.35,
         "output": 6.75,
@@ -151,9 +151,9 @@
         "cache_read": 0.003
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -162,11 +162,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.0704,
-        "output": 0.0704,
-        "blend": 0.0704
+        "input": 0.0751,
+        "output": 0.0751,
+        "blend": 0.0751
       },
-      "discount": 0.9296,
+      "discount": 0.9249,
       "blend_effective": 0.285,
       "usd": {
         "effective": {
@@ -229,9 +229,9 @@
         "cache_read": 0.0675
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -240,11 +240,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.0951,
-        "output": 0.0951,
-        "blend": 0.0951
+        "input": 0.1013,
+        "output": 0.1013,
+        "blend": 0.1013
       },
-      "discount": 0.9049,
+      "discount": 0.8987,
       "blend_effective": 2.97,
       "usd": {
         "effective": {
@@ -314,9 +314,9 @@
         "cache_read": 0.27
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -325,11 +325,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.0951,
-        "output": 0.0951,
-        "blend": 0.0951
+        "input": 0.1013,
+        "output": 0.1013,
+        "blend": 0.1013
       },
-      "discount": 0.9049,
+      "discount": 0.8987,
       "blend_effective": 11.88,
       "usd": {
         "effective": {
@@ -399,9 +399,9 @@
         "cache_read": 0.0743
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -410,11 +410,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1046,
-        "output": 0.1046,
-        "blend": 0.1046
+        "input": 0.1115,
+        "output": 0.1115,
+        "blend": 0.1115
       },
-      "discount": 0.8954,
+      "discount": 0.8885,
       "blend_effective": 3.267,
       "usd": {
         "effective": {
@@ -484,9 +484,9 @@
         "cache_read": 0.1485
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -495,11 +495,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1046,
-        "output": 0.1046,
-        "blend": 0.1046
+        "input": 0.1115,
+        "output": 0.1115,
+        "blend": 0.1115
       },
-      "discount": 0.8954,
+      "discount": 0.8885,
       "blend_effective": 6.534,
       "usd": {
         "effective": {
@@ -566,9 +566,9 @@
         "cache_read": 0.006
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -577,11 +577,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 0.57,
       "usd": {
         "effective": {
@@ -641,9 +641,9 @@
         "cache_read": 0.006
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -652,11 +652,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 0.57,
       "usd": {
         "effective": {
@@ -716,9 +716,9 @@
         "cache_read": 0.044
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -727,11 +727,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 2.112,
       "usd": {
         "effective": {
@@ -791,9 +791,9 @@
         "cache_read": 0.044
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -802,11 +802,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 2.112,
       "usd": {
         "effective": {
@@ -866,9 +866,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -877,11 +877,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -941,9 +941,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -952,11 +952,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -1016,9 +1016,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -1027,11 +1027,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -1091,9 +1091,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -1102,11 +1102,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -1166,9 +1166,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -1177,11 +1177,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -1241,9 +1241,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -1252,11 +1252,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -1316,9 +1316,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -1327,11 +1327,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -1391,9 +1391,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -1402,11 +1402,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -1466,9 +1466,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -1477,11 +1477,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -1541,9 +1541,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -1552,11 +1552,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -1616,9 +1616,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -1627,11 +1627,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -1691,9 +1691,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -1702,11 +1702,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -1766,9 +1766,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -1777,11 +1777,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -1841,9 +1841,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -1852,11 +1852,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -1916,9 +1916,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -1927,11 +1927,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -1991,9 +1991,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -2002,11 +2002,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -2066,9 +2066,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -2077,11 +2077,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -2141,9 +2141,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -2152,11 +2152,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -2216,9 +2216,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -2227,11 +2227,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -2291,9 +2291,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -2302,11 +2302,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -2366,9 +2366,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -2377,11 +2377,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -2441,9 +2441,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -2452,11 +2452,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -2516,9 +2516,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -2527,11 +2527,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -2591,9 +2591,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -2602,11 +2602,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -2666,9 +2666,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -2677,11 +2677,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -2741,9 +2741,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -2752,11 +2752,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -2816,9 +2816,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -2827,11 +2827,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -2891,9 +2891,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -2902,11 +2902,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -2966,9 +2966,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -2977,11 +2977,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -3041,9 +3041,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -3052,11 +3052,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -3116,9 +3116,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -3127,11 +3127,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -3191,9 +3191,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -3202,11 +3202,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -3266,9 +3266,9 @@
         "cache_read": 0.15
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -3277,11 +3277,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -3341,9 +3341,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -3352,11 +3352,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -3416,9 +3416,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -3427,11 +3427,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -3491,9 +3491,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -3502,11 +3502,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -3566,9 +3566,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -3577,11 +3577,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -3641,9 +3641,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -3652,11 +3652,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -3716,9 +3716,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -3727,11 +3727,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -3791,9 +3791,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -3802,11 +3802,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -3866,9 +3866,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -3877,11 +3877,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -3941,9 +3941,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -3952,11 +3952,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -4016,9 +4016,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -4027,11 +4027,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -4091,9 +4091,9 @@
         "cache_read": null
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -4102,11 +4102,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -4166,9 +4166,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -4177,11 +4177,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -4241,9 +4241,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -4252,11 +4252,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -4316,9 +4316,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -4327,11 +4327,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -4391,9 +4391,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -4402,11 +4402,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -4466,9 +4466,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -4477,11 +4477,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -4541,9 +4541,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -4552,11 +4552,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -4616,9 +4616,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -4627,11 +4627,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -4691,9 +4691,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -4702,11 +4702,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 4.4,
       "usd": {
         "effective": {
@@ -4766,9 +4766,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -4777,11 +4777,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -4841,9 +4841,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -4852,11 +4852,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -4916,9 +4916,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -4927,11 +4927,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -4991,9 +4991,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -5002,11 +5002,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -5066,9 +5066,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -5077,11 +5077,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -5141,9 +5141,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -5152,11 +5152,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -5216,9 +5216,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -5227,11 +5227,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -5291,9 +5291,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -5302,11 +5302,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -5366,9 +5366,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -5377,11 +5377,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -5441,9 +5441,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -5452,11 +5452,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -5516,9 +5516,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -5527,11 +5527,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -5591,9 +5591,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -5602,11 +5602,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -5666,9 +5666,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -5677,11 +5677,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -5741,9 +5741,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -5752,11 +5752,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -5816,9 +5816,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -5827,11 +5827,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -5891,9 +5891,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -5902,11 +5902,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -5966,9 +5966,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -5977,11 +5977,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -6041,9 +6041,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -6052,11 +6052,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -6116,9 +6116,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -6127,11 +6127,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -6191,9 +6191,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -6202,11 +6202,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -6266,9 +6266,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -6277,11 +6277,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -6341,9 +6341,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -6352,11 +6352,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -6416,9 +6416,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -6427,11 +6427,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -6491,9 +6491,9 @@
         "cache_read": 0.3
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -6502,11 +6502,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -6566,9 +6566,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -6577,11 +6577,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -6641,9 +6641,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -6652,11 +6652,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -6716,9 +6716,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -6727,11 +6727,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -6791,9 +6791,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -6802,11 +6802,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -6866,9 +6866,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -6877,11 +6877,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -6941,9 +6941,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -6952,11 +6952,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -7016,9 +7016,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -7027,11 +7027,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -7091,9 +7091,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -7102,11 +7102,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -7166,9 +7166,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -7177,11 +7177,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -7241,9 +7241,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -7252,11 +7252,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -7316,9 +7316,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -7327,11 +7327,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -7391,9 +7391,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -7402,11 +7402,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -7466,9 +7466,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -7477,11 +7477,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -7541,9 +7541,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -7552,11 +7552,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -7616,9 +7616,9 @@
         "cache_read": 0.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -7627,11 +7627,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 8.8,
       "usd": {
         "effective": {
@@ -7691,9 +7691,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -7702,11 +7702,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -7766,9 +7766,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -7777,11 +7777,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -7841,9 +7841,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -7852,11 +7852,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -7916,9 +7916,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -7927,11 +7927,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -7991,9 +7991,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -8002,11 +8002,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -8066,9 +8066,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -8077,11 +8077,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -8141,9 +8141,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -8152,11 +8152,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -8216,9 +8216,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -8227,11 +8227,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -8291,9 +8291,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -8302,11 +8302,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -8366,9 +8366,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -8377,11 +8377,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -8441,9 +8441,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -8452,11 +8452,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -8516,9 +8516,9 @@
         "cache_read": 0.8
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -8527,11 +8527,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -8591,9 +8591,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -8602,11 +8602,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -8666,9 +8666,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -8677,11 +8677,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -8741,9 +8741,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -8752,11 +8752,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -8816,9 +8816,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -8827,11 +8827,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -8891,9 +8891,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -8902,11 +8902,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -8966,9 +8966,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -8977,11 +8977,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -9041,9 +9041,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -9052,11 +9052,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -9116,9 +9116,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -9127,11 +9127,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -9191,9 +9191,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -9202,11 +9202,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -9266,9 +9266,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -9277,11 +9277,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -9341,9 +9341,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -9352,11 +9352,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -9416,9 +9416,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -9427,11 +9427,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1408,
-        "output": 0.1408,
-        "blend": 0.1408
+        "input": 0.1501,
+        "output": 0.1501,
+        "blend": 0.1501
       },
-      "discount": 0.8592,
+      "discount": 0.8499,
       "blend_effective": 17.6,
       "usd": {
         "effective": {
@@ -9491,9 +9491,9 @@
         "cache_read": 0.25
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -9502,11 +9502,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.1761,
-        "output": 0.1761,
-        "blend": 0.1761
+        "input": 0.1877,
+        "output": 0.1877,
+        "blend": 0.1877
       },
-      "discount": 0.8239,
+      "discount": 0.8123,
       "blend_effective": 11,
       "usd": {
         "effective": {
@@ -9566,9 +9566,9 @@
         "cache_read": 1
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -9577,11 +9577,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.1761,
-        "output": 0.1761,
-        "blend": 0.1761
+        "input": 0.1877,
+        "output": 0.1877,
+        "blend": 0.1877
       },
-      "discount": 0.8239,
+      "discount": 0.8123,
       "blend_effective": 22,
       "usd": {
         "effective": {
@@ -9641,9 +9641,9 @@
         "cache_read": 0.3
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -9652,11 +9652,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.2113,
-        "output": 0.2113,
-        "blend": 0.2113
+        "input": 0.2252,
+        "output": 0.2252,
+        "blend": 0.2252
       },
-      "discount": 0.7887,
+      "discount": 0.7748,
       "blend_effective": 6.6,
       "usd": {
         "effective": {
@@ -9716,9 +9716,9 @@
         "cache_read": 0.3
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -9727,11 +9727,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.2113,
-        "output": 0.2113,
-        "blend": 0.2113
+        "input": 0.2252,
+        "output": 0.2252,
+        "blend": 0.2252
       },
-      "discount": 0.7887,
+      "discount": 0.7748,
       "blend_effective": 6.6,
       "usd": {
         "effective": {
@@ -9791,9 +9791,9 @@
         "cache_read": 0.3
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -9802,11 +9802,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.2113,
-        "output": 0.2113,
-        "blend": 0.2113
+        "input": 0.2252,
+        "output": 0.2252,
+        "blend": 0.2252
       },
-      "discount": 0.7887,
+      "discount": 0.7748,
       "blend_effective": 6.6,
       "usd": {
         "effective": {
@@ -9866,9 +9866,9 @@
         "cache_read": 0.0114
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -9877,11 +9877,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.2683,
-        "output": 0.2683,
-        "blend": 0.2683
+        "input": 0.2859,
+        "output": 0.286,
+        "blend": 0.286
       },
-      "discount": 0.7317,
+      "discount": 0.714,
       "blend_effective": 1.0857,
       "usd": {
         "effective": {
@@ -9941,9 +9941,9 @@
         "cache_read": 0.0857
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -9952,11 +9952,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.2744,
-        "output": 0.2744,
-        "blend": 0.2744
+        "input": 0.2925,
+        "output": 0.2925,
+        "blend": 0.2925
       },
-      "discount": 0.7256,
+      "discount": 0.7075,
       "blend_effective": 4.1143,
       "usd": {
         "effective": {
@@ -10016,9 +10016,9 @@
         "cache_read": 0.012
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -10027,11 +10027,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.2817,
-        "output": 0.2817,
-        "blend": 0.2817
+        "input": 0.3003,
+        "output": 0.3003,
+        "blend": 0.3003
       },
-      "discount": 0.7183,
+      "discount": 0.6997,
       "blend_effective": 1.14,
       "usd": {
         "effective": {
@@ -10092,9 +10092,9 @@
         "cache_read": 0.0747
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -10103,25 +10103,25 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.3505,
-        "output": 0.2629,
-        "blend": 0.2952
+        "input": 0.3737,
+        "output": 0.2802,
+        "blend": 0.3147
       },
-      "discount": 0.7048,
+      "discount": 0.6853,
       "blend_effective": 1.1947,
       "usd": {
         "effective": {
-          "input": 0.1052,
-          "output": 0.3155,
-          "cache_read": 0.0105
+          "input": 0.1121,
+          "output": 0.3363,
+          "cache_read": 0.0112
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 0.1683,
-        "discount": 0.7048
+        "blend": 0.1794,
+        "discount": 0.6853
       },
       "health": {
         "days": 14,
@@ -10174,9 +10174,9 @@
         "cache_read": 1.8
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -10185,11 +10185,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.3169,
-        "output": 0.3451,
-        "blend": 0.3361
+        "input": 0.3378,
+        "output": 0.3678,
+        "blend": 0.3583
       },
-      "discount": 0.6639,
+      "discount": 0.6417,
       "blend_effective": 21,
       "usd": {
         "effective": {
@@ -10250,9 +10250,9 @@
         "cache_read": 0.3733
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -10261,25 +10261,25 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.3585,
-        "output": 0.3585,
-        "blend": 0.3585
+        "input": 0.3821,
+        "output": 0.3821,
+        "blend": 0.3821
       },
-      "discount": 0.6415,
+      "discount": 0.6179,
       "blend_effective": 5.376,
       "usd": {
         "effective": {
-          "input": 0.4732,
-          "output": 1.4197,
-          "cache_read": 0.0526
+          "input": 0.5044,
+          "output": 1.5133,
+          "cache_read": 0.056
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 0.7572,
-        "discount": 0.6415
+        "blend": 0.8071,
+        "discount": 0.6179
       },
       "health": {
         "days": 14,
@@ -10332,9 +10332,9 @@
         "cache_read": 0.02
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -10343,11 +10343,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.4695,
-        "output": 0.4695,
-        "blend": 0.4695
+        "input": 0.5004,
+        "output": 0.5004,
+        "blend": 0.5004
       },
-      "discount": 0.5305,
+      "discount": 0.4996,
       "blend_effective": 1.9,
       "usd": {
         "effective": {
@@ -10407,9 +10407,9 @@
         "cache_read": 0.02
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -10418,11 +10418,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.4695,
-        "output": 0.4695,
-        "blend": 0.4695
+        "input": 0.5004,
+        "output": 0.5004,
+        "blend": 0.5004
       },
-      "discount": 0.5305,
+      "discount": 0.4996,
       "blend_effective": 1.9,
       "usd": {
         "effective": {
@@ -10482,9 +10482,9 @@
         "cache_read": 0.02
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -10493,11 +10493,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.4695,
-        "output": 0.4695,
-        "blend": 0.4695
+        "input": 0.5004,
+        "output": 0.5004,
+        "blend": 0.5004
       },
-      "discount": 0.5305,
+      "discount": 0.4996,
       "blend_effective": 1.9,
       "usd": {
         "effective": {
@@ -10557,9 +10557,9 @@
         "cache_read": 0.1
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -10568,11 +10568,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.4695,
-        "output": 0.4695,
-        "blend": 0.4695
+        "input": 0.5004,
+        "output": 0.5004,
+        "blend": 0.5004
       },
-      "discount": 0.5305,
+      "discount": 0.4996,
       "blend_effective": 1.9,
       "usd": {
         "effective": {
@@ -10632,9 +10632,9 @@
         "cache_read": 0.02
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -10643,11 +10643,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.4695,
-        "output": 0.4695,
-        "blend": 0.4695
+        "input": 0.5004,
+        "output": 0.5004,
+        "blend": 0.5004
       },
-      "discount": 0.5305,
+      "discount": 0.4996,
       "blend_effective": 1.9,
       "usd": {
         "effective": {
@@ -10707,9 +10707,9 @@
         "cache_read": 0.02
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -10718,11 +10718,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.4695,
-        "output": 0.4695,
-        "blend": 0.4695
+        "input": 0.5004,
+        "output": 0.5004,
+        "blend": 0.5004
       },
-      "discount": 0.5305,
+      "discount": 0.4996,
       "blend_effective": 1.9,
       "usd": {
         "effective": {
@@ -10782,9 +10782,9 @@
         "cache_read": 0.15
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -10793,11 +10793,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.4802,
-        "output": 0.4802,
-        "blend": 0.4802
+        "input": 0.5118,
+        "output": 0.5118,
+        "blend": 0.5118
       },
-      "discount": 0.5198,
+      "discount": 0.4882,
       "blend_effective": 7.2,
       "usd": {
         "effective": {
@@ -10857,9 +10857,9 @@
         "cache_read": 0.45
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -10868,11 +10868,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.4802,
-        "output": 0.4802,
-        "blend": 0.4802
+        "input": 0.5118,
+        "output": 0.5118,
+        "blend": 0.5118
       },
-      "discount": 0.5198,
+      "discount": 0.4882,
       "blend_effective": 7.2,
       "usd": {
         "effective": {
@@ -10932,9 +10932,9 @@
         "cache_read": 0.15
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -10943,11 +10943,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.4802,
-        "output": 0.4802,
-        "blend": 0.4802
+        "input": 0.5118,
+        "output": 0.5118,
+        "blend": 0.5118
       },
-      "discount": 0.5198,
+      "discount": 0.4882,
       "blend_effective": 7.2,
       "usd": {
         "effective": {
@@ -11007,9 +11007,9 @@
         "cache_read": 0.09
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -11018,11 +11018,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.4802,
-        "output": 0.4802,
-        "blend": 0.4802
+        "input": 0.5118,
+        "output": 0.5118,
+        "blend": 0.5118
       },
-      "discount": 0.5198,
+      "discount": 0.4882,
       "blend_effective": 7.2,
       "usd": {
         "effective": {
@@ -11082,9 +11082,9 @@
         "cache_read": 0.15
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -11093,11 +11093,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.4802,
-        "output": 0.4802,
-        "blend": 0.4802
+        "input": 0.5118,
+        "output": 0.5118,
+        "blend": 0.5118
       },
-      "discount": 0.5198,
+      "discount": 0.4882,
       "blend_effective": 7.2,
       "usd": {
         "effective": {
@@ -11157,9 +11157,9 @@
         "cache_read": 0.15
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -11168,11 +11168,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.4802,
-        "output": 0.4802,
-        "blend": 0.4802
+        "input": 0.5118,
+        "output": 0.5118,
+        "blend": 0.5118
       },
-      "discount": 0.5198,
+      "discount": 0.4882,
       "blend_effective": 7.2,
       "usd": {
         "effective": {
@@ -11232,9 +11232,9 @@
         "cache_read": 0.15
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -11243,11 +11243,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.4802,
-        "output": 0.4802,
-        "blend": 0.4802
+        "input": 0.5118,
+        "output": 0.5118,
+        "blend": 0.5118
       },
-      "discount": 0.5198,
+      "discount": 0.4882,
       "blend_effective": 7.2,
       "usd": {
         "effective": {
@@ -11295,19 +11295,19 @@
       "billing_ratio": 1,
       "billing_source": "manual",
       "nominal": {
-        "input": 1.3206,
-        "output": 5.2824,
-        "cache_read": 0.0264
+        "input": 1.2389,
+        "output": 4.9557,
+        "cache_read": 0.0248
       },
       "effective": {
-        "input": 1.1005,
-        "output": 4.402,
-        "cache_read": 0.022
+        "input": 1.0324,
+        "output": 4.1298,
+        "cache_read": 0.0206
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -11321,7 +11321,7 @@
         "blend": 0.5167
       },
       "discount": 0.4833,
-      "blend_effective": 2.091,
+      "blend_effective": 1.9616,
       "usd": {
         "effective": {
           "input": 0.155,
@@ -11375,19 +11375,19 @@
       "billing_ratio": 1,
       "billing_source": "manual",
       "nominal": {
-        "input": 5.8106,
-        "output": 17.4319,
-        "cache_read": 0.1937
+        "input": 5.4513,
+        "output": 16.3538,
+        "cache_read": 0.1817
       },
       "effective": {
-        "input": 4.8422,
-        "output": 14.5266,
-        "cache_read": 0.1614
+        "input": 4.5427,
+        "output": 13.6282,
+        "cache_read": 0.1514
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -11401,7 +11401,7 @@
         "blend": 0.5167
       },
       "discount": 0.4833,
-      "blend_effective": 7.7475,
+      "blend_effective": 7.2684,
       "usd": {
         "effective": {
           "input": 0.682,
@@ -11455,19 +11455,19 @@
       "billing_ratio": 1,
       "billing_source": "manual",
       "nominal": {
-        "input": 8.804,
-        "output": 44.02,
-        "cache_read": 0.4402
+        "input": 8.2595,
+        "output": 41.2976,
+        "cache_read": 0.413
       },
       "effective": {
-        "input": 7.3367,
-        "output": 36.6833,
-        "cache_read": 0.3668
+        "input": 6.8829,
+        "output": 34.4147,
+        "cache_read": 0.3441
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -11481,7 +11481,7 @@
         "blend": 0.5167
       },
       "discount": 0.4833,
-      "blend_effective": 16.1407,
+      "blend_effective": 15.1424,
       "usd": {
         "effective": {
           "input": 1.0333,
@@ -11535,19 +11535,19 @@
       "billing_ratio": 1,
       "billing_source": "manual",
       "nominal": {
-        "input": 8.804,
-        "output": 44.02,
-        "cache_read": 0.4402
+        "input": 8.2595,
+        "output": 41.2976,
+        "cache_read": 0.413
       },
       "effective": {
-        "input": 7.3367,
-        "output": 36.6833,
-        "cache_read": 0.3668
+        "input": 6.8829,
+        "output": 34.4147,
+        "cache_read": 0.3441
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -11561,7 +11561,7 @@
         "blend": 0.5167
       },
       "discount": 0.4833,
-      "blend_effective": 16.1407,
+      "blend_effective": 15.1424,
       "usd": {
         "effective": {
           "input": 1.0333,
@@ -11615,19 +11615,19 @@
       "billing_ratio": 1,
       "billing_source": "manual",
       "nominal": {
-        "input": 17.608,
-        "output": 88.04,
-        "cache_read": 0.8804
+        "input": 16.519,
+        "output": 82.5952,
+        "cache_read": 0.826
       },
       "effective": {
-        "input": 14.6733,
-        "output": 73.3667,
-        "cache_read": 0.7337
+        "input": 13.7659,
+        "output": 68.8293,
+        "cache_read": 0.6883
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -11641,7 +11641,7 @@
         "blend": 0.5167
       },
       "discount": 0.4833,
-      "blend_effective": 32.2813,
+      "blend_effective": 30.2849,
       "usd": {
         "effective": {
           "input": 2.0667,
@@ -11707,9 +11707,9 @@
         "cache_read": 1.2
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -11718,11 +11718,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 0.8451,
-        "output": 0.8451,
-        "blend": 0.8451
+        "input": 0.9008,
+        "output": 0.9008,
+        "blend": 0.9008
       },
-      "discount": 0.1549,
+      "discount": 0.0992,
       "blend_effective": 26.4,
       "usd": {
         "effective": {
@@ -11782,9 +11782,9 @@
         "cache_read": 1.2
       },
       "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
       },
       "official_usd": {
         "input": 4,
@@ -11793,11 +11793,11 @@
         "cache_write": 5
       },
       "ratio": {
-        "input": 0.8451,
-        "output": 0.8451,
-        "blend": 0.8451
+        "input": 0.9008,
+        "output": 0.9008,
+        "blend": 0.9008
       },
-      "discount": 0.1549,
+      "discount": 0.0992,
       "blend_effective": 52.8,
       "usd": {
         "effective": {
@@ -11817,6 +11817,438 @@
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
       "observed_at": "2026-11-26"
+    },
+    {
+      "station": {
+        "id": "deepseek",
+        "name": "DeepSeek 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.deepseek.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
+      },
+      "model": {
+        "id": "deepseek-flash",
+        "label": "DeepSeek Flash",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "official",
+      "price_source": "official",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
+      },
+      "effective": {
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
+      },
+      "official_cny": {
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
+      },
+      "official_usd": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 3.7967,
+      "usd": {
+        "effective": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "official": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006
+        },
+        "blend": 0.57,
+        "discount": 0
+      },
+      "health": null,
+      "note": null,
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
+    {
+      "station": {
+        "id": "deepseek",
+        "name": "DeepSeek 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.deepseek.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
+      },
+      "model": {
+        "id": "deepseek-v4-pro",
+        "label": "DeepSeek V4 Pro",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "official",
+      "price_source": "official",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
+      },
+      "effective": {
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
+      },
+      "official_cny": {
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
+      },
+      "official_usd": {
+        "input": 1.32,
+        "output": 3.96,
+        "cache_read": 0.044,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 14.0678,
+      "usd": {
+        "effective": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "official": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044
+        },
+        "blend": 2.112,
+        "discount": 0
+      },
+      "health": null,
+      "note": null,
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
+    {
+      "station": {
+        "id": "anthropic",
+        "name": "Anthropic 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://www.anthropic.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
+      },
+      "model": {
+        "id": "claude-sonnet-5-5",
+        "label": "Claude Sonnet 5.5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "official",
+      "price_source": "official",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
+      },
+      "effective": {
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
+      },
+      "official_cny": {
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 29.308,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
+      "health": null,
+      "note": null,
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
+        "id": "openai",
+        "name": "OpenAI 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.openai.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "gpt-6.2-sol",
+        "label": "GPT-6.2 Sol",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "official",
+      "price_source": "official",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
+      },
+      "effective": {
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
+      },
+      "official_cny": {
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 29.308,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
+      "health": null,
+      "note": null,
+      "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "anthropic",
+        "name": "Anthropic 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://www.anthropic.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
+      },
+      "model": {
+        "id": "claude-opus-5-5",
+        "label": "Claude Opus 5.5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "official",
+      "price_source": "official",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
+      },
+      "effective": {
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
+      },
+      "official_cny": {
+        "input": 26.6436,
+        "output": 133.218,
+        "cache_read": 1.3322
+      },
+      "official_usd": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.2,
+        "cache_write": 5
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 58.6159,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
+      "health": null,
+      "note": null,
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
+        "id": "openai",
+        "name": "OpenAI 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.openai.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "gpt-6.2-astra",
+        "label": "GPT-6.2 Astra",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "official",
+      "price_source": "official",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
+      },
+      "effective": {
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
+      },
+      "official_cny": {
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
+      },
+      "official_usd": {
+        "input": 8,
+        "output": 40,
+        "cache_read": 0.4,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 117.2318,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
+      "health": null,
+      "note": null,
+      "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
       "station": {
@@ -11857,9 +12289,9 @@
         "cache_read": 0.04
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -11868,11 +12300,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -11932,9 +12364,9 @@
         "cache_read": 0.04
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -11943,11 +12375,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -12007,9 +12439,9 @@
         "cache_read": 0.04
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -12018,11 +12450,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -12082,9 +12514,9 @@
         "cache_read": 0.4
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -12093,11 +12525,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -12157,9 +12589,9 @@
         "cache_read": 0.05
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -12168,11 +12600,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -12232,9 +12664,9 @@
         "cache_read": 0.04
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -12243,11 +12675,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -12307,9 +12739,9 @@
         "cache_read": 0.04
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -12318,11 +12750,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -12382,9 +12814,9 @@
         "cache_read": 0.05
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -12393,11 +12825,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -12457,9 +12889,9 @@
         "cache_read": 0.05
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -12468,11 +12900,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -12532,9 +12964,9 @@
         "cache_read": 0.06
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -12543,11 +12975,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -12607,9 +13039,9 @@
         "cache_read": 0.04
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -12618,11 +13050,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -12682,9 +13114,9 @@
         "cache_read": 0.04
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -12693,11 +13125,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -12757,9 +13189,9 @@
         "cache_read": 0.04
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -12768,11 +13200,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -12832,9 +13264,9 @@
         "cache_read": 0.04
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -12843,11 +13275,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -12907,9 +13339,9 @@
         "cache_read": 0.04
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -12918,11 +13350,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -12982,9 +13414,9 @@
         "cache_read": null
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -12993,11 +13425,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -13057,9 +13489,9 @@
         "cache_read": 0.04
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -13068,11 +13500,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -13132,9 +13564,9 @@
         "cache_read": 0.04
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -13143,11 +13575,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.939,
-        "output": 0.939,
-        "blend": 0.939
+        "input": 1.0009,
+        "output": 1.0009,
+        "blend": 1.0009
       },
-      "discount": 0.061,
+      "discount": -0.0009,
       "blend_effective": 3.8,
       "usd": {
         "effective": {
@@ -13207,9 +13639,9 @@
         "cache_read": 0.2997
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -13218,11 +13650,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.9603,
-        "output": 0.9603,
-        "blend": 0.9603
+        "input": 1.0236,
+        "output": 1.0236,
+        "blend": 1.0236
       },
-      "discount": 0.0397,
+      "discount": -0.0236,
       "blend_effective": 14.4,
       "usd": {
         "effective": {
@@ -13282,9 +13714,9 @@
         "cache_read": 0.3
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -13293,11 +13725,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.9603,
-        "output": 0.9603,
-        "blend": 0.9603
+        "input": 1.0236,
+        "output": 1.0236,
+        "blend": 1.0236
       },
-      "discount": 0.0397,
+      "discount": -0.0236,
       "blend_effective": 14.4,
       "usd": {
         "effective": {
@@ -13357,9 +13789,9 @@
         "cache_read": 0.3
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -13368,11 +13800,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.9603,
-        "output": 0.9603,
-        "blend": 0.9603
+        "input": 1.0236,
+        "output": 1.0236,
+        "blend": 1.0236
       },
-      "discount": 0.0397,
+      "discount": -0.0236,
       "blend_effective": 14.4,
       "usd": {
         "effective": {
@@ -13432,9 +13864,9 @@
         "cache_read": 0.3
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -13443,11 +13875,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.9603,
-        "output": 0.9603,
-        "blend": 0.9603
+        "input": 1.0236,
+        "output": 1.0236,
+        "blend": 1.0236
       },
-      "discount": 0.0397,
+      "discount": -0.0236,
       "blend_effective": 14.4,
       "usd": {
         "effective": {
@@ -13507,9 +13939,9 @@
         "cache_read": 0.3
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -13518,11 +13950,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.9603,
-        "output": 0.9603,
-        "blend": 0.9603
+        "input": 1.0236,
+        "output": 1.0236,
+        "blend": 1.0236
       },
-      "discount": 0.0397,
+      "discount": -0.0236,
       "blend_effective": 14.4,
       "usd": {
         "effective": {
@@ -13582,9 +14014,9 @@
         "cache_read": 0.9
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -13593,11 +14025,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.9603,
-        "output": 0.9603,
-        "blend": 0.9603
+        "input": 1.0236,
+        "output": 1.0236,
+        "blend": 1.0236
       },
-      "discount": 0.0397,
+      "discount": -0.0236,
       "blend_effective": 14.4,
       "usd": {
         "effective": {
@@ -13657,9 +14089,9 @@
         "cache_read": 0.3
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -13668,11 +14100,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.9603,
-        "output": 0.9603,
-        "blend": 0.9603
+        "input": 1.0236,
+        "output": 1.0236,
+        "blend": 1.0236
       },
-      "discount": 0.0397,
+      "discount": -0.0236,
       "blend_effective": 14.4,
       "usd": {
         "effective": {
@@ -13732,9 +14164,9 @@
         "cache_read": 0.3
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -13743,11 +14175,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.9603,
-        "output": 0.9603,
-        "blend": 0.9603
+        "input": 1.0236,
+        "output": 1.0236,
+        "blend": 1.0236
       },
-      "discount": 0.0397,
+      "discount": -0.0236,
       "blend_effective": 14.4,
       "usd": {
         "effective": {
@@ -13807,9 +14239,9 @@
         "cache_read": 0.3
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -13818,11 +14250,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.9603,
-        "output": 0.9603,
-        "blend": 0.9603
+        "input": 1.0236,
+        "output": 1.0236,
+        "blend": 1.0236
       },
-      "discount": 0.0397,
+      "discount": -0.0236,
       "blend_effective": 14.4,
       "usd": {
         "effective": {
@@ -13882,9 +14314,9 @@
         "cache_read": 0.3
       },
       "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
+        "input": 8.7924,
+        "output": 26.3772,
+        "cache_read": 0.2931
       },
       "official_usd": {
         "input": 1.32,
@@ -13893,11 +14325,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.9603,
-        "output": 0.9603,
-        "blend": 0.9603
+        "input": 1.0236,
+        "output": 1.0236,
+        "blend": 1.0236
       },
-      "discount": 0.0397,
+      "discount": -0.0236,
       "blend_effective": 14.4,
       "usd": {
         "effective": {
@@ -13917,438 +14349,6 @@
       "note": "抓自 2026-11-26 的 /api/pricing，未经人工核验；站上倍率 ×6.818（相对官方美元价），按「1 元 = 1 美元额度」面值折成人民币",
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
       "observed_at": "2026-11-26"
-    },
-    {
-      "station": {
-        "id": "deepseek",
-        "name": "DeepSeek 官方",
-        "kind": "official",
-        "kind_label": "官方直购",
-        "demo": false,
-        "homepage": "https://platform.deepseek.com/",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [],
-        "first_seen": null,
-        "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
-      },
-      "model": {
-        "id": "deepseek-flash",
-        "label": "DeepSeek Flash",
-        "vendor": "DeepSeek",
-        "context": 1000000
-      },
-      "mode": "official",
-      "price_source": "official",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
-      },
-      "effective": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
-      },
-      "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
-      },
-      "official_usd": {
-        "input": 0.3,
-        "output": 1.2,
-        "cache_read": 0.006,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 1,
-        "output": 1,
-        "blend": 1
-      },
-      "discount": 0,
-      "blend_effective": 4.047,
-      "usd": {
-        "effective": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.006
-        },
-        "official": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.006
-        },
-        "blend": 0.57,
-        "discount": 0
-      },
-      "health": null,
-      "note": null,
-      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
-    },
-    {
-      "station": {
-        "id": "deepseek",
-        "name": "DeepSeek 官方",
-        "kind": "official",
-        "kind_label": "官方直购",
-        "demo": false,
-        "homepage": "https://platform.deepseek.com/",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [],
-        "first_seen": null,
-        "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
-      },
-      "model": {
-        "id": "deepseek-v4-pro",
-        "label": "DeepSeek V4 Pro",
-        "vendor": "DeepSeek",
-        "context": 1000000
-      },
-      "mode": "official",
-      "price_source": "official",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
-      },
-      "effective": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
-      },
-      "official_cny": {
-        "input": 9.372,
-        "output": 28.116,
-        "cache_read": 0.3124
-      },
-      "official_usd": {
-        "input": 1.32,
-        "output": 3.96,
-        "cache_read": 0.044,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 1,
-        "output": 1,
-        "blend": 1
-      },
-      "discount": 0,
-      "blend_effective": 14.9952,
-      "usd": {
-        "effective": {
-          "input": 1.32,
-          "output": 3.96,
-          "cache_read": 0.044
-        },
-        "official": {
-          "input": 1.32,
-          "output": 3.96,
-          "cache_read": 0.044
-        },
-        "blend": 2.112,
-        "discount": 0
-      },
-      "health": null,
-      "note": null,
-      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
-    },
-    {
-      "station": {
-        "id": "anthropic",
-        "name": "Anthropic 官方",
-        "kind": "official",
-        "kind_label": "官方直购",
-        "demo": false,
-        "homepage": "https://www.anthropic.com/",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [],
-        "first_seen": null,
-        "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
-      },
-      "model": {
-        "id": "claude-sonnet-5-5",
-        "label": "Claude Sonnet 5.5",
-        "vendor": "Anthropic",
-        "context": 200000
-      },
-      "mode": "official",
-      "price_source": "official",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
-      },
-      "effective": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
-      },
-      "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
-      },
-      "official_usd": {
-        "input": 2,
-        "output": 10,
-        "cache_read": 0.1,
-        "cache_write": 2.5
-      },
-      "ratio": {
-        "input": 1,
-        "output": 1,
-        "blend": 1
-      },
-      "discount": 0,
-      "blend_effective": 31.24,
-      "usd": {
-        "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
-        },
-        "official": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
-        },
-        "blend": 4.4,
-        "discount": 0
-      },
-      "health": null,
-      "note": null,
-      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
-    },
-    {
-      "station": {
-        "id": "openai",
-        "name": "OpenAI 官方",
-        "kind": "official",
-        "kind_label": "官方直购",
-        "demo": false,
-        "homepage": "https://platform.openai.com/",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [],
-        "first_seen": null,
-        "note": "官方直购，价格锚。"
-      },
-      "model": {
-        "id": "gpt-6.2-sol",
-        "label": "GPT-6.2 Sol",
-        "vendor": "OpenAI",
-        "context": 400000
-      },
-      "mode": "official",
-      "price_source": "official",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
-      },
-      "effective": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
-      },
-      "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
-      },
-      "official_usd": {
-        "input": 2,
-        "output": 10,
-        "cache_read": 0.1,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 1,
-        "output": 1,
-        "blend": 1
-      },
-      "discount": 0,
-      "blend_effective": 31.24,
-      "usd": {
-        "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
-        },
-        "official": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
-        },
-        "blend": 4.4,
-        "discount": 0
-      },
-      "health": null,
-      "note": null,
-      "pricing_url": "https://platform.openai.com/docs/pricing"
-    },
-    {
-      "station": {
-        "id": "anthropic",
-        "name": "Anthropic 官方",
-        "kind": "official",
-        "kind_label": "官方直购",
-        "demo": false,
-        "homepage": "https://www.anthropic.com/",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [],
-        "first_seen": null,
-        "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
-      },
-      "model": {
-        "id": "claude-opus-5-5",
-        "label": "Claude Opus 5.5",
-        "vendor": "Anthropic",
-        "context": 200000
-      },
-      "mode": "official",
-      "price_source": "official",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
-      },
-      "effective": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
-      },
-      "official_cny": {
-        "input": 28.4,
-        "output": 142,
-        "cache_read": 1.42
-      },
-      "official_usd": {
-        "input": 4,
-        "output": 20,
-        "cache_read": 0.2,
-        "cache_write": 5
-      },
-      "ratio": {
-        "input": 1,
-        "output": 1,
-        "blend": 1
-      },
-      "discount": 0,
-      "blend_effective": 62.48,
-      "usd": {
-        "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
-        },
-        "official": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
-        },
-        "blend": 8.8,
-        "discount": 0
-      },
-      "health": null,
-      "note": null,
-      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
-    },
-    {
-      "station": {
-        "id": "openai",
-        "name": "OpenAI 官方",
-        "kind": "official",
-        "kind_label": "官方直购",
-        "demo": false,
-        "homepage": "https://platform.openai.com/",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "risk_flags": [],
-        "first_seen": null,
-        "note": "官方直购，价格锚。"
-      },
-      "model": {
-        "id": "gpt-6.2-astra",
-        "label": "GPT-6.2 Astra",
-        "vendor": "OpenAI",
-        "context": 400000
-      },
-      "mode": "official",
-      "price_source": "official",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
-      },
-      "effective": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
-      },
-      "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
-      },
-      "official_usd": {
-        "input": 8,
-        "output": 40,
-        "cache_read": 0.4,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 1,
-        "output": 1,
-        "blend": 1
-      },
-      "discount": 0,
-      "blend_effective": 124.96,
-      "usd": {
-        "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
-        },
-        "official": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
-        },
-        "blend": 17.6,
-        "discount": 0
-      },
-      "health": null,
-      "note": null,
-      "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
       "station": {
@@ -14389,9 +14389,9 @@
         "cache_read": 7.5
       },
       "official_cny": {
-        "input": 56.8,
-        "output": 284,
-        "cache_read": 2.84
+        "input": 53.2872,
+        "output": 266.436,
+        "cache_read": 2.6644
       },
       "official_usd": {
         "input": 8,
@@ -14400,11 +14400,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 1.3204,
-        "output": 1.3204,
-        "blend": 1.3204
+        "input": 1.4075,
+        "output": 1.4075,
+        "blend": 1.4075
       },
-      "discount": -0.3204,
+      "discount": -0.4075,
       "blend_effective": 165,
       "usd": {
         "effective": {
@@ -14464,9 +14464,9 @@
         "cache_read": 0.9
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -14475,11 +14475,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 1.4085,
-        "output": 1.4085,
-        "blend": 1.4085
+        "input": 1.5013,
+        "output": 1.5013,
+        "blend": 1.5013
       },
-      "discount": -0.4085,
+      "discount": -0.5013,
       "blend_effective": 5.7,
       "usd": {
         "effective": {
@@ -14539,9 +14539,9 @@
         "cache_read": 0.07
       },
       "official_cny": {
-        "input": 2.13,
-        "output": 8.52,
-        "cache_read": 0.0426
+        "input": 1.9983,
+        "output": 7.9931,
+        "cache_read": 0.04
       },
       "official_usd": {
         "input": 0.3,
@@ -14550,11 +14550,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 1.6432,
-        "output": 1.6432,
-        "blend": 1.6432
+        "input": 1.7515,
+        "output": 1.7515,
+        "blend": 1.7515
       },
-      "discount": -0.6432,
+      "discount": -0.7515,
       "blend_effective": 6.65,
       "usd": {
         "effective": {
@@ -14614,9 +14614,9 @@
         "cache_read": null
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -14625,11 +14625,11 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 5.2817,
-        "output": 5.2817,
-        "blend": 5.2817
+        "input": 5.6299,
+        "output": 5.6299,
+        "blend": 5.6299
       },
-      "discount": -4.2817,
+      "discount": -4.6299,
       "blend_effective": 165,
       "usd": {
         "effective": {
@@ -14689,9 +14689,9 @@
         "cache_read": 7.5
       },
       "official_cny": {
-        "input": 14.2,
-        "output": 71,
-        "cache_read": 0.71
+        "input": 13.3218,
+        "output": 66.609,
+        "cache_read": 0.6661
       },
       "official_usd": {
         "input": 2,
@@ -14700,11 +14700,11 @@
         "cache_write": 2.5
       },
       "ratio": {
-        "input": 5.2817,
-        "output": 5.2817,
-        "blend": 5.2817
+        "input": 5.6299,
+        "output": 5.6299,
+        "blend": 5.6299
       },
-      "discount": -4.2817,
+      "discount": -4.6299,
       "blend_effective": 165,
       "usd": {
         "effective": {
