@@ -132,7 +132,7 @@ function note(c, snapshot) {
     case 'scaled':
       return `对得上官方价的 ${c.matched} 个模型里，${support} 个都是官方 × ${fmt(c.dominant)}，属于整站统一加价或统一折扣，不是单位问题，价格按 × ${fmt(c.dominant)} 计可以直接比。${tail}${oddText}${legacyText}`;
     case 'flat':
-      return `这站不按模型定价：${c.core} 个模型在 ${grText} 时输入价都正好是 $${fmt(c.flatPrice.input)}/M。倍数看着从 ${fmt(c.dominant)} 到几十倍很大，其实是官方各型号价不同、它只收一个价。只能记「统一单价 $${fmt(c.flatPrice.input)}/M」，不能逐模型对比。${oddText}${legacyText}`;
+      return `这站不按模型定价：${c.core} 个模型在 ${grText} 时输入价都正好是 $${fmt(c.flatPrice.input)}/M。倍数看着从 ${fmt(c.dominant)} 到几十倍很大，其实是官方各型号价不同、它只收一个价。最终只能记「统一单价 $${fmt(c.flatPrice.input)}/M 输入」，不能逐模型对比。实际扣费还要乘它自己的分组倍率${groups ? `（该站 ${groups} 个组，从 ${fmt(Math.min(...Object.values(snapshot.group_ratios || {})))} 到 ${fmt(Math.max(...Object.values(snapshot.group_ratios || {})))}）` : ''}，所以真价 = ${fmt(c.flatPrice.input)} × 分组倍率。${legacyText}`;
     case 'mixed':
       return `站内倍率吵成一团：${c.matched} 个对得上的模型里没有多数派（最集中的只占 ${Math.round((c.share || 0) * 100)}%），从 ${fmt(c.dominant)} 倍散到 ${fmt(Math.max(...(c.odd || []).map((o) => o.mult), c.dominant))} 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。${legacyText}`;
     default:
