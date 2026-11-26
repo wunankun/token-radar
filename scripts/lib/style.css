@@ -71,8 +71,9 @@ h1 .dot { color: var(--accent); }
   position: sticky; top: 0; z-index: 20;
   display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
   padding: 14px 0 12px; margin-top: 18px;
-  background: linear-gradient(var(--bg) 72%, rgba(251, 251, 249, 0));
+  background: var(--bg);
 }
+
 .controls input[type="search"], .controls select {
   appearance: none; background: var(--panel); color: var(--ink);
   border: 1px solid var(--line); border-radius: 9px; padding: 8px 11px; font-size: 13.5px;
