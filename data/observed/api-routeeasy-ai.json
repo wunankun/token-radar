@@ -1,9 +1,9 @@
 {
   "station_id": "api-routeeasy-ai",
   "endpoint": "https://api.routeeasy.ai/api/pricing",
-  "fetched_at": "2026-11-26T15:26:58.046Z",
+  "fetched_at": "2026-11-26T16:17:08.208Z",
   "http_status": 200,
-  "latency_ms": 1163,
+  "latency_ms": 1278,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -592,6 +592,6 @@
     "flat_price": null,
     "confidence": "low",
     "note": "站内倍率吵成一团：4 个对得上的模型里没有多数派（最集中的只占 33%），从 1 倍散到 37.5 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。 另：旧代数命名 claude-sonnet-4-5 已单列，不参与判定。",
-    "computed_at": "2026-11-26T15:27:28.511Z"
+    "computed_at": "2026-11-26T16:17:31.306Z"
   }
 }

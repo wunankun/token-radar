@@ -1,9 +1,9 @@
 {
   "station_id": "vm2-pro",
   "endpoint": "https://vm2.pro/api/pricing",
-  "fetched_at": "2026-11-26T15:27:11.971Z",
+  "fetched_at": "2026-11-26T16:17:20.680Z",
   "http_status": 200,
-  "latency_ms": 2795,
+  "latency_ms": 1643,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -26,23 +26,6 @@
     "duplicate": 0
   },
   "models": {
-    "claude-sonnet-5-5": {
-      "input": 75,
-      "output": 75,
-      "cache_read": null,
-      "raw": {
-        "model_name": "claude-sonnet-5-5",
-        "model_ratio": 37.5,
-        "completion_ratio": 1,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "enable_groups": [
-          "正价claude"
-        ],
-        "billing_mode": "tiered_expr",
-        "billing_expr": "tier(\"standard\", p * 2 + cr * 0.2 + cc * 2.5 + cc1h * 4 + c * 10)"
-      }
-    },
     "deepseek-v4-pro": {
       "input": 75,
       "output": 75,
@@ -58,6 +41,23 @@
         ],
         "billing_mode": "tiered_expr",
         "billing_expr": "tier(\"standard\", p * 12 + cr * 1 + c * 24)"
+      }
+    },
+    "claude-sonnet-5-5": {
+      "input": 75,
+      "output": 75,
+      "cache_read": null,
+      "raw": {
+        "model_name": "claude-sonnet-5-5",
+        "model_ratio": 37.5,
+        "completion_ratio": 1,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "enable_groups": [
+          "正价claude"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "tier(\"standard\", p * 2 + cr * 0.2 + cc * 2.5 + cc1h * 4 + c * 10)"
       }
     },
     "claude-opus-5-5": {
@@ -80,18 +80,83 @@
   },
   "unmatched": [
     {
+      "model_name": "hy4-preview",
+      "model_ratio": 0.4032,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "kimi-k2.8-preview",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "glm-5.2",
+      "model_ratio": 2.88,
+      "completion_ratio": 3.5
+    },
+    {
+      "model_name": "mimo-v2.6-pro",
+      "model_ratio": 1.1088,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "hy-role",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "kimi-k2.7-code-highspeed",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "minimax-m3",
+      "model_ratio": 0.288,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "hy-mt2-lite",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
       "model_name": "claude-haiku-5-5",
       "model_ratio": 37.5,
       "completion_ratio": 1
     },
     {
-      "model_name": "gpt-5.6-sol",
-      "model_ratio": 2.5,
+      "model_name": "gpt-5.6-luna",
+      "model_ratio": 0.5,
       "completion_ratio": 6
     },
     {
-      "model_name": "gpt-5.6-luna",
-      "model_ratio": 0.5,
+      "model_name": "gpt-5.6-terra",
+      "model_ratio": 1.25,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "kimi-k3.1-pro-highspeed",
+      "model_ratio": 10.92,
+      "completion_ratio": 5.23
+    },
+    {
+      "model_name": "step-5-preview",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "hy3",
+      "model_ratio": 0.048,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "kimi-k3",
+      "model_ratio": 7.2,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.6-sol",
+      "model_ratio": 2.5,
       "completion_ratio": 6
     },
     {
@@ -100,49 +165,9 @@
       "completion_ratio": 2
     },
     {
-      "model_name": "minimax-m3",
-      "model_ratio": 0.288,
+      "model_name": "minimax-m2.7",
+      "model_ratio": 0.144,
       "completion_ratio": 4
-    },
-    {
-      "model_name": "hunyuan-role-latest",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gpt-5.6-terra",
-      "model_ratio": 1.25,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "glm-5.2",
-      "model_ratio": 2.88,
-      "completion_ratio": 3.5
-    },
-    {
-      "model_name": "glm-5v-turbo",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gpt-6-luna",
-      "model_ratio": 37.5,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "kimi-k2.8-preview",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "mimo-v2.6-flash",
-      "model_ratio": 0.3696,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "step-5-preview",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
     },
     {
       "model_name": "claude-fable-5-2",
@@ -150,7 +175,32 @@
       "completion_ratio": 1
     },
     {
-      "model_name": "deepseek/deepseek-v4-flash-vision-exp",
+      "model_name": "deepseek-v4-flash-202605",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "kimi-k2.7-code",
+      "model_ratio": 0.342,
+      "completion_ratio": 4.210526
+    },
+    {
+      "model_name": "kimi-k2.6",
+      "model_ratio": 0.342,
+      "completion_ratio": 4.210526
+    },
+    {
+      "model_name": "glm-5v-turbo",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "hunyuan-role-latest",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "deepseek-v4-pro-202606",
       "model_ratio": 37.5,
       "completion_ratio": 1
     },
@@ -165,8 +215,8 @@
       "completion_ratio": 2
     },
     {
-      "model_name": "gpt-6.1-terra",
-      "model_ratio": 37.5,
+      "model_name": "mimo-v2.6-flash",
+      "model_ratio": 0.3696,
       "completion_ratio": 2
     },
     {
@@ -175,12 +225,12 @@
       "completion_ratio": 1
     },
     {
-      "model_name": "deepseek/deepseek-flash",
+      "model_name": "gpt-6.1-terra",
       "model_ratio": 37.5,
-      "completion_ratio": 1
+      "completion_ratio": 2
     },
     {
-      "model_name": "kimi-k2.7-code-highspeed",
+      "model_name": "hy4",
       "model_ratio": 37.5,
       "completion_ratio": 1
     },
@@ -190,74 +240,24 @@
       "completion_ratio": 1
     },
     {
-      "model_name": "kimi-k3.1-pro-highspeed",
-      "model_ratio": 10.92,
-      "completion_ratio": 5.23
-    },
-    {
-      "model_name": "kimi-k3",
-      "model_ratio": 7.2,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "hy4",
+      "model_name": "deepseek/deepseek-flash",
       "model_ratio": 37.5,
       "completion_ratio": 1
     },
     {
-      "model_name": "hy4-preview",
-      "model_ratio": 0.4032,
-      "completion_ratio": 3
+      "model_name": "deepseek/deepseek-v4-flash-vision-exp",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
     },
     {
-      "model_name": "hy3",
-      "model_ratio": 0.048,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "kimi-k2.7-code",
-      "model_ratio": 0.342,
-      "completion_ratio": 4.210526
-    },
-    {
-      "model_name": "mimo-v2.6-pro",
-      "model_ratio": 1.1088,
+      "model_name": "gpt-6-luna",
+      "model_ratio": 37.5,
       "completion_ratio": 2
-    },
-    {
-      "model_name": "hy-mt2-lite",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "deepseek-v4-flash-202605",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "deepseek-v4-pro-202606",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
     },
     {
       "model_name": "gpt-6-sol",
       "model_ratio": 37.5,
       "completion_ratio": 2
-    },
-    {
-      "model_name": "kimi-k2.6",
-      "model_ratio": 0.342,
-      "completion_ratio": 4.210526
-    },
-    {
-      "model_name": "minimax-m2.7",
-      "model_ratio": 0.144,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "hy-role",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
     }
   ],
   "derivation": {
@@ -276,16 +276,6 @@
     ],
     "models": [
       {
-        "id": "claude-sonnet-5-5",
-        "name": "claude-sonnet-5-5",
-        "input": 75,
-        "output": 75,
-        "multiple": 37.5,
-        "shape_ok": false,
-        "verdict": "shape",
-        "why": "输出/输入比 1，官方是 5，不是同一计价形状"
-      },
-      {
         "id": "deepseek-v4-pro",
         "name": "deepseek-v4-pro",
         "input": 75,
@@ -294,6 +284,16 @@
         "shape_ok": false,
         "verdict": "shape",
         "why": "输出/输入比 1，官方是 3，不是同一计价形状"
+      },
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-5-5",
+        "input": 75,
+        "output": 75,
+        "multiple": 37.5,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 1，官方是 5，不是同一计价形状"
       },
       {
         "id": "claude-opus-5-5",
@@ -310,14 +310,14 @@
     "rows_total": 3,
     "excluded_models": [
       {
-        "id": "claude-sonnet-5-5",
-        "name": "claude-sonnet-5-5",
-        "multiple": 37.5
-      },
-      {
         "id": "deepseek-v4-pro",
         "name": "deepseek-v4-pro",
         "multiple": 56.818
+      },
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-5-5",
+        "multiple": 37.5
       }
     ],
     "flat_price": {
@@ -326,6 +326,6 @@
     },
     "confidence": "medium",
     "note": "这站不按模型定价：3 个模型在 group_ratio=1（手填） 时输入价都正好是 $75/M。倍数看着从 18.75 到几十倍很大，其实是官方各型号价不同、它只收一个价。最终只能记「统一单价 $75/M 输入」，不能逐模型对比。实际扣费还要乘它自己的分组倍率（该站 2 个组，从 0.12 到 1.2），所以真价 = 75 × 分组倍率。",
-    "computed_at": "2026-11-26T15:27:28.532Z"
+    "computed_at": "2026-11-26T16:17:31.322Z"
   }
 }

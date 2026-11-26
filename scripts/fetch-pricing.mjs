@@ -37,6 +37,8 @@ const DRY = !WRITE;
 const SOURCES_FILE = join(DATA, 'sources.json');
 const OBSERVED = join(DATA, 'observed');
 const HISTORY = join(DATA, 'price-history');
+// 计价管线版本：算法（选档/折算）一变就加 1，weekly 报表只对比同一版本的记录，避免把「改了算法」误报成「站点调价」。
+const PRICING_VERSION = 2;
 
 const { models, providers } = loadAll();
 
@@ -253,7 +255,7 @@ async function handleOne(src, preset = null) {
       writeJson(join(OBSERVED, `${src.id}.json`), snapshot);
       appendFileSync(
         join(HISTORY, `${src.id}.jsonl`),
-        JSON.stringify({ t: snapshot.fetched_at, http: snapshot.http_status, models: flatten(snapshot.models) }) + '\n',
+        JSON.stringify({ t: snapshot.fetched_at, v: PRICING_VERSION, http: snapshot.http_status, models: flatten(snapshot.models) }) + '\n',
         'utf8'
       );
     }

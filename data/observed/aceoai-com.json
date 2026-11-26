@@ -1,9 +1,9 @@
 {
   "station_id": "aceoai-com",
   "endpoint": "https://aceoai.com/api/pricing",
-  "fetched_at": "2026-11-26T15:27:14.802Z",
+  "fetched_at": "2026-11-26T16:17:20.796Z",
   "http_status": 200,
-  "latency_ms": 1862,
+  "latency_ms": 855,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -65,24 +65,24 @@
         ]
       }
     },
-    "gpt-6.2-sol": {
+    "claude-sonnet-5-5": {
       "input": 2,
       "output": 10,
       "cache_read": 0.1,
       "raw": {
-        "model_name": "gpt-6.2-sol",
+        "model_name": "claude-sonnet-5-5",
         "model_ratio": 1,
         "completion_ratio": 5,
         "group_ratio": 1,
         "quota_type": 0,
         "cache_ratio": 0.05,
         "enable_groups": [
-          "gpt-vip专用",
-          "gpt专用",
-          "gpt福利"
+          "claude专用",
+          "claude-svip专用",
+          "claude-vip专用"
         ],
         "billing_mode": "tiered_expr",
-        "billing_expr": "((len <= 272000)) ? (tier(\"base\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 2.5 + cc12h * 5)) : (tier(\"long_context\", p * 4 + c * 15 + cr * 0.2 + cc * 5 + cc1h * 5 + cc12h * 10"
+        "billing_expr": "tier(\"base\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 4)"
       }
     },
     "deepseek-v4-pro": {
@@ -121,6 +121,26 @@
         "billing_expr": "((len <= 272000)) ? (tier(\"base\", p * 8 + c * 40 + cr * 0.4 + cc * 10 + cc12h * 20 + cc1h * 10)) : (tier(\"long_context\", p * 16 + c * 60 + cr * 0.8 + cc * 20 + cc1h * 20 + cc12h * "
       }
     },
+    "gpt-6.2-sol": {
+      "input": 2,
+      "output": 10,
+      "cache_read": 0.1,
+      "raw": {
+        "model_name": "gpt-6.2-sol",
+        "model_ratio": 1,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.05,
+        "enable_groups": [
+          "gpt福利",
+          "gpt-vip专用",
+          "gpt专用"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "((len <= 272000)) ? (tier(\"base\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 2.5 + cc12h * 5)) : (tier(\"long_context\", p * 4 + c * 15 + cr * 0.2 + cc * 5 + cc1h * 5 + cc12h * 10"
+      }
+    },
     "claude-opus-5-5": {
       "input": 4,
       "output": 20,
@@ -140,32 +160,17 @@
         "billing_mode": "tiered_expr",
         "billing_expr": "tier(\"base\", p * 4 + c * 20 + cr * 0.2 + cc * 5 + cc1h * 8)"
       }
-    },
-    "claude-sonnet-5-5": {
-      "input": 2,
-      "output": 10,
-      "cache_read": 0.1,
-      "raw": {
-        "model_name": "claude-sonnet-5-5",
-        "model_ratio": 1,
-        "completion_ratio": 5,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "cache_ratio": 0.05,
-        "enable_groups": [
-          "claude-svip专用",
-          "claude-vip专用",
-          "claude专用"
-        ],
-        "billing_mode": "tiered_expr",
-        "billing_expr": "tier(\"base\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 4)"
-      }
     }
   },
   "unmatched": [
     {
-      "model_name": "gpt-6-astra",
-      "model_ratio": 5,
+      "model_name": "gpt-5.6-sol",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-6-sol",
+      "model_ratio": 1,
       "completion_ratio": 5
     },
     {
@@ -174,14 +179,9 @@
       "completion_ratio": 5
     },
     {
-      "model_name": "gpt-6-sol",
-      "model_ratio": 1,
+      "model_name": "gpt-6-astra",
+      "model_ratio": 5,
       "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-5.6-sol",
-      "model_ratio": 2.5,
-      "completion_ratio": 6
     }
   ],
   "derivation": {
@@ -196,10 +196,10 @@
     "dominant_multiple": 1,
     "agreement": 0.667,
     "comparable_models": [
-      "gpt-6.2-sol",
+      "claude-sonnet-5-5",
       "gpt-6.2-astra",
-      "claude-opus-5-5",
-      "claude-sonnet-5-5"
+      "gpt-6.2-sol",
+      "claude-opus-5-5"
     ],
     "models": [
       {
@@ -213,8 +213,8 @@
         "why": "输出/输入比与官方一致，这一行能单独算"
       },
       {
-        "id": "gpt-6.2-sol",
-        "name": "gpt-6.2-sol",
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-5-5",
         "input": 2,
         "output": 10,
         "multiple": 1,
@@ -243,20 +243,20 @@
         "why": "输出/输入比与官方一致，这一行能单独算"
       },
       {
-        "id": "claude-opus-5-5",
-        "name": "claude-opus-5-5",
-        "input": 4,
-        "output": 20,
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "input": 2,
+        "output": 10,
         "multiple": 1,
         "shape_ok": true,
         "verdict": "ok",
         "why": "输出/输入比与官方一致，这一行能单独算"
       },
       {
-        "id": "claude-sonnet-5-5",
-        "name": "claude-sonnet-5-5",
-        "input": 2,
-        "output": 10,
+        "id": "claude-opus-5-5",
+        "name": "claude-opus-5-5",
+        "input": 4,
+        "output": 20,
         "multiple": 1,
         "shape_ok": true,
         "verdict": "ok",
@@ -280,6 +280,6 @@
     "flat_price": null,
     "confidence": "medium",
     "note": "对得上官方价的 6 个模型里，4 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 13 个分组倍率，真正的折扣在那里。 对不上的 2 个：deepseek-flash×6.67、deepseek-v4-pro×6.82，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。",
-    "computed_at": "2026-11-26T15:27:28.503Z"
+    "computed_at": "2026-11-26T16:17:31.299Z"
   }
 }

@@ -1,9 +1,9 @@
 {
   "station_id": "cctq-ai",
   "endpoint": "https://cctq.ai/api/pricing",
-  "fetched_at": "2026-11-26T15:27:10.032Z",
+  "fetched_at": "2026-11-26T16:17:19.942Z",
   "http_status": 200,
-  "latency_ms": 713,
+  "latency_ms": 825,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -43,6 +43,24 @@
     "duplicate": 0
   },
   "models": {
+    "gpt-6.2-astra": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "enable_groups": [
+          "Codex-Plus",
+          "CodeX专用"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "len < 272000 ? tier(\"base\", p * 8 + c * 40 + cr * 0.4 + cc * 10) : tier(\"long\", p * 16 + c * 60 + cr * 0.8 + cc * 20)"
+      }
+    },
     "gpt-6.2-sol": {
       "input": 75,
       "output": 150,
@@ -78,41 +96,6 @@
         ]
       }
     },
-    "deepseek-flash": {
-      "input": 75,
-      "output": 75,
-      "cache_read": null,
-      "raw": {
-        "model_name": "deepseek-v4.1-flash",
-        "model_ratio": 37.5,
-        "completion_ratio": 1,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "enable_groups": [
-          "CN-Model"
-        ],
-        "billing_mode": "tiered_expr",
-        "billing_expr": "(tier(\"闲时价格\", p * 1 + c * 4 + cr * 0.02)) * (weekday(\"Asia/Shanghai\") >= 1 && weekday(\"Asia/Shanghai\") < 6 && hour(\"Asia/Shanghai\") >= 9 && hour(\"Asia/Shanghai\") < 12 ? 2 : 1) * (w"
-      }
-    },
-    "gpt-6.2-astra": {
-      "input": 75,
-      "output": 150,
-      "cache_read": null,
-      "raw": {
-        "model_name": "gpt-6.2-astra",
-        "model_ratio": 37.5,
-        "completion_ratio": 2,
-        "group_ratio": 1,
-        "quota_type": 0,
-        "enable_groups": [
-          "CodeX专用",
-          "Codex-Plus"
-        ],
-        "billing_mode": "tiered_expr",
-        "billing_expr": "len < 272000 ? tier(\"base\", p * 8 + c * 40 + cr * 0.4 + cc * 10) : tier(\"long\", p * 16 + c * 60 + cr * 0.8 + cc * 20)"
-      }
-    },
     "claude-sonnet-5-5": {
       "input": 2,
       "output": 10,
@@ -129,32 +112,29 @@
           "max-pool"
         ]
       }
+    },
+    "deepseek-flash": {
+      "input": 75,
+      "output": 75,
+      "cache_read": null,
+      "raw": {
+        "model_name": "deepseek-v4.1-flash",
+        "model_ratio": 37.5,
+        "completion_ratio": 1,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "enable_groups": [
+          "CN-Model"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "(tier(\"闲时价格\", p * 1 + c * 4 + cr * 0.02)) * (weekday(\"Asia/Shanghai\") >= 1 && weekday(\"Asia/Shanghai\") < 6 && hour(\"Asia/Shanghai\") >= 9 && hour(\"Asia/Shanghai\") < 12 ? 2 : 1) * (w"
+      }
     }
   },
   "unmatched": [
     {
-      "model_name": "claude-fable-5",
-      "model_ratio": 5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "glm-5.3",
-      "model_ratio": 4,
-      "completion_ratio": 3.5
-    },
-    {
-      "model_name": "gpt-5.6-luna",
-      "model_ratio": 0.1,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "gpt-5.6-sol",
+      "model_name": "claude-opus-4-5-20251101",
       "model_ratio": 2.5,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "gpt-6-luna",
-      "model_ratio": 0.05,
       "completion_ratio": 5
     },
     {
@@ -163,34 +143,9 @@
       "completion_ratio": 5
     },
     {
-      "model_name": "kimi-k3",
-      "model_ratio": 10,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-6.1-sol",
-      "model_ratio": 1,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-haiku-5-5",
-      "model_ratio": 0.05,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-5.6-terra",
-      "model_ratio": 1,
+      "model_name": "gpt-5.6-sol",
+      "model_ratio": 2.5,
       "completion_ratio": 6
-    },
-    {
-      "model_name": "claude-fable-5-1",
-      "model_ratio": 5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-fable-5-2",
-      "model_ratio": 4,
-      "completion_ratio": 5
     },
     {
       "model_name": "claude-opus-4-7",
@@ -198,7 +153,37 @@
       "completion_ratio": 5
     },
     {
-      "model_name": "claude-opus-4-8",
+      "model_name": "claude-sonnet-4-5-20250929",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.6-luna",
+      "model_ratio": 0.1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-fable-5-2",
+      "model_ratio": 4,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-6-astra",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-6",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "glm-5.3",
+      "model_ratio": 4,
+      "completion_ratio": 3.5
+    },
+    {
+      "model_name": "claude-opus-5",
       "model_ratio": 2.5,
       "completion_ratio": 5
     },
@@ -208,8 +193,18 @@
       "completion_ratio": 6
     },
     {
-      "model_name": "claude-opus-4-5-20251101",
-      "model_ratio": 2.5,
+      "model_name": "gpt-5.6-terra",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-6-luna",
+      "model_ratio": 0.05,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-fable-5",
+      "model_ratio": 5,
       "completion_ratio": 5
     },
     {
@@ -223,6 +218,11 @@
       "completion_ratio": 5
     },
     {
+      "model_name": "claude-opus-4-8",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
       "model_name": "gpt-6-sol",
       "model_ratio": 1,
       "completion_ratio": 5
@@ -233,23 +233,23 @@
       "completion_ratio": 2
     },
     {
-      "model_name": "claude-opus-4-6",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-opus-5",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-sonnet-4-5-20250929",
-      "model_ratio": 1.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-6-astra",
+      "model_name": "claude-fable-5-1",
       "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-haiku-5-5",
+      "model_ratio": 0.05,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "kimi-k3",
+      "model_ratio": 10,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-6.1-sol",
+      "model_ratio": 1,
       "completion_ratio": 5
     }
   ],
@@ -269,6 +269,16 @@
       "claude-sonnet-5-5"
     ],
     "models": [
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "input": 75,
+        "output": 150,
+        "multiple": 9.375,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
+      },
       {
         "id": "gpt-6.2-sol",
         "name": "gpt-6.2-sol",
@@ -290,26 +300,6 @@
         "why": "输出/输入比与官方一致，这一行能单独算"
       },
       {
-        "id": "deepseek-flash",
-        "name": "deepseek-v4.1-flash",
-        "input": 75,
-        "output": 75,
-        "multiple": 250,
-        "shape_ok": false,
-        "verdict": "shape",
-        "why": "输出/输入比 1，官方是 4，不是同一计价形状"
-      },
-      {
-        "id": "gpt-6.2-astra",
-        "name": "gpt-6.2-astra",
-        "input": 75,
-        "output": 150,
-        "multiple": 9.375,
-        "shape_ok": false,
-        "verdict": "shape",
-        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
-      },
-      {
         "id": "claude-sonnet-5-5",
         "name": "claude-sonnet-5-5",
         "input": 2,
@@ -318,11 +308,26 @@
         "shape_ok": true,
         "verdict": "ok",
         "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4.1-flash",
+        "input": 75,
+        "output": 75,
+        "multiple": 250,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 1，官方是 4，不是同一计价形状"
       }
     ],
     "rows_ok": 2,
     "rows_total": 5,
     "excluded_models": [
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "multiple": 9.375
+      },
       {
         "id": "gpt-6.2-sol",
         "name": "gpt-6.2-sol",
@@ -332,16 +337,11 @@
         "id": "deepseek-flash",
         "name": "deepseek-v4.1-flash",
         "multiple": 250
-      },
-      {
-        "id": "gpt-6.2-astra",
-        "name": "gpt-6.2-astra",
-        "multiple": 9.375
       }
     ],
     "flat_price": null,
     "confidence": "low",
     "note": "站内倍率吵成一团：5 个对得上的模型里没有多数派（最集中的只占 40%），从 1 倍散到 250 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。",
-    "computed_at": "2026-11-26T15:27:28.517Z"
+    "computed_at": "2026-11-26T16:17:31.311Z"
   }
 }

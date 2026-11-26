@@ -2,9 +2,9 @@
   "station_id": "openrouter",
   "kind": "aggregator",
   "endpoint": "https://openrouter.ai/api/v1/models",
-  "fetched_at": "2026-11-26T13:05:20.431Z",
+  "fetched_at": "2026-11-26T16:17:31.247Z",
   "http_status": 200,
-  "latency_ms": 1169,
+  "latency_ms": 1560,
   "assumption": "usd_per_million",
   "models": {
     "gpt-6.2-astra": {
@@ -45,8 +45,8 @@
     "deepseek-v4-pro": {
       "openrouter_id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
-      "input": 0.8671,
-      "output": 1.5228,
+      "input": 0.8113,
+      "output": 1.5593,
       "cache_read": 0.2
     }
   }

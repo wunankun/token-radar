@@ -1,3 +1,4 @@
 {"t":"2026-11-26T13:03:18.177Z","http":200,"models":{"claude-opus-5-5":[4,20],"gpt-6.2-sol":[2,10],"claude-sonnet-5-5":[3,15],"gpt-6.2-astra":[8,40],"deepseek-flash":[1,4]}}
 {"t":"2026-11-26T13:04:05.823Z","http":200,"models":{"claude-opus-5-5":[4,20],"gpt-6.2-sol":[2,10],"deepseek-flash":[1,4],"gpt-6.2-astra":[8,40],"claude-sonnet-5-5":[3,15]}}
 {"t":"2026-11-26T15:26:55.545Z","http":200,"models":{"gpt-6.2-sol":[2,10],"gpt-6.2-astra":[8,40],"claude-opus-5-5":[4,20],"claude-sonnet-5-5":[3,15],"deepseek-flash":[1,4]}}
+{"t":"2026-11-26T16:17:22.085Z","v":2,"http":200,"models":{"gpt-6.2-astra":[8,40],"claude-sonnet-5-5":[2,10],"deepseek-flash":[1,4],"gpt-6.2-sol":[2,10],"claude-opus-5-5":[4,20]}}

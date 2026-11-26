@@ -6,10 +6,10 @@
     "locale": "zh-CN"
   },
   "fx": {
-    "usd_cny": 6.6609,
-    "as_of": "2026-11-26",
+    "usd_cny": 6.6711,
+    "as_of": "2026-11-25",
     "source": "fawazahmed0/currency-api",
-    "fetched_at": "2026-11-26T14:35:00.133Z"
+    "fetched_at": "2026-11-26T16:17:06.803Z"
   },
   "blend": {
     "input": 0.7,

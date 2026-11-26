@@ -322,6 +322,16 @@ node scripts/add-station.mjs --id my-station --name "某站" --kind official-rel
 
 ## 日常维护
 
+> 完整流程见 **[MAINTAIN.md](MAINTAIN.md)**（口径约定、常见故障、每周四步）。
+
+**每周只要一条命令**：
+
+```bash
+node scripts/weekly.mjs --md
+```
+
+它依次跑 抓汇率 → 抓 68 家中转站 → 抓 OpenRouter 对照 → 逐行判定 → 构建 → 审计，最后对比 `data/price-history/` 最近两轮，输出「涨 N 个 / 跌 N 个 / 哪几家没抓到 / 跳变异常」的周报（`--md` 额外存一份 `data/observed/WEEKLY.md`）。抓取失败不会中止，判定或构建失败才会。
+
 这个项目的维护成本刻意压在三件事上：**改一个数、加一个文件、每周跑一次审计**。
 
 | 什么时候 | 做什么 | 花多久 |
