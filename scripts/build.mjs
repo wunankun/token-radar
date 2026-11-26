@@ -103,7 +103,7 @@ for (const p of [...providers, ...scanned]) {
         fx,
         blend: config.blend,
         health: loadHealth(p.id),
-        priceSource: 'official',
+        priceSource: (() => { const oi = officialIndex.get(modelId); return oi && oi.source === 'openrouter' ? 'reference' : 'official'; })(),
       });
       if (res.error) err(res.error);
       else stations.push(res.row);
@@ -249,7 +249,10 @@ for (const p of [...providers, ...scanned]) {
 const cmp = (a, b) => {
   const ra = a.ratio?.blend ?? Number.POSITIVE_INFINITY;
   const rb = b.ratio?.blend ?? Number.POSITIVE_INFINITY;
-  if (ra !== rb) return ra - rb;
+  if (Math.abs(ra - rb) > 0.0005) return ra - rb;
+  const ha = a.model?.heat ?? a.model?.popularity ?? 0;
+  const hb = b.model?.heat ?? b.model?.popularity ?? 0;
+  if (ha !== hb) return hb - ha;
   return (a.effective?.output ?? 1e9) - (b.effective?.output ?? 1e9);
 };
 stations.sort(cmp);

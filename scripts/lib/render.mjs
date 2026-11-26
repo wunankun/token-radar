@@ -88,6 +88,7 @@ ${css}
     <select id="f-kind" aria-label="按类型筛选"></select>
     <select id="f-sort" aria-label="排序方式">
       <option value="discount">按优惠力度排序</option>
+      <option value="heat">按模型热度排序</option>
       <option value="input">按输入价排序</option>
       <option value="output">按输出价排序</option>
       <option value="cache_read">按缓存价排序</option>
@@ -111,7 +112,7 @@ ${css}
           <th class="num hide-md"><span class="th-u">缓存 $/百万</span><br><span class="th-sub">现价 / 官方</span></th>
           <th class="num">优惠力度</th>
           <th class="num">充值</th>
-          <th class="calc-th">计算方式<sup title="以输入价为例；输出价同一套系数">以输入为例</sup></th>
+          <th class="calc-th">计算方式</th>
           <th class="hide-md">价格来源</th>
         </tr>
       </thead>

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T16:59:13.929Z",
+    "generated_at": "2026-11-26T17:12:33.143Z",
     "fx": {
       "usd_cny": 6.6711,
       "as_of": "2026-11-25",
@@ -11,10 +11,10 @@
       "output": 0.3
     },
     "counts": {
-      "rows": 17,
-      "stations": 6,
-      "models": 6,
-      "official_rows": 6,
+      "rows": 46,
+      "stations": 9,
+      "models": 35,
+      "official_rows": 35,
       "demo_rows": 11,
       "with_affiliate": 11,
       "auto_rows": 0,
@@ -70,6 +70,33 @@
         "heat_source": "manual"
       },
       {
+        "id": "kimi-k3-1-pro",
+        "label": "Kimi K3.1 Pro",
+        "vendor": "Moonshot",
+        "popularity": 82,
+        "coverage": 0,
+        "heat": 82,
+        "heat_source": "manual"
+      },
+      {
+        "id": "kimi-k3",
+        "label": "Kimi K3",
+        "vendor": "Moonshot",
+        "popularity": 80,
+        "coverage": 0,
+        "heat": 80,
+        "heat_source": "manual"
+      },
+      {
+        "id": "qwen4-max",
+        "label": "Qwen4 Max",
+        "vendor": "Alibaba",
+        "popularity": 78,
+        "coverage": 0,
+        "heat": 78,
+        "heat_source": "manual"
+      },
+      {
         "id": "claude-opus-5-5",
         "label": "Claude Opus 5.5",
         "vendor": "Anthropic",
@@ -79,12 +106,246 @@
         "heat_source": "manual"
       },
       {
+        "id": "glm-5-3",
+        "label": "GLM-5.3",
+        "vendor": "Zhipu",
+        "popularity": 76,
+        "coverage": 0,
+        "heat": 76,
+        "heat_source": "manual"
+      },
+      {
+        "id": "gpt-6-sol",
+        "label": "GPT-6 Sol",
+        "vendor": "OpenAI",
+        "popularity": 74,
+        "coverage": 0,
+        "heat": 74,
+        "heat_source": "manual"
+      },
+      {
+        "id": "claude-sonnet-5",
+        "label": "Claude Sonnet 5",
+        "vendor": "Anthropic",
+        "popularity": 72,
+        "coverage": 0,
+        "heat": 72,
+        "heat_source": "manual"
+      },
+      {
+        "id": "gpt-6.1-sol",
+        "label": "GPT-6.1 Sol",
+        "vendor": "OpenAI",
+        "popularity": 70,
+        "coverage": 0,
+        "heat": 70,
+        "heat_source": "manual"
+      },
+      {
+        "id": "qwen3-8-max",
+        "label": "Qwen3.8 Max",
+        "vendor": "Alibaba",
+        "popularity": 70,
+        "coverage": 0,
+        "heat": 70,
+        "heat_source": "manual"
+      },
+      {
+        "id": "claude-opus-5",
+        "label": "Claude Opus 5",
+        "vendor": "Anthropic",
+        "popularity": 68,
+        "coverage": 0,
+        "heat": 68,
+        "heat_source": "manual"
+      },
+      {
         "id": "gpt-6.2-astra",
         "label": "GPT-6.2 Astra",
         "vendor": "OpenAI",
         "popularity": 68,
         "coverage": 0,
         "heat": 68,
+        "heat_source": "manual"
+      },
+      {
+        "id": "gpt-6-astra",
+        "label": "GPT-6 Astra",
+        "vendor": "OpenAI",
+        "popularity": 66,
+        "coverage": 0,
+        "heat": 66,
+        "heat_source": "manual"
+      },
+      {
+        "id": "qwen3-8-flash",
+        "label": "Qwen3.8 Flash",
+        "vendor": "Alibaba",
+        "popularity": 66,
+        "coverage": 0,
+        "heat": 66,
+        "heat_source": "manual"
+      },
+      {
+        "id": "glm-5",
+        "label": "GLM-5",
+        "vendor": "Zhipu",
+        "popularity": 64,
+        "coverage": 0,
+        "heat": 64,
+        "heat_source": "manual"
+      },
+      {
+        "id": "gpt-5.6-sol",
+        "label": "GPT-5.6 Sol",
+        "vendor": "OpenAI",
+        "popularity": 64,
+        "coverage": 0,
+        "heat": 64,
+        "heat_source": "manual"
+      },
+      {
+        "id": "kimi-k2-7-code",
+        "label": "Kimi K2.7 Code",
+        "vendor": "Moonshot",
+        "popularity": 64,
+        "coverage": 0,
+        "heat": 64,
+        "heat_source": "manual"
+      },
+      {
+        "id": "glm-5-3-flash",
+        "label": "GLM-5.3 Flash",
+        "vendor": "Zhipu",
+        "popularity": 62,
+        "coverage": 0,
+        "heat": 62,
+        "heat_source": "manual"
+      },
+      {
+        "id": "gpt-6.1-terra",
+        "label": "GPT-6.1 Terra",
+        "vendor": "OpenAI",
+        "popularity": 62,
+        "coverage": 0,
+        "heat": 62,
+        "heat_source": "manual"
+      },
+      {
+        "id": "claude-haiku-5-5",
+        "label": "Claude Haiku 5.5",
+        "vendor": "Anthropic",
+        "popularity": 60,
+        "coverage": 0,
+        "heat": 60,
+        "heat_source": "manual"
+      },
+      {
+        "id": "gpt-6-luna",
+        "label": "GPT-6 Luna",
+        "vendor": "OpenAI",
+        "popularity": 60,
+        "coverage": 0,
+        "heat": 60,
+        "heat_source": "manual"
+      },
+      {
+        "id": "qwen3-7-plus",
+        "label": "Qwen3.7 Plus",
+        "vendor": "Alibaba",
+        "popularity": 60,
+        "coverage": 0,
+        "heat": 60,
+        "heat_source": "manual"
+      },
+      {
+        "id": "glm-5-2",
+        "label": "GLM-5.2",
+        "vendor": "Zhipu",
+        "popularity": 58,
+        "coverage": 0,
+        "heat": 58,
+        "heat_source": "manual"
+      },
+      {
+        "id": "gpt-5.6-terra",
+        "label": "GPT-5.6 Terra",
+        "vendor": "OpenAI",
+        "popularity": 58,
+        "coverage": 0,
+        "heat": 58,
+        "heat_source": "manual"
+      },
+      {
+        "id": "kimi-k2-6",
+        "label": "Kimi K2.6",
+        "vendor": "Moonshot",
+        "popularity": 58,
+        "coverage": 0,
+        "heat": 58,
+        "heat_source": "manual"
+      },
+      {
+        "id": "qwen3-coder-next",
+        "label": "Qwen3 Coder Next",
+        "vendor": "Alibaba",
+        "popularity": 57,
+        "coverage": 0,
+        "heat": 57,
+        "heat_source": "manual"
+      },
+      {
+        "id": "claude-opus-4-8",
+        "label": "Claude Opus 4.8",
+        "vendor": "Anthropic",
+        "popularity": 56,
+        "coverage": 0,
+        "heat": 56,
+        "heat_source": "manual"
+      },
+      {
+        "id": "kimi-k2-5",
+        "label": "Kimi K2.5",
+        "vendor": "Moonshot",
+        "popularity": 55,
+        "coverage": 0,
+        "heat": 55,
+        "heat_source": "manual"
+      },
+      {
+        "id": "claude-sonnet-4-6",
+        "label": "Claude Sonnet 4.6",
+        "vendor": "Anthropic",
+        "popularity": 54,
+        "coverage": 0,
+        "heat": 54,
+        "heat_source": "manual"
+      },
+      {
+        "id": "glm-4-7",
+        "label": "GLM-4.7",
+        "vendor": "Zhipu",
+        "popularity": 54,
+        "coverage": 0,
+        "heat": 54,
+        "heat_source": "manual"
+      },
+      {
+        "id": "claude-fable-5-2",
+        "label": "Claude Fable 5.2",
+        "vendor": "Anthropic",
+        "popularity": 52,
+        "coverage": 0,
+        "heat": 52,
+        "heat_source": "manual"
+      },
+      {
+        "id": "deepseek-v3-2",
+        "label": "DeepSeek V3.2",
+        "vendor": "DeepSeek",
+        "popularity": 50,
+        "coverage": 0,
+        "heat": 50,
         "heat_source": "manual"
       }
     ],
@@ -1197,6 +1458,498 @@
         "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
       },
       "model": {
+        "id": "deepseek-v3-2",
+        "label": "DeepSeek V3.2",
+        "vendor": "DeepSeek",
+        "context": 128000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 1.7345,
+        "output": 2.535,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 1.7345,
+        "output": 2.535,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 1.7345,
+        "output": 2.535,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.26,
+        "output": 0.38,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 1.9746,
+      "usd": {
+        "effective": {
+          "input": 0.26,
+          "output": 0.38,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.26,
+          "output": 0.38,
+          "cache_read": null
+        },
+        "blend": 0.296,
+        "discount": 0
+      },
+      "calc": "官方 $0.26/M × 汇率 6.6711 = ¥1.7345/M",
+      "calc_full": "官方 $0.26/M × 汇率 6.6711 = ¥1.7345/M",
+      "calc_basis": "官方 $0.26/M × 汇率 6.6711 = ¥1.7345/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
+    {
+      "station": {
+        "id": "alibaba",
+        "name": "阿里云百炼 · 通义千问",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://help.aliyun.com/zh/model-studio/models",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "qwen3-8-flash",
+        "label": "Qwen3.8 Flash",
+        "vendor": "Alibaba",
+        "context": 262144
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 1.0007,
+        "output": 3.1354,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 1.0007,
+        "output": 3.1354,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 1.0007,
+        "output": 3.1354,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.15,
+        "output": 0.47,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 1.6411,
+      "usd": {
+        "effective": {
+          "input": 0.15,
+          "output": 0.47,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.15,
+          "output": 0.47,
+          "cache_read": null
+        },
+        "blend": 0.246,
+        "discount": 0
+      },
+      "calc": "官方 $0.15/M × 汇率 6.6711 = ¥1.0007/M",
+      "calc_full": "官方 $0.15/M × 汇率 6.6711 = ¥1.0007/M",
+      "calc_basis": "官方 $0.15/M × 汇率 6.6711 = ¥1.0007/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
+        "id": "anthropic",
+        "name": "Anthropic 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://www.anthropic.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
+      },
+      "model": {
+        "id": "claude-haiku-5-5",
+        "label": "Claude Haiku 5.5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.6671,
+        "output": 3.3356,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 0.6671,
+        "output": 3.3356,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 0.6671,
+        "output": 3.3356,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 1.4676,
+      "usd": {
+        "effective": {
+          "input": 0.1,
+          "output": 0.5,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.1,
+          "output": 0.5,
+          "cache_read": null
+        },
+        "blend": 0.22,
+        "discount": 0
+      },
+      "calc": "官方 $0.1/M × 汇率 6.6711 = ¥0.6671/M",
+      "calc_full": "官方 $0.1/M × 汇率 6.6711 = ¥0.6671/M",
+      "calc_basis": "官方 $0.1/M × 汇率 6.6711 = ¥0.6671/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
+        "id": "openai",
+        "name": "OpenAI 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.openai.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "gpt-6-luna",
+        "label": "GPT-6 Luna",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.6671,
+        "output": 3.3356,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 0.6671,
+        "output": 3.3356,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 0.6671,
+        "output": 3.3356,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 1.4676,
+      "usd": {
+        "effective": {
+          "input": 0.1,
+          "output": 0.5,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.1,
+          "output": 0.5,
+          "cache_read": null
+        },
+        "blend": 0.22,
+        "discount": 0
+      },
+      "calc": "官方 $0.1/M × 汇率 6.6711 = ¥0.6671/M",
+      "calc_full": "官方 $0.1/M × 汇率 6.6711 = ¥0.6671/M",
+      "calc_basis": "官方 $0.1/M × 汇率 6.6711 = ¥0.6671/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "zhipu",
+        "name": "智谱 · GLM",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://bigmodel.cn/pricing",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "glm-5-3-flash",
+        "label": "GLM-5.3 Flash",
+        "vendor": "Zhipu",
+        "context": 200000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 1.0007,
+        "output": 3.3356,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 1.0007,
+        "output": 3.3356,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 1.0007,
+        "output": 3.3356,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.15,
+        "output": 0.5,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 1.7011,
+      "usd": {
+        "effective": {
+          "input": 0.15,
+          "output": 0.5,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.15,
+          "output": 0.5,
+          "cache_read": null
+        },
+        "blend": 0.255,
+        "discount": 0
+      },
+      "calc": "官方 $0.15/M × 汇率 6.6711 = ¥1.0007/M",
+      "calc_full": "官方 $0.15/M × 汇率 6.6711 = ¥1.0007/M",
+      "calc_basis": "官方 $0.15/M × 汇率 6.6711 = ¥1.0007/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://bigmodel.cn/pricing"
+    },
+    {
+      "station": {
+        "id": "alibaba",
+        "name": "阿里云百炼 · 通义千问",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://help.aliyun.com/zh/model-studio/models",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "qwen3-coder-next",
+        "label": "Qwen3 Coder Next",
+        "vendor": "Alibaba",
+        "context": 262144
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.8005,
+        "output": 5.3369,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 0.8005,
+        "output": 5.3369,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 0.8005,
+        "output": 5.3369,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.12,
+        "output": 0.8,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 2.1614,
+      "usd": {
+        "effective": {
+          "input": 0.12,
+          "output": 0.8,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.12,
+          "output": 0.8,
+          "cache_read": null
+        },
+        "blend": 0.324,
+        "discount": 0
+      },
+      "calc": "官方 $0.12/M × 汇率 6.6711 = ¥0.8005/M",
+      "calc_full": "官方 $0.12/M × 汇率 6.6711 = ¥0.8005/M",
+      "calc_basis": "官方 $0.12/M × 汇率 6.6711 = ¥0.8005/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
+        "id": "deepseek",
+        "name": "DeepSeek 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.deepseek.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
+      },
+      "model": {
         "id": "deepseek-flash",
         "label": "DeepSeek Flash",
         "vendor": "DeepSeek",
@@ -1260,6 +2013,662 @@
       "health": null,
       "note": null,
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
+    {
+      "station": {
+        "id": "alibaba",
+        "name": "阿里云百炼 · 通义千问",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://help.aliyun.com/zh/model-studio/models",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "qwen3-7-plus",
+        "label": "Qwen3.7 Plus",
+        "vendor": "Alibaba",
+        "context": 262144
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 2.1348,
+        "output": 8.539,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 2.1348,
+        "output": 8.539,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 2.1348,
+        "output": 8.539,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.32,
+        "output": 1.28,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 4.056,
+      "usd": {
+        "effective": {
+          "input": 0.32,
+          "output": 1.28,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.32,
+          "output": 1.28,
+          "cache_read": null
+        },
+        "blend": 0.608,
+        "discount": 0
+      },
+      "calc": "官方 $0.32/M × 汇率 6.6711 = ¥2.1348/M",
+      "calc_full": "官方 $0.32/M × 汇率 6.6711 = ¥2.1348/M",
+      "calc_basis": "官方 $0.32/M × 汇率 6.6711 = ¥2.1348/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
+        "id": "zhipu",
+        "name": "智谱 · GLM",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://bigmodel.cn/pricing",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "glm-5-3",
+        "label": "GLM-5.3",
+        "vendor": "Zhipu",
+        "context": 200000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.4663,
+        "output": 9.3395,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 0.4663,
+        "output": 9.3395,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 0.4663,
+        "output": 9.3395,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.0699,
+        "output": 1.4,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 3.1283,
+      "usd": {
+        "effective": {
+          "input": 0.0699,
+          "output": 1.4,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.0699,
+          "output": 1.4,
+          "cache_read": null
+        },
+        "blend": 0.4689,
+        "discount": 0
+      },
+      "calc": "官方 $0.0699/M × 汇率 6.6711 = ¥0.4663/M",
+      "calc_full": "官方 $0.0699/M × 汇率 6.6711 = ¥0.4663/M",
+      "calc_basis": "官方 $0.0699/M × 汇率 6.6711 = ¥0.4663/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://bigmodel.cn/pricing"
+    },
+    {
+      "station": {
+        "id": "zhipu",
+        "name": "智谱 · GLM",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://bigmodel.cn/pricing",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "glm-4-7",
+        "label": "GLM-4.7",
+        "vendor": "Zhipu",
+        "context": 200000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 4.0027,
+        "output": 14.6764,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 4.0027,
+        "output": 14.6764,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 4.0027,
+        "output": 14.6764,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.6,
+        "output": 2.2,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 7.2048,
+      "usd": {
+        "effective": {
+          "input": 0.6,
+          "output": 2.2,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.6,
+          "output": 2.2,
+          "cache_read": null
+        },
+        "blend": 1.08,
+        "discount": 0
+      },
+      "calc": "官方 $0.6/M × 汇率 6.6711 = ¥4.0027/M",
+      "calc_full": "官方 $0.6/M × 汇率 6.6711 = ¥4.0027/M",
+      "calc_basis": "官方 $0.6/M × 汇率 6.6711 = ¥4.0027/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://bigmodel.cn/pricing"
+    },
+    {
+      "station": {
+        "id": "zhipu",
+        "name": "智谱 · GLM",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://bigmodel.cn/pricing",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "glm-5-2",
+        "label": "GLM-5.2",
+        "vendor": "Zhipu",
+        "context": 200000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 4.1361,
+        "output": 16.1441,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 4.1361,
+        "output": 16.1441,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 4.1361,
+        "output": 16.1441,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.62,
+        "output": 2.42,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 7.7385,
+      "usd": {
+        "effective": {
+          "input": 0.62,
+          "output": 2.42,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.62,
+          "output": 2.42,
+          "cache_read": null
+        },
+        "blend": 1.16,
+        "discount": 0
+      },
+      "calc": "官方 $0.62/M × 汇率 6.6711 = ¥4.1361/M",
+      "calc_full": "官方 $0.62/M × 汇率 6.6711 = ¥4.1361/M",
+      "calc_basis": "官方 $0.62/M × 汇率 6.6711 = ¥4.1361/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://bigmodel.cn/pricing"
+    },
+    {
+      "station": {
+        "id": "moonshot",
+        "name": "Kimi 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.moonshot.cn/docs/pricing/chat",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "kimi-k2-5",
+        "label": "Kimi K2.5",
+        "vendor": "Moonshot",
+        "context": 262144
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 3.3356,
+        "output": 16.6778,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 3.3356,
+        "output": 16.6778,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 3.3356,
+        "output": 16.6778,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.5,
+        "output": 2.5,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 7.3382,
+      "usd": {
+        "effective": {
+          "input": 0.5,
+          "output": 2.5,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.5,
+          "output": 2.5,
+          "cache_read": null
+        },
+        "blend": 1.1,
+        "discount": 0
+      },
+      "calc": "官方 $0.5/M × 汇率 6.6711 = ¥3.3356/M",
+      "calc_full": "官方 $0.5/M × 汇率 6.6711 = ¥3.3356/M",
+      "calc_basis": "官方 $0.5/M × 汇率 6.6711 = ¥3.3356/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
+    },
+    {
+      "station": {
+        "id": "moonshot",
+        "name": "Kimi 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.moonshot.cn/docs/pricing/chat",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "kimi-k2-7-code",
+        "label": "Kimi K2.7 Code",
+        "vendor": "Moonshot",
+        "context": 262144
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 4.0027,
+        "output": 20.0133,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 4.0027,
+        "output": 20.0133,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 4.0027,
+        "output": 20.0133,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.6,
+        "output": 3,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 8.8059,
+      "usd": {
+        "effective": {
+          "input": 0.6,
+          "output": 3,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.6,
+          "output": 3,
+          "cache_read": null
+        },
+        "blend": 1.32,
+        "discount": 0
+      },
+      "calc": "官方 $0.6/M × 汇率 6.6711 = ¥4.0027/M",
+      "calc_full": "官方 $0.6/M × 汇率 6.6711 = ¥4.0027/M",
+      "calc_basis": "官方 $0.6/M × 汇率 6.6711 = ¥4.0027/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
+    },
+    {
+      "station": {
+        "id": "zhipu",
+        "name": "智谱 · GLM",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://bigmodel.cn/pricing",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "glm-5",
+        "label": "GLM-5",
+        "vendor": "Zhipu",
+        "context": 200000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 6.6711,
+        "output": 21.3475,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 6.6711,
+        "output": 21.3475,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 6.6711,
+        "output": 21.3475,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 1,
+        "output": 3.2,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 11.074,
+      "usd": {
+        "effective": {
+          "input": 1,
+          "output": 3.2,
+          "cache_read": null
+        },
+        "official": {
+          "input": 1,
+          "output": 3.2,
+          "cache_read": null
+        },
+        "blend": 1.66,
+        "discount": 0
+      },
+      "calc": "官方 $1/M × 汇率 6.6711 = ¥6.6711/M",
+      "calc_full": "官方 $1/M × 汇率 6.6711 = ¥6.6711/M",
+      "calc_basis": "官方 $1/M × 汇率 6.6711 = ¥6.6711/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://bigmodel.cn/pricing"
+    },
+    {
+      "station": {
+        "id": "moonshot",
+        "name": "Kimi 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.moonshot.cn/docs/pricing/chat",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "kimi-k2-6",
+        "label": "Kimi K2.6",
+        "vendor": "Moonshot",
+        "context": 262144
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 4.3362,
+        "output": 22.7485,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 4.3362,
+        "output": 22.7485,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 4.3362,
+        "output": 22.7485,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.65,
+        "output": 3.41,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 9.8599,
+      "usd": {
+        "effective": {
+          "input": 0.65,
+          "output": 3.41,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.65,
+          "output": 3.41,
+          "cache_read": null
+        },
+        "blend": 1.478,
+        "discount": 0
+      },
+      "calc": "官方 $0.65/M × 汇率 6.6711 = ¥4.3362/M",
+      "calc_full": "官方 $0.65/M × 汇率 6.6711 = ¥4.3362/M",
+      "calc_basis": "官方 $0.65/M × 汇率 6.6711 = ¥4.3362/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
     },
     {
       "station": {
@@ -1345,6 +2754,334 @@
     },
     {
       "station": {
+        "id": "alibaba",
+        "name": "阿里云百炼 · 通义千问",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://help.aliyun.com/zh/model-studio/models",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "qwen4-max",
+        "label": "Qwen4 Max",
+        "vendor": "Alibaba",
+        "context": 262144
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 9.5063,
+        "output": 28.519,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 9.5063,
+        "output": 28.519,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 9.5063,
+        "output": 28.519,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 1.425,
+        "output": 4.275,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 15.2101,
+      "usd": {
+        "effective": {
+          "input": 1.425,
+          "output": 4.275,
+          "cache_read": null
+        },
+        "official": {
+          "input": 1.425,
+          "output": 4.275,
+          "cache_read": null
+        },
+        "blend": 2.28,
+        "discount": 0
+      },
+      "calc": "官方 $1.425/M × 汇率 6.6711 = ¥9.5063/M",
+      "calc_full": "官方 $1.425/M × 汇率 6.6711 = ¥9.5063/M",
+      "calc_basis": "官方 $1.425/M × 汇率 6.6711 = ¥9.5063/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
+        "id": "openai",
+        "name": "OpenAI 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.openai.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "gpt-6.1-terra",
+        "label": "GPT-6.1 Terra",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 6.6711,
+        "output": 33.3555,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 6.6711,
+        "output": 33.3555,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 6.6711,
+        "output": 33.3555,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 1,
+        "output": 5,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 14.6764,
+      "usd": {
+        "effective": {
+          "input": 1,
+          "output": 5,
+          "cache_read": null
+        },
+        "official": {
+          "input": 1,
+          "output": 5,
+          "cache_read": null
+        },
+        "blend": 2.2,
+        "discount": 0
+      },
+      "calc": "官方 $1/M × 汇率 6.6711 = ¥6.6711/M",
+      "calc_full": "官方 $1/M × 汇率 6.6711 = ¥6.6711/M",
+      "calc_basis": "官方 $1/M × 汇率 6.6711 = ¥6.6711/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "alibaba",
+        "name": "阿里云百炼 · 通义千问",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://help.aliyun.com/zh/model-studio/models",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "qwen3-8-max",
+        "label": "Qwen3.8 Max",
+        "vendor": "Alibaba",
+        "context": 262144
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 13.3422,
+        "output": 40.0266,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 13.3422,
+        "output": 40.0266,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 40.0266,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 6,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 21.3475,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 6,
+          "cache_read": null
+        },
+        "official": {
+          "input": 2,
+          "output": 6,
+          "cache_read": null
+        },
+        "blend": 3.2,
+        "discount": 0
+      },
+      "calc": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "calc_full": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "calc_basis": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
+        "id": "moonshot",
+        "name": "Kimi 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.moonshot.cn/docs/pricing/chat",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "kimi-k3-1-pro",
+        "label": "Kimi K3.1 Pro",
+        "vendor": "Moonshot",
+        "context": 1048576
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 1.6031,
+        "output": 56.0526,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 1.6031,
+        "output": 56.0526,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 1.6031,
+        "output": 56.0526,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.2403,
+        "output": 8.4023,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 17.9379,
+      "usd": {
+        "effective": {
+          "input": 0.2403,
+          "output": 8.4023,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.2403,
+          "output": 8.4023,
+          "cache_read": null
+        },
+        "blend": 2.6889,
+        "discount": 0
+      },
+      "calc": "官方 $0.2403/M × 汇率 6.6711 = ¥1.6031/M",
+      "calc_full": "官方 $0.2403/M × 汇率 6.6711 = ¥1.6031/M",
+      "calc_basis": "官方 $0.2403/M × 汇率 6.6711 = ¥1.6031/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
+    },
+    {
+      "station": {
         "id": "anthropic",
         "name": "Anthropic 官方",
         "kind": "official",
@@ -1409,6 +3146,88 @@
           "input": 2,
           "output": 10,
           "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
+      "calc": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "calc_full": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "calc_basis": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
+        "id": "anthropic",
+        "name": "Anthropic 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://www.anthropic.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
+      },
+      "model": {
+        "id": "claude-sonnet-5",
+        "label": "Claude Sonnet 5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 10,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 29.3528,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": null
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": null
         },
         "blend": 4.4,
         "discount": 0
@@ -1506,6 +3325,416 @@
       "health": null,
       "note": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "openai",
+        "name": "OpenAI 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.openai.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "gpt-6-sol",
+        "label": "GPT-6 Sol",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 10,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 29.3528,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": null
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": null
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
+      "calc": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "calc_full": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "calc_basis": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "openai",
+        "name": "OpenAI 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.openai.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "gpt-6.1-sol",
+        "label": "GPT-6.1 Sol",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 10,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 29.3528,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": null
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": null
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
+      "calc": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "calc_full": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "calc_basis": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "openai",
+        "name": "OpenAI 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.openai.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "gpt-5.6-terra",
+        "label": "GPT-5.6 Terra",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 13.3422,
+        "output": 80.0532,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 13.3422,
+        "output": 80.0532,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 80.0532,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 12,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 33.3555,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 12,
+          "cache_read": null
+        },
+        "official": {
+          "input": 2,
+          "output": 12,
+          "cache_read": null
+        },
+        "blend": 5,
+        "discount": 0
+      },
+      "calc": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "calc_full": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "calc_basis": "官方 $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "anthropic",
+        "name": "Anthropic 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://www.anthropic.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
+      },
+      "model": {
+        "id": "claude-sonnet-4-6",
+        "label": "Claude Sonnet 4.6",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 20.0133,
+        "output": 100.0665,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 20.0133,
+        "output": 100.0665,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 20.0133,
+        "output": 100.0665,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 3,
+        "output": 15,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 44.0293,
+      "usd": {
+        "effective": {
+          "input": 3,
+          "output": 15,
+          "cache_read": null
+        },
+        "official": {
+          "input": 3,
+          "output": 15,
+          "cache_read": null
+        },
+        "blend": 6.6,
+        "discount": 0
+      },
+      "calc": "官方 $3/M × 汇率 6.6711 = ¥20.0133/M",
+      "calc_full": "官方 $3/M × 汇率 6.6711 = ¥20.0133/M",
+      "calc_basis": "官方 $3/M × 汇率 6.6711 = ¥20.0133/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
+        "id": "moonshot",
+        "name": "Kimi 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.moonshot.cn/docs/pricing/chat",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "kimi-k3",
+        "label": "Kimi K3",
+        "vendor": "Moonshot",
+        "context": 1048576
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 1.2809,
+        "output": 106.7376,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 1.2809,
+        "output": 106.7376,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 1.2809,
+        "output": 106.7376,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.192,
+        "output": 16,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 32.9179,
+      "usd": {
+        "effective": {
+          "input": 0.192,
+          "output": 16,
+          "cache_read": null
+        },
+        "official": {
+          "input": 0.192,
+          "output": 16,
+          "cache_read": null
+        },
+        "blend": 4.9344,
+        "discount": 0
+      },
+      "calc": "官方 $0.192/M × 汇率 6.6711 = ¥1.2809/M",
+      "calc_full": "官方 $0.192/M × 汇率 6.6711 = ¥1.2809/M",
+      "calc_basis": "官方 $0.192/M × 汇率 6.6711 = ¥1.2809/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
     },
     {
       "station": {
@@ -1607,6 +3836,334 @@
         "note": "官方直购，价格锚。"
       },
       "model": {
+        "id": "gpt-5.6-sol",
+        "label": "GPT-5.6 Sol",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 26.6844,
+        "output": 133.422,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 26.6844,
+        "output": 133.422,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 26.6844,
+        "output": 133.422,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 4,
+        "output": 20,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 58.7057,
+      "usd": {
+        "effective": {
+          "input": 4,
+          "output": 20,
+          "cache_read": null
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": null
+        },
+        "blend": 8.8,
+        "discount": 0
+      },
+      "calc": "官方 $4/M × 汇率 6.6711 = ¥26.6844/M",
+      "calc_full": "官方 $4/M × 汇率 6.6711 = ¥26.6844/M",
+      "calc_basis": "官方 $4/M × 汇率 6.6711 = ¥26.6844/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "anthropic",
+        "name": "Anthropic 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://www.anthropic.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
+      },
+      "model": {
+        "id": "claude-opus-5",
+        "label": "Claude Opus 5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 33.3555,
+        "output": 166.7775,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 33.3555,
+        "output": 166.7775,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 33.3555,
+        "output": 166.7775,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 5,
+        "output": 25,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 73.3821,
+      "usd": {
+        "effective": {
+          "input": 5,
+          "output": 25,
+          "cache_read": null
+        },
+        "official": {
+          "input": 5,
+          "output": 25,
+          "cache_read": null
+        },
+        "blend": 11,
+        "discount": 0
+      },
+      "calc": "官方 $5/M × 汇率 6.6711 = ¥33.3555/M",
+      "calc_full": "官方 $5/M × 汇率 6.6711 = ¥33.3555/M",
+      "calc_basis": "官方 $5/M × 汇率 6.6711 = ¥33.3555/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
+        "id": "anthropic",
+        "name": "Anthropic 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://www.anthropic.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
+      },
+      "model": {
+        "id": "claude-opus-4-8",
+        "label": "Claude Opus 4.8",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 33.3555,
+        "output": 166.7775,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 33.3555,
+        "output": 166.7775,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 33.3555,
+        "output": 166.7775,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 5,
+        "output": 25,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 73.3821,
+      "usd": {
+        "effective": {
+          "input": 5,
+          "output": 25,
+          "cache_read": null
+        },
+        "official": {
+          "input": 5,
+          "output": 25,
+          "cache_read": null
+        },
+        "blend": 11,
+        "discount": 0
+      },
+      "calc": "官方 $5/M × 汇率 6.6711 = ¥33.3555/M",
+      "calc_full": "官方 $5/M × 汇率 6.6711 = ¥33.3555/M",
+      "calc_basis": "官方 $5/M × 汇率 6.6711 = ¥33.3555/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
+        "id": "anthropic",
+        "name": "Anthropic 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://www.anthropic.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
+      },
+      "model": {
+        "id": "claude-fable-5-2",
+        "label": "Claude Fable 5.2",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 53.3688,
+        "output": 266.844,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 53.3688,
+        "output": 266.844,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 53.3688,
+        "output": 266.844,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 8,
+        "output": 40,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 117.4114,
+      "usd": {
+        "effective": {
+          "input": 8,
+          "output": 40,
+          "cache_read": null
+        },
+        "official": {
+          "input": 8,
+          "output": 40,
+          "cache_read": null
+        },
+        "blend": 17.6,
+        "discount": 0
+      },
+      "calc": "官方 $8/M × 汇率 6.6711 = ¥53.3688/M",
+      "calc_full": "官方 $8/M × 汇率 6.6711 = ¥53.3688/M",
+      "calc_basis": "官方 $8/M × 汇率 6.6711 = ¥53.3688/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
+        "id": "openai",
+        "name": "OpenAI 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.openai.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
         "id": "gpt-6.2-astra",
         "label": "GPT-6.2 Astra",
         "vendor": "OpenAI",
@@ -1662,6 +4219,88 @@
       "calc": "官方 $8/M × 汇率 6.6711 = ¥53.3688/M",
       "calc_full": "官方 $8/M × 汇率 6.6711 = ¥53.3688/M",
       "calc_basis": "官方 $8/M × 汇率 6.6711 = ¥53.3688/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "openai",
+        "name": "OpenAI 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.openai.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "gpt-6-astra",
+        "label": "GPT-6 Astra",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 66.711,
+        "output": 333.555,
+        "cache_read": null
+      },
+      "effective": {
+        "input": 66.711,
+        "output": 333.555,
+        "cache_read": null
+      },
+      "official_cny": {
+        "input": 66.711,
+        "output": 333.555,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 10,
+        "output": 50,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 146.7642,
+      "usd": {
+        "effective": {
+          "input": 10,
+          "output": 50,
+          "cache_read": null
+        },
+        "official": {
+          "input": 10,
+          "output": 50,
+          "cache_read": null
+        },
+        "blend": 22,
+        "discount": 0
+      },
+      "calc": "官方 $10/M × 汇率 6.6711 = ¥66.711/M",
+      "calc_full": "官方 $10/M × 汇率 6.6711 = ¥66.711/M",
+      "calc_basis": "官方 $10/M × 汇率 6.6711 = ¥66.711/M",
       "group": null,
       "observed": false,
       "tiers": null,

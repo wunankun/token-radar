@@ -3,48 +3,477 @@
     "label": "DeepSeek V4 Pro",
     "vendor": "DeepSeek",
     "popularity": 96,
-    "official": { "provider": "deepseek", "model": "deepseek-v4-pro" },
-    "aliases": ["deepseek-v4-pro", "DeepSeek-V4-Pro", "deepseek-reasoner", "deepseek-chat"],
+    "official": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    "aliases": [
+      "deepseek-v4-pro",
+      "DeepSeek-V4-Pro",
+      "deepseek-reasoner",
+      "deepseek-chat"
+    ],
     "context": 1000000
   },
   "deepseek-flash": {
     "label": "DeepSeek Flash",
     "vendor": "DeepSeek",
     "popularity": 85,
-    "official": { "provider": "deepseek", "model": "deepseek-flash" },
-    "aliases": ["deepseek-flash", "deepseek-v4-flash", "deepseek-v4.1-flash"],
+    "official": {
+      "provider": "deepseek",
+      "model": "deepseek-flash"
+    },
+    "aliases": [
+      "deepseek-flash",
+      "deepseek-v4-flash",
+      "deepseek-v4.1-flash"
+    ],
     "context": 1000000
   },
   "claude-sonnet-5-5": {
     "label": "Claude Sonnet 5.5",
     "vendor": "Anthropic",
     "popularity": 92,
-    "official": { "provider": "anthropic", "model": "claude-sonnet-5-5" },
-    "aliases": ["claude-sonnet-5-5", "claude-sonnet-5.5", "claude-5-5-sonnet", "claude-sonnet-4-5", "claude-3-5-sonnet-20241022"],
+    "official": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5"
+    },
+    "aliases": [
+      "claude-sonnet-5-5",
+      "claude-sonnet-5.5",
+      "claude-5-5-sonnet",
+      "claude-sonnet-4-5",
+      "claude-3-5-sonnet-20241022"
+    ],
     "context": 200000
   },
   "claude-opus-5-5": {
     "label": "Claude Opus 5.5",
     "vendor": "Anthropic",
     "popularity": 76,
-    "official": { "provider": "anthropic", "model": "claude-opus-5-5" },
-    "aliases": ["claude-opus-5-5", "claude-opus-5.5", "claude-3-opus-20240229"],
+    "official": {
+      "provider": "anthropic",
+      "model": "claude-opus-5-5"
+    },
+    "aliases": [
+      "claude-opus-5-5",
+      "claude-opus-5.5",
+      "claude-3-opus-20240229"
+    ],
     "context": 200000
   },
   "gpt-6.2-sol": {
     "label": "GPT-6.2 Sol",
     "vendor": "OpenAI",
     "popularity": 88,
-    "official": { "provider": "openai", "model": "gpt-6.2-sol" },
-    "aliases": ["gpt-6.2-sol", "gpt-6.2", "gpt-6-2-sol"],
+    "official": {
+      "provider": "openai",
+      "model": "gpt-6.2-sol"
+    },
+    "aliases": [
+      "gpt-6.2-sol",
+      "gpt-6.2",
+      "gpt-6-2-sol"
+    ],
     "context": 400000
   },
   "gpt-6.2-astra": {
     "label": "GPT-6.2 Astra",
     "vendor": "OpenAI",
     "popularity": 68,
-    "official": { "provider": "openai", "model": "gpt-6.2-astra" },
-    "aliases": ["gpt-6.2-astra", "gpt-6-2-astra"],
+    "official": {
+      "provider": "openai",
+      "model": "gpt-6.2-astra"
+    },
+    "aliases": [
+      "gpt-6.2-astra",
+      "gpt-6-2-astra"
+    ],
     "context": 400000
+  },
+  "gpt-6-sol": {
+    "label": "GPT-6 Sol",
+    "vendor": "OpenAI",
+    "popularity": 74,
+    "context": 400000,
+    "official": {
+      "provider": "openai",
+      "model": "gpt-6-sol"
+    },
+    "aliases": [
+      "gpt-6-sol"
+    ]
+  },
+  "gpt-6-astra": {
+    "label": "GPT-6 Astra",
+    "vendor": "OpenAI",
+    "popularity": 66,
+    "context": 400000,
+    "official": {
+      "provider": "openai",
+      "model": "gpt-6-astra"
+    },
+    "aliases": [
+      "gpt-6-astra"
+    ]
+  },
+  "gpt-6.1-sol": {
+    "label": "GPT-6.1 Sol",
+    "vendor": "OpenAI",
+    "popularity": 70,
+    "context": 400000,
+    "official": {
+      "provider": "openai",
+      "model": "gpt-6.1-sol"
+    },
+    "aliases": [
+      "gpt-6.1-sol",
+      "gpt-6-1-sol"
+    ]
+  },
+  "gpt-6.1-terra": {
+    "label": "GPT-6.1 Terra",
+    "vendor": "OpenAI",
+    "popularity": 62,
+    "context": 400000,
+    "official": {
+      "provider": "openai",
+      "model": "gpt-6.1-terra"
+    },
+    "aliases": [
+      "gpt-6.1-terra",
+      "gpt-6-1-terra"
+    ]
+  },
+  "gpt-6-luna": {
+    "label": "GPT-6 Luna",
+    "vendor": "OpenAI",
+    "popularity": 60,
+    "context": 400000,
+    "official": {
+      "provider": "openai",
+      "model": "gpt-6-luna"
+    },
+    "aliases": [
+      "gpt-6-luna"
+    ]
+  },
+  "gpt-5.6-sol": {
+    "label": "GPT-5.6 Sol",
+    "vendor": "OpenAI",
+    "popularity": 64,
+    "context": 400000,
+    "official": {
+      "provider": "openai",
+      "model": "gpt-5.6-sol"
+    },
+    "aliases": [
+      "gpt-5.6-sol",
+      "gpt-5-6-sol"
+    ]
+  },
+  "gpt-5.6-terra": {
+    "label": "GPT-5.6 Terra",
+    "vendor": "OpenAI",
+    "popularity": 58,
+    "context": 400000,
+    "official": {
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    "aliases": [
+      "gpt-5.6-terra",
+      "gpt-5-6-terra"
+    ]
+  },
+  "claude-sonnet-5": {
+    "label": "Claude Sonnet 5",
+    "vendor": "Anthropic",
+    "popularity": 72,
+    "context": 200000,
+    "official": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-5"
+    },
+    "aliases": [
+      "claude-sonnet-5"
+    ]
+  },
+  "claude-opus-5": {
+    "label": "Claude Opus 5",
+    "vendor": "Anthropic",
+    "popularity": 68,
+    "context": 200000,
+    "official": {
+      "provider": "anthropic",
+      "model": "claude-opus-5"
+    },
+    "aliases": [
+      "claude-opus-5"
+    ]
+  },
+  "claude-haiku-5-5": {
+    "label": "Claude Haiku 5.5",
+    "vendor": "Anthropic",
+    "popularity": 60,
+    "context": 200000,
+    "official": {
+      "provider": "anthropic",
+      "model": "claude-haiku-5-5"
+    },
+    "aliases": [
+      "claude-haiku-5-5"
+    ]
+  },
+  "claude-fable-5-2": {
+    "label": "Claude Fable 5.2",
+    "vendor": "Anthropic",
+    "popularity": 52,
+    "context": 200000,
+    "official": {
+      "provider": "anthropic",
+      "model": "claude-fable-5-2"
+    },
+    "aliases": [
+      "claude-fable-5-2"
+    ]
+  },
+  "claude-opus-4-8": {
+    "label": "Claude Opus 4.8",
+    "vendor": "Anthropic",
+    "popularity": 56,
+    "context": 200000,
+    "official": {
+      "provider": "anthropic",
+      "model": "claude-opus-4-8"
+    },
+    "aliases": [
+      "claude-opus-4-8"
+    ]
+  },
+  "claude-sonnet-4-6": {
+    "label": "Claude Sonnet 4.6",
+    "vendor": "Anthropic",
+    "popularity": 54,
+    "context": 200000,
+    "official": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    "aliases": [
+      "claude-sonnet-4-6"
+    ]
+  },
+  "deepseek-v3-2": {
+    "label": "DeepSeek V3.2",
+    "vendor": "DeepSeek",
+    "popularity": 50,
+    "context": 128000,
+    "official": {
+      "provider": "deepseek",
+      "model": "deepseek-v3-2"
+    },
+    "aliases": [
+      "deepseek-v3-2"
+    ]
+  },
+  "kimi-k3-1-pro": {
+    "label": "Kimi K3.1 Pro",
+    "vendor": "Moonshot",
+    "popularity": 82,
+    "context": 1048576,
+    "official": {
+      "provider": "moonshot",
+      "model": "kimi-k3-1-pro"
+    },
+    "aliases": [
+      "kimi-k3-1-pro",
+      "kimi-k3.1-pro"
+    ]
+  },
+  "kimi-k3": {
+    "label": "Kimi K3",
+    "vendor": "Moonshot",
+    "popularity": 80,
+    "context": 1048576,
+    "official": {
+      "provider": "moonshot",
+      "model": "kimi-k3"
+    },
+    "aliases": [
+      "kimi-k3"
+    ]
+  },
+  "kimi-k2-7-code": {
+    "label": "Kimi K2.7 Code",
+    "vendor": "Moonshot",
+    "popularity": 64,
+    "context": 262144,
+    "official": {
+      "provider": "moonshot",
+      "model": "kimi-k2-7-code"
+    },
+    "aliases": [
+      "kimi-k2-7-code"
+    ]
+  },
+  "kimi-k2-6": {
+    "label": "Kimi K2.6",
+    "vendor": "Moonshot",
+    "popularity": 58,
+    "context": 262144,
+    "official": {
+      "provider": "moonshot",
+      "model": "kimi-k2-6"
+    },
+    "aliases": [
+      "kimi-k2-6"
+    ]
+  },
+  "kimi-k2-5": {
+    "label": "Kimi K2.5",
+    "vendor": "Moonshot",
+    "popularity": 55,
+    "context": 262144,
+    "official": {
+      "provider": "moonshot",
+      "model": "kimi-k2-5"
+    },
+    "aliases": [
+      "kimi-k2-5"
+    ]
+  },
+  "qwen4-max": {
+    "label": "Qwen4 Max",
+    "vendor": "Alibaba",
+    "popularity": 78,
+    "context": 262144,
+    "official": {
+      "provider": "alibaba",
+      "model": "qwen4-max"
+    },
+    "aliases": [
+      "qwen4-max",
+      "qwen-max"
+    ]
+  },
+  "qwen3-8-max": {
+    "label": "Qwen3.8 Max",
+    "vendor": "Alibaba",
+    "popularity": 70,
+    "context": 262144,
+    "official": {
+      "provider": "alibaba",
+      "model": "qwen3-8-max"
+    },
+    "aliases": [
+      "qwen3-8-max",
+      "qwen3.8-max"
+    ]
+  },
+  "qwen3-8-flash": {
+    "label": "Qwen3.8 Flash",
+    "vendor": "Alibaba",
+    "popularity": 66,
+    "context": 262144,
+    "official": {
+      "provider": "alibaba",
+      "model": "qwen3-8-flash"
+    },
+    "aliases": [
+      "qwen3-8-flash"
+    ]
+  },
+  "qwen3-7-plus": {
+    "label": "Qwen3.7 Plus",
+    "vendor": "Alibaba",
+    "popularity": 60,
+    "context": 262144,
+    "official": {
+      "provider": "alibaba",
+      "model": "qwen3-7-plus"
+    },
+    "aliases": [
+      "qwen3-7-plus"
+    ]
+  },
+  "qwen3-coder-next": {
+    "label": "Qwen3 Coder Next",
+    "vendor": "Alibaba",
+    "popularity": 57,
+    "context": 262144,
+    "official": {
+      "provider": "alibaba",
+      "model": "qwen3-coder-next"
+    },
+    "aliases": [
+      "qwen3-coder-next"
+    ]
+  },
+  "glm-5-3": {
+    "label": "GLM-5.3",
+    "vendor": "Zhipu",
+    "popularity": 76,
+    "context": 200000,
+    "official": {
+      "provider": "zhipu",
+      "model": "glm-5-3"
+    },
+    "aliases": [
+      "glm-5-3",
+      "glm-5.3"
+    ]
+  },
+  "glm-5-3-flash": {
+    "label": "GLM-5.3 Flash",
+    "vendor": "Zhipu",
+    "popularity": 62,
+    "context": 200000,
+    "official": {
+      "provider": "zhipu",
+      "model": "glm-5-3-flash"
+    },
+    "aliases": [
+      "glm-5-3-flash"
+    ]
+  },
+  "glm-5-2": {
+    "label": "GLM-5.2",
+    "vendor": "Zhipu",
+    "popularity": 58,
+    "context": 200000,
+    "official": {
+      "provider": "zhipu",
+      "model": "glm-5-2"
+    },
+    "aliases": [
+      "glm-5-2"
+    ]
+  },
+  "glm-5": {
+    "label": "GLM-5",
+    "vendor": "Zhipu",
+    "popularity": 64,
+    "context": 200000,
+    "official": {
+      "provider": "zhipu",
+      "model": "glm-5"
+    },
+    "aliases": [
+      "glm-5"
+    ]
+  },
+  "glm-4-7": {
+    "label": "GLM-4.7",
+    "vendor": "Zhipu",
+    "popularity": 54,
+    "context": 200000,
+    "official": {
+      "provider": "zhipu",
+      "model": "glm-4-7"
+    },
+    "aliases": [
+      "glm-4-7"
+    ]
   }
 }

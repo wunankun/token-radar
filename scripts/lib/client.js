@@ -10,6 +10,21 @@
   var state = { q: '', model: '', kind: '', sort: 'discount', showDemo: false, onlyAff: false, currency: 'usd', page: 1, perPage: 50 };
 
   // 当前计价口径：美元 = 站上标的美元牌价（倍率 1.0 → 0%）；人民币 = 你实际掏的钱（1 元 = 1 美元额度）
+  // 厂商图标：品牌色方标 + 首字母（不用外部图片，避免商标素材与原图链接）
+  var VENDOR = {
+    OpenAI:    { bg: '#0f2f28', t: 'O' },
+    Anthropic: { bg: '#d97757', t: 'A' },
+    DeepSeek:  { bg: '#4d6bfe', t: 'D' },
+    Moonshot:  { bg: '#111318', t: 'K' },
+    Alibaba:   { bg: '#ff6a00', t: 'Q' },
+    Zhipu:     { bg: '#3b5bdb', t: 'G' },
+    Google:    { bg: '#4285f4', t: 'G' }
+  };
+  function vico(vendor) {
+    var v = VENDOR[vendor] || { bg: '#6b7280', t: (vendor || '?').slice(0, 1).toUpperCase() };
+    return '<span class="vico" style="background:' + v.bg + '" aria-hidden="true">' + esc(v.t) + '</span>';
+  }
+
   var CUR = {
     usd: { unit: '$', eff: 'usd' },
     cny: { unit: '¥', eff: 'cny' },
@@ -167,6 +182,9 @@
     }).sort(function (a, b) {
       var va = view(a);
       var vb = view(b);
+      if (state.sort === 'heat') {
+        return heatOf(MODELS[b.model.id] || b.model) - heatOf(MODELS[a.model.id] || a.model);
+      }
       if (state.sort === 'discount') {
         var av = va.disc == null ? -Infinity : va.disc;
         var bv = vb.disc == null ? -Infinity : vb.disc;
@@ -196,7 +214,8 @@
   }
 
   function sourceCell(r) {
-    if (r.station.kind === 'official') return '<span class="src">官方计费页</span>';
+    if (r.price_source === 'reference') return '<span class="src" title="该厂商官网计费页是动态渲染/需登录，先用 OpenRouter 挂牌价当基准；有官方页后替换">参照价 · OpenRouter</span>';
+    if (r.station.kind === 'official' || r.price_source === 'official') return '<span class="src">官方计费页</span>';
     var label = r.price_source === 'auto'
       ? '<span class="auto">自动抓取</span>'
       : '人工核验';
@@ -230,7 +249,7 @@
 
     return '<tr class="' + (r.station.demo ? 'is-demo' : '') + '">' +
       '<td>' + stationCell(r) + '</td>' +
-      '<td><div class="model"><div class="m">' + esc(r.model.label) + '</div><div class="v">' + esc(r.model.vendor) + '</div></div></td>' +
+      '<td><div class="model"><div class="m">' + vico(r.model.vendor) + esc(r.model.label) + '</div><div class="v">' + esc(r.model.vendor) + '</div></div></td>' +
       '<td class="num">' + pairCell(v.input, v.off && v.off.input, calcTip, isOff) + '</td>' +
       '<td class="num">' + pairCell(v.output, v.off && v.off.output, calcTip, isOff) + '</td>' +
       '<td class="num hide-md">' + pairCell(v.cache_read, v.off && v.off.cache_read, calcTip, isOff) + '</td>' +
@@ -369,7 +388,7 @@
     vBox.innerHTML = '<button type="button" class="pk-item" data-vendor="">全部模型</button>' +
       G.vendors.map(function (v) {
         return '<button type="button" class="pk-item has-sub" data-vendor="' + esc(v) + '">' +
-          '<span>' + esc(v) + '</span><span class="pk-chev" aria-hidden="true">›</span></button>';
+          '<span class="pk-name">' + vico(v) + esc(v) + '</span><span class="pk-chev" aria-hidden="true">›</span></button>';
       }).join('');
 
     function paint(vendor) {
@@ -382,7 +401,7 @@
           : '') +
         list.map(function (m) {
           return '<button type="button" class="pk-item" data-model="' + esc(m.id) + '">' +
-            '<span>' + esc(m.label) + '</span>' + subOf(m, !vendor) +
+            '<span class="pk-name">' + vico(m.vendor) + esc(m.label) + '</span>' + subOf(m, !vendor) +
             '</button>';
         }).join('');
       mark();

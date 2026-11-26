@@ -71,6 +71,7 @@ export function buildOfficialIndex(official) {
         },
         offpeak: price.offpeak || null,
         note: price.note || null,
+        source: price.source || 'official',
       });
     }
   }
@@ -104,7 +105,7 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
   let nominal;
   let mode = stationModel?.mode;
 
-  if (station.kind === 'official' || priceSource === 'official') {
+  if (station.kind === 'official' || priceSource === 'official' || priceSource === 'reference') {
     mode = 'official';
     if (!officialCny) return { error: `${modelId}: 官方价缺失，无法生成官方法人行` };
     nominal = { ...officialCny };
@@ -222,7 +223,7 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
       },
       model: { id: modelId, label: model.label, vendor: model.vendor, context: model.context ?? null },
       mode,
-      price_source: station.kind === 'official' ? 'official' : priceSource,
+      price_source: priceSource || (station.kind === 'official' ? 'official' : null),
       bonus: r4(bonus),
       billing_ratio: r4(billing),
       billing_source: billingSource,

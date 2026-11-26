@@ -14,15 +14,28 @@
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044,
-          "offpeak": { "input": 0.66, "output": 1.98, "cache_read": 0.022 },
+          "offpeak": {
+            "input": 0.66,
+            "output": 1.98,
+            "cache_read": 0.022
+          },
           "note": "峰时价；北京时间谷时（UTC 16:00-00:00 之外按官方定义）为 5 折。1M 上下文，最大输出 384K。"
         },
         "deepseek-flash": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006,
-          "offpeak": { "input": 0.15, "output": 0.6, "cache_read": 0.003 },
+          "offpeak": {
+            "input": 0.15,
+            "output": 0.6,
+            "cache_read": 0.003
+          },
           "note": "峰时价，谷时 5 折。"
+        },
+        "deepseek-v3-2": {
+          "input": 0.26,
+          "output": 0.38,
+          "source": "openrouter"
         }
       }
     },
@@ -47,6 +60,36 @@
           "cache_read": 0.2,
           "cache_write": 5,
           "note": "同上列序。"
+        },
+        "claude-sonnet-5": {
+          "input": 2,
+          "output": 10,
+          "source": "openrouter"
+        },
+        "claude-opus-5": {
+          "input": 5,
+          "output": 25,
+          "source": "openrouter"
+        },
+        "claude-haiku-5-5": {
+          "input": 0.1,
+          "output": 0.5,
+          "source": "openrouter"
+        },
+        "claude-fable-5-2": {
+          "input": 8,
+          "output": 40,
+          "source": "openrouter"
+        },
+        "claude-opus-4-8": {
+          "input": 5,
+          "output": 25,
+          "source": "openrouter"
+        },
+        "claude-sonnet-4-6": {
+          "input": 3,
+          "output": 15,
+          "source": "openrouter"
         }
       }
     },
@@ -69,6 +112,149 @@
           "output": 40,
           "cache_read": 0.4,
           "note": "标准档。"
+        },
+        "gpt-6-sol": {
+          "input": 2,
+          "output": 10,
+          "source": "openrouter"
+        },
+        "gpt-6-astra": {
+          "input": 10,
+          "output": 50,
+          "source": "openrouter"
+        },
+        "gpt-6.1-sol": {
+          "input": 2,
+          "output": 10,
+          "source": "openrouter"
+        },
+        "gpt-6.1-terra": {
+          "input": 1,
+          "output": 5,
+          "source": "openrouter"
+        },
+        "gpt-6-luna": {
+          "input": 0.1,
+          "output": 0.5,
+          "source": "openrouter"
+        },
+        "gpt-5.6-sol": {
+          "input": 4,
+          "output": 20,
+          "source": "openrouter"
+        },
+        "gpt-5.6-terra": {
+          "input": 2,
+          "output": 12,
+          "source": "openrouter"
+        }
+      }
+    },
+    {
+      "id": "moonshot",
+      "name": "Kimi 官方",
+      "homepage": "https://platform.moonshot.cn/",
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat",
+      "currency": "USD",
+      "verified_at": "2026-11-27",
+      "note": "官方计费页动态渲染/需登录，暂用 OpenRouter 挂牌价做参照（source: openrouter）。",
+      "models": {
+        "kimi-k3-1-pro": {
+          "input": 0.2403,
+          "output": 8.4023,
+          "source": "openrouter"
+        },
+        "kimi-k3": {
+          "input": 0.192,
+          "output": 16,
+          "source": "openrouter"
+        },
+        "kimi-k2-7-code": {
+          "input": 0.6,
+          "output": 3,
+          "source": "openrouter"
+        },
+        "kimi-k2-6": {
+          "input": 0.65,
+          "output": 3.41,
+          "source": "openrouter"
+        },
+        "kimi-k2-5": {
+          "input": 0.5,
+          "output": 2.5,
+          "source": "openrouter"
+        }
+      }
+    },
+    {
+      "id": "alibaba",
+      "name": "阿里云百炼",
+      "homepage": "https://bailian.console.aliyun.com/",
+      "pricing_url": "https://help.aliyun.com/zh/model-studio/models",
+      "currency": "USD",
+      "verified_at": "2026-11-27",
+      "note": "官方计费页动态渲染/需登录，暂用 OpenRouter 挂牌价做参照（source: openrouter）。",
+      "models": {
+        "qwen4-max": {
+          "input": 1.425,
+          "output": 4.275,
+          "source": "openrouter"
+        },
+        "qwen3-8-max": {
+          "input": 2,
+          "output": 6,
+          "source": "openrouter"
+        },
+        "qwen3-8-flash": {
+          "input": 0.15,
+          "output": 0.47,
+          "source": "openrouter"
+        },
+        "qwen3-7-plus": {
+          "input": 0.32,
+          "output": 1.28,
+          "source": "openrouter"
+        },
+        "qwen3-coder-next": {
+          "input": 0.12,
+          "output": 0.8,
+          "source": "openrouter"
+        }
+      }
+    },
+    {
+      "id": "zhipu",
+      "name": "智谱 GLM",
+      "homepage": "https://bigmodel.cn/",
+      "pricing_url": "https://bigmodel.cn/pricing",
+      "currency": "USD",
+      "verified_at": "2026-11-27",
+      "note": "官方计费页动态渲染/需登录，暂用 OpenRouter 挂牌价做参照（source: openrouter）。",
+      "models": {
+        "glm-5-3": {
+          "input": 0.0699,
+          "output": 1.4,
+          "source": "openrouter"
+        },
+        "glm-5-3-flash": {
+          "input": 0.15,
+          "output": 0.5,
+          "source": "openrouter"
+        },
+        "glm-5-2": {
+          "input": 0.62,
+          "output": 2.42,
+          "source": "openrouter"
+        },
+        "glm-5": {
+          "input": 1,
+          "output": 3.2,
+          "source": "openrouter"
+        },
+        "glm-4-7": {
+          "input": 0.6,
+          "output": 2.2,
+          "source": "openrouter"
         }
       }
     }

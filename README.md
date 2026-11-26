@@ -155,6 +155,19 @@ node scripts/fetch-fx.mjs --dry    # 只看不写
 
 ---
 
+## 覆盖的厂商与模型
+
+| 厂商 | 模型 | 价格基准 |
+| --- | --- | --- |
+| DeepSeek | V4 Pro、Flash、V3.2 | 官方计费页（V3.2 为参照价） |
+| Anthropic | Sonnet 5.5 / 5、Opus 5.5 / 5 / 4.8、Haiku 5.5、Sonnet 4.6、Fable 5.2 | 官方计费页（部分为参照价） |
+| OpenAI | GPT-6.2 Sol / Astra、GPT-6 / 6.1 / 5.6 系列、GPT-6 Luna | 官方计费页（部分为参照价） |
+| Moonshot Kimi | K3.1 Pro、K3、K2.7 Code、K2.6、K2.5 | 参照价 · OpenRouter |
+| 阿里云百炼 Qwen | Qwen4 Max、Qwen3.8 Max / Flash、Qwen3.7 Plus、Qwen3 Coder Next | 参照价 · OpenRouter |
+| 智谱 GLM | GLM-5.3 / 5.3 Flash / 5.2 / 5 / 4.7 | 参照价 · OpenRouter |
+
+「参照价」= 该厂商官网计费页是动态渲染或需登录，HTML 抓不到价格表，暂用 OpenRouter 挂牌价当基准。表格「价格来源」列会写明是「官方计费页」还是「参照价 · OpenRouter」，两者不会混在一起比较时被当成同一口径。
+
 ## 抓取
 
 中转站大多跑 new-api / one-api，它们暴露一个公开接口 `GET /api/pricing`，返回每个模型的 `model_ratio`。按 one-api 的计费口径（1 USD = 500,000 quota），**USD / 百万 token = model_ratio × 2 × group_ratio**，拿到的正好是站点自己的「倍率价」。

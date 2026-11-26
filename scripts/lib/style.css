@@ -260,10 +260,10 @@ footer.bottom { margin-top: 26px; color: var(--ink-3); font-size: 12.5px; displa
 .disc.d-flat { background: #f1f2f4; color: #5b616e; }
 td.recharge { white-space: nowrap; }
 .rc { font-size: 11.5px; color: #7a5a12; background: #fdf4e0; border-radius: 5px; padding: 1px 6px; }
-.calc-th sup { font-size: 10px; color: var(--ink-3); margin-left: 3px; font-weight: 400; }
+.calc-th { text-align: center; }
 td.calc {
   width: 246px; font-size: 11.5px; line-height: 1.45; color: var(--ink-3);
-  font-variant-numeric: tabular-nums;
+  font-variant-numeric: tabular-nums; text-align: center;
 }
 @media (max-width: 1120px) {
   .tablewrap th.hide-lg, .tablewrap td.hide-lg { display: none; }
@@ -309,3 +309,14 @@ td.calc {
 
 .empty-relay { margin: 14px 0 0; padding: 12px 14px; border: 1px dashed #ddd9d0; border-radius: 10px; font-size: 13px; color: var(--muted); line-height: 1.7; background: #fdfcfa; }
 .empty-relay code { background: #f2f1ec; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+
+/* 厂商图标 */
+.vico {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 16px; height: 16px; border-radius: 4px;
+  font-size: 9.5px; font-weight: 700; color: #fff;
+  letter-spacing: .2px; margin-right: 6px; vertical-align: -3px;
+  flex: 0 0 16px;
+}
+.pk-name { display: flex; align-items: center; min-width: 0; }
+.pk-name .vico { margin-right: 7px; }
