@@ -1,9 +1,9 @@
 {
   "station_id": "qinzhiai-com",
   "endpoint": "https://qinzhiai.com/api/pricing",
-  "fetched_at": "2026-11-26T13:04:02.603Z",
+  "fetched_at": "2026-11-26T15:26:59.846Z",
   "http_status": 200,
-  "latency_ms": 852,
+  "latency_ms": 1792,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -26,6 +26,39 @@
     "open_mode_cc": 3,
     "openai": 4.5
   },
+  "auto_groups": [
+    "AWS_Claude",
+    "Claude_code_1",
+    "Grok",
+    "openrouter",
+    "fast_forward",
+    "open_mode_2",
+    "open_mode",
+    "claude_free",
+    "codex",
+    "openai",
+    "midjourney",
+    "azure",
+    "Claude_code"
+  ],
+  "usable_group": {
+    "AWS_Claude": "AWS-Claude",
+    "Claude_code": "Claude code转发",
+    "Claude_code_1": "Claude Code 稳定分组",
+    "Grok": "Grok",
+    "azure": "Azure分组",
+    "claude": "claude官key",
+    "claude_free": "Claude-官网逆向",
+    "codex": "codex转发",
+    "fast_forward": "多模型转发",
+    "free": "免费分组",
+    "gemini": "Gemini",
+    "midjourney": "midjourney",
+    "open_mode": "开源模型-1",
+    "open_mode_cc": "开源模型-1-claude",
+    "openai": "openai官key"
+  },
+  "pricing_version": "shell-api-modelmak-v1",
   "stats": {
     "total": 235,
     "matched": 6,
@@ -44,7 +77,12 @@
         "completion_ratio": 5,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.05
+        "cache_ratio": 0.05,
+        "enable_groups": [
+          "Claude_code",
+          "Claude_code_1",
+          "claude"
+        ]
       }
     },
     "claude-sonnet-5-5": {
@@ -57,7 +95,11 @@
         "completion_ratio": 5,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.05
+        "cache_ratio": 0.05,
+        "enable_groups": [
+          "Claude_code",
+          "claude"
+        ]
       }
     },
     "deepseek-flash": {
@@ -70,7 +112,10 @@
         "completion_ratio": 2,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.2
+        "cache_ratio": 0.2,
+        "enable_groups": [
+          "open_mode_cc"
+        ]
       }
     },
     "deepseek-v4-pro": {
@@ -83,7 +128,10 @@
         "completion_ratio": 2,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.083333
+        "cache_ratio": 0.083333,
+        "enable_groups": [
+          "open_mode_cc"
+        ]
       }
     },
     "gpt-6.2-astra": {
@@ -96,7 +144,13 @@
         "completion_ratio": 5,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.05
+        "cache_ratio": 0.05,
+        "enable_groups": [
+          "codex",
+          "openai"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "len <= 272000 ? tier(\"≤ 272K\", p * 8 + c * 40 + cr * 0.4 + cc * 10) : tier(\"> 272K\", p * 16 + c * 60 + cr * 0.8 + cc * 20)"
       }
     },
     "gpt-6.2-sol": {
@@ -109,7 +163,13 @@
         "completion_ratio": 5,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.05
+        "cache_ratio": 0.05,
+        "enable_groups": [
+          "codex",
+          "openai"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "len <= 272000 ? tier(\"≤ 272K\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5) : tier(\"> 272K\", p * 4 + c * 15 + cr * 0.2 + cc * 5)"
       }
     }
   },
@@ -461,6 +521,6 @@
     "flat_price": null,
     "confidence": "medium",
     "note": "对得上官方价的 6 个模型里，4 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 15 个分组倍率，真正的折扣在那里。 对不上的 2 个：deepseek-flash×0.47、deepseek-v4-pro×1.32，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。",
-    "computed_at": "2026-11-26T13:25:15.900Z"
+    "computed_at": "2026-11-26T15:27:28.529Z"
   }
 }

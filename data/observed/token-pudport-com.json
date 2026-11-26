@@ -1,9 +1,9 @@
 {
   "station_id": "token-pudport-com",
   "endpoint": "https://token.pudport.com/api/pricing",
-  "fetched_at": "2026-11-26T13:04:02.464Z",
+  "fetched_at": "2026-11-26T15:26:47.428Z",
   "http_status": 200,
-  "latency_ms": 1701,
+  "latency_ms": 1250,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -41,7 +41,9 @@
         "completion_ratio": 5,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.09999999999999999
+        "cache_ratio": 0.09999999999999999,
+        "billing_mode": "tiered_expr",
+        "billing_expr": "tier(\"base\", p * 3 + c * 15 + cr * 0.3 + cc * 3.75 + cc1h * 6)"
       }
     },
     "deepseek-v4-pro": {
@@ -80,7 +82,9 @@
         "completion_ratio": 5.000000000000001,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.05
+        "cache_ratio": 0.05,
+        "billing_mode": "tiered_expr",
+        "billing_expr": "len <= 272000 ? tier(\"standard\", p * 8 + c * 40 + cr * 0.4 + cc * 10 + cc1h * 10) : tier(\"long_context\", p * 16 + c * 60 + cr * 0.8 + cc * 20 + cc1h * 20)"
       }
     },
     "gpt-6.2-sol": {
@@ -93,7 +97,9 @@
         "completion_ratio": 5.000000000000001,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.05
+        "cache_ratio": 0.05,
+        "billing_mode": "tiered_expr",
+        "billing_expr": "len <= 272000 ? tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 2.5) : tier(\"long_context\", p * 4 + c * 15 + cr * 0.2 + cc * 5 + cc1h * 5)"
       }
     }
   },
@@ -438,6 +444,6 @@
     "flat_price": null,
     "confidence": "medium",
     "note": "对得上官方价的 6 个模型里，2 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算。 对不上的 1 个：deepseek-flash×0.5，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。 另：旧代数命名 claude-3-opus-20240229、claude-sonnet-4-5、deepseek-chat 已单列，不参与判定。",
-    "computed_at": "2026-11-26T13:25:15.902Z"
+    "computed_at": "2026-11-26T15:27:28.531Z"
   }
 }

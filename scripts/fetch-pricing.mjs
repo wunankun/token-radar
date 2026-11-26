@@ -218,6 +218,7 @@ async function handleOne(src, preset = null) {
       group_source: groupOverride != null ? 'manual' : 'auto',
       groups: groups ? Object.keys(groups).length : 0,
       group_ratios: groups || null,
+      ...(parsed.extras || {}),
       stats: parsed.stats,
       models: parsed.models,
       unmatched: parsed.unmatched.slice(0, 50),

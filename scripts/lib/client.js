@@ -66,7 +66,7 @@
     var p = d * 100;
     if (Math.abs(p) < 0.5) return '0%';
     if (p < 0) return '贵 ' + Math.abs(p).toFixed(0) + '%';
-    return (p >= 10 ? p.toFixed(0) : p.toFixed(1)) + '%';
+    return (p >= 99.4 ? '99.6' : p >= 10 ? p.toFixed(0) : p.toFixed(1)) + '%';
   }
 
   /* 官方价的同口径混合成本（只用于排序和优惠力度，不单独占列） */
@@ -234,7 +234,7 @@
         (r.station.kind === 'official' ? '官方' : discText(d)) + '</span></td>' +
 
       '<td class="num recharge">' + rechargeCell(r) + '</td>' +
-      '<td class="calc hide-lg" title="' + esc(r.calc || '') + '">' + esc(r.calc || '') + '</td>' +
+      '<td class="calc hide-lg" title="' + esc(r.calc_full || r.calc || '') + '">' + esc(r.calc || '') + '</td>' +
       '<td class="hide-md">' + sourceCell(r) + '</td>' +
       '</tr>';
   }

@@ -1,0 +1,401 @@
+{
+  "station_id": "api-6345ywz-cn",
+  "endpoint": "https://api.6345ywz.cn/api/pricing",
+  "fetched_at": "2026-11-26T15:26:52.867Z",
+  "http_status": 200,
+  "latency_ms": 2238,
+  "assumption": "face_value_1cny_per_usd",
+  "parser": "new-api/one-api",
+  "group_ratio": 1,
+  "group_source": "manual",
+  "groups": 11,
+  "group_ratios": {
+    "0倍倍率分组": 0.1,
+    "1倍倍率分组": 1,
+    "2倍倍率分组": 2,
+    "3倍倍率分组": 3,
+    "4倍倍率分组": 4,
+    "5倍倍率分组": 5,
+    "不稳定luna": 0.1,
+    "临时渠道": 0.1,
+    "临时渠道2": 0.01,
+    "神秘模型": 0.01,
+    "翻译": 0.5
+  },
+  "auto_groups": [
+    "1倍倍率分组",
+    "2倍倍率分组",
+    "3倍倍率分组",
+    "4倍倍率分组",
+    "5倍倍率分组"
+  ],
+  "usable_group": {
+    "0倍倍率分组": "0倍倍率分组",
+    "1倍倍率分组": "1倍倍率分组",
+    "2倍倍率分组": "2倍倍率分组",
+    "3倍倍率分组": "3倍倍率分组",
+    "4倍倍率分组": "4倍倍率分组",
+    "5倍倍率分组": "5倍倍率分组",
+    "不稳定luna": "不稳定luna",
+    "临时渠道": "额度有限，用完即止",
+    "临时渠道2": "临时渠道2，可能存在提示词注入等安全风险，请注意防范",
+    "神秘模型": "神秘模型",
+    "翻译": "翻译"
+  },
+  "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
+  "stats": {
+    "total": 182,
+    "matched": 2,
+    "per_call": 0,
+    "no_ratio": 0,
+    "duplicate": 2
+  },
+  "models": {
+    "deepseek-flash": {
+      "input": 75,
+      "output": 75,
+      "cache_read": null,
+      "raw": {
+        "model_name": "deepseek-flash",
+        "model_ratio": 37.5,
+        "completion_ratio": 1,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "enable_groups": [
+          "5倍倍率分组",
+          "MAX",
+          "vip"
+        ]
+      }
+    },
+    "deepseek-v4-pro": {
+      "input": 4.5,
+      "output": 13.5,
+      "cache_read": 0.15,
+      "raw": {
+        "model_name": "deepseek-v4-pro",
+        "model_ratio": 2.25,
+        "completion_ratio": 3,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "cache_ratio": 0.033333333333,
+        "enable_groups": [
+          "1倍倍率分组",
+          "6345",
+          "广州塔用",
+          "白鱼",
+          "LJM",
+          "5倍倍率分组",
+          "ch",
+          "l",
+          "MAX",
+          "vip",
+          "悠灵用",
+          "RT"
+        ]
+      }
+    }
+  },
+  "unmatched": [
+    {
+      "model_name": "MiniMax-M3",
+      "model_ratio": 0.5,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "nvidia/llama-3.1-nemoguard-8b-content-safety",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "qwen/qwen3-30b-a3b",
+      "model_ratio": 0.04,
+      "completion_ratio": 3.5
+    },
+    {
+      "model_name": "神秘模型",
+      "model_ratio": 1.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "grok-4.20-non-reasoning",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.4-mini",
+      "model_ratio": 0.375,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "grok-4.1-fast-reasoning",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "meta/llama-guard-4-12b",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "grok-4.20-multi-agent-console",
+      "model_ratio": 1.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "deepseek-ai/deepseek-v4-pro",
+      "model_ratio": 7.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "nvidia/nemotron-3.5-embed-8b",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "grok-4.3-console",
+      "model_ratio": 1.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-5.4",
+      "model_ratio": 1.25,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "nvidia/llama-nemotron-embed-vl-1b-v2",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "deepseek-v3.2",
+      "model_ratio": 0.29,
+      "completion_ratio": 2.896551724138
+    },
+    {
+      "model_name": "gpt-5.5",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-5.6-luna",
+      "model_ratio": 0.2,
+      "completion_ratio": 6.25
+    },
+    {
+      "model_name": "deepseek-ai/deepseek-v4-flash",
+      "model_ratio": 0.5,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "nvidia/neva-22b",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "writer/palmyra-med-70b-32k",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "meta/muse-glimmer-30b",
+      "model_ratio": 1.5,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "google/gemma-4-31b-it",
+      "model_ratio": 0.07,
+      "completion_ratio": 2.857142857143
+    },
+    {
+      "model_name": "mistralai/mixtral-8x22b-v0.1",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "writer/palmyra-med-70b",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "nvidia/mistral-nemo-minitron-8b-8k-instruct",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "aisingapore/sea-lion-7b-instruct",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "microsoft/phi-3-vision-128k-instruct",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "nvidia/nemotron-4-340b-instruct",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "ibm/granite-3.0-8b-instruct",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "nvidia/nemotron-nano-3-30b-a3b",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "1/deepseek-v4.1-flash",
+      "model_ratio": 0.25,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "grok-4.20-fast",
+      "model_ratio": 1,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "openai/gpt-oss-120b",
+      "model_ratio": 0.075,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "glm-5.2",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "google/recurrentgemma-2b",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "google/gemma-3-27b",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "FAST/deepseek-v3.2",
+      "model_ratio": 1.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "ibm/granite-34b-code-instruct",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "google/diffusiongemma-26b-a4b-it",
+      "model_ratio": 0.5,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "mistralai/mistral-large-4-1t-a52b",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "stepfun-ai/step-5-preview",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "zhipu/glm-4.6v-flash",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-5.4-nano",
+      "model_ratio": 0.1,
+      "completion_ratio": 6.25
+    },
+    {
+      "model_name": "gemini-3.1-pro",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "snowflake/arctic-embed-l",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "microsoft/kosmos-2",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "meta/codellama-70b",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "adept/fuyu-8b",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "nvidia/nemotron-4-340b-reward",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "writer/palmyra-creative-122b",
+      "model_ratio": 0.5,
+      "completion_ratio": 1
+    }
+  ],
+  "derivation": {
+    "class": "scaled",
+    "class_label": "整体倍数",
+    "unit": "USD/1M tokens",
+    "basis": "new-api model_ratio × 2 × group_ratio（1 USD = 500,000 quota），分组倍率手填",
+    "group_ratio": 1,
+    "group_source": "manual",
+    "matched": 2,
+    "comparable": 2,
+    "dominant_multiple": 3.4090909090909087,
+    "agreement": 0.5,
+    "comparable_models": [
+      "deepseek-v4-pro"
+    ],
+    "models": [
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-flash",
+        "input": 75,
+        "output": 75,
+        "multiple": 250,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 1，官方是 4，不是同一计价形状"
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "input": 4.5,
+        "output": 13.5,
+        "multiple": 3.409,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      }
+    ],
+    "rows_ok": 1,
+    "rows_total": 2,
+    "excluded_models": [
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-flash",
+        "multiple": 250
+      }
+    ],
+    "flat_price": null,
+    "confidence": "medium",
+    "note": "对得上官方价的 2 个模型里，1 个都是官方 × 3.41，属于整站统一加价或统一折扣，不是单位问题，价格按 × 3.41 计可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 11 个分组倍率，真正的折扣在那里。 对不上的 1 个：deepseek-flash×250，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。",
+    "computed_at": "2026-11-26T15:27:28.508Z"
+  }
+}

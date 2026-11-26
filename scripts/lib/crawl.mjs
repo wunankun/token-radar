@@ -218,11 +218,28 @@ export function parsePricing(payload, { resolveModel = (n) => n, groupRatioOverr
         group_ratio: gr,
         quota_type: quotaType || 0,
         ...(Number.isFinite(cacheRatio) && cacheRatio > 0 ? { cache_ratio: cacheRatio } : {}),
+        ...(Array.isArray(item.enable_groups) && item.enable_groups.length
+          ? { enable_groups: item.enable_groups.slice(0, 40) }
+          : {}),
+        ...(item.billing_mode ? { billing_mode: String(item.billing_mode) } : {}),
+        ...(item.billing_expr ? { billing_expr: String(item.billing_expr).slice(0, 180) } : {}),
       },
     };
   }
 
-  return { format: 'new-api/one-api', groupRatio, models, unmatched, stats };
+  const meta = payload?.data && !Array.isArray(payload.data) ? payload.data : payload;
+  const clean = (v) => String(v || '').replace(/\s+/g, ' ').trim().slice(0, 80);
+  const usable = meta?.usable_group && typeof meta.usable_group === 'object'
+    ? Object.fromEntries(Object.entries(meta.usable_group).slice(0, 80).map(([k, v]) => [k, clean(v)]))
+    : {};
+  const extras = {
+    ...(Array.isArray(meta?.auto_groups) && meta.auto_groups.length ? { auto_groups: meta.auto_groups.slice(0, 20) } : {}),
+    ...(meta?.base_group_ratio && typeof meta.base_group_ratio === 'object' ? { base_group_ratio: meta.base_group_ratio } : {}),
+    ...(Object.keys(usable).length ? { usable_group: usable } : {}),
+    ...(meta?.pricing_version ? { pricing_version: String(meta.pricing_version) } : {}),
+  };
+
+  return { format: 'new-api/one-api', groupRatio, models, unmatched, stats, extras };
 }
 
 function extractList(payload) {

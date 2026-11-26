@@ -1,9 +1,9 @@
 {
   "station_id": "api-routeeasy-ai",
   "endpoint": "https://api.routeeasy.ai/api/pricing",
-  "fetched_at": "2026-11-26T13:04:01.937Z",
+  "fetched_at": "2026-11-26T15:26:58.046Z",
   "http_status": 200,
-  "latency_ms": 1173,
+  "latency_ms": 1163,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -84,6 +84,82 @@
     "zhu_anti_ci": 1,
     "纯vt-gemini-2.5-1125": 2.5
   },
+  "usable_group": {
+    "0.2-codex-1029": "0.2-codex-1029",
+    "0.35-kiro": "0.35-kiro",
+    "0.4-kiro-duigong-0909": "0.4-kiro-duigong-0909-shagensha",
+    "Claude官转-1110-37": "Claude官转-1110-3.7",
+    "Claude官转-1110-38": "Claude官转-1110-3.8",
+    "Claude官转-3.4-1106": "Claude官转-3.4-1106",
+    "Gemini-纯v-1102-1.7": "Gemini-纯v-1102-1.7",
+    "Gemini-纯v-1102-1.9": "Gemini-纯v-1102-1.9",
+    "Gemini_enterprise_c": "Gemini enterprise 逆向按次",
+    "anti-cc-0.1": "anti-cc-0.1",
+    "anti-cc-0.5-1019": "anti-cc-0.5-1019",
+    "anti-gemini-0.1-1030": "anti-gemini-0.1-1030",
+    "anti-gemini-0.15-0930": "anti-gemini-0.15-0930",
+    "anti-gemini-0.3-0915": "anti-gemini-0.3-0915",
+    "anti-gemini-0.6-1124": "anti-gemini-0.6-1124",
+    "anti-gemini-0930-0.2": "anti-gemini-0930-0.2",
+    "anti-gemini-1-1116": "anti-gemini-1-1116",
+    "anti_claude_cc_0822_035": "anti-claude-cc-0822-0.35",
+    "anti_gemini_0706_025_qing": "anti-gemini-0706-0.25-qing",
+    "awsb-0915-3.4": "awsb-0915-3.4",
+    "awsb-0916-3.3": "awsb-0916-3.3",
+    "awsb-0920-对公组": "awsb-0920-对公组",
+    "awsb-0928-3": "awsb-0928-3",
+    "awsb-1003": "awsb-1003",
+    "awsb-1021": "awsb-1021",
+    "awsb-1021-3.3": "awsb-1021-3.3",
+    "awsb-2-1021": "awsb-2-1021",
+    "awsb-2.9": "awsb-2.9",
+    "awsb-3.4-1111": "awsb-3.4-1111",
+    "awsb-3.5-0928": "awsb-3.5-0928",
+    "awsb-速刷-1103-1.7": "awsb-速刷-1103-1.7",
+    "awsb_0911_2.7": "awsb-0911-2.7",
+    "awsb_1021_25": "awsb-1021-2.5",
+    "az gpt-1.6-1026": "az gpt-1.6-1026",
+    "az-gpt-1.4-1125": "az-gpt-1.4-1125",
+    "az-gpt-1007-1.4": "az-gpt-1007-1.4",
+    "az-gpt-1025-1.7": "az-gpt-1025-1.7",
+    "az-gpt-2.7-1125": "az-gpt-2.7-1125",
+    "cache_99_kiro_025_0711": "99高缓kiro-0.25-0711",
+    "claude-官转-3.5-1123": "claude-官转-3.5-1123",
+    "claude_kiro_025": "claude-kiro-0.25",
+    "codex-0.25": "codex-0.25",
+    "codex_030": "codex-0.3",
+    "default": "default",
+    "gemini-纯v-1021-1.5": "gemini-纯v-1021-1.5",
+    "gemini_cli_0401_038": "gemini-cli-0401-0.38",
+    "gemini_cli_enterprise_040": "gemini-cli-企业-0.4",
+    "gemini_studio_09": "gemini-studio-0.9",
+    "gemini_studio_18": "gemini-studio-1.8",
+    "gemini_vertex_19": "gemini-vertex-1.9",
+    "gpt_image_0603_24": "gpt-image-2-0603-0.12",
+    "gpt_image_pro_0604_0545": "gpt-image-2-pro-0604-0.545",
+    "gpt低级模型专用分组2.5": "gpt低级模型专用分组2.5",
+    "kiro-0.08-1011": "kiro-0.08-1011",
+    "kiro-0.13-109": "kiro-0.13-109",
+    "kiro-0.15-0930": "kiro-0.15-0930",
+    "kiro-0.3-0831": "kiro-0.3-0831",
+    "kiro-正价0.3-1009": "kiro-正价0.3-1009",
+    "oai-官转-2.6-1029": "oai-官转-2.6-1029",
+    "oai-官转-2.7-1013": "oai-官转-2.7-1013",
+    "oai-官转-2.9": "oai-官转-2.9",
+    "oai-官转-3.5-1126": "oai-官转-3.5-1126",
+    "oai-官转全模型-1026-2.8": "oai-官转全模型-1026-2.8",
+    "oai-官转分组-3.2-1123": "oai-官转分组-3.2-1123",
+    "oai-官转生图-3.3-1115": "oai-官转生图-3.3-1115",
+    "oai-官转生图3-1023-2.9": "oai-官转生图3-1023-2.9",
+    "oai-官转画图-1111": "oai-官转画图-1111",
+    "oai-官转画图-3-1014": "oai-官转画图-3-1014",
+    "oai官转生图-稳定-1120": "oai官转生图-稳定-1120",
+    "oai官转生图2.8-1117": "oai官转生图2.8-1117",
+    "oai正向画图-3.0": "oai正向画图-3.0",
+    "zhu_anti_ci": "zhu-anti-按次",
+    "纯vt-gemini-2.5-1125": "纯vt-gemini-2.5-1125"
+  },
+  "pricing_version": "shell-api-modelmak-v1",
   "stats": {
     "total": 537,
     "matched": 4,
@@ -102,7 +178,30 @@
         "completion_ratio": 5,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.05
+        "cache_ratio": 0.05,
+        "enable_groups": [
+          "0.35-kiro",
+          "0.4-kiro-duigong-0909",
+          "Claude官转-1110-37",
+          "Claude官转-1110-38",
+          "Claude官转-3.4-1106",
+          "awsb-0915-3.4",
+          "awsb-0916-3.3",
+          "awsb-0920-对公组",
+          "awsb-0928-3",
+          "awsb-1003",
+          "awsb-1021-3.3",
+          "awsb-2.9",
+          "awsb-3.4-1111",
+          "awsb-3.5-0928",
+          "awsb_0911_2.7",
+          "cache_99_kiro_025_0711",
+          "claude-官转-3.5-1123",
+          "claude_kiro_025",
+          "kiro-0.15-0930",
+          "kiro-0.3-0831",
+          "kiro-正价0.3-1009"
+        ]
       }
     },
     "claude-sonnet-5-5": {
@@ -115,7 +214,16 @@
         "completion_ratio": 5,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.1
+        "cache_ratio": 0.1,
+        "enable_groups": [
+          "0.35-kiro",
+          "0.4-kiro-duigong-0909",
+          "cache_99_kiro_025_0711",
+          "claude_kiro_025",
+          "kiro-0.15-0930",
+          "kiro-0.3-0831",
+          "kiro-正价0.3-1009"
+        ]
       }
     },
     "gpt-6.2-astra": {
@@ -127,7 +235,15 @@
         "model_ratio": 37.5,
         "completion_ratio": 1,
         "group_ratio": 1,
-        "quota_type": 0
+        "quota_type": 0,
+        "enable_groups": [
+          "az gpt-1.6-1026",
+          "az-gpt-1.4-1125",
+          "az-gpt-1025-1.7",
+          "az-gpt-2.7-1125"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "len <= 272000 ? tier(\"standard\", p * 8 + c * 40 + cr * 0.4 + cc * 10 + cc12h * 20) : tier(\"long_context\", p * 16 + c * 60 + cr * 0.8 + cc * 20 + cc12h * 40)"
       }
     },
     "gpt-6.2-sol": {
@@ -139,7 +255,15 @@
         "model_ratio": 37.5,
         "completion_ratio": 1,
         "group_ratio": 1,
-        "quota_type": 0
+        "quota_type": 0,
+        "enable_groups": [
+          "az gpt-1.6-1026",
+          "az-gpt-1.4-1125",
+          "az-gpt-1025-1.7",
+          "az-gpt-2.7-1125"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "len <= 272000 ? tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc12h * 5) : tier(\"long_context\", p * 4 + c * 15 + cr * 0.2 + cc * 5 + cc12h * 10)"
       }
     }
   },
@@ -468,6 +592,6 @@
     "flat_price": null,
     "confidence": "low",
     "note": "站内倍率吵成一团：4 个对得上的模型里没有多数派（最集中的只占 33%），从 1 倍散到 37.5 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。 另：旧代数命名 claude-sonnet-4-5 已单列，不参与判定。",
-    "computed_at": "2026-11-26T13:25:15.882Z"
+    "computed_at": "2026-11-26T15:27:28.511Z"
   }
 }

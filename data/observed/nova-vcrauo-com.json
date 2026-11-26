@@ -1,14 +1,14 @@
 {
   "station_id": "nova-vcrauo-com",
   "endpoint": "https://nova.vcrauo.com/api/pricing",
-  "fetched_at": "2026-11-26T13:04:08.095Z",
+  "fetched_at": "2026-11-26T15:26:57.660Z",
   "http_status": 200,
-  "latency_ms": 1780,
+  "latency_ms": 1410,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
   "group_source": "manual",
-  "groups": 70,
+  "groups": 67,
   "group_ratios": {
     "Azure·蒸馏渠道": 1.6,
     "CCMAX·不可外接节点【不可破限不可蒸馏】": 1,
@@ -35,7 +35,6 @@
     "Codex·高速节点不降智一渠道": 0.13,
     "Codex·高速节点不降智二渠道": 0.13,
     "Codex·高速节点不降智速刷渠道": 0.12,
-    "Codex·高速节点二渠道": 0.1,
     "Codex福利节点一渠道": 0.05,
     "Codex福利节点二渠道": 0.05,
     "Deepseek官Key": 0.4,
@@ -47,7 +46,6 @@
     "Gemini·AI-studio": 1,
     "Glm·B300自部署": 0.45,
     "Glm官Key": 0.4,
-    "Gpt-6Astra不降智渠道": 0.09,
     "Gpt-Free渠道": 0.04,
     "Gpt·image AZ节点": 1,
     "Gpt·image Adobe节点": 1,
@@ -61,11 +59,9 @@
     "Kimi·B300自部署": 0.45,
     "Kimi官Key": 0.4,
     "MinMax-h3·视频节点": 1,
+    "Pro·不降智免费Fast渠道": 0.13,
     "Pro·不降智高缓兜底分组": 0.2,
     "Pro·不降智高缓分组": 0.15,
-    "Pro·企业专线节点": 0.6,
-    "Pro·倍速不降智商高缓分组": 0.25,
-    "Pro·旗舰节点": 0.3,
     "Seedance·豆包官转节点": 0.8,
     "Seedance·豆包稳定节点一": 1,
     "Seedance·豆包稳定节点二": 1,
@@ -78,9 +74,80 @@
     "国产稳定反代渠道": 0.3,
     "国产英伟达免费分组": 0.0001,
     "国产英伟达福利分组-----不允许探测，机器人扫描探测就会封号": 0.01,
+    "官转·倍速不降智商高缓分组": 0.25,
     "自部署无审查deepseek-机房直出": 1,
     "试用用户专用分组": 1
   },
+  "usable_group": {
+    "Azure·蒸馏渠道": "Azure满血|高稳定|无降智|全模型|可蒸馏",
+    "CCMAX·不可外接节点【不可破限不可蒸馏】": "非华强北｜保真｜可看号池｜限制客户端仅支持Claue code等客户端｜高智商｜测试好再跑",
+    "CCMAX·可外接渠道2【破限|蒸馏直接封号不退款】": "非华强北｜保真｜可看号池｜可外接不限制客户端｜高智商｜测试好再跑",
+    "CCMAX·可外接渠道3【破限|蒸馏直接封号不退款】": "非华强北｜保真｜可看号池｜可外接不限制客户端｜高智商｜测试好再跑",
+    "CCMAX·可外接节点【不可破限不可蒸馏】": "非华强北｜保真｜可看号池｜可外接不限制客户端｜高智商｜测试好再跑",
+    "CCMAX·复签|微注入|开透传【破限|蒸馏直接封号不退款】": "微注入｜复签15%｜保真｜可看号池｜可外接不限制客户端｜可能保持原生",
+    "CCMAX·满血|无注入|纯原生": "海外号池主|纯原生|满血PRO20X，无注入|高要求请用这个",
+    "CCMAX·满血高性能特价": "该渠道已替换为Cursor正价号池｜高缓存｜高智商",
+    "CCMAX·现签|零注入|开透传【破限|蒸馏直接封号不退款】": "真零注入|实时签名|保真|可看号池|可外接不限制客户端|原汁原味|深度思考",
+    "CCMAX·蒸馏节点-微注入": "些许注入 | 全透传 可蒸馏，随便验随便测",
+    "CCMAX·蒸馏节点-有注入": "CC特惠蒸馏分组，有注入，蒸前先测试",
+    "CCMAX·蒸馏节点-零注入": "真零注入 | 全透传 可蒸馏，随便验随便测",
+    "Claude--kiro·Power渠道【企业级kiro智商较高】": "无缓存！无缓存！无缓存！|高智商|有思维链|1M上下文",
+    "Claude--kiro·Pro+正价渠道": "高缓存|智商稍微较高|有思维链",
+    "Claude--kiro·兜底高缓渠道": "独家渠道企业Kiro|速刷|有注入|有缓存创建|高智商|过大厂检测",
+    "Claude--kiro·稳定高缓渠道": "高稳定|高缓存|低智商",
+    "Claude·AWS反代渠道": "Claude AWS渠道逆向号池|高智商|高缓存",
+    "Claude·华强北-正价企业Kiro高智商|满分|满缓": "天花板产品｜满缓！！！！｜高智｜思维链",
+    "Claude·华强北-正价企业Kiro｜低Tps": "高缓存｜低Tps｜Tps好看｜大缓存写入｜Fable5.1真实模型",
+    "Claude·华强北节点【请随意---国内某大厂渠道】": "国内大厂渠道，反响不错，智商很高",
+    "Codex·高缓高稳定渠道【用于兜底分组】": "可蒸馏 | 全模型 | 高缓存 | 不保证智商",
+    "Codex·高速节点一渠道": "此分组不保证智商建议使用专用不降智商分组",
+    "Codex·高速节点不降智一渠道": "不降智分组,90%左右缓存",
+    "Codex·高速节点不降智二渠道": "不降智分组,90%左右缓存",
+    "Codex·高速节点不降智速刷渠道": "Pro5x退款流速刷不降智",
+    "Codex福利节点一渠道": "福利分组 | 此分组不保证智商",
+    "Codex福利节点二渠道": "福利分组 | 此分组不保证智商",
+    "Deepseek官Key": "腾讯云官key",
+    "GPT·官key渠道": "open AI 官key渠道，支持pro模型，可以设置fast、ultrafast等速率，随便测，随便验!",
+    "GPT·官转渠道": "openAI 官转渠道-仅有普通模型，不支持fast模式，随便测，随便验!",
+    "Gemini Ultra兜底": "Gemini·Ultra反重力兜底号池 | 禁蒸馏 | 蒸馏秒封",
+    "Gemini Ultra反重力渠道": "Gemini·Ultra反重力号池 | 禁蒸馏 | 蒸馏秒封",
+    "Gemini Vercel": "纯VT+AS兜底",
+    "Gemini·AI-studio": "Adobe 原生分组",
+    "Glm·B300自部署": "Glm系列|不排队|不掺水|掺水剁吊",
+    "Glm官Key": "腾讯云官key",
+    "Gpt-Free渠道": "Free号池只支持gpt-5.6-terra模型",
+    "Gpt·image AZ节点": "Az特惠分组超强1-4K",
+    "Gpt·image Adobe节点": "Adobe原生--全参数|非超分|只开放早9-晚6",
+    "Gpt·image 原生节点": "ChatGPT生图4K通道原生非超分企业级高并发通道",
+    "Gpt·image 特惠节点": "反代超分渠道",
+    "Gpt·image 福利节点": "Gpt·free分组超分渠道",
+    "Grok·Super节点": "Grok请求若被上游安全策略明确拦截，将收取$O.1/次的违规请求费用，从账户余额扣除，不叠加分组倍率",
+    "Grok·Video节点": "Grok·heavy专属号池----视频生成专用，只支持文生视频！！",
+    "Grok·image节点": "Grok·heavy专属号池----图片生成专用",
+    "Grok·福利节点": "Grok-free号池添加动态家宽防止降智［30%的概率流口水］",
+    "Kimi·B300自部署": "Kimi系列|不排队|不掺水|掺水剁吊",
+    "Kimi官Key": "腾讯云官key",
+    "MinMax-h3·视频节点": "MinMax-h3视频渠道",
+    "Pro·不降智免费Fast渠道": "免费Ultra Fast 8倍速 | 不降智商 | 强制UltraFast8倍速 | 80%左右缓存",
+    "Pro·不降智高缓兜底分组": "满智商 | 高缓存 | 绝不掉线 | 过夜首选",
+    "Pro·不降智高缓分组": "满智商 | 高缓存 | 高稳定 | 主推",
+    "Seedance·豆包官转节点": "官转节点，本站兜底",
+    "Seedance·豆包稳定节点一": "推荐稳定节点一",
+    "Seedance·豆包稳定节点二": "推荐稳定节点二",
+    "grok·Ultra节点": "Grok请求若被上游安全策略明确拦截，将收取$O.1/次的违规请求费用，从账户余额扣除，不叠加分组倍率",
+    "grok·heavy节点": "Grok请求若被上游安全策略明确拦截，将收取$O.1/次的违规请求费用，从账户余额扣除，不叠加分组倍率",
+    "国产特惠反代渠道": "国模特惠渠道",
+    "国产福利渠道·高缓": "Kimi-K3/Qwen-3.8max",
+    "国产福利渠道·高缓|高速": "Deepseek-V4.1flash/Deepseek-v4.1flash-1017",
+    "国产福利节点": "速刷纯福利，随时拉闸",
+    "国产稳定反代渠道": "用于兜底高稳定高缓存",
+    "国产英伟达免费分组": "垃圾英伟达渠道，可用性看脸",
+    "国产英伟达福利分组-----不允许探测，机器人扫描探测就会封号": "高质量英伟达福利渠道，大部分情况可用",
+    "官转·倍速不降智商高缓分组": "官转不降智商 | 免费Ultra Fast 8倍速|禁止蒸馏!!!|90缓+|强制UltraFast8倍速",
+    "自部署无审查deepseek-机房直出": "FP8满参部署，权重级彻底去除拒答!",
+    "试用用户专用分组": "试用用户专属渠道【试用订阅仅可使用该分组】"
+  },
+  "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
   "stats": {
     "total": 123,
     "matched": 6,
@@ -89,30 +156,6 @@
     "duplicate": 2
   },
   "models": {
-    "gpt-6.2-astra": {
-      "input": 75,
-      "output": 150,
-      "cache_read": null,
-      "raw": {
-        "model_name": "gpt-6.2-astra",
-        "model_ratio": 37.5,
-        "completion_ratio": 2,
-        "group_ratio": 1,
-        "quota_type": 0
-      }
-    },
-    "claude-sonnet-5-5": {
-      "input": 75,
-      "output": 75,
-      "cache_read": null,
-      "raw": {
-        "model_name": "claude-sonnet-5-5",
-        "model_ratio": 37.5,
-        "completion_ratio": 1,
-        "group_ratio": 1,
-        "quota_type": 0
-      }
-    },
     "gpt-6.2-sol": {
       "input": 75,
       "output": 150,
@@ -122,20 +165,78 @@
         "model_ratio": 37.5,
         "completion_ratio": 2,
         "group_ratio": 1,
-        "quota_type": 0
+        "quota_type": 0,
+        "enable_groups": [
+          "Azure·蒸馏渠道",
+          "企业专用专线【不降智商】",
+          "Codex·高缓高稳定渠道【用于兜底分组】",
+          "Pro·不降智高缓兜底分组",
+          "企业专用专线",
+          "Codex·高速节点一渠道",
+          "试用用户专用分组",
+          "Pro·不降智高缓分组",
+          "Pro·倍速不降智商高缓分组",
+          "企业专用专线免费Fast【不降智商】",
+          "Pro·不降智免费Fast渠道",
+          "GPT·官转渠道",
+          "Codex·高速节点不降智二渠道",
+          "Codex·高速节点不降智速刷渠道",
+          "Codex福利节点一渠道",
+          "Codex福利节点二渠道",
+          "Codex·高速节点不降智一渠道"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "((len < 272000)) ? (tier(\"base\", p * 2 + c * 10 + cr * 0.1 + cc * 2.5 + cc1h * 2.5)) : (tier(\"base\", p * 4 + c * 15 + cr * 0.2 + cc * 5 + cc1h * 2.5))"
       }
     },
     "deepseek-flash": {
-      "input": 1,
-      "output": 4,
-      "cache_read": 0.02,
+      "input": 75,
+      "output": 75,
+      "cache_read": null,
       "raw": {
-        "model_name": "deepseek-v4.1-flash",
-        "model_ratio": 0.5,
-        "completion_ratio": 4,
+        "model_name": "deepseek-flash",
+        "model_ratio": 37.5,
+        "completion_ratio": 1,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.02
+        "enable_groups": [
+          "Deepseek官Key"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "(tier(\"base\", p * 1 + c * 4 + cr * 0.02)) * (hour(\"Asia/Shanghai\") >= 9 && hour(\"Asia/Shanghai\") < 12 && weekday(\"Asia/Shanghai\") >= 1 && weekday(\"Asia/Shanghai\") < 5 ? 2 : 1) * (h"
+      }
+    },
+    "gpt-6.2-astra": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "enable_groups": [
+          "Codex福利节点二渠道",
+          "Codex·高速节点不降智速刷渠道",
+          "Pro·不降智免费Fast渠道",
+          "Pro·不降智高缓分组",
+          "企业专用专线【不降智商】",
+          "Pro·倍速不降智商高缓分组",
+          "Codex·高速节点不降智二渠道",
+          "Codex·高缓高稳定渠道【用于兜底分组】",
+          "Azure·蒸馏渠道",
+          "GPT·官转渠道",
+          "试用用户专用分组",
+          "Pro·不降智高缓兜底分组",
+          "Codex福利节点一渠道",
+          "企业专用专线免费Fast【不降智商】",
+          "Codex·高速节点一渠道",
+          "Codex·高速节点不降智一渠道",
+          "企业专用专线"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "((len < 272000)) ? (tier(\"base\", p * 8 + c * 40 + cr * 0.4 + cc * 10 + cc1h * 10)) : (tier(\"base\", p * 16 + c * 60 + cr * 0.8 + cc * 20 + cc1h * 20))"
       }
     },
     "claude-opus-5-5": {
@@ -147,7 +248,56 @@
         "model_ratio": 37.5,
         "completion_ratio": 1,
         "group_ratio": 1,
-        "quota_type": 0
+        "quota_type": 0,
+        "enable_groups": [
+          "CCMAX·蒸馏节点-微注入",
+          "Claude-AWS Bedrock",
+          "CCMAX·现签|零注入|开透传【破限|蒸馏直接封号不退款】",
+          "Claude--kiro·兜底高缓渠道",
+          "CCMAX·复签|微注入|开透传【破限|蒸馏直接封号不退款】",
+          "企业专线-CCMAX·复签|零注入|开透传",
+          "CCMAX·可外接渠道2【破限|蒸馏直接封号不退款】",
+          "Claude·华强北节点【请随意---国内某大厂渠道】",
+          "CCMAX·蒸馏节点-有注入",
+          "CCMAX·不可外接节点【不可破限不可蒸馏】",
+          "CCMAX·蒸馏节点-零注入",
+          "企业专线-CCMAX渠道一",
+          "企业专线-CCMAX·复签|微注入|开透传",
+          "Claude华强北 正价企业Kiro高智商|满分|满缓",
+          "CCMAX·满血高性能特价",
+          "Claude·AWS反代渠道",
+          "Claude·华强北-正价企业Kiro｜低Tps",
+          "企业专线-CCMAX不可外接",
+          "CCMAX·可外接渠道3【破限|蒸馏直接封号不退款】",
+          "Claude--kiro·Pro+正价渠道",
+          "CCMAX·可外接节点【不可破限不可蒸馏】",
+          "CCMAX·满血|无注入|纯原生",
+          "Claude--kiro·Power渠道【企业级kiro智商较高】",
+          "Claude--kiro·稳定高缓渠道"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "tier(\"base\", p * 4 + c * 20 + cr * 0.2 + cc * 5 + cc1h * 8)"
+      }
+    },
+    "claude-sonnet-5-5": {
+      "input": 75,
+      "output": 375,
+      "cache_read": null,
+      "raw": {
+        "model_name": "claude-sonnet-4-5",
+        "model_ratio": 37.5,
+        "completion_ratio": 5,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "enable_groups": [
+          "Claude--kiro·Power渠道【企业级kiro智商较高】",
+          "Claude华强北 正价企业Kiro高智商|满分|满缓",
+          "Claude·华强北-正价企业Kiro｜低Tps",
+          "Claude--kiro·Pro+正价渠道",
+          "Claude·华强北节点【请随意---国内某大厂渠道】"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "tier(\"base\", p * 3 + c * 15 + cr * 0.3 + cc * 3.75 + cc1h * 6)"
       }
     },
     "deepseek-v4-pro": {
@@ -160,158 +310,25 @@
         "completion_ratio": 5,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.1
+        "cache_ratio": 0.1,
+        "enable_groups": [
+          "Deepseek官Key",
+          "企业用户·国产稳定渠道",
+          "企业用户·国产高速渠道"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "(tier(\"base\", p * 4.5 + c * 13.5 + cr * 0.15)) * (hour(\"Asia/Shanghai\") >= 9 && hour(\"Asia/Shanghai\") < 12 && weekday(\"Asia/Shanghai\") >= 1 && weekday(\"Asia/Shanghai\") < 5 ? 2 : 1)"
       }
     }
   },
   "unmatched": [
     {
-      "model_name": "Adobe-gpt-image-2",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "x-2.5-480p",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "doubao-seedance-2-5-260628",
-      "model_ratio": 18.4,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "kimi-k2.7-code",
-      "model_ratio": 3.25,
-      "completion_ratio": 4.153846153846
-    },
-    {
-      "model_name": "claude-fable-5-1",
-      "model_ratio": 5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-image-2.5",
-      "model_ratio": 37.5,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "seedance-2.0-933",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gpt-6.1-terra",
-      "model_ratio": 37.5,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "kimi-k2.7-code-highspeed",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gpt-image-2.6-flare-CF",
-      "model_ratio": 37.5,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "gemini-3.8-flash-high",
-      "model_ratio": 37.5,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "yy-seedance2.5-480p",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "qwen3.8-max",
-      "model_ratio": 6,
-      "completion_ratio": 3
-    },
-    {
-      "model_name": "claude-haiku-4-5",
-      "model_ratio": 37.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "MiniMax-M2.7",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "Adobe-gpt-image-2.6-flare",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "deepseek-v4-flash-0731",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "xinyao-2.0-720p-TJ",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "claude-haiku-5-5",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "Free-gpt-image-2.5-sunburst",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gpt-image-2.6-CF",
-      "model_ratio": 37.5,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "claude-opus-4-6-thinking",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "doubao-seedance-2-0-260128",
-      "model_ratio": 18.4,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "glm-5.3-flash",
+      "model_name": "qwen3.8-flash",
       "model_ratio": 0.4,
-      "completion_ratio": 3.5
+      "completion_ratio": 3.375
     },
     {
-      "model_name": "gemini-4-carbon",
-      "model_ratio": 37.5,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "gemini-4-argon",
-      "model_ratio": 37.5,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "claude-opus-4-7",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "kimi-k2.6",
-      "model_ratio": 3.25,
-      "completion_ratio": 4.153846153846
-    },
-    {
-      "model_name": "Free-gpt-image-2.5-flare",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gpt-image-2",
+      "model_name": "gpt-image-2.6",
       "model_ratio": 37.5,
       "completion_ratio": 2
     },
@@ -321,77 +338,42 @@
       "completion_ratio": 1
     },
     {
-      "model_name": "jimeng-seedance-2.5-480",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "seedance2.0-pro-720p",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "claude-fable-5",
-      "model_ratio": 5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "glm-5.1",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "mimo-v2.6-pro",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "qwen3.8-flash",
-      "model_ratio": 0.4,
-      "completion_ratio": 3.375
-    },
-    {
-      "model_name": "x-2.5-720p",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "x-2.5-1080p",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "claude-opus-4-5",
-      "model_ratio": 37.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "yy-seedance2.5-720p",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "seedance2.5-pro-720p",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "Adobe-gpt-image-2.5",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
       "model_name": "Adobe-gpt-image-2.5-sunburst",
       "model_ratio": 37.5,
       "completion_ratio": 1
     },
     {
-      "model_name": "mimo-v2.6-flash",
+      "model_name": "Adobe-gpt-image-2.6-sunburst",
       "model_ratio": 37.5,
       "completion_ratio": 1
     },
     {
-      "model_name": "grok-4.7-build-fast",
+      "model_name": "gpt-6.1-terra",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-image-2.5-sunburst-CF",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-image-2.6-sunburst-CF",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "claude-haiku-4-5",
+      "model_ratio": 37.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-sonnet-5",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "Free-gpt-image-2.5-flare",
       "model_ratio": 37.5,
       "completion_ratio": 1
     },
@@ -401,19 +383,194 @@
       "completion_ratio": 3
     },
     {
-      "model_name": "gpt-image-2.5-flare",
+      "model_name": "x-2.5-1080p",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-6.1-sol",
       "model_ratio": 37.5,
       "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-image-2",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-image-2.6-sunburst",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "seedance-2.5-720-max",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "seedance2.5-pro-720p",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "kimi-k2.8",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "kimi-k3.1-pro",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "glm-5.3-flashx",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "kimi-k2.7-code",
+      "model_ratio": 3.25,
+      "completion_ratio": 4.153846153846
+    },
+    {
+      "model_name": "glm-5.1",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-4-argon",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "Free-gpt-image-2.6-sunburst",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "doubao-seedance-2-5-260628",
+      "model_ratio": 18.4,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "Free-gpt-image-2",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "Free-gpt-image-2.5-sunburst",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gemini-3.8-flash-high",
+      "model_ratio": 37.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "MiniMax-M3",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-image-2.6-flare",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "claude-haiku-5-5",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "grok-4.7",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-6-astra",
+      "model_ratio": 5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-haiku-4-5-20251001",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "grok-build-0.1",
+      "model_ratio": 0.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "jimeng-seedance-2.5-720",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "sd-2.0fast-480p",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "claude-opus-4-5",
+      "model_ratio": 37.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "mimo-v2.5",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-image-2.6-flare-CF",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "grok-4.5",
+      "model_ratio": 1,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "MiniMax-M2.7",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "claude-opus-4-7",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "Adobe-gpt-image-2.5",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "deepseek-v4-flash-0731",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "qwen3.8-max",
+      "model_ratio": 6,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "gpt-5.6-sol",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "jimeng-seedance-2.5-480",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
     },
     {
       "model_name": "a-2.0-720p-v1",
       "model_ratio": 37.5,
       "completion_ratio": 1
-    },
-    {
-      "model_name": "glm-5.3",
-      "model_ratio": 4,
-      "completion_ratio": 3.5
     }
   ],
   "derivation": {
@@ -424,34 +581,13 @@
     "group_ratio": 1,
     "group_source": "manual",
     "matched": 6,
-    "comparable": 6,
-    "dominant_multiple": 37.5,
-    "agreement": 0.333,
+    "comparable": 5,
+    "dominant_multiple": 2.2727272727272725,
+    "agreement": 0.2,
     "comparable_models": [
-      "claude-sonnet-5-5",
-      "gpt-6.2-sol"
+      "deepseek-v4-pro"
     ],
     "models": [
-      {
-        "id": "gpt-6.2-astra",
-        "name": "gpt-6.2-astra",
-        "input": 75,
-        "output": 150,
-        "multiple": 9.375,
-        "shape_ok": false,
-        "verdict": "shape",
-        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
-      },
-      {
-        "id": "claude-sonnet-5-5",
-        "name": "claude-sonnet-5-5",
-        "input": 75,
-        "output": 75,
-        "multiple": 37.5,
-        "shape_ok": false,
-        "verdict": "shape",
-        "why": "输出/输入比 1，官方是 5，不是同一计价形状"
-      },
       {
         "id": "gpt-6.2-sol",
         "name": "gpt-6.2-sol",
@@ -464,13 +600,23 @@
       },
       {
         "id": "deepseek-flash",
-        "name": "deepseek-v4.1-flash",
-        "input": 1,
-        "output": 4,
-        "multiple": 3.333,
-        "shape_ok": true,
-        "verdict": "ok",
-        "why": "输出/输入比与官方一致，这一行能单独算"
+        "name": "deepseek-flash",
+        "input": 75,
+        "output": 75,
+        "multiple": 250,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 1，官方是 4，不是同一计价形状"
+      },
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "input": 75,
+        "output": 150,
+        "multiple": 9.375,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
       },
       {
         "id": "claude-opus-5-5",
@@ -483,6 +629,16 @@
         "why": "输出/输入比 1，官方是 5，不是同一计价形状"
       },
       {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-4-5",
+        "input": 75,
+        "output": 375,
+        "multiple": 37.5,
+        "shape_ok": true,
+        "verdict": "legacy",
+        "why": "旧代数型号名，价格表已过期"
+      },
+      {
         "id": "deepseek-v4-pro",
         "name": "deepseek-v4-pro",
         "input": 3,
@@ -493,33 +649,33 @@
         "why": "输出/输入比 5，官方是 3，不是同一计价形状"
       }
     ],
-    "rows_ok": 1,
+    "rows_ok": 0,
     "rows_total": 6,
     "excluded_models": [
+      {
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "multiple": 37.5
+      },
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-flash",
+        "multiple": 250
+      },
       {
         "id": "gpt-6.2-astra",
         "name": "gpt-6.2-astra",
         "multiple": 9.375
       },
       {
-        "id": "deepseek-flash",
-        "name": "deepseek-v4.1-flash",
-        "multiple": 3.333
-      },
-      {
         "id": "claude-opus-5-5",
         "name": "claude-opus-5-5",
         "multiple": 18.75
-      },
-      {
-        "id": "deepseek-v4-pro",
-        "name": "deepseek-v4-pro",
-        "multiple": 2.273
       }
     ],
     "flat_price": null,
     "confidence": "low",
-    "note": "站内倍率吵成一团：6 个对得上的模型里没有多数派（最集中的只占 33%），从 37.5 倍散到 37.5 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。",
-    "computed_at": "2026-11-26T13:25:15.898Z"
+    "note": "站内倍率吵成一团：6 个对得上的模型里没有多数派（最集中的只占 20%），从 2.27 倍散到 250 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。 另：旧代数命名 claude-sonnet-4-5 已单列，不参与判定。",
+    "computed_at": "2026-11-26T15:27:28.528Z"
   }
 }

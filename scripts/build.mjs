@@ -9,6 +9,8 @@ import { join } from 'node:path';
 import { writeFileSync } from 'node:fs';
 import { loadAll, writeJson, DIST, ensureDir, loadHealth } from './lib/io.mjs';
 import { loadObservedStations, loadVerdicts } from './lib/observed-stations.mjs';
+const round4 = (n) => (Number.isFinite(n) ? Math.round(n * 1e4) / 1e4 : n);
+import { pickGroup, GROUP_SOURCE_LABEL } from './lib/pick-group.mjs';
 import { KINDS, FLAGS, buildOfficialIndex, normalizeEntry, rechargeBonus, KIND_LABEL } from './lib/normalize.mjs';
 import { renderSite } from './lib/render.mjs';
 
@@ -166,19 +168,39 @@ for (const p of [...providers, ...scanned]) {
       if (isAbsolute) return spec;
       return p.multiplier ? { mode: 'multiplier', ...p.multiplier, ...spec } : spec;
     };
-    const stationModel = manual
-      ? inherit(manual)
-      : auto
-        ? {
-            mode: 'absolute',
-            input: auto.input,
-            output: auto.output,
-            cache_read: auto.cache_read,
-            multiple: verdict?.mult?.get(modelId) ?? null,
-            group: groupInfo(obs),
-            tiers: tierInfo(obs),
-          }
-        : null;
+    let stationModel = null;
+    if (manual) {
+      stationModel = inherit(manual);
+    } else if (auto) {
+      // 同一个模型在不同分组里能差 20 倍：按 pickGroup 选出的「用户实际会用的档」重算
+      const offUsd = officialIndex.get(modelId)?.usd?.input;
+      let picked = pickGroup(obs, auto.raw);
+      let base = Number(auto.raw?.model_ratio) * 2 * picked.ratio;
+      // 算出来比官方还便宜 98% 以上，基本是包月/活动池，按量口径算不出这个钱 → 退回默认档
+      if (offUsd && base / offUsd < 0.02) {
+        picked = { name: 'default', full: 'default', ratio: Number(obs?.group_ratio) || 1, source: 'default', desc: '' };
+        base = Number(auto.raw?.model_ratio) * 2 * picked.ratio;
+      }
+      const outRatio = Number(auto.raw?.completion_ratio) || 1;
+      const cacheRatio = Number(auto.raw?.cache_ratio);
+      stationModel = {
+        mode: 'absolute',
+        input: round4(base),
+        output: round4(base * outRatio),
+        cache_read: Number.isFinite(cacheRatio) && cacheRatio > 0 ? round4(base * cacheRatio) : null,
+        group: {
+          name: picked.name,
+          full: picked.full,
+          ratio: picked.ratio,
+          source: picked.source,
+          source_label: GROUP_SOURCE_LABEL[picked.source] || picked.source,
+          desc: picked.desc,
+          count: (groupInfo(obs) || {}).count ?? null,
+        },
+        tiers: tierInfo(obs),
+        observed: true,
+      };
+    }
     if (!stationModel) continue;
 
     const res = normalizeEntry({

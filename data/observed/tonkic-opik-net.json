@@ -1,9 +1,9 @@
 {
   "station_id": "tonkic-opik-net",
   "endpoint": "https://tonkic.opik.net/api/pricing",
-  "fetched_at": "2026-11-26T13:04:15.438Z",
+  "fetched_at": "2026-11-26T15:27:13.537Z",
   "http_status": 200,
-  "latency_ms": 1307,
+  "latency_ms": 1563,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -18,6 +18,22 @@
     "claude": 0.1,
     "grok": 0.1
   },
+  "auto_groups": [
+    "0.05羊毛",
+    "0.1",
+    "0.15不降智"
+  ],
+  "usable_group": {
+    "0.05羊毛": "0.05倍率便宜分组,不保证稳定性",
+    "0.1": "0.1倍率分组",
+    "0.15不降智": "0.15倍率不降智分组",
+    "0.2": "0.2倍率Luna专属分组",
+    "auto": "自动分组：优先0.05羊毛，失败依次转0.1、0.15不降智",
+    "bps-local": "BPS本地桥接实验组（1倍率，单并发，真实生成未验证）",
+    "claude": "Claude 4.6",
+    "grok": "Grok 4.6"
+  },
+  "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
   "stats": {
     "total": 9,
     "matched": 2,
@@ -26,18 +42,6 @@
     "duplicate": 0
   },
   "models": {
-    "gpt-6.2-astra": {
-      "input": 75,
-      "output": 150,
-      "cache_read": null,
-      "raw": {
-        "model_name": "gpt-6.2-astra",
-        "model_ratio": 37.5,
-        "completion_ratio": 2,
-        "group_ratio": 1,
-        "quota_type": 0
-      }
-    },
     "gpt-6.2-sol": {
       "input": 75,
       "output": 150,
@@ -47,24 +51,56 @@
         "model_ratio": 37.5,
         "completion_ratio": 2,
         "group_ratio": 1,
-        "quota_type": 0
+        "quota_type": 0,
+        "enable_groups": [
+          "bps-local"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "len <= 272000 ? tier(\"standard\", p * 2 + c * 10 + cr * 0.1) : tier(\"long_context\", p * 4 + c * 15 + cr * 0.2)"
+      }
+    },
+    "gpt-6.2-astra": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "enable_groups": [
+          "bps-local"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "len <= 272000 ? tier(\"standard\", p * 8 + c * 40 + cr * 0.4) : tier(\"long_context\", p * 16 + c * 60 + cr * 0.8)"
       }
     }
   },
   "unmatched": [
-    {
-      "model_name": "gpt-6-astra",
-      "model_ratio": 37.5,
-      "completion_ratio": 2
-    },
     {
       "model_name": "gpt-6-luna",
       "model_ratio": 37.5,
       "completion_ratio": 2
     },
     {
+      "model_name": "gpt-5.6-sol",
+      "model_ratio": 2,
+      "completion_ratio": 5
+    },
+    {
       "model_name": "gpt-5.6-terra",
       "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-6-astra",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-5.6-luna",
+      "model_ratio": 0.1,
       "completion_ratio": 6
     },
     {
@@ -76,16 +112,6 @@
       "model_name": "gpt-6.1-sol",
       "model_ratio": 37.5,
       "completion_ratio": 2
-    },
-    {
-      "model_name": "gpt-5.6-luna",
-      "model_ratio": 0.1,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "gpt-5.6-sol",
-      "model_ratio": 2,
-      "completion_ratio": 5
     }
   ],
   "derivation": {
@@ -104,21 +130,21 @@
     ],
     "models": [
       {
-        "id": "gpt-6.2-astra",
-        "name": "gpt-6.2-astra",
-        "input": 75,
-        "output": 150,
-        "multiple": 9.375,
-        "shape_ok": false,
-        "verdict": "shape",
-        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
-      },
-      {
         "id": "gpt-6.2-sol",
         "name": "gpt-6.2-sol",
         "input": 75,
         "output": 150,
         "multiple": 37.5,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
+      },
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "input": 75,
+        "output": 150,
+        "multiple": 9.375,
         "shape_ok": false,
         "verdict": "shape",
         "why": "输出/输入比 2，官方是 5，不是同一计价形状"
@@ -139,6 +165,6 @@
     },
     "confidence": "medium",
     "note": "这站不按模型定价：2 个模型在 group_ratio=1（手填） 时输入价都正好是 $75/M。倍数看着从 9.38 到几十倍很大，其实是官方各型号价不同、它只收一个价。最终只能记「统一单价 $75/M 输入」，不能逐模型对比。实际扣费还要乘它自己的分组倍率（该站 7 个组，从 0.05 到 1），所以真价 = 75 × 分组倍率。",
-    "computed_at": "2026-11-26T13:25:15.902Z"
+    "computed_at": "2026-11-26T15:27:28.532Z"
   }
 }

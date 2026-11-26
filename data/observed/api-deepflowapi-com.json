@@ -1,9 +1,9 @@
 {
   "station_id": "api-deepflowapi-com",
   "endpoint": "https://api.deepflowapi.com/api/pricing",
-  "fetched_at": "2026-11-26T13:04:03.818Z",
+  "fetched_at": "2026-11-26T15:26:50.349Z",
   "http_status": 200,
-  "latency_ms": 2110,
+  "latency_ms": 3000,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -107,6 +107,88 @@
     "hunyuan-2": 1.615,
     "jev-1": 0.68
   },
+  "usable_group": {
+    "AWS-Bedrock-1": "AWS-Bedrock-1",
+    "AWS-Bedrock-2": "AWS-Bedrock-2",
+    "AWS-Claude-1": "AWS-Claude-1",
+    "AWS-Claude-2": "AWS-Claude-2",
+    "AWS-Claude-3": "AWS-Claude-3",
+    "AWS-Gpt-1": "AWS-Gpt-1",
+    "Aigc-Video-1": "Aigc-Video-1",
+    "Aistudio-Gemini-1": "Aistudio-Gemini-1",
+    "Aistudio-Gemini-2": "Aistudio-Gemini-2",
+    "Aistudio-Gemini-3": "Aistudio-Gemini-3",
+    "Aistudio-Gemini-4": "Aistudio-Gemini-4",
+    "Alibaba-1": "Alibaba-1",
+    "Alibaba-2": "Alibaba-2",
+    "Alibaba-3": "Alibaba-3",
+    "Alibaba-image-1": "Alibaba-image-1",
+    "Alibaba-image-2": "Alibaba-image-2",
+    "Alibaba-video-1": "Alibaba-video-1",
+    "Alibaba-video-2": "Alibaba-video-2",
+    "Anthropic-Claude-1": "Anthropic-Claude-1",
+    "Anti-Gemini-1": "Anti-Gemini-1",
+    "Anti-Gemini-2": "Anti-Gemini-2",
+    "Azure-Claude-1": "Azure-Claude-1",
+    "Azure-Gpt-1": "Azure-Gpt-1",
+    "Azure-Gpt-2": "Azure-Gpt-2",
+    "Azure-Gpt-3": "Azure-Gpt-3",
+    "Azure-Gpt-4": "Azure-Gpt-4",
+    "Azure-Gpt-5": "Azure-Gpt-5",
+    "Azure-Gpt-6": "Azure-Gpt-6",
+    "Azure-Grok-1": "Azure-Grok-1",
+    "Azure-Grok-2": "Azure-Grok-2",
+    "Claude-Code-1": "Claude-Code-1",
+    "Claude-Code-2": "Claude-Code-2",
+    "Claude-Code-3": "Claude-Code-3",
+    "Cli-Gemini-1": "Cli-Gemini-1",
+    "Cli-Grok-1": "Cli-Grok-1",
+    "Cli-Grok-2": "Cli-Grok-2",
+    "Codex-Gpt-1": "Codex-Gpt-1",
+    "Codex-Gpt-2": "Codex-Gpt-2",
+    "Codex-Gpt-3": "Codex-Gpt-3",
+    "Discounted-Banana-1": "Discounted-Banana-1",
+    "Discounted-Banana-2": "Discounted-Banana-2",
+    "Discounted-Gemini-1": "Discounted-Gemini-1",
+    "Discounted-Gemini-2": "Discounted-Gemini-2",
+    "Discounted-Seedance-1": "Discounted-Seedance-1",
+    "Doubao-1": "Doubao-1",
+    "Doubao-2": "Doubao-2",
+    "Doubao-3": "Doubao-3",
+    "Eleven-1": "Eleven-1",
+    "Gpt-Image-1": "Gpt-Image-1",
+    "Gpt-Image-2": "Gpt-Image-2",
+    "Gpt-Image-3": "Gpt-Image-3",
+    "Hailuo-1": "Hailuo-1",
+    "Hailuo-2": "Hailuo-2",
+    "Hailuo-3": "Hailuo-3",
+    "Kimi-1": "Kimi-1",
+    "Kimi-2": "Kimi-2",
+    "Kiro-Claude-1": "Kiro-Claude-1",
+    "Kling-1": "Kling-1",
+    "Kling-2": "Kling-2",
+    "Kling-3": "Kling-3",
+    "MJ-1": "MJ-1",
+    "MJ-2": "MJ-2",
+    "MJ-3": "MJ-3",
+    "Openai-Gpt-1": "Openai-Gpt-1",
+    "Openai-Gpt-2": "Openai-Gpt-2",
+    "Pix-CN-1": "Pix-CN-1",
+    "Pix-GL-1": "Pix-GL-1",
+    "Seedance-1": "Seedance-1",
+    "Seedance-2": "Seedance-2",
+    "Self-Deployed-1": "Self-Deployed-1",
+    "Self-Deployed-2": "Self-Deployed-2",
+    "Self-Deployed-3": "Self-Deployed-3",
+    "SiliconFlow-1": "SiliconFlow-1",
+    "Spark-1": "Spark-1",
+    "Special-Muse-1": "Special-Muse-1",
+    "Special-Muse-Video-1": "Special-Muse-Video-1",
+    "Suno-1": "Suno-1",
+    "Suno-2": "Suno-2",
+    "Vertex-Claude-1": "Vertex-Claude-1",
+    "Vertex-Gemini-1": "Vertex-Gemini-1"
+  },
   "stats": {
     "total": 320,
     "matched": 6,
@@ -125,7 +207,18 @@
         "completion_ratio": 5,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.05
+        "cache_ratio": 0.05,
+        "enable_groups": [
+          "AWS-Bedrock-2",
+          "AWS-Claude-2",
+          "AWS-Claude-3",
+          "Anthropic-Claude-1",
+          "Azure-Claude-1",
+          "Claude-Code-1",
+          "Claude-Code-2",
+          "Claude-Code-3",
+          "Kiro-Claude-1"
+        ]
       }
     },
     "gpt-6.2-astra": {
@@ -138,7 +231,18 @@
         "completion_ratio": 5,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.05
+        "cache_ratio": 0.05,
+        "enable_groups": [
+          "Azure-Gpt-3",
+          "Azure-Gpt-4",
+          "Azure-Gpt-5",
+          "Azure-Gpt-6",
+          "Codex-Gpt-1",
+          "Codex-Gpt-2",
+          "Codex-Gpt-3",
+          "Openai-Gpt-1",
+          "Openai-Gpt-2"
+        ]
       }
     },
     "gpt-6.2-sol": {
@@ -151,7 +255,18 @@
         "completion_ratio": 5,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.05
+        "cache_ratio": 0.05,
+        "enable_groups": [
+          "Azure-Gpt-3",
+          "Azure-Gpt-4",
+          "Azure-Gpt-5",
+          "Azure-Gpt-6",
+          "Codex-Gpt-1",
+          "Codex-Gpt-2",
+          "Codex-Gpt-3",
+          "Openai-Gpt-1",
+          "Openai-Gpt-2"
+        ]
       }
     },
     "deepseek-flash": {
@@ -164,7 +279,15 @@
         "completion_ratio": 4,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.02
+        "cache_ratio": 0.02,
+        "enable_groups": [
+          "Alibaba-2",
+          "Alibaba-3",
+          "Self-Deployed-1",
+          "Self-Deployed-2",
+          "Self-Deployed-3",
+          "deepseek-1"
+        ]
       }
     },
     "claude-sonnet-5-5": {
@@ -177,7 +300,18 @@
         "completion_ratio": 5,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.05
+        "cache_ratio": 0.05,
+        "enable_groups": [
+          "AWS-Bedrock-2",
+          "AWS-Claude-2",
+          "AWS-Claude-3",
+          "Anthropic-Claude-1",
+          "Azure-Claude-1",
+          "Claude-Code-1",
+          "Claude-Code-2",
+          "Claude-Code-3",
+          "Kiro-Claude-1"
+        ]
       }
     },
     "deepseek-v4-pro": {
@@ -190,7 +324,12 @@
         "completion_ratio": 3,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.03333
+        "cache_ratio": 0.03333,
+        "enable_groups": [
+          "Self-Deployed-1",
+          "Self-Deployed-2",
+          "Self-Deployed-3"
+        ]
       }
     }
   },
@@ -241,14 +380,14 @@
       "completion_ratio": 6
     },
     {
-      "model_name": "gpt-5.5",
-      "model_ratio": 2.5,
-      "completion_ratio": 6
-    },
-    {
       "model_name": "gemini-3.7-flash",
       "model_ratio": 0.375,
       "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.5",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
     },
     {
       "model_name": "gemini-3.8-flash",
@@ -261,14 +400,14 @@
       "completion_ratio": 5
     },
     {
-      "model_name": "gemini-3.6-flash",
-      "model_ratio": 0.375,
-      "completion_ratio": 5
-    },
-    {
       "model_name": "gpt-image-2.5-sunburst",
       "model_ratio": 2.5,
       "completion_ratio": 6
+    },
+    {
+      "model_name": "gemini-3.6-flash",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
     },
     {
       "model_name": "gpt-5.6-luna",
@@ -306,14 +445,14 @@
       "completion_ratio": 5
     },
     {
-      "model_name": "gemini-3.1-flash-lite",
-      "model_ratio": 0.125,
-      "completion_ratio": 6
-    },
-    {
       "model_name": "gpt-6-sol",
       "model_ratio": 1,
       "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.1-flash-lite",
+      "model_ratio": 0.125,
+      "completion_ratio": 6
     },
     {
       "model_name": "gemini-4-carbon",
@@ -366,6 +505,11 @@
       "completion_ratio": 6
     },
     {
+      "model_name": "claude-sonnet-4-6",
+      "model_ratio": 1.5,
+      "completion_ratio": 5
+    },
+    {
       "model_name": "claude-fable-5",
       "model_ratio": 5,
       "completion_ratio": 5
@@ -373,11 +517,6 @@
     {
       "model_name": "kimi-k3.1-pro",
       "model_ratio": 1,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-sonnet-4-6",
-      "model_ratio": 1.5,
       "completion_ratio": 5
     },
     {
@@ -416,13 +555,13 @@
       "completion_ratio": 4
     },
     {
-      "model_name": "gemini-4-neon",
-      "model_ratio": 1.5,
+      "model_name": "claude-opus-4-7",
+      "model_ratio": 2.5,
       "completion_ratio": 5
     },
     {
-      "model_name": "claude-opus-4-7",
-      "model_ratio": 2.5,
+      "model_name": "gemini-4-neon",
+      "model_ratio": 1.5,
       "completion_ratio": 5
     },
     {
@@ -533,6 +672,6 @@
     "flat_price": null,
     "confidence": "high",
     "note": "对得上官方价的 6 个模型里，6 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 96 个分组倍率，真正的折扣在那里。",
-    "computed_at": "2026-11-26T13:25:15.878Z"
+    "computed_at": "2026-11-26T15:27:28.509Z"
   }
 }

@@ -167,6 +167,13 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
     basis = `官方 ${usd(official?.usd.input)} × ${fmt(value)} = ${cny(nominal.input)}/M（1 元买 1 美元额度）`;
   } else if (mode === 'multiplier') {
     basis = `官方人民币 ${cny(officialCny?.input)} × ${fmt(value)} = ${cny(nominal.input)}/M`;
+  } else if (stationModel?.observed && stationModel?.group && official?.usd?.input) {
+    // 自动抓的行：model_ratio 是站上的基准倍率，group.ratio 是「用户会落到的那一档」
+    const g = stationModel.group;
+    const mult = r4(nominal.input / official.usd.input);
+    basis =
+      `官方 ${usd(official.usd.input)} × 倍率 ${fmt(mult)}（${g.name}·${g.source_label || '分组'}）` +
+      ` = ${cny(nominal.input)}/M`;
   } else if (num(stationModel?.multiple) != null && official) {
     const g = stationModel.group;
     basis =
@@ -183,7 +190,10 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
     ? `${tiers.count} 个分组档位 ${fmt(tiers.min)}–${fmt(tiers.max)}×` +
       (tiers.min_name ? `，最低「${tiers.min_name}」` : '')
     : '';
+  const g = stationModel?.group;
+  const groupNote = g && g.desc ? `（${g.source_label}：${g.desc}）` : '';
   const calc = basis + (adj.length ? ` · ${adj.join(' ')}` : '') + (tierNote ? `；${tierNote}` : '');
+  const calc_full = calc + groupNote;
 
   return {
     row: {
@@ -222,8 +232,10 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
         discount: r4(1 - ratio.blend),
       },
       calc,
+      calc_full,
       calc_basis: basis,
       group: stationModel?.group ?? null,
+      observed: !!stationModel?.observed,
       tiers: tiers || null,
       recharge: station.recharge || null,
       calc_adjust: adj.join(' '),

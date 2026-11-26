@@ -1,9 +1,9 @@
 {
   "station_id": "api-1024token-xyz",
   "endpoint": "https://api.1024token.xyz/api/pricing",
-  "fetched_at": "2026-11-26T13:04:06.409Z",
+  "fetched_at": "2026-11-26T15:26:56.689Z",
   "http_status": 200,
-  "latency_ms": 1450,
+  "latency_ms": 2254,
   "assumption": "face_value_1cny_per_usd",
   "parser": "new-api/one-api",
   "group_ratio": 1,
@@ -32,6 +32,33 @@
     "grok": 0.2,
     "openAi-图片生成": 0.06
   },
+  "auto_groups": [
+    "claude-kiro"
+  ],
+  "usable_group": {
+    "Claude-Max-外接": "max账号",
+    "Gemini": "Google 出品，前端能力出色 - 前端开发、快速原型",
+    "azure-gpt": "不同于pro/plus定于，稳定可蒸馏",
+    "claude-anti": "sonnet4.6+opus4.6，反重力反代 - 目前最强的编程 AI，理解能力强，复杂项目、代码重构",
+    "claude-kiro": "kiro反代，缓存表现优秀 - 目前最强的编程 AI，理解能力强，复杂项目、代码重构",
+    "claude-kiro-2": "99%缓存的kiro通道，但是无fable 5",
+    "claude-max": "通过claude官方账号代理的满血claude，限claude code相关客户端 - 目前最强的编程 AI，理解能力强，复杂项目、代码重构",
+    "claude-russian": "比华强北kiro聪明，接近ccmax，请测试再跑",
+    "claude-官方api": "官方api，官网key，完美品质",
+    "claude-满血": "claude满血代理",
+    "claude-福利": "满血版福利账号，限claude code相关客户端，不一定稳定 - 目前最强的编程 AI，理解能力强，复杂项目、代码重构",
+    "codex-normal": "codex常规分组 - 任务完成细致，通用编程、代码生成",
+    "codex-plus": "号池较少，稳定性尚可，可先用再切换",
+    "codex-plus/pro": "plus/team和pro混合池子",
+    "codex-pro": "codex pro账号池，支持spark,fast - 任务完成细致，通用编程、代码生成",
+    "codex-pro-新号池": "新建的号池，速度更快",
+    "codex-pro-稳定": "codexpro20x号池，保证稳定",
+    "codex-福利": "福利组，每天有限量，遇到 429 需注意 - 任务完成细致，通用编程、代码生成",
+    "glm": "kimi之前国产最强",
+    "grok": "grok，据说测评效果比较好",
+    "openAi-图片生成": "openAi-image2图片生成"
+  },
+  "pricing_version": "a42d372ccf0b5dd13ecf71203521f9d2",
   "stats": {
     "total": 138,
     "matched": 4,
@@ -41,27 +68,21 @@
   },
   "models": {
     "claude-sonnet-5-5": {
-      "input": 75,
-      "output": 75,
-      "cache_read": null,
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
       "raw": {
-        "model_name": "claude-sonnet-5-5",
-        "model_ratio": 37.5,
-        "completion_ratio": 1,
+        "model_name": "claude-sonnet-4-5",
+        "model_ratio": 1.5,
+        "completion_ratio": 5,
         "group_ratio": 1,
-        "quota_type": 0
-      }
-    },
-    "gpt-6.2-astra": {
-      "input": 75,
-      "output": 150,
-      "cache_read": null,
-      "raw": {
-        "model_name": "gpt-6.2-astra",
-        "model_ratio": 37.5,
-        "completion_ratio": 2,
-        "group_ratio": 1,
-        "quota_type": 0
+        "quota_type": 0,
+        "cache_ratio": 0.1,
+        "enable_groups": [
+          "claude-kiro",
+          "claude-russian",
+          "claude-官方api"
+        ]
       }
     },
     "claude-opus-5-5": {
@@ -74,7 +95,42 @@
         "completion_ratio": 1,
         "group_ratio": 1,
         "quota_type": 0,
-        "cache_ratio": 0.125
+        "cache_ratio": 0.125,
+        "enable_groups": [
+          "Claude-Max-外接",
+          "claude-max",
+          "claude-kiro",
+          "claude-anti",
+          "claude-满血",
+          "claude-max-新",
+          "claude-russian",
+          "claude-官方api"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "tier(\"base\", p * 4 + c * 20 + cr * 0.2 + cc * 5 + cc1h * 8)"
+      }
+    },
+    "gpt-6.2-astra": {
+      "input": 75,
+      "output": 150,
+      "cache_read": null,
+      "raw": {
+        "model_name": "gpt-6.2-astra",
+        "model_ratio": 37.5,
+        "completion_ratio": 2,
+        "group_ratio": 1,
+        "quota_type": 0,
+        "enable_groups": [
+          "codex-normal",
+          "codex-pro-新号池",
+          "codex-plus",
+          "codex-pro",
+          "codex-pro-稳定",
+          "azure-gpt",
+          "codex-plus/pro"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "len <= 272000 ? tier(\"standard\", p * 8 + c * 40 + cr * 0.4 + cc1h * 10 + cc12h * 20) : tier(\"long_context\", p * 16 + c * 60 + cr * 0.8 + cc1h * 20 + cc12h * 40)"
       }
     },
     "gpt-6.2-sol": {
@@ -86,15 +142,36 @@
         "model_ratio": 37.5,
         "completion_ratio": 2,
         "group_ratio": 1,
-        "quota_type": 0
+        "quota_type": 0,
+        "enable_groups": [
+          "codex-plus",
+          "codex-pro",
+          "codex-pro-稳定",
+          "azure-gpt",
+          "codex-plus/pro",
+          "codex-normal",
+          "codex-pro-新号池"
+        ],
+        "billing_mode": "tiered_expr",
+        "billing_expr": "len <= 272000 ? tier(\"standard\", p * 2 + c * 10 + cr * 0.1 + cc1h * 2.5 + cc12h * 5) : tier(\"long_context\", p * 4 + c * 15 + cr * 0.2 + cc1h * 5 + cc12h * 10)"
       }
     }
   },
   "unmatched": [
     {
-      "model_name": "claude-opus-4-1-20250805",
-      "model_ratio": 2.5,
-      "completion_ratio": 5
+      "model_name": "gpt-4.1-mini-2025-04-14",
+      "model_ratio": 0.2,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-6.1-terra",
+      "model_ratio": 37.5,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gemini-3.1-pro-preview",
+      "model_ratio": 1,
+      "completion_ratio": 6
     },
     {
       "model_name": "gpt-3.5-turbo-0613",
@@ -102,83 +179,8 @@
       "completion_ratio": 2
     },
     {
-      "model_name": "gemini-2.5-flash-thinking",
-      "model_ratio": 0.15,
-      "completion_ratio": 8.333333333333334
-    },
-    {
-      "model_name": "gemini-3.1-pro-preview-low",
-      "model_ratio": 1,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "gemini-3.7-flash-medium",
-      "model_ratio": 0.375,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "o4-mini-2025-04-16",
-      "model_ratio": 0.55,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "o3-mini-medium",
-      "model_ratio": 0.55,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "gpt-5.6-sol",
+      "model_name": "grok-build-0.1",
       "model_ratio": 37.5,
-      "completion_ratio": 6
-    },
-    {
-      "model_name": "claude-fable-5-2",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gemini-2.5-flash",
-      "model_ratio": 0.15,
-      "completion_ratio": 8.333333333333
-    },
-    {
-      "model_name": "claude-sonnet-4-5-20250929-thinking",
-      "model_ratio": 37.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "o4-mini",
-      "model_ratio": 0.55,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gpt-6-astra",
-      "model_ratio": 5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-3-5-haiku-20241022",
-      "model_ratio": 0.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-4.1",
-      "model_ratio": 1,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "glm-5.2",
-      "model_ratio": 4,
-      "completion_ratio": 3.5
-    },
-    {
-      "model_name": "gpt-5.1",
-      "model_ratio": 0.625,
-      "completion_ratio": 8
-    },
-    {
-      "model_name": "text-embedding-3-small",
-      "model_ratio": 0.01,
       "completion_ratio": 1
     },
     {
@@ -187,104 +189,14 @@
       "completion_ratio": 6
     },
     {
-      "model_name": "claude-sonnet-5",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
+      "model_name": "gpt-4-turbo-2024-04-09",
+      "model_ratio": 5,
+      "completion_ratio": 3
     },
     {
-      "model_name": "gpt-6-luna",
-      "model_ratio": 37.5,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "gpt-4.1-2025-04-14",
-      "model_ratio": 1,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "claude-haiku-4-5-20251001",
-      "model_ratio": 37.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-4o",
-      "model_ratio": 1.25,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "gpt-5.4-mini",
-      "model_ratio": 0.375,
+      "model_name": "gemini-3-flash",
+      "model_ratio": 0.25,
       "completion_ratio": 6
-    },
-    {
-      "model_name": "gpt-5-nano",
-      "model_ratio": 0.025,
-      "completion_ratio": 8
-    },
-    {
-      "model_name": "claude-fable-5",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "gpt-4.1-mini",
-      "model_ratio": 0.2,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "gpt-4o-2024-08-06",
-      "model_ratio": 1.25,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "gemini-3.6-flash",
-      "model_ratio": 0.375,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gemini-3.6-flash-low",
-      "model_ratio": 0.375,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-5.4-nano",
-      "model_ratio": 0.1,
-      "completion_ratio": 6.25
-    },
-    {
-      "model_name": "claude-haiku-5-5",
-      "model_ratio": 37.5,
-      "completion_ratio": 1
-    },
-    {
-      "model_name": "claude-sonnet-4-5-20250929",
-      "model_ratio": 37.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gpt-3.5-turbo-1106",
-      "model_ratio": 0.5,
-      "completion_ratio": 2
-    },
-    {
-      "model_name": "gemini-3.7-flash-low",
-      "model_ratio": 0.375,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gemini-2.5-flash-nothinking",
-      "model_ratio": 0.15,
-      "completion_ratio": 8.333333333333
-    },
-    {
-      "model_name": "gemini-3.7-flash-tiered",
-      "model_ratio": 0.375,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "gemini-4-argon",
-      "model_ratio": 1,
-      "completion_ratio": 5
     },
     {
       "model_name": "grok-4.5",
@@ -292,34 +204,24 @@
       "completion_ratio": 1
     },
     {
-      "model_name": "o1-mini",
+      "model_name": "grok-4.7-build-fast",
+      "model_ratio": 37.5,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "o3-mini-2025-01-31",
       "model_ratio": 0.55,
       "completion_ratio": 4
     },
     {
-      "model_name": "gpt-4o-2024-11-20",
-      "model_ratio": 1.25,
-      "completion_ratio": 4
+      "model_name": "o4-mini-2025-04-16",
+      "model_ratio": 0.55,
+      "completion_ratio": 1
     },
     {
-      "model_name": "claude-opus-4-6",
+      "model_name": "claude-sonnet-4-6",
       "model_ratio": 37.5,
       "completion_ratio": 5
-    },
-    {
-      "model_name": "claude-haiku-4-5",
-      "model_ratio": 0.5,
-      "completion_ratio": 5
-    },
-    {
-      "model_name": "o3",
-      "model_ratio": 1,
-      "completion_ratio": 4
-    },
-    {
-      "model_name": "gpt-4.1-nano-2025-04-14",
-      "model_ratio": 0.05,
-      "completion_ratio": 2
     },
     {
       "model_name": "claude-opus-5",
@@ -327,19 +229,184 @@
       "completion_ratio": 1
     },
     {
-      "model_name": "gemini-3.5-flash-high",
-      "model_ratio": 0.75,
-      "completion_ratio": 6
+      "model_name": "claude-3-5-haiku-20241022",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
     },
     {
-      "model_name": "gemini-2.5-flash-lite",
-      "model_ratio": 0.05,
+      "model_name": "claude-sonnet-4-5-20250929-thinking",
+      "model_ratio": 37.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "text-embedding-3-small",
+      "model_ratio": 0.01,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-5-nano",
+      "model_ratio": 0.025,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "claude-opus-4-5-20251101",
+      "model_ratio": 37.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-3.5-turbo",
+      "model_ratio": 0.25,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-5.2",
+      "model_ratio": 0.875,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "o1-mini-2024-09-12",
+      "model_ratio": 0.55,
       "completion_ratio": 4
     },
     {
-      "model_name": "grok-4.7",
+      "model_name": "claude-haiku-4-5",
+      "model_ratio": 0.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.1-pro-preview-low",
+      "model_ratio": 1,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gpt-4o-all",
+      "model_ratio": 15,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "o1-preview-2024-09-12",
+      "model_ratio": 7.5,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "text-embedding-3-large",
+      "model_ratio": 0.065,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "claude-opus-4-20250514",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-3.7-flash-medium",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "grok-4.6",
+      "model_ratio": 1,
+      "completion_ratio": 3
+    },
+    {
+      "model_name": "gemini-3.7-flash-low",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "claude-opus-4-6-thinking",
+      "model_ratio": 37.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "glm-5.1",
+      "model_ratio": 0.7,
+      "completion_ratio": 3.142857142857
+    },
+    {
+      "model_name": "gemini-3.8-flash-tiered",
+      "model_ratio": 0.375,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5-mini",
+      "model_ratio": 0.125,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "o4-mini",
+      "model_ratio": 0.55,
+      "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-4.1-2025-04-14",
+      "model_ratio": 1,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-5.6-terra",
+      "model_ratio": 37.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "claude-opus-4-1-20250805",
+      "model_ratio": 2.5,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-3.5-turbo-0125",
+      "model_ratio": 0.25,
+      "completion_ratio": 2
+    },
+    {
+      "model_name": "gpt-4o-mini-2024-07-18",
+      "model_ratio": 0.075,
+      "completion_ratio": 4
+    },
+    {
+      "model_name": "claude-fable-5-2",
       "model_ratio": 37.5,
       "completion_ratio": 1
+    },
+    {
+      "model_name": "gpt-5.1-codex",
+      "model_ratio": 0.3125,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "gpt-5.6-luna",
+      "model_ratio": 37.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "codex-auto-review",
+      "model_ratio": 2.5,
+      "completion_ratio": 6
+    },
+    {
+      "model_name": "gemini-4-carbon",
+      "model_ratio": 1,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gemini-4-hydrogen",
+      "model_ratio": 0.75,
+      "completion_ratio": 5
+    },
+    {
+      "model_name": "gpt-5.1",
+      "model_ratio": 0.625,
+      "completion_ratio": 8
+    },
+    {
+      "model_name": "gpt-5.4-nano",
+      "model_ratio": 0.1,
+      "completion_ratio": 6.25
+    },
+    {
+      "model_name": "o1-mini",
+      "model_ratio": 0.55,
+      "completion_ratio": 4
     }
   ],
   "derivation": {
@@ -350,20 +417,29 @@
     "group_ratio": 1,
     "group_source": "manual",
     "matched": 4,
-    "comparable": 4,
-    "dominant_multiple": 37.5,
-    "agreement": 0.5,
+    "comparable": 3,
+    "dominant_multiple": 9.375,
+    "agreement": 0.333,
     "comparable_models": [
-      "claude-sonnet-5-5",
-      "gpt-6.2-sol"
+      "gpt-6.2-astra"
     ],
     "models": [
       {
         "id": "claude-sonnet-5-5",
-        "name": "claude-sonnet-5-5",
+        "name": "claude-sonnet-4-5",
+        "input": 3,
+        "output": 15,
+        "multiple": 1.5,
+        "shape_ok": true,
+        "verdict": "legacy",
+        "why": "旧代数型号名，价格表已过期"
+      },
+      {
+        "id": "claude-opus-5-5",
+        "name": "claude-opus-5-5",
         "input": 75,
         "output": 75,
-        "multiple": 37.5,
+        "multiple": 18.75,
         "shape_ok": false,
         "verdict": "shape",
         "why": "输出/输入比 1，官方是 5，不是同一计价形状"
@@ -377,16 +453,6 @@
         "shape_ok": false,
         "verdict": "shape",
         "why": "输出/输入比 2，官方是 5，不是同一计价形状"
-      },
-      {
-        "id": "claude-opus-5-5",
-        "name": "claude-opus-5-5",
-        "input": 75,
-        "output": 75,
-        "multiple": 18.75,
-        "shape_ok": false,
-        "verdict": "shape",
-        "why": "输出/输入比 1，官方是 5，不是同一计价形状"
       },
       {
         "id": "gpt-6.2-sol",
@@ -403,14 +469,14 @@
     "rows_total": 4,
     "excluded_models": [
       {
-        "id": "gpt-6.2-astra",
-        "name": "gpt-6.2-astra",
-        "multiple": 9.375
-      },
-      {
         "id": "claude-opus-5-5",
         "name": "claude-opus-5-5",
         "multiple": 18.75
+      },
+      {
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "multiple": 37.5
       }
     ],
     "flat_price": {
@@ -418,7 +484,7 @@
       "output": 75
     },
     "confidence": "medium",
-    "note": "这站不按模型定价：4 个模型在 group_ratio=1（手填） 时输入价都正好是 $75/M。倍数看着从 37.5 到几十倍很大，其实是官方各型号价不同、它只收一个价。最终只能记「统一单价 $75/M 输入」，不能逐模型对比。实际扣费还要乘它自己的分组倍率（该站 21 个组，从 0.06 到 5），所以真价 = 75 × 分组倍率。",
-    "computed_at": "2026-11-26T13:25:15.877Z"
+    "note": "这站不按模型定价：3 个模型在 group_ratio=1（手填） 时输入价都正好是 $75/M。倍数看着从 9.38 到几十倍很大，其实是官方各型号价不同、它只收一个价。最终只能记「统一单价 $75/M 输入」，不能逐模型对比。实际扣费还要乘它自己的分组倍率（该站 21 个组，从 0.06 到 5），所以真价 = 75 × 分组倍率。 另：旧代数命名 claude-sonnet-4-5 已单列，不参与判定。",
+    "computed_at": "2026-11-26T15:27:28.507Z"
   }
 }

@@ -1,132 +1,140 @@
 {
-  "updated_at": "2026-11-26T13:04:22.703Z",
+  "updated_at": "2026-11-26T15:27:18.397Z",
   "stations": [
     {
       "id": "36niu-com",
       "endpoint": "https://36niu.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:13.769Z",
+      "fetched_at": "2026-11-26T15:27:08.874Z",
       "http_status": 200,
-      "latency_ms": 1538,
+      "latency_ms": 684,
       "matched": 6
     },
     {
       "id": "aceoai-com",
       "endpoint": "https://aceoai.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:14.668Z",
+      "fetched_at": "2026-11-26T15:27:14.802Z",
       "http_status": 200,
-      "latency_ms": 897,
+      "latency_ms": 1862,
       "matched": 6
     },
     {
       "id": "ai-beehears-com",
       "endpoint": "https://ai.beehears.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:12.344Z",
+      "fetched_at": "2026-11-26T15:26:48.139Z",
       "http_status": 200,
-      "latency_ms": 878,
+      "latency_ms": 1960,
       "matched": 6
     },
     {
       "id": "ai-realseek-wiki",
       "endpoint": "https://ai.realseek.wiki/api/pricing",
-      "fetched_at": "2026-11-26T13:04:08.945Z",
+      "fetched_at": "2026-11-26T15:27:01.475Z",
       "http_status": 200,
-      "latency_ms": 849,
+      "latency_ms": 1392,
       "matched": 6
     },
     {
       "id": "ai-songsongcard-shop",
       "endpoint": "https://ai.songsongcard.shop/api/pricing",
-      "fetched_at": "2026-11-26T13:04:01.760Z",
+      "fetched_at": "2026-11-26T15:26:47.459Z",
       "http_status": 200,
-      "latency_ms": 1000,
+      "latency_ms": 1282,
       "matched": 6
     },
     {
       "id": "aiapi-market",
       "endpoint": "https://aiapi.market/api/pricing",
-      "fetched_at": "2026-11-26T13:04:13.791Z",
+      "fetched_at": "2026-11-26T15:26:51.193Z",
       "http_status": 200,
-      "latency_ms": 1323,
+      "latency_ms": 3762,
       "matched": 6
     },
     {
       "id": "aiplaceer-com",
       "endpoint": "https://aiplaceer.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:13.201Z",
+      "fetched_at": "2026-11-26T15:27:09.892Z",
       "http_status": 200,
-      "latency_ms": 1070,
+      "latency_ms": 1704,
       "matched": 4
     },
     {
       "id": "aitreez-com",
       "endpoint": "https://aitreez.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:08.575Z",
+      "fetched_at": "2026-11-26T15:27:01.328Z",
       "http_status": 200,
-      "latency_ms": 1170,
+      "latency_ms": 1479,
       "matched": 5
     },
     {
       "id": "api-1024token-xyz",
       "endpoint": "https://api.1024token.xyz/api/pricing",
-      "fetched_at": "2026-11-26T13:04:06.409Z",
+      "fetched_at": "2026-11-26T15:26:56.689Z",
       "http_status": 200,
-      "latency_ms": 1450,
+      "latency_ms": 2254,
       "matched": 4
+    },
+    {
+      "id": "api-6345ywz-cn",
+      "endpoint": "https://api.6345ywz.cn/api/pricing",
+      "fetched_at": "2026-11-26T15:26:52.867Z",
+      "http_status": 200,
+      "latency_ms": 2238,
+      "matched": 2
     },
     {
       "id": "api-deepflowapi-com",
       "endpoint": "https://api.deepflowapi.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:03.818Z",
+      "fetched_at": "2026-11-26T15:26:50.349Z",
       "http_status": 200,
-      "latency_ms": 2110,
+      "latency_ms": 3000,
       "matched": 6
     },
     {
       "id": "api-llmgw-xyz",
       "endpoint": "https://api.llmgw.xyz/api/pricing",
-      "fetched_at": "2026-11-26T13:04:09.345Z",
+      "fetched_at": "2026-11-26T15:27:02.552Z",
       "http_status": 200,
-      "latency_ms": 766,
+      "latency_ms": 1220,
       "matched": 6
     },
     {
       "id": "api-mcapple-top",
       "endpoint": "https://api.mcapple.top/api/pricing",
-      "fetched_at": "2026-11-26T13:04:04.956Z",
+      "fetched_at": "2026-11-26T15:26:52.974Z",
       "http_status": 200,
-      "latency_ms": 1134,
+      "latency_ms": 1564,
       "matched": 5
     },
     {
       "id": "api-mindeck-cloud",
       "endpoint": "https://api.mindeck.cloud/api/pricing",
-      "fetched_at": "2026-11-26T13:04:14.664Z",
+      "fetched_at": "2026-11-26T15:27:13.668Z",
       "http_status": 200,
-      "latency_ms": 871,
+      "latency_ms": 2803,
       "matched": 2
     },
     {
       "id": "api-nionio2026-xyz",
       "endpoint": "https://api.nionio2026.xyz/api/pricing",
-      "fetched_at": "2026-11-26T13:04:05.924Z",
+      "fetched_at": "2026-11-26T15:26:54.433Z",
       "http_status": 200,
-      "latency_ms": 1409,
+      "latency_ms": 1457,
       "matched": 4
     },
     {
       "id": "api-openlux-ai",
       "endpoint": "https://api.openlux.ai/api/pricing",
-      "fetched_at": "2026-11-26T13:04:02.673Z",
+      "fetched_at": "2026-11-26T15:26:50.627Z",
       "http_status": 200,
-      "latency_ms": 1902,
+      "latency_ms": 2616,
       "matched": 6
     },
     {
       "id": "api-routeeasy-ai",
       "endpoint": "https://api.routeeasy.ai/api/pricing",
-      "fetched_at": "2026-11-26T13:04:01.937Z",
+      "fetched_at": "2026-11-26T15:26:58.046Z",
       "http_status": 200,
-      "latency_ms": 1173,
+      "latency_ms": 1163,
       "matched": 4
     },
     {
@@ -148,105 +156,105 @@
     {
       "id": "api-yinziapi-top",
       "endpoint": "https://api.yinziapi.top/api/pricing",
-      "fetched_at": "2026-11-26T13:04:03.959Z",
+      "fetched_at": "2026-11-26T15:27:14.613Z",
       "http_status": 200,
-      "latency_ms": 2012,
+      "latency_ms": 5723,
       "matched": 6
     },
     {
       "id": "api-yuaiapi-com",
       "endpoint": "https://api.yuaiapi.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:06.072Z",
+      "fetched_at": "2026-11-26T15:26:55.035Z",
       "http_status": 200,
-      "latency_ms": 1163,
+      "latency_ms": 1300,
       "matched": 6
     },
     {
       "id": "api1-qlhazycoder-top",
       "endpoint": "https://api1.qlhazycoder.top/api/pricing",
-      "fetched_at": "2026-11-26T13:04:08.425Z",
+      "fetched_at": "2026-11-26T15:27:01.334Z",
       "http_status": 200,
-      "latency_ms": 1433,
+      "latency_ms": 3567,
       "matched": 6
     },
     {
       "id": "apibasis-com",
       "endpoint": "https://apibasis.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:10.854Z",
+      "fetched_at": "2026-11-26T15:27:05.071Z",
       "http_status": 200,
-      "latency_ms": 505,
+      "latency_ms": 1504,
       "matched": 6
     },
     {
       "id": "apinebula-ai",
       "endpoint": "https://apinebula.ai/api/pricing",
-      "fetched_at": "2026-11-26T13:04:22.666Z",
+      "fetched_at": "2026-11-26T15:27:07.088Z",
       "http_status": 200,
-      "latency_ms": 454,
+      "latency_ms": 993,
       "matched": 4
     },
     {
       "id": "apipaths-com",
       "endpoint": "https://apipaths.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:04.513Z",
+      "fetched_at": "2026-11-26T15:26:50.323Z",
       "http_status": 200,
-      "latency_ms": 2045,
+      "latency_ms": 2180,
       "matched": 6
     },
     {
       "id": "b-kr777-top",
       "endpoint": "https://b.kr777.top/api/pricing",
-      "fetched_at": "2026-11-26T13:04:06.760Z",
+      "fetched_at": "2026-11-26T15:26:57.452Z",
       "http_status": 200,
-      "latency_ms": 685,
+      "latency_ms": 1404,
       "matched": 4
     },
     {
       "id": "bearlab-space",
       "endpoint": "https://bearlab.space/api/pricing",
-      "fetched_at": "2026-11-26T13:04:04.906Z",
+      "fetched_at": "2026-11-26T15:26:55.096Z",
       "http_status": 200,
-      "latency_ms": 1694,
+      "latency_ms": 1424,
       "matched": 6
     },
     {
       "id": "cctq-ai",
       "endpoint": "https://cctq.ai/api/pricing",
-      "fetched_at": "2026-11-26T13:04:13.624Z",
+      "fetched_at": "2026-11-26T15:27:10.032Z",
       "http_status": 200,
-      "latency_ms": 457,
+      "latency_ms": 713,
       "matched": 5
     },
     {
       "id": "chat-openapi-wang",
       "endpoint": "https://chat.openapi.wang/api/pricing",
-      "fetched_at": "2026-11-26T13:04:04.457Z",
+      "fetched_at": "2026-11-26T15:26:51.882Z",
       "http_status": 200,
-      "latency_ms": 1851,
+      "latency_ms": 1555,
       "matched": 6
     },
     {
       "id": "claudeaihub-cloud",
       "endpoint": "https://claudeaihub.cloud/api/pricing",
-      "fetched_at": "2026-11-26T13:04:07.664Z",
+      "fetched_at": "2026-11-26T15:26:59.884Z",
       "http_status": 200,
-      "latency_ms": 901,
+      "latency_ms": 2328,
       "matched": 6
     },
     {
       "id": "code28-ccwu-cc",
       "endpoint": "https://code28.ccwu.cc/api/pricing",
-      "fetched_at": "2026-11-26T13:04:03.208Z",
+      "fetched_at": "2026-11-26T15:26:51.406Z",
       "http_status": 200,
-      "latency_ms": 532,
+      "latency_ms": 1054,
       "matched": 6
     },
     {
       "id": "console-youpai-de",
       "endpoint": "https://console.youpai.de/api/pricing",
-      "fetched_at": "2026-11-26T13:04:11.412Z",
+      "fetched_at": "2026-11-26T15:27:05.784Z",
       "http_status": 200,
-      "latency_ms": 2267,
+      "latency_ms": 1356,
       "matched": 4
     },
     {
@@ -260,73 +268,73 @@
     {
       "id": "deepkey-top",
       "endpoint": "https://deepkey.top/api/pricing",
-      "fetched_at": "2026-11-26T13:04:01.748Z",
+      "fetched_at": "2026-11-26T15:26:47.340Z",
       "http_status": 200,
-      "latency_ms": 986,
+      "latency_ms": 1162,
       "matched": 6
     },
     {
       "id": "duckcoding-ai",
       "endpoint": "https://www.duckcoding.ai/api/pricing",
-      "fetched_at": "2026-11-26T13:04:10.955Z",
+      "fetched_at": "2026-11-26T15:27:03.932Z",
       "http_status": 200,
-      "latency_ms": 2034,
+      "latency_ms": 2596,
       "matched": 5
     },
     {
       "id": "eo-aigcpro-org",
       "endpoint": "https://eo.aigcpro.org/api/pricing",
-      "fetched_at": "2026-11-26T13:04:12.129Z",
+      "fetched_at": "2026-11-26T15:27:06.092Z",
       "http_status": 200,
-      "latency_ms": 1273,
+      "latency_ms": 1052,
       "matched": 6
     },
     {
       "id": "greatwalllink-top",
       "endpoint": "https://greatwalllink.top/api/pricing",
-      "fetched_at": "2026-11-26T13:04:07.402Z",
+      "fetched_at": "2026-11-26T15:26:57.762Z",
       "http_status": 200,
-      "latency_ms": 990,
+      "latency_ms": 1071,
       "matched": 6
     },
     {
       "id": "kapibala-asia",
       "endpoint": "https://kapibala.asia/api/pricing",
-      "fetched_at": "2026-11-26T13:04:10.731Z",
+      "fetched_at": "2026-11-26T15:27:04.036Z",
       "http_status": 200,
-      "latency_ms": 1383,
+      "latency_ms": 1700,
       "matched": 5
     },
     {
       "id": "linksapi-cn",
       "endpoint": "https://linksapi.cn/api/pricing",
-      "fetched_at": "2026-11-26T13:04:07.249Z",
+      "fetched_at": "2026-11-26T15:27:02.332Z",
       "http_status": 200,
-      "latency_ms": 773,
+      "latency_ms": 1439,
       "matched": 6
     },
     {
       "id": "longent-tech",
       "endpoint": "https://longent.tech/api/pricing",
-      "fetched_at": "2026-11-26T13:04:12.774Z",
+      "fetched_at": "2026-11-26T15:27:06.380Z",
       "http_status": 200,
-      "latency_ms": 1493,
+      "latency_ms": 1212,
       "matched": 6
     },
     {
       "id": "maiai-ai",
       "endpoint": "https://maiai.ai/api/pricing",
-      "fetched_at": "2026-11-26T13:04:10.779Z",
+      "fetched_at": "2026-11-26T15:27:03.230Z",
       "http_status": 200,
-      "latency_ms": 3112,
+      "latency_ms": 3341,
       "matched": 6
     },
     {
       "id": "meinianda-top",
       "endpoint": "https://meinianda.top/api/pricing",
-      "fetched_at": "2026-11-26T13:04:06.358Z",
+      "fetched_at": "2026-11-26T15:26:56.247Z",
       "http_status": 200,
-      "latency_ms": 430,
+      "latency_ms": 699,
       "matched": 6
     },
     {
@@ -338,195 +346,211 @@
       "matched": 6
     },
     {
+      "id": "new-lingyicai-xyz",
+      "endpoint": "https://new.lingyicai.xyz/api/pricing",
+      "fetched_at": "2026-11-26T15:27:05.165Z",
+      "http_status": 200,
+      "latency_ms": 1127,
+      "matched": 6
+    },
+    {
       "id": "new-vethra-top",
       "endpoint": "https://new.vethra.top/api/pricing",
-      "fetched_at": "2026-11-26T13:04:06.465Z",
+      "fetched_at": "2026-11-26T15:26:56.455Z",
       "http_status": 200,
-      "latency_ms": 639,
+      "latency_ms": 1356,
       "matched": 5
     },
     {
       "id": "newapi-ailyyzdk-xyz",
       "endpoint": "https://newapi.ailyyzdk.xyz/api/pricing",
-      "fetched_at": "2026-11-26T13:04:05.823Z",
+      "fetched_at": "2026-11-26T15:26:55.545Z",
       "http_status": 200,
-      "latency_ms": 1365,
+      "latency_ms": 2675,
       "matched": 5
     },
     {
       "id": "newapi-dragon3api-com",
       "endpoint": "https://newapi.dragon3api.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:06.312Z",
+      "fetched_at": "2026-11-26T15:26:56.044Z",
       "http_status": 200,
-      "latency_ms": 893,
+      "latency_ms": 1004,
       "matched": 6
     },
     {
       "id": "newapi-prorisehub-com",
       "endpoint": "https://newapi.prorisehub.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:01.973Z",
+      "fetched_at": "2026-11-26T15:26:47.766Z",
       "http_status": 200,
-      "latency_ms": 1208,
+      "latency_ms": 1588,
       "matched": 6
     },
     {
       "id": "newcy-10dianai-com",
       "endpoint": "https://newcy.10dianai.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:10.364Z",
+      "fetched_at": "2026-11-26T15:27:08.973Z",
       "http_status": 200,
-      "latency_ms": 993,
+      "latency_ms": 789,
       "matched": 6
     },
     {
       "id": "nikoapi-xyz",
       "endpoint": "https://nikoapi.xyz/api/pricing",
-      "fetched_at": "2026-11-26T13:04:09.644Z",
+      "fetched_at": "2026-11-26T15:27:02.209Z",
       "http_status": 200,
-      "latency_ms": 698,
+      "latency_ms": 730,
       "matched": 6
     },
     {
       "id": "nova-vcrauo-com",
       "endpoint": "https://nova.vcrauo.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:08.095Z",
+      "fetched_at": "2026-11-26T15:26:57.660Z",
       "http_status": 200,
-      "latency_ms": 1780,
+      "latency_ms": 1410,
       "matched": 6
     },
     {
       "id": "open-asea-love",
       "endpoint": "https://open.asea.love/api/pricing",
-      "fetched_at": "2026-11-26T13:04:14.130Z",
+      "fetched_at": "2026-11-26T15:27:10.862Z",
       "http_status": 200,
-      "latency_ms": 502,
+      "latency_ms": 967,
       "matched": 5
+    },
+    {
+      "id": "openrouter",
+      "endpoint": "https://openrouter.ai/api/v1/models",
+      "fetched_at": "2026-11-26T13:05:20.431Z",
+      "http_status": 200,
+      "latency_ms": 1169,
+      "matched": 6
     },
     {
       "id": "panel-model-port-xyz",
       "endpoint": "https://panel.model-port.xyz/api/pricing",
-      "fetched_at": "2026-11-26T13:04:10.346Z",
+      "fetched_at": "2026-11-26T15:27:04.563Z",
       "http_status": 200,
-      "latency_ms": 701,
+      "latency_ms": 1329,
       "matched": 5
     },
     {
       "id": "pdhlzy-com",
       "endpoint": "https://pdhlzy.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:16.188Z",
+      "fetched_at": "2026-11-26T15:27:09.604Z",
       "http_status": 200,
-      "latency_ms": 3411,
+      "latency_ms": 630,
       "matched": 5
     },
     {
       "id": "pipio-dev",
       "endpoint": "https://pipio.dev/api/pricing",
-      "fetched_at": "2026-11-26T13:04:12.228Z",
+      "fetched_at": "2026-11-26T15:27:06.603Z",
       "http_status": 200,
-      "latency_ms": 814,
+      "latency_ms": 816,
       "matched": 5
     },
     {
       "id": "qinzhiai-com",
       "endpoint": "https://qinzhiai.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:02.603Z",
+      "fetched_at": "2026-11-26T15:26:59.846Z",
       "http_status": 200,
-      "latency_ms": 852,
+      "latency_ms": 1792,
       "matched": 6
     },
     {
       "id": "qiuqiutoken-net",
       "endpoint": "https://qiuqiutoken.net/api/pricing",
-      "fetched_at": "2026-11-26T13:04:09.143Z",
+      "fetched_at": "2026-11-26T15:27:01.331Z",
       "http_status": 200,
-      "latency_ms": 938,
+      "latency_ms": 1242,
       "matched": 6
     },
     {
       "id": "sd-santaa-ai",
       "endpoint": "https://sd.santaa.ai/api/pricing",
-      "fetched_at": "2026-11-26T13:04:01.702Z",
+      "fetched_at": "2026-11-26T15:26:47.347Z",
       "http_status": 200,
-      "latency_ms": 976,
+      "latency_ms": 1211,
       "matched": 2
     },
     {
       "id": "shendun-vip",
       "endpoint": "https://shendun.vip/api/pricing",
-      "fetched_at": "2026-11-26T13:04:06.988Z",
+      "fetched_at": "2026-11-26T15:26:57.552Z",
       "http_status": 200,
-      "latency_ms": 628,
+      "latency_ms": 1092,
       "matched": 3
     },
     {
       "id": "tian-shu-org",
       "endpoint": "https://tian-shu.org/api/pricing",
-      "fetched_at": "2026-11-26T13:04:08.918Z",
+      "fetched_at": "2026-11-26T15:27:00.087Z",
       "http_status": 200,
-      "latency_ms": 1983,
+      "latency_ms": 2425,
       "matched": 6
     },
     {
       "id": "token-pudport-com",
       "endpoint": "https://token.pudport.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:02.464Z",
+      "fetched_at": "2026-11-26T15:26:47.428Z",
       "http_status": 200,
-      "latency_ms": 1701,
+      "latency_ms": 1250,
       "matched": 6
     },
     {
       "id": "tokenflux-cloud",
       "endpoint": "https://tokenflux.cloud/api/pricing",
-      "fetched_at": "2026-11-26T13:04:11.279Z",
+      "fetched_at": "2026-11-26T15:27:05.038Z",
       "http_status": 200,
-      "latency_ms": 913,
+      "latency_ms": 1101,
       "matched": 2
     },
     {
       "id": "tokenking-cc-cd",
       "endpoint": "https://tokenking.cc.cd/api/pricing",
-      "fetched_at": "2026-11-26T13:04:11.506Z",
+      "fetched_at": "2026-11-26T15:27:09.175Z",
       "http_status": 200,
-      "latency_ms": 725,
+      "latency_ms": 989,
       "matched": 6
     },
     {
       "id": "tonkic-opik-net",
       "endpoint": "https://tonkic.opik.net/api/pricing",
-      "fetched_at": "2026-11-26T13:04:15.438Z",
+      "fetched_at": "2026-11-26T15:27:13.537Z",
       "http_status": 200,
-      "latency_ms": 1307,
+      "latency_ms": 1563,
       "matched": 2
     },
     {
       "id": "vm2-pro",
       "endpoint": "https://vm2.pro/api/pricing",
-      "fetched_at": "2026-11-26T13:04:15.147Z",
+      "fetched_at": "2026-11-26T15:27:11.971Z",
       "http_status": 200,
-      "latency_ms": 2092,
+      "latency_ms": 2795,
       "matched": 3
     },
     {
       "id": "xckjj-com",
       "endpoint": "https://xckjj.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:08.201Z",
+      "fetched_at": "2026-11-26T15:27:09.318Z",
       "http_status": 200,
-      "latency_ms": 949,
+      "latency_ms": 1134,
       "matched": 4
     },
     {
       "id": "yanai-it-com",
       "endpoint": "https://yanai.it.com/api/pricing",
-      "fetched_at": "2026-11-26T13:04:03.034Z",
+      "fetched_at": "2026-11-26T15:27:00.081Z",
       "http_status": 200,
-      "latency_ms": 1058,
+      "latency_ms": 1607,
       "matched": 6
     },
     {
       "id": "zlkpro-tech",
       "endpoint": "https://zlkpro.tech/api/pricing",
-      "fetched_at": "2026-11-26T13:04:09.369Z",
+      "fetched_at": "2026-11-26T15:27:03.564Z",
       "http_status": 200,
-      "latency_ms": 940,
+      "latency_ms": 2230,
       "matched": 6
     }
   ]
