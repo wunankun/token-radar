@@ -168,8 +168,11 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
   } else if (mode === 'multiplier') {
     basis = `官方人民币 ${cny(officialCny?.input)} × ${fmt(value)} = ${cny(nominal.input)}/M`;
   } else if (num(stationModel?.multiple) != null && official) {
+    const g = stationModel.group;
     basis =
-      `倍率 ×${fmt(stationModel.multiple)} × 官方 ${usd(official.usd.input)} = ${cny(nominal.input)}/M`;
+      `倍率 ×${fmt(stationModel.multiple)}` +
+      (g && g.name ? `（${g.name} 组）` : '') +
+      ` × 官方 ${usd(official.usd.input)} = ${cny(nominal.input)}/M`;
   } else {
     basis = `站上标价 ${cny(nominal.input)}/M`;
   }
@@ -216,6 +219,7 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
       },
       calc,
       calc_basis: basis,
+      group: stationModel?.group ?? null,
       calc_adjust: adj.join(' '),
       health: health || null,
       note: stationModel?.note ?? null,

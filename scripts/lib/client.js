@@ -207,11 +207,14 @@
     var calcTip = r.station.kind === 'official'
       ? '官方基准价'
       : '站上标价 ' + money(state.currency === 'usd' ? r.nominal.input : r.nominal.input) + ' × 计费 ' + (r.billing_ratio || 1).toFixed(2) + ' ÷ 赠送 ' + (r.bonus || 1).toFixed(2) + ' = 到手价';
+    var gTip = r.group
+      ? '\n这家站公开了 ' + r.group.count + ' 个分组，倍率 ' + r.group.min + '–' + r.group.max + '×，本站按「' + r.group.name + '」组（×' + r.group.ratio + '）算'
+      : '';
     var dTip = (d == null ? '—' : (d >= 0 ? '比官方便宜 ' : '比官方贵 ') + (Math.abs(d) * 100).toFixed(1) + '%') +
       '（混合成本 ' + money(v.blend) + ' vs 官方 ' + money(offBlend(r)) + '，' + W.input + '×输入 + ' + W.output + '×输出）' +
       '；' + (state.currency === 'usd'
         ? '美元口径 = 人民币实付 ÷ ' + (meta.fx ? meta.fx.usd_cny : '汇率') + '，和官方美元价同一把尺'
-        : '人民币口径 = 你实际付款（充 1 元人民币 = 1 美元额度）');
+        : '人民币口径 = 你实际付款（充 1 元人民币 = 1 美元额度）') + gTip;
 
     return '<tr class="' + (r.station.demo ? 'is-demo' : '') + '">' +
       '<td>' + stationCell(r) + '</td>' +

@@ -124,6 +124,24 @@ for (const p of [...providers, ...scanned]) {
     }
     const manual = declared[modelId];
     const auto = obs?.models?.[modelId];
+    const groupInfo = (o) => {
+      const g = o?.group_ratios || {};
+      const names = Object.keys(g);
+      if (!names.length) return null;
+      const used =
+        names.find((n) => /default|默认/i.test(n) && g[n] === 1) ||
+        names.find((n) => g[n] === 1) ||
+        'default';
+      const vals = names.map((n) => g[n]).filter((v) => typeof v === 'number' && v > 0);
+      const clean = used.replace(/[^0-9A-Za-z\u4e00-\u9fa5 _-]/g, '').trim() || 'default';
+      return {
+        name: clean,
+        ratio: g[used] ?? 1,
+        count: names.length,
+        min: Math.min(...vals),
+        max: Math.max(...vals),
+      };
+    };
     // 逐行判定不过的模型不上榜单（输出/输入比与官方不同形 = 不是按 token 定价）
     if (!manual && verdict && !verdict.ok.has(modelId)) continue;
     // 站点级 multiplier 是默认值：模型条目里只写 {"value": 0.5} 或 {} 就够了，
@@ -143,6 +161,7 @@ for (const p of [...providers, ...scanned]) {
             output: auto.output,
             cache_read: auto.cache_read,
             multiple: verdict?.mult?.get(modelId) ?? null,
+            group: groupInfo(obs),
           }
         : null;
     if (!stationModel) continue;
