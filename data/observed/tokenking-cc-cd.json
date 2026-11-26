@@ -373,6 +373,70 @@
       "claude-sonnet-5-5",
       "gpt-6.2-sol"
     ],
+    "models": [
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "input": 75,
+        "output": 150,
+        "multiple": 9.375,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
+      },
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-5-5",
+        "input": 75,
+        "output": 75,
+        "multiple": 37.5,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 1，官方是 5，不是同一计价形状"
+      },
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4.1-flash",
+        "input": 75,
+        "output": 75,
+        "multiple": 250,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 1，官方是 4，不是同一计价形状"
+      },
+      {
+        "id": "claude-opus-5-5",
+        "name": "claude-opus-5-5",
+        "input": 75,
+        "output": 75,
+        "multiple": 18.75,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 1，官方是 5，不是同一计价形状"
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "input": 3,
+        "output": 6,
+        "multiple": 2.273,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 3，不是同一计价形状"
+      },
+      {
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "input": 75,
+        "output": 150,
+        "multiple": 37.5,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
+      }
+    ],
+    "rows_ok": 0,
+    "rows_total": 6,
     "excluded_models": [
       {
         "id": "gpt-6.2-astra",
@@ -398,6 +462,6 @@
     "flat_price": null,
     "confidence": "low",
     "note": "站内倍率吵成一团：6 个对得上的模型里没有多数派（最集中的只占 33%），从 37.5 倍散到 250 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。",
-    "computed_at": "2026-11-26T13:14:53.903Z"
+    "computed_at": "2026-11-26T13:25:15.902Z"
   }
 }

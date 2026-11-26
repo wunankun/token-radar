@@ -321,6 +321,70 @@
       "claude-opus-5-5",
       "claude-sonnet-5-5"
     ],
+    "models": [
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "input": 8,
+        "output": 40,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "input": 2.5714,
+        "output": 7.7143,
+        "multiple": 1.948,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "input": 2,
+        "output": 10,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "claude-opus-5-5",
+        "name": "claude-opus-5-5",
+        "input": 4,
+        "output": 20,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-5-5",
+        "input": 2,
+        "output": 10,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4.1-flash",
+        "input": 0.5714,
+        "output": 2.2857,
+        "multiple": 1.905,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      }
+    ],
+    "rows_ok": 6,
+    "rows_total": 6,
     "excluded_models": [
       {
         "id": "deepseek-v4-pro",
@@ -336,6 +400,6 @@
     "flat_price": null,
     "confidence": "medium",
     "note": "对得上官方价的 6 个模型里，4 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 19 个分组倍率，真正的折扣在那里。 对不上的 2 个：deepseek-v4-pro×1.95、deepseek-flash×1.9，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。",
-    "computed_at": "2026-11-26T13:14:53.887Z"
+    "computed_at": "2026-11-26T13:25:15.884Z"
   }
 }

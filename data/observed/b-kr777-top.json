@@ -352,6 +352,50 @@
       "claude-sonnet-5-5",
       "claude-opus-5-5"
     ],
+    "models": [
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "input": 75,
+        "output": 150,
+        "multiple": 9.375,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
+      },
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-5-5",
+        "input": 2,
+        "output": 10,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "claude-opus-5-5",
+        "name": "claude-opus-5-5",
+        "input": 4,
+        "output": 20,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "input": 75,
+        "output": 150,
+        "multiple": 37.5,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
+      }
+    ],
+    "rows_ok": 2,
+    "rows_total": 4,
     "excluded_models": [
       {
         "id": "gpt-6.2-astra",
@@ -367,6 +411,6 @@
     "flat_price": null,
     "confidence": "medium",
     "note": "对得上官方价的 4 个模型里，2 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 15 个分组倍率，真正的折扣在那里。 对不上的 2 个：gpt-6.2-astra×9.38、gpt-6.2-sol×37.5，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。",
-    "computed_at": "2026-11-26T13:14:53.889Z"
+    "computed_at": "2026-11-26T13:25:15.887Z"
   }
 }

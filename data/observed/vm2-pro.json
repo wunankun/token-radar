@@ -254,6 +254,40 @@
     "comparable_models": [
       "claude-opus-5-5"
     ],
+    "models": [
+      {
+        "id": "claude-opus-5-5",
+        "name": "claude-opus-5-5",
+        "input": 75,
+        "output": 75,
+        "multiple": 18.75,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 1，官方是 5，不是同一计价形状"
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "input": 75,
+        "output": 75,
+        "multiple": 56.818,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 1，官方是 3，不是同一计价形状"
+      },
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-5-5",
+        "input": 75,
+        "output": 75,
+        "multiple": 37.5,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 1，官方是 5，不是同一计价形状"
+      }
+    ],
+    "rows_ok": 0,
+    "rows_total": 3,
     "excluded_models": [
       {
         "id": "deepseek-v4-pro",
@@ -272,6 +306,6 @@
     },
     "confidence": "medium",
     "note": "这站不按模型定价：3 个模型在 group_ratio=1（手填） 时输入价都正好是 $75/M。倍数看着从 18.75 到几十倍很大，其实是官方各型号价不同、它只收一个价。最终只能记「统一单价 $75/M 输入」，不能逐模型对比。实际扣费还要乘它自己的分组倍率（该站 2 个组，从 0.12 到 1.2），所以真价 = 75 × 分组倍率。",
-    "computed_at": "2026-11-26T13:14:53.904Z"
+    "computed_at": "2026-11-26T13:25:15.903Z"
   }
 }

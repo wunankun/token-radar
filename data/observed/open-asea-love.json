@@ -220,6 +220,60 @@
     "comparable_models": [
       "claude-opus-5-5"
     ],
+    "models": [
+      {
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "input": 75,
+        "output": 150,
+        "multiple": 37.5,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
+      },
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "input": 75,
+        "output": 150,
+        "multiple": 9.375,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
+      },
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4.1-flash",
+        "input": 2,
+        "output": 8,
+        "multiple": 6.667,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-4-5",
+        "input": 3,
+        "output": 15,
+        "multiple": 1.5,
+        "shape_ok": true,
+        "verdict": "legacy",
+        "why": "旧代数型号名，价格表已过期"
+      },
+      {
+        "id": "claude-opus-5-5",
+        "name": "claude-opus-5-5",
+        "input": 4,
+        "output": 20,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      }
+    ],
+    "rows_ok": 2,
+    "rows_total": 5,
     "excluded_models": [
       {
         "id": "gpt-6.2-sol",
@@ -240,6 +294,6 @@
     "flat_price": null,
     "confidence": "low",
     "note": "站内倍率吵成一团：5 个对得上的模型里没有多数派（最集中的只占 25%），从 1 倍散到 37.5 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。 另：旧代数命名 claude-sonnet-4-5 已单列，不参与判定。",
-    "computed_at": "2026-11-26T13:14:53.900Z"
+    "computed_at": "2026-11-26T13:25:15.898Z"
   }
 }

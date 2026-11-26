@@ -394,6 +394,70 @@
       "gpt-6.2-sol",
       "gpt-6.2-astra"
     ],
+    "models": [
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4.1-flash",
+        "input": 3,
+        "output": 12,
+        "multiple": 10,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-4-5",
+        "input": 3,
+        "output": 15,
+        "multiple": 1.5,
+        "shape_ok": true,
+        "verdict": "legacy",
+        "why": "旧代数型号名，价格表已过期"
+      },
+      {
+        "id": "claude-opus-5-5",
+        "name": "claude-opus-5-5",
+        "input": 5,
+        "output": 25,
+        "multiple": 1.25,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "input": 2,
+        "output": 10,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "input": 18,
+        "output": 36,
+        "multiple": 13.636,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 3，不是同一计价形状"
+      },
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "input": 8,
+        "output": 40,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      }
+    ],
+    "rows_ok": 4,
+    "rows_total": 6,
     "excluded_models": [
       {
         "id": "deepseek-flash",
@@ -414,6 +478,6 @@
     "flat_price": null,
     "confidence": "low",
     "note": "站内倍率吵成一团：6 个对得上的模型里没有多数派（最集中的只占 40%），从 1 倍散到 13.64 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。 另：旧代数命名 claude-sonnet-4-5 已单列，不参与判定。",
-    "computed_at": "2026-11-26T13:14:53.895Z"
+    "computed_at": "2026-11-26T13:25:15.893Z"
   }
 }

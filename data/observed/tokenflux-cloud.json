@@ -320,6 +320,30 @@
     "comparable_models": [
       "deepseek-v4-pro"
     ],
+    "models": [
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4-flash",
+        "input": 0.14,
+        "output": 0.28,
+        "multiple": 0.467,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 4，不是同一计价形状"
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "input": 1.74,
+        "output": 3.48,
+        "multiple": 1.318,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 3，不是同一计价形状"
+      }
+    ],
+    "rows_ok": 0,
+    "rows_total": 2,
     "excluded_models": [
       {
         "id": "deepseek-flash",
@@ -330,6 +354,6 @@
     "flat_price": null,
     "confidence": "medium",
     "note": "对得上官方价的 2 个模型里，1 个都是官方 × 1.32，属于整站统一加价或统一折扣，不是单位问题，价格按 × 1.32 计可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 8 个分组倍率，真正的折扣在那里。 对不上的 1 个：deepseek-flash×0.47，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。",
-    "computed_at": "2026-11-26T13:14:53.903Z"
+    "computed_at": "2026-11-26T13:25:15.902Z"
   }
 }

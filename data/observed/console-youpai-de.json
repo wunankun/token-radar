@@ -358,6 +358,50 @@
     "comparable_models": [
       "deepseek-v4-pro"
     ],
+    "models": [
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-4-5",
+        "input": 3,
+        "output": 15,
+        "multiple": 1.5,
+        "shape_ok": true,
+        "verdict": "legacy",
+        "why": "旧代数型号名，价格表已过期"
+      },
+      {
+        "id": "claude-opus-5-5",
+        "name": "claude-opus-5-5",
+        "input": 75,
+        "output": 75,
+        "multiple": 18.75,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 1，官方是 5，不是同一计价形状"
+      },
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4-flash",
+        "input": 1.5,
+        "output": 4.5,
+        "multiple": 5,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 3，官方是 4，不是同一计价形状"
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "input": 4.5,
+        "output": 13.5,
+        "multiple": 3.409,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      }
+    ],
+    "rows_ok": 1,
+    "rows_total": 4,
     "excluded_models": [
       {
         "id": "claude-opus-5-5",
@@ -373,6 +417,6 @@
     "flat_price": null,
     "confidence": "low",
     "note": "站内倍率吵成一团：4 个对得上的模型里没有多数派（最集中的只占 33%），从 3.41 倍散到 18.75 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。 另：旧代数命名 claude-sonnet-4-5 已单列，不参与判定。",
-    "computed_at": "2026-11-26T13:14:53.892Z"
+    "computed_at": "2026-11-26T13:25:15.889Z"
   }
 }

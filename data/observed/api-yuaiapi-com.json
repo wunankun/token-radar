@@ -406,6 +406,70 @@
       "gpt-6.2-sol",
       "claude-sonnet-5-5"
     ],
+    "models": [
+      {
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "input": 75,
+        "output": 150,
+        "multiple": 37.5,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
+      },
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4-flash",
+        "input": 1.5,
+        "output": 4.5,
+        "multiple": 5,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 3，官方是 4，不是同一计价形状"
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "input": 4.5,
+        "output": 13.5,
+        "multiple": 3.409,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-5-5",
+        "input": 75,
+        "output": 75,
+        "multiple": 37.5,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 1，官方是 5，不是同一计价形状"
+      },
+      {
+        "id": "claude-opus-5-5",
+        "name": "claude-opus-5-5",
+        "input": 4,
+        "output": 20,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "input": 75,
+        "output": 150,
+        "multiple": 9.375,
+        "shape_ok": false,
+        "verdict": "shape",
+        "why": "输出/输入比 2，官方是 5，不是同一计价形状"
+      }
+    ],
+    "rows_ok": 2,
+    "rows_total": 6,
     "excluded_models": [
       {
         "id": "deepseek-flash",
@@ -431,6 +495,6 @@
     "flat_price": null,
     "confidence": "low",
     "note": "站内倍率吵成一团：6 个对得上的模型里没有多数派（最集中的只占 33%），从 37.5 倍散到 37.5 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。",
-    "computed_at": "2026-11-26T13:14:53.888Z"
+    "computed_at": "2026-11-26T13:25:15.885Z"
   }
 }

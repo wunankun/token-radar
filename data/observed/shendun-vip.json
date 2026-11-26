@@ -374,6 +374,40 @@
     "comparable_models": [
       "deepseek-flash"
     ],
+    "models": [
+      {
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "input": 9,
+        "output": 27,
+        "multiple": 6.818,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4-flash",
+        "input": 1,
+        "output": 4,
+        "multiple": 3.333,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-4-5",
+        "input": 3,
+        "output": 15,
+        "multiple": 1.5,
+        "shape_ok": true,
+        "verdict": "legacy",
+        "why": "旧代数型号名，价格表已过期"
+      }
+    ],
+    "rows_ok": 2,
+    "rows_total": 3,
     "excluded_models": [
       {
         "id": "deepseek-v4-pro",
@@ -384,6 +418,6 @@
     "flat_price": null,
     "confidence": "medium",
     "note": "对得上官方价的 3 个模型里，1 个都是官方 × 3.33，属于整站统一加价或统一折扣，不是单位问题，价格按 × 3.33 计可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 49 个分组倍率，真正的折扣在那里。 对不上的 1 个：deepseek-v4-pro×6.82，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。 另：旧代数命名 claude-sonnet-4-5 已单列，不参与判定。",
-    "computed_at": "2026-11-26T13:14:53.902Z"
+    "computed_at": "2026-11-26T13:25:15.901Z"
   }
 }

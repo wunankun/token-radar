@@ -51,8 +51,20 @@ export function classify(snapshot, officialIndex) {
       in_mult: m.input / ref.input,
       out_mult: m.output / ref.output,
       completion_ratio: m.raw?.completion_ratio ?? null,
+      official_comp: (ref.output / ref.input),
     });
   }
+  for (const r of rows) {
+    const ok = r.completion_ratio == null ? null : Math.abs(r.completion_ratio / r.official_comp - 1) <= 0.2;
+    r.shape_ok = ok;
+    r.verdict = r.legacy ? 'legacy' : ok === false ? 'shape' : 'ok';
+    r.why = r.legacy
+      ? '旧代数型号名，价格表已过期'
+      : ok === false
+        ? `输出/输入比 ${r.completion_ratio}，官方是 ${fmt(r.official_comp)}，不是同一计价形状`
+        : '输出/输入比与官方一致，这一行能单独算';
+  }
+
   if (!rows.length) {
     return { class: 'none', rows, matched: 0, note: '这次快照里没有能对上官方价的模型。', confidence: 'none' };
   }
@@ -168,6 +180,18 @@ function main() {
       dominant_multiple: c.dominant ?? null,
       agreement: c.share == null ? null : Number(c.share.toFixed(3)),
       comparable_models: c.ok ?? [],
+      models: (c.rows || []).map((r) => ({
+        id: r.id,
+        name: r.name,
+        input: Number(r.usd.input.toFixed(4)),
+        output: Number(r.usd.output.toFixed(4)),
+        multiple: Number(r.in_mult.toFixed(3)),
+        shape_ok: r.shape_ok,
+        verdict: r.verdict,
+        why: r.why,
+      })),
+      rows_ok: (c.rows || []).filter((r) => r.verdict === 'ok').length,
+      rows_total: (c.rows || []).length,
       excluded_models: (c.odd ?? []).map((o) => ({ id: o.id, name: o.name, multiple: Number(o.mult.toFixed(3)) })),
       flat_price: c.flatPrice ? { input: c.flatPrice.input, output: c.flatPrice.output } : null,
       confidence: c.confidence,

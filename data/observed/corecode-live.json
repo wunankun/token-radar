@@ -185,10 +185,54 @@
       "gpt-6.2-sol",
       "claude-opus-5-5"
     ],
+    "models": [
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-5-5",
+        "input": 2,
+        "output": 10,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "input": 8,
+        "output": 40,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "input": 2,
+        "output": 10,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "claude-opus-5-5",
+        "name": "claude-opus-5-5",
+        "input": 4,
+        "output": 20,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      }
+    ],
+    "rows_ok": 4,
+    "rows_total": 4,
     "excluded_models": [],
     "flat_price": null,
     "confidence": "high",
     "note": "对得上官方价的 4 个模型里，4 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 9 个分组倍率，真正的折扣在那里。",
-    "computed_at": "2026-11-26T13:14:53.892Z"
+    "computed_at": "2026-11-26T13:25:15.890Z"
   }
 }

@@ -364,6 +364,70 @@
       "gpt-6.2-astra",
       "gpt-6.2-sol"
     ],
+    "models": [
+      {
+        "id": "claude-opus-5-5",
+        "name": "claude-3-opus-20240229",
+        "input": 15,
+        "output": 75,
+        "multiple": 3.75,
+        "shape_ok": true,
+        "verdict": "legacy",
+        "why": "旧代数型号名，价格表已过期"
+      },
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-4-5",
+        "input": 3,
+        "output": 15,
+        "multiple": 1.5,
+        "shape_ok": true,
+        "verdict": "legacy",
+        "why": "旧代数型号名，价格表已过期"
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-chat",
+        "input": 0.15,
+        "output": 0.6,
+        "multiple": 0.114,
+        "shape_ok": false,
+        "verdict": "legacy",
+        "why": "旧代数型号名，价格表已过期"
+      },
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-flash",
+        "input": 0.15,
+        "output": 0.6,
+        "multiple": 0.5,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "input": 8,
+        "output": 40,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      },
+      {
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "input": 2,
+        "output": 10,
+        "multiple": 1,
+        "shape_ok": true,
+        "verdict": "ok",
+        "why": "输出/输入比与官方一致，这一行能单独算"
+      }
+    ],
+    "rows_ok": 3,
+    "rows_total": 6,
     "excluded_models": [
       {
         "id": "deepseek-flash",
@@ -374,6 +438,6 @@
     "flat_price": null,
     "confidence": "medium",
     "note": "对得上官方价的 6 个模型里，2 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算。 对不上的 1 个：deepseek-flash×0.5，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。 另：旧代数命名 claude-3-opus-20240229、claude-sonnet-4-5、deepseek-chat 已单列，不参与判定。",
-    "computed_at": "2026-11-26T13:14:53.902Z"
+    "computed_at": "2026-11-26T13:25:15.902Z"
   }
 }
