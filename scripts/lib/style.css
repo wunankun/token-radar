@@ -104,9 +104,10 @@ h1 .dot { color: var(--accent); }
   background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
   box-shadow: 0 20px 44px -20px rgba(22, 24, 29, .3), 0 2px 8px rgba(22, 24, 29, .05);
   max-height: 328px; overflow: hidden;
+  grid-template-rows: minmax(0, 1fr);
 }
 .picker-pop[hidden] { display: none; }
-.pk-col { overflow: auto; padding: 4px; }
+.pk-col { overflow-y: auto; overflow-x: hidden; padding: 4px; max-height: 328px; overscroll-behavior: contain; }
 .pk-col + .pk-col { border-left: 1px solid var(--line-2); }
 .pk-item {
   display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%;

@@ -16,17 +16,18 @@
     "context": 1000000
   },
   "deepseek-flash": {
-    "label": "DeepSeek Flash",
+    "label": "DeepSeek V4.1 Flash",
     "vendor": "DeepSeek",
     "popularity": 85,
     "official": {
       "provider": "deepseek",
-      "model": "deepseek-flash"
+      "model": "deepseek-v4.1-flash"
     },
     "aliases": [
+      "deepseek-v4.1-flash",
       "deepseek-flash",
       "deepseek-v4-flash",
-      "deepseek-v4.1-flash"
+      "DeepSeek-V4.1-Flash"
     ],
     "context": 1000000
   },

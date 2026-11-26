@@ -20,7 +20,8 @@
     "audit:md": "node scripts/audit.mjs --md",
     "fetch:or": "node scripts/fetch-openrouter.mjs --write",
     "fetch:fx": "node scripts/fetch-fx.mjs",
-    "weekly": "node scripts/weekly.mjs --md"
+    "weekly": "node scripts/weekly.mjs --md",
+    "fetch:rankings": "node scripts/fetch-rankings.mjs --write"
   },
   "license": "MIT"
 }

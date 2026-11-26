@@ -88,7 +88,6 @@ ${css}
     <select id="f-kind" aria-label="按类型筛选"></select>
     <select id="f-sort" aria-label="排序方式">
       <option value="discount">按优惠力度排序</option>
-      <option value="heat">按模型热度排序</option>
       <option value="input">按输入价排序</option>
       <option value="output">按输出价排序</option>
       <option value="cache_read">按缓存价排序</option>

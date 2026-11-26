@@ -1,6 +1,6 @@
 {
   "as_of": "2026-11-26",
-  "note": "官方价（USD / 1M tokens），人工从官方计费页读取并记录 verified_at；键名即 data/models.json 里的 canonical id。",
+  "note": "基准价统一取 OpenRouter 挂牌价（USD/百万 token）。OpenRouter 的 id 已写在各条 openrouter_id 里，便于复核。",
   "providers": [
     {
       "id": "deepseek",
@@ -11,31 +11,36 @@
       "verified_at": "2026-11-26",
       "models": {
         "deepseek-v4-pro": {
-          "input": 1.32,
-          "output": 3.96,
+          "input": 0.111,
+          "output": 4.44,
           "cache_read": 0.044,
           "offpeak": {
             "input": 0.66,
             "output": 1.98,
             "cache_read": 0.022
           },
-          "note": "峰时价；北京时间谷时（UTC 16:00-00:00 之外按官方定义）为 5 折。1M 上下文，最大输出 384K。"
+          "note": "峰时价；北京时间谷时（UTC 16:00-00:00 之外按官方定义）为 5 折。1M 上下文，最大输出 384K。",
+          "source": "openrouter",
+          "openrouter_id": "deepseek/deepseek-v4-pro-0813"
         },
         "deepseek-flash": {
-          "input": 0.3,
-          "output": 1.2,
+          "input": 0.15,
+          "output": 0.6,
           "cache_read": 0.006,
           "offpeak": {
             "input": 0.15,
             "output": 0.6,
             "cache_read": 0.003
           },
-          "note": "峰时价，谷时 5 折。"
+          "note": "峰时价，谷时 5 折。",
+          "source": "openrouter",
+          "openrouter_id": "deepseek/deepseek-v4.1-flash"
         },
         "deepseek-v3-2": {
           "input": 0.26,
           "output": 0.38,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "deepseek/deepseek-v3.2"
         }
       }
     },
@@ -52,44 +57,54 @@
           "output": 10,
           "cache_read": 0.1,
           "cache_write": 2.5,
-          "note": "表格列序 input / output / cache-write-5m / cache-write-1h / cache-read，已用 1.25x、2x、0.1x 关系交叉校验。"
+          "note": "表格列序 input / output / cache-write-5m / cache-write-1h / cache-read，已用 1.25x、2x、0.1x 关系交叉校验。",
+          "source": "openrouter",
+          "openrouter_id": "anthropic/claude-sonnet-5.5"
         },
         "claude-opus-5-5": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2,
           "cache_write": 5,
-          "note": "同上列序。"
+          "note": "同上列序。",
+          "source": "openrouter",
+          "openrouter_id": "anthropic/claude-opus-5.5"
         },
         "claude-sonnet-5": {
           "input": 2,
           "output": 10,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "anthropic/claude-sonnet-5"
         },
         "claude-opus-5": {
           "input": 5,
           "output": 25,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "anthropic/claude-opus-5"
         },
         "claude-haiku-5-5": {
           "input": 0.1,
           "output": 0.5,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "anthropic/claude-haiku-5.5"
         },
         "claude-fable-5-2": {
           "input": 8,
           "output": 40,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "anthropic/claude-fable-5.2"
         },
         "claude-opus-4-8": {
           "input": 5,
           "output": 25,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "anthropic/claude-opus-4.8"
         },
         "claude-sonnet-4-6": {
           "input": 3,
           "output": 15,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "anthropic/claude-sonnet-4.6"
         }
       }
     },
@@ -105,48 +120,59 @@
           "input": 2,
           "output": 10,
           "cache_read": 0.1,
-          "note": "标准档；同页另有 Batch/长上下文档，此处取标准档前两列。"
+          "note": "标准档；同页另有 Batch/长上下文档，此处取标准档前两列。",
+          "source": "openrouter",
+          "openrouter_id": "openai/gpt-6.2-sol"
         },
         "gpt-6.2-astra": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4,
-          "note": "标准档。"
+          "note": "标准档。",
+          "source": "openrouter",
+          "openrouter_id": "openai/gpt-6.2-astra"
         },
         "gpt-6-sol": {
           "input": 2,
           "output": 10,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "openai/gpt-6-sol"
         },
         "gpt-6-astra": {
           "input": 10,
           "output": 50,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "openai/gpt-6-astra"
         },
         "gpt-6.1-sol": {
           "input": 2,
           "output": 10,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "openai/gpt-6.1-sol"
         },
         "gpt-6.1-terra": {
           "input": 1,
           "output": 5,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "openai/gpt-6.1-terra"
         },
         "gpt-6-luna": {
           "input": 0.1,
           "output": 0.5,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "openai/gpt-6-luna"
         },
         "gpt-5.6-sol": {
           "input": 4,
           "output": 20,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "openai/gpt-5.6-sol"
         },
         "gpt-5.6-terra": {
           "input": 2,
           "output": 12,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "openai/gpt-5.6-terra"
         }
       }
     },
@@ -162,27 +188,32 @@
         "kimi-k3-1-pro": {
           "input": 0.2403,
           "output": 8.4023,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "moonshotai/kimi-k3.1-pro"
         },
         "kimi-k3": {
           "input": 0.192,
           "output": 16,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "moonshotai/kimi-k3"
         },
         "kimi-k2-7-code": {
           "input": 0.6,
           "output": 3,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "moonshotai/kimi-k2.7-code"
         },
         "kimi-k2-6": {
           "input": 0.65,
           "output": 3.41,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "moonshotai/kimi-k2.6"
         },
         "kimi-k2-5": {
           "input": 0.5,
           "output": 2.5,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "moonshotai/kimi-k2.5"
         }
       }
     },
@@ -198,27 +229,32 @@
         "qwen4-max": {
           "input": 1.425,
           "output": 4.275,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "qwen/qwen4-max"
         },
         "qwen3-8-max": {
           "input": 2,
           "output": 6,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "qwen/qwen3.8-max-0902"
         },
         "qwen3-8-flash": {
           "input": 0.15,
           "output": 0.47,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "qwen/qwen3.8-flash"
         },
         "qwen3-7-plus": {
           "input": 0.32,
           "output": 1.28,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "qwen/qwen3.7-plus"
         },
         "qwen3-coder-next": {
           "input": 0.12,
           "output": 0.8,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "qwen/qwen3-coder-next"
         }
       }
     },
@@ -234,27 +270,32 @@
         "glm-5-3": {
           "input": 0.0699,
           "output": 1.4,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "z-ai/glm-5.3"
         },
         "glm-5-3-flash": {
           "input": 0.15,
           "output": 0.5,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "z-ai/glm-5.3-flash"
         },
         "glm-5-2": {
           "input": 0.62,
           "output": 2.42,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "z-ai/glm-5.2"
         },
         "glm-5": {
           "input": 1,
           "output": 3.2,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "z-ai/glm-5"
         },
         "glm-4-7": {
           "input": 0.6,
           "output": 2.2,
-          "source": "openrouter"
+          "source": "openrouter",
+          "openrouter_id": "z-ai/glm-4.7"
         }
       }
     }

@@ -47,7 +47,7 @@
   }
   function unit() { return CUR[state.currency].unit; }
 
-  // 模型目录：meta.models 已按热度降序；缺字段时回落到表格里出现过的模型
+  // 模型目录：meta.models 已按 OpenRouter token 消耗排行升序（rank 小的在前）
   var MODELS = {};
   (meta.models || []).forEach(function (m) {
     MODELS[m.id] = {
@@ -55,9 +55,9 @@
       label: m.label,
       vendor: m.vendor,
       popularity: m.popularity || 0,
-      heat: m.heat == null ? m.popularity || 0 : m.heat,
       coverage: m.coverage || 0,
-      heat_source: m.heat_source || 'manual',
+      usage: m.usage || null,
+      order: m.order || 0,
     };
   });
   var $ = function (sel) { return document.querySelector(sel); };
@@ -192,14 +192,13 @@
     }).sort(function (a, b) {
       var va = view(a);
       var vb = view(b);
-      if (state.sort === 'heat') {
-        return heatOf(MODELS[b.model.id] || b.model) - heatOf(MODELS[a.model.id] || a.model);
-      }
       if (state.sort === 'discount') {
         var av = va.disc == null ? -Infinity : va.disc;
         var bv = vb.disc == null ? -Infinity : vb.disc;
         if (Math.abs(bv - av) > 0.0005) return bv - av;
-        return heatOf(MODELS[b.model.id] || b.model) - heatOf(MODELS[a.model.id] || a.model);
+        var ua = usageRank(a.model.id);
+        var ub = usageRank(b.model.id);
+        return ua - ub;
       }
       var an = va[state.sort] != null ? va[state.sort] : Infinity;
       var bn = vb[state.sort] != null ? vb[state.sort] : Infinity;
@@ -225,7 +224,7 @@
   }
 
   function sourceCell(r) {
-    if (r.price_source === 'reference') return '<span class="src" title="该厂商官网计费页是动态渲染/需登录，先用 OpenRouter 挂牌价当基准；有官方页后替换">参照价 · OpenRouter</span>';
+    if (r.price_source === 'reference') return '<span class="src" title="基准价统一取 OpenRouter 挂牌价，便于和所有中转站同一把尺">OpenRouter 基准价</span>';
     if (r.station.kind === 'official' || r.price_source === 'official') return '<span class="src">官方计费页</span>';
     var label = r.price_source === 'auto'
       ? '<span class="auto">自动抓取</span>'
@@ -354,16 +353,32 @@
   /* ---------- 模型级联选择：左栏公司 → 右栏模型 ---------- */
   var picker = { open: false, vendor: null };
 
-  // 热度：优先用构建期算出来的 heat（有几家真实站在卖），没有就退回人工 popularity
-  function heatOf(m) { return m.heat == null ? m.popularity || 0 : m.heat; }
-  function byHeat(a, b) {
-    return heatOf(b) - heatOf(a) || (b.popularity || 0) - (a.popularity || 0) || a.label.localeCompare(b.label);
+  // 消耗排行：OpenRouter 一周 token 数；没上榜的排最后，再按 models.json 里的原始顺序
+  function usageRank(id) {
+    var m = MODELS[id];
+    return m && m.usage ? m.usage.rank : 1e9;
+  }
+  function usageTokens(id) {
+    var m = MODELS[id];
+    return m && m.usage ? m.usage.tokens : 0;
+  }
+  function fmtTokens(n) {
+    if (!n) return '';
+    if (n >= 1e12) return (n / 1e12).toFixed(1).replace(/\.0$/, '') + 'T';
+    if (n >= 1e9) return (n / 1e9).toFixed(0) + 'B';
+    return '';
+  }
+  function byUsage(a, b) {
+    var ra = a.usage ? a.usage.rank : 1e9;
+    var rb = b.usage ? b.usage.rank : 1e9;
+    if (ra !== rb) return ra - rb;
+    return (a.order || 0) - (b.order || 0);
   }
   // 右栏副标：一半是公司名（看全部时），一半是「N 站」收录数（有数据才显示）
   function subOf(m, withVendor) {
     var parts = [];
     if (withVendor) parts.push(vlabel(m.vendor));
-    if (m.coverage > 0) parts.push(m.coverage + ' 站');
+    if (m.usage) parts.push('#' + m.usage.rank + (fmtTokens(m.usage.tokens) ? ' · ' + fmtTokens(m.usage.tokens) : ''));
     return parts.length ? '<span class="pk-sub">' + esc(parts.join(' · ')) + '</span>' : '';
   }
 
@@ -373,9 +388,9 @@
       var v = String(MODELS[id].vendor || '其他').trim();
       (by[v] = by[v] || []).push(MODELS[id]);
     });
-    var top = function (v) { return by[v].reduce(function (m, x) { return Math.max(m, heatOf(x)); }, 0); };
-    var vendors = Object.keys(by).sort(function (a, b) { return top(b) - top(a) || a.localeCompare(b); });
-    vendors.forEach(function (v) { by[v].sort(byHeat); });
+    var top = function (v) { return by[v].reduce(function (m, x) { return Math.min(m, usageRank(x.id)); }, 1e9); };
+    var vendors = Object.keys(by).sort(function (a, b) { return top(a) - top(b) || a.localeCompare(b); });
+    vendors.forEach(function (v) { by[v].sort(byUsage); });
     return { vendors: vendors, by: by };
   }
 
@@ -405,7 +420,7 @@
     function paint(vendor) {
       var list = vendor
         ? G.by[vendor]
-        : G.vendors.reduce(function (a, v) { return a.concat(G.by[v]); }, []).sort(byHeat);
+        : G.vendors.reduce(function (a, v) { return a.concat(G.by[v]); }, []).sort(byUsage);
       mBox.dataset.vendor = vendor || '';
       mBox.innerHTML = (vendor
           ? '<button type="button" class="pk-item pk-all" data-pick="vendor">全部 ' + esc(vlabel(vendor)) + ' 模型</button>'
@@ -602,7 +617,7 @@
 
     rows.forEach(function (r) {
       if (!MODELS[r.model.id]) {
-        MODELS[r.model.id] = { id: r.model.id, label: r.model.label, vendor: r.model.vendor, popularity: 0, heat: 0, coverage: 0, heat_source: 'manual' };
+        MODELS[r.model.id] = { id: r.model.id, label: r.model.label, vendor: r.model.vendor, popularity: 0, coverage: 0, usage: null, order: 999 };
       }
     });
     initPicker();

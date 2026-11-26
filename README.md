@@ -96,12 +96,19 @@ node scripts/demo-crawl.mjs     # 看抓取+比价整条链路跑一遍
 - 倍率模式必须有官方基准价，否则无法折算
 - 每个站点的价格要能回溯到 `pricing_url`
 
-### 模型目录与热度
+### 模型目录与消耗排行
 
-`data/models.json` 里每个模型有 `label` / `vendor` / `aliases` / `popularity`，其中 **`popularity`（0–100）只是兜底的先验值**，页面上的排序由数据算：
+`data/models.json` 里每个模型有 `label` / `vendor` / `aliases` / `official`，排序不再用人工热度，**统一按外部权威用量榜**：
 
-| 情形 | 热度怎么来 | `meta.heat.source` |
-| --- | --- | --- |
+- 数据源：`data/rankings.json`，抓自 **OpenRouter 的 LLM Rankings**（`https://openrouter.ai/rankings`，一周内实际处理的 token 数）。OpenRouter 是目前公开可查的最大第三方推理路由，用量榜是真实 token 消耗，不是投票。
+- 刷新：`npm run fetch:rankings`（`node scripts/fetch-rankings.mjs --write`），`npm run weekly` 里也会自动跑。
+- 匹配：把 OpenRouter 的 `vendor/model-date` 归一化（去厂商前缀、去日期后缀），再和 `models.json` 的 id / `official.model` / `aliases` 对上。
+- 排序：模型筛选里，公司按自家最好的名次排，模型按名次升序排；没上榜的排在后面，按 `models.json` 里的顺序。名字后面会显示 `#8 · 4.4T` 这样的「名次 · 当周 token 数」。
+- 表格里「优惠力度」相同时，也按这个名次兜底排。
+
+> 榜单只覆盖 OpenRouter 上的头部模型（本周 20 个），本库 35 个模型里命中 9 个；没命中的不代表不常用，只是不在这份榜上。
+
+--- | --- | --- |
 | 库里有真实站点（`demo` 不为 `true`、且不是官方直购行） | `coverage`：有几家中转站在卖这个模型，归一化成 0–100（卖得最多的那个是 100） | `coverage` |
 | 只有演示数据 / 一个真实站都没有 | 回落到 `popularity` 人工值 | `manual` |
 
@@ -166,7 +173,7 @@ node scripts/fetch-fx.mjs --dry    # 只看不写
 | 阿里云百炼 Qwen | Qwen4 Max、Qwen3.8 Max / Flash、Qwen3.7 Plus、Qwen3 Coder Next | 参照价 · OpenRouter |
 | 智谱 GLM | GLM-5.3 / 5.3 Flash / 5.2 / 5 / 4.7 | 参照价 · OpenRouter |
 
-「参照价」= 该厂商官网计费页是动态渲染或需登录，HTML 抓不到价格表，暂用 OpenRouter 挂牌价当基准。表格「价格来源」列会写明是「官方计费页」还是「参照价 · OpenRouter」，两者不会混在一起比较时被当成同一口径。
+所有基准价**统一取 OpenRouter 挂牌价**（表格「价格来源」显示「OpenRouter 基准价」），这样中转站和基准是同一把尺。每条对应的 OpenRouter id 写在 `data/official.json` 的 `openrouter_id` 里，可逐条复核。
 
 ## 抓取
 
@@ -421,7 +428,8 @@ PROBE_KEYS = {"my-station":"sk-xxxx","another-station":"sk-yyyy"}
 token-radar/
 ├── config.json              # 站点名、汇率、混合权重、推广披露文案
 ├── data/
-│   ├── models.json          # 规范模型 id + 别名 + 热度（下拉排序用）
+│   ├── models.json          # 规范模型 id + 别名 + 官方模型名
+│   ├── rankings.json        # OpenRouter 一周 token 消耗排行（下拉排序用）
 │   ├── official.json        # 官方价（USD/百万），含 verified_at 与来源链接
 │   ├── providers/*.json     # 一站一文件：价格、充值、计费系数、推广链接、风险标签
 │   ├── sources.json         # 待抓站点清单

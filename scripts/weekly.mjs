@@ -45,6 +45,7 @@ if (!SKIP_FETCH) {
   run('抓汇率', 'scripts/fetch-fx.mjs');
   run('抓中转站定价', 'scripts/fetch-pricing.mjs', ['--write', '--concurrency', '8']);
   run('抓 OpenRouter 对照', 'scripts/fetch-openrouter.mjs', ['--write']);
+  run('抓 OpenRouter 消耗排行', 'scripts/fetch-rankings.mjs', ['--write']);
 } else {
   console.log('（--skip-fetch：跳过联网抓取）');
 }

@@ -250,40 +250,62 @@ const cmp = (a, b) => {
   const ra = a.ratio?.blend ?? Number.POSITIVE_INFINITY;
   const rb = b.ratio?.blend ?? Number.POSITIVE_INFINITY;
   if (Math.abs(ra - rb) > 0.0005) return ra - rb;
-  const ha = a.model?.heat ?? a.model?.popularity ?? 0;
-  const hb = b.model?.heat ?? b.model?.popularity ?? 0;
-  if (ha !== hb) return hb - ha;
+  const ha = usage[a.model?.id]?.rank ?? Infinity;
+  const hb = usage[b.model?.id]?.rank ?? Infinity;
+  if (ha !== hb) return ha - hb;
   return (a.effective?.output ?? 1e9) - (b.effective?.output ?? 1e9);
 };
-stations.sort(cmp);
+/* ---------- 模型消耗排行：OpenRouter 一周 token 数 ---------- */
+// data/rankings.json 由 scripts/fetch-rankings.mjs 抓，权威口径是 OpenRouter 的真实用量。
+const normKey = (v) =>
+  String(v || '')
+    .toLowerCase()
+    .replace(/:batch$/, '')
+    .replace(/[^a-z0-9]/g, '')
+    .replace(/\d{4,8}$/, '');
 
-/* ---------- 模型热度：从数据算 ---------- */
-// coverage = 有几个「真实的中转站」在卖这个模型（官方行是基准、演示行是假数据，都不算）
+const rankings = readJson(join(DATA, 'rankings.json'), null);
+const usage = {};
+if (rankings && Array.isArray(rankings.models)) {
+  const byKey = new Map();
+  for (const r of rankings.models) {
+    byKey.set(normKey(String(r.slug).split('/').pop()), r);
+  }
+  for (const [id, m] of Object.entries(models)) {
+    const keys = [m.official?.model, id, ...(m.aliases || [])].filter(Boolean);
+    const hit = keys.map((k) => byKey.get(normKey(k))).find(Boolean);
+    if (hit) usage[id] = { rank: hit.rank, tokens: hit.tokens };
+  }
+}
+
+// coverage 仍保留：有真实中转站时，能看出「有几家在卖」
 const heatStations = new Set(
   stations.filter((s) => !s.station.demo && s.station.kind !== 'official').map((s) => s.station.id),
 );
 const coverage = {};
 for (const s of stations) {
   if (s.station.demo || s.station.kind === 'official') continue;
-  coverage[s.model.id] = (coverage[s.model.id] || 0) + 1; // 同一站同一模型只有一行，行数即站数
+  coverage[s.model.id] = (coverage[s.model.id] || 0) + 1;
 }
-const maxCoverage = Math.max(0, ...Object.values(coverage));
-const heatFromData = heatStations.size > 0 && maxCoverage > 0;
+
 const modelList = Object.entries(models)
-  .map(([id, m]) => {
-    const cov = coverage[id] || 0;
-    const prior = m.popularity ?? 0;
-    return {
-      id,
-      label: m.label,
-      vendor: m.vendor,
-      popularity: prior,
-      coverage: cov,
-      heat: heatFromData ? Math.round((cov / maxCoverage) * 100) : prior,
-      heat_source: heatFromData ? 'coverage' : 'manual',
-    };
-  })
-  .sort((a, b) => b.heat - a.heat || b.popularity - a.popularity || a.label.localeCompare(b.label));
+  .map(([id, m], i) => ({
+    id,
+    label: m.label,
+    vendor: m.vendor,
+    popularity: m.popularity ?? 0,
+    coverage: coverage[id] || 0,
+    usage: usage[id] || null,
+    order: i,
+  }))
+  .sort((a, b) => {
+    const ua = a.usage ? a.usage.rank : Infinity;
+    const ub = b.usage ? b.usage.rank : Infinity;
+    if (ua !== ub) return ua - ub;
+    return a.order - b.order;
+  });
+
+stations.sort(cmp);
 
 /* ---------- report ---------- */
 
@@ -318,7 +340,13 @@ const meta = {
     ? { station: bestDemo.station.name, model: bestDemo.model.label, ratio: bestDemo.ratio.blend, discount: bestDemo.discount, effective: bestDemo.effective }
     : null,
   models: modelList,
-  heat: { source: heatFromData ? 'coverage' : 'manual', stations: heatStations.size, max_coverage: maxCoverage },
+  usage: {
+    source: rankings ? 'openrouter' : null,
+    as_of: rankings?.as_of || null,
+    view: rankings?.view || null,
+    matched: Object.keys(usage).length,
+    stations: heatStations.size,
+  },
   catalog: (() => {
     const auto = readJson(join(DATA, 'models-auto.json'), null);
     if (!auto || !auto.count || !auto.stations) return null;
@@ -347,10 +375,10 @@ writeFileSync(join(DIST, 'index.html'), html, 'utf8');
 console.log(`\nToken 雷达 · build`);
 console.log(`  行数 ${meta.counts.rows} / 站点 ${meta.counts.stations} / 模型 ${meta.counts.models}`);
 console.log(
-  `  模型热度：${
-    heatFromData
-      ? `按 ${heatStations.size} 个真实站的收录数算（最多的模型 ${maxCoverage} 家在卖）`
-      : '暂无真实站，回落人工 popularity'
+  `  模型消耗排行：${
+    rankings
+      ? `按 OpenRouter 一周 token 用量（${rankings.as_of || ''}），本库命中 ${Object.keys(usage).length} 个`
+      : '没有 data/rankings.json，按 models.json 里的顺序'
   }`,
 );
 if (meta.catalog) console.log(`  全站模型目录：${meta.catalog.count} 个模型（被 ≥${meta.catalog.threshold} 家站收录，共 ${meta.catalog.stations} 家站）`);

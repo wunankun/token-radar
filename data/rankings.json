@@ -1,0 +1,110 @@
+{
+  "_help": "OpenRouter 的 LLM Rankings（一周内实际处理的 token 数）。",
+  "source": "openrouter-rankings",
+  "source_name": "OpenRouter · LLM Rankings",
+  "url": "https://openrouter.ai/rankings",
+  "view": "week",
+  "as_of": "2026-11-25",
+  "models": [
+    {
+      "rank": 1,
+      "slug": "deepseek/deepseek-v4.1-flash-20261017",
+      "tokens": 73662858443589
+    },
+    {
+      "rank": 2,
+      "slug": "tencent/hy4-flash-20261116",
+      "tokens": 32065593093800
+    },
+    {
+      "rank": 3,
+      "slug": "deepseek/deepseek-v4.1-flash-20260910",
+      "tokens": 14452297894881
+    },
+    {
+      "rank": 4,
+      "slug": "z-ai/glm-5.3-flash-20260826",
+      "tokens": 13138818059669
+    },
+    {
+      "rank": 5,
+      "slug": "openai/gpt-6-luna-20260922",
+      "tokens": 7819112750650
+    },
+    {
+      "rank": 6,
+      "slug": "anthropic/claude-opus-5.5-20260921",
+      "tokens": 6459987960605
+    },
+    {
+      "rank": 7,
+      "slug": "minimax/minimax-m3.1-flash-20261019",
+      "tokens": 4730067711817
+    },
+    {
+      "rank": 8,
+      "slug": "moonshotai/kimi-k3.1-pro-20261023",
+      "tokens": 4372321042039
+    },
+    {
+      "rank": 9,
+      "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+      "tokens": 4249707207351
+    },
+    {
+      "rank": 10,
+      "slug": "z-ai/glm-5.3-20260816",
+      "tokens": 3850209098173
+    },
+    {
+      "rank": 11,
+      "slug": "meta/muse-spark-1.3-contributor-20260902",
+      "tokens": 3316231799348
+    },
+    {
+      "rank": 12,
+      "slug": "baidu/ernie-5.5-flash-preview-20261110",
+      "tokens": 3288177973769
+    },
+    {
+      "rank": 13,
+      "slug": "typesafe/jev-1.13-20260917",
+      "tokens": 3176596764215
+    },
+    {
+      "rank": 14,
+      "slug": "anthropic/claude-haiku-5.5-20261007",
+      "tokens": 3059237327885
+    },
+    {
+      "rank": 15,
+      "slug": "nvidia/nemotron-3.5-super-vl-20261015",
+      "tokens": 2869754681895
+    },
+    {
+      "rank": 16,
+      "slug": "anthropic/claude-sonnet-5.5-20260928",
+      "tokens": 2724521653907
+    },
+    {
+      "rank": 17,
+      "slug": "deepseek/deepseek-v4-flash-20260731",
+      "tokens": 2704354215453
+    },
+    {
+      "rank": 18,
+      "slug": "typesafe/jev-1.14-20261014",
+      "tokens": 2526188401917
+    },
+    {
+      "rank": 19,
+      "slug": "openai/gpt-6.1-sol-20260929",
+      "tokens": 2092975915908
+    },
+    {
+      "rank": 20,
+      "slug": "deepseek/deepseek-v4-flash-20260423",
+      "tokens": 1957999486646
+    }
+  ]
+}
