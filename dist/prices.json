@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T14:47:55.454Z",
+    "generated_at": "2026-11-26T14:54:14.218Z",
     "fx": {
       "usd_cny": 6.6609,
       "as_of": "2026-11-26",
@@ -170,17 +170,17 @@
       "blend_effective": 0.285,
       "usd": {
         "effective": {
-          "input": 0.15,
-          "output": 0.6,
-          "cache_read": 0.003
+          "input": 0.0225,
+          "output": 0.0901,
+          "cache_read": 0.0005
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 0.285,
-        "discount": 0.5
+        "blend": 0.0428,
+        "discount": 0.9249
       },
       "calc": "倍率 ×0.5 × 官方 $0.3 = ¥0.15/M",
       "calc_basis": "倍率 ×0.5 × 官方 $0.3 = ¥0.15/M",
@@ -251,17 +251,17 @@
       "blend_effective": 2.97,
       "usd": {
         "effective": {
-          "input": 1.35,
-          "output": 6.75,
-          "cache_read": 0.0675
+          "input": 0.2027,
+          "output": 1.0134,
+          "cache_read": 0.0101
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 2.97,
-        "discount": 0.325
+        "blend": 0.4459,
+        "discount": 0.8987
       },
       "calc": "官方 $2 × 0.5 = ¥1/M（1 元买 1 美元额度） · × 计费 1.35",
       "calc_basis": "官方 $2 × 0.5 = ¥1/M（1 元买 1 美元额度）",
@@ -339,17 +339,17 @@
       "blend_effective": 11.88,
       "usd": {
         "effective": {
-          "input": 5.4,
-          "output": 27,
-          "cache_read": 0.27
+          "input": 0.8107,
+          "output": 4.0535,
+          "cache_read": 0.0405
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 11.88,
-        "discount": 0.325
+        "blend": 1.7835,
+        "discount": 0.8987
       },
       "calc": "官方 $8 × 0.5 = ¥4/M（1 元买 1 美元额度） · × 计费 1.35",
       "calc_basis": "官方 $8 × 0.5 = ¥4/M（1 元买 1 美元额度）",
@@ -427,17 +427,17 @@
       "blend_effective": 3.267,
       "usd": {
         "effective": {
-          "input": 1.485,
-          "output": 7.425,
-          "cache_read": 0.0743
+          "input": 0.2229,
+          "output": 1.1147,
+          "cache_read": 0.0111
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 3.267,
-        "discount": 0.2575
+        "blend": 0.4905,
+        "discount": 0.8885
       },
       "calc": "官方 $2 × 0.55 = ¥1.1/M（1 元买 1 美元额度） · × 计费 1.35",
       "calc_basis": "官方 $2 × 0.55 = ¥1.1/M（1 元买 1 美元额度）",
@@ -515,17 +515,17 @@
       "blend_effective": 6.534,
       "usd": {
         "effective": {
-          "input": 2.97,
-          "output": 14.85,
-          "cache_read": 0.1485
+          "input": 0.4459,
+          "output": 2.2294,
+          "cache_read": 0.0223
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 6.534,
-        "discount": 0.2575
+        "blend": 0.9809,
+        "discount": 0.8885
       },
       "calc": "官方 $4 × 0.55 = ¥2.2/M（1 元买 1 美元额度） · × 计费 1.35",
       "calc_basis": "官方 $4 × 0.55 = ¥2.2/M（1 元买 1 美元额度）",
@@ -600,17 +600,17 @@
       "blend_effective": 0.57,
       "usd": {
         "effective": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.006
+          "input": 0.045,
+          "output": 0.1802,
+          "cache_read": 0.0009
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 0.57,
-        "discount": 0
+        "blend": 0.0856,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $0.3 = ¥0.3/M",
       "calc_basis": "倍率 ×1 × 官方 $0.3 = ¥0.3/M",
@@ -678,17 +678,17 @@
       "blend_effective": 0.57,
       "usd": {
         "effective": {
-          "input": 0.3,
-          "output": 1.2,
-          "cache_read": 0.006
+          "input": 0.045,
+          "output": 0.1802,
+          "cache_read": 0.0009
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 0.57,
-        "discount": 0
+        "blend": 0.0856,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $0.3 = ¥0.3/M",
       "calc_basis": "倍率 ×1 × 官方 $0.3 = ¥0.3/M",
@@ -756,17 +756,17 @@
       "blend_effective": 2.112,
       "usd": {
         "effective": {
-          "input": 1.32,
-          "output": 3.96,
-          "cache_read": 0.044
+          "input": 0.1982,
+          "output": 0.5945,
+          "cache_read": 0.0066
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 2.112,
-        "discount": 0
+        "blend": 0.3171,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $1.32 = ¥1.32/M",
       "calc_basis": "倍率 ×1 × 官方 $1.32 = ¥1.32/M",
@@ -834,17 +834,17 @@
       "blend_effective": 2.112,
       "usd": {
         "effective": {
-          "input": 1.32,
-          "output": 3.96,
-          "cache_read": 0.044
+          "input": 0.1982,
+          "output": 0.5945,
+          "cache_read": 0.0066
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 2.112,
-        "discount": 0
+        "blend": 0.3171,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $1.32 = ¥1.32/M",
       "calc_basis": "倍率 ×1 × 官方 $1.32 = ¥1.32/M",
@@ -912,17 +912,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -990,17 +990,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -1068,17 +1068,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -1146,17 +1146,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -1224,17 +1224,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -1302,17 +1302,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -1380,17 +1380,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -1458,17 +1458,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -1536,17 +1536,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -1614,17 +1614,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -1692,17 +1692,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -1770,17 +1770,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -1848,17 +1848,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -1926,17 +1926,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -2004,17 +2004,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -2082,17 +2082,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -2160,17 +2160,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -2238,17 +2238,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -2316,17 +2316,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -2394,17 +2394,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -2472,17 +2472,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -2550,17 +2550,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -2628,17 +2628,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -2706,17 +2706,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -2784,17 +2784,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -2862,17 +2862,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -2940,17 +2940,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -3018,17 +3018,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -3096,17 +3096,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -3174,17 +3174,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -3252,17 +3252,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -3330,17 +3330,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -3408,17 +3408,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.15
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.0225
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -3486,17 +3486,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -3564,17 +3564,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -3642,17 +3642,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -3720,17 +3720,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -3798,17 +3798,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -3876,17 +3876,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -3954,17 +3954,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -4032,17 +4032,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -4110,17 +4110,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -4188,17 +4188,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -4266,8 +4266,8 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
+          "input": 0.3003,
+          "output": 1.5013,
           "cache_read": null
         },
         "official": {
@@ -4275,8 +4275,8 @@
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -4344,17 +4344,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -4422,17 +4422,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -4500,17 +4500,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.2
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.03
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -4578,17 +4578,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -4656,17 +4656,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -4734,17 +4734,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -4812,17 +4812,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -4890,17 +4890,17 @@
       "blend_effective": 4.4,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 10,
-          "cache_read": 0.1
+          "input": 0.3003,
+          "output": 1.5013,
+          "cache_read": 0.015
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 4.4,
-        "discount": 0
+        "blend": 0.6606,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $2 = ¥2/M",
       "calc_basis": "倍率 ×1 × 官方 $2 = ¥2/M",
@@ -4968,17 +4968,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -5046,17 +5046,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -5124,17 +5124,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -5202,17 +5202,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -5280,17 +5280,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -5358,17 +5358,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -5436,17 +5436,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -5514,17 +5514,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.4
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -5592,17 +5592,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -5670,17 +5670,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -5748,17 +5748,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -5826,17 +5826,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -5904,17 +5904,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -5982,17 +5982,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -6060,17 +6060,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -6138,17 +6138,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -6216,17 +6216,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -6294,17 +6294,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -6372,17 +6372,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -6450,17 +6450,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -6528,17 +6528,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -6606,17 +6606,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -6684,17 +6684,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -6762,17 +6762,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.3
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.045
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -6840,17 +6840,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -6918,17 +6918,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -6996,17 +6996,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -7074,17 +7074,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -7152,17 +7152,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -7230,17 +7230,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -7308,17 +7308,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -7386,17 +7386,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -7464,17 +7464,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -7542,17 +7542,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -7620,17 +7620,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -7698,17 +7698,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -7776,17 +7776,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -7854,17 +7854,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -7932,17 +7932,17 @@
       "blend_effective": 8.8,
       "usd": {
         "effective": {
-          "input": 4,
-          "output": 20,
-          "cache_read": 0.2
+          "input": 0.6005,
+          "output": 3.0026,
+          "cache_read": 0.03
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 8.8,
-        "discount": 0
+        "blend": 1.3211,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $4 = ¥4/M",
       "calc_basis": "倍率 ×1 × 官方 $4 = ¥4/M",
@@ -8010,17 +8010,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -8088,17 +8088,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -8166,17 +8166,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -8244,17 +8244,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -8322,17 +8322,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -8400,17 +8400,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -8478,17 +8478,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -8556,17 +8556,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -8634,17 +8634,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -8712,17 +8712,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -8790,17 +8790,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -8868,17 +8868,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.8
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.1201
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -8946,17 +8946,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -9024,17 +9024,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -9102,17 +9102,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -9180,17 +9180,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -9258,17 +9258,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -9336,17 +9336,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -9414,17 +9414,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -9492,17 +9492,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -9570,17 +9570,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -9648,17 +9648,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -9726,17 +9726,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -9804,17 +9804,17 @@
       "blend_effective": 17.6,
       "usd": {
         "effective": {
-          "input": 8,
-          "output": 40,
-          "cache_read": 0.4
+          "input": 1.201,
+          "output": 6.0052,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 17.6,
-        "discount": 0
+        "blend": 2.6423,
+        "discount": 0.8499
       },
       "calc": "倍率 ×1 × 官方 $8 = ¥8/M",
       "calc_basis": "倍率 ×1 × 官方 $8 = ¥8/M",
@@ -9882,17 +9882,17 @@
       "blend_effective": 11,
       "usd": {
         "effective": {
-          "input": 5,
-          "output": 25,
-          "cache_read": 0.25
+          "input": 0.7506,
+          "output": 3.7532,
+          "cache_read": 0.0375
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 11,
-        "discount": -0.25
+        "blend": 1.6514,
+        "discount": 0.8123
       },
       "calc": "倍率 ×1.25 × 官方 $4 = ¥5/M",
       "calc_basis": "倍率 ×1.25 × 官方 $4 = ¥5/M",
@@ -9960,17 +9960,17 @@
       "blend_effective": 22,
       "usd": {
         "effective": {
-          "input": 10,
-          "output": 50,
-          "cache_read": 1
+          "input": 1.5013,
+          "output": 7.5065,
+          "cache_read": 0.1501
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 22,
-        "discount": -0.25
+        "blend": 3.3029,
+        "discount": 0.8123
       },
       "calc": "倍率 ×1.25 × 官方 $8 = ¥10/M",
       "calc_basis": "倍率 ×1.25 × 官方 $8 = ¥10/M",
@@ -10038,17 +10038,17 @@
       "blend_effective": 6.6,
       "usd": {
         "effective": {
-          "input": 3,
-          "output": 15,
-          "cache_read": 0.3
+          "input": 0.4504,
+          "output": 2.2519,
+          "cache_read": 0.045
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 6.6,
-        "discount": -0.5
+        "blend": 0.9909,
+        "discount": 0.7748
       },
       "calc": "倍率 ×1.5 × 官方 $2 = ¥3/M",
       "calc_basis": "倍率 ×1.5 × 官方 $2 = ¥3/M",
@@ -10116,17 +10116,17 @@
       "blend_effective": 6.6,
       "usd": {
         "effective": {
-          "input": 3,
-          "output": 15,
-          "cache_read": 0.3
+          "input": 0.4504,
+          "output": 2.2519,
+          "cache_read": 0.045
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 6.6,
-        "discount": -0.5
+        "blend": 0.9909,
+        "discount": 0.7748
       },
       "calc": "倍率 ×1.5 × 官方 $2 = ¥3/M",
       "calc_basis": "倍率 ×1.5 × 官方 $2 = ¥3/M",
@@ -10194,17 +10194,17 @@
       "blend_effective": 6.6,
       "usd": {
         "effective": {
-          "input": 3,
-          "output": 15,
-          "cache_read": 0.3
+          "input": 0.4504,
+          "output": 2.2519,
+          "cache_read": 0.045
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 6.6,
-        "discount": -0.5
+        "blend": 0.9909,
+        "discount": 0.7748
       },
       "calc": "倍率 ×1.5 × 官方 $2 = ¥3/M",
       "calc_basis": "倍率 ×1.5 × 官方 $2 = ¥3/M",
@@ -10272,17 +10272,17 @@
       "blend_effective": 1.0857,
       "usd": {
         "effective": {
-          "input": 0.5714,
-          "output": 2.2857,
-          "cache_read": 0.0114
+          "input": 0.0858,
+          "output": 0.3432,
+          "cache_read": 0.0017
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 1.0857,
-        "discount": -0.9047
+        "blend": 0.163,
+        "discount": 0.714
       },
       "calc": "倍率 ×1.905 × 官方 $0.3 = ¥0.5714/M",
       "calc_basis": "倍率 ×1.905 × 官方 $0.3 = ¥0.5714/M",
@@ -10350,17 +10350,17 @@
       "blend_effective": 4.1143,
       "usd": {
         "effective": {
-          "input": 2.5714,
-          "output": 7.7143,
-          "cache_read": 0.0857
+          "input": 0.386,
+          "output": 1.1581,
+          "cache_read": 0.0129
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 4.1143,
-        "discount": -0.948
+        "blend": 0.6177,
+        "discount": 0.7075
       },
       "calc": "倍率 ×1.948 × 官方 $1.32 = ¥2.5714/M",
       "calc_basis": "倍率 ×1.948 × 官方 $1.32 = ¥2.5714/M",
@@ -10428,17 +10428,17 @@
       "blend_effective": 1.14,
       "usd": {
         "effective": {
-          "input": 0.6,
-          "output": 2.4,
-          "cache_read": 0.012
+          "input": 0.0901,
+          "output": 0.3603,
+          "cache_read": 0.0018
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 1.14,
-        "discount": -1
+        "blend": 0.1711,
+        "discount": 0.6997
       },
       "calc": "倍率 ×2 × 官方 $0.3 = ¥0.6/M",
       "calc_basis": "倍率 ×2 × 官方 $0.3 = ¥0.6/M",
@@ -10592,17 +10592,17 @@
       "blend_effective": 21,
       "usd": {
         "effective": {
-          "input": 9,
-          "output": 49,
-          "cache_read": 1.8
+          "input": 1.3512,
+          "output": 7.3564,
+          "cache_read": 0.2702
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 21,
-        "discount": -1.3864
+        "blend": 3.1527,
+        "discount": 0.6417
       },
       "calc": "倍率 ×2.25 × 官方 $4 = ¥9/M",
       "calc_basis": "倍率 ×2.25 × 官方 $4 = ¥9/M",
@@ -10756,17 +10756,17 @@
       "blend_effective": 1.9,
       "usd": {
         "effective": {
-          "input": 1,
-          "output": 4,
-          "cache_read": 0.02
+          "input": 0.1501,
+          "output": 0.6005,
+          "cache_read": 0.003
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 1.9,
-        "discount": -2.3333
+        "blend": 0.2852,
+        "discount": 0.4996
       },
       "calc": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
       "calc_basis": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
@@ -10834,17 +10834,17 @@
       "blend_effective": 1.9,
       "usd": {
         "effective": {
-          "input": 1,
-          "output": 4,
-          "cache_read": 0.02
+          "input": 0.1501,
+          "output": 0.6005,
+          "cache_read": 0.003
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 1.9,
-        "discount": -2.3333
+        "blend": 0.2852,
+        "discount": 0.4996
       },
       "calc": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
       "calc_basis": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
@@ -10912,17 +10912,17 @@
       "blend_effective": 1.9,
       "usd": {
         "effective": {
-          "input": 1,
-          "output": 4,
-          "cache_read": 0.02
+          "input": 0.1501,
+          "output": 0.6005,
+          "cache_read": 0.003
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 1.9,
-        "discount": -2.3333
+        "blend": 0.2852,
+        "discount": 0.4996
       },
       "calc": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
       "calc_basis": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
@@ -10990,17 +10990,17 @@
       "blend_effective": 1.9,
       "usd": {
         "effective": {
-          "input": 1,
-          "output": 4,
-          "cache_read": 0.1
+          "input": 0.1501,
+          "output": 0.6005,
+          "cache_read": 0.015
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 1.9,
-        "discount": -2.3333
+        "blend": 0.2852,
+        "discount": 0.4996
       },
       "calc": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
       "calc_basis": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
@@ -11068,17 +11068,17 @@
       "blend_effective": 1.9,
       "usd": {
         "effective": {
-          "input": 1,
-          "output": 4,
-          "cache_read": 0.02
+          "input": 0.1501,
+          "output": 0.6005,
+          "cache_read": 0.003
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 1.9,
-        "discount": -2.3333
+        "blend": 0.2852,
+        "discount": 0.4996
       },
       "calc": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
       "calc_basis": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
@@ -11146,17 +11146,17 @@
       "blend_effective": 1.9,
       "usd": {
         "effective": {
-          "input": 1,
-          "output": 4,
-          "cache_read": 0.02
+          "input": 0.1501,
+          "output": 0.6005,
+          "cache_read": 0.003
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 1.9,
-        "discount": -2.3333
+        "blend": 0.2852,
+        "discount": 0.4996
       },
       "calc": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
       "calc_basis": "倍率 ×3.333 × 官方 $0.3 = ¥1/M",
@@ -11224,17 +11224,17 @@
       "blend_effective": 7.2,
       "usd": {
         "effective": {
-          "input": 4.5,
-          "output": 13.5,
-          "cache_read": 0.15
+          "input": 0.6756,
+          "output": 2.0268,
+          "cache_read": 0.0225
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 7.2,
-        "discount": -2.4091
+        "blend": 1.0809,
+        "discount": 0.4882
       },
       "calc": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
       "calc_basis": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
@@ -11302,17 +11302,17 @@
       "blend_effective": 7.2,
       "usd": {
         "effective": {
-          "input": 4.5,
-          "output": 13.5,
-          "cache_read": 0.45
+          "input": 0.6756,
+          "output": 2.0268,
+          "cache_read": 0.0676
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 7.2,
-        "discount": -2.4091
+        "blend": 1.0809,
+        "discount": 0.4882
       },
       "calc": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
       "calc_basis": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
@@ -11380,17 +11380,17 @@
       "blend_effective": 7.2,
       "usd": {
         "effective": {
-          "input": 4.5,
-          "output": 13.5,
-          "cache_read": 0.15
+          "input": 0.6756,
+          "output": 2.0268,
+          "cache_read": 0.0225
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 7.2,
-        "discount": -2.4091
+        "blend": 1.0809,
+        "discount": 0.4882
       },
       "calc": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
       "calc_basis": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
@@ -11458,17 +11458,17 @@
       "blend_effective": 7.2,
       "usd": {
         "effective": {
-          "input": 4.5,
-          "output": 13.5,
-          "cache_read": 0.09
+          "input": 0.6756,
+          "output": 2.0268,
+          "cache_read": 0.0135
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 7.2,
-        "discount": -2.4091
+        "blend": 1.0809,
+        "discount": 0.4882
       },
       "calc": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
       "calc_basis": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
@@ -11536,17 +11536,17 @@
       "blend_effective": 7.2,
       "usd": {
         "effective": {
-          "input": 4.5,
-          "output": 13.5,
-          "cache_read": 0.15
+          "input": 0.6756,
+          "output": 2.0268,
+          "cache_read": 0.0225
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 7.2,
-        "discount": -2.4091
+        "blend": 1.0809,
+        "discount": 0.4882
       },
       "calc": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
       "calc_basis": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
@@ -11614,17 +11614,17 @@
       "blend_effective": 7.2,
       "usd": {
         "effective": {
-          "input": 4.5,
-          "output": 13.5,
-          "cache_read": 0.15
+          "input": 0.6756,
+          "output": 2.0268,
+          "cache_read": 0.0225
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 7.2,
-        "discount": -2.4091
+        "blend": 1.0809,
+        "discount": 0.4882
       },
       "calc": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
       "calc_basis": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
@@ -11692,17 +11692,17 @@
       "blend_effective": 7.2,
       "usd": {
         "effective": {
-          "input": 4.5,
-          "output": 13.5,
-          "cache_read": 0.15
+          "input": 0.6756,
+          "output": 2.0268,
+          "cache_read": 0.0225
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 7.2,
-        "discount": -2.4091
+        "blend": 1.0809,
+        "discount": 0.4882
       },
       "calc": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
       "calc_basis": "倍率 ×3.409 × 官方 $1.32 = ¥4.5/M",
@@ -12185,17 +12185,17 @@
       "blend_effective": 26.4,
       "usd": {
         "effective": {
-          "input": 12,
-          "output": 60,
-          "cache_read": 1.2
+          "input": 1.8016,
+          "output": 9.0078,
+          "cache_read": 0.1802
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 26.4,
-        "discount": -5
+        "blend": 3.9634,
+        "discount": 0.0992
       },
       "calc": "倍率 ×6 × 官方 $2 = ¥12/M",
       "calc_basis": "倍率 ×6 × 官方 $2 = ¥12/M",
@@ -12263,17 +12263,17 @@
       "blend_effective": 52.8,
       "usd": {
         "effective": {
-          "input": 24,
-          "output": 120,
-          "cache_read": 1.2
+          "input": 3.6031,
+          "output": 18.0156,
+          "cache_read": 0.1802
         },
         "official": {
           "input": 4,
           "output": 20,
           "cache_read": 0.2
         },
-        "blend": 52.8,
-        "discount": -5
+        "blend": 7.9269,
+        "discount": 0.0992
       },
       "calc": "倍率 ×6 × 官方 $4 = ¥24/M",
       "calc_basis": "倍率 ×6 × 官方 $4 = ¥24/M",
@@ -12791,17 +12791,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.04
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.006
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -12869,17 +12869,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.04
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.006
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -12947,17 +12947,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.04
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.006
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -13025,17 +13025,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.4
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.0601
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -13103,17 +13103,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.05
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.0075
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -13181,17 +13181,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.04
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.006
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -13259,17 +13259,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.04
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.006
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -13337,17 +13337,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.05
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.0075
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -13415,17 +13415,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.05
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.0075
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -13493,17 +13493,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.06
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.009
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -13571,17 +13571,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.04
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.006
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -13649,17 +13649,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.04
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.006
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -13727,17 +13727,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.04
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.006
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -13805,17 +13805,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.04
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.006
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -13883,17 +13883,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.04
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.006
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -13961,8 +13961,8 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
+          "input": 0.3003,
+          "output": 1.201,
           "cache_read": null
         },
         "official": {
@@ -13970,8 +13970,8 @@
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -14039,17 +14039,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.04
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.006
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -14117,17 +14117,17 @@
       "blend_effective": 3.8,
       "usd": {
         "effective": {
-          "input": 2,
-          "output": 8,
-          "cache_read": 0.04
+          "input": 0.3003,
+          "output": 1.201,
+          "cache_read": 0.006
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 3.8,
-        "discount": -5.6667
+        "blend": 0.5705,
+        "discount": -0.0009
       },
       "calc": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
       "calc_basis": "倍率 ×6.667 × 官方 $0.3 = ¥2/M",
@@ -14195,17 +14195,17 @@
       "blend_effective": 14.4,
       "usd": {
         "effective": {
-          "input": 9,
-          "output": 27,
-          "cache_read": 0.2997
+          "input": 1.3512,
+          "output": 4.0535,
+          "cache_read": 0.045
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 14.4,
-        "discount": -5.8182
+        "blend": 2.1619,
+        "discount": -0.0236
       },
       "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
       "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
@@ -14273,17 +14273,17 @@
       "blend_effective": 14.4,
       "usd": {
         "effective": {
-          "input": 9,
-          "output": 27,
-          "cache_read": 0.3
+          "input": 1.3512,
+          "output": 4.0535,
+          "cache_read": 0.045
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 14.4,
-        "discount": -5.8182
+        "blend": 2.1619,
+        "discount": -0.0236
       },
       "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
       "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
@@ -14351,17 +14351,17 @@
       "blend_effective": 14.4,
       "usd": {
         "effective": {
-          "input": 9,
-          "output": 27,
-          "cache_read": 0.3
+          "input": 1.3512,
+          "output": 4.0535,
+          "cache_read": 0.045
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 14.4,
-        "discount": -5.8182
+        "blend": 2.1619,
+        "discount": -0.0236
       },
       "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
       "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
@@ -14429,17 +14429,17 @@
       "blend_effective": 14.4,
       "usd": {
         "effective": {
-          "input": 9,
-          "output": 27,
-          "cache_read": 0.3
+          "input": 1.3512,
+          "output": 4.0535,
+          "cache_read": 0.045
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 14.4,
-        "discount": -5.8182
+        "blend": 2.1619,
+        "discount": -0.0236
       },
       "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
       "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
@@ -14507,17 +14507,17 @@
       "blend_effective": 14.4,
       "usd": {
         "effective": {
-          "input": 9,
-          "output": 27,
-          "cache_read": 0.3
+          "input": 1.3512,
+          "output": 4.0535,
+          "cache_read": 0.045
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 14.4,
-        "discount": -5.8182
+        "blend": 2.1619,
+        "discount": -0.0236
       },
       "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
       "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
@@ -14585,17 +14585,17 @@
       "blend_effective": 14.4,
       "usd": {
         "effective": {
-          "input": 9,
-          "output": 27,
-          "cache_read": 0.9
+          "input": 1.3512,
+          "output": 4.0535,
+          "cache_read": 0.1351
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 14.4,
-        "discount": -5.8182
+        "blend": 2.1619,
+        "discount": -0.0236
       },
       "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
       "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
@@ -14663,17 +14663,17 @@
       "blend_effective": 14.4,
       "usd": {
         "effective": {
-          "input": 9,
-          "output": 27,
-          "cache_read": 0.3
+          "input": 1.3512,
+          "output": 4.0535,
+          "cache_read": 0.045
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 14.4,
-        "discount": -5.8182
+        "blend": 2.1619,
+        "discount": -0.0236
       },
       "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
       "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
@@ -14741,17 +14741,17 @@
       "blend_effective": 14.4,
       "usd": {
         "effective": {
-          "input": 9,
-          "output": 27,
-          "cache_read": 0.3
+          "input": 1.3512,
+          "output": 4.0535,
+          "cache_read": 0.045
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 14.4,
-        "discount": -5.8182
+        "blend": 2.1619,
+        "discount": -0.0236
       },
       "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
       "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
@@ -14819,17 +14819,17 @@
       "blend_effective": 14.4,
       "usd": {
         "effective": {
-          "input": 9,
-          "output": 27,
-          "cache_read": 0.3
+          "input": 1.3512,
+          "output": 4.0535,
+          "cache_read": 0.045
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 14.4,
-        "discount": -5.8182
+        "blend": 2.1619,
+        "discount": -0.0236
       },
       "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
       "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
@@ -14897,17 +14897,17 @@
       "blend_effective": 14.4,
       "usd": {
         "effective": {
-          "input": 9,
-          "output": 27,
-          "cache_read": 0.3
+          "input": 1.3512,
+          "output": 4.0535,
+          "cache_read": 0.045
         },
         "official": {
           "input": 1.32,
           "output": 3.96,
           "cache_read": 0.044
         },
-        "blend": 14.4,
-        "discount": -5.8182
+        "blend": 2.1619,
+        "discount": -0.0236
       },
       "calc": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
       "calc_basis": "倍率 ×6.818 × 官方 $1.32 = ¥9/M",
@@ -14975,17 +14975,17 @@
       "blend_effective": 165,
       "usd": {
         "effective": {
-          "input": 75,
-          "output": 375,
-          "cache_read": 7.5
+          "input": 11.2597,
+          "output": 56.2987,
+          "cache_read": 1.126
         },
         "official": {
           "input": 8,
           "output": 40,
           "cache_read": 0.4
         },
-        "blend": 165,
-        "discount": -8.375
+        "blend": 24.7714,
+        "discount": -0.4075
       },
       "calc": "倍率 ×9.375 × 官方 $8 = ¥75/M",
       "calc_basis": "倍率 ×9.375 × 官方 $8 = ¥75/M",
@@ -15053,17 +15053,17 @@
       "blend_effective": 5.7,
       "usd": {
         "effective": {
-          "input": 3,
-          "output": 12,
-          "cache_read": 0.9
+          "input": 0.4504,
+          "output": 1.8016,
+          "cache_read": 0.1351
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 5.7,
-        "discount": -9
+        "blend": 0.8557,
+        "discount": -0.5013
       },
       "calc": "倍率 ×10 × 官方 $0.3 = ¥3/M",
       "calc_basis": "倍率 ×10 × 官方 $0.3 = ¥3/M",
@@ -15131,17 +15131,17 @@
       "blend_effective": 6.65,
       "usd": {
         "effective": {
-          "input": 3.5,
-          "output": 14,
-          "cache_read": 0.07
+          "input": 0.5255,
+          "output": 2.1018,
+          "cache_read": 0.0105
         },
         "official": {
           "input": 0.3,
           "output": 1.2,
           "cache_read": 0.006
         },
-        "blend": 6.65,
-        "discount": -10.6667
+        "blend": 0.9984,
+        "discount": -0.7515
       },
       "calc": "倍率 ×11.667 × 官方 $0.3 = ¥3.5/M",
       "calc_basis": "倍率 ×11.667 × 官方 $0.3 = ¥3.5/M",
@@ -15209,8 +15209,8 @@
       "blend_effective": 165,
       "usd": {
         "effective": {
-          "input": 75,
-          "output": 375,
+          "input": 11.2597,
+          "output": 56.2987,
           "cache_read": null
         },
         "official": {
@@ -15218,8 +15218,8 @@
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 165,
-        "discount": -36.5
+        "blend": 24.7714,
+        "discount": -4.6299
       },
       "calc": "倍率 ×37.5 × 官方 $2 = ¥75/M",
       "calc_basis": "倍率 ×37.5 × 官方 $2 = ¥75/M",
@@ -15287,17 +15287,17 @@
       "blend_effective": 165,
       "usd": {
         "effective": {
-          "input": 75,
-          "output": 375,
-          "cache_read": 7.5
+          "input": 11.2597,
+          "output": 56.2987,
+          "cache_read": 1.126
         },
         "official": {
           "input": 2,
           "output": 10,
           "cache_read": 0.1
         },
-        "blend": 165,
-        "discount": -36.5
+        "blend": 24.7714,
+        "discount": -4.6299
       },
       "calc": "倍率 ×37.5 × 官方 $2 = ¥75/M",
       "calc_basis": "倍率 ×37.5 × 官方 $2 = ¥75/M",

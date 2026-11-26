@@ -98,8 +98,7 @@ ${css}
     <span class="count" id="count"></span>
   </div>
 
-  <p class="cur-note" id="cur-note" hidden>人民币口径：中转站按「1 元 = 1 美元额度」计价，所以<strong>它们的站价数字不变</strong>（¥ 和 $ 同数）；变的是官方价（按汇率折成人民币）和优惠力度 —— 同一行从 50% 会变成 93%。</p>
-        <div class="tablewrap">
+  <div class="tablewrap">
     <table>
       <thead>
         <tr>

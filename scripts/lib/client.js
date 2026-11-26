@@ -7,7 +7,7 @@
   var meta = DATA.meta || {};
   var W = meta.blend || { input: 0.7, output: 0.3 };
 
-  var state = { q: '', model: '', kind: '', sort: 'discount', showDemo: false, onlyAff: false, currency: 'cny', page: 1, perPage: 50 };
+  var state = { q: '', model: '', kind: '', sort: 'discount', showDemo: false, onlyAff: false, currency: 'usd', page: 1, perPage: 50 };
 
   // 当前计价口径：美元 = 站上标的美元牌价（倍率 1.0 → 0%）；人民币 = 你实际掏的钱（1 元 = 1 美元额度）
   var CUR = {
@@ -41,7 +41,7 @@
   function money(v) {
     if (v === null || v === undefined || !isFinite(v)) return '—';
     if (v === 0) return '0';
-    if (v < 0.01) return String(parseFloat(v.toFixed(4)));
+    if (v < 0.1) return String(parseFloat(v.toFixed(4)));
     if (v < 1) return String(parseFloat(v.toFixed(3)));
     return String(parseFloat(v.toFixed(2)));
   }
@@ -126,7 +126,7 @@
       {
         k: '汇率 USD→CNY', v: String((meta.fx && meta.fx.usd_cny) || '—'),
         s: (meta.fx && meta.fx.source ? '抓自 ' + esc(meta.fx.source) + ' · ' + esc(meta.fx.as_of || '') : '手工维护') +
-        (state.currency === 'usd' ? ' · 切到人民币时用它折算官方价' : ' · 官方价已按此折人民币')
+        (state.currency === 'usd' ? ' · 美元口径按此把人民币实付折成美元' : ' · 人民币口径就是实付')
       },
       {
         k: '推广链接', v: String(aff), small: '行',
@@ -209,7 +209,9 @@
       : '站上标价 ' + money(state.currency === 'usd' ? r.nominal.input : r.nominal.input) + ' × 计费 ' + (r.billing_ratio || 1).toFixed(2) + ' ÷ 赠送 ' + (r.bonus || 1).toFixed(2) + ' = 到手价';
     var dTip = (d == null ? '—' : (d >= 0 ? '比官方便宜 ' : '比官方贵 ') + (Math.abs(d) * 100).toFixed(1) + '%') +
       '（混合成本 ' + money(v.blend) + ' vs 官方 ' + money(offBlend(r)) + '，' + W.input + '×输入 + ' + W.output + '×输出）' +
-      (state.currency === 'usd' ? '；美元口径 = 站上牌的美元价，不是人民币实付' : '；人民币口径已按 1 元 = 1 美元额度折成实付');
+      '；' + (state.currency === 'usd'
+        ? '美元口径 = 人民币实付 ÷ ' + (meta.fx ? meta.fx.usd_cny : '汇率') + '，和官方美元价同一把尺'
+        : '人民币口径 = 你实际付款（充 1 元人民币 = 1 美元额度）');
 
     return '<tr class="' + (r.station.demo ? 'is-demo' : '') + '">' +
       '<td>' + stationCell(r) + '</td>' +
@@ -241,7 +243,6 @@
     renderPager(list.length, pages, start, slice.length);
     renderUnits();
     renderSeg();
-    renderCurNote();
     renderKpis();
   }
 
@@ -285,11 +286,6 @@
     Array.prototype.forEach.call(document.querySelectorAll('#f-cur button'), function (x) {
       x.classList.toggle('on', x.dataset.cur === state.currency);
     });
-  }
-
-  function renderCurNote() {
-    var n = $('#cur-note');
-    if (n) n.hidden = state.currency !== 'cny';
   }
 
   function renderUnits() {

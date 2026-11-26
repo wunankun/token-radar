@@ -151,18 +151,10 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
   const offBlend = officialCny && officialCny.input != null ? officialCny.input * w.input + officialCny.output * w.output : null;
   ratio.blend = div(effBlend, offBlend);
 
-  // 美元口径：站上自己标的那个美元价（new-api 的 model_ratio 算出来的数），
-  // 用来给「倍率 1.0 = 0%」的对照。人民币口径回答「我实际掏多少钱」，
-  // 美元口径回答「它相对官方美元价打几折」，两个问题不是一回事。
-  const usdNominal = mode === 'official'
-    ? { ...official.usd }
-    : mode === 'multiplier'
-      ? scaleObj(official.usd, num(stationModel.value))
-      : faceValue
-        ? { ...nominal }
-        : scaleObj(nominal, 1 / fx);
-  const usdEffective = scaleObj(usdNominal, billing / bonus);
-  const usdBlend = usdEffective.input == null || usdEffective.output == null ? null : usdEffective.input * w.input + usdEffective.output * w.output;
+  // 美元口径：同一笔「人民币实付」按汇率折成美元 —— 两个口径是同一笔钱的不同单位，
+  // 不是「站上标的美元牌价 vs 你付的人民币」。所以切换币种时每个数字都会变，优惠力度不变。
+  const usdEffective = scaleObj(effective, 1 / fx);
+  const usdBlend = effBlend == null ? null : effBlend / fx;
   const usdOffBlend = official && official.usd.input != null ? official.usd.input * w.input + official.usd.output * w.output : null;
 
   // 「怎么算的」：把这一行的推导写成人话，表格里单独一栏
@@ -220,7 +212,7 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
         effective: { input: r4(usdEffective.input), output: r4(usdEffective.output), cache_read: r4(usdEffective.cache_read) },
         official: official ? { input: r4(official.usd.input), output: r4(official.usd.output), cache_read: r4(official.usd.cache_read) } : null,
         blend: r4(usdBlend),
-        discount: div(usdBlend, usdOffBlend) == null ? null : r4(1 - div(usdBlend, usdOffBlend)),
+        discount: r4(1 - ratio.blend),
       },
       calc,
       calc_basis: basis,
