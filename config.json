@@ -1,0 +1,24 @@
+{
+  "site": {
+    "name": "Token 雷达",
+    "tagline": "AI API 中转站 × 官方直购：把「倍率」和「赠送」折算成真实到手价",
+    "repo": "YOUR_GITHUB/token-radar",
+    "locale": "zh-CN"
+  },
+  "fx": {
+    "usd_cny": 7.1,
+    "as_of": "2026-11-26",
+    "source": "manual"
+  },
+  "blend": {
+    "input": 0.7,
+    "output": 0.3
+  },
+  "ranking": {
+    "exclude_demo_from_best": true
+  },
+  "disclosure": "本页部分链接为推广链接，通过链接注册我们可能拿到返佣。排名只按折算后的真实到手价排序，不售卖榜位；返佣与名次无关。价格均来自站点公开页面或公开 API，随时可能变，下单前请自行核对。",
+  "update": {
+    "interval_hours": 6
+  }
+}

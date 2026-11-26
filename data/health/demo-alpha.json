@@ -1,0 +1,75 @@
+{
+  "station_id": "demo-alpha",
+  "days": [
+    {
+      "date": "2026-11-26",
+      "ok": true,
+      "latency_ms": 820
+    },
+    {
+      "date": "2026-11-25",
+      "ok": true,
+      "latency_ms": 910
+    },
+    {
+      "date": "2026-11-24",
+      "ok": true,
+      "latency_ms": 760
+    },
+    {
+      "date": "2026-11-23",
+      "ok": true,
+      "latency_ms": 880
+    },
+    {
+      "date": "2026-11-22",
+      "ok": true,
+      "latency_ms": 1420
+    },
+    {
+      "date": "2026-11-21",
+      "ok": false,
+      "latency_ms": null
+    },
+    {
+      "date": "2026-11-20",
+      "ok": true,
+      "latency_ms": 834
+    },
+    {
+      "date": "2026-11-19",
+      "ok": true,
+      "latency_ms": 820
+    },
+    {
+      "date": "2026-11-18",
+      "ok": true,
+      "latency_ms": 910
+    },
+    {
+      "date": "2026-11-17",
+      "ok": true,
+      "latency_ms": 760
+    },
+    {
+      "date": "2026-11-16",
+      "ok": true,
+      "latency_ms": 880
+    },
+    {
+      "date": "2026-11-15",
+      "ok": true,
+      "latency_ms": 1420
+    },
+    {
+      "date": "2026-11-14",
+      "ok": true,
+      "latency_ms": 790
+    },
+    {
+      "date": "2026-11-13",
+      "ok": true,
+      "latency_ms": 834
+    }
+  ]
+}

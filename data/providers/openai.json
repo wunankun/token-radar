@@ -1,0 +1,9 @@
+{
+  "id": "openai",
+  "name": "OpenAI 官方",
+  "kind": "official",
+  "official_source": "openai",
+  "homepage": "https://platform.openai.com/",
+  "affiliate": null,
+  "note": "官方直购，价格锚。"
+}

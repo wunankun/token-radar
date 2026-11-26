@@ -1,0 +1,34 @@
+{
+  "id": "demo-alpha",
+  "name": "示例站 Alpha",
+  "demo": true,
+  "kind": "official-relay",
+  "homepage": "https://example.com",
+  "pricing_url": "https://example.com/pricing",
+  "first_seen": "2026-09-12",
+  "affiliate": {
+    "url": "https://example.com/register?aff=YOURCODE",
+    "code": "YOURCODE",
+    "commission": "10%",
+    "disclosure": true,
+    "note": "演示用假链接。换成自己的邀请码即可，build 只校验格式不校验可达。"
+  },
+  "recharge": {
+    "pay": 100,
+    "get": 120,
+    "note": "充 100 得 120（限时活动）；倍率折算必须把这一层算进去，否则看到的是假低价。"
+  },
+  "billing": {
+    "ratio": 1.0,
+    "measured_at": "2026-11-20",
+    "method": "固定 ASCII prompt 实测 usage/completion_tokens 与本地估算比对"
+  },
+  "risk_flags": [],
+  "models": {
+    "claude-sonnet-5-5": { "mode": "multiplier", "base": "cny_official", "value": 0.62 },
+    "claude-opus-5-5": { "mode": "multiplier", "base": "cny_official", "value": 0.62 },
+    "gpt-6.2-sol": { "mode": "multiplier", "base": "cny_official", "value": 0.62 },
+    "deepseek-v4-pro": { "mode": "multiplier", "base": "cny_official", "value": 0.62 },
+    "deepseek-flash": { "mode": "multiplier", "base": "cny_official", "value": 0.62 }
+  }
+}

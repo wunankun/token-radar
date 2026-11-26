@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+.preview/
+*.log
+
+# 抓取/探活的临时输出
+data/observed/*.tmp.json

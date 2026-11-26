@@ -1,0 +1,28 @@
+{
+  "id": "demo-gamma",
+  "name": "示例站 Gamma",
+  "demo": true,
+  "kind": "mixed",
+  "homepage": "https://example.net",
+  "pricing_url": "https://example.net/api/pricing",
+  "first_seen": "2026-08-30",
+  "affiliate": {
+    "url": "https://example.net/register?aff=YOURCODE",
+    "code": "YOURCODE",
+    "commission": "8%",
+    "disclosure": true,
+    "note": "演示用假链接。"
+  },
+  "recharge": { "pay": 300, "get": 450, "note": "充 300 得 450（1.5 倍额度）" },
+  "billing": {
+    "ratio": 1.12,
+    "measured_at": "2026-11-18",
+    "method": "固定 prompt 实测 usage 略高于估算"
+  },
+  "observed_endpoint": "https://example.net/api/pricing",
+  "risk_flags": ["limited-models", "unverified"],
+  "models": {
+    "deepseek-v4-pro": { "mode": "absolute", "input": 4.5, "output": 13.5, "cache_read": 0.5 },
+    "deepseek-flash": { "mode": "absolute", "input": 1.0, "output": 3.0, "cache_read": 0.1 }
+  }
+}

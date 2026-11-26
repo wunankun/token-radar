@@ -1,0 +1,9 @@
+{
+  "id": "anthropic",
+  "name": "Anthropic 官方",
+  "kind": "official",
+  "official_source": "anthropic",
+  "homepage": "https://www.anthropic.com/",
+  "affiliate": null,
+  "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
+}

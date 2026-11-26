@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token 雷达 · AI 中转站 × 官方 价格排行</title>
+<meta name="description" content="把 AI API 中转站的「倍率」「充值赠送」折算成真实到手价，和官方直购价格对齐比较。数据由 GitHub Actions 定时抓取，人工核验。">
+<meta property="og:title" content="Token 雷达 · AI 中转站 × 官方 价格排行">
+<meta property="og:description" content="把 AI API 中转站的「倍率」「充值赠送」折算成真实到手价，和官方直购价格对齐比较。数据由 GitHub Actions 定时抓取，人工核验。">
+<meta name="color-scheme" content="light">
+<style>
+:root {
+  --bg: #fbfbf9;
+  --panel: #ffffff;
+  --ink: #16181d;
+  --ink-2: #4b5158;
+  --ink-3: #7c848d;
+  --line: #e6e4de;
+  --line-2: #f0eeea;
+  --accent: #0f766e;
+  --accent-soft: #e6f2f0;
+  --warn: #92400e;
+  --warn-soft: #fdf3e3;
+  --danger: #9f1239;
+  --danger-soft: #fdeaf0;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-feature-settings: "tnum" 1;
+}
+
+a { color: inherit; }
+
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px 72px; }
+
+/* ---------- header ---------- */
+header.top { padding: 44px 0 18px; }
+.brandline { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0; letter-spacing: -0.02em; }
+h1 .dot { color: var(--accent); }
+.tagline { color: var(--ink-2); font-size: 15px; margin: 8px 0 0; max-width: 720px; }
+.meta-line {
+  margin-top: 14px; display: flex; gap: 14px; flex-wrap: wrap;
+  font-size: 12.5px; color: var(--ink-3); font-family: var(--mono);
+}
+.meta-line b { color: var(--ink-2); font-weight: 600; }
+
+/* ---------- disclosure ---------- */
+.disclosure {
+  margin-top: 20px; padding: 12px 16px; border-radius: 10px;
+  background: var(--warn-soft); border: 1px solid #f3e0bd;
+  color: var(--warn); font-size: 13px;
+}
+.disclosure b { font-weight: 700; }
+.demo-banner {
+  margin-top: 10px; padding: 12px 16px; border-radius: 10px;
+  background: #eef4ff; border: 1px solid #d7e3f7; color: #1e3a8a; font-size: 13px;
+}
+
+/* ---------- kpis ---------- */
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 24px 0 8px; }
+.kpi {
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px;
+}
+.kpi .k { font-size: 12px; color: var(--ink-3); letter-spacing: 0.04em; }
+.kpi .v { font-size: 24px; font-weight: 700; margin-top: 4px; letter-spacing: -0.02em; }
+.kpi .v small { font-size: 13px; font-weight: 500; color: var(--ink-3); margin-left: 4px; }
+.kpi .s { font-size: 12px; color: var(--ink-3); margin-top: 2px; }
+.kpi.accent .v { color: var(--accent); }
+
+/* ---------- controls ---------- */
+.controls {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+  padding: 14px 0 12px; margin-top: 18px;
+  background: linear-gradient(var(--bg) 72%, rgba(251, 251, 249, 0));
+}
+.controls input[type="search"], .controls select {
+  appearance: none; background: var(--panel); color: var(--ink);
+  border: 1px solid var(--line); border-radius: 9px; padding: 8px 11px; font-size: 13.5px;
+  font-family: inherit; outline: none;
+}
+.controls input[type="search"] { min-width: 200px; flex: 1 1 200px; max-width: 300px; }
+.controls input[type="search"]:focus, .controls select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--ink-2); cursor: pointer; user-select: none; }
+.toggle input { accent-color: var(--accent); }
+.count { margin-left: auto; font-size: 12.5px; color: var(--ink-3); font-family: var(--mono); }
+
+/* ---------- table ---------- */
+.tablewrap { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+thead th {
+  text-align: left; font-weight: 600; color: var(--ink-3); font-size: 11.5px; letter-spacing: 0.06em;
+  padding: 11px 12px; background: #faf9f6; border-bottom: 1px solid var(--line); white-space: nowrap;
+}
+thead th.num, tbody td.num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+tbody td { padding: 11px 12px; border-bottom: 1px solid var(--line-2); vertical-align: top; }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:hover { background: #fcfcfa; }
+tbody tr.is-demo { background: #fbfbfd; }
+tbody tr.is-demo:hover { background: #f7f7fb; }
+
+.station { display: flex; flex-direction: column; gap: 3px; }
+.station .name { font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
+.station .name a { text-decoration: none; border-bottom: 1px solid transparent; }
+.station .name a:hover { border-bottom-color: currentColor; }
+.aff-dot { font-size: 10px; color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 0 3px; line-height: 1.5; }
+.chips { display: flex; gap: 4px; flex-wrap: wrap; }
+.chip {
+  font-size: 10.5px; line-height: 1.7; padding: 0 6px; border-radius: 5px;
+  background: #f1f0ec; color: var(--ink-2); white-space: nowrap;
+}
+.chip.kind-official { background: #eef2ff; color: #3730a3; }
+.chip.kind-official-relay { background: var(--accent-soft); color: #115e59; }
+.chip.kind-reverse { background: var(--danger-soft); color: var(--danger); }
+.chip.kind-mixed { background: #f5f0ff; color: #6b21a8; }
+.chip.flag-warn { background: var(--warn-soft); color: var(--warn); }
+.chip.flag-danger { background: var(--danger-soft); color: var(--danger); }
+.chip.demo { background: #eef4ff; color: #1e3a8a; }
+
+.model .m { font-weight: 600; }
+.model .v { font-size: 11.5px; color: var(--ink-3); }
+.pair { color: var(--ink-2); }
+.pair .in { color: var(--ink-3); }
+.big { font-weight: 700; }
+.muted { color: var(--ink-3); }
+
+.ratio {
+  display: inline-block; font-family: var(--mono); font-weight: 700; font-size: 12.5px;
+  padding: 1px 7px; border-radius: 6px; white-space: nowrap;
+}
+.ratio.r-hi { background: #e7f6ee; color: #166534; }
+.ratio.r-mid { background: #f0f7e6; color: #4d7c0f; }
+.ratio.r-low { background: #fdf6e3; color: var(--warn); }
+.ratio.r-eq { background: #f1f0ec; color: var(--ink-2); }
+.ratio.r-bad { background: var(--danger-soft); color: var(--danger); }
+.ratio.r-na { background: transparent; color: var(--ink-3); font-weight: 500; }
+
+.uptime { font-size: 12px; }
+.bar { display: block; height: 3px; border-radius: 2px; background: var(--line); margin-top: 4px; overflow: hidden; width: 54px; }
+.bar i { display: block; height: 100%; background: var(--accent); }
+.src { font-size: 11px; color: var(--ink-3); }
+.src .auto { color: var(--warn); }
+
+/* ---------- footer ---------- */
+.method { margin-top: 30px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 4px 20px; }
+details > summary { cursor: pointer; padding: 14px 0; font-weight: 600; font-size: 14px; list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+details > summary::before { content: "▸ "; color: var(--accent); }
+details[open] > summary::before { content: "▾ "; }
+.method .body { padding: 0 0 18px; color: var(--ink-2); font-size: 13.5px; }
+.method code, .method pre { font-family: var(--mono); font-size: 12.5px; }
+.method pre { background: #faf9f6; border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; overflow-x: auto; }
+.method ul { padding-left: 20px; }
+.method li { margin: 5px 0; }
+
+footer.bottom { margin-top: 26px; color: var(--ink-3); font-size: 12.5px; display: flex; gap: 16px; flex-wrap: wrap; }
+
+@media (max-width: 980px) {
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hide-md { display: none; }
+}
+@media (max-width: 640px) {
+  h1 { font-size: 24px; }
+  .wrap { padding: 0 14px 48px; }
+  .controls input[type="search"] { max-width: none; }
+  .count { display: none; }
+}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brandline">
+      <h1>Token 雷达<span class="dot"> · </span>中转站 × 官方 价格排行</h1>
+    </div>
+    <p class="tagline">AI API 中转站 × 官方直购：把「倍率」和「赠送」折算成真实到手价</p>
+    <div class="meta-line">
+      <span>更新 <b>2026/11/26 11:56 CST</b></span>
+      <span>站点 <b>6</b></span>
+      <span>价格行 <b>17</b></span>
+      <span>汇率 <b>7.1</b></span>
+      <span><a href="https://github.com/YOUR_GITHUB/token-radar" target="_blank" rel="noopener">GitHub</a></span>
+    </div>
+
+    <div class="disclosure"><b>推广披露：</b>本页部分链接为推广链接，通过链接注册我们可能拿到返佣。排名只按折算后的真实到手价排序，不售卖榜位；返佣与名次无关。价格均来自站点公开页面或公开 API，随时可能变，下单前请自行核对。</div>
+    <div class="demo-banner" id="demo-banner" hidden></div>
+  </header>
+
+  <section class="kpis" id="kpis"></section>
+
+  <div class="controls">
+    <input id="f-q" type="search" placeholder="搜索站点 / 模型…" autocomplete="off">
+    <select id="f-model" aria-label="按模型筛选"></select>
+    <select id="f-kind" aria-label="按类型筛选"></select>
+    <select id="f-sort" aria-label="排序方式">
+      <option value="ratio">按折扣排序</option>
+      <option value="output">按输出价排序</option>
+      <option value="input">按输入价排序</option>
+      <option value="uptime">按 7 日可用率排序</option>
+    </select>
+    <label class="toggle"><input type="checkbox" id="f-demo" checked>显示演示数据</label>
+    <label class="toggle"><input type="checkbox" id="f-aff">只看带推广链接</label>
+    <span class="count" id="count"></span>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>站点</th>
+          <th>模型</th>
+          <th class="num">标价 ¥/M<br><span style="font-weight:400">输入 / 输出</span></th>
+          <th class="num">赠送 / 计费</th>
+          <th class="num">实际到手 ¥/M<br><span style="font-weight:400">输入 / 输出</span></th>
+          <th class="num">相对官方</th>
+          <th class="num hide-md">7 日可用</th>
+          <th class="hide-md">价格来源</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <section class="method">
+    <details open>
+      <summary>价格怎么算的（三个坑）</summary>
+      <div class="body">
+        <p>同一张表里的「0.5 倍率」和「5 折」经常不是一回事，所以本站统一折成<b>人民币 / 百万 token 的到手价</b>再比：</p>
+<pre>实际到手价 = 标价 × 计费系数 ÷ 充值赠送倍数
+相对官方   = 实际到手价 ÷ (官方美元价 × 汇率 USD→CNY)
+混合成本   = 0.7 × 输入价 + 0.3 × 输出价</pre>
+        <ul>
+          <li><b>坑一：倍率的口径。</b>多数中转站是「1 元 = 1 美元额度」，所以「0.5 倍率」= 官方美元价 × 0.5，<b>以人民币结算</b>，并不乘汇率 —— 这才是「便宜十几倍」的来源。而「官转」通常是按官方<b>人民币</b>价打几折。两种口径在数据里用 <code>base: usd_official | cny_official</code> 区分，混用会算出完全错误的排名。</li>
+          <li><b>坑二：充值赠送。</b>「充 100 得 120」等于单价直接打 0.83 折，但很多榜单只抄标价。</li>
+          <li><b>坑三：计费虚高。</b>有的站标价极低，但同样的 prompt 报出的 usage 是官方的 1.3 倍以上，实际成本被吃掉。本站的 <code>计费系数</code> 来自定时探活的实测（实测 usage ÷ 本地估算），没有实测时按 1.0 处理。</li>
+        </ul>
+        <p>另外：官方价本身也有峰谷（DeepSeek 谷时 5 折）、缓存读写价差、以及长上下文加价，这些先按标准档记录，明细看 <code>data/official.json</code>。</p>
+      </div>
+    </details>
+    <details>
+      <summary>数据从哪来 / 多久更新</summary>
+      <div class="body">
+        <ul>
+          <li><b>官方价：</b>人工从各厂官方计费页读取，记录 <code>verified_at</code>，来源链接就在 <code>data/official.json</code>。</li>
+          <li><b>中转站价：</b>优先人工核验（<code>data/providers/*.json</code>）；支持 new-api / one-api 系的站点会由 GitHub Actions 定时拉取公开的 <code>/api/pricing</code>，标为「自动抓取」，未经核验的行会显示提示。</li>
+          <li><b>可用率：</b>定时探活，只统计最近 7 天的成功率；没有 key 的站点不做探活，显示「—」。</li>
+          <li>更新频率：每 6 小时，以及每次人工合并 PR 后。</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>为什么必须标注风险</summary>
+      <div class="body">
+        <p>价格低到一定程度，通常意味着渠道不是官方直连。arXiv 上有一篇对中转站的实测研究（<a href="https://arxiv.org/abs/2603.01919" target="_blank" rel="noopener">Real Money, Fake Models</a>）：在被学术引用过的 17 个中转站里，<b>45.83%</b> 的节点没通过模型身份验证；同一批测试中，部分影子接口在专业问答上的正确率比官方低 40 个百分点以上。价格倍率本身几乎不能预测这种劣化。</p>
+        <p>所以这里除了价格，还标 <b>逆向 / 低价陷阱 / 疑似掉包 / 计费虚高</b> 等标签，以及 7 日可用率。便宜和稳定，自己权衡。</p>
+      </div>
+    </details>
+    <details>
+      <summary>怎么提交新站点 / 纠正价格</summary>
+      <div class="body">
+        <p>提 PR 改 <code>data/providers/</code> 下的 JSON 即可，一个站点一个文件，格式见 <code>schema/provider.schema.json</code>。规则只有三条：</p>
+        <ul>
+          <li>价格必须可回溯（给出 <code>pricing_url</code>）。</li>
+          <li>有推广链接就必须写 <code>"disclosure": true</code>，构建设置了硬校验。</li>
+          <li>排序只按折算后的价格，不按返佣比例、不接受付费提位。</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <footer class="bottom">
+    <span>数据来自各站公开页面与公开 API，仅供参考，下单前请自行核对。</span>
+    <span><a href="https://github.com/YOUR_GITHUB/token-radar" target="_blank" rel="noopener">源码 / 数据</a></span>
+    <span>构建于 2026/11/26 11:56 CST</span>
+  </footer>
+</div>
+
+<script>window.__DATA__ = {"meta":{"generated_at":"2026-11-26T03:56:36.746Z","fx":{"usd_cny":7.1,"as_of":"2026-11-26","source":"manual"},"blend":{"input":0.7,"output":0.3},"counts":{"rows":17,"stations":6,"models":6,"official_rows":6,"demo_rows":11,"with_affiliate":11},"best":null,"best_demo":{"station":"示例站 Beta","model":"GPT-6.2 Sol","ratio":0.0951,"effective":{"input":1.35,"output":6.75,"cache_read":0.0675}},"disclosure":"本页部分链接为推广链接，通过链接注册我们可能拿到返佣。排名只按折算后的真实到手价排序，不售卖榜位；返佣与名次无关。价格均来自站点公开页面或公开 API，随时可能变，下单前请自行核对。","site":{"name":"Token 雷达","tagline":"AI API 中转站 × 官方直购：把「倍率」和「赠送」折算成真实到手价","repo":"YOUR_GITHUB/token-radar","locale":"zh-CN"}},"rows":[{"station":{"id":"demo-beta","name":"示例站 Beta","kind":"reverse","kind_label":"逆向","demo":true,"homepage":"https://example.org","affiliate_url":"https://example.org/register?aff=YOURCODE","affiliate_code":"YOURCODE","commission":"15%","risk_flags":["reverse","cheap-trap","model-substitution","unverified"],"first_seen":"2026-10-02","note":null},"model":{"id":"gpt-6.2-sol","label":"GPT-6.2 Sol","vendor":"OpenAI","context":400000},"mode":"multiplier","price_source":"manual","bonus":1,"billing_ratio":1.35,"billing_source":"manual","nominal":{"input":1,"output":5,"cache_read":0.05},"effective":{"input":1.35,"output":6.75,"cache_read":0.0675},"official_cny":{"input":14.2,"output":71,"cache_read":0.71},"official_usd":{"input":2,"output":10,"cache_read":0.1,"cache_write":null},"ratio":{"input":0.0951,"output":0.0951,"blend":0.0951},"blend_effective":2.97,"health":{"days":14,"uptime_7d":0.7142857142857143,"uptime_30d":0.7142857142857143,"last_ok":"2026-11-26","last_checked":"2026-11-26","latency_ms":2325,"usage_ratio":null},"note":null,"pricing_url":"https://platform.openai.com/docs/pricing"},{"station":{"id":"demo-beta","name":"示例站 Beta","kind":"reverse","kind_label":"逆向","demo":true,"homepage":"https://example.org","affiliate_url":"https://example.org/register?aff=YOURCODE","affiliate_code":"YOURCODE","commission":"15%","risk_flags":["reverse","cheap-trap","model-substitution","unverified"],"first_seen":"2026-10-02","note":null},"model":{"id":"gpt-6.2-astra","label":"GPT-6.2 Astra","vendor":"OpenAI","context":400000},"mode":"multiplier","price_source":"manual","bonus":1,"billing_ratio":1.35,"billing_source":"manual","nominal":{"input":4,"output":20,"cache_read":0.2},"effective":{"input":5.4,"output":27,"cache_read":0.27},"official_cny":{"input":56.8,"output":284,"cache_read":2.84},"official_usd":{"input":8,"output":40,"cache_read":0.4,"cache_write":null},"ratio":{"input":0.0951,"output":0.0951,"blend":0.0951},"blend_effective":11.88,"health":{"days":14,"uptime_7d":0.7142857142857143,"uptime_30d":0.7142857142857143,"last_ok":"2026-11-26","last_checked":"2026-11-26","latency_ms":2325,"usage_ratio":null},"note":null,"pricing_url":"https://platform.openai.com/docs/pricing"},{"station":{"id":"demo-beta","name":"示例站 Beta","kind":"reverse","kind_label":"逆向","demo":true,"homepage":"https://example.org","affiliate_url":"https://example.org/register?aff=YOURCODE","affiliate_code":"YOURCODE","commission":"15%","risk_flags":["reverse","cheap-trap","model-substitution","unverified"],"first_seen":"2026-10-02","note":null},"model":{"id":"claude-sonnet-5-5","label":"Claude Sonnet 5.5","vendor":"Anthropic","context":200000},"mode":"multiplier","price_source":"manual","bonus":1,"billing_ratio":1.35,"billing_source":"manual","nominal":{"input":1.1,"output":5.5,"cache_read":0.055},"effective":{"input":1.485,"output":7.425,"cache_read":0.0743},"official_cny":{"input":14.2,"output":71,"cache_read":0.71},"official_usd":{"input":2,"output":10,"cache_read":0.1,"cache_write":2.5},"ratio":{"input":0.1046,"output":0.1046,"blend":0.1046},"blend_effective":3.267,"health":{"days":14,"uptime_7d":0.7142857142857143,"uptime_30d":0.7142857142857143,"last_ok":"2026-11-26","last_checked":"2026-11-26","latency_ms":2325,"usage_ratio":null},"note":"逆向/号池渠道，倍率按官方美元价 0.55 倍、以人民币结算","pricing_url":"https://docs.anthropic.com/en/docs/about-claude/pricing"},{"station":{"id":"demo-beta","name":"示例站 Beta","kind":"reverse","kind_label":"逆向","demo":true,"homepage":"https://example.org","affiliate_url":"https://example.org/register?aff=YOURCODE","affiliate_code":"YOURCODE","commission":"15%","risk_flags":["reverse","cheap-trap","model-substitution","unverified"],"first_seen":"2026-10-02","note":null},"model":{"id":"claude-opus-5-5","label":"Claude Opus 5.5","vendor":"Anthropic","context":200000},"mode":"multiplier","price_source":"manual","bonus":1,"billing_ratio":1.35,"billing_source":"manual","nominal":{"input":2.2,"output":11,"cache_read":0.11},"effective":{"input":2.97,"output":14.85,"cache_read":0.1485},"official_cny":{"input":28.4,"output":142,"cache_read":1.42},"official_usd":{"input":4,"output":20,"cache_read":0.2,"cache_write":5},"ratio":{"input":0.1046,"output":0.1046,"blend":0.1046},"blend_effective":6.534,"health":{"days":14,"uptime_7d":0.7142857142857143,"uptime_30d":0.7142857142857143,"last_ok":"2026-11-26","last_checked":"2026-11-26","latency_ms":2325,"usage_ratio":null},"note":null,"pricing_url":"https://docs.anthropic.com/en/docs/about-claude/pricing"},{"station":{"id":"demo-gamma","name":"示例站 Gamma","kind":"mixed","kind_label":"混合","demo":true,"homepage":"https://example.net","affiliate_url":"https://example.net/register?aff=YOURCODE","affiliate_code":"YOURCODE","commission":"8%","risk_flags":["limited-models","unverified"],"first_seen":"2026-08-30","note":null},"model":{"id":"deepseek-flash","label":"DeepSeek Flash","vendor":"DeepSeek","context":1000000},"mode":"absolute","price_source":"manual","bonus":1.5,"billing_ratio":1.12,"billing_source":"manual","nominal":{"input":1,"output":3,"cache_read":0.1},"effective":{"input":0.7467,"output":2.24,"cache_read":0.0747},"official_cny":{"input":2.13,"output":8.52,"cache_read":0.0426},"official_usd":{"input":0.3,"output":1.2,"cache_read":0.006,"cache_write":null},"ratio":{"input":0.3505,"output":0.2629,"blend":0.2952},"blend_effective":1.1947,"health":{"days":14,"uptime_7d":1,"uptime_30d":1,"last_ok":"2026-11-26","last_checked":"2026-11-26","latency_ms":1182,"usage_ratio":null},"note":null,"pricing_url":"https://api-docs.deepseek.com/quick_start/pricing"},{"station":{"id":"demo-gamma","name":"示例站 Gamma","kind":"mixed","kind_label":"混合","demo":true,"homepage":"https://example.net","affiliate_url":"https://example.net/register?aff=YOURCODE","affiliate_code":"YOURCODE","commission":"8%","risk_flags":["limited-models","unverified"],"first_seen":"2026-08-30","note":null},"model":{"id":"deepseek-v4-pro","label":"DeepSeek V4 Pro","vendor":"DeepSeek","context":1000000},"mode":"absolute","price_source":"manual","bonus":1.5,"billing_ratio":1.12,"billing_source":"manual","nominal":{"input":4.5,"output":13.5,"cache_read":0.5},"effective":{"input":3.36,"output":10.08,"cache_read":0.3733},"official_cny":{"input":9.372,"output":28.116,"cache_read":0.3124},"official_usd":{"input":1.32,"output":3.96,"cache_read":0.044,"cache_write":null},"ratio":{"input":0.3585,"output":0.3585,"blend":0.3585},"blend_effective":5.376,"health":{"days":14,"uptime_7d":1,"uptime_30d":1,"last_ok":"2026-11-26","last_checked":"2026-11-26","latency_ms":1182,"usage_ratio":null},"note":null,"pricing_url":"https://api-docs.deepseek.com/quick_start/pricing"},{"station":{"id":"demo-alpha","name":"示例站 Alpha","kind":"official-relay","kind_label":"官转","demo":true,"homepage":"https://example.com","affiliate_url":"https://example.com/register?aff=YOURCODE","affiliate_code":"YOURCODE","commission":"10%","risk_flags":[],"first_seen":"2026-09-12","note":null},"model":{"id":"deepseek-flash","label":"DeepSeek Flash","vendor":"DeepSeek","context":1000000},"mode":"multiplier","price_source":"manual","bonus":1.2,"billing_ratio":1,"billing_source":"manual","nominal":{"input":1.3206,"output":5.2824,"cache_read":0.0264},"effective":{"input":1.1005,"output":4.402,"cache_read":0.022},"official_cny":{"input":2.13,"output":8.52,"cache_read":0.0426},"official_usd":{"input":0.3,"output":1.2,"cache_read":0.006,"cache_write":null},"ratio":{"input":0.5167,"output":0.5167,"blend":0.5167},"blend_effective":2.091,"health":{"days":14,"uptime_7d":0.8571428571428571,"uptime_30d":0.9285714285714286,"last_ok":"2026-11-26","last_checked":"2026-11-26","latency_ms":926,"usage_ratio":null},"note":null,"pricing_url":"https://api-docs.deepseek.com/quick_start/pricing"},{"station":{"id":"demo-alpha","name":"示例站 Alpha","kind":"official-relay","kind_label":"官转","demo":true,"homepage":"https://example.com","affiliate_url":"https://example.com/register?aff=YOURCODE","affiliate_code":"YOURCODE","commission":"10%","risk_flags":[],"first_seen":"2026-09-12","note":null},"model":{"id":"deepseek-v4-pro","label":"DeepSeek V4 Pro","vendor":"DeepSeek","context":1000000},"mode":"multiplier","price_source":"manual","bonus":1.2,"billing_ratio":1,"billing_source":"manual","nominal":{"input":5.8106,"output":17.4319,"cache_read":0.1937},"effective":{"input":4.8422,"output":14.5266,"cache_read":0.1614},"official_cny":{"input":9.372,"output":28.116,"cache_read":0.3124},"official_usd":{"input":1.32,"output":3.96,"cache_read":0.044,"cache_write":null},"ratio":{"input":0.5167,"output":0.5167,"blend":0.5167},"blend_effective":7.7475,"health":{"days":14,"uptime_7d":0.8571428571428571,"uptime_30d":0.9285714285714286,"last_ok":"2026-11-26","last_checked":"2026-11-26","latency_ms":926,"usage_ratio":null},"note":null,"pricing_url":"https://api-docs.deepseek.com/quick_start/pricing"},{"station":{"id":"demo-alpha","name":"示例站 Alpha","kind":"official-relay","kind_label":"官转","demo":true,"homepage":"https://example.com","affiliate_url":"https://example.com/register?aff=YOURCODE","affiliate_code":"YOURCODE","commission":"10%","risk_flags":[],"first_seen":"2026-09-12","note":null},"model":{"id":"claude-sonnet-5-5","label":"Claude Sonnet 5.5","vendor":"Anthropic","context":200000},"mode":"multiplier","price_source":"manual","bonus":1.2,"billing_ratio":1,"billing_source":"manual","nominal":{"input":8.804,"output":44.02,"cache_read":0.4402},"effective":{"input":7.3367,"output":36.6833,"cache_read":0.3668},"official_cny":{"input":14.2,"output":71,"cache_read":0.71},"official_usd":{"input":2,"output":10,"cache_read":0.1,"cache_write":2.5},"ratio":{"input":0.5167,"output":0.5167,"blend":0.5167},"blend_effective":16.1407,"health":{"days":14,"uptime_7d":0.8571428571428571,"uptime_30d":0.9285714285714286,"last_ok":"2026-11-26","last_checked":"2026-11-26","latency_ms":926,"usage_ratio":null},"note":null,"pricing_url":"https://docs.anthropic.com/en/docs/about-claude/pricing"},{"station":{"id":"demo-alpha","name":"示例站 Alpha","kind":"official-relay","kind_label":"官转","demo":true,"homepage":"https://example.com","affiliate_url":"https://example.com/register?aff=YOURCODE","affiliate_code":"YOURCODE","commission":"10%","risk_flags":[],"first_seen":"2026-09-12","note":null},"model":{"id":"gpt-6.2-sol","label":"GPT-6.2 Sol","vendor":"OpenAI","context":400000},"mode":"multiplier","price_source":"manual","bonus":1.2,"billing_ratio":1,"billing_source":"manual","nominal":{"input":8.804,"output":44.02,"cache_read":0.4402},"effective":{"input":7.3367,"output":36.6833,"cache_read":0.3668},"official_cny":{"input":14.2,"output":71,"cache_read":0.71},"official_usd":{"input":2,"output":10,"cache_read":0.1,"cache_write":null},"ratio":{"input":0.5167,"output":0.5167,"blend":0.5167},"blend_effective":16.1407,"health":{"days":14,"uptime_7d":0.8571428571428571,"uptime_30d":0.9285714285714286,"last_ok":"2026-11-26","last_checked":"2026-11-26","latency_ms":926,"usage_ratio":null},"note":null,"pricing_url":"https://platform.openai.com/docs/pricing"},{"station":{"id":"demo-alpha","name":"示例站 Alpha","kind":"official-relay","kind_label":"官转","demo":true,"homepage":"https://example.com","affiliate_url":"https://example.com/register?aff=YOURCODE","affiliate_code":"YOURCODE","commission":"10%","risk_flags":[],"first_seen":"2026-09-12","note":null},"model":{"id":"claude-opus-5-5","label":"Claude Opus 5.5","vendor":"Anthropic","context":200000},"mode":"multiplier","price_source":"manual","bonus":1.2,"billing_ratio":1,"billing_source":"manual","nominal":{"input":17.608,"output":88.04,"cache_read":0.8804},"effective":{"input":14.6733,"output":73.3667,"cache_read":0.7337},"official_cny":{"input":28.4,"output":142,"cache_read":1.42},"official_usd":{"input":4,"output":20,"cache_read":0.2,"cache_write":5},"ratio":{"input":0.5167,"output":0.5167,"blend":0.5167},"blend_effective":32.2813,"health":{"days":14,"uptime_7d":0.8571428571428571,"uptime_30d":0.9285714285714286,"last_ok":"2026-11-26","last_checked":"2026-11-26","latency_ms":926,"usage_ratio":null},"note":null,"pricing_url":"https://docs.anthropic.com/en/docs/about-claude/pricing"},{"station":{"id":"deepseek","name":"DeepSeek 官方","kind":"official","kind_label":"官方直购","demo":false,"homepage":"https://platform.deepseek.com/","affiliate_url":null,"affiliate_code":null,"commission":null,"risk_flags":[],"first_seen":null,"note":"官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"},"model":{"id":"deepseek-flash","label":"DeepSeek Flash","vendor":"DeepSeek","context":1000000},"mode":"official","price_source":"official","bonus":1,"billing_ratio":1,"billing_source":"default","nominal":{"input":2.13,"output":8.52,"cache_read":0.0426},"effective":{"input":2.13,"output":8.52,"cache_read":0.0426},"official_cny":{"input":2.13,"output":8.52,"cache_read":0.0426},"official_usd":{"input":0.3,"output":1.2,"cache_read":0.006,"cache_write":null},"ratio":{"input":1,"output":1,"blend":1},"blend_effective":4.047,"health":null,"note":null,"pricing_url":"https://api-docs.deepseek.com/quick_start/pricing"},{"station":{"id":"deepseek","name":"DeepSeek 官方","kind":"official","kind_label":"官方直购","demo":false,"homepage":"https://platform.deepseek.com/","affiliate_url":null,"affiliate_code":null,"commission":null,"risk_flags":[],"first_seen":null,"note":"官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"},"model":{"id":"deepseek-v4-pro","label":"DeepSeek V4 Pro","vendor":"DeepSeek","context":1000000},"mode":"official","price_source":"official","bonus":1,"billing_ratio":1,"billing_source":"default","nominal":{"input":9.372,"output":28.116,"cache_read":0.3124},"effective":{"input":9.372,"output":28.116,"cache_read":0.3124},"official_cny":{"input":9.372,"output":28.116,"cache_read":0.3124},"official_usd":{"input":1.32,"output":3.96,"cache_read":0.044,"cache_write":null},"ratio":{"input":1,"output":1,"blend":1},"blend_effective":14.9952,"health":null,"note":null,"pricing_url":"https://api-docs.deepseek.com/quick_start/pricing"},{"station":{"id":"anthropic","name":"Anthropic 官方","kind":"official","kind_label":"官方直购","demo":false,"homepage":"https://www.anthropic.com/","affiliate_url":null,"affiliate_code":null,"commission":null,"risk_flags":[],"first_seen":null,"note":"官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"},"model":{"id":"claude-sonnet-5-5","label":"Claude Sonnet 5.5","vendor":"Anthropic","context":200000},"mode":"official","price_source":"official","bonus":1,"billing_ratio":1,"billing_source":"default","nominal":{"input":14.2,"output":71,"cache_read":0.71},"effective":{"input":14.2,"output":71,"cache_read":0.71},"official_cny":{"input":14.2,"output":71,"cache_read":0.71},"official_usd":{"input":2,"output":10,"cache_read":0.1,"cache_write":2.5},"ratio":{"input":1,"output":1,"blend":1},"blend_effective":31.24,"health":null,"note":null,"pricing_url":"https://docs.anthropic.com/en/docs/about-claude/pricing"},{"station":{"id":"openai","name":"OpenAI 官方","kind":"official","kind_label":"官方直购","demo":false,"homepage":"https://platform.openai.com/","affiliate_url":null,"affiliate_code":null,"commission":null,"risk_flags":[],"first_seen":null,"note":"官方直购，价格锚。"},"model":{"id":"gpt-6.2-sol","label":"GPT-6.2 Sol","vendor":"OpenAI","context":400000},"mode":"official","price_source":"official","bonus":1,"billing_ratio":1,"billing_source":"default","nominal":{"input":14.2,"output":71,"cache_read":0.71},"effective":{"input":14.2,"output":71,"cache_read":0.71},"official_cny":{"input":14.2,"output":71,"cache_read":0.71},"official_usd":{"input":2,"output":10,"cache_read":0.1,"cache_write":null},"ratio":{"input":1,"output":1,"blend":1},"blend_effective":31.24,"health":null,"note":null,"pricing_url":"https://platform.openai.com/docs/pricing"},{"station":{"id":"anthropic","name":"Anthropic 官方","kind":"official","kind_label":"官方直购","demo":false,"homepage":"https://www.anthropic.com/","affiliate_url":null,"affiliate_code":null,"commission":null,"risk_flags":[],"first_seen":null,"note":"官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"},"model":{"id":"claude-opus-5-5","label":"Claude Opus 5.5","vendor":"Anthropic","context":200000},"mode":"official","price_source":"official","bonus":1,"billing_ratio":1,"billing_source":"default","nominal":{"input":28.4,"output":142,"cache_read":1.42},"effective":{"input":28.4,"output":142,"cache_read":1.42},"official_cny":{"input":28.4,"output":142,"cache_read":1.42},"official_usd":{"input":4,"output":20,"cache_read":0.2,"cache_write":5},"ratio":{"input":1,"output":1,"blend":1},"blend_effective":62.48,"health":null,"note":null,"pricing_url":"https://docs.anthropic.com/en/docs/about-claude/pricing"},{"station":{"id":"openai","name":"OpenAI 官方","kind":"official","kind_label":"官方直购","demo":false,"homepage":"https://platform.openai.com/","affiliate_url":null,"affiliate_code":null,"commission":null,"risk_flags":[],"first_seen":null,"note":"官方直购，价格锚。"},"model":{"id":"gpt-6.2-astra","label":"GPT-6.2 Astra","vendor":"OpenAI","context":400000},"mode":"official","price_source":"official","bonus":1,"billing_ratio":1,"billing_source":"default","nominal":{"input":56.8,"output":284,"cache_read":2.84},"effective":{"input":56.8,"output":284,"cache_read":2.84},"official_cny":{"input":56.8,"output":284,"cache_read":2.84},"official_usd":{"input":8,"output":40,"cache_read":0.4,"cache_write":null},"ratio":{"input":1,"output":1,"blend":1},"blend_effective":124.96,"health":null,"note":null,"pricing_url":"https://platform.openai.com/docs/pricing"}]};</script>
+<script>
+/* Token 雷达 · 前端渲染（无依赖，数据来自 window.__DATA__） */
+(function () {
+  'use strict';
+
+  var DATA = window.__DATA__ || { rows: [], meta: {} };
+  var rows = DATA.rows || [];
+  var meta = DATA.meta || {};
+
+  var FLAG_LABEL = {
+    unverified: '未核验', reverse: '逆向渠道', 'cheap-trap': '低价陷阱',
+    'billing-inflation': '计费虚高', 'model-substitution': '疑似掉包', 'no-entity': '无主体',
+    'operator-self': '自营主体', 'ran-away': '已跑路', 'no-refund': '不退款',
+    'prepaid-only': '仅预付', 'limited-models': '型号不全'
+  };
+  var DANGER_FLAGS = ['ran-away', 'model-substitution', 'no-entity'];
+
+  var state = { q: '', model: '', kind: '', sort: 'ratio', showDemo: true, onlyAff: false };
+  var $ = function (sel) { return document.querySelector(sel); };
+
+  /* ---------- 格式化 ---------- */
+  function money(v) {
+    if (v === null || v === undefined || !isFinite(v)) return '—';
+    if (v === 0) return '0';
+    if (v < 0.01) return v.toFixed(4);
+    if (v < 1) return v.toFixed(3);
+    return v.toFixed(2);
+  }
+  function ratioCls(r) {
+    if (r === null || r === undefined) return 'r-na';
+    if (r > 1.05) return 'r-bad';
+    if (r >= 0.95) return 'r-eq';
+    if (r >= 0.5) return 'r-low';
+    if (r >= 0.2) return 'r-mid';
+    return 'r-hi';
+  }
+  function ratioText(r) {
+    if (r === null || r === undefined) return '—';
+    if (r >= 0.95 && r <= 1.05) return '官方价';
+    var z = r * 10;
+    return (z < 1 ? z.toFixed(2) : z.toFixed(1)) + ' 折';
+  }
+  function pct(v) {
+    if (v === null || v === undefined) return '—';
+    return (v * 100).toFixed(v === 1 ? 0 : 1) + '%';
+  }
+  function esc(s) {
+    return String(s === null || s === undefined ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+  function pair(o, cls) {
+    if (!o) return '<span class="muted">—</span>';
+    return '<span class="pair ' + (cls || '') + '">' + money(o.input) + ' <span class="in">/</span> <b>' + money(o.output) + '</b></span>';
+  }
+
+  /* ---------- KPI ---------- */
+  function renderKpis() {
+    var c = meta.counts || {};
+    var best = meta.best;
+    var auto = rows.filter(function (r) { return r.price_source === 'auto'; }).length;
+    var aff = rows.filter(function (r) { return r.station.affiliate_url; }).length;
+
+    var cards = [
+      {
+        k: '在录规模', v: String(c.stations || 0), small: '个站点',
+        s: (c.models || 0) + ' 个模型 · ' + (c.rows || 0) + ' 行价格'
+      },
+      {
+        k: '最低综合折扣', accent: true,
+        v: best ? ratioText(best.ratio) : '—',
+        s: best ? (esc(best.station) + ' · ' + esc(best.model)) : '录入真实中转站后自动计算'
+      },
+      {
+        k: '汇率 USD→CNY', v: String((meta.fx && meta.fx.usd_cny) || '—'),
+        s: '手工维护 · ' + esc((meta.fx && meta.fx.as_of) || '') + ' · 官方价按此折人民币'
+      },
+      {
+        k: '推广链接', v: String(aff), small: '行',
+        s: auto ? ('其中 ' + auto + ' 行为自动抓取，待人工核验') : '全部为人工核验价格'
+      }
+    ];
+
+    $('#kpis').innerHTML = cards.map(function (card) {
+      return '<div class="kpi' + (card.accent ? ' accent' : '') + '">' +
+        '<div class="k">' + card.k + '</div>' +
+        '<div class="v">' + card.v + (card.small ? '<small>' + card.small + '</small>' : '') + '</div>' +
+        '<div class="s">' + card.s + '</div>' +
+        '</div>';
+    }).join('');
+  }
+
+  /* ---------- 筛选 ---------- */
+  function filtered() {
+    var q = state.q.trim().toLowerCase();
+    return rows.filter(function (r) {
+      if (!state.showDemo && r.station.demo) return false;
+      if (state.onlyAff && !r.station.affiliate_url) return false;
+      if (state.model && r.model.id !== state.model) return false;
+      if (state.kind && r.station.kind !== state.kind) return false;
+      if (q) {
+        var hay = (r.station.name + ' ' + r.model.label + ' ' + r.model.id + ' ' + r.station.kind_label).toLowerCase();
+        if (hay.indexOf(q) === -1) return false;
+      }
+      return true;
+    }).sort(function (a, b) {
+      var av, bv;
+      if (state.sort === 'uptime') {
+        av = a.health && a.health.uptime_7d != null ? a.health.uptime_7d : -1;
+        bv = b.health && b.health.uptime_7d != null ? b.health.uptime_7d : -1;
+        return bv - av;
+      }
+      if (state.sort === 'ratio') {
+        av = a.ratio.blend == null ? Infinity : a.ratio.blend;
+        bv = b.ratio.blend == null ? Infinity : b.ratio.blend;
+        return av - bv;
+      }
+      av = a.effective && a.effective[state.sort] != null ? a.effective[state.sort] : Infinity;
+      bv = b.effective && b.effective[state.sort] != null ? b.effective[state.sort] : Infinity;
+      return av - bv;
+    });
+  }
+
+  /* ---------- 行 ---------- */
+  function stationCell(r) {
+    var s = r.station;
+    var name = esc(s.name);
+    var link = s.affiliate_url || s.homepage;
+    var inner = link
+      ? '<a href="' + esc(link) + '" target="_blank" rel="sponsored nofollow noopener">' + name + '</a>'
+      : name;
+    if (s.affiliate_url) inner += '<span class="aff-dot" title="推广链接：通过此链接注册我们可能获得返佣，排名不受影响">AD</span>';
+
+    var chips = ['<span class="chip kind-' + s.kind + '">' + esc(s.kind_label) + '</span>'];
+    if (s.demo) chips.push('<span class="chip demo">演示</span>');
+    (s.risk_flags || []).forEach(function (f) {
+      var cls = DANGER_FLAGS.indexOf(f) !== -1 ? ' flag-danger' : ' flag-warn';
+      chips.push('<span class="chip' + cls + '">' + esc(FLAG_LABEL[f] || f) + '</span>');
+    });
+
+    return '<div class="station"><div class="name">' + inner + '</div><div class="chips">' + chips.join('') + '</div></div>';
+  }
+
+  function sourceCell(r) {
+    if (r.station.kind === 'official') return '<span class="src">官方计费页</span>';
+    var label = r.price_source === 'auto'
+      ? '<span class="auto">自动抓取</span>'
+      : '人工核验';
+    var tip = r.note ? esc(r.note) : '';
+    return '<span class="src" title="' + tip + '">' + label + '</span>';
+  }
+
+  function renderRow(r) {
+    var h = r.health;
+    var offTip = r.official_cny
+      ? '官方 ' + money(r.official_cny.input) + ' / ' + money(r.official_cny.output) + ' 元/百万'
+      : '没有官方基准价';
+    return '<tr class="' + (r.station.demo ? 'is-demo' : '') + '">' +
+      '<td>' + stationCell(r) + '</td>' +
+      '<td><div class="model"><div class="m">' + esc(r.model.label) + '</div><div class="v">' + esc(r.model.vendor) + '</div></div></td>' +
+      '<td class="num">' + pair(r.nominal) + '</td>' +
+      '<td class="num muted" title="充值赠送 ×' + (r.bonus || 1).toFixed(2) + '（充得多单价就更低）· 实测计费系数 ×' + (r.billing_ratio || 1).toFixed(2) + '（>1 表示 usage 报得比实际多）">×' + (r.bonus || 1).toFixed(2) + ' / ×' + (r.billing_ratio || 1).toFixed(2) + '</td>' +
+      '<td class="num big">' + pair(r.effective) + '</td>' +
+      '<td class="num"><span class="ratio ' + ratioCls(r.ratio.blend) + '" title="' + offTip + '">' + ratioText(r.ratio.blend) + '</span></td>' +
+      '<td class="num hide-md">' + (h && h.uptime_7d != null
+        ? '<span class="uptime">' + pct(h.uptime_7d) + '</span><span class="bar"><i style="width:' + Math.round(h.uptime_7d * 100) + '%"></i></span>'
+        : '<span class="muted">—</span>') + '</td>' +
+      '<td class="hide-md">' + sourceCell(r) + '</td>' +
+      '</tr>';
+  }
+
+  /* ---------- 渲染 ---------- */
+  function render() {
+    var list = filtered();
+    $('#tbody').innerHTML = list.length
+      ? list.map(renderRow).join('')
+      : '<tr><td colspan="8" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
+    $('#count').textContent = list.length + ' / ' + rows.length + ' 行';
+  }
+
+  function fillSelect(id, values, label) {
+    var sel = $(id);
+    sel.innerHTML = '<option value="">' + label + '</option>' + values.map(function (v) {
+      return '<option value="' + esc(v.value) + '">' + esc(v.text) + '</option>';
+    }).join('');
+    sel.addEventListener('change', function () {
+      var key = id === '#f-model' ? 'model' : 'kind';
+      state[key] = sel.value;
+      render();
+    });
+  }
+
+  function init() {
+    renderKpis();
+
+    var models = {};
+    rows.forEach(function (r) { models[r.model.id] = r.model.label; });
+    fillSelect('#f-model', Object.keys(models).sort(function (a, b) {
+      return models[a].localeCompare(models[b]);
+    }).map(function (id) { return { value: id, text: models[id] }; }), '全部模型');
+
+    var kinds = {};
+    rows.forEach(function (r) { kinds[r.station.kind] = r.station.kind_label; });
+    fillSelect('#f-kind', Object.keys(kinds).map(function (k) {
+      return { value: k, text: kinds[k] };
+    }), '全部类型');
+
+    $('#f-q').addEventListener('input', function (e) { state.q = e.target.value; render(); });
+    $('#f-sort').addEventListener('change', function (e) { state.sort = e.target.value; render(); });
+    $('#f-demo').addEventListener('change', function (e) { state.showDemo = e.target.checked; render(); });
+    $('#f-aff').addEventListener('change', function (e) { state.onlyAff = e.target.checked; render(); });
+
+    var demoCount = rows.filter(function (r) { return r.station.demo; }).length;
+    if (demoCount) {
+      var b = $('#demo-banner');
+      b.hidden = false;
+      var d = meta.best_demo;
+      b.innerHTML = '⚠️ 当前含 <b>' + demoCount + '</b> 条演示数据（<code>demo: true</code>），用于展示折算与排序效果，并非真实站点。' +
+        (d ? '演示数据里最低为 <b>' + ratioText(d.ratio) + '</b>（' + esc(d.station) + ' · ' + esc(d.model) + '）。' : '') +
+        '把 <code>data/providers/</code> 里的示例文件换成真实站点后自动消失。';
+    }
+    render();
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+{
+  "as_of": "2026-11-26",
+  "note": "官方价（USD / 1M tokens），人工从官方计费页读取并记录 verified_at；键名即 data/models.json 里的 canonical id。",
+  "providers": [
+    {
+      "id": "deepseek",
+      "name": "DeepSeek 官方",
+      "homepage": "https://platform.deepseek.com/",
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "currency": "USD",
+      "verified_at": "2026-11-26",
+      "models": {
+        "deepseek-v4-pro": {
+          "input": 1.32,
+          "output": 3.96,
+          "cache_read": 0.044,
+          "offpeak": { "input": 0.66, "output": 1.98, "cache_read": 0.022 },
+          "note": "峰时价；北京时间谷时（UTC 16:00-00:00 之外按官方定义）为 5 折。1M 上下文，最大输出 384K。"
+        },
+        "deepseek-flash": {
+          "input": 0.3,
+          "output": 1.2,
+          "cache_read": 0.006,
+          "offpeak": { "input": 0.15, "output": 0.6, "cache_read": 0.003 },
+          "note": "峰时价，谷时 5 折。"
+        }
+      }
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic 官方",
+      "homepage": "https://www.anthropic.com/",
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+      "currency": "USD",
+      "verified_at": "2026-11-26",
+      "models": {
+        "claude-sonnet-5-5": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1,
+          "cache_write": 2.5,
+          "note": "表格列序 input / output / cache-write-5m / cache-write-1h / cache-read，已用 1.25x、2x、0.1x 关系交叉校验。"
+        },
+        "claude-opus-5-5": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.2,
+          "cache_write": 5,
+          "note": "同上列序。"
+        }
+      }
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI 官方",
+      "homepage": "https://platform.openai.com/",
+      "pricing_url": "https://platform.openai.com/docs/pricing",
+      "currency": "USD",
+      "verified_at": "2026-11-26",
+      "models": {
+        "gpt-6.2-sol": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1,
+          "note": "标准档；同页另有 Batch/长上下文档，此处取标准档前两列。"
+        },
+        "gpt-6.2-astra": {
+          "input": 8,
+          "output": 40,
+          "cache_read": 0.4,
+          "note": "标准档。"
+        }
+      }
+    }
+  ]
+}

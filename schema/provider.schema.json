@@ -1,0 +1,126 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/token-radar/provider.schema.json",
+  "title": "Provider（中转站 / 官方）",
+  "description": "data/providers/<id>.json 的结构。单位为人民币/百万 token（absolute）或倍率（multiplier）。",
+  "type": "object",
+  "required": ["id", "name", "kind"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "description": "唯一 id，同时是文件名与 GitHub Secrets 后缀（PROBE_KEY_<ID大写>）"
+    },
+    "name": { "type": "string", "description": "展示名" },
+    "kind": {
+      "enum": ["official", "official-relay", "reverse", "mixed", "aggregator"],
+      "description": "official=官方直购；official-relay=官转；reverse=逆向/号池；mixed=混合；aggregator=聚合商"
+    },
+    "demo": { "type": "boolean", "description": "演示数据，不参与「最低价」结论" },
+    "official_source": {
+      "type": "string",
+      "description": "kind=official 时必填，指向 data/official.json 里的 provider id"
+    },
+    "homepage": { "type": "string", "format": "uri" },
+    "pricing_url": { "type": "string", "format": "uri", "description": "价格来源页，用于回溯" },
+    "observed_endpoint": {
+      "type": "string",
+      "format": "uri",
+      "description": "new-api/one-api 的公开 /api/pricing，用来自动抓价格"
+    },
+    "first_seen": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "affiliate": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["url", "disclosure"],
+          "additionalProperties": false,
+          "properties": {
+            "url": { "type": "string", "pattern": "^https?://" },
+            "code": { "type": "string" },
+            "commission": { "type": ["string", "null"], "description": "如 \"10%\"，仅用于人工核对，不参与排序" },
+            "disclosure": { "const": true, "description": "有推广链接必须显式声明；build 会硬校验" },
+            "note": { "type": "string" }
+          }
+        }
+      ]
+    },
+    "recharge": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["pay", "get"],
+          "additionalProperties": false,
+          "properties": {
+            "pay": { "type": "number", "exclusiveMinimum": 0, "description": "充多少" },
+            "get": { "type": "number", "exclusiveMinimum": 0, "description": "到账多少" },
+            "note": { "type": "string" }
+          }
+        }
+      ]
+    },
+    "billing": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ratio": { "type": ["number", "null"], "minimum": 0.1, "maximum": 10, "description": "实测计费系数：站点报的 usage ÷ 本地估算。>1 表示虚高" },
+        "measured_at": { "type": ["string", "null"] },
+        "method": { "type": "string" }
+      }
+    },
+    "probe": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "base_url": { "type": "string", "format": "uri", "description": "OpenAI 兼容的 .../v1" },
+        "model": { "type": "string", "description": "探活用哪个 canonical model id" }
+      }
+    },
+    "risk_flags": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "unverified", "reverse", "cheap-trap", "billing-inflation", "model-substitution",
+          "no-entity", "operator-self", "ran-away", "no-refund", "prepaid-only", "limited-models"
+        ]
+      }
+    },
+    "note": { "type": "string" },
+    "models": {
+      "type": "object",
+      "description": "key 必须是 data/models.json 里的 canonical model id",
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "title": "倍率",
+            "type": "object",
+            "required": ["mode", "value"],
+            "additionalProperties": false,
+            "properties": {
+              "mode": { "const": "multiplier" },
+              "base": { "enum": ["usd_official", "cny_official"], "default": "usd_official" },
+              "value": { "type": "number", "exclusiveMinimum": 0 },
+              "note": { "type": "string" }
+            }
+          },
+          {
+            "title": "绝对价",
+            "type": "object",
+            "required": ["mode", "input", "output"],
+            "additionalProperties": false,
+            "properties": {
+              "mode": { "const": "absolute" },
+              "input": { "type": "number", "minimum": 0, "description": "元/百万 input token" },
+              "output": { "type": "number", "minimum": 0, "description": "元/百万 output token" },
+              "cache_read": { "type": ["number", "null"], "description": "元/百万 缓存命中" },
+              "note": { "type": "string" }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

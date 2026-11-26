@@ -1,0 +1,79 @@
+name: update
+
+on:
+  schedule:
+    # 每 6 小时一次（UTC）。GitHub 的 cron 可能延迟几分钟到几十分钟，属正常。
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'scripts/**'
+      - 'schema/**'
+      - 'config.json'
+      - '.github/workflows/update.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # 一个 JSON 管所有站点：{"my-station":"sk-xxx"}。没配就跳过探活。
+      PROBE_KEYS: ${{ secrets.PROBE_KEYS }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 抓取公开价格（new-api /api/pricing）
+        run: node scripts/fetch-pricing.mjs --write || echo "::warning::部分站点抓取失败，不阻塞构建"
+
+      - name: 探活 + 指纹抽检
+        if: env.PROBE_KEYS != ''
+        run: node scripts/probe.mjs || echo "::warning::探活失败，不阻塞构建"
+
+      - name: 构建
+        run: node scripts/build.mjs --strict
+
+      - name: 提交数据与站点
+        run: |
+          git config user.name  "token-radar-bot"
+          git config user.email "token-radar-bot@users.noreply.github.com"
+          git add data dist
+          if git diff --cached --quiet; then
+            echo "没有变化"
+          else
+            git commit -m "chore(data): 自动更新 $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

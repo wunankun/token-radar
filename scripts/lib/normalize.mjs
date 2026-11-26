@@ -1,0 +1,183 @@
+/**
+ * 核心折算逻辑：把「标价 + 充值赠送 + 计费虚高」还原成人民币/百万 token 的真实到手价，
+ * 再和官方人民币价（美元价 × 汇率）对齐成倍率。
+ *
+ * 单位约定：所有 money 字段都是 CNY / 1M tokens；official.usd 是 USD / 1M tokens。
+ */
+
+export const KINDS = ['official', 'official-relay', 'reverse', 'mixed', 'aggregator'];
+
+export const KIND_LABEL = {
+  official: '官方直购',
+  'official-relay': '官转',
+  reverse: '逆向',
+  mixed: '混合',
+  aggregator: '聚合商',
+};
+
+export const FLAGS = [
+  'unverified',
+  'reverse',
+  'cheap-trap',
+  'billing-inflation',
+  'model-substitution',
+  'no-entity',
+  'operator-self',
+  'ran-away',
+  'no-refund',
+  'prepaid-only',
+  'limited-models',
+];
+
+export const FLAG_LABEL = {
+  unverified: '未核验',
+  reverse: '逆向渠道',
+  'cheap-trap': '低价陷阱',
+  'billing-inflation': '计费虚高',
+  'model-substitution': '疑似掉包',
+  'no-entity': '无主体',
+  'operator-self': '自营主体',
+  'ran-away': '已跑路',
+  'no-refund': '不退款',
+  'prepaid-only': '仅预付',
+  'limited-models': '型号不全',
+};
+
+const r4 = (n) => (n == null || !Number.isFinite(n) ? null : Math.round(n * 10000) / 10000);
+const num = (v) => (typeof v === 'number' && Number.isFinite(v) ? v : null);
+const div = (a, b) => (a == null || !b ? null : a / b);
+
+/** official.json -> Map<canonicalModelId, {provider, usd, ...}> */
+export function buildOfficialIndex(official) {
+  const index = new Map();
+  const errors = [];
+  for (const p of official.providers || []) {
+    for (const [modelId, price] of Object.entries(p.models || {})) {
+      if (index.has(modelId)) errors.push(`official.json: 模型 ${modelId} 在多个厂商下重复定义`);
+      index.set(modelId, {
+        provider: p.id,
+        provider_name: p.name,
+        pricing_url: p.pricing_url,
+        verified_at: p.verified_at ?? null,
+        usd: {
+          input: num(price.input),
+          output: num(price.output),
+          cache_read: num(price.cache_read),
+          cache_write: num(price.cache_write),
+        },
+        offpeak: price.offpeak || null,
+        note: price.note || null,
+      });
+    }
+  }
+  return { index, errors };
+}
+
+/** 充值赠送折算成「每 1 元买到多少额度」。充 100 得 120 => 1.2 */
+export function rechargeBonus(recharge) {
+  if (!recharge) return 1;
+  const pay = num(recharge.pay);
+  const get = num(recharge.get);
+  if (!pay || !get || pay <= 0) return 1;
+  return get / pay;
+}
+
+function scaleObj(o, k) {
+  const out = {};
+  for (const key of ['input', 'output', 'cache_read']) out[key] = o[key] == null ? null : o[key] * k;
+  return out;
+}
+
+/**
+ * 单条 (站点 × 模型) 折算。
+ * @returns {{error?: string, row?: object}}
+ */
+export function normalizeEntry({ station, modelId, model, stationModel, official, fx, blend, health, priceSource }) {
+  const officialCny = official
+    ? scaleObj({ input: official.usd.input, output: official.usd.output, cache_read: official.usd.cache_read }, fx)
+    : null;
+
+  let nominal;
+  let mode = stationModel?.mode;
+
+  if (station.kind === 'official' || priceSource === 'official') {
+    mode = 'official';
+    if (!officialCny) return { error: `${modelId}: 官方价缺失，无法生成官方法人行` };
+    nominal = { ...officialCny };
+  } else if (mode === 'absolute') {
+    nominal = {
+      input: num(stationModel.input),
+      output: num(stationModel.output),
+      cache_read: num(stationModel.cache_read),
+    };
+    if (nominal.input == null || nominal.output == null) {
+      return { error: `${station.id}/${modelId}: absolute 模式必须给出 input 与 output` };
+    }
+  } else if (mode === 'multiplier') {
+    if (!official) return { error: `${station.id}/${modelId}: 倍率模式需要官方基准价，但该模型没有官方价` };
+    const value = num(stationModel.value);
+    if (value == null || value <= 0) return { error: `${station.id}/${modelId}: multiplier.value 必须是正数` };
+    const base = stationModel.base || 'usd_official';
+    if (!['usd_official', 'cny_official'].includes(base)) {
+      return { error: `${station.id}/${modelId}: multiplier.base 只能是 usd_official / cny_official` };
+    }
+    // usd_official：倍率乘的是官方美元价，但以人民币结算（行业「1 元 = 1 美元」惯例）
+    // cny_official：倍率乘的是官方人民币价（官转常见口径）
+    const factor = base === 'usd_official' ? value : value * fx;
+    nominal = scaleObj(official.usd, factor);
+  } else {
+    return { error: `${station.id}/${modelId}: 未知的定价模式 ${mode}` };
+  }
+
+  const bonus = rechargeBonus(station.recharge);
+  const manualBilling = num(station.billing?.ratio);
+  const probedBilling = num(health?.usage_ratio);
+  const billing = manualBilling ?? probedBilling ?? 1;
+  const billingSource = manualBilling != null ? 'manual' : probedBilling != null ? 'probe' : 'default';
+  // 实际到手价 = 标价 × 计费虚高系数 ÷ 充值赠送倍数
+  const effective = scaleObj(nominal, billing / bonus);
+
+  const ratio = {
+    input: officialCny ? div(effective.input, officialCny.input) : null,
+    output: officialCny ? div(effective.output, officialCny.output) : null,
+    blend: null,
+  };
+  const w = { input: blend?.input ?? 0.7, output: blend?.output ?? 0.3 };
+  const effBlend = effective.input == null || effective.output == null ? null : effective.input * w.input + effective.output * w.output;
+  const offBlend = officialCny && officialCny.input != null ? officialCny.input * w.input + officialCny.output * w.output : null;
+  ratio.blend = div(effBlend, offBlend);
+
+  return {
+    row: {
+      station: {
+        id: station.id,
+        name: station.name,
+        kind: station.kind,
+        kind_label: KIND_LABEL[station.kind] || station.kind,
+        demo: !!station.demo,
+        homepage: station.homepage ?? null,
+        affiliate_url: station.affiliate?.url ?? null,
+        affiliate_code: station.affiliate?.code ?? null,
+        commission: station.affiliate?.commission ?? null,
+        risk_flags: station.risk_flags || [],
+        first_seen: station.first_seen ?? null,
+        note: station.note ?? null,
+      },
+      model: { id: modelId, label: model.label, vendor: model.vendor, context: model.context ?? null },
+      mode,
+      price_source: station.kind === 'official' ? 'official' : priceSource,
+      bonus: r4(bonus),
+      billing_ratio: r4(billing),
+      billing_source: billingSource,
+      nominal: { input: r4(nominal.input), output: r4(nominal.output), cache_read: r4(nominal.cache_read) },
+      effective: { input: r4(effective.input), output: r4(effective.output), cache_read: r4(effective.cache_read) },
+      official_cny: officialCny ? { input: r4(officialCny.input), output: r4(officialCny.output), cache_read: r4(officialCny.cache_read) } : null,
+      official_usd: official ? { ...official.usd } : null,
+      ratio: { input: r4(ratio.input), output: r4(ratio.output), blend: r4(ratio.blend) },
+      blend_effective: r4(effBlend),
+      health: health || null,
+      note: stationModel?.note ?? null,
+      pricing_url: official?.pricing_url ?? station.pricing_url ?? station.homepage ?? null,
+    },
+  };
+}
