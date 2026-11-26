@@ -171,7 +171,7 @@ for (const m of list) {
     }
     rows.push([stationId, ...best]);
   }
-  rows.sort((a, b) => a[1] - b[1]);
+  rows.sort((a, b) => a[2] - b[2]);
   byModel[m.id] = rows;
 }
 
