@@ -40,7 +40,7 @@
 零依赖，只要 Node ≥ 18。
 
 ```bash
-git clone <your-repo> && cd token-radar
+git clone https://github.com/wunankun/token-radar && cd token-radar
 node scripts/build.mjs          # 生成 dist/index.html + dist/prices.json
 open dist/index.html            # 直接看
 

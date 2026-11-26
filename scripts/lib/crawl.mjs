@@ -3,7 +3,7 @@
  * 只放纯逻辑 + 网络，不碰文件系统 —— 文件读写和 CLI 在 fetch-pricing.mjs。
  */
 
-export const UA = 'token-radar/1.0 (pricing crawler; +https://github.com/YOUR_GITHUB/token-radar)';
+export const UA = 'token-radar/1.0 (pricing crawler; +https://github.com/wunankun/token-radar)';
 
 export class FetchError extends Error {
   constructor(message, { code = 'fetch', status = null, url = null } = {}) {
