@@ -5,7 +5,7 @@
  * 单位约定：所有 money 字段都是 CNY / 1M tokens；official.usd 是 USD / 1M tokens。
  */
 
-export const KINDS = ['official', 'official-relay', 'reverse', 'mixed', 'aggregator'];
+export const KINDS = ['official', 'official-relay', 'reverse', 'mixed', 'aggregator', 'relay'];
 
 export const KIND_LABEL = {
   official: '官方直购',
@@ -13,6 +13,7 @@ export const KIND_LABEL = {
   reverse: '逆向',
   mixed: '混合',
   aggregator: '聚合商',
+  relay: '中转·未分类',
 };
 
 export const FLAGS = [

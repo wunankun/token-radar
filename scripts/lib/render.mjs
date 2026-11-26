@@ -79,8 +79,7 @@ ${css}
         <span id="f-model-label">全部模型</span><span class="chev" aria-hidden="true"></span>
       </button>
       <div class="picker-pop" id="f-model-pop" role="listbox" hidden>
-        <div class="pk-col" id="picker-vendors"></div>
-        <div class="pk-col" id="picker-models"></div>
+        <div class="pk-list" id="picker-list"></div>
       </div>
     </div>
     <select id="f-kind" aria-label="按类型筛选"></select>

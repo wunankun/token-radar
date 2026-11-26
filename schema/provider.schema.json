@@ -26,9 +26,10 @@
         "official-relay",
         "reverse",
         "mixed",
-        "aggregator"
+        "aggregator",
+        "relay"
       ],
-      "description": "official=官方直购；official-relay=官转；reverse=逆向/号池；mixed=混合；aggregator=聚合商"
+      "description": "official=官方直购；official-relay=官转；reverse=逆向/号池；mixed=混合；aggregator=聚合商；relay=自动抓取、未分类的中转站"
     },
     "demo": {
       "type": "boolean",
