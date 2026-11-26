@@ -14,9 +14,9 @@
   function money(v) {
     if (v === null || v === undefined || !isFinite(v)) return '—';
     if (v === 0) return '0';
-    if (v < 0.01) return v.toFixed(4);
-    if (v < 1) return v.toFixed(3);
-    return v.toFixed(2);
+    if (v < 0.01) return String(parseFloat(v.toFixed(4)));
+    if (v < 1) return String(parseFloat(v.toFixed(3)));
+    return String(parseFloat(v.toFixed(2)));
   }
   function esc(s) {
     return String(s === null || s === undefined ? '' : s)
