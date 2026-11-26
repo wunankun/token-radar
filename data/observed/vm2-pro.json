@@ -239,5 +239,39 @@
       "model_ratio": 37.5,
       "completion_ratio": 1
     }
-  ]
+  ],
+  "derivation": {
+    "class": "flat",
+    "class_label": "统一价",
+    "unit": "USD/1M tokens",
+    "basis": "new-api model_ratio × 2 × group_ratio（1 USD = 500,000 quota），分组倍率手填",
+    "group_ratio": 1,
+    "group_source": "manual",
+    "matched": 3,
+    "comparable": 3,
+    "dominant_multiple": 18.75,
+    "agreement": 0.333,
+    "comparable_models": [
+      "claude-opus-5-5"
+    ],
+    "excluded_models": [
+      {
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "multiple": 56.818
+      },
+      {
+        "id": "claude-sonnet-5-5",
+        "name": "claude-sonnet-5-5",
+        "multiple": 37.5
+      }
+    ],
+    "flat_price": {
+      "input": 75,
+      "output": 75
+    },
+    "confidence": "medium",
+    "note": "这站不按模型定价：3 个模型在 group_ratio=1（手填） 时输入价都正好是 $75/M。倍数看着从 18.75 到几十倍很大，其实是官方各型号价不同、它只收一个价。只能记「统一单价 $75/M」，不能逐模型对比。 对不上的 2 个：deepseek-v4-pro×56.82、claude-sonnet-5-5×37.5，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。",
+    "computed_at": "2026-11-26T13:13:38.483Z"
+  }
 }

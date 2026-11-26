@@ -11,6 +11,7 @@
     "build": "node scripts/build.mjs",
     "build:strict": "node scripts/build.mjs --strict",
     "fetch": "node scripts/fetch-pricing.mjs",
+    "explain": "node scripts/explain-observed.mjs --write",
     "demo": "node scripts/demo-crawl.mjs",
     "test": "node --test tests/",
     "check": "node --test tests/ && node scripts/build.mjs --strict",

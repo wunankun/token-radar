@@ -132,5 +132,39 @@
       "model_ratio": 1,
       "completion_ratio": 5
     }
-  ]
+  ],
+  "derivation": {
+    "class": "aligned",
+    "class_label": "同口径",
+    "unit": "USD/1M tokens",
+    "basis": "new-api model_ratio × 2 × group_ratio（1 USD = 500,000 quota），分组倍率手填",
+    "group_ratio": 1,
+    "group_source": "manual",
+    "matched": 6,
+    "comparable": 6,
+    "dominant_multiple": 1,
+    "agreement": 0.667,
+    "comparable_models": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol",
+      "claude-opus-5-5",
+      "claude-sonnet-5-5"
+    ],
+    "excluded_models": [
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4.1-flash",
+        "multiple": 6.667
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "multiple": 6.818
+      }
+    ],
+    "flat_price": null,
+    "confidence": "medium",
+    "note": "对得上官方价的 6 个模型里，4 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算；该站另有 13 个分组倍率，真正的折扣在那里。 对不上的 2 个：deepseek-flash×6.67、deepseek-v4-pro×6.82，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。",
+    "computed_at": "2026-11-26T13:13:38.456Z"
+  }
 }

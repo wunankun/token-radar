@@ -345,5 +345,42 @@
       "model_ratio": 1.5,
       "completion_ratio": 5
     }
-  ]
+  ],
+  "derivation": {
+    "class": "mixed",
+    "class_label": "口径不一致",
+    "unit": "USD/1M tokens",
+    "basis": "new-api model_ratio × 2 × group_ratio（1 USD = 500,000 quota），分组倍率手填",
+    "group_ratio": 1,
+    "group_source": "manual",
+    "matched": 5,
+    "comparable": 5,
+    "dominant_multiple": 6,
+    "agreement": 0.4,
+    "comparable_models": [
+      "claude-sonnet-5-5",
+      "claude-opus-5-5"
+    ],
+    "excluded_models": [
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "multiple": 9.375
+      },
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-v4.1-flash",
+        "multiple": 11.667
+      },
+      {
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "multiple": 37.5
+      }
+    ],
+    "flat_price": null,
+    "confidence": "low",
+    "note": "站内倍率吵成一团：5 个对得上的模型里没有多数派（最集中的只占 40%），从 6 倍散到 37.5 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。",
+    "computed_at": "2026-11-26T13:13:38.472Z"
+  }
 }

@@ -348,5 +348,32 @@
       "model_ratio": 0.15,
       "completion_ratio": 8.333333333333334
     }
-  ]
+  ],
+  "derivation": {
+    "class": "aligned",
+    "class_label": "同口径",
+    "unit": "USD/1M tokens",
+    "basis": "new-api model_ratio × 2 × group_ratio（1 USD = 500,000 quota），分组倍率手填",
+    "group_ratio": 1,
+    "group_source": "manual",
+    "matched": 6,
+    "comparable": 3,
+    "dominant_multiple": 1,
+    "agreement": 0.667,
+    "comparable_models": [
+      "gpt-6.2-astra",
+      "gpt-6.2-sol"
+    ],
+    "excluded_models": [
+      {
+        "id": "deepseek-flash",
+        "name": "deepseek-flash",
+        "multiple": 0.5
+      }
+    ],
+    "flat_price": null,
+    "confidence": "medium",
+    "note": "对得上官方价的 6 个模型里，2 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算。 对不上的 1 个：deepseek-flash×0.5，多半是沿用旧价表或把别的型号并到同名条目，不参与比价。 另：旧代数命名 claude-3-opus-20240229、claude-sonnet-4-5、deepseek-chat 已单列，不参与判定。",
+    "computed_at": "2026-11-26T13:13:38.482Z"
+  }
 }

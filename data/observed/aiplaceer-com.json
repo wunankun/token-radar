@@ -297,5 +297,27 @@
       "model_ratio": 37.5,
       "completion_ratio": 5
     }
-  ]
+  ],
+  "derivation": {
+    "class": "aligned",
+    "class_label": "同口径",
+    "unit": "USD/1M tokens",
+    "basis": "new-api model_ratio × 2 × group_ratio（1 USD = 500,000 quota），分组倍率手填",
+    "group_ratio": 1,
+    "group_source": "manual",
+    "matched": 4,
+    "comparable": 3,
+    "dominant_multiple": 1,
+    "agreement": 1,
+    "comparable_models": [
+      "gpt-6.2-sol",
+      "claude-opus-5-5",
+      "gpt-6.2-astra"
+    ],
+    "excluded_models": [],
+    "flat_price": null,
+    "confidence": "high",
+    "note": "对得上官方价的 4 个模型里，3 个倍率都是官方 × 1（偏差 <4%），说明这站和官方用的是同一套单位，价格可以直接比。 本行按 group_ratio=1（手填） 折算。 另：旧代数命名 claude-3-5-sonnet-20241022 已单列，不参与判定。",
+    "computed_at": "2026-11-26T13:13:38.459Z"
+  }
 }

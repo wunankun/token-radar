@@ -352,5 +352,46 @@
       "model_ratio": 37.5,
       "completion_ratio": 1
     }
-  ]
+  ],
+  "derivation": {
+    "class": "mixed",
+    "class_label": "口径不一致",
+    "unit": "USD/1M tokens",
+    "basis": "new-api model_ratio × 2 × group_ratio（1 USD = 500,000 quota），分组倍率手填",
+    "group_ratio": 1,
+    "group_source": "manual",
+    "matched": 6,
+    "comparable": 5,
+    "dominant_multiple": 0.7,
+    "agreement": 0.2,
+    "comparable_models": [
+      "deepseek-flash"
+    ],
+    "excluded_models": [
+      {
+        "id": "deepseek-v4-pro",
+        "name": "deepseek-v4-pro",
+        "multiple": 1.447
+      },
+      {
+        "id": "claude-opus-5-5",
+        "name": "claude-opus-5-5",
+        "multiple": 2.25
+      },
+      {
+        "id": "gpt-6.2-astra",
+        "name": "gpt-6.2-astra",
+        "multiple": 9.375
+      },
+      {
+        "id": "gpt-6.2-sol",
+        "name": "gpt-6.2-sol",
+        "multiple": 37.5
+      }
+    ],
+    "flat_price": null,
+    "confidence": "low",
+    "note": "站内倍率吵成一团：6 个对得上的模型里没有多数派（最集中的只占 20%），从 0.7 倍散到 37.5 倍。任何统一换算系数（×7.1、×2、×5）都没法让这些倍数同时成立，所以不是单位问题 —— 它多半按次/按表达式计费，或把不同型号并到同名条目。这份价不能当单价用。 另：旧代数命名 claude-sonnet-4-5 已单列，不参与判定。",
+    "computed_at": "2026-11-26T13:13:38.484Z"
+  }
 }
