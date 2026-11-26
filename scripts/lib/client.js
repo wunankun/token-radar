@@ -12,7 +12,15 @@
   // 模型目录：meta.models 已按热度降序；缺字段时回落到表格里出现过的模型
   var MODELS = {};
   (meta.models || []).forEach(function (m) {
-    MODELS[m.id] = { id: m.id, label: m.label, vendor: m.vendor, popularity: m.popularity || 0 };
+    MODELS[m.id] = {
+      id: m.id,
+      label: m.label,
+      vendor: m.vendor,
+      popularity: m.popularity || 0,
+      heat: m.heat == null ? m.popularity || 0 : m.heat,
+      coverage: m.coverage || 0,
+      heat_source: m.heat_source || 'manual',
+    };
   });
   var $ = function (sel) { return document.querySelector(sel); };
 
@@ -200,17 +208,28 @@
   /* ---------- 模型级联选择：左栏公司 → 右栏模型 ---------- */
   var picker = { open: false, vendor: null };
 
+  // 热度：优先用构建期算出来的 heat（有几家真实站在卖），没有就退回人工 popularity
+  function heatOf(m) { return m.heat == null ? m.popularity || 0 : m.heat; }
+  function byHeat(a, b) {
+    return heatOf(b) - heatOf(a) || (b.popularity || 0) - (a.popularity || 0) || a.label.localeCompare(b.label);
+  }
+  // 右栏副标：一半是公司名（看全部时），一半是「N 站」收录数（有数据才显示）
+  function subOf(m, withVendor) {
+    var parts = [];
+    if (withVendor) parts.push(m.vendor);
+    if (m.coverage > 0) parts.push(m.coverage + ' 站');
+    return parts.length ? '<span class="pk-sub">' + esc(parts.join(' · ')) + '</span>' : '';
+  }
+
   function groupsByVendor() {
     var by = {};
     Object.keys(MODELS).forEach(function (id) {
       var v = String(MODELS[id].vendor || '其他').trim();
       (by[v] = by[v] || []).push(MODELS[id]);
     });
-    var top = function (v) { return by[v].reduce(function (m, x) { return Math.max(m, x.popularity); }, 0); };
+    var top = function (v) { return by[v].reduce(function (m, x) { return Math.max(m, heatOf(x)); }, 0); };
     var vendors = Object.keys(by).sort(function (a, b) { return top(b) - top(a) || a.localeCompare(b); });
-    vendors.forEach(function (v) {
-      by[v].sort(function (a, b) { return b.popularity - a.popularity || a.label.localeCompare(b.label); });
-    });
+    vendors.forEach(function (v) { by[v].sort(byHeat); });
     return { vendors: vendors, by: by };
   }
 
@@ -238,17 +257,14 @@
     function paint(vendor) {
       var list = vendor
         ? G.by[vendor]
-        : G.vendors.reduce(function (a, v) { return a.concat(G.by[v]); }, []).sort(function (a, b) {
-            return b.popularity - a.popularity || a.label.localeCompare(b.label);
-          });
+        : G.vendors.reduce(function (a, v) { return a.concat(G.by[v]); }, []).sort(byHeat);
       mBox.dataset.vendor = vendor || '';
       mBox.innerHTML = (vendor
           ? '<button type="button" class="pk-item pk-all" data-pick="vendor">全部 ' + esc(vendor) + ' 模型</button>'
           : '') +
         list.map(function (m) {
           return '<button type="button" class="pk-item" data-model="' + esc(m.id) + '">' +
-            '<span>' + esc(m.label) + '</span>' +
-            (vendor ? '' : '<span class="pk-sub">' + esc(m.vendor) + '</span>') +
+            '<span>' + esc(m.label) + '</span>' + subOf(m, !vendor) +
             '</button>';
         }).join('');
       mark();
@@ -345,7 +361,7 @@
 
     rows.forEach(function (r) {
       if (!MODELS[r.model.id]) {
-        MODELS[r.model.id] = { id: r.model.id, label: r.model.label, vendor: r.model.vendor, popularity: 0 };
+        MODELS[r.model.id] = { id: r.model.id, label: r.model.label, vendor: r.model.vendor, popularity: 0, heat: 0, coverage: 0, heat_source: 'manual' };
       }
     });
     initPicker();

@@ -22,17 +22,15 @@ const warn = (m) => warnings.push(m);
 const { config, models, official, providers, observed } = loadAll();
 
 /* ---------- models ---------- */
-// popularity：0-100 的手工热度，决定下拉里谁排在前面（越热越靠前）
+// popularity：0-100 的手工先验热度。只在「还没有真实站点数据」时用来排序，
+// 有真实数据后热度的主口径是 coverage（有几家中转站在卖这个模型）。
 for (const [id, m] of Object.entries(models)) {
   if (m.popularity === undefined) {
-    warn(`data/models.json: ${id} 没有 popularity，会排在下拉最后`);
+    warn(`data/models.json: ${id} 没有 popularity，无真实数据时会排在下拉最后`);
   } else if (typeof m.popularity !== 'number' || m.popularity < 0 || m.popularity > 100) {
     err(`data/models.json: ${id}.popularity 必须是 0-100 的数字`);
   }
 }
-const modelList = Object.entries(models)
-  .map(([id, m]) => ({ id, label: m.label, vendor: m.vendor, popularity: m.popularity ?? 0 }))
-  .sort((a, b) => b.popularity - a.popularity || a.label.localeCompare(b.label));
 
 /* ---------- config ---------- */
 const fx = Number(config?.fx?.usd_cny);
@@ -147,6 +145,34 @@ const cmp = (a, b) => {
 };
 stations.sort(cmp);
 
+/* ---------- 模型热度：从数据算 ---------- */
+// coverage = 有几个「真实的中转站」在卖这个模型（官方行是基准、演示行是假数据，都不算）
+const heatStations = new Set(
+  stations.filter((s) => !s.station.demo && s.station.kind !== 'official').map((s) => s.station.id),
+);
+const coverage = {};
+for (const s of stations) {
+  if (s.station.demo || s.station.kind === 'official') continue;
+  coverage[s.model.id] = (coverage[s.model.id] || 0) + 1; // 同一站同一模型只有一行，行数即站数
+}
+const maxCoverage = Math.max(0, ...Object.values(coverage));
+const heatFromData = heatStations.size > 0 && maxCoverage > 0;
+const modelList = Object.entries(models)
+  .map(([id, m]) => {
+    const cov = coverage[id] || 0;
+    const prior = m.popularity ?? 0;
+    return {
+      id,
+      label: m.label,
+      vendor: m.vendor,
+      popularity: prior,
+      coverage: cov,
+      heat: heatFromData ? Math.round((cov / maxCoverage) * 100) : prior,
+      heat_source: heatFromData ? 'coverage' : 'manual',
+    };
+  })
+  .sort((a, b) => b.heat - a.heat || b.popularity - a.popularity || a.label.localeCompare(b.label));
+
 /* ---------- report ---------- */
 
 // 「最低价」只在真实的中转站里选：官方行是基准，演示行不参与结论
@@ -178,6 +204,7 @@ const meta = {
     ? { station: bestDemo.station.name, model: bestDemo.model.label, ratio: bestDemo.ratio.blend, discount: bestDemo.discount, effective: bestDemo.effective }
     : null,
   models: modelList,
+  heat: { source: heatFromData ? 'coverage' : 'manual', stations: heatStations.size, max_coverage: maxCoverage },
   disclosure: config.disclosure,
   site: config.site,
 };
@@ -191,6 +218,13 @@ writeFileSync(join(DIST, 'index.html'), html, 'utf8');
 /* ---------- console ---------- */
 console.log(`\nToken 雷达 · build`);
 console.log(`  行数 ${meta.counts.rows} / 站点 ${meta.counts.stations} / 模型 ${meta.counts.models}`);
+console.log(
+  `  模型热度：${
+    heatFromData
+      ? `按 ${heatStations.size} 个真实站的收录数算（最多的模型 ${maxCoverage} 家在卖）`
+      : '暂无真实站，回落人工 popularity'
+  }`,
+);
 console.log(`  官方基准 ${meta.counts.official_rows} 行，演示 ${meta.counts.demo_rows} 行，带推广链接 ${meta.counts.with_affiliate} 行`);
 if (best) console.log(`  当前最优惠：${best.station.name} · ${best.model.label} · 便宜 ${(best.discount * 100).toFixed(1)}%`);
 
