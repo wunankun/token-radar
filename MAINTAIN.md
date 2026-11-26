@@ -52,7 +52,17 @@ npm run build:strict                   # 构建，warning 也算失败（CI 的�
 
 ---
 
-## 三、常见情况怎么办
+## 三、上架/下架一家站
+
+```bash
+node scripts/approve.mjs --list        # 哪些已上架、哪些待确认
+node scripts/approve.mjs <域名>        # 上架
+node scripts/approve.mjs <域名> --off  # 下架
+```
+
+`data/sources.json` 里 `approved: true` 才上榜；`enabled: false` 是彻底不抓。手工录价的 `data/providers/*.json` 本身算已确认。
+
+## 四、常见情况怎么办
 
 ### 3.1 某站挂了 / 流程跑不通
 
@@ -118,7 +128,7 @@ npm run build:strict
 
 ---
 
-## 四、文件地图
+## 五、文件地图
 
 | 路径 | 作用 |
 | --- | --- |
@@ -136,7 +146,7 @@ npm run build:strict
 
 ---
 
-## 五、发布与验证
+## 六、发布与验证
 
 ```bash
 npm run build:strict && node scripts/audit.mjs   # 本地自检
@@ -154,7 +164,7 @@ CI（`.github/workflows/check.yml`）会在 push 时跑测试 + `build --strict`
 
 ---
 
-## 六、应急
+## 七、应急
 
 | 症状 | 处理 |
 | --- | --- |
