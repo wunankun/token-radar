@@ -257,7 +257,7 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
       calc_adjust: adj.join(' '),
       health: health || null,
       note: stationModel?.note ?? null,
-      peak: (mode === 'official' || mode === 'multiplier') && official?.peak ? official.peak : null,
+      peak: stationModel?.peak || ((mode === 'official' || mode === 'multiplier') && official?.peak ? official.peak : null),
       pricing_url: official?.pricing_url ?? station.pricing_url ?? station.homepage ?? null,
     },
   };

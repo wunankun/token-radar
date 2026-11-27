@@ -271,6 +271,28 @@
                 ],
                 "description": "元/百万 缓存命中"
               },
+              "peak": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "additionalProperties": false,
+                "description": "峰价（与 input/output/cache_read 同单位）；用于标注「峰价 ×2」",
+                "properties": {
+                  "input": {
+                    "type": "number"
+                  },
+                  "output": {
+                    "type": "number"
+                  },
+                  "cache_read": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  }
+                }
+              },
               "note": {
                 "type": "string"
               }

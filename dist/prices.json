@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-27T08:32:52.243Z",
+    "generated_at": "2026-11-27T08:34:01.373Z",
     "fx": {
       "usd_cny": 6.6711,
       "as_of": "2026-11-25",
@@ -587,7 +587,11 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$0.15 × 10 ÷ $100 × 6.6711",
-      "peak": null,
+      "peak": {
+        "input": 0.2002,
+        "output": 0.8006,
+        "cache_read": 0.004
+      },
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
     },
     {
@@ -2289,16 +2293,16 @@
         "blend": 1.4667,
         "discount": 0.6667
       },
-      "calc": "Go 折算：$2 × 10 ÷ $30 × 6.6711 = ¥4.4474/M",
-      "calc_full": "Go 折算：$2 × 10 ÷ $30 × 6.6711 = ¥4.4474/M",
-      "calc_basis": "Go 折算：$2 × 10 ÷ $30 × 6.6711 = ¥4.4474/M",
+      "calc": "Go 折算：$2 × 10 ÷ $30 × 6.6711；2026-12-01 起站上价 ×2（官方调价） = ¥4.4474/M",
+      "calc_full": "Go 折算：$2 × 10 ÷ $30 × 6.6711；2026-12-01 起站上价 ×2（官方调价） = ¥4.4474/M",
+      "calc_basis": "Go 折算：$2 × 10 ÷ $30 × 6.6711；2026-12-01 起站上价 ×2（官方调价） = ¥4.4474/M",
       "group": null,
       "observed": false,
       "tiers": null,
       "recharge": null,
       "calc_adjust": "",
       "health": null,
-      "note": "Go 折算：$2 × 10 ÷ $30 × 6.6711",
+      "note": "Go 折算：$2 × 10 ÷ $30 × 6.6711；2026-12-01 起站上价 ×2（官方调价）",
       "peak": null,
       "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing"
     },
@@ -3755,7 +3759,11 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711",
-      "peak": null,
+      "peak": {
+        "input": 5.8706,
+        "output": 17.6118,
+        "cache_read": 0.1956
+      },
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
     },
     {

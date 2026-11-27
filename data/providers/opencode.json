@@ -30,14 +30,24 @@
       "input": 0.1001,
       "output": 0.4003,
       "cache_read": 0.002,
-      "note": "Go 折算：$0.15 × 10 ÷ $100 × 6.6711"
+      "note": "Go 折算：$0.15 × 10 ÷ $100 × 6.6711",
+      "peak": {
+        "input": 0.2002,
+        "output": 0.8006,
+        "cache_read": 0.004
+      }
     },
     "deepseek-v4-pro": {
       "mode": "absolute",
       "input": 2.9353,
       "output": 8.8059,
       "cache_read": 0.0978,
-      "note": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711"
+      "note": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711",
+      "peak": {
+        "input": 5.8706,
+        "output": 17.6118,
+        "cache_read": 0.1956
+      }
     },
     "glm-5-3": {
       "mode": "absolute",
@@ -135,7 +145,7 @@
       "input": 4.4474,
       "output": 22.237,
       "cache_read": 0.2224,
-      "note": "Go 折算：$2 × 10 ÷ $30 × 6.6711"
+      "note": "Go 折算：$2 × 10 ÷ $30 × 6.6711；2026-12-01 起站上价 ×2（官方调价）"
     },
     "hy3": {
       "mode": "absolute",

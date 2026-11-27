@@ -59,7 +59,7 @@ gpt-6-luna  context > 272000  → input 0.2 / output 0.75 / cache read 0.02
 claude-haiku-5-5  context > 100000 → input 0.5 / output 2.5 / cache read 0.05
 ```
 
-- 部分模型有时间段系数（`cost.multipliers`，如工作日 UTC 01–04、06–10 为 2×）。榜单按基础价录入，不套时段系数
+- 部分模型有时间段系数（`cost.multipliers`）：DeepSeek V4.1 Flash / V4 Pro 在工作日 UTC 01–04、06–10 为 2×（与 DeepSeek 官方峰时一致），榜单按谷价录入并在价格格标「峰价 ×2」；Gemini 4 Argon 从 2026-12-01 起站上价 ×2
 
 ## 充值
 
