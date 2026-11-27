@@ -18,7 +18,7 @@ jobs:
         run: node --test tests/
 
       - name: 离线校验 /api/pricing 解析
-        run: node scripts/fetch-pricing.mjs --fixture tests/fixtures/newapi-pricing.json --only demo-gamma
+        run: node scripts/fetch-pricing.mjs --fixture tests/fixtures/newapi-pricing.json
 
       - name: 构建（warning 也算失败）
         run: node scripts/build.mjs --strict

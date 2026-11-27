@@ -6,8 +6,6 @@
 
 ![预览](docs/preview.png)
 
-> 仓库里的 `demo-alpha / demo-beta / demo-gamma` 是**演示数据**（`demo: true`），只为展示折算和排序效果。换成真实站点后自动消失。
-
 ---
 
 ## 为什么需要一个「折算过」的榜单

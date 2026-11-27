@@ -645,6 +645,14 @@
     $('#f-q').addEventListener('input', function (e) { state.q = e.target.value; state.page = 1; render(); });
     $('#f-kind').addEventListener('change', function (e) { state.kind = e.target.value; state.page = 1; render(); });
     $('#f-sort').addEventListener('change', function (e) { state.sort = e.target.value; state.page = 1; render(); });
+    // 没有演示站 / 没有推广链接时，把对应开关藏起来，省得用户点了以为出 bug
+    if (!rows.some(function (r) { return r.station.demo; })) {
+      var dl = $('#f-demo') && $('#f-demo').closest('label'); if (dl) dl.style.display = 'none';
+    }
+    if (!rows.some(function (r) { return r.station.affiliate_url; })) {
+      var al = $('#f-aff') && $('#f-aff').closest('label'); if (al) al.style.display = 'none';
+    }
+
     $('#f-demo').addEventListener('change', function (e) { state.showDemo = e.target.checked; state.page = 1; render(); });
     $('#f-aff').addEventListener('change', function (e) { state.onlyAff = e.target.checked; state.page = 1; render(); });
 

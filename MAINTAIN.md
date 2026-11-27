@@ -124,7 +124,7 @@ npm run build:strict
 
 ### 3.6 换掉演示数据
 
-`data/providers/demo-*.json` 三份 + `data/health/demo-*.json` 三份，删掉即从榜单消失。审计里那条 🔴 就是提醒这个。
+（演示站已全部移除，现在榜上只有官方直购价。）
 
 ---
 

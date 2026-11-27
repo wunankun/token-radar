@@ -9,7 +9,7 @@
  *         "probe": { "base_url": "https://api.example.com/v1", "model": "claude-sonnet-5-5" }
  *
  *   node scripts/probe.mjs             # 全部有 key 的站点
- *   node scripts/probe.mjs --only demo-alpha --dry
+ *   node scripts/probe.mjs --only ai-beehears-com --dry
  *
  * 不做的事：不存 key、不打印 key、失败只记录状态。
  */
