@@ -1,0 +1,26 @@
+{
+  "id": "open-design",
+  "name": "OpenDesign",
+  "kind": "aggregator",
+  "homepage": "https://open-design.ai/",
+  "pricing_url": "https://open-design.ai/zh/model-credits/",
+  "first_seen": "2026-11-27",
+  "price_updated_at": "2026-11-27",
+  "operating_since": "2026-08",
+  "status": "active",
+  "affiliate": null,
+  "billing": {"ratio":null,"measured_at":null,"method":"Go 订阅"},
+  "subscription": {"plan":"Go","usd_per_month":10,"allowance_note":"月总额度 $220、7 天窗口 $55、5 小时窗口 $18；各模型另有「额度扣除倍率」，见 open-design.ai/zh/model-credits/"},
+  "price_source_label": "Go 套餐折算",
+  "risk_flags": ["unverified"],
+  "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。",
+  "models": {
+    "deepseek-flash": {"mode":"absolute","input":0.0227,"output":0.091,"cache_read":0.0005,"note":"Go 折算：官方 $0.15/M × 倍率 0.5 × 10 ÷ 220 × 6.6711","peak":{"input":0.0455,"output":0.1819,"cache_read":0.0009}},
+    "deepseek-v4-pro": {"mode":"absolute","input":0.2001,"output":0.6004,"cache_read":0.0067,"note":"Go 折算：官方 $0.66/M × 倍率 1 × 10 ÷ 220 × 6.6711","peak":{"input":0.4003,"output":1.2008,"cache_read":0.0133}},
+    "glm-5-3-flash": {"mode":"absolute","input":0.0455,"output":0.1516,"cache_read":0.0091,"note":"Go 折算：官方 $0.15/M × 倍率 1 × 10 ÷ 220 × 6.6711"},
+    "kimi-k2-7-code": {"mode":"absolute","input":0.1819,"output":0.9097,"cache_read":0.0364,"note":"Go 折算：官方 $0.6/M × 倍率 1 × 10 ÷ 220 × 6.6711"},
+    "claude-haiku-5-5": {"mode":"absolute","input":0.1213,"output":0.6065,"cache_read":0.0121,"note":"Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711"},
+    "gpt-6-luna": {"mode":"absolute","input":0.1213,"output":0.6065,"cache_read":0.0121,"note":"Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711"},
+    "hy4-preview": {"mode":"absolute","input":0.2529,"output":0.7584,"cache_read":0.0127,"note":"Go 折算：官方 $0.834/M × 倍率 1 × 10 ÷ 220 × 6.6711"}
+  }
+}

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-27T09:21:38.783Z",
+    "generated_at": "2026-11-27T09:31:36.363Z",
     "fx": {
       "usd_cny": 6.6711,
       "as_of": "2026-11-25",
@@ -11,8 +11,8 @@
       "output": 0.3
     },
     "counts": {
-      "rows": 96,
-      "stations": 11,
+      "rows": 126,
+      "stations": 13,
       "models": 45,
       "official_rows": 45,
       "demo_rows": 0,
@@ -21,14 +21,14 @@
       "auto_stations": 0
     },
     "best": {
-      "station": "OpenCode",
+      "station": "OpenDesign",
       "model": "DeepSeek V4.1 Flash",
-      "ratio": 0.1,
-      "discount": 0.9,
+      "ratio": 0.0227,
+      "discount": 0.9773,
       "effective": {
-        "input": 0.1001,
-        "output": 0.4003,
-        "cache_read": 0.002
+        "input": 0.0227,
+        "output": 0.091,
+        "cache_read": 0.0005
       }
     },
     "best_demo": null,
@@ -38,7 +38,7 @@
         "label": "DeepSeek V4.1 Flash",
         "vendor": "DeepSeek",
         "popularity": 85,
-        "coverage": 2,
+        "coverage": 4,
         "usage": {
           "rank": 1,
           "tokens": 73662858443589
@@ -50,7 +50,7 @@
         "label": "Hy4 Flash",
         "vendor": "Tencent",
         "popularity": 62,
-        "coverage": 1,
+        "coverage": 2,
         "usage": {
           "rank": 2,
           "tokens": 32065593093800
@@ -62,7 +62,7 @@
         "label": "GLM-5.3 Flash",
         "vendor": "Zhipu",
         "popularity": 62,
-        "coverage": 1,
+        "coverage": 3,
         "usage": {
           "rank": 4,
           "tokens": 13138818059669
@@ -74,7 +74,7 @@
         "label": "GPT-6 Luna",
         "vendor": "OpenAI",
         "popularity": 60,
-        "coverage": 2,
+        "coverage": 4,
         "usage": {
           "rank": 5,
           "tokens": 7819112750650
@@ -98,7 +98,7 @@
         "label": "Kimi K3.1 Pro",
         "vendor": "Moonshot",
         "popularity": 82,
-        "coverage": 1,
+        "coverage": 2,
         "usage": {
           "rank": 8,
           "tokens": 4372321042039
@@ -110,7 +110,7 @@
         "label": "GLM-5.3",
         "vendor": "Zhipu",
         "popularity": 76,
-        "coverage": 1,
+        "coverage": 2,
         "usage": {
           "rank": 10,
           "tokens": 3850209098173
@@ -122,7 +122,7 @@
         "label": "Claude Haiku 5.5",
         "vendor": "Anthropic",
         "popularity": 60,
-        "coverage": 2,
+        "coverage": 4,
         "usage": {
           "rank": 14,
           "tokens": 3059237327885
@@ -134,7 +134,7 @@
         "label": "Claude Sonnet 5.5",
         "vendor": "Anthropic",
         "popularity": 92,
-        "coverage": 1,
+        "coverage": 2,
         "usage": {
           "rank": 16,
           "tokens": 2724521653907
@@ -158,7 +158,7 @@
         "label": "DeepSeek V4 Pro",
         "vendor": "DeepSeek",
         "popularity": 96,
-        "coverage": 2,
+        "coverage": 4,
         "usage": null,
         "order": 0
       },
@@ -212,7 +212,7 @@
         "label": "GPT-5.6 Sol",
         "vendor": "OpenAI",
         "popularity": 64,
-        "coverage": 2,
+        "coverage": 3,
         "usage": null,
         "order": 11
       },
@@ -284,7 +284,7 @@
         "label": "Kimi K3",
         "vendor": "Moonshot",
         "popularity": 80,
-        "coverage": 1,
+        "coverage": 2,
         "usage": null,
         "order": 21
       },
@@ -293,7 +293,7 @@
         "label": "Kimi K2.7 Code",
         "vendor": "Moonshot",
         "popularity": 64,
-        "coverage": 1,
+        "coverage": 3,
         "usage": null,
         "order": 22
       },
@@ -302,7 +302,7 @@
         "label": "Kimi K2.6",
         "vendor": "Moonshot",
         "popularity": 58,
-        "coverage": 0,
+        "coverage": 1,
         "usage": null,
         "order": 23
       },
@@ -311,7 +311,7 @@
         "label": "Kimi K2.5",
         "vendor": "Moonshot",
         "popularity": 55,
-        "coverage": 0,
+        "coverage": 1,
         "usage": null,
         "order": 24
       },
@@ -320,7 +320,7 @@
         "label": "Qwen4 Max",
         "vendor": "Alibaba",
         "popularity": 78,
-        "coverage": 1,
+        "coverage": 2,
         "usage": null,
         "order": 25
       },
@@ -329,7 +329,7 @@
         "label": "Qwen3.8 Max",
         "vendor": "Alibaba",
         "popularity": 70,
-        "coverage": 1,
+        "coverage": 2,
         "usage": null,
         "order": 26
       },
@@ -338,7 +338,7 @@
         "label": "Qwen3.8 Flash",
         "vendor": "Alibaba",
         "popularity": 66,
-        "coverage": 1,
+        "coverage": 2,
         "usage": null,
         "order": 27
       },
@@ -347,7 +347,7 @@
         "label": "Qwen3.7 Plus",
         "vendor": "Alibaba",
         "popularity": 60,
-        "coverage": 1,
+        "coverage": 2,
         "usage": null,
         "order": 28
       },
@@ -365,7 +365,7 @@
         "label": "GLM-5.2",
         "vendor": "Zhipu",
         "popularity": 58,
-        "coverage": 0,
+        "coverage": 1,
         "usage": null,
         "order": 32
       },
@@ -374,7 +374,7 @@
         "label": "GLM-5",
         "vendor": "Zhipu",
         "popularity": 64,
-        "coverage": 0,
+        "coverage": 1,
         "usage": null,
         "order": 33
       },
@@ -437,7 +437,7 @@
         "label": "GPT-5.6 Luna",
         "vendor": "OpenAI",
         "popularity": 58,
-        "coverage": 2,
+        "coverage": 3,
         "usage": null,
         "order": 41
       },
@@ -455,7 +455,7 @@
         "label": "Hy3",
         "vendor": "Tencent",
         "popularity": 40,
-        "coverage": 1,
+        "coverage": 2,
         "usage": null,
         "order": 43
       },
@@ -464,7 +464,7 @@
         "label": "Hy4 Preview",
         "vendor": "Tencent",
         "popularity": 45,
-        "coverage": 1,
+        "coverage": 3,
         "usage": null,
         "order": 44
       }
@@ -474,7 +474,7 @@
       "as_of": "2026-11-25",
       "view": "week",
       "matched": 10,
-      "stations": 3
+      "stations": 5
     },
     "catalog": null,
     "disabled_sources": [
@@ -502,6 +502,546 @@
     }
   },
   "rows": [
+    {
+      "station": {
+        "id": "open-design",
+        "name": "OpenDesign",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://open-design.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
+      },
+      "model": {
+        "id": "deepseek-flash",
+        "label": "DeepSeek V4.1 Flash",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.0227,
+        "output": 0.091,
+        "cache_read": 0.0005
+      },
+      "effective": {
+        "input": 0.0227,
+        "output": 0.091,
+        "cache_read": 0.0005
+      },
+      "official_cny": {
+        "input": 1.0007,
+        "output": 4.0027,
+        "cache_read": 0.02
+      },
+      "official_usd": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.003,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.0227,
+        "output": 0.0227,
+        "blend": 0.0227
+      },
+      "discount": 0.9773,
+      "blend_effective": 0.0432,
+      "usd": {
+        "effective": {
+          "input": 0.0034,
+          "output": 0.0136,
+          "cache_read": 0.0001
+        },
+        "official": {
+          "input": 0.15,
+          "output": 0.6,
+          "cache_read": 0.003
+        },
+        "blend": 0.0065,
+        "discount": 0.9773
+      },
+      "calc": "Go 折算：官方 $0.15/M × 倍率 0.5 × 10 ÷ 220 × 6.6711 = ¥0.0227/M",
+      "calc_full": "Go 折算：官方 $0.15/M × 倍率 0.5 × 10 ÷ 220 × 6.6711 = ¥0.0227/M",
+      "calc_basis": "Go 折算：官方 $0.15/M × 倍率 0.5 × 10 ÷ 220 × 6.6711 = ¥0.0227/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：官方 $0.15/M × 倍率 0.5 × 10 ÷ 220 × 6.6711",
+      "peak": {
+        "input": 0.0455,
+        "output": 0.1819,
+        "cache_read": 0.0009
+      },
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
+    {
+      "station": {
+        "id": "open-design",
+        "name": "OpenDesign",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://open-design.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
+      },
+      "model": {
+        "id": "glm-5-3-flash",
+        "label": "GLM-5.3 Flash",
+        "vendor": "Zhipu",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.0455,
+        "output": 0.1516,
+        "cache_read": 0.0091
+      },
+      "effective": {
+        "input": 0.0455,
+        "output": 0.1516,
+        "cache_read": 0.0091
+      },
+      "official_cny": {
+        "input": 1.0007,
+        "output": 3.3356,
+        "cache_read": 0.2001
+      },
+      "official_usd": {
+        "input": 0.15,
+        "output": 0.5,
+        "cache_read": 0.03,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.0455,
+        "output": 0.0454,
+        "blend": 0.0455
+      },
+      "discount": 0.9545,
+      "blend_effective": 0.0773,
+      "usd": {
+        "effective": {
+          "input": 0.0068,
+          "output": 0.0227,
+          "cache_read": 0.0014
+        },
+        "official": {
+          "input": 0.15,
+          "output": 0.5,
+          "cache_read": 0.03
+        },
+        "blend": 0.0116,
+        "discount": 0.9545
+      },
+      "calc": "Go 折算：官方 $0.15/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.0455/M",
+      "calc_full": "Go 折算：官方 $0.15/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.0455/M",
+      "calc_basis": "Go 折算：官方 $0.15/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.0455/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：官方 $0.15/M × 倍率 1 × 10 ÷ 220 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://bigmodel.cn/pricing"
+    },
+    {
+      "station": {
+        "id": "open-design",
+        "name": "OpenDesign",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://open-design.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
+      },
+      "model": {
+        "id": "deepseek-v4-pro",
+        "label": "DeepSeek V4 Pro",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.2001,
+        "output": 0.6004,
+        "cache_read": 0.0067
+      },
+      "effective": {
+        "input": 0.2001,
+        "output": 0.6004,
+        "cache_read": 0.0067
+      },
+      "official_cny": {
+        "input": 4.4029,
+        "output": 13.2088,
+        "cache_read": 0.1468
+      },
+      "official_usd": {
+        "input": 0.66,
+        "output": 1.98,
+        "cache_read": 0.022,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.0454,
+        "output": 0.0455,
+        "blend": 0.0455
+      },
+      "discount": 0.9545,
+      "blend_effective": 0.3202,
+      "usd": {
+        "effective": {
+          "input": 0.03,
+          "output": 0.09,
+          "cache_read": 0.001
+        },
+        "official": {
+          "input": 0.66,
+          "output": 1.98,
+          "cache_read": 0.022
+        },
+        "blend": 0.048,
+        "discount": 0.9545
+      },
+      "calc": "Go 折算：官方 $0.66/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2001/M",
+      "calc_full": "Go 折算：官方 $0.66/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2001/M",
+      "calc_basis": "Go 折算：官方 $0.66/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2001/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：官方 $0.66/M × 倍率 1 × 10 ÷ 220 × 6.6711",
+      "peak": {
+        "input": 0.4003,
+        "output": 1.2008,
+        "cache_read": 0.0133
+      },
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
+    {
+      "station": {
+        "id": "open-design",
+        "name": "OpenDesign",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://open-design.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
+      },
+      "model": {
+        "id": "hy4-preview",
+        "label": "Hy4 Preview",
+        "vendor": "Tencent",
+        "context": 1048576
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.2529,
+        "output": 0.7584,
+        "cache_read": 0.0127
+      },
+      "effective": {
+        "input": 0.2529,
+        "output": 0.7584,
+        "cache_read": 0.0127
+      },
+      "official_cny": {
+        "input": 5.5637,
+        "output": 16.6844,
+        "cache_read": 0.2802
+      },
+      "official_usd": {
+        "input": 0.834,
+        "output": 2.501,
+        "cache_read": 0.042,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.0455,
+        "output": 0.0455,
+        "blend": 0.0455
+      },
+      "discount": 0.9545,
+      "blend_effective": 0.4045,
+      "usd": {
+        "effective": {
+          "input": 0.0379,
+          "output": 0.1137,
+          "cache_read": 0.0019
+        },
+        "official": {
+          "input": 0.834,
+          "output": 2.501,
+          "cache_read": 0.042
+        },
+        "blend": 0.0606,
+        "discount": 0.9545
+      },
+      "calc": "Go 折算：官方 $0.834/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2529/M",
+      "calc_full": "Go 折算：官方 $0.834/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2529/M",
+      "calc_basis": "Go 折算：官方 $0.834/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2529/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：官方 $0.834/M × 倍率 1 × 10 ÷ 220 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
+    },
+    {
+      "station": {
+        "id": "open-design",
+        "name": "OpenDesign",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://open-design.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
+      },
+      "model": {
+        "id": "kimi-k2-7-code",
+        "label": "Kimi K2.7 Code",
+        "vendor": "Moonshot",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.1819,
+        "output": 0.9097,
+        "cache_read": 0.0364
+      },
+      "effective": {
+        "input": 0.1819,
+        "output": 0.9097,
+        "cache_read": 0.0364
+      },
+      "official_cny": {
+        "input": 4.0027,
+        "output": 20.0133,
+        "cache_read": 0.8005
+      },
+      "official_usd": {
+        "input": 0.6,
+        "output": 3,
+        "cache_read": 0.12,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.0454,
+        "output": 0.0455,
+        "blend": 0.0455
+      },
+      "discount": 0.9545,
+      "blend_effective": 0.4002,
+      "usd": {
+        "effective": {
+          "input": 0.0273,
+          "output": 0.1364,
+          "cache_read": 0.0055
+        },
+        "official": {
+          "input": 0.6,
+          "output": 3,
+          "cache_read": 0.12
+        },
+        "blend": 0.06,
+        "discount": 0.9545
+      },
+      "calc": "Go 折算：官方 $0.6/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.1819/M",
+      "calc_full": "Go 折算：官方 $0.6/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.1819/M",
+      "calc_basis": "Go 折算：官方 $0.6/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.1819/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：官方 $0.6/M × 倍率 1 × 10 ÷ 220 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "deepseek-flash",
+        "label": "DeepSeek V4.1 Flash",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.1001,
+        "output": 0.4003,
+        "cache_read": 0.002
+      },
+      "effective": {
+        "input": 0.1001,
+        "output": 0.4003,
+        "cache_read": 0.002
+      },
+      "official_cny": {
+        "input": 1.0007,
+        "output": 4.0027,
+        "cache_read": 0.02
+      },
+      "official_usd": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.003,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.1,
+        "output": 0.1,
+        "blend": 0.1
+      },
+      "discount": 0.9,
+      "blend_effective": 0.1902,
+      "usd": {
+        "effective": {
+          "input": 0.015,
+          "output": 0.06,
+          "cache_read": 0.0003
+        },
+        "official": {
+          "input": 0.15,
+          "output": 0.6,
+          "cache_read": 0.003
+        },
+        "blend": 0.0285,
+        "discount": 0.9
+      },
+      "calc": "GOAT 折算：$0.15/M × 10 ÷ $100 × 6.6711 = ¥0.1001/M",
+      "calc_full": "GOAT 折算：$0.15/M × 10 ÷ $100 × 6.6711 = ¥0.1001/M",
+      "calc_basis": "GOAT 折算：$0.15/M × 10 ÷ $100 × 6.6711 = ¥0.1001/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$0.15/M × 10 ÷ $100 × 6.6711",
+      "peak": {
+        "input": 0.2001,
+        "output": 0.8005,
+        "cache_read": 0.004
+      },
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
     {
       "station": {
         "id": "opencode",
@@ -593,6 +1133,94 @@
         "cache_read": 0.004
       },
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "glm-5-3-flash",
+        "label": "GLM-5.3 Flash",
+        "vendor": "Zhipu",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.1001,
+        "output": 0.3336,
+        "cache_read": 0.02
+      },
+      "effective": {
+        "input": 0.1001,
+        "output": 0.3336,
+        "cache_read": 0.02
+      },
+      "official_cny": {
+        "input": 1.0007,
+        "output": 3.3356,
+        "cache_read": 0.2001
+      },
+      "official_usd": {
+        "input": 0.15,
+        "output": 0.5,
+        "cache_read": 0.03,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.1,
+        "output": 0.1,
+        "blend": 0.1
+      },
+      "discount": 0.9,
+      "blend_effective": 0.1702,
+      "usd": {
+        "effective": {
+          "input": 0.015,
+          "output": 0.05,
+          "cache_read": 0.003
+        },
+        "official": {
+          "input": 0.15,
+          "output": 0.5,
+          "cache_read": 0.03
+        },
+        "blend": 0.0255,
+        "discount": 0.9
+      },
+      "calc": "GOAT 折算：$0.15/M × 10 ÷ $100 × 6.6711 = ¥0.1001/M",
+      "calc_full": "GOAT 折算：$0.15/M × 10 ÷ $100 × 6.6711 = ¥0.1001/M",
+      "calc_basis": "GOAT 折算：$0.15/M × 10 ÷ $100 × 6.6711 = ¥0.1001/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$0.15/M × 10 ÷ $100 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://bigmodel.cn/pricing"
     },
     {
       "station": {
@@ -2128,6 +2756,94 @@
     },
     {
       "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "hy3",
+        "label": "Hy3",
+        "vendor": "Tencent",
+        "context": 256000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.1334,
+        "output": 0.5527,
+        "cache_read": 0.0334
+      },
+      "effective": {
+        "input": 0.1334,
+        "output": 0.5527,
+        "cache_read": 0.0334
+      },
+      "official_cny": {
+        "input": 0.8806,
+        "output": 3.5223,
+        "cache_read": 0.2201
+      },
+      "official_usd": {
+        "input": 0.132,
+        "output": 0.528,
+        "cache_read": 0.033,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.1515,
+        "output": 0.1569,
+        "blend": 0.1549
+      },
+      "discount": 0.8451,
+      "blend_effective": 0.2592,
+      "usd": {
+        "effective": {
+          "input": 0.02,
+          "output": 0.0828,
+          "cache_read": 0.005
+        },
+        "official": {
+          "input": 0.132,
+          "output": 0.528,
+          "cache_read": 0.033
+        },
+        "blend": 0.0389,
+        "discount": 0.8451
+      },
+      "calc": "GOAT 折算：$0.14/M × 10 ÷ $70 × 6.6711 = ¥0.1334/M",
+      "calc_full": "GOAT 折算：$0.14/M × 10 ÷ $70 × 6.6711 = ¥0.1334/M",
+      "calc_basis": "GOAT 折算：$0.14/M × 10 ÷ $70 × 6.6711 = ¥0.1334/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$0.14/M × 10 ÷ $70 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
+    },
+    {
+      "station": {
         "id": "opencode",
         "name": "OpenCode",
         "kind": "aggregator",
@@ -2396,6 +3112,182 @@
     },
     {
       "station": {
+        "id": "open-design",
+        "name": "OpenDesign",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://open-design.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
+      },
+      "model": {
+        "id": "gpt-6-luna",
+        "label": "GPT-6 Luna",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.1213,
+        "output": 0.6065,
+        "cache_read": 0.0121
+      },
+      "effective": {
+        "input": 0.1213,
+        "output": 0.6065,
+        "cache_read": 0.0121
+      },
+      "official_cny": {
+        "input": 0.6671,
+        "output": 3.3356,
+        "cache_read": 0.0667
+      },
+      "official_usd": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.1818,
+        "output": 0.1818,
+        "blend": 0.1818
+      },
+      "discount": 0.8182,
+      "blend_effective": 0.2669,
+      "usd": {
+        "effective": {
+          "input": 0.0182,
+          "output": 0.0909,
+          "cache_read": 0.0018
+        },
+        "official": {
+          "input": 0.1,
+          "output": 0.5,
+          "cache_read": 0.01
+        },
+        "blend": 0.04,
+        "discount": 0.8182
+      },
+      "calc": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
+      "calc_full": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
+      "calc_basis": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "open-design",
+        "name": "OpenDesign",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://open-design.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
+      },
+      "model": {
+        "id": "claude-haiku-5-5",
+        "label": "Claude Haiku 5.5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.1213,
+        "output": 0.6065,
+        "cache_read": 0.0121
+      },
+      "effective": {
+        "input": 0.1213,
+        "output": 0.6065,
+        "cache_read": 0.0121
+      },
+      "official_cny": {
+        "input": 0.6671,
+        "output": 3.3356,
+        "cache_read": 0.0667
+      },
+      "official_usd": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.1818,
+        "output": 0.1818,
+        "blend": 0.1818
+      },
+      "discount": 0.8182,
+      "blend_effective": 0.2669,
+      "usd": {
+        "effective": {
+          "input": 0.0182,
+          "output": 0.0909,
+          "cache_read": 0.0018
+        },
+        "official": {
+          "input": 0.1,
+          "output": 0.5,
+          "cache_read": 0.01
+        },
+        "blend": 0.04,
+        "discount": 0.8182
+      },
+      "calc": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
+      "calc_full": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
+      "calc_basis": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
         "id": "opencode",
         "name": "OpenCode",
         "kind": "aggregator",
@@ -2481,6 +3373,94 @@
       "note": "Go 折算：$0.4 × 10 ÷ $60 × 6.6711",
       "peak": null,
       "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "kimi-k2-7-code",
+        "label": "Kimi K2.7 Code",
+        "vendor": "Moonshot",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 1.0563,
+        "output": 4.4474,
+        "cache_read": 0.2113
+      },
+      "effective": {
+        "input": 1.0563,
+        "output": 4.4474,
+        "cache_read": 0.2113
+      },
+      "official_cny": {
+        "input": 4.0027,
+        "output": 20.0133,
+        "cache_read": 0.8005
+      },
+      "official_usd": {
+        "input": 0.6,
+        "output": 3,
+        "cache_read": 0.12,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.2639,
+        "output": 0.2222,
+        "blend": 0.2355
+      },
+      "discount": 0.7645,
+      "blend_effective": 2.0736,
+      "usd": {
+        "effective": {
+          "input": 0.1583,
+          "output": 0.6667,
+          "cache_read": 0.0317
+        },
+        "official": {
+          "input": 0.6,
+          "output": 3,
+          "cache_read": 0.12
+        },
+        "blend": 0.3108,
+        "discount": 0.7645
+      },
+      "calc": "GOAT 折算：$0.95/M × 10 ÷ $60 × 6.6711 = ¥1.0563/M",
+      "calc_full": "GOAT 折算：$0.95/M × 10 ÷ $60 × 6.6711 = ¥1.0563/M",
+      "calc_basis": "GOAT 折算：$0.95/M × 10 ÷ $60 × 6.6711 = ¥1.0563/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$0.95/M × 10 ÷ $60 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
     },
     {
       "station": {
@@ -2745,6 +3725,94 @@
       "note": "Go 折算：$2 × 10 ÷ $60 × 6.6711",
       "peak": null,
       "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "glm-5-2",
+        "label": "GLM-5.2",
+        "vendor": "Zhipu",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 1.3342,
+        "output": 4.1933,
+        "cache_read": 0.2478
+      },
+      "effective": {
+        "input": 1.3342,
+        "output": 4.1933,
+        "cache_read": 0.2478
+      },
+      "official_cny": {
+        "input": 4.1361,
+        "output": 16.1441,
+        "cache_read": 0.934
+      },
+      "official_usd": {
+        "input": 0.62,
+        "output": 2.42,
+        "cache_read": 0.14,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.3226,
+        "output": 0.2597,
+        "blend": 0.2833
+      },
+      "discount": 0.7167,
+      "blend_effective": 2.1919,
+      "usd": {
+        "effective": {
+          "input": 0.2,
+          "output": 0.6286,
+          "cache_read": 0.0371
+        },
+        "official": {
+          "input": 0.62,
+          "output": 2.42,
+          "cache_read": 0.14
+        },
+        "blend": 0.3286,
+        "discount": 0.7167
+      },
+      "calc": "GOAT 折算：$1.4/M × 10 ÷ $70 × 6.6711 = ¥1.3342/M",
+      "calc_full": "GOAT 折算：$1.4/M × 10 ÷ $70 × 6.6711 = ¥1.3342/M",
+      "calc_basis": "GOAT 折算：$1.4/M × 10 ÷ $70 × 6.6711 = ¥1.3342/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$1.4/M × 10 ÷ $70 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://bigmodel.cn/pricing"
     },
     {
       "station": {
@@ -3193,6 +4261,94 @@
       "note": "站价 $0.75/M × 汇率 6.6711",
       "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "qwen3-7-plus",
+        "label": "Qwen3.7 Plus",
+        "vendor": "Alibaba",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.8086,
+        "output": 3.2345,
+        "cache_read": 0.1617
+      },
+      "effective": {
+        "input": 0.8086,
+        "output": 3.2345,
+        "cache_read": 0.1617
+      },
+      "official_cny": {
+        "input": 2.1348,
+        "output": 8.539,
+        "cache_read": 0.427
+      },
+      "official_usd": {
+        "input": 0.32,
+        "output": 1.28,
+        "cache_read": 0.064,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.3788,
+        "output": 0.3788,
+        "blend": 0.3788
+      },
+      "discount": 0.6212,
+      "blend_effective": 1.5364,
+      "usd": {
+        "effective": {
+          "input": 0.1212,
+          "output": 0.4849,
+          "cache_read": 0.0242
+        },
+        "official": {
+          "input": 0.32,
+          "output": 1.28,
+          "cache_read": 0.064
+        },
+        "blend": 0.2303,
+        "discount": 0.6212
+      },
+      "calc": "GOAT 折算：$0.4/M × 10 ÷ $33 × 6.6711 = ¥0.8086/M",
+      "calc_full": "GOAT 折算：$0.4/M × 10 ÷ $33 × 6.6711 = ¥0.8086/M",
+      "calc_basis": "GOAT 折算：$0.4/M × 10 ÷ $33 × 6.6711 = ¥0.8086/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$0.4/M × 10 ÷ $33 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
     },
     {
       "station": {
@@ -4116,6 +5272,714 @@
     },
     {
       "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "gpt-6-luna",
+        "label": "GPT-6 Luna",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.3336,
+        "output": 1.6678,
+        "cache_read": 0.0334
+      },
+      "effective": {
+        "input": 0.3336,
+        "output": 1.6678,
+        "cache_read": 0.0334
+      },
+      "official_cny": {
+        "input": 0.6671,
+        "output": 3.3356,
+        "cache_read": 0.0667
+      },
+      "official_usd": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.5001,
+        "output": 0.5,
+        "blend": 0.5
+      },
+      "discount": 0.5,
+      "blend_effective": 0.7339,
+      "usd": {
+        "effective": {
+          "input": 0.05,
+          "output": 0.25,
+          "cache_read": 0.005
+        },
+        "official": {
+          "input": 0.1,
+          "output": 0.5,
+          "cache_read": 0.01
+        },
+        "blend": 0.11,
+        "discount": 0.5
+      },
+      "calc": "GOAT 折算：$0.1/M × 10 ÷ $20 × 6.6711 = ¥0.3336/M",
+      "calc_full": "GOAT 折算：$0.1/M × 10 ÷ $20 × 6.6711 = ¥0.3336/M",
+      "calc_basis": "GOAT 折算：$0.1/M × 10 ÷ $20 × 6.6711 = ¥0.3336/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$0.1/M × 10 ÷ $20 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "claude-haiku-5-5",
+        "label": "Claude Haiku 5.5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.3336,
+        "output": 1.6678,
+        "cache_read": 0.0334
+      },
+      "effective": {
+        "input": 0.3336,
+        "output": 1.6678,
+        "cache_read": 0.0334
+      },
+      "official_cny": {
+        "input": 0.6671,
+        "output": 3.3356,
+        "cache_read": 0.0667
+      },
+      "official_usd": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.5001,
+        "output": 0.5,
+        "blend": 0.5
+      },
+      "discount": 0.5,
+      "blend_effective": 0.7339,
+      "usd": {
+        "effective": {
+          "input": 0.05,
+          "output": 0.25,
+          "cache_read": 0.005
+        },
+        "official": {
+          "input": 0.1,
+          "output": 0.5,
+          "cache_read": 0.01
+        },
+        "blend": 0.11,
+        "discount": 0.5
+      },
+      "calc": "GOAT 折算：$0.1/M × 10 ÷ $20 × 6.6711 = ¥0.3336/M",
+      "calc_full": "GOAT 折算：$0.1/M × 10 ÷ $20 × 6.6711 = ¥0.3336/M",
+      "calc_basis": "GOAT 折算：$0.1/M × 10 ÷ $20 × 6.6711 = ¥0.3336/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$0.1/M × 10 ÷ $20 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "gpt-5.6-luna",
+        "label": "GPT-5.6 Luna",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.6671,
+        "output": 4.0027,
+        "cache_read": 0.0667
+      },
+      "effective": {
+        "input": 0.6671,
+        "output": 4.0027,
+        "cache_read": 0.0667
+      },
+      "official_cny": {
+        "input": 1.3342,
+        "output": 8.0053,
+        "cache_read": 0.1334
+      },
+      "official_usd": {
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.5,
+        "output": 0.5,
+        "blend": 0.5
+      },
+      "discount": 0.5,
+      "blend_effective": 1.6678,
+      "usd": {
+        "effective": {
+          "input": 0.1,
+          "output": 0.6,
+          "cache_read": 0.01
+        },
+        "official": {
+          "input": 0.2,
+          "output": 1.2,
+          "cache_read": 0.02
+        },
+        "blend": 0.25,
+        "discount": 0.5
+      },
+      "calc": "GOAT 折算：$0.2/M × 10 ÷ $20 × 6.6711 = ¥0.6671/M",
+      "calc_full": "GOAT 折算：$0.2/M × 10 ÷ $20 × 6.6711 = ¥0.6671/M",
+      "calc_basis": "GOAT 折算：$0.2/M × 10 ÷ $20 × 6.6711 = ¥0.6671/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$0.2/M × 10 ÷ $20 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "deepseek-v4-pro",
+        "label": "DeepSeek V4 Pro",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 2.2015,
+        "output": 6.6044,
+        "cache_read": 0.0734
+      },
+      "effective": {
+        "input": 2.2015,
+        "output": 6.6044,
+        "cache_read": 0.0734
+      },
+      "official_cny": {
+        "input": 4.4029,
+        "output": 13.2088,
+        "cache_read": 0.1468
+      },
+      "official_usd": {
+        "input": 0.66,
+        "output": 1.98,
+        "cache_read": 0.022,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.5,
+        "output": 0.5,
+        "blend": 0.5
+      },
+      "discount": 0.5,
+      "blend_effective": 3.5224,
+      "usd": {
+        "effective": {
+          "input": 0.33,
+          "output": 0.99,
+          "cache_read": 0.011
+        },
+        "official": {
+          "input": 0.66,
+          "output": 1.98,
+          "cache_read": 0.022
+        },
+        "blend": 0.528,
+        "discount": 0.5
+      },
+      "calc": "GOAT 折算：$0.66/M × 10 ÷ $20 × 6.6711 = ¥2.2015/M",
+      "calc_full": "GOAT 折算：$0.66/M × 10 ÷ $20 × 6.6711 = ¥2.2015/M",
+      "calc_basis": "GOAT 折算：$0.66/M × 10 ÷ $20 × 6.6711 = ¥2.2015/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$0.66/M × 10 ÷ $20 × 6.6711",
+      "peak": {
+        "input": 4.4029,
+        "output": 13.2088,
+        "cache_read": 0.1468
+      },
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "hy4-preview",
+        "label": "Hy4 Preview",
+        "vendor": "Tencent",
+        "context": 1048576
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 2.7818,
+        "output": 8.3422,
+        "cache_read": 0.1401
+      },
+      "effective": {
+        "input": 2.7818,
+        "output": 8.3422,
+        "cache_read": 0.1401
+      },
+      "official_cny": {
+        "input": 5.5637,
+        "output": 16.6844,
+        "cache_read": 0.2802
+      },
+      "official_usd": {
+        "input": 0.834,
+        "output": 2.501,
+        "cache_read": 0.042,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.5,
+        "output": 0.5,
+        "blend": 0.5
+      },
+      "discount": 0.5,
+      "blend_effective": 4.4499,
+      "usd": {
+        "effective": {
+          "input": 0.417,
+          "output": 1.2505,
+          "cache_read": 0.021
+        },
+        "official": {
+          "input": 0.834,
+          "output": 2.501,
+          "cache_read": 0.042
+        },
+        "blend": 0.667,
+        "discount": 0.5
+      },
+      "calc": "GOAT 折算：$0.834/M × 10 ÷ $20 × 6.6711 = ¥2.7818/M",
+      "calc_full": "GOAT 折算：$0.834/M × 10 ÷ $20 × 6.6711 = ¥2.7818/M",
+      "calc_basis": "GOAT 折算：$0.834/M × 10 ÷ $20 × 6.6711 = ¥2.7818/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$0.834/M × 10 ÷ $20 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "glm-5",
+        "label": "GLM-5",
+        "vendor": "Zhipu",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 3.3356,
+        "output": 10.6738,
+        "cache_read": 0.6671
+      },
+      "effective": {
+        "input": 3.3356,
+        "output": 10.6738,
+        "cache_read": 0.6671
+      },
+      "official_cny": {
+        "input": 6.6711,
+        "output": 21.3475,
+        "cache_read": 1.3342
+      },
+      "official_usd": {
+        "input": 1,
+        "output": 3.2,
+        "cache_read": 0.2,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.5,
+        "output": 0.5,
+        "blend": 0.5
+      },
+      "discount": 0.5,
+      "blend_effective": 5.5371,
+      "usd": {
+        "effective": {
+          "input": 0.5,
+          "output": 1.6,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 1,
+          "output": 3.2,
+          "cache_read": 0.2
+        },
+        "blend": 0.83,
+        "discount": 0.5
+      },
+      "calc": "GOAT 折算：$1/M × 10 ÷ $20 × 6.6711 = ¥3.3356/M",
+      "calc_full": "GOAT 折算：$1/M × 10 ÷ $20 × 6.6711 = ¥3.3356/M",
+      "calc_basis": "GOAT 折算：$1/M × 10 ÷ $20 × 6.6711 = ¥3.3356/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$1/M × 10 ÷ $20 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://bigmodel.cn/pricing"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "qwen3-8-max",
+        "label": "Qwen3.8 Max",
+        "vendor": "Alibaba",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 6.6711,
+        "output": 20.0133,
+        "cache_read": 0.8339
+      },
+      "effective": {
+        "input": 6.6711,
+        "output": 20.0133,
+        "cache_read": 0.8339
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 40.0266,
+        "cache_read": 1.6678
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 6,
+        "cache_read": 0.25,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.5,
+        "output": 0.5,
+        "blend": 0.5
+      },
+      "discount": 0.5,
+      "blend_effective": 10.6738,
+      "usd": {
+        "effective": {
+          "input": 1,
+          "output": 3,
+          "cache_read": 0.125
+        },
+        "official": {
+          "input": 2,
+          "output": 6,
+          "cache_read": 0.25
+        },
+        "blend": 1.6,
+        "discount": 0.5
+      },
+      "calc": "GOAT 折算：$2/M × 10 ÷ $20 × 6.6711 = ¥6.6711/M",
+      "calc_full": "GOAT 折算：$2/M × 10 ÷ $20 × 6.6711 = ¥6.6711/M",
+      "calc_basis": "GOAT 折算：$2/M × 10 ÷ $20 × 6.6711 = ¥6.6711/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$2/M × 10 ÷ $20 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "qwen3-8-flash",
+        "label": "Qwen3.8 Flash",
+        "vendor": "Alibaba",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.5337,
+        "output": 1.5677,
+        "cache_read": 0.0534
+      },
+      "effective": {
+        "input": 0.5337,
+        "output": 1.5677,
+        "cache_read": 0.0534
+      },
+      "official_cny": {
+        "input": 1.0007,
+        "output": 3.1354,
+        "cache_read": 0.1067
+      },
+      "official_usd": {
+        "input": 0.15,
+        "output": 0.47,
+        "cache_read": 0.016,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.5333,
+        "output": 0.5,
+        "blend": 0.5142
+      },
+      "discount": 0.4858,
+      "blend_effective": 0.8439,
+      "usd": {
+        "effective": {
+          "input": 0.08,
+          "output": 0.235,
+          "cache_read": 0.008
+        },
+        "official": {
+          "input": 0.15,
+          "output": 0.47,
+          "cache_read": 0.016
+        },
+        "blend": 0.1265,
+        "discount": 0.4858
+      },
+      "calc": "GOAT 折算：$0.16/M × 10 ÷ $20 × 6.6711 = ¥0.5337/M",
+      "calc_full": "GOAT 折算：$0.16/M × 10 ÷ $20 × 6.6711 = ¥0.5337/M",
+      "calc_basis": "GOAT 折算：$0.16/M × 10 ÷ $20 × 6.6711 = ¥0.5337/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$0.16/M × 10 ÷ $20 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
         "id": "fenno-ai",
         "name": "Fenno",
         "kind": "aggregator",
@@ -4289,6 +6153,182 @@
       "note": "Mini 折算：$3.6/M × 19.99 ÷ 200 × 6.6711",
       "peak": null,
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "kimi-k2-5",
+        "label": "Kimi K2.5",
+        "vendor": "Moonshot",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 2.0013,
+        "output": 10.0067,
+        "cache_read": 0.3336
+      },
+      "effective": {
+        "input": 2.0013,
+        "output": 10.0067,
+        "cache_read": 0.3336
+      },
+      "official_cny": {
+        "input": 3.3356,
+        "output": 16.6778,
+        "cache_read": null
+      },
+      "official_usd": {
+        "input": 0.5,
+        "output": 2.5,
+        "cache_read": null,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.6,
+        "output": 0.6,
+        "blend": 0.6
+      },
+      "discount": 0.4,
+      "blend_effective": 4.4029,
+      "usd": {
+        "effective": {
+          "input": 0.3,
+          "output": 1.5,
+          "cache_read": 0.05
+        },
+        "official": {
+          "input": 0.5,
+          "output": 2.5,
+          "cache_read": null
+        },
+        "blend": 0.66,
+        "discount": 0.4
+      },
+      "calc": "GOAT 折算：$0.6/M × 10 ÷ $20 × 6.6711 = ¥2.0013/M",
+      "calc_full": "GOAT 折算：$0.6/M × 10 ÷ $20 × 6.6711 = ¥2.0013/M",
+      "calc_basis": "GOAT 折算：$0.6/M × 10 ÷ $20 × 6.6711 = ¥2.0013/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$0.6/M × 10 ÷ $20 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "kimi-k2-6",
+        "label": "Kimi K2.6",
+        "vendor": "Moonshot",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 3.1688,
+        "output": 13.3422,
+        "cache_read": 0.5337
+      },
+      "effective": {
+        "input": 3.1688,
+        "output": 13.3422,
+        "cache_read": 0.5337
+      },
+      "official_cny": {
+        "input": 4.3362,
+        "output": 22.7485,
+        "cache_read": 1.0007
+      },
+      "official_usd": {
+        "input": 0.65,
+        "output": 3.41,
+        "cache_read": 0.15,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.7308,
+        "output": 0.5865,
+        "blend": 0.6309
+      },
+      "discount": 0.3691,
+      "blend_effective": 6.2208,
+      "usd": {
+        "effective": {
+          "input": 0.475,
+          "output": 2,
+          "cache_read": 0.08
+        },
+        "official": {
+          "input": 0.65,
+          "output": 3.41,
+          "cache_read": 0.15
+        },
+        "blend": 0.9325,
+        "discount": 0.3691
+      },
+      "calc": "GOAT 折算：$0.95/M × 10 ÷ $20 × 6.6711 = ¥3.1688/M",
+      "calc_full": "GOAT 折算：$0.95/M × 10 ÷ $20 × 6.6711 = ¥3.1688/M",
+      "calc_basis": "GOAT 折算：$0.95/M × 10 ÷ $20 × 6.6711 = ¥3.1688/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$0.95/M × 10 ÷ $20 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
     },
     {
       "station": {
@@ -4736,6 +6776,270 @@
     },
     {
       "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "kimi-k3",
+        "label": "Kimi K3",
+        "vendor": "Moonshot",
+        "context": 1048576
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 10.0067,
+        "output": 50.0333,
+        "cache_read": 1.0007
+      },
+      "effective": {
+        "input": 10.0067,
+        "output": 50.0333,
+        "cache_read": 1.0007
+      },
+      "official_cny": {
+        "input": 1.2809,
+        "output": 106.7376,
+        "cache_read": 1.2141
+      },
+      "official_usd": {
+        "input": 0.192,
+        "output": 16,
+        "cache_read": 0.182,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 7.8125,
+        "output": 0.4688,
+        "blend": 0.6688
+      },
+      "discount": 0.3312,
+      "blend_effective": 22.0147,
+      "usd": {
+        "effective": {
+          "input": 1.5,
+          "output": 7.5,
+          "cache_read": 0.15
+        },
+        "official": {
+          "input": 0.192,
+          "output": 16,
+          "cache_read": 0.182
+        },
+        "blend": 3.3,
+        "discount": 0.3312
+      },
+      "calc": "GOAT 折算：$3/M × 10 ÷ $20 × 6.6711 = ¥10.0067/M",
+      "calc_full": "GOAT 折算：$3/M × 10 ÷ $20 × 6.6711 = ¥10.0067/M",
+      "calc_basis": "GOAT 折算：$3/M × 10 ÷ $20 × 6.6711 = ¥10.0067/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$3/M × 10 ÷ $20 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "glm-5-3",
+        "label": "GLM-5.3",
+        "vendor": "Zhipu",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 1.3342,
+        "output": 4.1933,
+        "cache_read": 0.2478
+      },
+      "effective": {
+        "input": 1.3342,
+        "output": 4.1933,
+        "cache_read": 0.2478
+      },
+      "official_cny": {
+        "input": 0.4663,
+        "output": 9.3395,
+        "cache_read": 0.4596
+      },
+      "official_usd": {
+        "input": 0.0699,
+        "output": 1.4,
+        "cache_read": 0.0689,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 2.8612,
+        "output": 0.449,
+        "blend": 0.7007
+      },
+      "discount": 0.2993,
+      "blend_effective": 2.1919,
+      "usd": {
+        "effective": {
+          "input": 0.2,
+          "output": 0.6286,
+          "cache_read": 0.0371
+        },
+        "official": {
+          "input": 0.0699,
+          "output": 1.4,
+          "cache_read": 0.0689
+        },
+        "blend": 0.3286,
+        "discount": 0.2993
+      },
+      "calc": "GOAT 折算：$1.4/M × 10 ÷ $70 × 6.6711 = ¥1.3342/M",
+      "calc_full": "GOAT 折算：$1.4/M × 10 ÷ $70 × 6.6711 = ¥1.3342/M",
+      "calc_basis": "GOAT 折算：$1.4/M × 10 ÷ $70 × 6.6711 = ¥1.3342/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$1.4/M × 10 ÷ $70 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://bigmodel.cn/pricing"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "qwen4-max",
+        "label": "Qwen4 Max",
+        "vendor": "Alibaba",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 6.6711,
+        "output": 20.0133,
+        "cache_read": 0.3336
+      },
+      "effective": {
+        "input": 6.6711,
+        "output": 20.0133,
+        "cache_read": 0.3336
+      },
+      "official_cny": {
+        "input": 9.5063,
+        "output": 28.519,
+        "cache_read": 0.4756
+      },
+      "official_usd": {
+        "input": 1.425,
+        "output": 4.275,
+        "cache_read": 0.0713,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.7018,
+        "output": 0.7018,
+        "blend": 0.7018
+      },
+      "discount": 0.2982,
+      "blend_effective": 10.6738,
+      "usd": {
+        "effective": {
+          "input": 1,
+          "output": 3,
+          "cache_read": 0.05
+        },
+        "official": {
+          "input": 1.425,
+          "output": 4.275,
+          "cache_read": 0.0713
+        },
+        "blend": 1.6,
+        "discount": 0.2982
+      },
+      "calc": "GOAT 折算：$1.5/M × 10 ÷ $15 × 6.6711 = ¥6.6711/M",
+      "calc_full": "GOAT 折算：$1.5/M × 10 ÷ $15 × 6.6711 = ¥6.6711/M",
+      "calc_basis": "GOAT 折算：$1.5/M × 10 ÷ $15 × 6.6711 = ¥6.6711/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$1.5/M × 10 ÷ $15 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
         "id": "opencode",
         "name": "OpenCode",
         "kind": "aggregator",
@@ -4821,6 +7125,182 @@
       "note": "Go 折算：$1.5 × 10 ÷ $15 × 6.6711",
       "peak": null,
       "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "gpt-5.6-sol",
+        "label": "GPT-5.6 Sol",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 16.6778,
+        "output": 100.0665,
+        "cache_read": 1.6678
+      },
+      "effective": {
+        "input": 16.6778,
+        "output": 100.0665,
+        "cache_read": 1.6678
+      },
+      "official_cny": {
+        "input": 26.6844,
+        "output": 133.422,
+        "cache_read": 2.6684
+      },
+      "official_usd": {
+        "input": 4,
+        "output": 20,
+        "cache_read": 0.4,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.625,
+        "output": 0.75,
+        "blend": 0.7102
+      },
+      "discount": 0.2898,
+      "blend_effective": 41.6944,
+      "usd": {
+        "effective": {
+          "input": 2.5,
+          "output": 15,
+          "cache_read": 0.25
+        },
+        "official": {
+          "input": 4,
+          "output": 20,
+          "cache_read": 0.4
+        },
+        "blend": 6.25,
+        "discount": 0.2898
+      },
+      "calc": "GOAT 折算：$5/M × 10 ÷ $20 × 6.6711 = ¥16.6778/M",
+      "calc_full": "GOAT 折算：$5/M × 10 ÷ $20 × 6.6711 = ¥16.6778/M",
+      "calc_basis": "GOAT 折算：$5/M × 10 ÷ $20 × 6.6711 = ¥16.6778/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$5/M × 10 ÷ $20 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "kimi-k3-1-pro",
+        "label": "Kimi K3.1 Pro",
+        "vendor": "Moonshot",
+        "context": 1048576
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 6.6711,
+        "output": 33.3555,
+        "cache_read": 0.6671
+      },
+      "effective": {
+        "input": 6.6711,
+        "output": 33.3555,
+        "cache_read": 0.6671
+      },
+      "official_cny": {
+        "input": 1.6031,
+        "output": 56.0526,
+        "cache_read": 1.3342
+      },
+      "official_usd": {
+        "input": 0.2403,
+        "output": 8.4023,
+        "cache_read": 0.2,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 4.1615,
+        "output": 0.5951,
+        "blend": 0.8182
+      },
+      "discount": 0.1818,
+      "blend_effective": 14.6764,
+      "usd": {
+        "effective": {
+          "input": 1,
+          "output": 5,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 0.2403,
+          "output": 8.4023,
+          "cache_read": 0.2
+        },
+        "blend": 2.2,
+        "discount": 0.1818
+      },
+      "calc": "GOAT 折算：$2/M × 10 ÷ $20 × 6.6711 = ¥6.6711/M",
+      "calc_full": "GOAT 折算：$2/M × 10 ÷ $20 × 6.6711 = ¥6.6711/M",
+      "calc_basis": "GOAT 折算：$2/M × 10 ÷ $20 × 6.6711 = ¥6.6711/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$2/M × 10 ÷ $20 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
     },
     {
       "station": {
@@ -5685,6 +8165,94 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "claude-sonnet-5-5",
+        "label": "Claude Sonnet 5.5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 0.6671
+      },
+      "effective": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 0.6671
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 0.6671
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": 2.5
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 29.3528,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
+      "calc": "GOAT 折算：$2/M × 10 ÷ $10 × 6.6711 = ¥13.3422/M",
+      "calc_full": "GOAT 折算：$2/M × 10 ÷ $10 × 6.6711 = ¥13.3422/M",
+      "calc_basis": "GOAT 折算：$2/M × 10 ÷ $10 × 6.6711 = ¥13.3422/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$2/M × 10 ÷ $10 × 6.6711",
       "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
@@ -8787,6 +11355,94 @@
       "note": null,
       "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "commandcode-ai",
+        "name": "Command Code",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://commandcode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "GOAT 订阅",
+        "price_source_label": "GOAT 套餐折算",
+        "note": "订阅制：GOAT $10/月，每个模型有独立的月额度（credits，美元），按「用满额度」折算单价 = 站上 token 单价 × 10 ÷ 该模型月额度。额度用不满时实际单价更高。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自官方 docs/plans/goat 2026-11-27，未实调核验。上线时间：GOAT 于 2026-08-04 上线（官方 blog），更早的 $1 Go 计划具体上线日未见公开说明，站点域名 2025-10 已有页面。"
+      },
+      "model": {
+        "id": "hunyuan-4-flash",
+        "label": "Hy4 Flash",
+        "vendor": "Tencent",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.3113,
+        "output": 1.2497,
+        "cache_read": 0.0133
+      },
+      "effective": {
+        "input": 0.3113,
+        "output": 1.2497,
+        "cache_read": 0.0133
+      },
+      "official_cny": {
+        "input": 0.2335,
+        "output": 0.9373,
+        "cache_read": 0.01
+      },
+      "official_usd": {
+        "input": 0.035,
+        "output": 0.1405,
+        "cache_read": 0.0015,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1.3333,
+        "output": 1.3333,
+        "blend": 1.3333
+      },
+      "discount": -0.3333,
+      "blend_effective": 0.5928,
+      "usd": {
+        "effective": {
+          "input": 0.0467,
+          "output": 0.1873,
+          "cache_read": 0.002
+        },
+        "official": {
+          "input": 0.035,
+          "output": 0.1405,
+          "cache_read": 0.0015
+        },
+        "blend": 0.0889,
+        "discount": -0.3333
+      },
+      "calc": "GOAT 折算：$0.07/M × 10 ÷ $15 × 6.6711 = ¥0.3113/M",
+      "calc_full": "GOAT 折算：$0.07/M × 10 ÷ $15 × 6.6711 = ¥0.3113/M",
+      "calc_basis": "GOAT 折算：$0.07/M × 10 ÷ $15 × 6.6711 = ¥0.3113/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "GOAT 折算：$0.07/M × 10 ÷ $15 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
     },
     {
       "station": {
