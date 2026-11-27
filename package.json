@@ -21,7 +21,9 @@
     "fetch:or": "node scripts/fetch-openrouter.mjs --write",
     "fetch:fx": "node scripts/fetch-fx.mjs",
     "weekly": "node scripts/weekly.mjs --md",
-    "fetch:rankings": "node scripts/fetch-rankings.mjs --write"
+    "fetch:rankings": "node scripts/fetch-rankings.mjs --write",
+    "rules": "node scripts/rules.mjs",
+    "rules:md": "node scripts/rules.mjs --md"
   },
   "license": "MIT"
 }

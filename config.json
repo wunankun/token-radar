@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Token 雷达",
-    "tagline": "AI API 中转站 × 官方直购：把「倍率」和「赠送」折算成真实到手价",
+    "tagline": "AI API 中转站 × 官方直购：把「倍率」和「订阅」折算成真实到手价",
     "repo": "wunankun/token-radar",
     "locale": "zh-CN"
   },

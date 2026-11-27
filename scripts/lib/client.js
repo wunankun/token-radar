@@ -117,6 +117,19 @@
   }
 
   /* 一格两组数：左边现价，右边划掉的官方价 */
+  // 运营时间：只有中转站有，官方直购留空
+  function opCell(r) {
+    if (r.station.kind === 'official') return '<span class="muted">—</span>';
+    var since = r.station.operating_since;
+    if (!since) return '<span class="muted" title="还没记录开业时间，发截图给维护 agent 建档">—</span>';
+    var t = Date.parse(since);
+    if (!isFinite(t)) return '<span class="muted">—</span>';
+    var months = Math.max(0, Math.floor((Date.now() - t) / 2592000000));
+    var y = Math.floor(months / 12), m = months % 12;
+    var text = y ? y + ' 年' + (m ? ' ' + m + ' 个月' : '') : (m ? m + ' 个月' : '不到 1 个月');
+    return '<span title="开业于 ' + esc(since) + '">' + text + '</span>';
+  }
+
   function pairCell(now, off, tip, isOfficial) {
     if (now === null || now === undefined) return '<span class="muted">—</span>';
     var html = '<span class="unit" title="' + (tip || '') + '">' + money(now) + '</span>';
@@ -260,6 +273,7 @@
 
     return '<tr class="' + (r.station.demo ? 'is-demo' : '') + '">' +
       '<td>' + stationCell(r) + '</td>' +
+      '<td class="num op">' + opCell(r) + '</td>' +
       '<td><div class="model"><div class="m">' + vico(r.model.vendor) + esc(r.model.label) + '</div><div class="v">' + esc(r.model.id) + '</div></div></td>' +
       '<td class="num">' + pairCell(v.input, v.off && v.off.input, calcTip, isOff) + '</td>' +
       '<td class="num">' + pairCell(v.output, v.off && v.off.output, calcTip, isOff) + '</td>' +
@@ -284,7 +298,7 @@
 
     $('#tbody').innerHTML = slice.length
       ? slice.map(renderRow).join('')
-      : '<tr><td colspan="8" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
+      : '<tr><td colspan="9" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
     $('#count').textContent = list.length + ' / ' + rows.length + ' 行';
     renderPager(list.length, pages, start, slice.length);
     renderUnits();

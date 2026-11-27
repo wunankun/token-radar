@@ -51,6 +51,16 @@ for (const p of providers) {
   if (p.status === 'dead') add('info', `${tag} 已标记 dead，半年后可考虑归档`);
   if (p.kind === 'official') continue;
 
+  // 运营时间：中转站应该有 operating_since（页面「运营时间」列要用）
+  if (!p.demo && !p.operating_since) {
+    add('should', `${tag} 没写 operating_since，榜单的「运营时间」这列会是空的`);
+  }
+
+  // 规则库：中转站应该有 data/rules/<id>.md，写清它怎么算钱
+  if (!p.demo && !existsSync(join(DATA, 'rules', `${p.id}.md`))) {
+    add('should', `${tag} 还没有规则档案（data/rules/${p.id}.md）：发截图或链接给 agent，让它把分组/倍率/计费写下来`);
+  }
+
   // 价格新鲜度
   if (!p.demo) {
     const age = daysSince(p.price_updated_at);

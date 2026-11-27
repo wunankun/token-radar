@@ -101,6 +101,7 @@ ${css}
       <thead>
         <tr>
           <th>站点</th>
+          <th class="hide-sm">运营时间</th>
           <th>模型</th>
           <th class="num"><span class="th-u">输入 $/百万</span><br><span class="th-sub">现价 / 官方</span></th>
           <th class="num"><span class="th-u">输出 $/百万</span><br><span class="th-sub">现价 / 官方</span></th>

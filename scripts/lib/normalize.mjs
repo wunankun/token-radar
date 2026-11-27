@@ -220,6 +220,7 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
         top_up: station.top_up ?? null,
         risk_flags: station.risk_flags || [],
         first_seen: station.first_seen ?? null,
+        operating_since: station.operating_since ?? null,
         note: station.note ?? null,
       },
       model: { id: modelId, label: model.label, vendor: model.vendor, context: model.context ?? null },

@@ -289,6 +289,10 @@
           "type": "string"
         }
       }
+    },
+    "operating_since": {
+      "type": "string",
+      "description": "开业/上线日期（YYYY-MM 或 YYYY-MM-DD）。只对中转站有意义，官方直购留空。"
     }
   }
 }
