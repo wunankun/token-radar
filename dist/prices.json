@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-27T09:31:36.363Z",
+    "generated_at": "2026-11-27T09:47:13.699Z",
     "fx": {
       "usd_cny": 6.6711,
       "as_of": "2026-11-25",
@@ -22,13 +22,13 @@
     },
     "best": {
       "station": "OpenDesign",
-      "model": "DeepSeek V4.1 Flash",
+      "model": "GLM-5.3 Flash",
       "ratio": 0.0227,
       "discount": 0.9773,
       "effective": {
         "input": 0.0227,
-        "output": 0.091,
-        "cache_read": 0.0005
+        "output": 0.0758,
+        "cache_read": 0.0045
       }
     },
     "best_demo": null,
@@ -522,99 +522,7 @@
         "operating_since": "2026-08",
         "billing_label": "Go 订阅",
         "price_source_label": "Go 套餐折算",
-        "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
-      },
-      "model": {
-        "id": "deepseek-flash",
-        "label": "DeepSeek V4.1 Flash",
-        "vendor": "DeepSeek",
-        "context": 1000000
-      },
-      "mode": "absolute",
-      "price_source": "manual",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 0.0227,
-        "output": 0.091,
-        "cache_read": 0.0005
-      },
-      "effective": {
-        "input": 0.0227,
-        "output": 0.091,
-        "cache_read": 0.0005
-      },
-      "official_cny": {
-        "input": 1.0007,
-        "output": 4.0027,
-        "cache_read": 0.02
-      },
-      "official_usd": {
-        "input": 0.15,
-        "output": 0.6,
-        "cache_read": 0.003,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 0.0227,
-        "output": 0.0227,
-        "blend": 0.0227
-      },
-      "discount": 0.9773,
-      "blend_effective": 0.0432,
-      "usd": {
-        "effective": {
-          "input": 0.0034,
-          "output": 0.0136,
-          "cache_read": 0.0001
-        },
-        "official": {
-          "input": 0.15,
-          "output": 0.6,
-          "cache_read": 0.003
-        },
-        "blend": 0.0065,
-        "discount": 0.9773
-      },
-      "calc": "Go 折算：官方 $0.15/M × 倍率 0.5 × 10 ÷ 220 × 6.6711 = ¥0.0227/M",
-      "calc_full": "Go 折算：官方 $0.15/M × 倍率 0.5 × 10 ÷ 220 × 6.6711 = ¥0.0227/M",
-      "calc_basis": "Go 折算：官方 $0.15/M × 倍率 0.5 × 10 ÷ 220 × 6.6711 = ¥0.0227/M",
-      "group": null,
-      "observed": false,
-      "tiers": null,
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "Go 折算：官方 $0.15/M × 倍率 0.5 × 10 ÷ 220 × 6.6711",
-      "peak": {
-        "input": 0.0455,
-        "output": 0.1819,
-        "cache_read": 0.0009
-      },
-      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
-    },
-    {
-      "station": {
-        "id": "open-design",
-        "name": "OpenDesign",
-        "kind": "aggregator",
-        "kind_label": "聚合商",
-        "demo": false,
-        "homepage": "https://open-design.ai/",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "usd_rate": null,
-        "top_up": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-27",
-        "operating_since": "2026-08",
-        "billing_label": "Go 订阅",
-        "price_source_label": "Go 套餐折算",
-        "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
+        "note": "订阅制：Go $10/月。单价取自 OpenDesign 公开模型价目表 amr-api.open-design.ai/api/v1/public/model-prices（2026-11-27 抓），折算价 = 站上单价 × 额度扣除倍率 × 10 ÷ 220（按官方标称月额度用满）。注意：OpenDesign 的 DeepSeek 标价是 DeepSeek 峰价（Flash $0.3/$1.2、V4 Pro $1.32/$3.96），全天同价，没有谷价。额度口径存疑：第三方插件读 OpenDesign 后台（vela）显示 7 天窗口硬上限 150,000 credits，按 10,000 credits = $1 折合约 $15/周、约 $60/月，只有官方标称 $220 的 1/4；另有 2026-10 实测博客显示真实额度约为当时宣传值的 2/3。若按实测口径，实际到手价会明显高于表里数字。价格未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
       },
       "model": {
         "id": "glm-5-3-flash",
@@ -628,14 +536,14 @@
       "billing_ratio": 1,
       "billing_source": "default",
       "nominal": {
-        "input": 0.0455,
-        "output": 0.1516,
-        "cache_read": 0.0091
+        "input": 0.0227,
+        "output": 0.0758,
+        "cache_read": 0.0045
       },
       "effective": {
-        "input": 0.0455,
-        "output": 0.1516,
-        "cache_read": 0.0091
+        "input": 0.0227,
+        "output": 0.0758,
+        "cache_read": 0.0045
       },
       "official_cny": {
         "input": 1.0007,
@@ -649,36 +557,36 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.0455,
-        "output": 0.0454,
-        "blend": 0.0455
+        "input": 0.0227,
+        "output": 0.0227,
+        "blend": 0.0227
       },
-      "discount": 0.9545,
-      "blend_effective": 0.0773,
+      "discount": 0.9773,
+      "blend_effective": 0.0386,
       "usd": {
         "effective": {
-          "input": 0.0068,
-          "output": 0.0227,
-          "cache_read": 0.0014
+          "input": 0.0034,
+          "output": 0.0114,
+          "cache_read": 0.0007
         },
         "official": {
           "input": 0.15,
           "output": 0.5,
           "cache_read": 0.03
         },
-        "blend": 0.0116,
-        "discount": 0.9545
+        "blend": 0.0058,
+        "discount": 0.9773
       },
-      "calc": "Go 折算：官方 $0.15/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.0455/M",
-      "calc_full": "Go 折算：官方 $0.15/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.0455/M",
-      "calc_basis": "Go 折算：官方 $0.15/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.0455/M",
+      "calc": "Go 折算：站上价 $0.075/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.0227/M",
+      "calc_full": "Go 折算：站上价 $0.075/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.0227/M",
+      "calc_basis": "Go 折算：站上价 $0.075/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.0227/M",
       "group": null,
       "observed": false,
       "tiers": null,
       "recharge": null,
       "calc_adjust": "",
       "health": null,
-      "note": "Go 折算：官方 $0.15/M × 倍率 1 × 10 ÷ 220 × 6.6711",
+      "note": "Go 折算：站上价 $0.075/M × 倍率 1 × 10 ÷ 220 × 6.6711",
       "peak": null,
       "pricing_url": "https://bigmodel.cn/pricing"
     },
@@ -702,11 +610,11 @@
         "operating_since": "2026-08",
         "billing_label": "Go 订阅",
         "price_source_label": "Go 套餐折算",
-        "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
+        "note": "订阅制：Go $10/月。单价取自 OpenDesign 公开模型价目表 amr-api.open-design.ai/api/v1/public/model-prices（2026-11-27 抓），折算价 = 站上单价 × 额度扣除倍率 × 10 ÷ 220（按官方标称月额度用满）。注意：OpenDesign 的 DeepSeek 标价是 DeepSeek 峰价（Flash $0.3/$1.2、V4 Pro $1.32/$3.96），全天同价，没有谷价。额度口径存疑：第三方插件读 OpenDesign 后台（vela）显示 7 天窗口硬上限 150,000 credits，按 10,000 credits = $1 折合约 $15/周、约 $60/月，只有官方标称 $220 的 1/4；另有 2026-10 实测博客显示真实额度约为当时宣传值的 2/3。若按实测口径，实际到手价会明显高于表里数字。价格未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
       },
       "model": {
-        "id": "deepseek-v4-pro",
-        "label": "DeepSeek V4 Pro",
+        "id": "deepseek-flash",
+        "label": "DeepSeek V4.1 Flash",
         "vendor": "DeepSeek",
         "context": 1000000
       },
@@ -716,62 +624,58 @@
       "billing_ratio": 1,
       "billing_source": "default",
       "nominal": {
-        "input": 0.2001,
-        "output": 0.6004,
-        "cache_read": 0.0067
+        "input": 0.0455,
+        "output": 0.182,
+        "cache_read": 0.0009
       },
       "effective": {
-        "input": 0.2001,
-        "output": 0.6004,
-        "cache_read": 0.0067
+        "input": 0.0455,
+        "output": 0.182,
+        "cache_read": 0.0009
       },
       "official_cny": {
-        "input": 4.4029,
-        "output": 13.2088,
-        "cache_read": 0.1468
+        "input": 1.0007,
+        "output": 4.0027,
+        "cache_read": 0.02
       },
       "official_usd": {
-        "input": 0.66,
-        "output": 1.98,
-        "cache_read": 0.022,
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.003,
         "cache_write": null
       },
       "ratio": {
-        "input": 0.0454,
+        "input": 0.0455,
         "output": 0.0455,
         "blend": 0.0455
       },
       "discount": 0.9545,
-      "blend_effective": 0.3202,
+      "blend_effective": 0.0865,
       "usd": {
         "effective": {
-          "input": 0.03,
-          "output": 0.09,
-          "cache_read": 0.001
+          "input": 0.0068,
+          "output": 0.0273,
+          "cache_read": 0.0001
         },
         "official": {
-          "input": 0.66,
-          "output": 1.98,
-          "cache_read": 0.022
+          "input": 0.15,
+          "output": 0.6,
+          "cache_read": 0.003
         },
-        "blend": 0.048,
+        "blend": 0.013,
         "discount": 0.9545
       },
-      "calc": "Go 折算：官方 $0.66/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2001/M",
-      "calc_full": "Go 折算：官方 $0.66/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2001/M",
-      "calc_basis": "Go 折算：官方 $0.66/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2001/M",
+      "calc": "Go 折算：站上价 $0.3/M × 倍率 0.5 × 10 ÷ 220 × 6.6711 = ¥0.0455/M",
+      "calc_full": "Go 折算：站上价 $0.3/M × 倍率 0.5 × 10 ÷ 220 × 6.6711 = ¥0.0455/M",
+      "calc_basis": "Go 折算：站上价 $0.3/M × 倍率 0.5 × 10 ÷ 220 × 6.6711 = ¥0.0455/M",
       "group": null,
       "observed": false,
       "tiers": null,
       "recharge": null,
       "calc_adjust": "",
       "health": null,
-      "note": "Go 折算：官方 $0.66/M × 倍率 1 × 10 ÷ 220 × 6.6711",
-      "peak": {
-        "input": 0.4003,
-        "output": 1.2008,
-        "cache_read": 0.0133
-      },
+      "note": "Go 折算：站上价 $0.3/M × 倍率 0.5 × 10 ÷ 220 × 6.6711",
+      "peak": null,
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
     },
     {
@@ -794,7 +698,7 @@
         "operating_since": "2026-08",
         "billing_label": "Go 订阅",
         "price_source_label": "Go 套餐折算",
-        "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
+        "note": "订阅制：Go $10/月。单价取自 OpenDesign 公开模型价目表 amr-api.open-design.ai/api/v1/public/model-prices（2026-11-27 抓），折算价 = 站上单价 × 额度扣除倍率 × 10 ÷ 220（按官方标称月额度用满）。注意：OpenDesign 的 DeepSeek 标价是 DeepSeek 峰价（Flash $0.3/$1.2、V4 Pro $1.32/$3.96），全天同价，没有谷价。额度口径存疑：第三方插件读 OpenDesign 后台（vela）显示 7 天窗口硬上限 150,000 credits，按 10,000 credits = $1 折合约 $15/周、约 $60/月，只有官方标称 $220 的 1/4；另有 2026-10 实测博客显示真实额度约为当时宣传值的 2/3。若按实测口径，实际到手价会明显高于表里数字。价格未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
       },
       "model": {
         "id": "hy4-preview",
@@ -849,16 +753,16 @@
         "blend": 0.0606,
         "discount": 0.9545
       },
-      "calc": "Go 折算：官方 $0.834/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2529/M",
-      "calc_full": "Go 折算：官方 $0.834/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2529/M",
-      "calc_basis": "Go 折算：官方 $0.834/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2529/M",
+      "calc": "Go 折算：站上价 $0.834/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2529/M",
+      "calc_full": "Go 折算：站上价 $0.834/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2529/M",
+      "calc_basis": "Go 折算：站上价 $0.834/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2529/M",
       "group": null,
       "observed": false,
       "tiers": null,
       "recharge": null,
       "calc_adjust": "",
       "health": null,
-      "note": "Go 折算：官方 $0.834/M × 倍率 1 × 10 ÷ 220 × 6.6711",
+      "note": "Go 折算：站上价 $0.834/M × 倍率 1 × 10 ÷ 220 × 6.6711",
       "peak": null,
       "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
     },
@@ -882,7 +786,7 @@
         "operating_since": "2026-08",
         "billing_label": "Go 订阅",
         "price_source_label": "Go 套餐折算",
-        "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
+        "note": "订阅制：Go $10/月。单价取自 OpenDesign 公开模型价目表 amr-api.open-design.ai/api/v1/public/model-prices（2026-11-27 抓），折算价 = 站上单价 × 额度扣除倍率 × 10 ÷ 220（按官方标称月额度用满）。注意：OpenDesign 的 DeepSeek 标价是 DeepSeek 峰价（Flash $0.3/$1.2、V4 Pro $1.32/$3.96），全天同价，没有谷价。额度口径存疑：第三方插件读 OpenDesign 后台（vela）显示 7 天窗口硬上限 150,000 credits，按 10,000 credits = $1 折合约 $15/周、约 $60/月，只有官方标称 $220 的 1/4；另有 2026-10 实测博客显示真实额度约为当时宣传值的 2/3。若按实测口径，实际到手价会明显高于表里数字。价格未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
       },
       "model": {
         "id": "kimi-k2-7-code",
@@ -896,14 +800,14 @@
       "billing_ratio": 1,
       "billing_source": "default",
       "nominal": {
-        "input": 0.1819,
-        "output": 0.9097,
-        "cache_read": 0.0364
+        "input": 0.2881,
+        "output": 1.2129,
+        "cache_read": 0.0576
       },
       "effective": {
-        "input": 0.1819,
-        "output": 0.9097,
-        "cache_read": 0.0364
+        "input": 0.2881,
+        "output": 1.2129,
+        "cache_read": 0.0576
       },
       "official_cny": {
         "input": 4.0027,
@@ -917,38 +821,126 @@
         "cache_write": null
       },
       "ratio": {
-        "input": 0.0454,
-        "output": 0.0455,
-        "blend": 0.0455
+        "input": 0.072,
+        "output": 0.0606,
+        "blend": 0.0642
       },
-      "discount": 0.9545,
-      "blend_effective": 0.4002,
+      "discount": 0.9358,
+      "blend_effective": 0.5655,
       "usd": {
         "effective": {
-          "input": 0.0273,
-          "output": 0.1364,
-          "cache_read": 0.0055
+          "input": 0.0432,
+          "output": 0.1818,
+          "cache_read": 0.0086
         },
         "official": {
           "input": 0.6,
           "output": 3,
           "cache_read": 0.12
         },
-        "blend": 0.06,
-        "discount": 0.9545
+        "blend": 0.0848,
+        "discount": 0.9358
       },
-      "calc": "Go 折算：官方 $0.6/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.1819/M",
-      "calc_full": "Go 折算：官方 $0.6/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.1819/M",
-      "calc_basis": "Go 折算：官方 $0.6/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.1819/M",
+      "calc": "Go 折算：站上价 $0.95/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2881/M",
+      "calc_full": "Go 折算：站上价 $0.95/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2881/M",
+      "calc_basis": "Go 折算：站上价 $0.95/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.2881/M",
       "group": null,
       "observed": false,
       "tiers": null,
       "recharge": null,
       "calc_adjust": "",
       "health": null,
-      "note": "Go 折算：官方 $0.6/M × 倍率 1 × 10 ÷ 220 × 6.6711",
+      "note": "Go 折算：站上价 $0.95/M × 倍率 1 × 10 ÷ 220 × 6.6711",
       "peak": null,
       "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
+    },
+    {
+      "station": {
+        "id": "open-design",
+        "name": "OpenDesign",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://open-design.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": "2026-08",
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月。单价取自 OpenDesign 公开模型价目表 amr-api.open-design.ai/api/v1/public/model-prices（2026-11-27 抓），折算价 = 站上单价 × 额度扣除倍率 × 10 ÷ 220（按官方标称月额度用满）。注意：OpenDesign 的 DeepSeek 标价是 DeepSeek 峰价（Flash $0.3/$1.2、V4 Pro $1.32/$3.96），全天同价，没有谷价。额度口径存疑：第三方插件读 OpenDesign 后台（vela）显示 7 天窗口硬上限 150,000 credits，按 10,000 credits = $1 折合约 $15/周、约 $60/月，只有官方标称 $220 的 1/4；另有 2026-10 实测博客显示真实额度约为当时宣传值的 2/3。若按实测口径，实际到手价会明显高于表里数字。价格未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
+      },
+      "model": {
+        "id": "deepseek-v4-pro",
+        "label": "DeepSeek V4 Pro",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.4003,
+        "output": 1.2008,
+        "cache_read": 0.0133
+      },
+      "effective": {
+        "input": 0.4003,
+        "output": 1.2008,
+        "cache_read": 0.0133
+      },
+      "official_cny": {
+        "input": 4.4029,
+        "output": 13.2088,
+        "cache_read": 0.1468
+      },
+      "official_usd": {
+        "input": 0.66,
+        "output": 1.98,
+        "cache_read": 0.022,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.0909,
+        "output": 0.0909,
+        "blend": 0.0909
+      },
+      "discount": 0.9091,
+      "blend_effective": 0.6405,
+      "usd": {
+        "effective": {
+          "input": 0.06,
+          "output": 0.18,
+          "cache_read": 0.002
+        },
+        "official": {
+          "input": 0.66,
+          "output": 1.98,
+          "cache_read": 0.022
+        },
+        "blend": 0.096,
+        "discount": 0.9091
+      },
+      "calc": "Go 折算：站上价 $1.32/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.4003/M",
+      "calc_full": "Go 折算：站上价 $1.32/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.4003/M",
+      "calc_basis": "Go 折算：站上价 $1.32/M × 倍率 1 × 10 ÷ 220 × 6.6711 = ¥0.4003/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：站上价 $1.32/M × 倍率 1 × 10 ÷ 220 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
     },
     {
       "station": {
@@ -3130,7 +3122,7 @@
         "operating_since": "2026-08",
         "billing_label": "Go 订阅",
         "price_source_label": "Go 套餐折算",
-        "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
+        "note": "订阅制：Go $10/月。单价取自 OpenDesign 公开模型价目表 amr-api.open-design.ai/api/v1/public/model-prices（2026-11-27 抓），折算价 = 站上单价 × 额度扣除倍率 × 10 ÷ 220（按官方标称月额度用满）。注意：OpenDesign 的 DeepSeek 标价是 DeepSeek 峰价（Flash $0.3/$1.2、V4 Pro $1.32/$3.96），全天同价，没有谷价。额度口径存疑：第三方插件读 OpenDesign 后台（vela）显示 7 天窗口硬上限 150,000 credits，按 10,000 credits = $1 折合约 $15/周、约 $60/月，只有官方标称 $220 的 1/4；另有 2026-10 实测博客显示真实额度约为当时宣传值的 2/3。若按实测口径，实际到手价会明显高于表里数字。价格未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
       },
       "model": {
         "id": "gpt-6-luna",
@@ -3185,16 +3177,16 @@
         "blend": 0.04,
         "discount": 0.8182
       },
-      "calc": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
-      "calc_full": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
-      "calc_basis": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
+      "calc": "Go 折算：站上价 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
+      "calc_full": "Go 折算：站上价 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
+      "calc_basis": "Go 折算：站上价 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
       "group": null,
       "observed": false,
       "tiers": null,
       "recharge": null,
       "calc_adjust": "",
       "health": null,
-      "note": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711",
+      "note": "Go 折算：站上价 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711",
       "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
@@ -3218,7 +3210,7 @@
         "operating_since": "2026-08",
         "billing_label": "Go 订阅",
         "price_source_label": "Go 套餐折算",
-        "note": "订阅制：Go $10/月，月总额度 $220。官方模型页只给「额度扣除倍率」，不给单价：折算价 = 官方公开单价 × 倍率 × 10 ÷ 220（按用满额度）。官方单价取自 data/official.json（OpenDesign 未单独公布，属假设）；额度用不满时实际更贵。DeepSeek V4.1 Flash / V4 Pro 有峰时价（2 倍），表里按谷价录入并标「峰价 ×2」。价格抓自 open-design.ai model-credits 2026-11-27，未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
+        "note": "订阅制：Go $10/月。单价取自 OpenDesign 公开模型价目表 amr-api.open-design.ai/api/v1/public/model-prices（2026-11-27 抓），折算价 = 站上单价 × 额度扣除倍率 × 10 ÷ 220（按官方标称月额度用满）。注意：OpenDesign 的 DeepSeek 标价是 DeepSeek 峰价（Flash $0.3/$1.2、V4 Pro $1.32/$3.96），全天同价，没有谷价。额度口径存疑：第三方插件读 OpenDesign 后台（vela）显示 7 天窗口硬上限 150,000 credits，按 10,000 credits = $1 折合约 $15/周、约 $60/月，只有官方标称 $220 的 1/4；另有 2026-10 实测博客显示真实额度约为当时宣传值的 2/3。若按实测口径，实际到手价会明显高于表里数字。价格未实调核验。上线时间：Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早（web.archive.org 最早快照 2024-08-31）。"
       },
       "model": {
         "id": "claude-haiku-5-5",
@@ -3273,16 +3265,16 @@
         "blend": 0.04,
         "discount": 0.8182
       },
-      "calc": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
-      "calc_full": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
-      "calc_basis": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
+      "calc": "Go 折算：站上价 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
+      "calc_full": "Go 折算：站上价 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
+      "calc_basis": "Go 折算：站上价 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711 = ¥0.1213/M",
       "group": null,
       "observed": false,
       "tiers": null,
       "recharge": null,
       "calc_adjust": "",
       "health": null,
-      "note": "Go 折算：官方 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711",
+      "note": "Go 折算：站上价 $0.1/M × 倍率 4 × 10 ÷ 220 × 6.6711",
       "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
