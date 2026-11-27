@@ -13,7 +13,7 @@ export const KIND_LABEL = {
   reverse: '逆向',
   mixed: '混合',
   aggregator: '聚合商',
-  relay: '中转·未分类',
+  relay: '中转',
 };
 
 export const FLAGS = [

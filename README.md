@@ -270,7 +270,7 @@ npm run build                                # 或 npm run weekly，一次抓+�
 1. **逐行判定**：只有 `derivation.models[].verdict === "ok"` 的行才上，也就是「站上的输出/输入比 == 官方的输出/输入比」。
 2. **不覆盖人工数据**：`data/providers/<id>.json` 里录过的站，自动数据自动让位。
 
-这些行的 `kind` 是 `relay`（页面显示「中转·未分类」），`price_source` 是 `auto`（显示「自动抓取」），`risk_flags` 带 `unverified`。
+这些行的 `kind` 是 `relay`（页面显示「中转」），`price_source` 是 `auto`（显示「自动抓取」），`risk_flags` 带 `unverified`。
 
 ### 停更一个站点：改一个字段
 
