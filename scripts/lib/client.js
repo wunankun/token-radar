@@ -132,13 +132,14 @@
 
   function pairCell(now, off, tip, isOfficial) {
     if (now === null || now === undefined) return '<span class="muted">—</span>';
-    // 比官方便宜才把官方价划掉变灰；持平或更贵，现价标橙提醒「这家不便宜」
+    // 官方价一律划掉变灰；持平或更贵时现价标橙提醒「这家不便宜」
     var hasOff = !isOfficial && off !== null && off !== undefined;
     var cheaper = hasOff && now < off - 1e-9;
     var cls = 'unit' + (hasOff && !cheaper ? ' unit-warn' : '');
     var title = (tip || '') + (hasOff && !cheaper ? '（比官方贵或持平，标橙）' : '');
     var html = '<span class="' + cls + '" title="' + esc(title) + '">' + money(now) + '</span>';
-    if (cheaper) {
+    // 官方价一律划掉变灰；便宜时是「省了多少」的对照，贵/持平时是「贵过基准」的对照
+    if (hasOff) {
       html += '<span class="offp" title="官方同口径">' + money(off) + '</span>';
     }
     return html;
