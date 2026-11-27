@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-27T03:44:06.020Z",
+    "generated_at": "2026-11-27T04:08:09.160Z",
     "fx": {
       "usd_cny": 6.6711,
       "as_of": "2026-11-25",
@@ -47,7 +47,7 @@
       },
       {
         "id": "hunyuan-4-flash",
-        "label": "混元 4 Flash",
+        "label": "Hy4 Flash",
         "vendor": "Tencent",
         "popularity": 62,
         "coverage": 0,
@@ -1566,7 +1566,7 @@
     {
       "station": {
         "id": "tencent",
-        "name": "Hunyuan 官方",
+        "name": "Hy 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -1582,7 +1582,7 @@
       },
       "model": {
         "id": "hunyuan-4-flash",
-        "label": "混元 4 Flash",
+        "label": "Hy4 Flash",
         "vendor": "Tencent",
         "context": 262144
       },
