@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-27T07:44:18.277Z",
+    "generated_at": "2026-11-27T07:47:16.114Z",
     "fx": {
       "usd_cny": 6.6711,
       "as_of": "2026-11-25",
@@ -493,6 +493,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -582,6 +583,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -671,6 +673,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -760,6 +763,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -849,6 +853,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -938,6 +943,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1027,6 +1033,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1116,6 +1123,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1205,6 +1213,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1294,6 +1303,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1383,6 +1393,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1472,6 +1483,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1561,6 +1573,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1650,6 +1663,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1739,6 +1753,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1828,6 +1843,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1917,6 +1933,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -2006,6 +2023,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -2095,6 +2113,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -2184,6 +2203,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -2273,6 +2293,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -2362,6 +2383,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -2449,6 +2471,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
       },
       "model": {
@@ -2532,6 +2555,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -2615,6 +2639,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -2698,6 +2723,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -2781,6 +2807,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -2864,6 +2891,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -2947,6 +2975,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3030,6 +3059,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -3113,6 +3143,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -3196,6 +3227,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3279,6 +3311,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
       },
       "model": {
@@ -3362,6 +3395,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3445,6 +3479,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3528,6 +3563,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3611,6 +3647,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3694,6 +3731,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3777,6 +3815,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3860,6 +3899,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3943,6 +3983,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4026,6 +4067,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4109,6 +4151,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4192,6 +4235,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4275,6 +4319,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
       },
       "model": {
@@ -4358,6 +4403,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -4441,6 +4487,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4524,6 +4571,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4607,6 +4655,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -4690,6 +4739,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4773,6 +4823,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4856,6 +4907,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4939,6 +4991,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5022,6 +5075,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -5105,6 +5159,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -5188,6 +5243,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5271,6 +5327,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5354,6 +5411,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5437,6 +5495,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5520,6 +5579,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5603,6 +5663,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -5686,6 +5747,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5769,6 +5831,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5852,6 +5915,7 @@
         "risk_flags": [],
         "first_seen": null,
         "operating_since": null,
+        "billing_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -5937,6 +6001,7 @@
         ],
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
+        "billing_label": "按量付费",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {

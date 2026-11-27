@@ -275,6 +275,7 @@
     return '<tr class="' + (r.station.demo ? 'is-demo' : '') + '">' +
       '<td>' + stationCell(r) + '</td>' +
       '<td class="num op">' + opCell(r) + '</td>' +
+      '<td class="hide-sm">' + (r.station.billing_label ? esc(r.station.billing_label) : '<span class="muted">—</span>') + '</td>' +
       '<td><div class="model"><div class="m">' + vico(r.model.vendor) + esc(r.model.label) + '</div><div class="v">' + esc(r.model.id) + '</div></div></td>' +
       '<td class="num">' + pairCell(v.input, v.off && v.off.input, calcTip, isOff) + '</td>' +
       '<td class="num">' + pairCell(v.output, v.off && v.off.output, calcTip, isOff) + '</td>' +
@@ -299,7 +300,7 @@
 
     $('#tbody').innerHTML = slice.length
       ? slice.map(renderRow).join('')
-      : '<tr><td colspan="9" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
+      : '<tr><td colspan="10" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
     $('#count').textContent = list.length + ' / ' + rows.length + ' 行';
     renderPager(list.length, pages, start, slice.length);
     renderUnits();

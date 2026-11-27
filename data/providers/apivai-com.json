@@ -185,5 +185,10 @@
       "note": "站价 $0.0304/M × 汇率 6.6711"
     }
   },
-  "operating_since": "2026-05"
+  "operating_since": "2026-05",
+  "billing": {
+    "ratio": null,
+    "measured_at": null,
+    "method": "按量付费"
+  }
 }

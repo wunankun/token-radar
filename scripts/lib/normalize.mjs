@@ -222,6 +222,7 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
         risk_flags: station.risk_flags || [],
         first_seen: station.first_seen ?? null,
         operating_since: station.operating_since ?? null,
+        billing_label: station.kind === 'official' ? null : (station.billing?.method || '按量付费'),
         note: station.note ?? null,
       },
       model: { id: modelId, label: model.label, vendor: model.vendor, context: model.context ?? null },
