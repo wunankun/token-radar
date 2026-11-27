@@ -239,9 +239,10 @@
     var name = esc(s.name);
     var link = s.affiliate_url || s.homepage;
     var inner = link
-      ? '<a href="' + esc(link) + '" target="_blank" rel="sponsored nofollow noopener">' + name + '</a>'
+      ? '<a href="' + esc(link) + '" target="_blank" rel="sponsored nofollow noopener"' +
+        (s.affiliate_url ? ' title="推广链接：通过此链接注册我们可能获得返佣，排名不受影响"' : '') +
+        '>' + name + '</a>'
       : name;
-    if (s.affiliate_url) inner += '<span class="aff-dot" title="推广链接：通过此链接注册我们可能获得返佣，排名不受影响">AD</span>';
     var extra = '';
     if (s.usd_rate && s.usd_rate > 1.05) {
       extra = '<span class="chip chip-fx" title="该站 /api/status 声明 1 美元额度 = ¥' + money(s.usd_rate) + '，本行价格已按这个汇率折算（不是 1 元 = 1 美元）">1$=¥' + money(s.usd_rate) + '</span>';

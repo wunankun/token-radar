@@ -140,7 +140,6 @@ tbody tr.is-demo:hover { background: #f7f7fb; }
 .station .name { font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
 .station .name a { text-decoration: none; border-bottom: 1px solid transparent; }
 .station .name a:hover { border-bottom-color: currentColor; }
-.aff-dot { font-size: 10px; color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 0 3px; line-height: 1.5; }
 .chips { display: flex; gap: 4px; flex-wrap: wrap; }
 .chip {
   font-size: 10.5px; line-height: 1.7; padding: 0 6px; border-radius: 5px;
