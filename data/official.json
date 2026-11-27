@@ -11,30 +11,28 @@
       "verified_at": "2026-11-26",
       "models": {
         "deepseek-v4-pro": {
-          "input": 0.111,
-          "output": 4.44,
-          "cache_read": 0.044,
-          "offpeak": {
-            "input": 0.66,
-            "output": 1.98,
-            "cache_read": 0.022
+          "input": 0.66,
+          "output": 1.98,
+          "cache_read": 0.022,
+          "peak": {
+            "input": 1.32,
+            "output": 3.96,
+            "cache_read": 0.044
           },
-          "note": "峰时价；北京时间谷时（UTC 16:00-00:00 之外按官方定义）为 5 折。1M 上下文，最大输出 384K。",
-          "source": "openrouter",
-          "openrouter_id": "deepseek/deepseek-v4-pro-0813"
+          "note": "谷价（off-peak）；峰价为谷价的 2 倍（×2）。峰时：UTC 01:00–04:00、06:00–10:00 的周一至周五（中国法定节假日除外），其余时间均为谷价。1M 上下文，最大输出 384K。",
+          "source": "official"
         },
         "deepseek-flash": {
           "input": 0.15,
           "output": 0.6,
-          "cache_read": 0.006,
-          "offpeak": {
-            "input": 0.15,
-            "output": 0.6,
-            "cache_read": 0.003
+          "cache_read": 0.003,
+          "peak": {
+            "input": 0.3,
+            "output": 1.2,
+            "cache_read": 0.006
           },
-          "note": "峰时价，谷时 5 折。",
-          "source": "openrouter",
-          "openrouter_id": "deepseek/deepseek-v4.1-flash"
+          "note": "谷价（off-peak）；峰价为谷价的 2 倍（×2）。峰时：UTC 01:00–04:00、06:00–10:00 的周一至周五（中国法定节假日除外），其余时间均为谷价。1M 上下文，最大输出 384K。",
+          "source": "official"
         },
         "deepseek-v3-2": {
           "input": 0.26,

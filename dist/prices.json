@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-27T08:26:54.202Z",
+    "generated_at": "2026-11-27T08:32:52.243Z",
     "fx": {
       "usd_cny": 6.6711,
       "as_of": "2026-11-25",
@@ -548,12 +548,12 @@
       "official_cny": {
         "input": 1.0007,
         "output": 4.0027,
-        "cache_read": 0.04
+        "cache_read": 0.02
       },
       "official_usd": {
         "input": 0.15,
         "output": 0.6,
-        "cache_read": 0.006,
+        "cache_read": 0.003,
         "cache_write": null
       },
       "ratio": {
@@ -572,7 +572,7 @@
         "official": {
           "input": 0.15,
           "output": 0.6,
-          "cache_read": 0.006
+          "cache_read": 0.003
         },
         "blend": 0.0285,
         "discount": 0.9
@@ -587,6 +587,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$0.15 × 10 ÷ $100 × 6.6711",
+      "peak": null,
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
     },
     {
@@ -678,6 +679,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $0.0144/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -769,6 +771,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $0.0304/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -860,6 +863,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $0.3/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -951,6 +955,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $0.3/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -1042,6 +1047,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $0.3/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -1133,6 +1139,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $0.3/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -1224,6 +1231,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $1.22/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -1315,6 +1323,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $1.52/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -1406,6 +1415,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $0.15/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -1493,6 +1503,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$0.15 × 10 ÷ $60 × 6.6711",
+      "peak": null,
       "pricing_url": "https://bigmodel.cn/pricing"
     },
     {
@@ -1584,6 +1595,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $0.61/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -1671,6 +1683,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$0.14 × 10 ÷ $60 × 6.6711",
+      "peak": null,
       "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
     },
     {
@@ -1758,6 +1771,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$0.4 × 10 ÷ $60 × 6.6711",
+      "peak": null,
       "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
     },
     {
@@ -1845,6 +1859,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$0.95 × 10 ÷ $60 × 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
     },
     {
@@ -1932,6 +1947,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$1.4 × 10 ÷ $200 × 6.6711",
+      "peak": null,
       "pricing_url": "https://bigmodel.cn/pricing"
     },
     {
@@ -2019,6 +2035,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$2 × 10 ÷ $60 × 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
     },
     {
@@ -2106,6 +2123,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$0.15 × 10 ÷ $30 × 6.6711",
+      "peak": null,
       "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
     },
     {
@@ -2193,6 +2211,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$0.834 × 10 ÷ $30 × 6.6711",
+      "peak": null,
       "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
     },
     {
@@ -2280,6 +2299,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$2 × 10 ÷ $30 × 6.6711",
+      "peak": null,
       "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing"
     },
     {
@@ -2371,6 +2391,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $0.75/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -2462,6 +2483,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $0.75/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -2553,6 +2575,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $0.38/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -2644,6 +2667,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $1.89/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -2735,6 +2759,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $1.89/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -2826,6 +2851,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $1.89/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -2917,6 +2943,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $1.89/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -3008,6 +3035,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $1.52/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -3099,6 +3127,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $1.14/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -3190,6 +3219,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $3.18/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -3281,6 +3311,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $3.97/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -3372,94 +3403,8 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $3.97/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
-    },
-    {
-      "station": {
-        "id": "opencode",
-        "name": "OpenCode",
-        "kind": "aggregator",
-        "kind_label": "聚合商",
-        "demo": false,
-        "homepage": "https://opencode.ai/",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "usd_rate": null,
-        "top_up": null,
-        "risk_flags": [
-          "unverified"
-        ],
-        "first_seen": "2026-11-27",
-        "operating_since": null,
-        "billing_label": "Go 订阅",
-        "price_source_label": "Go 套餐折算",
-        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
-      },
-      "model": {
-        "id": "deepseek-v4-pro",
-        "label": "DeepSeek V4 Pro",
-        "vendor": "DeepSeek",
-        "context": 1000000
-      },
-      "mode": "absolute",
-      "price_source": "manual",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 2.9353,
-        "output": 8.8059,
-        "cache_read": 0.0978
-      },
-      "effective": {
-        "input": 2.9353,
-        "output": 8.8059,
-        "cache_read": 0.0978
-      },
-      "official_cny": {
-        "input": 0.7405,
-        "output": 29.6197,
-        "cache_read": 0.2935
-      },
-      "official_usd": {
-        "input": 0.111,
-        "output": 4.44,
-        "cache_read": 0.044,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 3.964,
-        "output": 0.2973,
-        "blend": 0.4994
-      },
-      "discount": 0.5006,
-      "blend_effective": 4.6965,
-      "usd": {
-        "effective": {
-          "input": 0.44,
-          "output": 1.32,
-          "cache_read": 0.0147
-        },
-        "official": {
-          "input": 0.111,
-          "output": 4.44,
-          "cache_read": 0.044
-        },
-        "blend": 0.704,
-        "discount": 0.5006
-      },
-      "calc": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711 = ¥2.9353/M",
-      "calc_full": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711 = ¥2.9353/M",
-      "calc_basis": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711 = ¥2.9353/M",
-      "group": null,
-      "observed": false,
-      "tiers": null,
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711",
-      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
     },
     {
       "station": {
@@ -3546,6 +3491,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$0.1 × 10 ÷ $15 × 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -3633,6 +3579,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$0.1 × 10 ÷ $15 × 6.6711",
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -3720,7 +3667,96 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$0.2 × 10 ÷ $15 × 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "deepseek-v4-pro",
+        "label": "DeepSeek V4 Pro",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 2.9353,
+        "output": 8.8059,
+        "cache_read": 0.0978
+      },
+      "effective": {
+        "input": 2.9353,
+        "output": 8.8059,
+        "cache_read": 0.0978
+      },
+      "official_cny": {
+        "input": 4.4029,
+        "output": 13.2088,
+        "cache_read": 0.1468
+      },
+      "official_usd": {
+        "input": 0.66,
+        "output": 1.98,
+        "cache_read": 0.022,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.6667,
+        "output": 0.6667,
+        "blend": 0.6667
+      },
+      "discount": 0.3333,
+      "blend_effective": 4.6965,
+      "usd": {
+        "effective": {
+          "input": 0.44,
+          "output": 1.32,
+          "cache_read": 0.0147
+        },
+        "official": {
+          "input": 0.66,
+          "output": 1.98,
+          "cache_read": 0.022
+        },
+        "blend": 0.704,
+        "discount": 0.3333
+      },
+      "calc": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711 = ¥2.9353/M",
+      "calc_full": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711 = ¥2.9353/M",
+      "calc_basis": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711 = ¥2.9353/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711",
+      "peak": null,
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
     },
     {
       "station": {
@@ -3807,6 +3843,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$2 × 10 ÷ $15 × 6.6711",
+      "peak": null,
       "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
     },
     {
@@ -3894,6 +3931,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$1.5 × 10 ÷ $15 × 6.6711",
+      "peak": null,
       "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
     },
     {
@@ -3981,6 +4019,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$3 × 10 ÷ $15 × 6.6711",
+      "peak": null,
       "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
     },
     {
@@ -4010,29 +4049,29 @@
         "context": 1000000
       },
       "mode": "official",
-      "price_source": "reference",
+      "price_source": "official",
       "bonus": 1,
       "billing_ratio": 1,
       "billing_source": "default",
       "nominal": {
         "input": 1.0007,
         "output": 4.0027,
-        "cache_read": 0.04
+        "cache_read": 0.02
       },
       "effective": {
         "input": 1.0007,
         "output": 4.0027,
-        "cache_read": 0.04
+        "cache_read": 0.02
       },
       "official_cny": {
         "input": 1.0007,
         "output": 4.0027,
-        "cache_read": 0.04
+        "cache_read": 0.02
       },
       "official_usd": {
         "input": 0.15,
         "output": 0.6,
-        "cache_read": 0.006,
+        "cache_read": 0.003,
         "cache_write": null
       },
       "ratio": {
@@ -4046,19 +4085,19 @@
         "effective": {
           "input": 0.15,
           "output": 0.6,
-          "cache_read": 0.006
+          "cache_read": 0.003
         },
         "official": {
           "input": 0.15,
           "output": 0.6,
-          "cache_read": 0.006
+          "cache_read": 0.003
         },
         "blend": 0.285,
         "discount": 0
       },
-      "calc": "OpenRouter $0.15/M × 汇率 6.6711 = ¥1.0007/M",
-      "calc_full": "OpenRouter $0.15/M × 汇率 6.6711 = ¥1.0007/M",
-      "calc_basis": "OpenRouter $0.15/M × 汇率 6.6711 = ¥1.0007/M",
+      "calc": "官方 $0.15/M × 汇率 6.6711 = ¥1.0007/M",
+      "calc_full": "官方 $0.15/M × 汇率 6.6711 = ¥1.0007/M",
+      "calc_basis": "官方 $0.15/M × 汇率 6.6711 = ¥1.0007/M",
       "group": null,
       "observed": false,
       "tiers": null,
@@ -4066,6 +4105,11 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": {
+        "input": 0.3,
+        "output": 1.2,
+        "cache_read": 0.006
+      },
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
     },
     {
@@ -4151,6 +4195,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
     },
     {
@@ -4236,6 +4281,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://bigmodel.cn/pricing"
     },
     {
@@ -4321,6 +4367,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -4406,6 +4453,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -4491,6 +4539,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
     },
     {
@@ -4576,6 +4625,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://bigmodel.cn/pricing"
     },
     {
@@ -4661,6 +4711,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -4746,6 +4797,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -4831,6 +4883,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -4916,6 +4969,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
     },
     {
@@ -5001,6 +5055,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
     },
     {
@@ -5086,6 +5141,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
     },
     {
@@ -5171,6 +5227,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
     },
     {
@@ -5256,6 +5313,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -5341,7 +5399,98 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
+        "id": "deepseek",
+        "name": "DeepSeek 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://platform.deepseek.com/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "operating_since": null,
+        "billing_label": null,
+        "price_source_label": null,
+        "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
+      },
+      "model": {
+        "id": "deepseek-v4-pro",
+        "label": "DeepSeek V4 Pro",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "official",
+      "price_source": "official",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 4.4029,
+        "output": 13.2088,
+        "cache_read": 0.1468
+      },
+      "effective": {
+        "input": 4.4029,
+        "output": 13.2088,
+        "cache_read": 0.1468
+      },
+      "official_cny": {
+        "input": 4.4029,
+        "output": 13.2088,
+        "cache_read": 0.1468
+      },
+      "official_usd": {
+        "input": 0.66,
+        "output": 1.98,
+        "cache_read": 0.022,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 7.0447,
+      "usd": {
+        "effective": {
+          "input": 0.66,
+          "output": 1.98,
+          "cache_read": 0.022
+        },
+        "official": {
+          "input": 0.66,
+          "output": 1.98,
+          "cache_read": 0.022
+        },
+        "blend": 1.056,
+        "discount": 0
+      },
+      "calc": "官方 $0.66/M × 汇率 6.6711 = ¥4.4029/M",
+      "calc_full": "官方 $0.66/M × 汇率 6.6711 = ¥4.4029/M",
+      "calc_basis": "官方 $0.66/M × 汇率 6.6711 = ¥4.4029/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "peak": {
+        "input": 1.32,
+        "output": 3.96,
+        "cache_read": 0.044
+      },
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
     },
     {
       "station": {
@@ -5426,6 +5575,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://bigmodel.cn/pricing"
     },
     {
@@ -5511,6 +5661,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://bigmodel.cn/pricing"
     },
     {
@@ -5596,6 +5747,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
     },
     {
@@ -5681,6 +5833,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
     },
     {
@@ -5766,6 +5919,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
     },
     {
@@ -5851,6 +6005,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://bigmodel.cn/pricing"
     },
     {
@@ -5936,6 +6091,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
     },
     {
@@ -6021,92 +6177,8 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
-    },
-    {
-      "station": {
-        "id": "deepseek",
-        "name": "DeepSeek 官方",
-        "kind": "official",
-        "kind_label": "官方直购",
-        "demo": false,
-        "homepage": "https://platform.deepseek.com/",
-        "affiliate_url": null,
-        "affiliate_code": null,
-        "commission": null,
-        "usd_rate": null,
-        "top_up": null,
-        "risk_flags": [],
-        "first_seen": null,
-        "operating_since": null,
-        "billing_label": null,
-        "price_source_label": null,
-        "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
-      },
-      "model": {
-        "id": "deepseek-v4-pro",
-        "label": "DeepSeek V4 Pro",
-        "vendor": "DeepSeek",
-        "context": 1000000
-      },
-      "mode": "official",
-      "price_source": "reference",
-      "bonus": 1,
-      "billing_ratio": 1,
-      "billing_source": "default",
-      "nominal": {
-        "input": 0.7405,
-        "output": 29.6197,
-        "cache_read": 0.2935
-      },
-      "effective": {
-        "input": 0.7405,
-        "output": 29.6197,
-        "cache_read": 0.2935
-      },
-      "official_cny": {
-        "input": 0.7405,
-        "output": 29.6197,
-        "cache_read": 0.2935
-      },
-      "official_usd": {
-        "input": 0.111,
-        "output": 4.44,
-        "cache_read": 0.044,
-        "cache_write": null
-      },
-      "ratio": {
-        "input": 1,
-        "output": 1,
-        "blend": 1
-      },
-      "discount": 0,
-      "blend_effective": 9.4042,
-      "usd": {
-        "effective": {
-          "input": 0.111,
-          "output": 4.44,
-          "cache_read": 0.044
-        },
-        "official": {
-          "input": 0.111,
-          "output": 4.44,
-          "cache_read": 0.044
-        },
-        "blend": 1.4097,
-        "discount": 0
-      },
-      "calc": "OpenRouter $0.111/M × 汇率 6.6711 = ¥0.7405/M",
-      "calc_full": "OpenRouter $0.111/M × 汇率 6.6711 = ¥0.7405/M",
-      "calc_basis": "OpenRouter $0.111/M × 汇率 6.6711 = ¥0.7405/M",
-      "group": null,
-      "observed": false,
-      "tiers": null,
-      "recharge": null,
-      "calc_adjust": "",
-      "health": null,
-      "note": null,
-      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
     },
     {
       "station": {
@@ -6191,6 +6263,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -6276,6 +6349,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -6361,6 +6435,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
     },
     {
@@ -6446,6 +6521,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -6531,6 +6607,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing"
     },
     {
@@ -6616,6 +6693,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -6701,6 +6779,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -6786,6 +6865,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -6871,6 +6951,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -6956,6 +7037,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
     },
     {
@@ -7041,6 +7123,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -7126,6 +7209,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -7211,6 +7295,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -7296,6 +7381,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -7381,6 +7467,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -7466,6 +7553,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -7551,6 +7639,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -7636,6 +7725,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -7721,6 +7811,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -7806,6 +7897,7 @@
       "calc_adjust": "",
       "health": null,
       "note": null,
+      "peak": null,
       "pricing_url": "https://platform.openai.com/docs/pricing"
     },
     {
@@ -7897,6 +7989,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "站价 $0.19/M × 汇率 6.6711",
+      "peak": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
     },
     {
@@ -7984,6 +8077,7 @@
       "calc_adjust": "",
       "health": null,
       "note": "Go 折算：$0.834 × 10 ÷ $60 × 6.6711",
+      "peak": null,
       "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
     }
   ]

@@ -262,6 +262,10 @@
     return '<span class="src" title="' + esc(tip) + '">' + label + '</span>';
   }
 
+  function peakTip(r) {
+    return r.peak ? '<div class="peak" title="这家模型有峰谷价，表里统一按谷价；峰价为谷价的 2 倍">峰价 ×2</div>' : '';
+  }
+
   function renderRow(r) {
     var v = view(r);
     var d = v.disc;
@@ -284,8 +288,8 @@
       '<td class="num op">' + opCell(r) + '</td>' +
       '<td class="hide-sm billing">' + (r.station.billing_label ? esc(r.station.billing_label) : '<span class="muted">—</span>') + '</td>' +
       '<td><div class="model"><div class="m">' + vico(r.model.vendor) + esc(r.model.label) + '</div><div class="v">' + esc(r.model.id) + '</div></div></td>' +
-      '<td class="num">' + pairCell(v.input, v.off && v.off.input, calcTip, isOff) + '</td>' +
-      '<td class="num">' + pairCell(v.output, v.off && v.off.output, calcTip, isOff) + '</td>' +
+      '<td class="num">' + pairCell(v.input, v.off && v.off.input, calcTip, isOff) + peakTip(r) + '</td>' +
+      '<td class="num">' + pairCell(v.output, v.off && v.off.output, calcTip, isOff) + peakTip(r) + '</td>' +
       '<td class="num hide-md">' + pairCell(v.cache_read, v.off && v.off.cache_read, calcTip, isOff) + '</td>' +
       '<td class="num"><span class="disc ' + discCls(d) + '" title="' + dTip + '">' +
         (r.station.kind === 'official' ? '官方' : discText(d)) + '</span></td>' +

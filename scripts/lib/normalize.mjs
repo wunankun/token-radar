@@ -70,6 +70,7 @@ export function buildOfficialIndex(official) {
           cache_write: num(price.cache_write),
         },
         offpeak: price.offpeak || null,
+        peak: price.peak || null,
         note: price.note || null,
         source: price.source || 'official',
       });
@@ -256,6 +257,7 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
       calc_adjust: adj.join(' '),
       health: health || null,
       note: stationModel?.note ?? null,
+      peak: (mode === 'official' || mode === 'multiplier') && official?.peak ? official.peak : null,
       pricing_url: official?.pricing_url ?? station.pricing_url ?? station.homepage ?? null,
     },
   };
