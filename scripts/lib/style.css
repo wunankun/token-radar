@@ -158,6 +158,7 @@ tbody tr.is-demo:hover { background: #f7f7fb; }
 
 .model .m { font-weight: 600; }
 .model .v { font-size: 11.5px; color: var(--ink-3); }
+td.billing { font-size: 12px; color: var(--ink-3); }
 .muted { color: var(--ink-3); }
 thead th .th-sub { font-weight: 400; font-size: 10px; letter-spacing: 0; opacity: 0.85; }
 
