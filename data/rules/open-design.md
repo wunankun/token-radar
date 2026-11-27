@@ -1,6 +1,7 @@
 # OpenDesign（open-design.ai）
 
 - **站点**：OpenDesign · open-design.ai（设计工具起家，现在卖 Go / Plus / Pro / Max 模型订阅）
+- **状态**：**暂不上榜**（`status: paused`，2026-11-27）。额度口径核实不了：官方标称 $220/月，第三方直读后台约 $60/月、实测博客约 $80/月，折扣差 5–20 个百分点；等真实账单再放回
 - **结算**：**美元**。订阅按 USD 收费；额度也用美元计量。榜单折算：人民币单价 = Go 等效美元单价 × 汇率 6.6711（`config.json` 的 `fx.usd_cny`）
 - **运营时间**：2026-08（Go 套餐随 GitHub release v0.20.1 于 2026-08-19 推出；站点本身更早，web.archive.org 最早快照 2024-08-31）
 - **来源**：`https://open-design.ai/zh/model-credits/`（Coding Plan 的「额度扣除倍率」，2026-11-27 抓取）、`https://amr-api.open-design.ai/api/v1/public/model-prices`（官方公开模型价目表，2026-11-27 抓，50 条）、`https://open-design.ai/zh/help/billing/`（套餐与额度说明）、`https://open-design.ai/zh/pricing/`（Go $10/月、标称月总额度 $220）
