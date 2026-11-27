@@ -189,7 +189,8 @@ export function normalizeEntry({ station, modelId, model, stationModel, official
       (g && g.name ? `（${g.name} 组）` : '') + fxNote +
       ` = ${cny(effective.input)}/M`;
   } else {
-    basis = `站上标价 ${cny(nominal.input)}/M`;
+    // 人工录的绝对价：模型条目可以带 note 写明原始币种与换算（如「站价 $0.75/M × 6.6711」）
+    basis = stationModel?.note ? `${stationModel.note} = ${cny(nominal.input)}/M` : `站上标价 ${cny(nominal.input)}/M`;
   }
   const adj = [];
   if (billing !== 1) adj.push(`× 计费 ${fmt(billing)}`);

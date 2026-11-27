@@ -40,6 +40,7 @@ npm run build:strict                   # 构建，warning 也算失败（CI 的�
 | --- | --- | --- |
 | 计价公式 | `输入$ = model_ratio × 2 × group_ratio`，`输出 = 输入 × completion_ratio`，`缓存 = 输入 × cache_ratio` | one-api 口径 1 USD = 500000 quota |
 | 面值惯例 | 多数站「1 元 = 1 美元额度」，倍率 0.5 就是 ¥0.5 实付 | 不这么算会凭空多算 6.6 倍 |
+| 美元计价的站 | 用 `absolute` 录人民币价 = `站价 USD × config.fx`，模型 `note` 写「站价 $x/M × 汇率 y」 | 这类站不适用 1 元 = 1 美元，按惯例算会把人民币成本低估 6.6 倍 |
 | 人民币口径 | **实付**：`标价 × 计费系数`，充值赠送**不折进价格** | 用户拍板：充值优惠单独一列 |
 | 美元口径 | 同一笔实付 ÷ 汇率（`fetch-fx` 自动抓） | 两个口径优惠力度必须一致 |
 | 选哪个分组 | `auto_groups` 最便宜的非限用途档 → `enable_groups` 最便宜档 → `default` | `default` 是占位符（「自动选择你能用的分组」），不是价格 |

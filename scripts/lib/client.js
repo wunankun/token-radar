@@ -261,7 +261,8 @@
     var isOff = r.station.kind === 'official';
     var calcTip = r.station.kind === 'official'
       ? '官方基准价'
-      : '站上标价 ' + money(r.nominal.input) + ' × 计费 ' + (r.billing_ratio || 1).toFixed(2) + ' = 到手价；充值优惠不算在内';
+      : (r.calc_full || r.calc) ||
+        '站上标价 ' + money(r.nominal.input) + ' × 计费 ' + (r.billing_ratio || 1).toFixed(2) + ' = 到手价；充值优惠不算在内';
     var gTip = r.group
       ? '\n这家站公开了 ' + r.group.count + ' 个分组，倍率 ' + r.group.min + '–' + r.group.max + '×，本站按「' + r.group.name + '」组（×' + r.group.ratio + '）算'
       : '';
