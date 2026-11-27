@@ -21,7 +21,7 @@
   "risk_flags": [
     "unverified"
   ],
-  "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。",
+  "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。",
   "models": {
     "claude-sonnet-5-5": {
       "mode": "absolute",
@@ -141,6 +141,49 @@
       "output": 37.8918,
       "cache_read": 0.7338,
       "note": "站价 $1.14/M × 汇率 6.6711"
+    },
+    "claude-fable-5-1": {
+      "mode": "absolute",
+      "input": 26.4843,
+      "output": 132.5548,
+      "cache_read": 0.6618,
+      "note": "站价 $3.97/M × 汇率 6.6711"
+    },
+    "claude-fable-5": {
+      "mode": "absolute",
+      "input": 26.4843,
+      "output": 132.5548,
+      "cache_read": 2.6684,
+      "note": "站价 $3.97/M × 汇率 6.6711"
+    },
+    "claude-opus-4-7": {
+      "mode": "absolute",
+      "input": 12.6084,
+      "output": 63.1753,
+      "cache_read": 1.2675,
+      "note": "站价 $1.89/M × 汇率 6.6711"
+    },
+    "claude-opus-4-6": {
+      "mode": "absolute",
+      "input": 12.6084,
+      "output": 63.1753,
+      "cache_read": 1.2675,
+      "note": "站价 $1.89/M × 汇率 6.6711"
+    },
+    "claude-haiku-4-5": {
+      "mode": "absolute",
+      "input": 2.535,
+      "output": 12.6084,
+      "cache_read": 0.2562,
+      "note": "站价 $0.38/M × 汇率 6.6711"
+    },
+    "gpt-5.6-luna": {
+      "mode": "absolute",
+      "input": 0.2028,
+      "output": 1.2008,
+      "cache_read": 0.0213,
+      "note": "站价 $0.0304/M × 汇率 6.6711"
     }
-  }
+  },
+  "operating_since": "2026-05"
 }

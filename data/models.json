@@ -492,5 +492,88 @@
       "tencent/hy4-flash",
       "hunyuan-4-flash"
     ]
+  },
+  "claude-fable-5-1": {
+    "label": "Claude Fable 5.1",
+    "vendor": "Anthropic",
+    "popularity": 48,
+    "context": 200000,
+    "official": {
+      "provider": "anthropic",
+      "model": "claude-fable-5-1"
+    },
+    "aliases": [
+      "claude-fable-5-1",
+      "claude-fable-5.1"
+    ]
+  },
+  "claude-fable-5": {
+    "label": "Claude Fable 5",
+    "vendor": "Anthropic",
+    "popularity": 46,
+    "context": 200000,
+    "official": {
+      "provider": "anthropic",
+      "model": "claude-fable-5"
+    },
+    "aliases": [
+      "claude-fable-5"
+    ]
+  },
+  "claude-opus-4-7": {
+    "label": "Claude Opus 4.7",
+    "vendor": "Anthropic",
+    "popularity": 52,
+    "context": 200000,
+    "official": {
+      "provider": "anthropic",
+      "model": "claude-opus-4-7"
+    },
+    "aliases": [
+      "claude-opus-4-7",
+      "claude-opus-4.7"
+    ]
+  },
+  "claude-opus-4-6": {
+    "label": "Claude Opus 4.6",
+    "vendor": "Anthropic",
+    "popularity": 50,
+    "context": 200000,
+    "official": {
+      "provider": "anthropic",
+      "model": "claude-opus-4-6"
+    },
+    "aliases": [
+      "claude-opus-4-6",
+      "claude-opus-4.6"
+    ]
+  },
+  "claude-haiku-4-5": {
+    "label": "Claude Haiku 4.5",
+    "vendor": "Anthropic",
+    "popularity": 55,
+    "context": 200000,
+    "official": {
+      "provider": "anthropic",
+      "model": "claude-haiku-4-5"
+    },
+    "aliases": [
+      "claude-haiku-4-5",
+      "claude-haiku-4.5"
+    ]
+  },
+  "gpt-5.6-luna": {
+    "label": "GPT-5.6 Luna",
+    "vendor": "OpenAI",
+    "popularity": 58,
+    "context": 400000,
+    "official": {
+      "provider": "openai",
+      "model": "gpt-5.6-luna"
+    },
+    "aliases": [
+      "gpt-5.6-luna",
+      "gpt-5-6-luna"
+    ]
   }
 }
