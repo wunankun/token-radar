@@ -586,7 +586,7 @@
           '<td class="num">' + (d == null ? '<span class="dash">—</span>' : odd ? '<span class="disc d-flat" title="这家站对同一模型的报价远高于参照价，通常说明它的倍率表单位不同（号池 / 统一价）">' + (i / b[0]).toFixed(1) + '×</span>' : '<span class="disc ' + discCls(d) + '">' + discText(d) + '</span>') + '</td>' +
           '<td class="cat-name">' + esc(name) + '</td></tr>';
       }).join('');
-      out.innerHTML = head + '<div class="tablewrap cat-wrap"><table class="cat-table"><thead><tr><th>站点</th><th class="num">输入</th><th class="num">输出</th><th class="num hide-md">缓存</th><th class="num">对比参照价</th><th>站上模型名</th></tr></thead><tbody>' + trs + '</tbody></table></div>';
+      out.innerHTML = head + '<div class="tablewrap cat-wrap"><table class="cat-table"><thead><tr><th>站点</th><th class="num">输入</th><th class="num">输出</th><th class="num hide-md">缓存读</th><th class="num">对比参照价</th><th>站上模型名</th></tr></thead><tbody>' + trs + '</tbody></table></div>';
     });
   }
 
