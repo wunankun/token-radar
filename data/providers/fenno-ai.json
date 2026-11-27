@@ -1,0 +1,104 @@
+{
+  "id": "fenno-ai",
+  "name": "Fenno",
+  "kind": "aggregator",
+  "homepage": "https://api.fenno.ai/",
+  "pricing_url": "https://api.fenno.ai/purchase?tab=subscription&plan_id=13",
+  "first_seen": "2026-11-27",
+  "price_updated_at": "2026-11-27",
+  "operating_since": null,
+  "status": "active",
+  "affiliate": {
+    "url": "https://api.fenno.ai/register?aff=6D3LLN7NQ926&redirect=%2Fpurchase%3Ftab%3Dsubscription%26plan_id%3D13",
+    "code": "6D3LLN7NQ926",
+    "disclosure": true,
+    "note": "用户提供的分享短链 https://api.fenno.ai/s/MwBN 解析后的邀请链接；返佣与排名无关"
+  },
+  "billing": {
+    "ratio": null,
+    "measured_at": null,
+    "method": "Mini 订阅"
+  },
+  "subscription": {
+    "plan": "Mini",
+    "usd_per_month": 19.99,
+    "allowance_note": "月额度 $200、周上限 $50、日不限（到期 30 天）；额度按站上标价扣，买满用满折合 19.99 ÷ 200 ≈ 0.09995× 标价"
+  },
+  "price_source_label": "Mini 套餐折算",
+  "risk_flags": [
+    "unverified"
+  ],
+  "note": "订阅制：Mini $19.99/月，月额度 $200（周上限 $50，每日不限）。折算口径 = 站上标价 × 19.99 ÷ 200，即满额用满时约为标价的 10%；用不满额度则实际单价更高。价格与套餐抓自 api.fenno.ai 公开接口 /api/v1/models 与 /api/v1/payment/public/plans（2026-11-27）。支付宝/微信实付人民币按当日汇率，未实调核验。",
+  "models": {
+    "gpt-6.2-sol": {
+      "mode": "absolute",
+      "input": 1.3336,
+      "output": 6.6678,
+      "cache_read": 0.0667,
+      "note": "Mini 折算：$2/M × 19.99 ÷ 200 × 6.6711"
+    },
+    "gpt-6.2-astra": {
+      "mode": "absolute",
+      "input": 5.3342,
+      "output": 26.6711,
+      "cache_read": 0.2667,
+      "note": "Mini 折算：$8/M × 19.99 ÷ 200 × 6.6711"
+    },
+    "gpt-6.1-sol": {
+      "mode": "absolute",
+      "input": 1.3336,
+      "output": 6.6678,
+      "cache_read": 0.0667,
+      "note": "Mini 折算：$2/M × 19.99 ÷ 200 × 6.6711"
+    },
+    "gpt-6.1-terra": {
+      "mode": "absolute",
+      "input": 0.6668,
+      "output": 3.3339,
+      "cache_read": 0.0333,
+      "note": "Mini 折算：$1/M × 19.99 ÷ 200 × 6.6711"
+    },
+    "gpt-6-sol": {
+      "mode": "absolute",
+      "input": 1.3336,
+      "output": 6.6678,
+      "cache_read": 0.1334,
+      "note": "Mini 折算：$2/M × 19.99 ÷ 200 × 6.6711"
+    },
+    "gpt-6-astra": {
+      "mode": "absolute",
+      "input": 6.6678,
+      "output": 33.3388,
+      "cache_read": 0.6668,
+      "note": "Mini 折算：$10/M × 19.99 ÷ 200 × 6.6711"
+    },
+    "gpt-5.6-sol": {
+      "mode": "absolute",
+      "input": 3.3339,
+      "output": 20.0033,
+      "cache_read": 0.3334,
+      "note": "Mini 折算：$5/M × 19.99 ÷ 200 × 6.6711"
+    },
+    "gpt-5.6-terra": {
+      "mode": "absolute",
+      "input": 1.6669,
+      "output": 10.0017,
+      "cache_read": 0.1667,
+      "note": "Mini 折算：$2.5/M × 19.99 ÷ 200 × 6.6711"
+    },
+    "deepseek-v4-pro": {
+      "mode": "absolute",
+      "input": 2.4004,
+      "output": 7.2012,
+      "cache_read": 0.08,
+      "note": "Mini 折算：$3.6/M × 19.99 ÷ 200 × 6.6711"
+    },
+    "deepseek-flash": {
+      "mode": "absolute",
+      "input": 0.5334,
+      "output": 2.1337,
+      "cache_read": 0.0107,
+      "note": "Mini 折算：$0.8/M × 19.99 ÷ 200 × 6.6711（站上 id：deepseek-v4-1-flash）"
+    }
+  }
+}
