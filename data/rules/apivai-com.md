@@ -3,6 +3,7 @@
 - **站点**：APIVAI · apivai.com（API 域名 `api.apivai.com`，Anthropic 格式在根路径，OpenAI 格式在 `/v1`）
 - **结算**：**美元**，预付余额按 USD 计费；不是「1 元 = 1 美元额度」的站。支付宝/微信以人民币收款，按当日汇率折成美元余额（服务条款第 3 条），换汇与通道成本已含在汇率里
 - **来源**：`https://apivai.com/pricing` 与 `https://apivai.com/api/pricing`（2026-11-27 抓取；页面与接口 `updatedAt` 都标注 2026-11-18）；补充 `https://apivai.com/llms.txt`、`https://apivai.com/terms`
+- **运营时间**：2026-05（推断：web.archive.org 最早快照 2026-05-11、crt.sh 首张证书 2026-04-22；官网与条款未写开业时间）
 - **账户档位**：无订阅、无充值档、无分组，所有用户同一张价目表。每把 key 需从余额分配预算（最少 $2），请求从 key 预算扣
 - **最低充值**：$10（卡 / 加密货币）或 ¥20（支付宝 / 微信支付）
 

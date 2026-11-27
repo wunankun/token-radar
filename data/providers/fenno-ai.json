@@ -6,7 +6,7 @@
   "pricing_url": "https://api.fenno.ai/purchase?tab=subscription&plan_id=13",
   "first_seen": "2026-11-27",
   "price_updated_at": "2026-11-27",
-  "operating_since": null,
+  "operating_since": "2026-08",
   "status": "active",
   "affiliate": {
     "url": "https://api.fenno.ai/register?aff=6D3LLN7NQ926&redirect=%2Fpurchase%3Ftab%3Dsubscription%26plan_id%3D13",
@@ -28,7 +28,7 @@
   "risk_flags": [
     "unverified"
   ],
-  "note": "订阅制：Mini $19.99/月，月额度 $200（周上限 $50，每日不限）。折算口径 = 站上标价 × 19.99 ÷ 200，即满额用满时约为标价的 10%；用不满额度则实际单价更高。价格与套餐抓自 api.fenno.ai 公开接口 /api/v1/models 与 /api/v1/payment/public/plans（2026-11-27）。支付宝/微信实付人民币按当日汇率，未实调核验。",
+  "note": "订阅制：Mini $19.99/月，月额度 $200（周上限 $50，每日不限）。折算口径 = 站上标价 × 19.99 ÷ 200，即满额用满时约为标价的 10%；用不满额度则实际单价更高。价格与套餐抓自 api.fenno.ai 公开接口 /api/v1/models 与 /api/v1/payment/public/plans（2026-11-27）。支付宝/微信实付人民币按当日汇率，未实调核验。 上线时间：官网与条款都没有写，按首份网页存档（fenno.ai 最早快照 2026-08-08、api.fenno.ai 2026-08-11）推断为 2026-08，属推断不是官方声明。",
   "models": {
     "gpt-6.2-sol": {
       "mode": "absolute",

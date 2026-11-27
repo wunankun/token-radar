@@ -2,7 +2,7 @@
 
 - **站点**：OpenCode · opencode.ai（Go 订阅制的统一网关）
 - **结算**：**美元**。订阅按 USD 收费；额度也用美元计量。榜单折算：人民币单价 = Go 等效美元单价 × 汇率 6.6711（`config.json` 的 `fx.usd_cny`）
-- **运营时间**：待核验，未写入 `operating_since`
+- **运营时间**：2025-06（推断：官网首份网页存档 2025-06-20、GitHub 仓库 `anomalyco/opencode` 创建于 2025-04-30；官网与条款未写开业时间）
 - **来源**：`https://opencode.ai/docs/console/go/`（Go 订阅规则）、`https://opencode.ai/docs/console/models/`（PAYG 价目表）、`https://opencode.ai/inference/go/v1/models`（实抓 37 条，其中 31 条 chat，每条含 `cost.text.*` 与 `go.monthly_usage.go`）（2026-11-27 抓取）
 - **账户档位**：Go $10/月 · Go Plus $40/月 · Go Teams $20/人/月（2 人起）；另有按量付费（PAYG）余额，订阅额度用完可回落到 PAYG
 

@@ -6,7 +6,7 @@
   "pricing_url": "https://opencode.ai/docs/console/go/",
   "first_seen": "2026-11-27",
   "price_updated_at": "2026-11-27",
-  "operating_since": null,
+  "operating_since": "2025-06",
   "status": "active",
   "affiliate": null,
   "billing": {
@@ -23,7 +23,7 @@
   "risk_flags": [
     "unverified"
   ],
-  "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。",
+  "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。 上线时间：官网与条款都没有写，按官网首份网页存档（web.archive.org 最早快照 2025-06-20）与 GitHub 仓库创建时间（2025-04-30）推断为 2025-06，属推断不是官方声明。",
   "models": {
     "deepseek-flash": {
       "mode": "absolute",

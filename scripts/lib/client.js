@@ -123,12 +123,13 @@
     if (r.station.kind === 'official') return '<span class="muted">—</span>';
     var since = r.station.operating_since;
     if (!since) return '<span class="muted" title="还没记录开业时间，发截图给维护 agent 建档">—</span>';
-    var t = Date.parse(since);
-    if (!isFinite(t)) return '<span class="muted">—</span>';
-    var months = Math.max(0, Math.floor((Date.now() - t) / 2592000000));
-    var y = Math.floor(months / 12), m = months % 12;
-    var text = y ? y + ' 年' + (m ? ' ' + m + ' 个月' : '') : (m ? m + ' 个月' : '不到 1 个月');
-    return '<span title="开业于 ' + esc(since) + '">' + text + '</span>';
+    var t = Date.parse(since + (since.length === 7 ? '-01' : ''));
+    var title = '开业于 ' + since;
+    if (isFinite(t)) {
+      var months = Math.max(0, Math.floor((Date.now() - t) / 2592000000));
+      if (months > 0) title += '（约 ' + (months >= 12 ? Math.floor(months / 12) + ' 年' + (months % 12 ? ' ' + (months % 12) + ' 个月' : '') : months + ' 个月') + '）';
+    }
+    return '<span title="' + esc(title) + '">' + esc(since) + '</span>';
   }
 
   function pairCell(now, off, tip, isOfficial) {
