@@ -242,14 +242,6 @@
     return '<span class="src" title="' + tip + '">' + label + '</span>';
   }
 
-  function rechargeCell(r) {
-    var rc = r.recharge;
-    if (!rc || !rc.pay || !rc.get) return '<span class="muted">—</span>';
-    return '<span class="rc" title="充 ' + rc.pay + ' 得 ' + rc.get +
-      '，相当于单价再打 ' + (rc.get / rc.pay).toFixed(4).replace(/0+$/, '').replace(/\.$/, '') +
-      ' 折；本站不计入价格，只影响你要充多少钱">充' + rc.pay + '得' + rc.get + '</span>';
-  }
-
   function renderRow(r) {
     var v = view(r);
     var d = v.disc;
@@ -275,7 +267,6 @@
       '<td class="num"><span class="disc ' + discCls(d) + '" title="' + dTip + '">' +
         (r.station.kind === 'official' ? '官方' : discText(d)) + '</span></td>' +
 
-      '<td class="num recharge">' + rechargeCell(r) + '</td>' +
       '<td class="calc hide-lg" title="' + esc(r.calc_full || r.calc || '') + '">' + esc(r.calc || '') + '</td>' +
       '<td class="hide-md">' + sourceCell(r) + '</td>' +
       '</tr>';
@@ -293,7 +284,7 @@
 
     $('#tbody').innerHTML = slice.length
       ? slice.map(renderRow).join('')
-      : '<tr><td colspan="9" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
+      : '<tr><td colspan="8" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
     $('#count').textContent = list.length + ' / ' + rows.length + ' 行';
     renderPager(list.length, pages, start, slice.length);
     renderUnits();
@@ -668,25 +659,6 @@
       render();
     });
 
-    var relayCount = rows.filter(function (r) { return r.station.kind !== 'official' && !r.station.demo; }).length;
-    var bar = document.getElementById('empty-relay');
-    if (bar) {
-      if (relayCount === 0) {
-        bar.hidden = false;
-        bar.innerHTML = '还没有上架任何中转站。自动扫到的 69 家先躺在 <code>data/sources.json</code> 里等人工确认（<code>approved: true</code> / <code>node scripts/approve.mjs &lt;域名&gt;</code>），确认一家才會出现在这张表里。下面只有官方直购价，用来当锚。';
-      } else {
-        bar.hidden = true;
-      }
-    }
-    var demoCount = rows.filter(function (r) { return r.station.demo; }).length;
-    if (demoCount) {
-      var b = $('#demo-banner');
-      b.hidden = false;
-      var d = meta.best_demo;
-      b.innerHTML = '⚠️ 库里还有 <b>' + demoCount + '</b> 条演示数据（<code>demo: true</code>），是假站点，已默认隐藏。' +
-        (d ? '演示数据里最优惠为 <b>' + discText(d.discount) + '</b>（' + esc(d.station) + ' · ' + esc(d.model) + '）。' : '') +
-        '勾选上面的「显示演示数据」可以看到它们，换成真实站点后这几条自动消失。';
-    }
     render();
     syncStickTop();
     window.addEventListener('resize', syncStickTop);

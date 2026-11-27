@@ -66,13 +66,9 @@ ${css}
       <span><a href="https://github.com/${esc(repo)}" target="_blank" rel="noopener">GitHub</a></span>
     </div>
 
-    <div class="disclosure"><b>推广披露：</b>${esc(config.disclosure || '')}</div>
-    <div class="demo-banner" id="demo-banner" hidden></div>
   </header>
 
   <section class="kpis" id="kpis"></section>
-
-  <p class="empty-relay" id="empty-relay" hidden></p>
 
   <div class="controls">
     <input id="f-q" type="search" placeholder="搜索站点 / 模型…" autocomplete="off">
@@ -110,7 +106,6 @@ ${css}
           <th class="num"><span class="th-u">输出 $/百万</span><br><span class="th-sub">现价 / 官方</span></th>
           <th class="num hide-md"><span class="th-u">缓存读 $/百万</span><br><span class="th-sub">现价 / 官方</span></th>
           <th class="num">优惠力度</th>
-          <th class="num">充值</th>
           <th class="calc-th">计算方式</th>
           <th class="hide-md">价格来源</th>
         </tr>
@@ -119,7 +114,6 @@ ${css}
     </table>
   </div>
   <div class="pager" id="pager"></div>
-  ${(meta.disabled_sources || []).length ? `<p class="off-list"><b>已停用 ${(meta.disabled_sources || []).length} 家</b>：${(meta.disabled_sources || []).map((s) => `${esc(s.name)}${s.note ? `（${esc(s.note)}）` : ''}`).join('、')}　不再抓取，也不参与排名。</p>` : ''}
 
   ${(() => {
     const cat = meta.catalog;
@@ -144,10 +138,10 @@ ${css}
       <summary>价格怎么算的（三个坑）</summary>
       <div class="body">
         <p>同一张表里的「0.5 倍率」和「5 折」经常不是一回事，所以本站统一折成<b>人民币 / 百万 token 的到手价</b>再比：</p>
-<pre>实际到手价 = 标价 × 计费系数                （充值赠送不计入，单独一列）
+<pre>实际到手价 = 标价 × 计费系数                （充值赠送不计入价格）
 优惠力度   = 1 − 混合成本 ÷ 官方混合成本   （百分比越大越优惠，负数表示比官方还贵）
 混合成本   = ${meta.blend.input} × 输入价 + ${meta.blend.output} × 输出价   （config.json 可改）</pre>
-        <p class="note">表格里每一格，左边是这站的到手价，右边灰字划掉的是官方同口径价格。充值优惠（充 100 得 120）不进价格，单独一栏显示，方便你自己算要充多少；「计算方式」一栏写了每行价格的完整推导，包括用的是哪个分组档位。</p>
+        <p class="note">表格里每一格，左边是这站的到手价，右边灰字划掉的是官方同口径价格。充值优惠（充 100 得 120）不计入价格；「计算方式」一栏写了每行价格的完整推导，包括用的是哪个分组档位。</p>
         <ul>
           <li><b>坑一：倍率的口径。</b>多数中转站是「1 元 = 1 美元额度」，所以「0.5 倍率」= 官方美元价 × 0.5，<b>以人民币结算</b>，并不乘汇率 —— 这才是「便宜十几倍」的来源。而「官转」通常是按官方<b>人民币</b>价打几折。两种口径在数据里用 <code>base: usd_official | cny_official</code> 区分，混用会算出完全错误的排名。</li>
           <li><b>坑二：充值赠送。</b>「充 100 得 120」等于单价直接打 0.83 折，但很多榜单只抄标价。</li>
