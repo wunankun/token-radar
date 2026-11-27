@@ -125,6 +125,33 @@
         }
       ]
     },
+    "price_source_label": {
+      "type": "string",
+      "description": "页面「价格来源」列的展示文案（如「网站公式」「Go 套餐折算」）；不填则按 官方计费页 / 自动抓取 / 人工核验 回退"
+    },
+    "subscription": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "plan": {
+              "type": "string"
+            },
+            "usd_per_month": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "allowance_note": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
     "billing": {
       "type": "object",
       "additionalProperties": false,

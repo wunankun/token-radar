@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-27T08:07:41.529Z",
+    "generated_at": "2026-11-27T08:16:31.611Z",
     "fx": {
       "usd_cny": 6.6711,
       "as_of": "2026-11-25",
@@ -11,8 +11,8 @@
       "output": 0.3
     },
     "counts": {
-      "rows": 65,
-      "stations": 8,
+      "rows": 80,
+      "stations": 9,
       "models": 42,
       "official_rows": 42,
       "demo_rows": 0,
@@ -21,14 +21,14 @@
       "auto_stations": 0
     },
     "best": {
-      "station": "APIVAI",
-      "model": "GPT-6 Luna",
-      "ratio": 0.1506,
-      "discount": 0.8494,
+      "station": "OpenCode",
+      "model": "DeepSeek V4.1 Flash",
+      "ratio": 0.1,
+      "discount": 0.9,
       "effective": {
-        "input": 0.0961,
-        "output": 0.5123,
-        "cache_read": 0.0107
+        "input": 0.1001,
+        "output": 0.4003,
+        "cache_read": 0.002
       }
     },
     "best_demo": null,
@@ -38,7 +38,7 @@
         "label": "DeepSeek V4.1 Flash",
         "vendor": "DeepSeek",
         "popularity": 85,
-        "coverage": 0,
+        "coverage": 1,
         "usage": {
           "rank": 1,
           "tokens": 73662858443589
@@ -50,7 +50,7 @@
         "label": "Hy4 Flash",
         "vendor": "Tencent",
         "popularity": 62,
-        "coverage": 0,
+        "coverage": 1,
         "usage": {
           "rank": 2,
           "tokens": 32065593093800
@@ -62,7 +62,7 @@
         "label": "GLM-5.3 Flash",
         "vendor": "Zhipu",
         "popularity": 62,
-        "coverage": 0,
+        "coverage": 1,
         "usage": {
           "rank": 4,
           "tokens": 13138818059669
@@ -74,7 +74,7 @@
         "label": "GPT-6 Luna",
         "vendor": "OpenAI",
         "popularity": 60,
-        "coverage": 1,
+        "coverage": 2,
         "usage": {
           "rank": 5,
           "tokens": 7819112750650
@@ -98,7 +98,7 @@
         "label": "Kimi K3.1 Pro",
         "vendor": "Moonshot",
         "popularity": 82,
-        "coverage": 0,
+        "coverage": 1,
         "usage": {
           "rank": 8,
           "tokens": 4372321042039
@@ -110,7 +110,7 @@
         "label": "GLM-5.3",
         "vendor": "Zhipu",
         "popularity": 76,
-        "coverage": 0,
+        "coverage": 1,
         "usage": {
           "rank": 10,
           "tokens": 3850209098173
@@ -122,7 +122,7 @@
         "label": "Claude Haiku 5.5",
         "vendor": "Anthropic",
         "popularity": 60,
-        "coverage": 1,
+        "coverage": 2,
         "usage": {
           "rank": 14,
           "tokens": 3059237327885
@@ -158,7 +158,7 @@
         "label": "DeepSeek V4 Pro",
         "vendor": "DeepSeek",
         "popularity": 96,
-        "coverage": 0,
+        "coverage": 1,
         "usage": null,
         "order": 0
       },
@@ -284,7 +284,7 @@
         "label": "Kimi K3",
         "vendor": "Moonshot",
         "popularity": 80,
-        "coverage": 0,
+        "coverage": 1,
         "usage": null,
         "order": 21
       },
@@ -293,7 +293,7 @@
         "label": "Kimi K2.7 Code",
         "vendor": "Moonshot",
         "popularity": 64,
-        "coverage": 0,
+        "coverage": 1,
         "usage": null,
         "order": 22
       },
@@ -320,7 +320,7 @@
         "label": "Qwen4 Max",
         "vendor": "Alibaba",
         "popularity": 78,
-        "coverage": 0,
+        "coverage": 1,
         "usage": null,
         "order": 25
       },
@@ -329,7 +329,7 @@
         "label": "Qwen3.8 Max",
         "vendor": "Alibaba",
         "popularity": 70,
-        "coverage": 0,
+        "coverage": 1,
         "usage": null,
         "order": 26
       },
@@ -338,7 +338,7 @@
         "label": "Qwen3.8 Flash",
         "vendor": "Alibaba",
         "popularity": 66,
-        "coverage": 0,
+        "coverage": 1,
         "usage": null,
         "order": 27
       },
@@ -347,7 +347,7 @@
         "label": "Qwen3.7 Plus",
         "vendor": "Alibaba",
         "popularity": 60,
-        "coverage": 0,
+        "coverage": 1,
         "usage": null,
         "order": 28
       },
@@ -437,7 +437,7 @@
         "label": "GPT-5.6 Luna",
         "vendor": "OpenAI",
         "popularity": 58,
-        "coverage": 1,
+        "coverage": 2,
         "usage": null,
         "order": 41
       }
@@ -447,7 +447,7 @@
       "as_of": "2026-11-25",
       "view": "week",
       "matched": 10,
-      "stations": 1
+      "stations": 2
     },
     "catalog": null,
     "disabled_sources": [
@@ -477,6 +477,93 @@
   "rows": [
     {
       "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "deepseek-flash",
+        "label": "DeepSeek V4.1 Flash",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.1001,
+        "output": 0.4003,
+        "cache_read": 0.002
+      },
+      "effective": {
+        "input": 0.1001,
+        "output": 0.4003,
+        "cache_read": 0.002
+      },
+      "official_cny": {
+        "input": 1.0007,
+        "output": 4.0027,
+        "cache_read": 0.04
+      },
+      "official_usd": {
+        "input": 0.15,
+        "output": 0.6,
+        "cache_read": 0.006,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.1,
+        "output": 0.1,
+        "blend": 0.1
+      },
+      "discount": 0.9,
+      "blend_effective": 0.1902,
+      "usd": {
+        "effective": {
+          "input": 0.015,
+          "output": 0.06,
+          "cache_read": 0.0003
+        },
+        "official": {
+          "input": 0.15,
+          "output": 0.6,
+          "cache_read": 0.006
+        },
+        "blend": 0.0285,
+        "discount": 0.9
+      },
+      "calc": "Go 折算：$0.15 × 10 ÷ $100 × 6.6711 = ¥0.1001/M",
+      "calc_full": "Go 折算：$0.15 × 10 ÷ $100 × 6.6711 = ¥0.1001/M",
+      "calc_basis": "Go 折算：$0.15 × 10 ÷ $100 × 6.6711 = ¥0.1001/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$0.15 × 10 ÷ $100 × 6.6711",
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
+    {
+      "station": {
         "id": "apivai-com",
         "name": "APIVAI",
         "kind": "relay",
@@ -494,6 +581,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -584,6 +672,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -674,6 +763,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -764,6 +854,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -854,6 +945,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -944,6 +1036,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1034,6 +1127,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1124,6 +1218,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1214,6 +1309,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1287,6 +1383,93 @@
     },
     {
       "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "glm-5-3-flash",
+        "label": "GLM-5.3 Flash",
+        "vendor": "Zhipu",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.1668,
+        "output": 0.5559,
+        "cache_read": 0.0334
+      },
+      "effective": {
+        "input": 0.1668,
+        "output": 0.5559,
+        "cache_read": 0.0334
+      },
+      "official_cny": {
+        "input": 1.0007,
+        "output": 3.3356,
+        "cache_read": 0.2001
+      },
+      "official_usd": {
+        "input": 0.15,
+        "output": 0.5,
+        "cache_read": 0.03,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.1667,
+        "output": 0.1667,
+        "blend": 0.1667
+      },
+      "discount": 0.8333,
+      "blend_effective": 0.2835,
+      "usd": {
+        "effective": {
+          "input": 0.025,
+          "output": 0.0833,
+          "cache_read": 0.005
+        },
+        "official": {
+          "input": 0.15,
+          "output": 0.5,
+          "cache_read": 0.03
+        },
+        "blend": 0.0425,
+        "discount": 0.8333
+      },
+      "calc": "Go 折算：$0.15 × 10 ÷ $60 × 6.6711 = ¥0.1668/M",
+      "calc_full": "Go 折算：$0.15 × 10 ÷ $60 × 6.6711 = ¥0.1668/M",
+      "calc_basis": "Go 折算：$0.15 × 10 ÷ $60 × 6.6711 = ¥0.1668/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$0.15 × 10 ÷ $60 × 6.6711",
+      "pricing_url": "https://bigmodel.cn/pricing"
+    },
+    {
+      "station": {
         "id": "apivai-com",
         "name": "APIVAI",
         "kind": "relay",
@@ -1304,6 +1487,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1377,6 +1561,441 @@
     },
     {
       "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "qwen3-7-plus",
+        "label": "Qwen3.7 Plus",
+        "vendor": "Alibaba",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.4447,
+        "output": 1.779,
+        "cache_read": 0.0445
+      },
+      "effective": {
+        "input": 0.4447,
+        "output": 1.779,
+        "cache_read": 0.0445
+      },
+      "official_cny": {
+        "input": 2.1348,
+        "output": 8.539,
+        "cache_read": 0.427
+      },
+      "official_usd": {
+        "input": 0.32,
+        "output": 1.28,
+        "cache_read": 0.064,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.2083,
+        "output": 0.2083,
+        "blend": 0.2083
+      },
+      "discount": 0.7917,
+      "blend_effective": 0.845,
+      "usd": {
+        "effective": {
+          "input": 0.0667,
+          "output": 0.2667,
+          "cache_read": 0.0067
+        },
+        "official": {
+          "input": 0.32,
+          "output": 1.28,
+          "cache_read": 0.064
+        },
+        "blend": 0.1267,
+        "discount": 0.7917
+      },
+      "calc": "Go 折算：$0.4 × 10 ÷ $60 × 6.6711 = ¥0.4447/M",
+      "calc_full": "Go 折算：$0.4 × 10 ÷ $60 × 6.6711 = ¥0.4447/M",
+      "calc_basis": "Go 折算：$0.4 × 10 ÷ $60 × 6.6711 = ¥0.4447/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$0.4 × 10 ÷ $60 × 6.6711",
+      "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "kimi-k2-7-code",
+        "label": "Kimi K2.7 Code",
+        "vendor": "Moonshot",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 1.0563,
+        "output": 4.4474,
+        "cache_read": 0.2113
+      },
+      "effective": {
+        "input": 1.0563,
+        "output": 4.4474,
+        "cache_read": 0.2113
+      },
+      "official_cny": {
+        "input": 4.0027,
+        "output": 20.0133,
+        "cache_read": 0.8005
+      },
+      "official_usd": {
+        "input": 0.6,
+        "output": 3,
+        "cache_read": 0.12,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.2639,
+        "output": 0.2222,
+        "blend": 0.2355
+      },
+      "discount": 0.7645,
+      "blend_effective": 2.0736,
+      "usd": {
+        "effective": {
+          "input": 0.1583,
+          "output": 0.6667,
+          "cache_read": 0.0317
+        },
+        "official": {
+          "input": 0.6,
+          "output": 3,
+          "cache_read": 0.12
+        },
+        "blend": 0.3108,
+        "discount": 0.7645
+      },
+      "calc": "Go 折算：$0.95 × 10 ÷ $60 × 6.6711 = ¥1.0563/M",
+      "calc_full": "Go 折算：$0.95 × 10 ÷ $60 × 6.6711 = ¥1.0563/M",
+      "calc_basis": "Go 折算：$0.95 × 10 ÷ $60 × 6.6711 = ¥1.0563/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$0.95 × 10 ÷ $60 × 6.6711",
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "glm-5-3",
+        "label": "GLM-5.3",
+        "vendor": "Zhipu",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.467,
+        "output": 1.4676,
+        "cache_read": 0.0867
+      },
+      "effective": {
+        "input": 0.467,
+        "output": 1.4676,
+        "cache_read": 0.0867
+      },
+      "official_cny": {
+        "input": 0.4663,
+        "output": 9.3395,
+        "cache_read": 0.4596
+      },
+      "official_usd": {
+        "input": 0.0699,
+        "output": 1.4,
+        "cache_read": 0.0689,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1.0015,
+        "output": 0.1571,
+        "blend": 0.2452
+      },
+      "discount": 0.7548,
+      "blend_effective": 0.7672,
+      "usd": {
+        "effective": {
+          "input": 0.07,
+          "output": 0.22,
+          "cache_read": 0.013
+        },
+        "official": {
+          "input": 0.0699,
+          "output": 1.4,
+          "cache_read": 0.0689
+        },
+        "blend": 0.115,
+        "discount": 0.7548
+      },
+      "calc": "Go 折算：$1.4 × 10 ÷ $200 × 6.6711 = ¥0.467/M",
+      "calc_full": "Go 折算：$1.4 × 10 ÷ $200 × 6.6711 = ¥0.467/M",
+      "calc_basis": "Go 折算：$1.4 × 10 ÷ $200 × 6.6711 = ¥0.467/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$1.4 × 10 ÷ $200 × 6.6711",
+      "pricing_url": "https://bigmodel.cn/pricing"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "kimi-k3-1-pro",
+        "label": "Kimi K3.1 Pro",
+        "vendor": "Moonshot",
+        "context": 1048576
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 2.2237,
+        "output": 11.1185,
+        "cache_read": 0.2224
+      },
+      "effective": {
+        "input": 2.2237,
+        "output": 11.1185,
+        "cache_read": 0.2224
+      },
+      "official_cny": {
+        "input": 1.6031,
+        "output": 56.0526,
+        "cache_read": 1.3342
+      },
+      "official_usd": {
+        "input": 0.2403,
+        "output": 8.4023,
+        "cache_read": 0.2,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1.3872,
+        "output": 0.1984,
+        "blend": 0.2727
+      },
+      "discount": 0.7273,
+      "blend_effective": 4.8921,
+      "usd": {
+        "effective": {
+          "input": 0.3333,
+          "output": 1.6667,
+          "cache_read": 0.0333
+        },
+        "official": {
+          "input": 0.2403,
+          "output": 8.4023,
+          "cache_read": 0.2
+        },
+        "blend": 0.7333,
+        "discount": 0.7273
+      },
+      "calc": "Go 折算：$2 × 10 ÷ $60 × 6.6711 = ¥2.2237/M",
+      "calc_full": "Go 折算：$2 × 10 ÷ $60 × 6.6711 = ¥2.2237/M",
+      "calc_basis": "Go 折算：$2 × 10 ÷ $60 × 6.6711 = ¥2.2237/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$2 × 10 ÷ $60 × 6.6711",
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "qwen3-8-flash",
+        "label": "Qwen3.8 Flash",
+        "vendor": "Alibaba",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.3336,
+        "output": 1.0451,
+        "cache_read": 0.0356
+      },
+      "effective": {
+        "input": 0.3336,
+        "output": 1.0451,
+        "cache_read": 0.0356
+      },
+      "official_cny": {
+        "input": 1.0007,
+        "output": 3.1354,
+        "cache_read": 0.1067
+      },
+      "official_usd": {
+        "input": 0.15,
+        "output": 0.47,
+        "cache_read": 0.016,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.3334,
+        "output": 0.3333,
+        "blend": 0.3333
+      },
+      "discount": 0.6667,
+      "blend_effective": 0.547,
+      "usd": {
+        "effective": {
+          "input": 0.05,
+          "output": 0.1567,
+          "cache_read": 0.0053
+        },
+        "official": {
+          "input": 0.15,
+          "output": 0.47,
+          "cache_read": 0.016
+        },
+        "blend": 0.082,
+        "discount": 0.6667
+      },
+      "calc": "Go 折算：$0.15 × 10 ÷ $30 × 6.6711 = ¥0.3336/M",
+      "calc_full": "Go 折算：$0.15 × 10 ÷ $30 × 6.6711 = ¥0.3336/M",
+      "calc_basis": "Go 折算：$0.15 × 10 ÷ $30 × 6.6711 = ¥0.3336/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$0.15 × 10 ÷ $30 × 6.6711",
+      "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
         "id": "apivai-com",
         "name": "APIVAI",
         "kind": "relay",
@@ -1394,6 +2013,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1484,6 +2104,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1574,6 +2195,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1664,6 +2286,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1754,6 +2377,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1844,6 +2468,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -1934,6 +2559,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -2024,6 +2650,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -2114,6 +2741,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -2204,6 +2832,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -2294,6 +2923,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -2384,6 +3014,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -2457,6 +3088,615 @@
     },
     {
       "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "deepseek-v4-pro",
+        "label": "DeepSeek V4 Pro",
+        "vendor": "DeepSeek",
+        "context": 1000000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 2.9353,
+        "output": 8.8059,
+        "cache_read": 0.0978
+      },
+      "effective": {
+        "input": 2.9353,
+        "output": 8.8059,
+        "cache_read": 0.0978
+      },
+      "official_cny": {
+        "input": 0.7405,
+        "output": 29.6197,
+        "cache_read": 0.2935
+      },
+      "official_usd": {
+        "input": 0.111,
+        "output": 4.44,
+        "cache_read": 0.044,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 3.964,
+        "output": 0.2973,
+        "blend": 0.4994
+      },
+      "discount": 0.5006,
+      "blend_effective": 4.6965,
+      "usd": {
+        "effective": {
+          "input": 0.44,
+          "output": 1.32,
+          "cache_read": 0.0147
+        },
+        "official": {
+          "input": 0.111,
+          "output": 4.44,
+          "cache_read": 0.044
+        },
+        "blend": 0.704,
+        "discount": 0.5006
+      },
+      "calc": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711 = ¥2.9353/M",
+      "calc_full": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711 = ¥2.9353/M",
+      "calc_basis": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711 = ¥2.9353/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$0.66 × 10 ÷ $15 × 6.6711",
+      "pricing_url": "https://api-docs.deepseek.com/quick_start/pricing"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "gpt-6-luna",
+        "label": "GPT-6 Luna",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.4447,
+        "output": 2.2237,
+        "cache_read": 0.0445
+      },
+      "effective": {
+        "input": 0.4447,
+        "output": 2.2237,
+        "cache_read": 0.0445
+      },
+      "official_cny": {
+        "input": 0.6671,
+        "output": 3.3356,
+        "cache_read": 0.0667
+      },
+      "official_usd": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.6666,
+        "output": 0.6667,
+        "blend": 0.6666
+      },
+      "discount": 0.3334,
+      "blend_effective": 0.9784,
+      "usd": {
+        "effective": {
+          "input": 0.0667,
+          "output": 0.3333,
+          "cache_read": 0.0067
+        },
+        "official": {
+          "input": 0.1,
+          "output": 0.5,
+          "cache_read": 0.01
+        },
+        "blend": 0.1467,
+        "discount": 0.3334
+      },
+      "calc": "Go 折算：$0.1 × 10 ÷ $15 × 6.6711 = ¥0.4447/M",
+      "calc_full": "Go 折算：$0.1 × 10 ÷ $15 × 6.6711 = ¥0.4447/M",
+      "calc_basis": "Go 折算：$0.1 × 10 ÷ $15 × 6.6711 = ¥0.4447/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$0.1 × 10 ÷ $15 × 6.6711",
+      "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "claude-haiku-5-5",
+        "label": "Claude Haiku 5.5",
+        "vendor": "Anthropic",
+        "context": 200000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.4447,
+        "output": 2.2237,
+        "cache_read": 0.0445
+      },
+      "effective": {
+        "input": 0.4447,
+        "output": 2.2237,
+        "cache_read": 0.0445
+      },
+      "official_cny": {
+        "input": 0.6671,
+        "output": 3.3356,
+        "cache_read": 0.0667
+      },
+      "official_usd": {
+        "input": 0.1,
+        "output": 0.5,
+        "cache_read": 0.01,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.6666,
+        "output": 0.6667,
+        "blend": 0.6666
+      },
+      "discount": 0.3334,
+      "blend_effective": 0.9784,
+      "usd": {
+        "effective": {
+          "input": 0.0667,
+          "output": 0.3333,
+          "cache_read": 0.0067
+        },
+        "official": {
+          "input": 0.1,
+          "output": 0.5,
+          "cache_read": 0.01
+        },
+        "blend": 0.1467,
+        "discount": 0.3334
+      },
+      "calc": "Go 折算：$0.1 × 10 ÷ $15 × 6.6711 = ¥0.4447/M",
+      "calc_full": "Go 折算：$0.1 × 10 ÷ $15 × 6.6711 = ¥0.4447/M",
+      "calc_basis": "Go 折算：$0.1 × 10 ÷ $15 × 6.6711 = ¥0.4447/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$0.1 × 10 ÷ $15 × 6.6711",
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "gpt-5.6-luna",
+        "label": "GPT-5.6 Luna",
+        "vendor": "OpenAI",
+        "context": 400000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.8895,
+        "output": 5.3369,
+        "cache_read": 0.0889
+      },
+      "effective": {
+        "input": 0.8895,
+        "output": 5.3369,
+        "cache_read": 0.0889
+      },
+      "official_cny": {
+        "input": 1.3342,
+        "output": 8.0053,
+        "cache_read": 0.1334
+      },
+      "official_usd": {
+        "input": 0.2,
+        "output": 1.2,
+        "cache_read": 0.02,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.6667,
+        "output": 0.6667,
+        "blend": 0.6667
+      },
+      "discount": 0.3333,
+      "blend_effective": 2.2237,
+      "usd": {
+        "effective": {
+          "input": 0.1333,
+          "output": 0.8,
+          "cache_read": 0.0133
+        },
+        "official": {
+          "input": 0.2,
+          "output": 1.2,
+          "cache_read": 0.02
+        },
+        "blend": 0.3333,
+        "discount": 0.3333
+      },
+      "calc": "Go 折算：$0.2 × 10 ÷ $15 × 6.6711 = ¥0.8895/M",
+      "calc_full": "Go 折算：$0.2 × 10 ÷ $15 × 6.6711 = ¥0.8895/M",
+      "calc_basis": "Go 折算：$0.2 × 10 ÷ $15 × 6.6711 = ¥0.8895/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$0.2 × 10 ÷ $15 × 6.6711",
+      "pricing_url": "https://platform.openai.com/docs/pricing"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "qwen3-8-max",
+        "label": "Qwen3.8 Max",
+        "vendor": "Alibaba",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 8.8948,
+        "output": 26.6844,
+        "cache_read": 1.1119
+      },
+      "effective": {
+        "input": 8.8948,
+        "output": 26.6844,
+        "cache_read": 1.1119
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 40.0266,
+        "cache_read": 1.6678
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 6,
+        "cache_read": 0.25,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.6667,
+        "output": 0.6667,
+        "blend": 0.6667
+      },
+      "discount": 0.3333,
+      "blend_effective": 14.2317,
+      "usd": {
+        "effective": {
+          "input": 1.3333,
+          "output": 4,
+          "cache_read": 0.1667
+        },
+        "official": {
+          "input": 2,
+          "output": 6,
+          "cache_read": 0.25
+        },
+        "blend": 2.1333,
+        "discount": 0.3333
+      },
+      "calc": "Go 折算：$2 × 10 ÷ $15 × 6.6711 = ¥8.8948/M",
+      "calc_full": "Go 折算：$2 × 10 ÷ $15 × 6.6711 = ¥8.8948/M",
+      "calc_basis": "Go 折算：$2 × 10 ÷ $15 × 6.6711 = ¥8.8948/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$2 × 10 ÷ $15 × 6.6711",
+      "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "qwen4-max",
+        "label": "Qwen4 Max",
+        "vendor": "Alibaba",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 6.6711,
+        "output": 20.0133,
+        "cache_read": 0.3336
+      },
+      "effective": {
+        "input": 6.6711,
+        "output": 20.0133,
+        "cache_read": 0.3336
+      },
+      "official_cny": {
+        "input": 9.5063,
+        "output": 28.519,
+        "cache_read": 0.4756
+      },
+      "official_usd": {
+        "input": 1.425,
+        "output": 4.275,
+        "cache_read": 0.0713,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.7018,
+        "output": 0.7018,
+        "blend": 0.7018
+      },
+      "discount": 0.2982,
+      "blend_effective": 10.6738,
+      "usd": {
+        "effective": {
+          "input": 1,
+          "output": 3,
+          "cache_read": 0.05
+        },
+        "official": {
+          "input": 1.425,
+          "output": 4.275,
+          "cache_read": 0.0713
+        },
+        "blend": 1.6,
+        "discount": 0.2982
+      },
+      "calc": "Go 折算：$1.5 × 10 ÷ $15 × 6.6711 = ¥6.6711/M",
+      "calc_full": "Go 折算：$1.5 × 10 ÷ $15 × 6.6711 = ¥6.6711/M",
+      "calc_basis": "Go 折算：$1.5 × 10 ÷ $15 × 6.6711 = ¥6.6711/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$1.5 × 10 ÷ $15 × 6.6711",
+      "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "kimi-k3",
+        "label": "Kimi K3",
+        "vendor": "Moonshot",
+        "context": 1048576
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 1.3342
+      },
+      "effective": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 1.3342
+      },
+      "official_cny": {
+        "input": 1.2809,
+        "output": 106.7376,
+        "cache_read": 1.2141
+      },
+      "official_usd": {
+        "input": 0.192,
+        "output": 16,
+        "cache_read": 0.182,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 10.4167,
+        "output": 0.625,
+        "blend": 0.8917
+      },
+      "discount": 0.1083,
+      "blend_effective": 29.3528,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.2
+        },
+        "official": {
+          "input": 0.192,
+          "output": 16,
+          "cache_read": 0.182
+        },
+        "blend": 4.4,
+        "discount": 0.1083
+      },
+      "calc": "Go 折算：$3 × 10 ÷ $15 × 6.6711 = ¥13.3422/M",
+      "calc_full": "Go 折算：$3 × 10 ÷ $15 × 6.6711 = ¥13.3422/M",
+      "calc_basis": "Go 折算：$3 × 10 ÷ $15 × 6.6711 = ¥13.3422/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$3 × 10 ÷ $15 × 6.6711",
+      "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
+    },
+    {
+      "station": {
         "id": "deepseek",
         "name": "DeepSeek 官方",
         "kind": "official",
@@ -2472,6 +3712,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
       },
       "model": {
@@ -2556,6 +3797,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -2640,6 +3882,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -2724,6 +3967,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -2808,6 +4052,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -2892,6 +4137,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -2976,6 +4222,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3060,6 +4307,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -3144,6 +4392,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -3228,6 +4477,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3312,6 +4562,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
       },
       "model": {
@@ -3396,6 +4647,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3480,6 +4732,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3564,6 +4817,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3648,6 +4902,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3732,6 +4987,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3816,6 +5072,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3900,6 +5157,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -3984,6 +5242,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4068,6 +5327,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4152,6 +5412,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4236,6 +5497,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4320,6 +5582,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购。三大厂商均无个人可用的返佣计划，因此这一行只作为价格锚，不产生推广收入。"
       },
       "model": {
@@ -4404,6 +5667,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -4488,6 +5752,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4572,6 +5837,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4656,6 +5922,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -4740,6 +6007,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4824,6 +6092,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4908,6 +6177,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -4992,6 +6262,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5076,6 +6347,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -5160,6 +6432,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -5244,6 +6517,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5328,6 +6602,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5412,6 +6687,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5496,6 +6772,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5580,6 +6857,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5664,6 +6942,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -5748,6 +7027,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5832,6 +7112,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。国内直连需要网络条件，这一点不计入价格但现实里是成本。"
       },
       "model": {
@@ -5916,6 +7197,7 @@
         "first_seen": null,
         "operating_since": null,
         "billing_label": null,
+        "price_source_label": null,
         "note": "官方直购，价格锚。"
       },
       "model": {
@@ -6002,6 +7284,7 @@
         "first_seen": "2026-11-27",
         "operating_since": "2026-05",
         "billing_label": "按量付费",
+        "price_source_label": "网站公式",
         "note": "按美元计价（站上 USD/百万 token），不是「1 元 = 1 美元额度」的站。表内人民币价 = 站上美元价 × config 汇率 6.6711（2026-11-27 抓取 /api/pricing 与定价页，页面标注更新 2026-11-18）。支付宝/微信按当日汇率换美元余额、含通道成本，实际人民币成本略高于表中数字。价格未经实调核验。 上线时间：官网与条款都没有写，按首份网页存档（web.archive.org 最早快照 2026-05-11）与首张 TLS 证书（crt.sh not_before 2026-04-22）推断为 2026-05，属推断不是官方声明。"
       },
       "model": {
@@ -6072,6 +7355,93 @@
       "health": null,
       "note": "站价 $0.19/M × 汇率 6.6711",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "hunyuan-4-flash",
+        "label": "Hy4 Flash",
+        "vendor": "Tencent",
+        "context": 262144
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.9273,
+        "output": 2.7807,
+        "cache_read": 0.0467
+      },
+      "effective": {
+        "input": 0.9273,
+        "output": 2.7807,
+        "cache_read": 0.0467
+      },
+      "official_cny": {
+        "input": 0.2335,
+        "output": 0.9373,
+        "cache_read": 0.01
+      },
+      "official_usd": {
+        "input": 0.035,
+        "output": 0.1405,
+        "cache_read": 0.0015,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 3.9715,
+        "output": 2.9667,
+        "blend": 3.3361
+      },
+      "discount": -2.3361,
+      "blend_effective": 1.4833,
+      "usd": {
+        "effective": {
+          "input": 0.139,
+          "output": 0.4168,
+          "cache_read": 0.007
+        },
+        "official": {
+          "input": 0.035,
+          "output": 0.1405,
+          "cache_read": 0.0015
+        },
+        "blend": 0.2224,
+        "discount": -2.3361
+      },
+      "calc": "Go 折算：$0.834 × 10 ÷ $60 × 6.6711 = ¥0.9273/M",
+      "calc_full": "Go 折算：$0.834 × 10 ÷ $60 × 6.6711 = ¥0.9273/M",
+      "calc_basis": "Go 折算：$0.834 × 10 ÷ $60 × 6.6711 = ¥0.9273/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$0.834 × 10 ÷ $60 × 6.6711",
+      "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
     }
   ]
 }

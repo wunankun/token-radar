@@ -190,5 +190,6 @@
     "ratio": null,
     "measured_at": null,
     "method": "按量付费"
-  }
+  },
+  "price_source_label": "网站公式"
 }

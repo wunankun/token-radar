@@ -108,8 +108,7 @@ ${css}
           <th class="num"><span class="th-u">输出 $/百万</span><br><span class="th-sub">现价 / 官方</span></th>
           <th class="num hide-md"><span class="th-u">缓存读 $/百万</span><br><span class="th-sub">现价 / 官方</span></th>
           <th class="num">优惠力度</th>
-          <th class="calc-th">计算方式</th>
-          <th class="hide-md">价格来源</th>
+          <th class="calc-th">价格来源</th>
         </tr>
       </thead>
       <tbody id="tbody"></tbody>
@@ -143,7 +142,7 @@ ${css}
 <pre>实际到手价 = 标价 × 计费系数                （充值赠送不计入价格）
 优惠力度   = 1 − 混合成本 ÷ 官方混合成本   （百分比越大越优惠，负数表示比官方还贵）
 混合成本   = ${meta.blend.input} × 输入价 + ${meta.blend.output} × 输出价   （config.json 可改）</pre>
-        <p class="note">表格里每一格，左边是这站的到手价，右边灰字划掉的是官方同口径价格。充值优惠（充 100 得 120）不计入价格；「计算方式」一栏写了每行价格的完整推导，包括用的是哪个分组档位。</p>
+        <p class="note">表格里每一格，左边是这站的到手价，右边灰字划掉的是官方同口径价格。充值优惠（充 100 得 120）不计入价格；「价格来源」一栏用一句话说明价格从哪来，鼠标悬停能看到这一行价格的完整推导（含分组档位）。</p>
         <ul>
           <li><b>坑一：倍率的口径。</b>多数中转站是「1 元 = 1 美元额度」，所以「0.5 倍率」= 官方美元价 × 0.5，<b>以人民币结算</b>，并不乘汇率 —— 这才是「便宜十几倍」的来源。而「官转」通常是按官方<b>人民币</b>价打几折。两种口径在数据里用 <code>base: usd_official | cny_official</code> 区分，混用会算出完全错误的排名。</li>
           <li><b>坑二：充值赠送。</b>「充 100 得 120」等于单价直接打 0.83 折，但很多榜单只抄标价。</li>

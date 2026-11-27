@@ -250,13 +250,14 @@
   }
 
   function sourceCell(r) {
-    if (r.price_source === 'reference') return '<span class="src" title="基准价统一取 OpenRouter 挂牌价，便于和所有中转站同一把尺">OpenRouter 基准价</span>';
-    if (r.station.kind === 'official' || r.price_source === 'official') return '<span class="src">官方计费页</span>';
-    var label = r.price_source === 'auto'
-      ? '<span class="auto">自动抓取</span>'
-      : '人工核验';
-    var tip = r.note ? esc(r.note) : '';
-    return '<span class="src" title="' + tip + '">' + label + '</span>';
+    var tip = r.calc_full || r.calc || r.note || '';
+    var label;
+    if (r.station.price_source_label) label = esc(r.station.price_source_label);
+    else if (r.price_source === 'reference') label = 'OpenRouter 基准价';
+    else if (r.station.kind === 'official' || r.price_source === 'official') label = '官方计费页';
+    else if (r.price_source === 'auto') label = '<span class="auto">自动抓取</span>';
+    else label = '人工核验';
+    return '<span class="src" title="' + esc(tip) + '">' + label + '</span>';
   }
 
   function renderRow(r) {
@@ -287,8 +288,7 @@
       '<td class="num"><span class="disc ' + discCls(d) + '" title="' + dTip + '">' +
         (r.station.kind === 'official' ? '官方' : discText(d)) + '</span></td>' +
 
-      '<td class="calc hide-lg" title="' + esc(r.calc_full || r.calc || '') + '">' + esc(r.calc || '') + '</td>' +
-      '<td class="hide-md">' + sourceCell(r) + '</td>' +
+      '<td class="calc hide-lg">' + sourceCell(r) + '</td>' +
       '</tr>';
   }
 
@@ -304,7 +304,7 @@
 
     $('#tbody').innerHTML = slice.length
       ? slice.map(renderRow).join('')
-      : '<tr><td colspan="10" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
+      : '<tr><td colspan="9" style="padding:36px;text-align:center" class="muted">没有匹配的记录</td></tr>';
     $('#count').textContent = list.length + ' / ' + rows.length + ' 行';
     renderPager(list.length, pages, start, slice.length);
     renderUnits();
@@ -586,7 +586,7 @@
       var head = '<div class="cat-head"><b>' + esc(m.l) + '</b><span class="cat-meta">' + m.r.length + ' 家站在卖' +
         (b ? ' · 参照价 ' + money(b[0]) + ' / ' + money(b[1]) + '（' + (b[2] === 'official' ? '官方' : 'OpenRouter') + '）' : ' · 无参照价，只能看绝对价') +
         '</span><span class="cat-meta">单位：站上面值美元 / 百万 token</span></div>' +
-        '<p class="cat-tip">同一模型在各站能差两个数量级：倍数明显大于 3 的，多半是这家站把「号池 / 统一价 / 包月池」也写进了同一张倍率表，别直接读成「贵 21 倍」。表里只做横向参考，真正下单前看「计算方式」那一列的档位说明。</p>';
+        '<p class="cat-tip">同一模型在各站能差两个数量级：倍数明显大于 3 的，多半是这家站把「号池 / 统一价 / 包月池」也写进了同一张倍率表，别直接读成「贵 21 倍」。表里只做横向参考，真正下单前看「价格来源」这一列的悬停说明。</p>';
       var trs = m.r.map(function (row) {
         var sid = row[0], name = row[1], i = row[2], o = row[3], c = row[4];
         var st = STATION[sid];
