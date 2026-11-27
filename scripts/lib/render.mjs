@@ -28,6 +28,8 @@ export function renderSite({ meta, rows, models, config }) {
   const site = config.site || {};
   const repo = site.repo || 'YOUR_GITHUB/YOUR_REPO';
   const title = `${site.name || 'Token 雷达'} · AI 中转站 × 官方 价格排行`;
+  const [owner, repoName] = repo.split('/');
+  const pageUrl = `https://${owner}.github.io/${repoName}/`;
   const description =
     '把 AI 中转站的「倍率」「美元计价」「订阅套餐」统一折算成人民币到手价，和官方直购价格对齐比较。价格来源逐条标注，可回溯。';
 
@@ -43,8 +45,18 @@ export function renderSite({ meta, rows, models, config }) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="${esc(site.name || 'Token 雷达')}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
+<meta property="og:url" content="${esc(pageUrl)}">
+<meta property="og:image" content="${esc(pageUrl)}social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${esc(title)}">
+<meta name="twitter:description" content="${esc(description)}">
+<meta name="twitter:image" content="${esc(pageUrl)}social-card.png">
 <meta name="color-scheme" content="light">
 <style>
 ${css}

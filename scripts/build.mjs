@@ -6,8 +6,8 @@
  *   node scripts/build.mjs --strict   # 有任何 warning 也失败（CI 用）
  */
 import { join } from 'node:path';
-import { writeFileSync } from 'node:fs';
-import { loadAll, writeJson, DIST, DATA, ensureDir, loadHealth, readJson } from './lib/io.mjs';
+import { writeFileSync, copyFileSync, existsSync } from 'node:fs';
+import { loadAll, writeJson, ROOT, DIST, DATA, ensureDir, loadHealth, readJson } from './lib/io.mjs';
 import { loadObservedStations, loadVerdicts } from './lib/observed-stations.mjs';
 const round4 = (n) => (Number.isFinite(n) ? Math.round(n * 1e4) / 1e4 : n);
 import { pickGroup, GROUP_SOURCE_LABEL } from './lib/pick-group.mjs';
@@ -373,6 +373,10 @@ writeJson(join(DIST, 'prices.json'), { meta, rows: stations });
 
 const html = renderSite({ meta, rows: stations, models, config });
 writeFileSync(join(DIST, 'index.html'), html, 'utf8');
+
+// 分享卡片（og:image）：站点素材放 docs/，构建时复制进 dist
+const card = join(ROOT, 'docs', 'social-card.png');
+if (existsSync(card)) copyFileSync(card, join(DIST, 'social-card.png'));
 
 /* ---------- console ---------- */
 console.log(`\nToken 雷达 · build`);
