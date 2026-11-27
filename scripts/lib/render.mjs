@@ -29,7 +29,7 @@ export function renderSite({ meta, rows, models, config }) {
   const repo = site.repo || 'YOUR_GITHUB/YOUR_REPO';
   const title = `${site.name || 'Token 雷达'} · AI 中转站 × 官方 价格排行`;
   const description =
-    '把 AI API 中转站的「倍率」「充值赠送」折算成真实到手价，和官方直购价格对齐比较。数据由 GitHub Actions 定时抓取，人工核验。';
+    '把 AI 中转站的「倍率」「美元计价」「订阅套餐」统一折算成人民币到手价，和官方直购价格对齐比较。价格来源逐条标注，可回溯。';
 
   const data = JSON.stringify({ meta, rows })
     .replace(/</g, '\\u003c')
@@ -92,7 +92,6 @@ ${css}
       <button type="button" data-cur="usd" class="on" title="站上标的美元牌价：倍率 1.0 就是 0%">美元</button><button type="button" data-cur="cny" title="你实际掏的人民币：按 1 元 = 1 美元额度折算">人民币</button>
     </span>
     <label class="toggle"><input type="checkbox" id="f-demo">显示演示数据</label>
-    <label class="toggle"><input type="checkbox" id="f-aff">只看带推广链接</label>
     <span class="count" id="count"></span>
   </div>
 
@@ -136,47 +135,51 @@ ${css}
 
   <section class="method">
     <details open>
-      <summary>价格怎么算的（三个坑）</summary>
+      <summary>价格怎么算的</summary>
       <div class="body">
-        <p>同一张表里的「0.5 倍率」和「5 折」经常不是一回事，所以本站统一折成<b>人民币 / 百万 token 的到手价</b>再比：</p>
-<pre>实际到手价 = 标价 × 计费系数                （充值赠送不计入价格）
-优惠力度   = 1 − 混合成本 ÷ 官方混合成本   （百分比越大越优惠，负数表示比官方还贵）
-混合成本   = ${meta.blend.input} × 输入价 + ${meta.blend.output} × 输出价   （config.json 可改）</pre>
-        <p class="note">表格里每一格，左边是这站的到手价，右边灰字划掉的是官方同口径价格。充值优惠（充 100 得 120）不计入价格；「价格来源」一栏用一句话说明价格从哪来，鼠标悬停能看到这一行价格的完整推导（含分组档位）。</p>
+        <p>不同站的计价口径不一样，本站统一折成<b>人民币 / 百万 token 的到手价</b>再比。目前有三类：</p>
         <ul>
-          <li><b>坑一：倍率的口径。</b>多数中转站是「1 元 = 1 美元额度」，所以「0.5 倍率」= 官方美元价 × 0.5，<b>以人民币结算</b>，并不乘汇率 —— 这才是「便宜十几倍」的来源。而「官转」通常是按官方<b>人民币</b>价打几折。两种口径在数据里用 <code>base: usd_official | cny_official</code> 区分，混用会算出完全错误的排名。</li>
-          <li><b>坑二：充值赠送。</b>「充 100 得 120」等于单价直接打 0.83 折，但很多榜单只抄标价。</li>
-          <li><b>坑三：计费虚高。</b>有的站标价极低，但同样的 prompt 报出的 usage 是官方的 1.3 倍以上，实际成本被吃掉。本站的 <code>计费系数</code> 来自定时探活的实测（实测 usage ÷ 本地估算），没有实测时按 1.0 处理。</li>
+          <li><b>倍率站</b>（1 元 = 1 美元额度）：人民币单价 = 官方美元价 × 倍率。倍率 0.5 就是官方美元价的 5 折，按人民币付，不再乘汇率。</li>
+          <li><b>美元计价站</b>（如 APIVAI）：人民币单价 = 站上美元价 × 汇率（页面顶部显示）。支付宝/微信按当日汇率收人民币，实际成本会略高。</li>
+          <li><b>订阅套餐站</b>（OpenCode Go、Fenno）：人民币单价 = 站上 token 单价 × 套餐月费 ÷ 该模型月额度 × 汇率，按<b>用满额度</b>折算；月内用不满，实际单价更高。</li>
         </ul>
-        <p>另外：官方价本身也有峰谷（DeepSeek 谷时 5 折）、缓存读写价差、以及长上下文加价，这些先按标准档记录，明细看 <code>data/official.json</code>。</p>
+<pre>优惠力度 = 1 − 混合成本 ÷ 官方混合成本   （越大越便宜，负数表示比官方贵）
+混合成本 = 输入权重 × 输入价 + 输出权重 × 输出价   （权重见 config.json）</pre>
+        <p class="note">每个价格格左边是这站的到手价，右边灰字划掉的是官方同口径价格；比官方贵或持平时现价标橙。鼠标悬停能看到这行价格的完整推导（含美元价、汇率、套餐折算），最后的「价格来源」说明它来自官方计费页、OpenRouter 基准价、站上公示，还是套餐换算。</p>
+        <ul>
+          <li><b>峰谷价</b>：DeepSeek 官方有峰谷，表里统一按谷价算，峰价是谷价的 2 倍，这类行的输入/输出格下方有橙色小字「峰价 ×2」。</li>
+          <li><b>订阅制</b>的站按「用满额度」折算，价格看起来低，实际成本取决于用了多少。</li>
+          <li><b>充值赠送</b>（充 50 送 30）不计入单价，只写在站点备注里；缓存读价单独一列，缓存写价按输入价的 1.25 倍估算。</li>
+        </ul>
       </div>
     </details>
     <details>
       <summary>数据从哪来 / 多久更新</summary>
       <div class="body">
         <ul>
-          <li><b>官方价：</b>人工从各厂官方计费页读取，记录 <code>verified_at</code>，来源链接就在 <code>data/official.json</code>。</li>
-          <li><b>中转站价：</b>优先人工核验（<code>data/providers/*.json</code>）；支持 new-api / one-api 系的站点会由 GitHub Actions 定时拉取公开的 <code>/api/pricing</code>，标为「自动抓取」，未经核验的行会显示提示。</li>
-          <li><b>可用率：</b>定时探活记录到 <code>data/health/</code>（近 7 天成功率），不占榜单列，只作为「计费系数」与人工判断的依据；没有 key 的站点不探活。</li>
-          <li>更新频率：每 ${config?.update?.interval_hours ?? 6} 小时，以及每次人工合并 PR 后。</li>
+          <li><b>官方价</b>：<code>data/official.json</code>，取自各厂官方计费页；少数模型官方没公开价，用 OpenRouter 的公开挂牌价补充，文件里 <code>source</code> 会标 <code>openrouter</code>。</li>
+          <li><b>站点价</b>：<code>data/providers/*.json</code>，人工从站点定价页或公开接口录入，来源链接在 <code>pricing_url</code>；每个站另有一份 <code>data/rules/&lt;id&gt;.md</code>，写清「这家怎么算钱」和待核验项。</li>
+          <li><b>更新频率</b>：数据改动后重新构建并发布；自动抓取与探活目前只在手动触发时跑，不承诺实时。</li>
+          <li><b>汇率</b>：页面顶部的 USD→CNY 由 <code>config.json</code> 维护，来源与日期一并显示。</li>
+          <li><b>未核验</b>：价格按站上公示折算，没有逐家实调账单；发现不一致请提交纠正。</li>
         </ul>
       </div>
     </details>
     <details>
       <summary>为什么必须标注风险</summary>
       <div class="body">
-        <p>价格低到一定程度，通常意味着渠道不是官方直连。arXiv 上有一篇对中转站的实测研究（<a href="https://arxiv.org/abs/2603.01919" target="_blank" rel="noopener">Real Money, Fake Models</a>）：在被学术引用过的 17 个中转站里，<b>45.83%</b> 的节点没通过模型身份验证；同一批测试中，部分影子接口在专业问答上的正确率比官方低 40 个百分点以上。价格倍率本身几乎不能预测这种劣化。</p>
-        <p>所以这里除了价格，还标 <b>逆向 / 低价陷阱 / 疑似掉包 / 计费虚高</b> 等标签；探活得到的可用率与计费系数在后台记录，直接参与「现价」折算。便宜和稳定，自己权衡。</p>
+        <p>价格明显低于官方，通常意味着渠道不是官方直连。arXiv 上有一篇对中转站的实测研究（<a href="https://arxiv.org/abs/2603.01919" target="_blank" rel="noopener">Real Money, Fake Models</a>）：在被学术引用过的 17 个中转站里，<b>45.83%</b> 的节点没通过模型身份验证；部分影子接口在专业问答上的正确率比官方低 40 个百分点以上，而价格倍率本身几乎不能预测这种劣化。</p>
+        <p>本站只保证「价格能回溯到来源」，不保证模型真假、稳定性和售后；数据里给站点保留风险标签（未核验 / 逆向 / 低价陷阱 / 疑似掉包 / 计费虚高），便宜和稳定请自行权衡。</p>
       </div>
     </details>
     <details>
       <summary>怎么提交新站点 / 纠正价格</summary>
       <div class="body">
-        <p>提 PR 改 <code>data/providers/</code> 下的 JSON 即可，一个站点一个文件，格式见 <code>schema/provider.schema.json</code>。规则只有三条：</p>
+        <p>在 GitHub 提 issue 或 PR 都可以。改数据时一个站点一个文件：<code>data/providers/&lt;id&gt;.json</code>（格式见 <code>schema/provider.schema.json</code>），规则档案放 <code>data/rules/&lt;id&gt;.md</code>。三条硬规则：</p>
         <ul>
-          <li>价格必须可回溯（给出 <code>pricing_url</code>）。</li>
+          <li>价格必须可回溯：给出 <code>pricing_url</code> 或截图来源。</li>
           <li>有推广链接就必须写 <code>"disclosure": true</code>，构建设置了硬校验。</li>
-          <li>排序只按折算后的价格，不按返佣比例、不接受付费提位。</li>
+          <li>排序只按折算后的到手价，不按返佣比例，也不接受付费买榜位。</li>
         </ul>
       </div>
     </details>

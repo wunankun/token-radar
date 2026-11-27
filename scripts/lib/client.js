@@ -7,7 +7,7 @@
   var meta = DATA.meta || {};
   var W = meta.blend || { input: 0.7, output: 0.3 };
 
-  var state = { q: '', model: '', kind: '', sort: 'discount', showDemo: false, onlyAff: false, currency: 'usd', page: 1, perPage: 50 };
+  var state = { q: '', model: '', kind: '', sort: 'discount', showDemo: false, currency: 'usd', page: 1, perPage: 50 };
 
   // 当前计价口径：美元 = 站上标的美元牌价（倍率 1.0 → 0%）；人民币 = 你实际掏的钱（1 元 = 1 美元额度）
   // 厂商真 logo：OpenAI / Anthropic / DeepSeek / Kimi / Qwen 取 simple-icons 的 path，
@@ -203,7 +203,6 @@
     var q = state.q.trim().toLowerCase();
     return rows.filter(function (r) {
       if (!state.showDemo && r.station.demo) return false;
-      if (state.onlyAff && !r.station.affiliate_url) return false;
       if (state.model) {
         if (state.model.indexOf('vendor:') === 0) {
           if (r.model.vendor !== state.model.slice(7)) return false;
@@ -662,12 +661,8 @@
     if (!rows.some(function (r) { return r.station.demo; })) {
       var dl = $('#f-demo') && $('#f-demo').closest('label'); if (dl) dl.style.display = 'none';
     }
-    if (!rows.some(function (r) { return r.station.affiliate_url; })) {
-      var al = $('#f-aff') && $('#f-aff').closest('label'); if (al) al.style.display = 'none';
-    }
 
     $('#f-demo').addEventListener('change', function (e) { state.showDemo = e.target.checked; state.page = 1; render(); });
-    $('#f-aff').addEventListener('change', function (e) { state.onlyAff = e.target.checked; state.page = 1; render(); });
 
     $('#f-cur').addEventListener('click', function (e) {
       var b = e.target.closest('button[data-cur]');
