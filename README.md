@@ -1,6 +1,6 @@
 # Token 雷达 · AI 中转站 × 官方 价格排行
 
-把 AI API 中转站的「倍率」「充值赠送」「计费虚高」折算成**人民币 / 百万 token 的真实到手价**，再和官方直购价对齐比较。GitHub Actions 定时抓取 + 探活，静态站一键部署到 Pages。
+把 AI 中转站的「倍率」「充值赠送」「计费虚高」，以及**美元直采、订阅套餐（Go / GOAT / Mini）**这些五花八门的计价方式，统一折算成**人民币 / 百万 token 的真实到手价**，再和官方直购价对齐比较。每一行都标了价格来源和推导过程，可以逐条回溯。静态站部署在 Pages。
 
 **在线站：<https://wunankun.github.io/token-radar/>** ｜ 仓库：<https://github.com/wunankun/token-radar>
 
@@ -27,6 +27,11 @@
 混合成本   = 0.7 × 输入价 + 0.3 × 输出价        # config.json 可改，表里的「现价」
 优惠力度   = 1 − 现价 ÷ 官方价                  # 百分比越大越优惠，负数表示比官方贵
 充值      ≠ 价格                             # 充 100 得 120 只是少掏钱，不改单价
+
+# 三种结算方式，最终都落到「人民币 / 百万 token」
+倍率站      ¥ = 官方美元价 × 倍率
+美元计价站   ¥ = 站上美元价 × 汇率
+订阅套餐站   ¥ = 站上单价 × 套餐月费 ÷ 套餐月额度 × 汇率
 ```
 
 榜单按「优惠力度」从大到小排，官方直购作为基准行（优惠力度显示「官方」）。
@@ -37,7 +42,7 @@
 
 | 口径 | 表头 | 这一列显示的是 | 倍率 1.0 的站 |
 |---|---|---|---|
-| **美元**（默认） | `$/百万` | 同一笔实付折成美元（`¥ ÷ 6.6609`） | 0.045 vs 官方 0.3 |
+| **美元**（默认） | `$/百万` | 同一笔实付折成美元（`¥ ÷ 6.6711`） | 0.045 vs 官方 0.3 |
 | 人民币 | `¥/百万` | 你实际掏的人民币 | 0.3 vs 官方 2 |
 
 原因是行业惯例「1 元 = 1 美元额度」：站上按 $2/M 扣额度，你付 ¥2；而官方直购 $2 要 ¥14.2，所以真金白银便宜 86%。
@@ -46,17 +51,21 @@
 - 人民币口径 = 你实际付款（充 1 元人民币 = 1 美元额度，所以 `$0.3/M` 的站实付 `¥0.3/M`）
 - 美元口径 = 这笔实付按汇率折回美元，和官方美元价用同一把尺
 
-所以切换币种时**每个数字都会变**（× 或 ÷ 6.6609），但「优惠力度」不变——同一笔钱不会因为换单位就更便宜。早期版本把美元口径做成了「站上标的美元牌价」，导致切到美元后站价不动、看起来像坏了，已改成折算。
+所以切换币种时**每个数字都会变**（× 或 ÷ 6.6711），但「优惠力度」不变——同一笔钱不会因为换单位就更便宜。早期版本把美元口径做成了「站上标的美元牌价」，导致切到美元后站价不动、看起来像坏了，已改成折算。
 
 ### 「价格来源」那一栏
 
-这一栏说明「这行价格从哪来」：官方计费页 / 自动抓取 / 人工核验 / 网站公式 / Go 套餐折算。鼠标悬停能看到这条价的完整推导，可以直接核对，例如：
+这一栏说明「这行价格从哪来」：官方计费页 / OpenRouter 基准价 / 自动抓取 / 人工核验 / 网站公式 / Go 套餐折算 / GOAT 套餐折算 / Mini 套餐折算。鼠标悬停能看到这条价的完整推导，可以直接核对，例如：
 
 | 行 | 怎么算的 |
 |---|---|
-| 官方直购 | `官方 $0.3/M × 汇率 6.6609 = ¥2/M` |
+| 官方直购 | `官方 $0.3/M × 汇率 6.6711 = ¥2/M` |
 | 中转（倍率乘美元价） | `倍率 ×0.5 × 官方 $0.3 = ¥0.15/M` |
 | 官转（倍率乘人民币价） | `官方人民币 ¥2/M × 0.62 = ¥1.24/M` |
+| 美元计价站（APIVAI） | `站价 $0.75/M × 汇率 6.6711 = ¥5.0033/M` |
+| 订阅套餐（OpenCode Go） | `Go 折算：$0.15/M × 10 ÷ $100 × 6.6711 = ¥0.1001/M` |
+| 订阅套餐（Command Code GOAT） | `GOAT 折算：$0.15/M × 10 ÷ $100 × 6.6711 = ¥0.1001/M` |
+| 订阅套餐（Fenno Mini） | `Mini 折算：$2/M × 19.99 ÷ 200 × 6.6711 = ¥1.3336/M` |
 | 绝对价 | `站上标价 ¥1.5/M` |
 | 有分组档位 | 追加 `；56 个分组档位 0.05–8×，最低「Claude Kiro 无缓」` |
 | 有计费虚高 | 追加 `· × 计费 1.2` |
@@ -106,9 +115,12 @@ node scripts/demo-crawl.mjs     # 看抓取+比价整条链路跑一遍
 - 排序：模型筛选里，公司按自家最好的名次排，模型按名次升序排；没上榜的排在后面，按 `models.json` 里的顺序。名字后面会显示 `#8 · 4.4T` 这样的「名次 · 当周 token 数」。
 - 表格里「优惠力度」相同时，也按这个名次兜底排。
 
-> 榜单只覆盖 OpenRouter 上的头部模型（本周 20 个），本库 35 个模型里命中 9 个；没命中的不代表不常用，只是不在这份榜上。
+> 榜单只覆盖 OpenRouter 上的头部模型（本周 20 个），本库 45 个模型里命中 10 个；没命中的不代表不常用，只是不在这份榜上。
 
---- | --- | --- |
+优先用 `coverage`（有几家真实站在卖），没有真实站时回落到 `popularity`：
+
+| 情况 | 排序依据 | 数据字段 |
+| --- | --- | --- |
 | 库里有真实站点（`demo` 不为 `true`、且不是官方直购行） | `coverage`：有几家中转站在卖这个模型，归一化成 0–100（卖得最多的那个是 100） | `coverage` |
 | 只有演示数据 / 一个真实站都没有 | 回落到 `popularity` 人工值 | `manual` |
 
@@ -127,7 +139,9 @@ node scripts/demo-crawl.mjs     # 看抓取+比价整条链路跑一遍
 | 官方价 | 人工读厂商计费页，记录 `verified_at` 与来源链接（`data/official.json`） | 官方计费页 |
 | 中转站价（人工） | 编辑 `data/providers/<id>.json` | 人工核验 |
 | 中转站价（自动） | `fetch-pricing.mjs` 拉 new-api / one-api 的公开 `GET /api/pricing` | 自动抓取（未核验） |
-| 汇率 | `fetch-fx.mjs` 每日抓 USD→CNY，写回 `config.json` 的 `fx` | 卡片上标来源与日期 |
+| 美元计价站 | 人工读站上美元价目（如 APIVAI 的 `/api/pricing`），按汇率折人民币 | 网站公式 |
+| 订阅套餐站 | 人工读套餐页与站上模型价，按「月费 ÷ 月额度」折算（OpenCode Go / Command Code GOAT / Fenno Mini） | Go / GOAT / Mini 套餐折算 |
+| 汇率 | `fetch-fx.mjs` 每日抓 USD→CNY，写回 `config.json` 的 `fx`（当前 6.6711） | 卡片上标来源与日期 |
 | 可用率 | 有 key 的站点探活，只统计最近 7 天（`data/health/`） | 后台记录，不占榜单列 |
 
 自动抓取当前**手动触发**（`node scripts/fetch-pricing.mjs --write`），定时任务还没开，原因见下面「抓取」一节。
@@ -166,14 +180,29 @@ node scripts/fetch-fx.mjs --dry    # 只看不写
 
 | 厂商 | 模型 | 价格基准 |
 | --- | --- | --- |
-| DeepSeek | V4 Pro、Flash、V3.2 | 官方计费页（V3.2 为参照价） |
-| Anthropic | Sonnet 5.5 / 5、Opus 5.5 / 5 / 4.8、Haiku 5.5、Sonnet 4.6、Fable 5.2 | 官方计费页（部分为参照价） |
-| OpenAI | GPT-6.2 Sol / Astra、GPT-6 / 6.1 / 5.6 系列、GPT-6 Luna | 官方计费页（部分为参照价） |
+| DeepSeek | V4 Pro、V4.1 Flash | 官方计费页（谷价；峰价 ×2 标注） |
+| Anthropic | Sonnet 5.5 / 5、Opus 5.5 / 5 / 4.8 / 4.7 / 4.6、Haiku 5.5 / 4.5、Sonnet 4.6、Fable 5.2 / 5.1 / 5 | 官方计费页（部分为参照价） |
+| OpenAI | GPT-6.2 Sol / Astra、GPT-6 / 6.1 / 5.6 系列、GPT-6 Luna、GPT-5.6 Luna | 官方计费页（部分为参照价） |
+| Google | Gemini 4 Argon | 参照价 · OpenRouter |
 | Moonshot Kimi | K3.1 Pro、K3、K2.7 Code、K2.6、K2.5 | 参照价 · OpenRouter |
 | 阿里云百炼 Qwen | Qwen4 Max、Qwen3.8 Max / Flash、Qwen3.7 Plus、Qwen3 Coder Next | 参照价 · OpenRouter |
 | 智谱 GLM | GLM-5.3 / 5.3 Flash / 5.2 / 5 / 4.7 | 参照价 · OpenRouter |
+| 腾讯混元 | Hy3、Hy4 Preview、Hunyuan 4 Flash | 参照价 · OpenRouter |
 
 所有基准价**统一取 OpenRouter 挂牌价**（表格「价格来源」显示「OpenRouter 基准价」），这样中转站和基准是同一把尺。每条对应的 OpenRouter id 写在 `data/official.json` 的 `openrouter_id` 里，可逐条复核。缓存读价（`cache_read`）同源取 OpenRouter 的 `input_cache_read`，抓取脚本 `scripts/fetch-openrouter.mjs` 会一起存下来。
+
+### 非「1 元 = 1 美元」的站怎么算
+
+行业默认「1 元买 1 美元额度」，但有些站不按这个来，录的时候要单独标口径，否则人民币价会差好几倍：
+
+| 站点 | 结算方式 | 折算 |
+| --- | --- | --- |
+| APIVAI（apivai.com） | 美元计价，支付宝/微信按当日汇率收人民币 | 站上美元价 × 汇率 |
+| OpenCode（opencode.ai） | Go 订阅 $10/月，模型按额度扣 | 站上单价 × 10 ÷ 该模型月额度 × 汇率 |
+| Fenno（api.fenno.ai） | Mini 订阅 $19.99/月，月额度 $200 | 站上单价 × 19.99 ÷ 200 × 汇率 |
+| Command Code（commandcode.ai） | GOAT 订阅 $10/月，按模型 credits 封顶 | 站上单价 × 10 ÷ credits × 汇率 |
+
+这类站的 `kind` 是 `aggregator`，`price_source_label` 写「网站公式」或「X 套餐折算」，悬停提示里会给出完整算式。**订阅套餐按「用满月额度」折算**，用不满会比表里的贵；额度口径存疑的站宁可不收——OpenDesign 就因为官方标称 $220/月、第三方实测只有 $60–80/月，被标成 `paused` 暂不上榜，数据仍保留在 `data/providers/open-design.json`。
 
 ## 抓取
 
@@ -288,7 +317,7 @@ npm run build                                # 或 npm run weekly，一次抓+�
 
 ### 全站模型目录（按模型查价）
 
-`data/models.json` 只维护 6 个人工核验的模型；其余模型不丢，全部落在 `data/catalog/<站点>.json` 里（每站 `/api/pricing` 的完整模型表）。
+`data/models.json` 维护 45 个人工核验的规范模型（id / 别名 / 官方名）；其余模型不丢，全部落在 `data/catalog/<站点>.json` 里（每站 `/api/pricing` 的完整模型表）。
 
 ```bash
 node scripts/build-catalog.mjs        # 汇总成 data/models-auto.json，并生成页面用的 dist/catalog.json
@@ -337,8 +366,11 @@ node scripts/weekly.mjs --md
 | 什么时候 | 做什么 | 花多久 |
 | --- | --- | --- |
 | 某站调价 | 改它 `multiplier.value`（如果是单个模型调价，才改模型条目） | 10 秒 |
+| 订阅套餐站调价 | 改 `subscription` 里的月费/额度，再改每条价格的 `note` 与数值 | 2 分钟 |
+| 某站结算方式变了 | 先改 `data/rules/<id>.md` 的档案，再改 `data/providers/<id>.json` | 5 分钟 |
 | 有新站要推 | `npm run add -- ...` 生成文件，填推广链接 | 1 分钟 |
 | 某站关站 | 把 `status` 改成 `dead` | 5 秒 |
+| 新站建档 | 在 `data/rules/<id>.md` 写清「这家怎么算钱」，再录价格 | 5 分钟 |
 | 每周一次 | `npm run audit`，按清单挑着处理 | 5 分钟 |
 | 每月一次 | 对一遍厂商计费页，更新 `data/official.json` 的 `as_of` | 10 分钟 |
 
@@ -431,7 +463,8 @@ token-radar/
 │   ├── models.json          # 规范模型 id + 别名 + 官方模型名
 │   ├── rankings.json        # OpenRouter 一周 token 消耗排行（下拉排序用）
 │   ├── official.json        # 官方价（USD/百万），含 verified_at 与来源链接
-│   ├── providers/*.json     # 一站一文件：价格、充值、计费系数、推广链接、风险标签
+│   ├── providers/*.json     # 一站一文件：价格、营业状态、结算方式、推广链接、风险标签
+│   ├── rules/*.md           # 每家站「怎么算钱」的档案：货币、倍率表、额度口径、坑、待核验
 │   ├── sources.json         # 待抓站点清单
 │   ├── observed/*.json      # 自动抓取的候选价（/api/pricing）
 │   ├── price-history/*.jsonl# 每次抓取一行，用于算涨跌
