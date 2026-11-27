@@ -129,6 +129,27 @@
       "output": 2.7807,
       "cache_read": 0.0467,
       "note": "Go 折算：$0.834 × 10 ÷ $60 × 6.6711"
+    },
+    "gemini-4-argon": {
+      "mode": "absolute",
+      "input": 4.4474,
+      "output": 22.237,
+      "cache_read": 0.2224,
+      "note": "Go 折算：$2 × 10 ÷ $30 × 6.6711"
+    },
+    "hy3": {
+      "mode": "absolute",
+      "input": 0.1557,
+      "output": 0.6449,
+      "cache_read": 0.0389,
+      "note": "Go 折算：$0.14 × 10 ÷ $60 × 6.6711"
+    },
+    "hy4-preview": {
+      "mode": "absolute",
+      "input": 1.8546,
+      "output": 5.5615,
+      "cache_read": 0.0934,
+      "note": "Go 折算：$0.834 × 10 ÷ $30 × 6.6711"
     }
   }
 }

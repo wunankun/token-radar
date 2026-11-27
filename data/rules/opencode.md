@@ -34,6 +34,9 @@
 | qwen3.7-plus | 60 | 0.4 / 1.6 / 0.04 |
 | qwen4-max | 15 | 1.5 / 4.5 / 0.075 |
 | glm-5.3-flash | 60 | 0.15 / 0.5 / 0.03 |
+| gemini-4-argon | 30 | 2 / 10 / 0.1 |
+| hy3 | 60 | 0.14 / 0.58 / 0.035 |
+| hy4-preview | 30 | 0.834 / 2.501 / 0.042 |
 | hy4 | 60 | 0.834 / 2.501 / 0.042 |
 
 ## 折算公式（榜单口径）
@@ -80,5 +83,5 @@ claude-haiku-5-5  context > 100000 → input 0.5 / output 2.5 / cache read 0.05
 - 上线时间（官网只有文档，无公告日期）
 - Go 月额度的重置规则细节（文档说随付费周期重置，未说明具体日）
 - 免费模型是否限速 / 限并发
-- 站上 31 款 chat 模型里，本库只收录了 15 款；其余（grok-4.7、gemini-4-argon、minimax-m3、mimo 系列、hy3、step-5、longcat、muse-spark 等）本库暂无官方基准价，待扩库后再录
+- 站上 31 款 chat 模型里，本库已收录 18 款；其余（grok-4.7、minimax-m3、minimax-m3.1-flash、mimo-v2.6-pro/flash、step-5-preview、longcat-2.5、muse-spark-1.2/1.3-contributor 等）本库暂无官方基准价，待扩库后再录；4 款免费模型（beam-free / iceman-contributor-free / hy4-flash-free / hungerg-free）无价可比，不录
 - 实充汇率（人民币付款时）

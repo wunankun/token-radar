@@ -384,6 +384,40 @@
           "source": "openrouter",
           "openrouter_id": "tencent/hy4-flash",
           "cache_read": 0.0015
+        },
+        "hy3": {
+          "input": 0.132,
+          "output": 0.528,
+          "note": "OpenRouter 挂牌价（tencent/hy3）。",
+          "source": "openrouter",
+          "openrouter_id": "tencent/hy3",
+          "cache_read": 0.033
+        },
+        "hy4-preview": {
+          "input": 0.834,
+          "output": 2.501,
+          "note": "OpenRouter 挂牌价（tencent/hy4-preview）。",
+          "source": "openrouter",
+          "openrouter_id": "tencent/hy4-preview",
+          "cache_read": 0.042
+        }
+      }
+    },
+    {
+      "id": "google",
+      "name": "Gemini 官方",
+      "homepage": "https://ai.google.dev/",
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "currency": "USD",
+      "verified_at": "2026-11-27",
+      "models": {
+        "gemini-4-argon": {
+          "input": 2,
+          "output": 10,
+          "note": "OpenRouter 挂牌价（google/gemini-4-argon）。",
+          "source": "openrouter",
+          "openrouter_id": "google/gemini-4-argon",
+          "cache_read": 0.1
         }
       }
     }

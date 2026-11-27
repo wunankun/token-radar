@@ -575,5 +575,48 @@
       "gpt-5.6-luna",
       "gpt-5-6-luna"
     ]
+  },
+  "gemini-4-argon": {
+    "label": "Gemini 4 Argon",
+    "vendor": "Google",
+    "popularity": 60,
+    "context": 1048576,
+    "official": {
+      "provider": "google",
+      "model": "gemini-4-argon"
+    },
+    "aliases": [
+      "gemini-4-argon",
+      "gemini-4-argon",
+      "google/gemini-4-argon"
+    ]
+  },
+  "hy3": {
+    "label": "Hy3",
+    "vendor": "Tencent",
+    "popularity": 40,
+    "context": 256000,
+    "official": {
+      "provider": "tencent",
+      "model": "hy3"
+    },
+    "aliases": [
+      "hy3",
+      "tencent/hy3"
+    ]
+  },
+  "hy4-preview": {
+    "label": "Hy4 Preview",
+    "vendor": "Tencent",
+    "popularity": 45,
+    "context": 1048576,
+    "official": {
+      "provider": "tencent",
+      "model": "hy4-preview"
+    },
+    "aliases": [
+      "hy4-preview",
+      "tencent/hy4-preview"
+    ]
   }
 }

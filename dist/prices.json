@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-27T08:16:31.611Z",
+    "generated_at": "2026-11-27T08:21:34.638Z",
     "fx": {
       "usd_cny": 6.6711,
       "as_of": "2026-11-25",
@@ -11,10 +11,10 @@
       "output": 0.3
     },
     "counts": {
-      "rows": 80,
-      "stations": 9,
-      "models": 42,
-      "official_rows": 42,
+      "rows": 86,
+      "stations": 10,
+      "models": 45,
+      "official_rows": 45,
       "demo_rows": 0,
       "with_affiliate": 23,
       "auto_rows": 0,
@@ -440,6 +440,33 @@
         "coverage": 2,
         "usage": null,
         "order": 41
+      },
+      {
+        "id": "gemini-4-argon",
+        "label": "Gemini 4 Argon",
+        "vendor": "Google",
+        "popularity": 60,
+        "coverage": 1,
+        "usage": null,
+        "order": 42
+      },
+      {
+        "id": "hy3",
+        "label": "Hy3",
+        "vendor": "Tencent",
+        "popularity": 40,
+        "coverage": 1,
+        "usage": null,
+        "order": 43
+      },
+      {
+        "id": "hy4-preview",
+        "label": "Hy4 Preview",
+        "vendor": "Tencent",
+        "popularity": 45,
+        "coverage": 1,
+        "usage": null,
+        "order": 44
       }
     ],
     "usage": {
@@ -1582,6 +1609,93 @@
         "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
       },
       "model": {
+        "id": "hy3",
+        "label": "Hy3",
+        "vendor": "Tencent",
+        "context": 256000
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.1557,
+        "output": 0.6449,
+        "cache_read": 0.0389
+      },
+      "effective": {
+        "input": 0.1557,
+        "output": 0.6449,
+        "cache_read": 0.0389
+      },
+      "official_cny": {
+        "input": 0.8806,
+        "output": 3.5223,
+        "cache_read": 0.2201
+      },
+      "official_usd": {
+        "input": 0.132,
+        "output": 0.528,
+        "cache_read": 0.033,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.1768,
+        "output": 0.1831,
+        "blend": 0.1808
+      },
+      "discount": 0.8192,
+      "blend_effective": 0.3025,
+      "usd": {
+        "effective": {
+          "input": 0.0233,
+          "output": 0.0967,
+          "cache_read": 0.0058
+        },
+        "official": {
+          "input": 0.132,
+          "output": 0.528,
+          "cache_read": 0.033
+        },
+        "blend": 0.0453,
+        "discount": 0.8192
+      },
+      "calc": "Go 折算：$0.14 × 10 ÷ $60 × 6.6711 = ¥0.1557/M",
+      "calc_full": "Go 折算：$0.14 × 10 ÷ $60 × 6.6711 = ¥0.1557/M",
+      "calc_basis": "Go 折算：$0.14 × 10 ÷ $60 × 6.6711 = ¥0.1557/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$0.14 × 10 ÷ $60 × 6.6711",
+      "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
         "id": "qwen3-7-plus",
         "label": "Qwen3.7 Plus",
         "vendor": "Alibaba",
@@ -1993,6 +2107,180 @@
       "health": null,
       "note": "Go 折算：$0.15 × 10 ÷ $30 × 6.6711",
       "pricing_url": "https://help.aliyun.com/zh/model-studio/models"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "hy4-preview",
+        "label": "Hy4 Preview",
+        "vendor": "Tencent",
+        "context": 1048576
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 1.8546,
+        "output": 5.5615,
+        "cache_read": 0.0934
+      },
+      "effective": {
+        "input": 1.8546,
+        "output": 5.5615,
+        "cache_read": 0.0934
+      },
+      "official_cny": {
+        "input": 5.5637,
+        "output": 16.6844,
+        "cache_read": 0.2802
+      },
+      "official_usd": {
+        "input": 0.834,
+        "output": 2.501,
+        "cache_read": 0.042,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.3333,
+        "output": 0.3333,
+        "blend": 0.3333
+      },
+      "discount": 0.6667,
+      "blend_effective": 2.9667,
+      "usd": {
+        "effective": {
+          "input": 0.278,
+          "output": 0.8337,
+          "cache_read": 0.014
+        },
+        "official": {
+          "input": 0.834,
+          "output": 2.501,
+          "cache_read": 0.042
+        },
+        "blend": 0.4447,
+        "discount": 0.6667
+      },
+      "calc": "Go 折算：$0.834 × 10 ÷ $30 × 6.6711 = ¥1.8546/M",
+      "calc_full": "Go 折算：$0.834 × 10 ÷ $30 × 6.6711 = ¥1.8546/M",
+      "calc_basis": "Go 折算：$0.834 × 10 ÷ $30 × 6.6711 = ¥1.8546/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$0.834 × 10 ÷ $30 × 6.6711",
+      "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
+    },
+    {
+      "station": {
+        "id": "opencode",
+        "name": "OpenCode",
+        "kind": "aggregator",
+        "kind_label": "聚合商",
+        "demo": false,
+        "homepage": "https://opencode.ai/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [
+          "unverified"
+        ],
+        "first_seen": "2026-11-27",
+        "operating_since": null,
+        "billing_label": "Go 订阅",
+        "price_source_label": "Go 套餐折算",
+        "note": "订阅制：Go $10/月，各模型有独立月额度（美元），按「用满额度」折算单价 = 站上 token 价 × 10 ÷ 月额度。用不满额度时实际单价更高；长上下文超阈值、部分时段系数会让实际更贵。价格抓自 opencode.ai 公开模型接口 2026-11-27，未实调核验。"
+      },
+      "model": {
+        "id": "gemini-4-argon",
+        "label": "Gemini 4 Argon",
+        "vendor": "Google",
+        "context": 1048576
+      },
+      "mode": "absolute",
+      "price_source": "manual",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 4.4474,
+        "output": 22.237,
+        "cache_read": 0.2224
+      },
+      "effective": {
+        "input": 4.4474,
+        "output": 22.237,
+        "cache_read": 0.2224
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 0.6671
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 0.3333,
+        "output": 0.3333,
+        "blend": 0.3333
+      },
+      "discount": 0.6667,
+      "blend_effective": 9.7843,
+      "usd": {
+        "effective": {
+          "input": 0.6667,
+          "output": 3.3333,
+          "cache_read": 0.0333
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 1.4667,
+        "discount": 0.6667
+      },
+      "calc": "Go 折算：$2 × 10 ÷ $30 × 6.6711 = ¥4.4474/M",
+      "calc_full": "Go 折算：$2 × 10 ÷ $30 × 6.6711 = ¥4.4474/M",
+      "calc_basis": "Go 折算：$2 × 10 ÷ $30 × 6.6711 = ¥4.4474/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": "Go 折算：$2 × 10 ÷ $30 × 6.6711",
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing"
     },
     {
       "station": {
@@ -4717,6 +5005,91 @@
     },
     {
       "station": {
+        "id": "tencent",
+        "name": "Hy 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://cloud.tencent.com/product/hunyuan",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "operating_since": null,
+        "billing_label": null,
+        "price_source_label": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "hy3",
+        "label": "Hy3",
+        "vendor": "Tencent",
+        "context": 256000
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 0.8806,
+        "output": 3.5223,
+        "cache_read": 0.2201
+      },
+      "effective": {
+        "input": 0.8806,
+        "output": 3.5223,
+        "cache_read": 0.2201
+      },
+      "official_cny": {
+        "input": 0.8806,
+        "output": 3.5223,
+        "cache_read": 0.2201
+      },
+      "official_usd": {
+        "input": 0.132,
+        "output": 0.528,
+        "cache_read": 0.033,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 1.6731,
+      "usd": {
+        "effective": {
+          "input": 0.132,
+          "output": 0.528,
+          "cache_read": 0.033
+        },
+        "official": {
+          "input": 0.132,
+          "output": 0.528,
+          "cache_read": 0.033
+        },
+        "blend": 0.2508,
+        "discount": 0
+      },
+      "calc": "OpenRouter $0.132/M × 汇率 6.6711 = ¥0.8806/M",
+      "calc_full": "OpenRouter $0.132/M × 汇率 6.6711 = ¥0.8806/M",
+      "calc_basis": "OpenRouter $0.132/M × 汇率 6.6711 = ¥0.8806/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
+    },
+    {
+      "station": {
         "id": "alibaba",
         "name": "Qwen 官方",
         "kind": "official",
@@ -5224,6 +5597,91 @@
       "health": null,
       "note": null,
       "pricing_url": "https://platform.moonshot.cn/docs/pricing/chat"
+    },
+    {
+      "station": {
+        "id": "tencent",
+        "name": "Hy 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://cloud.tencent.com/product/hunyuan",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "operating_since": null,
+        "billing_label": null,
+        "price_source_label": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "hy4-preview",
+        "label": "Hy4 Preview",
+        "vendor": "Tencent",
+        "context": 1048576
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 5.5637,
+        "output": 16.6844,
+        "cache_read": 0.2802
+      },
+      "effective": {
+        "input": 5.5637,
+        "output": 16.6844,
+        "cache_read": 0.2802
+      },
+      "official_cny": {
+        "input": 5.5637,
+        "output": 16.6844,
+        "cache_read": 0.2802
+      },
+      "official_usd": {
+        "input": 0.834,
+        "output": 2.501,
+        "cache_read": 0.042,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 8.8999,
+      "usd": {
+        "effective": {
+          "input": 0.834,
+          "output": 2.501,
+          "cache_read": 0.042
+        },
+        "official": {
+          "input": 0.834,
+          "output": 2.501,
+          "cache_read": 0.042
+        },
+        "blend": 1.3341,
+        "discount": 0
+      },
+      "calc": "OpenRouter $0.834/M × 汇率 6.6711 = ¥5.5637/M",
+      "calc_full": "OpenRouter $0.834/M × 汇率 6.6711 = ¥5.5637/M",
+      "calc_basis": "OpenRouter $0.834/M × 汇率 6.6711 = ¥5.5637/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://cloud.tencent.com/document/product/1729/97731"
     },
     {
       "station": {
@@ -5989,6 +6447,91 @@
       "health": null,
       "note": null,
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "station": {
+        "id": "google",
+        "name": "Gemini 官方",
+        "kind": "official",
+        "kind_label": "官方直购",
+        "demo": false,
+        "homepage": "https://ai.google.dev/",
+        "affiliate_url": null,
+        "affiliate_code": null,
+        "commission": null,
+        "usd_rate": null,
+        "top_up": null,
+        "risk_flags": [],
+        "first_seen": null,
+        "operating_since": null,
+        "billing_label": null,
+        "price_source_label": null,
+        "note": "官方直购，价格锚。"
+      },
+      "model": {
+        "id": "gemini-4-argon",
+        "label": "Gemini 4 Argon",
+        "vendor": "Google",
+        "context": 1048576
+      },
+      "mode": "official",
+      "price_source": "reference",
+      "bonus": 1,
+      "billing_ratio": 1,
+      "billing_source": "default",
+      "nominal": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 0.6671
+      },
+      "effective": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 0.6671
+      },
+      "official_cny": {
+        "input": 13.3422,
+        "output": 66.711,
+        "cache_read": 0.6671
+      },
+      "official_usd": {
+        "input": 2,
+        "output": 10,
+        "cache_read": 0.1,
+        "cache_write": null
+      },
+      "ratio": {
+        "input": 1,
+        "output": 1,
+        "blend": 1
+      },
+      "discount": 0,
+      "blend_effective": 29.3528,
+      "usd": {
+        "effective": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "official": {
+          "input": 2,
+          "output": 10,
+          "cache_read": 0.1
+        },
+        "blend": 4.4,
+        "discount": 0
+      },
+      "calc": "OpenRouter $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "calc_full": "OpenRouter $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "calc_basis": "OpenRouter $2/M × 汇率 6.6711 = ¥13.3422/M",
+      "group": null,
+      "observed": false,
+      "tiers": null,
+      "recharge": null,
+      "calc_adjust": "",
+      "health": null,
+      "note": null,
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing"
     },
     {
       "station": {

@@ -1,0 +1,9 @@
+{
+  "id": "google",
+  "name": "Gemini 官方",
+  "kind": "official",
+  "official_source": "google",
+  "homepage": "https://ai.google.dev/",
+  "affiliate": null,
+  "note": "官方直购，价格锚。"
+}
