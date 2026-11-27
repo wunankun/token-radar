@@ -171,7 +171,7 @@ node scripts/fetch-fx.mjs --dry    # 只看不写
 | 阿里云百炼 Qwen | Qwen4 Max、Qwen3.8 Max / Flash、Qwen3.7 Plus、Qwen3 Coder Next | 参照价 · OpenRouter |
 | 智谱 GLM | GLM-5.3 / 5.3 Flash / 5.2 / 5 / 4.7 | 参照价 · OpenRouter |
 
-所有基准价**统一取 OpenRouter 挂牌价**（表格「价格来源」显示「OpenRouter 基准价」），这样中转站和基准是同一把尺。每条对应的 OpenRouter id 写在 `data/official.json` 的 `openrouter_id` 里，可逐条复核。
+所有基准价**统一取 OpenRouter 挂牌价**（表格「价格来源」显示「OpenRouter 基准价」），这样中转站和基准是同一把尺。每条对应的 OpenRouter id 写在 `data/official.json` 的 `openrouter_id` 里，可逐条复核。缓存读价（`cache_read`）同源取 OpenRouter 的 `input_cache_read`，抓取脚本 `scripts/fetch-openrouter.mjs` 会一起存下来。
 
 ## 抓取
 

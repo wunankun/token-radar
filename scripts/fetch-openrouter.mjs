@@ -32,11 +32,13 @@ for (const item of list) {
   const output = Number(pricing.completion) * 1e6;
   if (!Number.isFinite(input) || (input <= 0 && output <= 0)) continue;
 
+  const cacheRead = Number(pricing.input_cache_read) * 1e6;
   all.push({
     id: item.id,
     name: item.name,
     input: Math.round(input * 1e4) / 1e4,
     output: Math.round(output * 1e4) / 1e4,
+    cache_read: cacheRead > 0 ? Math.round(cacheRead * 1e4) / 1e4 : null,
   });
 
   // openrouter 的 id 形如 deepseek/deepseek-v4-pro，按最后一段和历史别名匹配
