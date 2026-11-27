@@ -132,10 +132,13 @@
 
   function pairCell(now, off, tip, isOfficial) {
     if (now === null || now === undefined) return '<span class="muted">—</span>';
-    var html = '<span class="unit" title="' + (tip || '') + '">' + money(now) + '</span>';
-    // 官方行只有一个数（它自己就是基准）；中转行一律把官方价划掉放在右边，
-    // 即使两者相同也显示，否则美元口径下满屏 1.0 倍率的站会看不出比价对象。
-    if (!isOfficial && off !== null && off !== undefined) {
+    // 比官方便宜才把官方价划掉变灰；持平或更贵，现价标橙提醒「这家不便宜」
+    var hasOff = !isOfficial && off !== null && off !== undefined;
+    var cheaper = hasOff && now < off - 1e-9;
+    var cls = 'unit' + (hasOff && !cheaper ? ' unit-warn' : '');
+    var title = (tip || '') + (hasOff && !cheaper ? '（比官方贵或持平，标橙）' : '');
+    var html = '<span class="' + cls + '" title="' + esc(title) + '">' + money(now) + '</span>';
+    if (cheaper) {
       html += '<span class="offp" title="官方同口径">' + money(off) + '</span>';
     }
     return html;
