@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T18:03:19.182Z",
+    "generated_at": "2026-11-27T03:44:06.020Z",
     "fx": {
       "usd_cny": 6.6711,
       "as_of": "2026-11-25",
@@ -510,7 +510,7 @@
       "calc_adjust": "× 计费 1.35",
       "health": {
         "days": 14,
-        "uptime_7d": 0.7142857142857143,
+        "uptime_7d": 0.6666666666666666,
         "uptime_30d": 0.7142857142857143,
         "last_ok": "2026-11-26",
         "last_checked": "2026-11-26",
@@ -609,7 +609,7 @@
       "calc_adjust": "× 计费 1.35",
       "health": {
         "days": 14,
-        "uptime_7d": 0.7142857142857143,
+        "uptime_7d": 0.6666666666666666,
         "uptime_30d": 0.7142857142857143,
         "last_ok": "2026-11-26",
         "last_checked": "2026-11-26",
@@ -708,7 +708,7 @@
       "calc_adjust": "× 计费 1.35",
       "health": {
         "days": 14,
-        "uptime_7d": 0.7142857142857143,
+        "uptime_7d": 0.6666666666666666,
         "uptime_30d": 0.7142857142857143,
         "last_ok": "2026-11-26",
         "last_checked": "2026-11-26",
@@ -807,7 +807,7 @@
       "calc_adjust": "× 计费 1.35",
       "health": {
         "days": 14,
-        "uptime_7d": 0.7142857142857143,
+        "uptime_7d": 0.6666666666666666,
         "uptime_30d": 0.7142857142857143,
         "last_ok": "2026-11-26",
         "last_checked": "2026-11-26",
@@ -901,7 +901,7 @@
       "calc_adjust": "",
       "health": {
         "days": 14,
-        "uptime_7d": 0.8571428571428571,
+        "uptime_7d": 0.8333333333333334,
         "uptime_30d": 0.9285714285714286,
         "last_ok": "2026-11-26",
         "last_checked": "2026-11-26",
@@ -995,7 +995,7 @@
       "calc_adjust": "",
       "health": {
         "days": 14,
-        "uptime_7d": 0.8571428571428571,
+        "uptime_7d": 0.8333333333333334,
         "uptime_30d": 0.9285714285714286,
         "last_ok": "2026-11-26",
         "last_checked": "2026-11-26",
@@ -1089,7 +1089,7 @@
       "calc_adjust": "",
       "health": {
         "days": 14,
-        "uptime_7d": 0.8571428571428571,
+        "uptime_7d": 0.8333333333333334,
         "uptime_30d": 0.9285714285714286,
         "last_ok": "2026-11-26",
         "last_checked": "2026-11-26",
@@ -1183,7 +1183,7 @@
       "calc_adjust": "",
       "health": {
         "days": 14,
-        "uptime_7d": 0.8571428571428571,
+        "uptime_7d": 0.8333333333333334,
         "uptime_30d": 0.9285714285714286,
         "last_ok": "2026-11-26",
         "last_checked": "2026-11-26",
@@ -1277,7 +1277,7 @@
       "calc_adjust": "",
       "health": {
         "days": 14,
-        "uptime_7d": 0.8571428571428571,
+        "uptime_7d": 0.8333333333333334,
         "uptime_30d": 0.9285714285714286,
         "last_ok": "2026-11-26",
         "last_checked": "2026-11-26",
@@ -1566,7 +1566,7 @@
     {
       "station": {
         "id": "tencent",
-        "name": "腾讯混元 官方",
+        "name": "Hunyuan 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -1648,7 +1648,7 @@
     {
       "station": {
         "id": "zhipu",
-        "name": "智谱 · GLM",
+        "name": "GLM 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -1730,7 +1730,7 @@
     {
       "station": {
         "id": "openai",
-        "name": "OpenAI 官方",
+        "name": "GPT 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -1812,7 +1812,7 @@
     {
       "station": {
         "id": "anthropic",
-        "name": "Anthropic 官方",
+        "name": "Claude 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -1976,7 +1976,7 @@
     {
       "station": {
         "id": "zhipu",
-        "name": "智谱 · GLM",
+        "name": "GLM 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -2058,7 +2058,7 @@
     {
       "station": {
         "id": "anthropic",
-        "name": "Anthropic 官方",
+        "name": "Claude 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -2140,7 +2140,7 @@
     {
       "station": {
         "id": "anthropic",
-        "name": "Anthropic 官方",
+        "name": "Claude 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -2222,7 +2222,7 @@
     {
       "station": {
         "id": "openai",
-        "name": "OpenAI 官方",
+        "name": "GPT 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -2386,7 +2386,7 @@
     {
       "station": {
         "id": "alibaba",
-        "name": "阿里云百炼 · 通义千问",
+        "name": "Qwen 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -2468,7 +2468,7 @@
     {
       "station": {
         "id": "alibaba",
-        "name": "阿里云百炼 · 通义千问",
+        "name": "Qwen 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -2550,7 +2550,7 @@
     {
       "station": {
         "id": "alibaba",
-        "name": "阿里云百炼 · 通义千问",
+        "name": "Qwen 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -2632,7 +2632,7 @@
     {
       "station": {
         "id": "zhipu",
-        "name": "智谱 · GLM",
+        "name": "GLM 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -2714,7 +2714,7 @@
     {
       "station": {
         "id": "zhipu",
-        "name": "智谱 · GLM",
+        "name": "GLM 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -2960,7 +2960,7 @@
     {
       "station": {
         "id": "zhipu",
-        "name": "智谱 · GLM",
+        "name": "GLM 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -3124,7 +3124,7 @@
     {
       "station": {
         "id": "alibaba",
-        "name": "阿里云百炼 · 通义千问",
+        "name": "Qwen 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -3288,7 +3288,7 @@
     {
       "station": {
         "id": "openai",
-        "name": "OpenAI 官方",
+        "name": "GPT 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -3370,7 +3370,7 @@
     {
       "station": {
         "id": "alibaba",
-        "name": "阿里云百炼 · 通义千问",
+        "name": "Qwen 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -3452,7 +3452,7 @@
     {
       "station": {
         "id": "anthropic",
-        "name": "Anthropic 官方",
+        "name": "Claude 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -3534,7 +3534,7 @@
     {
       "station": {
         "id": "openai",
-        "name": "OpenAI 官方",
+        "name": "GPT 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -3616,7 +3616,7 @@
     {
       "station": {
         "id": "openai",
-        "name": "OpenAI 官方",
+        "name": "GPT 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -3698,7 +3698,7 @@
     {
       "station": {
         "id": "openai",
-        "name": "OpenAI 官方",
+        "name": "GPT 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -3780,7 +3780,7 @@
     {
       "station": {
         "id": "anthropic",
-        "name": "Anthropic 官方",
+        "name": "Claude 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -3944,7 +3944,7 @@
     {
       "station": {
         "id": "openai",
-        "name": "OpenAI 官方",
+        "name": "GPT 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -4026,7 +4026,7 @@
     {
       "station": {
         "id": "anthropic",
-        "name": "Anthropic 官方",
+        "name": "Claude 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -4108,7 +4108,7 @@
     {
       "station": {
         "id": "anthropic",
-        "name": "Anthropic 官方",
+        "name": "Claude 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -4190,7 +4190,7 @@
     {
       "station": {
         "id": "anthropic",
-        "name": "Anthropic 官方",
+        "name": "Claude 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -4272,7 +4272,7 @@
     {
       "station": {
         "id": "openai",
-        "name": "OpenAI 官方",
+        "name": "GPT 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,
@@ -4354,7 +4354,7 @@
     {
       "station": {
         "id": "openai",
-        "name": "OpenAI 官方",
+        "name": "GPT 官方",
         "kind": "official",
         "kind_label": "官方直购",
         "demo": false,

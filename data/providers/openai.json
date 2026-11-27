@@ -1,6 +1,6 @@
 {
   "id": "openai",
-  "name": "OpenAI 官方",
+  "name": "GPT 官方",
   "kind": "official",
   "official_source": "openai",
   "homepage": "https://platform.openai.com/",

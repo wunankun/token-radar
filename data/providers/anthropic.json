@@ -1,6 +1,6 @@
 {
   "id": "anthropic",
-  "name": "Anthropic 官方",
+  "name": "Claude 官方",
   "kind": "official",
   "official_source": "anthropic",
   "homepage": "https://www.anthropic.com/",

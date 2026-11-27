@@ -46,7 +46,7 @@
     },
     {
       "id": "anthropic",
-      "name": "Anthropic 官方",
+      "name": "Claude 官方",
       "homepage": "https://www.anthropic.com/",
       "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
       "currency": "USD",
@@ -110,7 +110,7 @@
     },
     {
       "id": "openai",
-      "name": "OpenAI 官方",
+      "name": "GPT 官方",
       "homepage": "https://platform.openai.com/",
       "pricing_url": "https://platform.openai.com/docs/pricing",
       "currency": "USD",
@@ -219,7 +219,7 @@
     },
     {
       "id": "alibaba",
-      "name": "阿里云百炼",
+      "name": "Qwen 官方",
       "homepage": "https://bailian.console.aliyun.com/",
       "pricing_url": "https://help.aliyun.com/zh/model-studio/models",
       "currency": "USD",
@@ -260,7 +260,7 @@
     },
     {
       "id": "zhipu",
-      "name": "智谱 GLM",
+      "name": "GLM 官方",
       "homepage": "https://bigmodel.cn/",
       "pricing_url": "https://bigmodel.cn/pricing",
       "currency": "USD",
@@ -301,7 +301,7 @@
     },
     {
       "id": "tencent",
-      "name": "腾讯混元 官方",
+      "name": "Hunyuan 官方",
       "homepage": "https://cloud.tencent.com/product/hunyuan",
       "pricing_url": "https://cloud.tencent.com/document/product/1729/97731",
       "currency": "USD",
